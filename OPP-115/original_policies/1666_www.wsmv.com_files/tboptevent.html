@@ -1,0 +1,44 @@
+
+<!-- saved from url=(0055)http://widget.perfectmarket.com/opt/tboptevent.html?m=v -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script>
+(function(){
+    var cookieName = 'ytuextpv';
+    var cookieDays = 90;
+
+    setCookie=function(n,v,a) { var d = new Date(); d.setTime(d.getTime() + (a*24*60*60*1000)); var e = "expires="+d.toUTCString(); document.cookie = n + "=" + v + "; " + e + "; path=/; domain=perfectmarket.com"; };
+
+    getCookie=function(v) {var i,x,y,c=document.cookie.split(';');for(i=0;i<c.length;i++){x=c[i].substr(0,c[i].indexOf('='));y=c[i].substr(c[i].indexOf('=')+1);x=x.replace(/^\s+|\s+$/g,'');if(x==v){return unescape(y);}}};
+
+    setup=function() {
+        var a=getCookie(cookieName);
+        var m='v';
+        if (m == null || (m != 'v' && m != 's' && m != 'tc' && m != 'tp')) return;
+        var j = { 'tbopt' : { 'v': 0, 's': 0, 'tc': 0, 'tp': 0 }};
+        if (a != null) {
+            a = typeof atob === 'function' ? atob(a) : a;
+            var k = JSON.parse(a);
+            if (k.tbopt == null) k = j;
+            if (typeof k.tbopt.tc === 'undefined') k.tbopt.tc = 0;
+            if (typeof k.tbopt.tp === 'undefined') k.tbopt.tp = 0;
+            j = k;
+        }
+        if (m == 'v') j['tbopt']['v']++;
+        else if (m == 's') j['tbopt']['s']++;
+        else if (m == 'tc') j['tbopt']['tc']++;
+        else if (m == 'tp') j['tbopt']['tp']++;
+        j = JSON.stringify(j);
+
+        if (window.postMessage) {
+            top.postMessage(j,'*');
+        }
+
+        j = typeof btoa === 'function' ? btoa(j) : j;
+        setCookie(cookieName, j, cookieDays);
+    };
+    setup();
+})();
+</script>
+</head>
+<body>
+
+</body></html>

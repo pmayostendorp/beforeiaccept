@@ -1,0 +1,3 @@
+BrightTag.instance.errors({enabled:false});
+BrightTag.instance.appendContent('\x3cscript src\x3d\x22//i.simpli.fi/dpx.js?cid\x3d13194\x26action\x3d100\x26segment\x3dplaystation_home\x26m\x3d1\x22\x3e\x3c/script\x3e',{tagId:1518841});
+BrightTag.instance.appendContent('\x3cscript\x3e(function(a,b,d){var c\x3da.getElementsByTagName(b)[0],a\x3da.createElement(b);a.async\x3d!0;a.src\x3dd;c.parentNode.insertBefore(a,c)})(document,\x22script\x22,\x22//d.turn.com/r/dft/id/L21rdC8yNy9waWQvMzUwNjgzMzkvdC8w\x22);\x3c/script\x3e',{tagId:2437109});

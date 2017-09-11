@@ -1,0 +1,43 @@
+
+
+
+	document.write("<!-- Start Quantcast tag -->");
+		document.write("<" + "script type='text/javascript'>_qoptions={");
+		document.write("qacct:'p-a3g2Mplggde4A',");
+		document.write("labels:'SportsReference.AllSports'");
+		document.write("};");
+		document.write("<" + "/script>");
+		document.write("<" + "script type='text/javascript' src='http://edge.quantserve.com/quant.js'><" + "/script>");
+		document.write("<" + "noscript>");
+		document.write("<" + "img src='http://pixel.quantserve.com/pixel/p-a3g2Mplggde4A.gif' style='display: none;' border='0' height='1' width='1' alt='Quantcast'/>");
+		document.write("<" + "/noscript>");
+	document.write("<!-- End Quantcast tag -->");	
+ 
+	document.write("<!-- Begin comScore tag -->");
+	document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js?c1=2&c2=6036378&c3=&c4=&c5=&c6=&c10=' %3E%3C/script%3E")); 
+	document.write("<" + "noscript>");
+	document.write("<" + "img src='http://b.scorecardresearch.com/b?c1=2&c2=6036378&c3=&c4=&c5=&c6=&c10=&cj=1' width='0' height='0' style='display: none;' />");
+	document.write("<" + "/noscript>");
+	document.write("<!-- End comScore tag -->");
+
+	document.write("<" + "script type=text/javascript>");
+	document.write("(function () { var d = new Image(1, 1);	d.onerror = d.onload = function () { d.onerror = d.onload = null; }; d.src = ['//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603545h&cg=0&cc=1&si=', escape(window.location.href), '&rp=', escape(document.referrer), '&ts=compact&rnd=', (new Date()).getTime()].join(''); })();");
+	document.write("<" + "/script>");
+	document.write("<" + "noscript>");
+	document.write("<" + "div><" + "img src='//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603545h&amp;cg=0&amp;cc=1&amp;ts=noscript' width='1' height='1' alt='' /><" + "/div>");
+	document.write("<" + "/noscript>");
+
+	document.write("<" + "script type=text/javascript>");
+	document.write("var utag_data = { ");
+	document.write("}");
+	document.write("<" + "/script>");
+	
+	document.write("<" + "script type=text/javascript>");
+	document.write("(function(a,b,c,d){");
+	document.write("a='//tags.tiqcdn.com/utag/foxsports/yardbarker/prod/utag.js';");
+	document.write("b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;");
+	document.write("a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);");
+	document.write("})();");
+	document.write("<" + "/script>");
+
+

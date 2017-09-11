@@ -1,0 +1,545 @@
+/* 2015-06-25 */
+lbVersion = '3.0.2';
+newRandom = new String(Math.random()); newRandom = newRandom.substring(2, 12);
+
+//var utag_data = {};
+
+function URLparser(str) {
+    var o = URLparser.options,
+		m = o.parser[o.strictMode ? "strict" : "loose"].exec(str),
+		uri = {},
+		i = 14;
+    while (i--) uri[o.key[i]] = m[i] || "";
+    uri[o.q.name] = {};
+    uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
+        if ($1) uri[o.q.name][$1] = $2;
+    });
+    return uri;
+}
+URLparser.options = {
+    strictMode: false,
+    key: ["source", "protocol", "authority", "userInfo", "user", "password", "host", "port", "relative", "path", "directory", "file", "query", "anchor"],
+    q: {
+        name: "queryKey",
+        parser: /(?:^|&)([^&=]*)=?([^&]*)/g
+    },
+    parser: {
+        strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
+        loose: /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
+    }
+}
+function createCookie(name, value, days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+function updateCookie(cName, cValue, cDelim, cExpires) {
+    try {
+        var cOldValue = (readCookie(cName) != null) ? readCookie(cName) : '';
+        var cNewValue = cOldValue;
+        var cValueTerms = cValue.split(',');
+        for (var i = 0; i < cValueTerms.length; i++) {
+            var cOldValueTerms = cOldValue.split(cDelim); var addValue = true;
+            for (var j = 0; j < cOldValueTerms.length; j++) { if (cValueTerms[i] == cOldValueTerms[j]) { addValue = false; } }
+            if (addValue) { cNewValue += (cNewValue != '') ? cDelim + cValueTerms[i] : cValueTerms[i]; }
+        }
+        createCookie(cName, cNewValue, cExpires);
+    }
+    catch (e) { if (isInDebug) { console.error('Update Error \n Error - ' + e); } }
+}
+function eraseCookie(name) { createCookie(name, "", -1); }
+function appendScript(scriptURL, scriptID) {
+    try {
+        newScript = document.createElement('script'); scriptElement = document.getElementsByTagName('script')[0];
+        newScript.type = 'text/javascript'; newScript.id = scriptID + '_' + newRandom;
+        newScript.src = scriptURL;
+        scriptElement.parentNode.insertBefore(newScript, scriptElement);
+        scriptElement = null; newScript = null;
+        if (isInDebug) { console.info('Script Loaded from LB: ID - ' + scriptID + '\n URL - ' + scriptURL); }
+    }
+    catch (e) { if (isInDebug) { console.error('Script Not Loaded from LB: ID - ' + scriptID + '\n URL - ' + scriptURL + '\n Error - ' + e); } }
+}
+function appendIframe(iFrameURL, iFrameID) {
+    try {
+        pixel_iframe = document.createElement('iframe');
+        pixel_iframe.setAttribute('id', iFrameID + '_' + newRandom);
+        pixel_iframe.setAttribute('style', 'display:none');
+        pixel_iframe.style.cssText = 'display:none';
+        pixel_iframe.src = iFrameURL;
+        appendElement = (typeof document.body != undefined) ? document.body : document.head;
+        appendElement.appendChild(pixel_iframe);
+        pixel_iframe = null;
+        if (isInDebug) { console.info('iFrame Loaded from LB: ID - ' + iFrameID + '\n URL - ' + iFrameURL); }
+    }
+    catch (e) { if (isInDebug) { console.error('iFrame Not Loaded from LB: ID - ' + iFrameID + '\n URL - ' + iFrameURL + '\n Error - ' + e); } }
+}
+function loadPixel(otherURLs) {
+    var otherPixels = otherURLs.split(',');
+    for (var i = 0; i < otherPixels.length; i++) {
+        try {
+            var trackingPixel = new Image(1, 1); trackingPixel.src = otherPixels[i]; trackingPixel = null;
+            if (isInDebug) { console.info('Pixel Loaded from LB: \n URL - ' + otherPixels[i]); }
+        }
+        catch (e) { if (isInDebug) { console.error('Pixel Not Loaded from LB: \n URL - ' + otherPixels[i] + '\n Error - ' + e); } }
+    }
+}
+function loadZAPtracker(lbAction, lbParams, redirURL) {
+    lbParamsList = '';
+    lbParamsLog = '';
+    lbParamsCount = 1;
+    if ((lbParams != '') && (lbParams != 'undefined') && (lbParams != undefined)) {
+        var lbParamsTerms = lbParams.split(',');
+        for (i = 0; i < lbParamsTerms.length; i++) {
+
+            lbParamsList += '&migParam' + lbParamsCount + '=' + escape(lbParamsTerms[i]);
+            lbParamsLog += '\n Param ' + lbParamsCount + ' - ' + escape(lbParamsTerms[i]);
+            lbParamsCount++;
+        }
+    }
+    lbTrackerlog = 'Action Tag Loading : \n Action - ' + lbAction + lbParamsLog;
+    if (isInDebug) { console.info(lbTrackerlog); }
+    trackerURL = zap_base_url + migID + '&migRandom=' + newRandom + '&migAction=' + lbAction + lbParamsList + (((redirURL != undefined) && (redirURL != '')) ? ('&migUnencodedDest=' + redirURL) : '');
+    loadPixel(trackerURL);
+    return;
+}
+function ZAPlink(linkID, lbAction, otherURLs) {
+    if (document.getElementById(linkID) != null) {
+        var zappedLink = document.getElementById(linkID);
+        try {
+            if (window.addEventListener) { zappedLink.addEventListener('click', function () { loadZAPtracker(lbAction, document.getElementById(linkID).href); if (otherURLs != '') { loadPixel(otherURLs); } }, false); }
+            else if (window.attachEvent) { zappedLink.attachEvent('onclick', function () { loadZAPtracker(lbAction, document.getElementById(linkID).href); if (otherURLs != '') { loadPixel(otherURLs); } }); }
+            if (isInDebug) { console.info('Link Zapped: ID - ' + linkID + ', \n  HREF URL - ' + document.getElementById(linkID).href); }
+        }
+        catch (e) { if (isInDebug) { console.error('Link Not Zapped: ID - ' + linkID + ', \n  HREF URL - ' + document.getElementById(linkID).href + ', \n  Error - ' + e); } }
+    }
+    else { if (isInDebug) { console.info('Link Not Zapped: ID - ' + linkID + ' not found'); } }
+}
+function ZAPform(formID, lbAction, otherURLs) {
+    if (document.getElementById(formID) != null) {
+        zappedForm = document.getElementById(formID);
+        try {
+            if (window.addEventListener) { zappedForm.addEventListener('submit', function () { ZAPformTracker(lbAction, otherURLs); }, false); }
+            else if (window.attachEvent) { zappedForm.attachEvent('onsubmit', function () { ZAPformTracker(lbAction, otherURLs); }); }
+            if (isInDebug) { console.info('Form Zapped: ID - ' + formID + ', \n  Action URL - ' + document.getElementById(formID).action); }
+        }
+        catch (e) { if (isInDebug) { console.error('Form Not Zapped: ID - ' + formID + ', \n  Action URL - ' + document.getElementById(formID).action + ', \n  Error - ' + e); } }
+    }
+    else { if (isInDebug) { console.info('Form Not Zapped: ID - ' + formID + ' not found'); } }
+}
+function ZAPformTracker(lbAction, otherURLs) {
+    loadZAPtracker(lbAction, '');
+    if (otherURLs != '') { loadPixel(otherURLs); }
+    return true;
+}
+function lbLoad(clientID, initFunctions, initVars, clientCustom) {
+    pos_list = '';
+    initAudience = false;
+    initTrader = false;
+    initN1 = false;
+    initZ1M = false;
+    initZ1X = false;
+    initMap = false;
+    initLcase = false;
+    initFB = false;
+    initTealium = false;
+    initHybrid = false;
+    
+
+    onFunctions = initFunctions.split('|');
+    for (i = 0; i < onFunctions.length; i++) {
+        switch (onFunctions[i]) {
+            case 'r': pos_list += ((pos_list != '') ? ',' : '') + 'x90'; break;
+            case 'g': pos_list += ((pos_list != '') ? ',' : '') + 'x94'; break;
+            case 'm': initMap = true; break;
+            case 'l': initLcase = true; break;
+            case 't': initTealium = true; break;
+            case 'h': initHybrid = true; break;
+            //case 'a': initAudience = true; break; //remove
+            //case 't': initTrader = true; break; //remove
+            //case 'N1': initN1 = true; break; //remove
+            case 'Z1M': initZ1M = true; break; //remove
+            case 'Z1X': initZ1X = true; break; //remove
+            //case 'f': initFB = true; break;
+        }
+    }
+    aCookie = '';
+    if (typeof (initVars) != undefined) {
+        fVars = initVars.split('|');
+        for (i = 0; i < fVars.length; i++) {
+            fvPair = fVars[i].split('=');
+            switch (fvPair[0]) {
+                case 'a': aCookie = fvPair[1]; break;
+            }
+        }
+    }
+    pos_list += ((pos_list != '') ? ',' : '') + 'x95';
+    if (initMap) {
+        lb_mapped_tokens = '';
+        if (lb_data != '') {
+            lbDataMapTerms = lb_data.split('&');
+            for (i = 0; i < lbDataMapTerms.length; i++) {
+                lbDataMapPair = lbDataMapTerms[i].split('=');
+                lb_mapped_tokens += '&_RM_HTML_' + escape(lbDataMapPair[0]) + '_=' + escape(lbDataMapPair[1]);
+            }
+        }
+    }
+    else { lb_mapped_tokens = ''; }
+    if (initLcase) { lb_url = lb_url.toLowerCase(); }
+    lb_query = '?request=LB&' + lbQuery + '&_RM_HTML_ID_=' + (((clientID != undefined) && (clientID != '')) ? clientID : '0000') + lb_tokens + refTrackerQuery + refTrackerData + '&XE' + lbAnalytics + refTrackerQuery + '&XE'
+    lb_pixel = lbProtocol + 'b3.mookie1.com/2/' + lb_url + '/' + newRandom + '@' + pos_list + '?request=LB&' + lbQuery + '&_RM_HTML_ID_=' + (((clientID != undefined) && (clientID != '')) ? clientID : '0000') + lb_mapped_tokens + lb_tokens + refTrackerQuery + refTrackerData + social_data;
+    N1_pixel = lbProtocol + 'network.realmedia.com/2/' + lb_url + '/' + newRandom + '@x95?request=LB&' + lbQuery + '&_RM_HTML_ID_=' + (((clientID != undefined) && (clientID != '')) ? clientID : '0000') + lb_mapped_tokens + lb_tokens + refTrackerQuery + refTrackerData + social_data;
+    N1_CM = lbProtocol + 'network.realmedia.com/2/track_targeting/cookie/lb/' + newRandom + '@x88?cAction=Add&cName=RTG&cValue=' + lbHost + '&cExpires=30&cAnalytics=RTG'
+    Z1M_pixel = lbProtocol + 'b3.mookie1.com/2/MIG_COMP/' + lb_url + '/' + newRandom + '@x95?request=LB&' + lbQuery + '&_RM_HTML_ID_=' + (((clientID != undefined) && (clientID != '')) ? clientID : '0000') + lb_mapped_tokens + lb_tokens + refTrackerQuery + refTrackerData + social_data;
+    Z1X_pixel = lbProtocol + 'b3.mookie1.com/2/XAXIS_COMP/' + lb_url + '/' + newRandom + '@x95?request=LB&' + lbQuery + '&_RM_HTML_ID_=' + (((clientID != undefined) && (clientID != '')) ? clientID : '0000') + lb_mapped_tokens + lb_tokens + refTrackerQuery + refTrackerData + social_data;
+    lb_trader = lbProtocol + 'b3.mookie1.com/2/Trader/' + lb_url + '/' + newRandom + '@x96?request=LB&' + lbQuery + lb_mapped_tokens + lb_tokens;
+    lb_audience = lbProtocol + 'b3.mookie1.com/2/Audience/' + lb_url + '/' + newRandom + '@x96?request=LB&' + lbQuery + lb_mapped_tokens + lb_tokens;
+
+    tealium_url = lbProtocol + 'tags.tiqcdn.com/utag/xaxis/' + lbHost + '/prod/utag.js';
+        
+    if (((!isInTest) || (isInDebug))) {
+        if ((!initTealium) || (initHybrid) || (isInDebug)) {
+            appendIframe(lb_pixel, 'lb_pixels');
+            if (initZ1M) { appendIframe(Z1M_pixel, 'lb_Z1M'); }
+            if (initZ1X) { appendIframe(Z1X_pixel, 'lb_Z1X'); }
+        }
+        if (initTealium || initHybrid || isInDebug) { appendScript(tealium_url, 'tealium_controler'); }
+    }
+}
+function lbReload(pageState, tID, tV, tD) {
+    var lb_r_url = lb_url + ((pageState != '') ? ('/' + pageState) : '');
+    lb_val = (tV != '') ? tV.replace(/,/g, '') : '';
+    lb_trans = (tID != '') ? tID : '';
+    lb_tokens = '&_RM_HTML_migTrans_=' + lb_trans + '&_RM_HTML_migValue_=' + lb_val;
+    if (tD != '') {
+        lbDataCount = 1;
+        lbDataTerms = tD.split('&');
+        for (i = 0; i < lbDataTerms.length; i++) {
+            lbDataPair = lbDataTerms[i].split('=');
+            lbQuery += '&' + escape(lbDataPair[0]) + '=' + escape(lbDataPair[1]);
+            lbAnalytics += '&a_name=' + escape(lbDataPair[0]);
+            lbAnalytics += '&' + escape(lbDataPair[0]) + '=' + escape(lbDataPair[1]);
+            lb_tokens += '&_RM_HTML_MP' + lbDataCount + '_=' + escape(lbDataPair[0]) + '--' + escape(lbDataPair[1]);
+            lbDataCount++;
+        }
+        if (lbDataCount <= 5) { for (i = lbDataCount; i <= 5; i++) { lb_tokens += '&_RM_HTML_MP' + lbDataCount + '_='; lbDataCount++; } }
+    }
+    else { lb_tokens += '&_RM_HTML_MP1_=&_RM_HTML_MP2_=&_RM_HTML_MP3_=&_RM_HTML_MP4_=&_RM_HTML_MP5_='; }
+    lb_r_pixel = lbProtocol + 'b3.mookie1.com/2/' + lb_r_url + '/' + newRandom + '@x95,x94?request=LB&' + lbQuery + lb_tokens + '&XE' + lbAnalytics + '&XE';
+    if (isInDebug) { loadLogger(); }
+    if (!isInTest) { appendIframe(lb_r_pixel, 'lb_pixel_reload_' + pageState); }
+}
+var p = function (x) {
+    var q = [], s = (x != null) ? x.toString() : '';
+    if (window.RegExp)
+        s.replace(new RegExp("(sb_[^?=&]+|__sb_[^?=&]+)(=([^&]*))?", "g"), function ($0, $1, $2, $3) { q.push($1 + '=' + $3); });
+    else q = ['sb_err=NoRegExp'];
+    var i = s.indexOf('?');
+    s = (i > 0) ? s.substr(0, i + 1) + q.join('&') : s;
+    return (escape(s));
+};
+function loadLogger() {
+    if (debugCookie == null) { createCookie('lbDebug', 'true', 3650); }
+    var zam_search_terms = lbQuery;
+    zam_search_terms = zam_search_terms.replace(/&&/g, '&');
+    zam_search_terms = (zam_search_terms.indexOf('&') == 0) ? zam_search_terms.substring(1) : zam_search_terms;
+    zam_search_terms = (zam_search_terms.lastIndexOf('&') == (zam_search_terms.length - 1)) ? zam_search_terms.substring(0, (zam_search_terms.length - 1)) : zam_search_terms;
+    zam_search_terms = zam_search_terms.replace(/&/g, ')AND(');
+    var zam_custom_tokens = '';
+    if ((lbData != '') && (lbData != '[& delimited name/value pairs]') && (lbData != '[Attribute/Value Pairs for Custom Data]')) {
+        var lbDataCount = 1; var lbDataTerms = lbData.split('&');
+        for (var i = 0; i < lbDataTerms.length; i++) { var lbDataPair = lbDataTerms[i].split('='); zam_custom_tokens += '\n %%MP' + lbDataCount + '%%               : ' + lbDataPair[0] + '--' + lbDataPair[1] + ', '; lbDataCount++; }
+        //if (lbDataCount <= 5) { for (var i = lbDataCount; i <= 5; i++) { zam_custom_tokens += 'MP' + +lbDataCount + ' : Empty, '; lbDataCount++; } }
+    }
+    //else { zam_custom_tokens += 'MP1 : Empty,  MP2 : Empty, MP3 : Empty, MP4 : Empty, MP5 : Empty'; }
+    var zam_ref_terms = refTrackerQuery;
+    zam_ref_terms = zam_ref_terms.replace(/&&/g, '&');
+    zam_ref_terms = (zam_ref_terms.indexOf('&') == 0) ? zam_ref_terms.substring(1) : zam_ref_terms;
+    zam_ref_terms = (zam_ref_terms.lastIndexOf('&') == (zam_ref_terms.length - 1)) ? zam_ref_terms.substring(0, (zam_ref_terms.length - 1)) : zam_ref_terms;
+    zam_ref_terms = zam_ref_terms.replace(/&/g, ')AND(');
+    console.info(
+		'Lightning Bolt Debug Information' +
+		'\n Version               : ' + lbVersion +
+		'\n Load Type             : ' + (isInIFrame ? 'in iFrame' : 'on page') +
+		'\n Page URL              : ' + lbURL +
+		'\n Page Referrer         : ' + ((lbRef != '') ? lbRef : 'Empty') +
+		'\n Controler OAS Page    : LightningBolt/' + lbHost +
+		'\n Pixel OAS Page        : ' + lb_url +
+		'\n Page Pixel            : @x95' +
+		'\n Global Pixel          : @x94' +
+		'\n Referral Pixel        : @x90' +
+		'\n Trader Matcher        : Trader/' + lb_url + '/@x96' +
+		'\n Audience Matcher      : Audience/' + lb_url + '/@x96' +
+		'\n Targeting Query       : ' + ((zam_search_terms != '') ? '((' + zam_search_terms + '))' : 'Empty') +
+		'\n Targeting Referral    : ' + ((zam_ref_terms != '') ? '((' + zam_ref_terms + '))' : 'Empty') +
+		'\n %%migTrans%%          : ' + ((lb_trans != '') ? lb_trans : 'Empty') +
+		'\n %%migValue%%          : ' + ((lb_val != '') ? lb_val : 'Empty') +
+		'\n Referral Site         : ' + ((lbRef_host != '') ? lbRef_host : 'Empty') +
+		'\n %%Action%%            : ' + ((refAction != '') ? refAction : 'Empty') +
+		'\n %%Type%%              : ' + ((refType != '') ? refType : 'Empty') +
+		'\n %%Engine%%            : ' + ((refEngine != '') ? refEngine : 'Empty') +
+		'\n %%Medium%%            : ' + ((refMedium != '') ? refMedium : 'Empty') +
+		'\n %%Source%%            : ' + ((refSource != '') ? refSource : 'Empty') +
+		'\n %%Category%%          : ' + ((refContent != '') ? refContent : 'Empty') +
+		'\n %%Term%%              : ' + ((refTerm != '') ? refTerm : 'Empty') +
+		'\n %%Campaign%%          : ' + ((refCampaign != '') ? refCampaign : 'Empty') +
+		'\n %%Keyword%%           : ' + ((refKeyword != '') ? refKeyword : 'Empty') +
+		zam_custom_tokens +
+		'\n %%SL%%                : ' + social_loc +
+		'\n %%SR%%                : ' + ((social_ref != '') ? social_ref : 'Empty') +
+		'\n %%SV%%                : ' + ((social_val != '') ? social_val : 'Empty')
+	);
+}
+var isLBLoaded = ((typeof lbLoaded == 'undefined') || (typeof lbLoaded == undefined) || (lbLoaded != true)) ? false : true;
+var isInIFrame = (window.location != window.parent.location) ? true : false;
+lbURL = ''; lbIframeURL = ''; lbRef = ''; lbTitle = '';
+lbAccount = ((typeof lbAcct == 'undefined') || (typeof lbAcct == undefined)) ? 'LightningBolt' : lbAcct;
+if ((typeof lbURLmod == 'undefined') || (typeof lbURLmod == undefined)) {
+    if (typeof migURLmod != 'undefined') { lbURLmod = migURLmod; }
+    else { lbURLmod = ''; }
+}
+if (isInIFrame) {
+    lbIframeURL = document.location.href;
+    lbURL = (lbURLmod != '') ? (lbURLmod + ((lbURLmod.indexOf('?') != -1) ? '&' : '?') + URLparser(document.referrer).query) : ((URLparser(lbIframeURL).queryKey.lbURL != undefined) ? URLparser(lbIframeURL).queryKey.lbURL : document.referrer);
+    if (typeof lbRef == 'undefined') { lbRef = (URLparser(lbIframeURL).queryKey.lbRef != undefined) ? URLparser(lbIframeURL).queryKey.lbRef : ''; }
+    if (typeof migRef == 'undefined') { lbRef = (URLparser(lbIframeURL).queryKey.migRef != undefined) ? URLparser(lbIframeURL).queryKey.migRef : ''; }
+}
+else {
+    lbURL = (lbURLmod != '') ? (lbURLmod + ((lbURLmod.indexOf('?') != -1) ? '&' : '?') + URLparser(document.location.href).query) : document.location.href;
+    lbTitle = parent.document.title;
+    lbRef = parent.document.referrer;
+}
+debugCookie = readCookie('lbDebug');
+var isInDebug = ((URLparser(lbURL).queryKey.lbDebug == 'y') || (debugCookie != null)) ? true : false;
+var isInTest = ((typeof lbTest != 'undefined') && (lbTest == 'y')) ? true : false;
+lbURL = lbURL.replace(/@/g, '-');
+if (URLparser(lbURL).queryKey.lbRef != undefined) { lbRef = URLparser(lbURL).queryKey.lbRef; }
+else if (URLparser(lbURL).queryKey.migRef != undefined) { lbRef = URLparser(lbURL).queryKey.migRef; }
+lbRef = lbRef.replace(/@/g, '-');
+lbURLEncoded = escape(lbURL); lbRefEncoded = escape(lbRef); lbTitleEncoded = escape(lbTitle);
+lbProtocol = (window.location.protocol !== 'https:') ? 'http://' : 'https://';
+lbHost = URLparser(lbURL).host.toLowerCase();
+lbRef_host = URLparser(lbRef).host.toLowerCase();
+lbPath = URLparser(lbURL).path;
+lbQuery = URLparser(lbURL).query;
+lbAnchor = URLparser(lbURL).anchor;
+lbAnchor = lbAnchor.replace(/=/g, '--');
+hostParts = lbHost.split('.');
+if (hostParts[0].indexOf('www') != -1) { lbHost = lbHost.substring(hostParts[0].length + 1); }
+if (lbHost.lastIndexOf('.') == (lbHost.length - 1)) { lbHost = lbHost.substring(0, (lbHost.length - 1)) }
+if (lbHost == '') { lbHost = 'unknown_site'; }
+if ((lbPath != '')) {
+    if (lbPath != '/') {
+        if (lbPath.indexOf(';') != -1) { lbPath = lbPath.substring(0, lbPath.indexOf(';')); }
+        if (lbPath.indexOf('%3b') != -1) { lbPath = lbPath.substring(0, lbPath.indexOf('%3b')); }
+        if (lbPath.indexOf('%3B') != -1) { lbPath = lbPath.substring(0, lbPath.indexOf('%3B')); }
+        if (URLparser(lbURL).file == '') {
+            if (lbPath.lastIndexOf('/') != (lbPath.length - 1)) { lbPath += '/index'; }
+            else { lbPath += 'index'; }
+        }
+    }
+    else { lbPath += 'index'; }
+}
+else { lbPath = '/index'; }
+lb_url = (window.location.protocol !== 'file:') ? lbHost + lbPath : 'localhost';
+lbAnalytics = '&LB_Site=' + lbHost;
+if (lbQuery != '') {
+    lbQueryTemp = '';
+    lbQueryTerms = lbQuery.split('&');
+    for (i = 0; i < lbQueryTerms.length; i++) {
+        lbQueryPair = lbQueryTerms[i].split('=');
+        if (lbQueryPair[0] != 'lbDebug') {
+            lbQueryTemp += ((lbQueryTemp != '') ? '&' : '') + ((lbQueryPair[1] == undefined) ? ('keyword=' + escape(lbQueryPair[0])) : (escape(lbQueryPair[0]) + '=' + escape(lbQueryPair[1])));
+            lbAnalytics += ((lbQueryPair[1] != undefined) ? ('&k_name=' + escape(lbQueryPair[0])) : '') + '&' + (escape(lbQueryPair[0]) + '=' + escape(lbQueryPair[1]));
+        }
+    }
+    lbQuery = lbQueryTemp;
+}
+if (lbAnchor != '') { lbQuery += ((lbQuery != '') ? '&' : '') + 'anchor=' + lbAnchor; }
+lbQuery += ((lbQuery != '') ? '&' : '') + 'protocol=' + lbProtocol;
+lbQuery += ((lbQuery != '') ? '&' : '') + 'pageTitle=' + lbTitleEncoded;
+lb_val = '';
+if (typeof lbVal == 'undefined') {
+    lbVal = ''
+    if (URLparser(lbIframeURL).queryKey.lbVal != undefined) { lbVal = URLparser(lbIframeURL).queryKey.lbVal; }
+    if (typeof lbValue != 'undefined') { lbVal = lbValue; }
+    if (typeof migValue == 'undefined') { if (URLparser(lbIframeURL).queryKey.migValue != undefined) { lbVal = URLparser(lbIframeURL).queryKey.migValue; } }
+    else { lbVal = migValue; }
+}
+if (lbVal == '[TRANSACTION VALUE]') { lbVal = ''; }
+lb_val = (lbVal != '') ? ((typeof lbVal == 'string') ? lbVal.replace(/,/g, '') : lbVal) : 0;
+if (!isNaN(lb_val)) {
+    lb_val = Math.round(lb_val * 100) / 100;
+    lb_val = lb_val.toString();
+}
+lb_val_temp = lb_val.split('.');
+if (lb_val_temp[1] != undefined) { if (lb_val_temp[1].length == 1) { lb_val += '0' } }
+else { lb_val += '.00'; }
+if (lb_val != '') { lbQuery += ((lbQuery != '') ? '&' : '') + 'value=' + lb_val; }
+var mig_value = lb_val;
+lb_trans = '';
+if (typeof lbTrans == 'undefined') {
+    lbTrans = ''
+    if (URLparser(lbIframeURL).queryKey.lbTrans != undefined) { lbTrans = URLparser(lbIframeURL).queryKey.lbTrans; }
+    if (typeof migTrans == 'undefined') { if (URLparser(lbIframeURL).queryKey.migTrans != undefined) { lbTrans = URLparser(lbIframeURL).queryKey.migTrans; } }
+    else { lbTrans = migTrans; }
+}
+if ((lbTrans != '') && (lbTrans != '[TRANSACTION ID]')) { lb_trans = lbTrans; }
+if (lb_trans != '') { lbQuery += ((lbQuery != '') ? '&' : '') + 'trans=' + lb_trans; }
+var mig_trans = lb_trans
+lb_tokens = '&_RM_HTML_migTrans_=' + lb_trans + '&_RM_HTML_migValue_=' + lb_val;
+lb_data = '';
+if (typeof lbData == 'undefined') {
+    lbData = ''
+    if (URLparser(lbIframeURL).queryKey.lbData != undefined) { lbData = URLparser(lbIframeURL).queryKey.lbData; }
+    if (typeof migData == 'undefined') { if (URLparser(lbIframeURL).queryKey.migData != undefined) { lbData = URLparser(lbIframeURL).queryKey.migData; } }
+    else { lbData = migData; }
+}
+if ((lbData != '') && (lbData != '[& delimited name/value pairs]') && (lbData != '[Attribute/Value Pairs for Custom Data]')) { lb_data = lbData; }
+if (lb_data != '') {
+    lbDataCount = 1;
+    lbDataTerms = lb_data.split('&');
+    for (i = 0; i < lbDataTerms.length; i++) {
+        lbDataPair = lbDataTerms[i].split('=');
+        lbQuery += '&' + escape(lbDataPair[0]) + '=' + escape(lbDataPair[1]);
+        lbAnalytics += '&a_name=' + escape(lbDataPair[0]);
+        lbAnalytics += '&' + escape(lbDataPair[0]) + '=' + escape(lbDataPair[1]);
+        lb_tokens += '&_RM_HTML_MP' + lbDataCount + '_=' + escape(lbDataPair[0]) + '--' + escape(lbDataPair[1]);
+        lbDataCount++;
+    }
+    if (lbDataCount <= 5) { for (i = lbDataCount; i <= 5; i++) { lb_tokens += '&_RM_HTML_MP' + lbDataCount + '_='; lbDataCount++; } }
+}
+else { lb_tokens += '&_RM_HTML_MP1_=&_RM_HTML_MP2_=&_RM_HTML_MP3_=&_RM_HTML_MP4_=&_RM_HTML_MP5_='; }
+social_loc = p(lbURL); social_ref = p(lbRef); social_val = (lb_val != '') ? (parseFloat(lb_val) * 100) : '';
+social_data = "&_RM_HTML_SL_=" + social_loc + "&_RM_HTML_SR_=" + social_ref + "&_RM_HTML_SV_=" + social_val;
+lbExtRef = ((lbRef != '') && (URLparser(lbRef).host != URLparser(lbURL).host)) ? true : false;
+lbAnalytics += lbExtRef ? '&tax23_RefDocLoc=' + lbRef_host : '';
+createCookie('cookieCheck', 'true', '1');
+if (readCookie('cookieCheck') != null) { lbAnalytics += '&if_nt_CookieAccept=Y'; eraseCookie('cookieCheck'); }
+refMedium = '';
+if (URLparser(lbURL).queryKey.lbMedium != undefined) { refMedium = URLparser(lbURL).queryKey.lbMedium; }
+else if (URLparser(lbURL).queryKey.migMedium != undefined) { refMedium = URLparser(lbURL).queryKey.migMedium; }
+else if (URLparser(lbURL).queryKey.utm_medium != undefined) { refMedium = URLparser(lbURL).queryKey.utm_medium; }
+refMedium = refMedium.toLowerCase();
+refSource = '';
+if (URLparser(lbURL).queryKey.lbSource != undefined) { refSource = URLparser(lbURL).queryKey.lbSource; }
+else if (URLparser(lbURL).queryKey.migSource != undefined) { refSource = URLparser(lbURL).queryKey.migSource; }
+else if (URLparser(lbURL).queryKey.utm_source != undefined) { refSource = URLparser(lbURL).queryKey.utm_source; }
+refSource = refSource.toLowerCase();
+refContent = '';
+if (URLparser(lbURL).queryKey.lbContent != undefined) { refContent = URLparser(lbURL).queryKey.lbContent; }
+else if (URLparser(lbURL).queryKey.migContent != undefined) { refContent = URLparser(lbURL).queryKey.migContent; }
+else if (URLparser(lbURL).queryKey.utm_content != undefined) { refContent = URLparser(lbURL).queryKey.utm_content; }
+refContent = refContent.toLowerCase();
+refTerm = '';
+if (URLparser(lbURL).queryKey.lbTerm != undefined) { refTerm = URLparser(lbURL).queryKey.lbTerm; }
+else if (URLparser(lbURL).queryKey.migTerm != undefined) { refTerm = URLparser(lbURL).queryKey.migTerm; }
+else if (URLparser(lbURL).queryKey.utm_term != undefined) { refTerm = URLparser(lbURL).queryKey.utm_term; }
+refTerm = refTerm.toLowerCase();
+refCampaign = '';
+if (URLparser(lbURL).queryKey.lbCampaign != undefined) { refCampaign = URLparser(lbURL).queryKey.lbCampaign; }
+else if (URLparser(lbURL).queryKey.migCampaign != undefined) { refCampaign = URLparser(lbURL).queryKey.migCampaign; }
+else if (URLparser(lbURL).queryKey.utm_campaign != undefined) { refCampaign = URLparser(lbURL).queryKey.utm_campaign; }
+refCampaign = refCampaign.toLowerCase();
+refKeyword = '';
+if (URLparser(lbRef).queryKey.q != undefined) { refKeyword = URLparser(lbRef).queryKey.q; }
+else if (URLparser(lbRef).queryKey.p != undefined) { refKeyword = URLparser(lbRef).queryKey.p; }
+refKeyword = refKeyword.toLowerCase();
+refType = ''; refEngine = '';
+if ((refMedium == 'paid-search') || (refMedium == 'paid%2bsearch') || (refMedium == 'cpc') || (lbRef.indexOf('aclk') != -1) || (refSource.indexOf('paid') != -1)) {
+    refType = 'paid-search';
+    if ((refSource.indexOf('google') != -1) || (lbRef.indexOf('aclk') != -1)) { refEngine = 'google'; }
+    else if ((refSource.indexOf('msn') != -1) || (refSource.indexOf('bing') != -1) || (refSource == 'yahoo%2fbing')) { refEngine = 'msn'; }
+    else { refEngine = 'other'; }
+}
+else if (refMedium == 'paid-social') {
+    refType = 'paid-social';
+    if ((refSource == 'fb') || (lbRef_host.indexOf('facebook.') != -1)) { refEngine = 'facebook'; }
+    else if ((refSource == 'twitter') || (lbRef_host.indexOf('twitter.') != -1) || (lbRef.indexOf('/t.co/') != -1)) { refEngine = 'twitter'; }
+    else if ((refSource == 'youtube') || (lbRef_host.indexOf('youtube.') != -1)) { refEngine = 'youtube'; }
+    else if ((refSource == 'pinterest') || (lbRef_host.indexOf('pinterest.') != -1)) { refEngine = 'pinterest'; }
+    else if ((refSource == 'reddit') || (lbRef_host.indexOf('reddit.') != -1)) { refEngine = 'reddit'; }
+    else if ((refSource == 'tumblr') || (lbRef_host.indexOf('tumblr.') != -1)) { refEngine = 'tumblr'; }
+    else { refEngine = 'other'; }
+}
+else if ((refMedium == 'email') || (refMedium == 'e-mail')) { refType = 'email'; }
+else if (refMedium == 'affiliate') { refType = 'affiliate'; }
+else if (refMedium == 'display') { refType = 'display'; }
+else if (refMedium == 'rtb') { refType = 'rtb'; }
+else if (refMedium == 'video') { refType = 'video'; }
+else if (lbExtRef) {
+    if (lbRef_host.indexOf('google.') != -1) { refEngine = 'google'; refType = 'organic-search'; }
+    else if (lbRef_host.indexOf('bing.') != -1) { refEngine = 'bing'; refType = 'organic-search'; }
+    else if (lbRef_host.indexOf('yahoo.') != -1) { refEngine = 'yahoo'; refType = 'organic-search'; }
+    else if (lbRef_host.indexOf('ask.') != -1) { refEngine = 'ask'; refType = 'organic-search'; }
+    else if (lbRef_host.indexOf('aol.') != -1) { refEngine = 'aol'; refType = 'organic-search'; }
+    else if (lbRef_host.indexOf('facebook.') != -1) { refEngine = 'facebook'; refType = 'social'; }
+    else if ((lbRef_host.indexOf('twitter.') != -1) || (lbRef.indexOf('/t.co/') != -1)) { refEngine = 'twitter'; refType = 'social'; }
+    else if (lbRef_host.indexOf('youtube.') != -1) { refEngine = 'youtube'; refType = 'social'; }
+    else if (lbRef_host.indexOf('pinterest.') != -1) { refEngine = 'pinterest'; refType = 'social'; }
+    else if (lbRef_host.indexOf('reddit.') != -1) { refEngine = 'reddit'; refType = 'social'; }
+    else if (lbRef_host.indexOf('tumblr.') != -1) { refEngine = 'tumblr'; refType = 'social'; }
+    else { refEngine = 'organic'; }
+}
+if (refType == '') { refType = refMedium; } if (refEngine == '') { refEngine = refSource; }
+refAction = refType + (((refType != '') && (refEngine != '')) ? '-' : '') + refEngine; if (refAction == '') { refAction = 'null'; }
+
+var refTrackerQuery = ((refType != '') ? '&migType=' + refType : '') + ((refEngine != '') ? '&migEngine=' + refEngine : '') + ((refMedium != '') ? '&migMedium=' + refMedium : '') + ((refSource != '') ? '&migSource=' + refSource : '') + ((refContent != '') ? '&migContent=' + refContent : '') + ((refTerm != '') ? '&migTerm=' + refTerm : '') + ((refCampaign != '') ? '&migCampaign=' + refCampaign : '') + ((refKeyword != '') ? '&migKeyword=' + refKeyword : '');
+var refTrackerData = '&_RM_HTML_Action_=' + refAction + '&_RM_HTML_Medium_=' + refMedium + '&_RM_HTML_Source_=' + refSource + '&_RM_HTML_Content_=' + refContent + '&_RM_HTML_Term_=' + refTerm + '&_RM_HTML_Campaign_=' + refCampaign + '&_RM_HTML_Keyword_=' + refKeyword + '&_RM_HTML_Referral_=' + lbRefEncoded;
+
+zap_base_url = lbProtocol + 't.mookie1.com/t/v1/event?migSource=mig&migClientId=';
+lb_controler = lbProtocol + 'b3.mookie1.com/2/' + lbAccount + '/' + lbHost + '/' + newRandom + '@x96?request=LB&' + lbQuery + lb_tokens;
+
+if (!isLBLoaded) {
+    /* OAS Code Begin */
+    try { appendScript(lb_controler, 'lb_controler'); }
+    catch (e) { if (isInDebug) { console.error('Error - ' + e); } }
+    /* OAS Code End */
+    /* Tealium Code Begin 
+    try { if (isInDebug) { appendScript(lbProtocol + 'tags.tiqcdn.com/utag/xaxis/' + lbHost + '/prod/utag.js', 'tealium_controler'); } }
+    catch (e) { if (isInDebug) { console.error('Error - ' + e); } }
+    Tealium Code End */
+    try { if (isInDebug) { loadLogger(); } }
+    catch (e) { if (isInDebug) { console.error('Error - ' + e); } }
+    var lbLoaded = true;
+}
+
+
+/* 
+
+Change Log
+
+	2.1.2 - 2013/03/14
+
+		1) Protocol Fix
+
+	2.1.3 - 2013/03/17
+
+		1) Support for Multi Account
+		2) Deprecated MIG Variables
+		3) Updated Logger
+
+	2.1.4 - 2013/03/35
+
+		1) Referral Updates (added Pinterest, reddit, tumblr)
+
+	2.1.5 - 2014/01/15
+
+		1) New check to see if controller has been loaded to prevent duplicate counting
+		2) Site Side Privacy Function
+		3) Opt In Function
+
+*/

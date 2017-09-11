@@ -1,0 +1,1052 @@
+/*!
+  * snack.js (c) Ryan Florence
+  * https://github.com/rpflorence/snack
+  * MIT License
+  * Inspiration and code adapted from
+  *  MooTools      (c) Valerio Proietti   MIT license
+  *  jQuery        (c) John Resig         Dual license MIT or GPL Version 2
+  *  contentLoaded (c) Diego Perini       MIT License
+  *  Zepto.js      (c) Thomas Fuchs       MIT License
+  * Version: 1.2.4dev at fd5896fc2121c45400969b041dec1ad9d805354c
+*/
+"function" != typeof Object.create && (Object.create = function(e) {
+function t() {}
+return t.prototype = e, new t();
+}), !function(e) {
+var t = e.snack = {}, n = 0, r = Object.prototype.toString, i = [].indexOf, o = [].push;
+t.extend = function() {
+if (1 == arguments.length) return t.extend(t, arguments[0]);
+for (var e, n = arguments[0], r = 1, i = arguments.length; i > r; r++) for (e in arguments[r]) n[e] = arguments[r][e];
+return n;
+}, t.extend({
+v:"1.2.4dev",
+bind:function(e, t, n) {
+return n = n || [], function() {
+return o.apply(n, arguments), e.apply(t, n);
+};
+},
+punch:function(e, n, r, i) {
+var o = e[n];
+e[n] = i ? function() {
+return o.apply(e, arguments), r.apply(e, arguments);
+} :function() {
+var n = [].slice.call(arguments, 0);
+return n.unshift(t.bind(o, e)), r.apply(e, n);
+};
+},
+create:function(e, n) {
+var r = Object.create(e);
+if (!n) return r;
+for (var i in n) n.hasOwnProperty(i) && (e[i] && "function" == typeof n[i] ? t.punch(r, i, n[i]) :r[i] = n[i]);
+return r;
+},
+id:function() {
+return ++n;
+},
+each:function(e, t, n) {
+if (void 0 === e.length) {
+for (var r in e) e.hasOwnProperty(r) && t.call(n, e[r], r, e);
+return e;
+}
+for (var i = 0, o = e.length; o > i; i++) t.call(n, e[i], i, e);
+return e;
+},
+parseJSON:function(t) {
+if ("string" == typeof t) {
+t = t.replace(/^\s+|\s+$/g, "");
+var n = /^[\],:{}\s]*$/.test(t.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g, "@").replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, "]").replace(/(?:^|:|,)(?:\s*\[)+/g, ""));
+if (!n) throw "Invalid JSON";
+var r = e.JSON;
+return r && r.parse ? r.parse(t) :new Function("return " + t)();
+}
+},
+isArray:function(e) {
+return e instanceof Array || "[object Array]" == r.call(e);
+},
+indexOf:i ? function(e, t) {
+return i.call(t, e);
+} :function(e, t) {
+for (var n = 0, r = t.length; r > n; n++) if (t[n] === e) return n;
+return -1;
+}
+});
+}(window), !function(e, t) {
+var n, r = {};
+e.wrap = function(t, i) {
+"string" == typeof t && (t = n(t, i)), t.length || (t = [ t ]);
+for (var o = Object.create(r), a = 0, c = t.length; c > a; a++) o[a] = t[a];
+return o.length = c, o.id = e.id(), o;
+}, e.extend(e.wrap, {
+define:function(t, n) {
+if ("string" == typeof t) r[t] = n; else for (var i in t) e.wrap.define(i, t[i]);
+},
+defineEngine:function(e) {
+n = e;
+}
+}), e.wrap.defineEngine(function(e, n) {
+return "string" == typeof n && (n = t.querySelector(n)), (n || t).querySelectorAll(e);
+});
+}(snack, document), !function(e, t, n) {
+function r(i) {
+("readystatechange" != i.type || "complete" == n.readyState) && (("load" == i.type ? t :n)[a](c + i.type, r, !1), 
+!s && (s = !0) && e.each(d, function(e) {
+e.apply(n);
+}));
+}
+function i() {
+try {
+l.doScroll("left");
+} catch (e) {
+return void setTimeout(i, 50);
+}
+r("poll");
+}
+var o = n.addEventListener ? "addEventListener" :"attachEvent", a = n.addEventListener ? "removeEventListener" :"detachEvent", c = n.addEventListener ? "" :"on", s = !1, u = !0, l = n.documentElement, d = [];
+if (e.extend({
+stopPropagation:function(e) {
+e.stopPropagation ? e.stopPropagation() :e.cancelBubble = !0;
+},
+preventDefault:function(e) {
+e.preventDefault ? e.preventDefault() :e.returnValue = !1;
+}
+}), e.listener = function(t, r) {
+t.delegate && (t.capture = !0, _handler = r, r = function(r) {
+for (var i = r.target || r.srcElement, o = "string" == typeof t.delegate ? e.wrap(t.delegate, t.node) :t.delegate(t.node); i && -1 == e.indexOf(i, o); ) i = i.parentNode;
+i && i !== this && i !== n && _handler.call(i, r, i);
+}), t.context && (r = e.bind(r, t.context));
+var i = {
+attach:function() {
+t.node[o](c + t.event, r, t.capture);
+},
+detach:function() {
+t.node[a](c + t.event, r, t.capture);
+},
+fire:function() {
+r.apply(t.node, arguments);
+}
+};
+return i.attach(), i;
+}, e.ready = function(e) {
+return s ? void e.apply(n) :void d.push(e);
+}, n.createEventObject && l.doScroll) {
+try {
+u = !t.frameElement;
+} catch (f) {}
+u && i();
+}
+n[o](c + "DOMContentLoaded", r, !1), n[o](c + "readystatechange", r, !1), t[o](c + "load", r, !1);
+}(snack, window, document), !function(e) {
+e.publisher = function(t) {
+var n = {};
+return t = t || {}, e.extend(t, {
+subscribe:function(t, r, i) {
+var o = {
+fn:r,
+ctxt:i || {}
+};
+n[t] || (n[t] = []);
+var a = {
+attach:function() {
+n[t].push(o);
+},
+detach:function() {
+n[t].splice(e.indexOf(r, n[t]), 1);
+}
+};
+return a.attach(), a;
+},
+publish:function(t, r) {
+return n[t] ? (e.each(n[t], function(e) {
+e.fn.apply(e.ctxt, r || []);
+}), n[t].length) :!1;
+}
+}), t;
+}, e.publisher(e);
+}(snack), !function(e, t, n) {
+function r() {}
+e.JSONP = function(t, r) {
+var i = "jsonp" + e.id(), o = n.createElement("script"), a = !1;
+e.JSONP[i] = function(t) {
+a = !1, delete e.JSONP[i], r(t);
+}, "object" == typeof t.data && (t.data = e.toQueryString(t.data));
+var c = {
+send:function() {
+a = !0, o.src = t.url + "?" + t.key + "=snack.JSONP." + i + "&" + t.data, n.getElementsByTagName("head")[0].appendChild(o);
+},
+cancel:function() {
+a && o.parentNode && o.parentNode.removeChild(o), a = !1, e.JSONP[i] = function() {
+delete e.JSONP[i];
+};
+}
+};
+return t.now !== !1 && c.send(), c;
+}, e.toQueryString = function(t, n) {
+var r = [];
+return e.each(t, function(t, i) {
+n && (i = n + "[" + i + "]");
+var o;
+if (e.isArray(t)) {
+var a = {};
+e.each(t, function(e, t) {
+a[t] = e;
+}), o = e.toQueryString(a, i);
+} else o = "object" == typeof t ? e.toQueryString(t, i) :i + "=" + encodeURIComponent(t);
+null !== t && r.push(o);
+}), r.join("&");
+};
+var i = function() {
+var e = function() {
+return new XMLHttpRequest();
+}, t = function() {
+return new ActiveXObject("MSXML2.XMLHTTP");
+}, n = function() {
+return new ActiveXObject("Microsoft.XMLHTTP");
+};
+try {
+return e(), e;
+} catch (r) {
+try {
+return t(), t;
+} catch (r) {
+return n(), n;
+}
+}
+}();
+e.request = function(t, n) {
+if (!(this instanceof e.request)) return new e.request(t, n);
+var r = this;
+r.options = e.extend({}, r.options, t), r.callback = n, r.xhr = new i(), r.headers = r.options.headers, 
+r.options.now !== !1 && r.send();
+}, e.request.prototype = {
+options:{
+exception:r,
+url:"",
+data:"",
+method:"get",
+now:!0,
+headers:{
+"X-Requested-With":"XMLHttpRequest",
+Accept:"text/javascript, text/html, application/xml, text/xml, */*"
+},
+async:!0,
+emulation:!0,
+urlEncoded:!0,
+encoding:"utf-8"
+},
+onStateChange:function() {
+var e = this, t = e.xhr;
+if (4 == t.readyState && e.running) {
+e.running = !1, e.status = 0;
+try {
+var n = t.status;
+e.status = 1223 == n ? 204 :n;
+} catch (i) {}
+t.onreadystatechange = r;
+var o = e.status >= 200 && e.status < 300 ? [ !1, e.xhr.responseText || "", e.xhr.responseXML ] :[ e.status ];
+e.callback.apply(e, o);
+}
+},
+setHeader:function(e, t) {
+return this.headers[e] = t, this;
+},
+getHeader:function(e) {
+try {
+return this.xhr.getResponseHeader(e);
+} catch (t) {
+return null;
+}
+},
+send:function() {
+var t = this, r = t.options;
+if (t.running) return t;
+t.running = !0;
+var i = r.data || "", o = String(r.url), a = r.method.toLowerCase();
+if ("string" != typeof i && (i = e.toQueryString(i)), r.emulation && e.indexOf(a, [ "get", "post" ]) < 0) {
+var c = "_method=" + a;
+i = i ? c + "&" + i :c, a = "post";
+}
+if (r.urlEncoded && e.indexOf(a, [ "post", "put" ]) > -1) {
+var s = r.encoding ? "; charset=" + r.encoding :"";
+t.headers["Content-type"] = "application/x-www-form-urlencoded" + s;
+}
+o || (o = n.location.pathname);
+var u = o.lastIndexOf("/");
+u > -1 && (u = o.indexOf("#")) > -1 && (o = o.substr(0, u)), i && "get" == a && (o += (o.indexOf("?") > -1 ? "&" :"?") + i, 
+i = null);
+var l = t.xhr;
+l.open(a.toUpperCase(), o, r.async, r.user, r.password), r.user && "withCredentials" in l && (l.withCredentials = !0), 
+l.onreadystatechange = e.bind(t.onStateChange, t);
+for (var d in t.headers) try {
+l.setRequestHeader(d, t.headers[d]);
+} catch (f) {
+r.exception.apply(t, [ d, t.headers[d] ]);
+}
+return l.send(i), r.async || t.onStateChange(), t;
+},
+cancel:function() {
+var e = this;
+if (!e.running) return e;
+e.running = !1;
+var t = e.xhr;
+return t.abort(), t.onreadystatechange = r, e.xhr = new i(), e;
+}
+};
+}(snack, window, document), !function(e) {
+function t(e) {
+return e.replace(/\s+/g, " ").replace(/^\s+|\s+$/g, "");
+}
+function n(t, n, r, i) {
+var o = t.data(r);
+return o && e.each(o, function(e) {
+e[n].apply(t, i);
+}), t;
+}
+e.wrap.define({
+data:function() {
+var e = {};
+return function(t, n) {
+var r = e[this.id];
+return r || (r = e[this.id] = {}), void 0 === n ? r[t] :r[t] = n;
+};
+}(),
+each:function(t, n) {
+return e.each(this, t, n);
+},
+addClass:function(e) {
+return this.each(function(n) {
+t(n.className).indexOf(e) > -1 || (n.className = t(n.className + " " + e));
+});
+},
+removeClass:function(e) {
+return this.each(function(t) {
+t.className = t.className.replace(new RegExp("(^|\\s)" + e + "(?:\\s|$)"), "$1");
+});
+},
+attach:function(t, n, r) {
+var i = t.split("."), o = [];
+return i[1] && (o = this.data(i[1]) || []), this.each(function(t) {
+var a = {
+node:t,
+event:i[0]
+};
+r && (a.delegate = r), o.push(e.listener(a, n));
+}), i[1] && this.data(i[1], o), this;
+},
+detach:function(e) {
+return n(this, "detach", e, null, !0), this.data(e, null), this;
+},
+fire:function(e, t) {
+return n(this, "fire", e, t);
+},
+delegate:function(e, t, n) {
+return this.attach(e, n, t);
+}
+});
+}(snack, document), function(e, t, n) {
+"undefined" != typeof module && module.exports ? module.exports = n() :"function" == typeof define && define.amd ? define(n) :t[e] = n();
+}("Fingerprint", this, function() {
+"use strict";
+var e = function(e) {
+var t, n;
+t = Array.prototype.forEach, n = Array.prototype.map, this.each = function(e, n, r) {
+if (null !== e) if (t && e.forEach === t) e.forEach(n, r); else if (e.length === +e.length) {
+for (var i = 0, o = e.length; o > i; i++) if (n.call(r, e[i], i, e) === {}) return;
+} else for (var a in e) if (e.hasOwnProperty(a) && n.call(r, e[a], a, e) === {}) return;
+}, this.map = function(e, t, r) {
+var i = [];
+return null == e ? i :n && e.map === n ? e.map(t, r) :(this.each(e, function(e, n, o) {
+i[i.length] = t.call(r, e, n, o);
+}), i);
+}, "object" == typeof e ? (this.hasher = e.hasher, this.screen_resolution = e.screen_resolution, 
+this.canvas = e.canvas, this.ie_activex = e.ie_activex) :"function" == typeof e && (this.hasher = e);
+};
+return e.prototype = {
+get:function() {
+var e = [];
+if (e.push(navigator.userAgent), e.push(navigator.language), e.push(screen.colorDepth), 
+this.screen_resolution) {
+var t = this.getScreenResolution();
+"undefined" != typeof t && e.push(this.getScreenResolution().join("x"));
+}
+return e.push(new Date().getTimezoneOffset()), e.push(this.hasSessionStorage()), 
+e.push(this.hasLocalStorage()), e.push(!!window.indexedDB), e.push(document.body ? typeof document.body.addBehavior :"undefined"), 
+e.push(typeof window.openDatabase), e.push(navigator.cpuClass), e.push(navigator.platform), 
+e.push(navigator.doNotTrack), e.push(this.getPluginsString()), this.canvas && this.isCanvasSupported() && e.push(this.getCanvasFingerprint()), 
+this.hasher ? this.hasher(e.join("###"), 31) :this.murmurhash3_32_gc(e.join("###"), 31);
+},
+murmurhash3_32_gc:function(e, t) {
+var n, r, i, o, a, c, s, u;
+for (n = 3 & e.length, r = e.length - n, i = t, a = 3432918353, c = 461845907, u = 0; r > u; ) s = 255 & e.charCodeAt(u) | (255 & e.charCodeAt(++u)) << 8 | (255 & e.charCodeAt(++u)) << 16 | (255 & e.charCodeAt(++u)) << 24, 
+++u, s = (65535 & s) * a + (((s >>> 16) * a & 65535) << 16) & 4294967295, s = s << 15 | s >>> 17, 
+s = (65535 & s) * c + (((s >>> 16) * c & 65535) << 16) & 4294967295, i ^= s, i = i << 13 | i >>> 19, 
+o = 5 * (65535 & i) + ((5 * (i >>> 16) & 65535) << 16) & 4294967295, i = (65535 & o) + 27492 + (((o >>> 16) + 58964 & 65535) << 16);
+switch (s = 0, n) {
+case 3:
+s ^= (255 & e.charCodeAt(u + 2)) << 16;
+
+case 2:
+s ^= (255 & e.charCodeAt(u + 1)) << 8;
+
+case 1:
+s ^= 255 & e.charCodeAt(u), s = (65535 & s) * a + (((s >>> 16) * a & 65535) << 16) & 4294967295, 
+s = s << 15 | s >>> 17, s = (65535 & s) * c + (((s >>> 16) * c & 65535) << 16) & 4294967295, 
+i ^= s;
+}
+return i ^= e.length, i ^= i >>> 16, i = 2246822507 * (65535 & i) + ((2246822507 * (i >>> 16) & 65535) << 16) & 4294967295, 
+i ^= i >>> 13, i = 3266489909 * (65535 & i) + ((3266489909 * (i >>> 16) & 65535) << 16) & 4294967295, 
+i ^= i >>> 16, i >>> 0;
+},
+hasLocalStorage:function() {
+try {
+return !!window.localStorage;
+} catch (e) {
+return !0;
+}
+},
+hasSessionStorage:function() {
+try {
+return !!window.sessionStorage;
+} catch (e) {
+return !0;
+}
+},
+isCanvasSupported:function() {
+var e = document.createElement("canvas");
+return !(!e.getContext || !e.getContext("2d"));
+},
+isIE:function() {
+return "Microsoft Internet Explorer" === navigator.appName ? !0 :"Netscape" === navigator.appName && /Trident/.test(navigator.userAgent) ? !0 :!1;
+},
+getPluginsString:function() {
+return this.isIE() && this.ie_activex ? this.getIEPluginsString() :this.getRegularPluginsString();
+},
+getRegularPluginsString:function() {
+return this.map(navigator.plugins, function(e) {
+var t = this.map(e, function(e) {
+return [ e.type, e.suffixes ].join("~");
+}).join(",");
+return [ e.name, e.description, t ].join("::");
+}, this).join(";");
+},
+getIEPluginsString:function() {
+if (window.ActiveXObject) {
+var e = [ "ShockwaveFlash.ShockwaveFlash", "AcroPDF.PDF", "PDF.PdfCtrl", "QuickTime.QuickTime", "rmocx.RealPlayer G2 Control", "rmocx.RealPlayer G2 Control.1", "RealPlayer.RealPlayer(tm) ActiveX Control (32-bit)", "RealVideo.RealVideo(tm) ActiveX Control (32-bit)", "RealPlayer", "SWCtl.SWCtl", "WMPlayer.OCX", "AgControl.AgControl", "Skype.Detection" ];
+return this.map(e, function(e) {
+try {
+return new ActiveXObject(e), e;
+} catch (t) {
+return null;
+}
+}).join(";");
+}
+return "";
+},
+getScreenResolution:function() {
+return [ screen.height, screen.width ];
+},
+getCanvasFingerprint:function() {
+var e = document.createElement("canvas"), t = e.getContext("2d"), n = "http://valve.github.io";
+return t.textBaseline = "top", t.font = "14px 'Arial'", t.textBaseline = "alphabetic", 
+t.fillStyle = "#f60", t.fillRect(125, 1, 62, 20), t.fillStyle = "#069", t.fillText(n, 2, 15), 
+t.fillStyle = "rgba(102, 204, 0, 0.7)", t.fillText(n, 4, 17), e.toDataURL();
+}
+}, e;
+}), window.AhalogyWidget = function(e, t, n, r, i, o) {
+"use strict";
+function a() {}
+function c() {
+return T || s();
+}
+function s() {
+return -1 != t.location.href.indexOf(M);
+}
+function u() {
+return "function" == typeof t.pgWidgetAsyncInit;
+}
+function l() {
+return N = N || n.getElementById("mobilify-loader");
+}
+function d() {
+return l().getAttribute("data-client");
+}
+function f() {
+return l().getAttribute("data-article");
+}
+function p() {
+return l().getAttribute("data-base-url");
+}
+function g() {
+R = !0;
+}
+function h() {
+return (R ? p() :"") + "/e";
+}
+function m() {
+if (j || i && i.u && (j = i.u.substr(0, i.u.lastIndexOf("/"))), !j) {
+for (var e = n.getElementsByTagName("script"), t = 0; t < e.length; t++) {
+var r = e[t];
+if (r.src.indexOf("ahalogy") > 0 || r.src.indexOf("pingage") > 0) {
+j = r.src.indexOf("/widget.js") > 0 ? r.src.substr(0, r.src.lastIndexOf("/")) :r.src;
+break;
+}
+}
+if (!j) throw new Error("Could not determine the Ahalogy Base URL. Please report this to the Ahalogy team.");
+u() && j && (j = j.indexOf("staging.") > 0 ? "//w-staging.ahalogy.com" :j.indexOf(".dev") > 0 ? "//w.ahalogy.dev" :"//w.ahalogy.com");
+}
+return j;
+}
+function y() {
+var e = m();
+return P = e.indexOf("//w.ahalogy.dev") > 0 ? "//v1.ahalogy.dev" :e.indexOf("staging.") > 0 ? "//v1.staging.ahalogy.com" :"//v1.ahalogy.com";
+}
+function w(e, t) {
+e.parentNode.insertBefore(t, e.nextSibling);
+}
+function v(e, t) {
+for (var n in t) e.style[n] = t[n];
+}
+function b(e, t, n) {
+if (void 0 === e.length) {
+for (var r in e) e.hasOwnProperty(r) && t.call(n, e[r], r, e);
+return e;
+}
+for (var i = 0, o = e.length; o > i; i++) t.call(n, e[i], i, e);
+return e;
+}
+function x(e) {
+return e instanceof Array || "[object Array]" == toString.call(e);
+}
+function k(e, t) {
+var n = [];
+return b(e, function(e, r) {
+t && (r = t + "[" + r + "]");
+var i;
+if (x(e)) {
+var o = {};
+b(e, function(e, t) {
+o[t] = e;
+}), i = k(o, r);
+} else i = "object" == typeof e ? k(e, r) :r + "=" + encodeURIComponent(e);
+null !== e && n.push(i);
+}), n.join("&");
+}
+function E(n, r, i, o, a, c, s) {
+r = r || "Engagement", "undefined" == typeof c && (c = !1);
+var u = {
+a:n,
+o:r,
+sy:screen.height,
+sx:screen.width,
+cpu:i.u || t.location.href,
+mspl:new Date().getTime() - a
+};
+"undefined" != typeof i && "undefined" != typeof i.engagement_style && "undefined" != typeof i.engagement_style.id && (u.esi = i.engagement_style.id), 
+i.mobile_engagement_id && (u.mesi = i.mobile_engagement_id), "undefined" != typeof o && null != o && (u.x = o), 
+i.r && (u.r = i.r), i.is_openx && (u.ox = i.is_openx), i.specified_site_client_id && (u.scci = i.specified_site_client_id), 
+i.site_hostname && (u.h = i.site_hostname), i.e_c_i && (u.eci = i.e_c_i), i.engagement_client_id && (u.eci = i.engagement_client_id), 
+i.site_client && i.site_client.id && (u.c = i.site_client.id), i.uniqueID && (u.unique_js_id = i.uniqueID), 
+i.pin && i.pin.id ? u.p = i.pin.id :i.pin_id && (u.p = i.pin_id), i.pin && i.pin.pinterest_identifier ? u.pi = i.pin.pinterest_identifier :i.pinterest_id && (u.pi = i.pinterest_id), 
+i.send_a && (u.pe = S(c)), l() && (u.ecsi = d(), u.spi = f(), "undefined" != typeof o && null != o && o.cn && (u.cn = o.cn));
+var p = {
+method:"get",
+url:h(),
+async:"undefined" == typeof s,
+data:{
+v:2,
+e:u
+}
+};
+_(p, function(t, n) {
+e.log("Tracking Error", t, n), s && s(!1, t, n);
+}, function(e) {
+s && s(!0, e);
+});
+}
+function _(e, t, n) {
+r.request(e, function(e, r) {
+e && t ? t(e, r) :n && n(r);
+});
+}
+function A(e, t) {
+return e.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)"));
+}
+function S(e) {
+return e ? n.cookie.replace(/(?:(?:^|.*;\s*)a\s*\=\s*([^;]*).*$)|^.*$/, "$1") :e || "undefined" == typeof o ? nil :new o().get();
+}
+function O(e, n) {
+if (t.Raven && t.Raven.captureException(e), n && n(c()), c()) throw e;
+}
+function C(e, t) {
+var n = {};
+for (var r in e) n[r] = e[r];
+for (var r in t) n[r] = t[r];
+return n;
+}
+var j, P, N, R = (t.console, !1), T = !1, M = "mobilifyDebug", L = t.AhalogyWidgetLog = t.AhalogyWidgetLog || [], q = function() {
+L.push(Array.prototype.slice.call(arguments));
+}, B = q, I = {
+Android:function() {
+return /Android/i.test(navigator.userAgent);
+},
+BlackBerry:function() {
+return /BlackBerry/i.test(navigator.userAgent);
+},
+iOS:function() {
+return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+},
+Windows:function() {
+return /IEMobile/i.test(navigator.userAgent);
+},
+any:function() {
+var e = !1;
+return function(t) {
+(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(t) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(t.substr(0, 4))) && (e = !0);
+}(navigator.userAgent || navigator.vendor || t.opera), e;
+}
+};
+return e.log = q, e.logError = B, e.isLegacyMode = u, e.mobilifyScriptTag = l, e.mobilifyConfigClient = d, 
+e.mobilifyConfigArticle = f, e.mobilifyBaseUrl = p, e.getAhalogyBaseUrl = m, e.getAhalogyLegacyBaseUrl = y, 
+e.insertAfter = w, e.setNodeStyle = v, e.hasClass = A, e.each = b, e.isArray = x, 
+e.toQueryString = k, e.trackEvent = E, e.useMobilifyBaseUrl = g, e.getA = S, e.exceptionOccurred = O, 
+e.debugExceptions = c, e.isMobile = I, e.mergeObjects = C, e.quiet = a, e;
+}(window.AhalogyWidget || {}, window, document, snack, window._ahalogy || window._pingage, Fingerprint);
+
+var Channel = function() {
+"use strict";
+function e(e, t, n, r) {
+function o(t) {
+for (var n = 0; n < t.length; n++) if (t[n].win === e) return !0;
+return !1;
+}
+var a = !1;
+if ("*" === t) {
+for (var c in i) if (i.hasOwnProperty(c) && "*" !== c && "object" == typeof i[c][n] && (a = o(i[c][n]))) break;
+} else i["*"] && i["*"][n] && (a = o(i["*"][n])), !a && i[t] && i[t][n] && (a = o(i[t][n]));
+if (a) throw new Error("A channel is already bound to the same window which overlaps with origin '" + t + "' and has scope '" + n + "'");
+"object" != typeof i[t] && (i[t] = {}), "object" != typeof i[t][n] && (i[t][n] = []), 
+i[t][n].push({
+win:e,
+handler:r
+});
+}
+function t(e, t, n) {
+for (var r = i[t][n], o = 0; o < r.length; o++) r[o].win === e && r.splice(o, 1);
+0 === i[t][n].length && delete i[t][n];
+}
+function n(e) {
+return Array.isArray ? Array.isArray(e) :-1 != e.constructor.toString().indexOf("Array");
+}
+var r = Math.floor(1000001 * Math.random()), i = {}, o = {}, a = function(e) {
+try {
+var t = JSON.parse(e.data);
+if ("object" != typeof t || null === t) throw new Error("malformed");
+} catch (e) {
+return;
+}
+var n, r, a, c = e.source, s = e.origin;
+if ("string" == typeof t.method) {
+var u = t.method.split("::");
+2 == u.length ? (n = u[0], a = u[1]) :a = t.method;
+}
+if ("undefined" != typeof t.id && (r = t.id), "string" == typeof a) {
+var l = !1;
+if (i[s] && i[s][n]) for (var d = 0; d < i[s][n].length; d++) if (i[s][n][d].win === c) {
+i[s][n][d].handler(s, a, t), l = !0;
+break;
+}
+if (!l && i["*"] && i["*"][n]) for (var d = 0; d < i["*"][n].length; d++) if (i["*"][n][d].win === c) {
+i["*"][n][d].handler(s, a, t);
+break;
+}
+} else "undefined" != typeof r && o[r] && o[r](s, a, t);
+};
+return window.addEventListener ? window.addEventListener("message", a, !1) :window.attachEvent && window.attachEvent("onmessage", a), 
+{
+build:function(i) {
+var a = function(e) {
+if (i.debugOutput && window.console && window.console.log) {
+try {
+"string" != typeof e && (e = JSON.stringify(e));
+} catch (t) {}
+console.log("[" + u + "] " + e);
+}
+};
+if (!window.postMessage) throw new Error("jschannel cannot run this browser, no postMessage");
+if (!window.JSON || !window.JSON.stringify || !window.JSON.parse) throw new Error("jschannel cannot run this browser, no JSON parsing/serialization");
+if ("object" != typeof i) throw new Error("Channel build invoked without a proper object argument");
+if (!i.window || !i.window.postMessage) throw new Error("Channel.build() called without a valid window argument");
+if (window === i.window) throw new Error("target window is same as present window -- not allowed");
+var c = !1;
+if ("string" == typeof i.origin) {
+var s;
+"*" === i.origin ? c = !0 :null !== (s = i.origin.match(/^https?:\/\/(?:[-a-zA-Z0-9_\.])+(?::\d+)?/)) && (i.origin = s[0].toLowerCase(), 
+c = !0);
+}
+if (!c) throw new Error("Channel.build() called with an invalid origin");
+if ("undefined" != typeof i.scope) {
+if ("string" != typeof i.scope) throw new Error("scope, when specified, must be a string");
+if (i.scope.split("::").length > 1) throw new Error("scope may not contain double colons: '::'");
+}
+var u = function() {
+for (var e = "", t = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", n = 0; 5 > n; n++) e += t.charAt(Math.floor(Math.random() * t.length));
+return e;
+}(), l = {}, d = {}, f = {}, p = !1, g = [], h = function(e, t, n) {
+var r = !1, i = !1;
+return {
+origin:t,
+invoke:function(t, r) {
+if (!f[e]) throw new Error("attempting to invoke a callback of a nonexistent transaction: " + e);
+for (var i = !1, o = 0; o < n.length; o++) if (t === n[o]) {
+i = !0;
+break;
+}
+if (!i) throw new Error("request supports no such callback '" + t + "'");
+v({
+id:e,
+callback:t,
+params:r
+});
+},
+error:function(t, n) {
+if (i = !0, !f[e]) throw new Error("error called for nonexistent message: " + e);
+delete f[e], v({
+id:e,
+error:t,
+message:n
+});
+},
+complete:function(t) {
+if (i = !0, !f[e]) throw new Error("complete called for nonexistent message: " + e);
+delete f[e], v({
+id:e,
+result:t
+});
+},
+delayReturn:function(e) {
+return "boolean" == typeof e && (r = e === !0), r;
+},
+completed:function() {
+return i;
+}
+};
+}, m = function(e, t, n) {
+return window.setTimeout(function() {
+if (d[e]) {
+var r = "timeout (" + t + "ms) exceeded on method '" + n + "'";
+d[e].error("timeout_error", r), delete d[e], delete o[e];
+}
+}, t);
+}, y = function(e, t, r) {
+if ("function" == typeof i.gotMessageObserver) try {
+i.gotMessageObserver(e, r);
+} catch (c) {
+a("gotMessageObserver() raised an exception: " + c.toString());
+}
+if (r.id && t) {
+if (l[t]) {
+var s = h(r.id, e, r.callbacks ? r.callbacks :[]);
+f[r.id] = {};
+try {
+if (r.callbacks && n(r.callbacks) && r.callbacks.length > 0) for (var u = 0; u < r.callbacks.length; u++) {
+for (var p = r.callbacks[u], g = r.params, m = p.split("/"), y = 0; y < m.length - 1; y++) {
+var w = m[y];
+"object" != typeof g[w] && (g[w] = {}), g = g[w];
+}
+g[m[m.length - 1]] = function() {
+var e = p;
+return function(t) {
+return s.invoke(e, t);
+};
+}();
+}
+var v = l[t](s, r.params);
+s.delayReturn() || s.completed() || s.complete(v);
+} catch (c) {
+var b = "runtime_error", x = null;
+if ("string" == typeof c ? x = c :"object" == typeof c && (c && n(c) && 2 == c.length ? (b = c[0], 
+x = c[1]) :"string" == typeof c.error && (b = c.error, c.message ? "string" == typeof c.message ? x = c.message :c = c.message :x = "")), 
+null === x) try {
+x = JSON.stringify(c), "undefined" == typeof x && (x = c.toString());
+} catch (k) {
+x = c.toString();
+}
+s.error(b, x);
+}
+}
+} else r.id && r.callback ? d[r.id] && d[r.id].callbacks && d[r.id].callbacks[r.callback] ? d[r.id].callbacks[r.callback](r.params) :a("ignoring invalid callback, id:" + r.id + " (" + r.callback + ")") :r.id ? d[r.id] ? (r.error ? d[r.id].error(r.error, r.message) :void 0 !== r.result ? d[r.id].success(r.result) :d[r.id].success(), 
+delete d[r.id], delete o[r.id]) :a("ignoring invalid response: " + r.id) :t && l[t] && l[t]({
+origin:e
+}, r.params);
+};
+e(i.window, i.origin, "string" == typeof i.scope ? i.scope :"", y);
+var w = function(e) {
+return "string" == typeof i.scope && i.scope.length && (e = [ i.scope, e ].join("::")), 
+e;
+}, v = function(e, t) {
+if (!e) throw new Error("postMessage called with null message");
+var n = p ? "post  " :"queue ";
+if (a(n + " message: " + JSON.stringify(e)), t || p) {
+if ("function" == typeof i.postMessageObserver) try {
+i.postMessageObserver(i.origin, e);
+} catch (r) {
+a("postMessageObserver() raised an exception: " + r.toString());
+}
+i.window.postMessage(JSON.stringify(e), i.origin);
+} else g.push(e);
+}, b = function(e, t) {
+if (a("ready msg received"), p) throw new Error("received ready message while in ready state.  help!");
+for (u += "ping" === t ? "-R" :"-L", x.unbind("__ready"), p = !0, a("ready msg accepted."), 
+"ping" === t && x.notify({
+method:"__ready",
+params:"pong"
+}); g.length; ) v(g.pop());
+"function" == typeof i.onReady && i.onReady(x);
+}, x = {
+unbind:function(e) {
+if (l[e]) {
+if (!delete l[e]) throw new Error("can't delete method: " + e);
+return !0;
+}
+return !1;
+},
+bind:function(e, t) {
+if (!e || "string" != typeof e) throw new Error("'method' argument to bind must be string");
+if (!t || "function" != typeof t) throw new Error("callback missing from bind params");
+if (l[e]) throw new Error("method '" + e + "' is already bound!");
+return l[e] = t, this;
+},
+call:function(e) {
+if (!e) throw new Error("missing arguments to call function");
+if (!e.method || "string" != typeof e.method) throw new Error("'method' argument to call must be string");
+if (!e.success || "function" != typeof e.success) throw new Error("'success' callback missing from call");
+var t = {}, n = [], i = [], a = function(e, r) {
+if (i.indexOf(r) >= 0) throw new Error("params cannot be a recursive data structure");
+if (i.push(r), "object" == typeof r) for (var o in r) if (r.hasOwnProperty(o)) {
+var c = e + (e.length ? "/" :"") + o;
+"function" == typeof r[o] ? (t[c] = r[o], n.push(c), delete r[o]) :"object" == typeof r[o] && a(c, r[o]);
+}
+};
+a("", e.params);
+var c = {
+id:r,
+method:w(e.method),
+params:e.params
+};
+n.length && (c.callbacks = n), e.timeout && m(r, e.timeout, w(e.method)), d[r] = {
+callbacks:t,
+error:e.error,
+success:e.success
+}, o[r] = y, r++, v(c);
+},
+notify:function(e) {
+if (!e) throw new Error("missing arguments to notify function");
+if (!e.method || "string" != typeof e.method) throw new Error("'method' argument to notify must be string");
+v({
+method:w(e.method),
+params:e.params
+});
+},
+destroy:function() {
+t(i.window, i.origin, "string" == typeof i.scope ? i.scope :""), window.removeEventListener ? window.removeEventListener("message", y, !1) :window.detachEvent && window.detachEvent("onmessage", y), 
+p = !1, l = {}, f = {}, d = {}, i.origin = null, g = [], a("channel destroyed"), 
+u = "";
+}
+};
+return x.bind("__ready", b), setTimeout(function() {
+v({
+method:w("__ready"),
+params:"ping"
+}, !0);
+}, 0), x;
+}
+};
+}();
+
+Function.prototype.bind || (Function.prototype.bind = function(e) {
+if ("function" != typeof this) throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+var t = Array.prototype.slice.call(arguments, 1), n = this, r = function() {}, i = function() {
+return n.apply(this instanceof r && (e ? this :e), t.concat(Array.prototype.slice.call(arguments)));
+};
+return r.prototype = this.prototype, i.prototype = new r(), i;
+}), /*!
+ * eventie v1.0.5
+ * https://github.com/desandro/eventie
+ * event binding helper
+ *   eventie.bind( elem, 'click', myFn )
+ *   eventie.unbind( elem, 'click', myFn )
+ * MIT license
+ */
+function(e) {
+"use strict";
+function t(t) {
+var n = e.event;
+return n.target = n.target || n.srcElement || t, n;
+}
+var n = document.documentElement, r = function() {};
+n.addEventListener ? r = function(e, t, n) {
+e.addEventListener(t, n, !1);
+} :n.attachEvent && (r = function(e, n, r) {
+e[n + r] = r.handleEvent ? function() {
+var n = t(e);
+r.handleEvent.call(r, n);
+} :function() {
+var n = t(e);
+r.call(e, n);
+}, e.attachEvent("on" + n, e[n + r]);
+});
+var i = function() {};
+n.removeEventListener ? i = function(e, t, n) {
+e.removeEventListener(t, n, !1);
+} :n.detachEvent && (i = function(e, t, n) {
+e.detachEvent("on" + t, e[t + n]);
+try {
+delete e[t + n];
+} catch (r) {
+e[t + n] = void 0;
+}
+});
+var o = {
+bind:r,
+unbind:i
+};
+"function" == typeof define && define.amd ? define(o) :"object" == typeof exports ? module.exports = o :e.eventie = o;
+}(this), /*!
+ * docReady v1.0.3
+ * https://github.com/desandro/doc-ready
+ * Cross browser DOMContentLoaded event emitter
+ * MIT license
+ */
+function(e) {
+"use strict";
+function t(e) {
+"function" == typeof e && (t.isReady ? e() :o.push(e));
+}
+function n(e) {
+var n = "readystatechange" === e.type && "complete" !== i.readyState;
+if (!t.isReady && !n) {
+t.isReady = !0;
+for (var r = 0, a = o.length; a > r; r++) {
+var c = o[r];
+c();
+}
+}
+}
+function r(r) {
+return r.bind(i, "DOMContentLoaded", n), r.bind(i, "readystatechange", n), r.bind(e, "load", n), 
+t;
+}
+var i = e.document, o = [];
+t.isReady = !1, "function" == typeof define && define.amd ? (t.isReady = "function" == typeof requirejs, 
+define([ "eventie/eventie" ], r)) :"object" == typeof exports ? module.exports = r(require("eventie")) :e.docReady = r(e.eventie);
+}(window), window.AhalogyWidget = function(e, t, n) {
+"use strict";
+function r(e) {
+c = e, i();
+}
+function i() {
+s = t.open;
+try {
+if ("function" != typeof s || "function" != typeof s.apply) return;
+t.open = o;
+} catch (n) {
+e.log("failed", n);
+}
+}
+function o(e, n, r) {
+return /pinterest\.com\//.test(e) ? a(e, n, r) :s.apply(t, Array.prototype.slice.call(arguments));
+}
+function a(r, i, o, a, u) {
+var l = {
+client_id:c,
+orig_url:r,
+win_title:n.title
+}, d = e.getAhalogyLegacyBaseUrl() + "/widget/proxy?" + e.toQueryString(l), f = s.apply(t, [ d, i, o ]), p = function() {
+setTimeout(function() {
+return null == f ? ("function" == typeof u && u(), void (t.location.href = d)) :void (f.closed ? "function" == typeof a && a() :p());
+}, 25);
+};
+return p(), f;
+}
+{
+var c, s;
+t.console;
+}
+return e.Wedge = {
+start:r
+}, e;
+}(window.AhalogyWidget || {}, window, window.document);
+
+var weGiveAShitAboutThisBrowser = !window.operamini;
+
+weGiveAShitAboutThisBrowser && (window.AhalogyWidget = function(e, t, n, r, i, o, a) {
+"use strict";
+function c() {
+b = new Date().getTime(), e.log("Ahalogy Widget 861710e\n"), r.jQuery && r.jQuery != a && (w = r.jQuery, 
+e.log("jQuery " + w.fn.jquery + " is available.")), n(function() {
+s(), h();
+});
+}
+function s() {
+var t = o.createElement("iframe");
+t.src = u(), t.id = "AhalogyWidgetFrame", t.frameborder = "0", t.allowtransparency = "true", 
+e.setNodeStyle(t, {
+borderWidth:"0",
+padding:"0",
+position:"fixed",
+display:"block",
+top:"-1px",
+left:"-1px",
+width:"1px",
+height:"1px",
+zIndex:2147483647,
+backgroundColor:"transparent",
+boxShadow:"none"
+}), l().appendChild(t), y = o.getElementById("AhalogyWidgetFrame");
+}
+function u() {
+e.isLegacyMode() && (e.log("Legacy mode."), r.pgWidgetAsyncInit({
+init:function(e) {
+if (!e || !e.clientId) throw new Error("Legacy data did not include clientId.");
+v.client_id = e.clientId;
+}
+}));
+var t = v;
+t.u = location.href, t.r = o.referrer, t.screen_height = screen.height, t.screen_width = screen.width, 
+t.loaded_at = b, t.a = e.getA(!0);
+var n = e.getAhalogyBaseUrl() + "/widget/frame?";
+for (var i in t) n += "&" + i + "=" + encodeURIComponent(t[i]);
+return n;
+}
+function l() {
+return o.getElementsByTagName("body")[0];
+}
+function d(t, n) {
+e.setNodeStyle(y, n.style), n.modal && (o.body.style.overflow = "hidden");
+}
+function f() {
+e.setNodeStyle(y, {
+top:"-1px",
+left:"-1px",
+width:"1px",
+height:"1px"
+}), o.body.style.overflow = "auto";
+}
+function p(e, t) {
+location.href = t.url;
+}
+function g(t, n) {
+e.Wedge.start(n.client_id);
+}
+function h() {
+m = t.build({
+window:y.contentWindow,
+origin:"*",
+scope:"ahalogy"
+}), m.bind("setFrameStyle", d), m.bind("makeFrameHidden", f), m.bind("openUrl", p), 
+m.bind("wedge", g);
+}
+var m, y, w, v = (r.console, i.c), b = null;
+return c(), e.Widget = {}, e;
+}(window.AhalogyWidget || {}, Channel, window.docReady, window, window._ahalogy || window._pingage || {
+c:{}
+}, document));

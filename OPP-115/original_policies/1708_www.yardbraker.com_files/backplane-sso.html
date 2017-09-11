@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)http://www.foxsports.com/content/fsdigital/fscom/account/backplane-sso.html#initiframe -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta head="head">
+<iframe src="server.html" style="position: absolute; width: 1px; height: 1px; left: -9999px;"></iframe><script charset="utf-8" class="lazyload" src="sso.js"></script></head>
+<body>
+<script src="jrlf.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var hash = location.hash
+
+  if (typeof jrlfbackplanesso === 'object') {
+    if (/initiframe/.test(hash)) {
+      jrlfbackplanesso.initiframe();
+    } else if (/logoutiframe/.test(hash)) {
+      jrlfbackplanesso.logoutiframe();
+    } else if (typeof jrlf === 'object') {
+      jrlf.redirect();      
+    }   
+  }
+</script>
+
+
+</body></html>

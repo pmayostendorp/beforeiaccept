@@ -1,0 +1,232 @@
+p.txt {
+	margin:0 85px 26px 0;
+}
+.form {
+	color:#666;
+}
+.form input, .form small {
+	font:normal 11px/11px Arial;
+}
+.form input {
+	color:#000;
+}
+.form input.checkbox {
+	margin:0 7px 0 14px;
+	padding:0;
+}
+.form input.checkbox-first {
+	margin-left:0;
+}
+.form .field_holder {
+	margin:20px 0 0;
+	overflow:hidden;
+	*zoom:1;
+	color:#000;
+}
+.form .field_holder label, .form .field_holder .input_holder {
+	float:left;
+	display:block;
+}
+.mac.chrome .form .field_holder_checkbox {
+	padding-top:1px;
+}
+.chrome .form .field_holder_checkbox_last {
+	padding-bottom:2px;
+}
+.win .form .input_checkbox span {
+	position:relative;
+	top:-2px;
+}
+
+.form label {
+	text-align:right;
+	width:87px;
+	padding:0;
+	margin:6px 18px 0 0;
+	color:#666;
+}
+.form .field_holder_checkbox_last {
+	margin-left:105px;
+}
+.gecko .form label {
+	margin-top:5px;
+}
+.ie8 .form label {
+	margin-top:3px;
+}
+.form .field_holder_select label {
+	margin-top:3px !important;
+}
+.form .field_holder_checkbox label {
+	margin-top:0 !important;
+}
+.ie7 .form .field_holder_checkbox label.cardtype {
+	margin-top:4px !important;
+}
+.form label .required {
+	padding:0 3px 0 0;
+}
+.form .text {
+	width:374px;
+	padding:2px 5px 2px;
+}
+.ie .form .text {
+	padding:3px 5px 1px;
+}
+.ie7 .form .text {
+	padding:4px 5px 0px;
+}
+.mac.gecko .form .text {
+	padding:1px 5px 0;
+}
+.form .mod-title {
+	background:#eee;
+	font:normal 22px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 7px 0 8px 7px;
+}
+.win.gecko .form .mod-title, .ie7 .form .mod-title {
+	padding: 7px 0 6px 7px;
+}
+.form .mod-content {
+	padding:0 0 20px !important;
+}
+.form select {
+	width:222px;
+	margin:0 8px 0 0;
+}
+.form .fieldset_submit {
+	margin:0 0 0;
+	border-top: 1px solid #ccc;
+}
+.form input.submit {
+	padding:13px 12px 15px !important;
+	font:bold 18px/18px Arial, sans-serif !important;
+	width:150px;
+	height:52px;
+	margin:20px 0 !important;
+}
+
+/* Alt */
+#newsletter .article-generic p {
+	color:#666 !important;
+}
+#newsletter .form small {
+	margin:14px 0 0;
+	display:block;
+}
+#newsletter .form label {
+	text-align:left;
+	margin-top:0;
+	width:74px;
+	line-height:18px;
+	position:relative;
+	top:-2px;
+}
+
+#newsletter .checkboxes label
+{
+	display: inline;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	float:none;
+	line-height: 18px;
+	font-weight:bold;
+	color: #333;
+}
+
+#newsletter .checkboxes label.nrml
+{
+	font-weight:normal;
+}
+
+.mac.gecko #newsletter .form label {
+	top:1px;
+}
+.mac.gecko #newsletter .form .text {
+	padding:0 5px;
+}
+#newsletter .form .mod-content {
+	padding:0 0 14px !important;
+}
+#newsletter .form .field_holder {
+	margin:14px 0 16px;
+}
+#newsletter .form .field_holder_select label {
+	top:0 !important;
+	margin-top:0 !important;
+}
+.mac.gecko #newsletter .form .field_holder_select label {
+	top:1px !important;
+}
+#newsletter .form .field_holder_select_alt label, #newsletter .form .field_holder_select_alt .input_holder {
+	float:none;
+}
+#newsletter .form .field_holder_select_alt label {
+	width:auto;
+	text-align:left;
+	margin-bottom:9px;
+}
+#newsletter .form .field_holder_select_alt .input_holder {
+	margin-left:92px;
+}
+#newsletter .form .cols-316 .col p {
+	border-bottom:1px solid #e5e5e5;
+	font:bold 18px/20px "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	padding:3px 0 6px;
+	margin:0 0 8px;
+	color:#333 !important;
+}
+#newsletter .form .input_holder {
+	overflow:hidden;
+	*zoom:1;
+}
+#newsletter .form .input_holder .checkbox {
+	float:left;
+	display:block;
+	margin:0 15px 0 0;
+}
+.mac.gecko #newsletter .form .input_holder .checkbox {
+	margin-top:2px;
+}
+.mac.chrome #newsletter .form .input_holder .checkbox {
+	top:1px;
+}
+#newsletter .form .cols-316 .col .input_holder {
+	height: 20px;
+	font:normal 14px/18px "Georgia", sans-serif !important;
+	color:#666;
+	float:none;
+}
+#newsletter .form .cols-316 .col strong {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-weight:bold;
+	color:#333;
+}
+#newsletter .form .input_holder .input_checkbox_txt {
+	float:left;
+	display:block;
+	width:288px;
+}
+#newsletter .form .cols-316 .col .field_holder {
+	margin:0 0 7px
+}
+#newsletter .form .cols-316 .col .field_holder_checkbox_child {
+	margin:-5px 0 6px 41px;
+}
+#newsletter .form .cols-316 .col .field_holder_checkbox_child .checkbox {
+	margin-right:10px;
+	margin-top:3px;
+}
+#newsletter .form .cols-316 .col .field_holder_checkbox_child .input_holder {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	color:#333;
+	font-weight:normal;
+}
+#newsletter .form .cols-316 .col .field_holder_checkbox_child .input_checkbox_txt {
+	width:245px;
+}
+#newsletterform .cols-316 {
+	margin-bottom:29px;
+}
+.section-search .colB .search-form .form-item {
+    display:none;
+}

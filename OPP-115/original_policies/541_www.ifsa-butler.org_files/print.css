@@ -1,0 +1,164 @@
+@charset "utf-8";
+/*  CSS Document ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Original Author: Dan Osmundson
+ IFSA-Butler
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Global reset */
+/* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { top:0in !important; left:0in !important; margin:0 !important; padding:0 !important; }
+table { border-collapse:collapse !important; border-spacing:0 !important; }
+fieldset, img { border:0 !important; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal !important; font-weight:normal !important; }
+ol, ul, li { list-style:none; }
+caption, th { text-align:left !important; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal !important; }
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+strong { font-weight: bold !important; }
+em { font-style: italic !important; }
+/* Gets rid of IE's blue borders */
+a img { border:none; }
+
+/* expand hrefs in anchor text for printing */
+@media print{
+   a:after{content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;}
+}
+
+#dhtmlpointer {display:none !important;}
+
+/*content slider controls */
+.flexslider ul.slides li {display:none !important; }
+.flexslider ul.slides li.flex-active-slide {display:block !important; }
+
+.flex-control-nav, .flex-control-paging,.flex-next,.flex-prev {display:none; }
+
+/* AVOID page breaks while printing */
+h1, h2, h3, h4, h5, h6 { page-break-after:avoid; page-break-inside:avoid !important; border-bottom: none 0px !important;}
+img { page-break-inside:avoid; page-break-after:avoid; }
+blockquote, table, pre { page-break-inside:avoid !important; }
+ul, ol, dl  { page-break-before:avoid !important;}
+
+/* TYPOGRAPHY */
+/* This helps to identify headings at the initial build stage, so I thought it'd be useful to have it */
+h1, h2, h3, h5, h5, h6 { font-weight: 600 !important; } 
+p {margin:.25in !important;}
+
+/* LAYOUT */
+/* You might find the following useful */
+/* This will save you having to declare each div's position as 'relative' and allows you to absolutely position elements inside them */
+div { position: relative; }
+/* ++++ END RESETS ++++ */
+
+/* %%%% SETS IFSA Stuff %%%% */
+body {font-family: Georgia, Times New Roman, Times, serif; line-height: 1.5em; margin: .25in !important; padding: 0in !important; font-size: 10pt; color: #000; width:auto; background-color: white; }
+a:link, a:visited { text-decoration: none; color:#666;  }
+
+#globalwrapper { margin: 0; padding: 0; }
+#header { display:block; margin: .25in 1.25in; width: 6in; height: 1in; }
+#header .socials {display: none; }
+#header .logo,#header .logo a { display:none; }
+#header ul#print_logo,#header ul#print_logo li { display: block; margin: 0px; padding: 0px; height: 1.2in; width: auto; text-align:left !important; clear:both;}
+#header ul#print_logo li img { /* danotweak*/ left: 0px !important; height:69px; width: 449px; }
+#news_updates,#news_updates_feed,.slick-rss-container,ul.slick-rss-list,li.slick-rss-item { display:none; height: 0px; width: 0px; }
+
+.breadcrumb,.breadcrumbs,.pathway {display:none !important;}
+table.blog {display:inline; clear:none; }
+td.article_column table.contentpaneopen,.article_column .contentpaneopen{ border-top: solid 1px #ccc; display:block; clear: both; float:left; margin-bottom: 0.2in; width: 100%; }
+
+.pagenav,div.blog_more {display:none !important;}
+.blog tr:nth-last-of-type(-1) {display:none !important;}
+
+/*** nav -- styles ***/
+#topbluenavwrapper { display: none; }
+
+/*** header styles ***/
+/*  positioning for ajax search */
+#header #search, #header #cse-search, .searchtitle, .button_ifsasearch { margin: 0; padding: 0; height: 0; width: 0; display: none; }
+#mod_search_searchword {  /*style for search box*/ margin: 0; padding: 0; }
+
+/*** stamp styles ***/
+#stampwrapper, #stamptop, #stampleft, #stampright { margin: 0; padding: 0; }
+#stampbottom { margin: 0; padding: 0; display:none; }
+
+.buttonheading, #sectionheader { display: none; }
+
+/* this style bumps over the main content to the right if there is a left column (see interior pages) */
+#mainifsacontent1 { display: inline; height: auto; left: 0; width: 100%; margin: 0pt .25in 0pt 0pt; padding: 0pt; }
+#mainifsacontent1 table { height: auto; margin:0pt; padding: 0pt; width:8in; }
+#mainifsacontent1 table tr td { /*border: solid .5px #999;*/ }
+/* this style has the main content take up the entire width of the stamp since there is no left column (see homepage) */
+#mainifsacontent0 { display: inline; width: 8in; margin: 0; padding: 0; }
+#mainifsacontent0 table tr td { /*border: solid .5px #999;*/ }
+.article_column {display: block !important; clear: both !important; }
+
+/* ====Hide homepageImageMap2.jpg but print 'map id="homepageImageMap2" links==== */
+#highlight_links { height: auto !important; margin:0 auto; position: relative !important; width: 7.5in !important; }
+img#homepageImageMap2{display:none !none; height:0; width:0;}
+/*==== hidden from standard layout ====*/
+#print-pic-links{padding:0 !important; width: 5.5in; margin: 0 auto !important; }
+#print-pic-links h1{font-size:110% !important;margin: 10px 0; padding: 0;}
+#print-pic-links ul {margin:0 0.5cm !important; padding:0 !important; width:5.5in;}
+#print-pic-links li{list-style-type: circle !important; padding:0 auto 0 .25in !important; }
+
+#flashcontent,.cool-viewing-tips {display: none !important; height: 0px !important; }
+.cool-viewing-tips img,.cool-viewing-tips span {display:none !important; height: 0 !important;}
+/* %%% Use to hide Flash content #flashcontent %%% */
+.toggle_pics {position:relative; display:block !important; clear: both !important; height: 2.3em !important; left: 24% !important; width: 28% !important; margin: 2.8em auto; padding: .5em; border: dotted 1px #ccc !important; text-align:center !important; font:small-caps bold 1em lucida console, san-serif; color:#666 !important; vertical-align: middle; }
+#bottomlinks { display: none; }
+.imageborder {border: 0px none; margin: .125in; }
+
+#leftmod { display: none; height:0px; width:0px; margin:0px; padding: 0px; }
+
+#apply-now-country,.apply-now-cta-floatright-200 { display: none; height:0px; width:0px; margin:0px; padding: 0px; }
+
+
+/*** style for program columns at top of pages ***/
+#universityDetailsTitles { float:left; font-weight:bold; margin:0pt; padding:0pt 10px 0pt 0pt; width:150px; }
+#universityDetailsFacts { clear:right; float:left; width:auto; }
+
+#cityDetailsTitles { float:left; font-weight:bold; margin:0pt; padding:0pt 10px 20px 0pt; width:76px; }
+#cityDetailsFacts { float:left; margin:0pt; padding:0pt 0pt 20px; width:80%; }
+.clearBoth { margin:0px; padding:0; clear:both; page-break-after:avoid; page-break-inside:avoid !important;}
+.clearBoth30 { margin:0px; padding:0; height:30px; clear:both; }
+ul.university-titles-details li {font-size: 80%!important; font-weight: 300!important; line-height: 1.05; clear: both;}
+
+/* jExtensions */
+/* NoNumber Slider */
+.slider_item_inactive  {display:none; height: 0px !important; }
+.slider_item_active  {display:block; height: auto !important; width: auto !important;}
+
+/* NoNumber Tabber */
+.tabber_container {display:block !important; width: 90% !important; margin:0in !important; padding: 0in important; }
+.tabber_content,.tabber_item {border: none 0px !important; display:inline !important; width: 90% !important; margin:0in !important; padding: 0in important;}
+.tabber_nav {position: relative; display:block !important; font-size: 80%; clear: both !important; margin-bottom: 2em;}
+
+/* hides the hidden stuff from printing */
+.tabber_item_inactive {display:none !important; height:0px !important;}
+.tabber_tab,.active,.tabber_tab a,.active a {border: none 0px !important;  padding-right:.125in;}
+li.ifsatab a span {margin-right:8px !important; }
+li.active a span {margin-right:12px !important; border-bottom: solid 3px #666 !important; }
+.tabber_item_active { display:block /*danotweak? */; margin: 0px; padding: 0px; }
+.tabber_item_active ul { display:block; width:90%; left:0px; margin: 0px; padding: 0px; list-style-position: inside !important; list-style-type: disc !important;}
+.tabber_item_active ul li { display:block; width: auto; padding: 2px 5px; }
+
+/* NoNumber Tooltips */
+/* don't print tool-tips */
+.tooltips-link,.tool-tips-img {display:none; height:0px; }
+
+#forlinks,#bottomlinks {display: none !important;  padding:0; margin:0; height: 0px !important; width: 0pt; }
+/*** footer styles: copyright, IFSA, 800# ***/
+#footer,#trademarks{display:block; font-size:8pt; text-align:center; margin: 0pt auto; padding: 0.5in 1.22in 0.65in 1.22in; width:auto !important; }
+#trademarks{border-bottom: dotted 2px #ccc;}
+
+#user5mod { display:none; height: 0pt; width: 0pt; margin: 0pt; padding: 0pt; }
+#footer ul { margin:0px; }
+
+#footer .menu { list-style:none; padding:0; margin:0; display: none; }
+#footer li { display: inline; padding: 0px 8px; margin: 0; }
+#footer li a:link, #footer li a:visited { color:#000; }
+.belowfold { display:inline; }
+.belowfold div {margin:0px; padding: 0px; width:auto !important;}
+.belowfold div.country-landing-page-links { border-top:none 0px !important; display:none !important;  height:0pt; width:0pt;}
+.belowfold p.country-landing-page-links em{ display:none; }
+.belowfold ul.menu{ display:none; }

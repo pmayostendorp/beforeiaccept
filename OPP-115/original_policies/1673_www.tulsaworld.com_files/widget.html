@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0435)http://wxfix.globalweathercorp.com/wxfix/widget.php?type=custom100x33&width=100&height=31&bgColor=%23ffffff&favBgColor=%23009BEB&fontColor=%23000000&highFontColor=%23ff0000&lowFontColor=%230561FF&btnBkg=%23F5F5F5&btnFont=%23333333&btnBorder=%23cccccc&btnBkgHov=%23b1b1b1&btnFontHov=%23333333&btnBorderHov=%23cccccc&mapZoom=7&imgOpacity=0.5&address=74103&locationLabel=Omaha%2C%20NE&googleMapsKey=AIzaSyCAvoVAIVmvzigdSXL6SSTXgo9jeKK_M20 -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- page information -->
+		<title>WxFix - Global Weather Corporation</title>
+		
+		<!-- environment dev -->
+		<!--
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/smoothness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+		<link href="css/wxfix.css" rel="stylesheet">
+		-->
+
+		<!-- environment prod -->
+		<link href="http://wxfix.globalweathercorp.com/wxfix/css/wxfix.concat.css" rel="stylesheet">
+		
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    	<!--[if lt IE 9]>
+      		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+    	
+    	<style>
+    	
+    		    		
+    		body {
+    			background-color: #ffffff;
+    		}
+    		
+    		.wxfix-widget {
+			  width: 100px;
+			  height: 31px;
+			  background-color: #ffffff;
+			  color: #000000;
+			}
+			.high {
+				color: #ff0000;
+			}
+			.low {
+				color: #0561FF;
+			}
+    		
+    	</style>
+    	
+    	<script type="text/javascript" async="" src="ga.js"></script><script>
+    		var mapZoom = 7;
+    		var imgOpacity = 0.5;
+    	</script>
+		
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="wxfix.min" src="wxfix.min.js"></script></head>
+	<body marginwidth="0" marginheight="0">
+		
+		<div id="wxfixWidget" class="wxfix-widget custom100x33" data-type="custom100x33">
+			
+			<div class="section images">
+				<p id="weatherImages" class="">
+			
+			<img src="img-mostly-cloudy.png">
+			<img src="empty.png">
+			<img src="empty(1).png">
+			<img src="empty(2).png">
+			
+		</p>
+			</div>
+			
+			<div class="section temp-summary">
+				
+				<p id="currentTemp" class="current"><span>73</span>° F</p>
+								<p id="overview" class="overview">Cloudy</p>
+				<p id="windSummary" class="windSummary font80">Winds: <span class="direction">WSW</span> <span class="speed">6</span>mph</p>
+				
+			</div>
+
+			<div class="section temp-highlow">
+				
+				<p id="highTemp" class="high font90">HI: <span>73</span>°</p>
+				<p id="lowTemp" class="low font90">LO: <span>67</span>°</p>
+				
+			</div>
+			
+			<p id="severeWeather" class="severe-weather font90"><i class="icon-warning-sign"></i>severe weather</p>
+			
+			<div id="googleMap" class="google-map"></div>
+			
+			<div class="section wind">
+				
+				<div id="windDir" class="wind-img wind-wsw"></div>
+				
+				<div class="weather-info">
+					
+					<p>
+					Precipitation: <span id="precip">0</span>% <span id="precipRate">0</span>"<br>
+					Humidity: <span id="relHumidityMax">83</span>%<br>
+					Thunderstorm: <span id="thunderProbMax">0</span>%
+					</p>
+					<p class="extra-info">
+					Sunrise: <span id="sunrise">6:14</span><span id="sunriseAmPm">am</span><br>
+					Sunset: <span id="sunset">8:44</span><span id="sunsetAmPm">pm</span>
+					</p>
+					
+				</div>
+			</div>
+		
+		</div>
+		<script type="text/javascript">
+		  var globalGoogleMapsKey = "AIzaSyCAvoVAIVmvzigdSXL6SSTXgo9jeKK_M20";
+		</script>
+		<script type="text/javascript" src="zips.jsgz"></script>
+		<!-- environment dev -->
+		<!--
+		<script data-main="js/wxfix" src="js/libs/require.min.js"></script>
+		-->
+		
+		<!-- environment prod -->
+		<script data-main="js/wxfix.min" src="require.min.js"></script>
+
+		
+		<script type="text/template" id="weatherImagesTemplate">
+			
+			<img src="<%=cloudImage %>" />
+			<img src="<%=precipitationImage %>" />
+			<img src="<%=windImage %>" />
+			<img src="<%=thunderstormImage %>" />
+			
+		</script>
+		
+		
+<!-- google analytics -->
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-41362346-2']);
+ _gaq.push(['_trackPageview']);
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+
+	
+
+</body></html>

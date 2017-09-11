@@ -1,0 +1,113 @@
+/*
+Theme Name: HGM Corporate Site
+Theme URI: http://www.highgearmedia.com
+Author: Joey Kirk
+Author URI: http://www.highgearmedia.com
+Version: 1.0
+Text Domain: High Gear Media
+Description: High Gear Media
+Tags: 
+*/
+
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Images
+:: Posts
+:: Typography
+:: Header
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+/* -----------------------------------------
+   Images
+----------------------------------------- */
+
+.widget img {
+    max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* Make sure images with WordPress-added height and width >attributes are scaled correctly */
+}
+img.size-full {
+    max-width: 97.5%;
+    width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
+}
+
+.wp-caption { max-width: 100%; }
+
+/* -----------------------------------------
+   Posts
+----------------------------------------- */
+
+.author-box h5 {margin-top:0px;}
+.author-box .author_gravatar {margin-right:10px;}
+.author-box p {font-size:14px; font-size:1.4em;}
+
+article .th {margin-bottom:10px; margin-bottom:1em;}
+
+.alignleft {float:left;}
+.alignright {float:right;}
+.aligncenter {margin:0 auto;text-align:center;}
+
+/* -----------------------------------------
+   Typography
+----------------------------------------- */
+
+body,h1,h2,h3,h4,h5,h6,p {font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+h1,h2,h3,h4,h5,h6,a:link {font-weight:800;}
+
+.site-title .subheader {margin-bottom:0;}
+
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+
+.site-header {border-bottom:1px solid #ddd;padding:1.5rem 0 1rem 0;margin:-1.875em 0 1.875em 0;}
+.sidebar ul li {list-style:none;}
+.top-bar-section ul li>a {}
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+.wp-caption-text {text-align: center;}
+.sticky { }
+.gallery-caption { }
+.bypostauthor{ }
+.site-content .gallery {
+	margin-bottom: 1.5em;
+}
+.gallery-caption {
+}
+.site-content .gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.site-content .gallery dd {
+	margin: 0;
+}
+.site-content .gallery-columns-4 .gallery-item {
+}
+.site-content .gallery-columns-4 .gallery-item img {
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+

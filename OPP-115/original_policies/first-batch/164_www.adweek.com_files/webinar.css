@@ -1,0 +1,245 @@
+
+#webinar .colsAB {
+  width: 998px !important;
+  float: left;
+}
+
+#webinar .article {
+  width:998px !important;
+}
+/* Webinar Teasers different from other teasers */
+.webinar-teaser-label {
+  background-color:#eaeffa;
+  color:#a9a9a9;
+  font:bold 12px/16px "Helvetica", Arial, sans-serif;
+  padding:5px 0 5px 10px;
+  margin-bottom:6px;
+}
+.webinar-teaser-label-franchise {
+  background-color:#eaeffa;
+  color:#a9a9a9;
+  font:bold 12px/16px "Helvetica", Arial, sans-serif;
+  padding:5px 0 5px 10px;
+  margin: 0 0 6px 0;
+}
+.webinar-feed {
+  background-color:#eaeffa;
+}
+.webinar-feed-label, .webinar-ep-right-label {
+  color:#a9a9a9;
+  font-size:12px;
+  line-height:16px;
+  font-family:"Helvetica", Arial, sans-serif;
+  font-weight: bold; /* RJ asked to make this bold; 500 wasn't bold enough */
+}
+.webinar-ep-right-label {
+  margin-top:-3px;
+}
+.webinar-ep-right-label p {
+  padding-top:0;margin-top:0;
+}
+.webinar-label {
+  background-color:#eaeffa;
+  color:#a9a9a9;
+  font:bold 12px/16px "Helvetica", Arial, sans-serif;
+  padding:5px 0 5px 10px;
+  margin-bottom: 13px !important;
+}
+.webinar-ep-right-label {
+  background-color:#eaeffa;
+  color:#a9a9a9;
+  font:bold 12px/16px "Helvetica", Arial, sans-serif;
+}
+#webinar.section-adfreak .webinar-label {
+  margin-bottom: 0px;
+}
+
+#webinar .article > p:last-of-type {
+  margin:0 0 3px 0 !important;
+}
+
+#webinar .article p a {
+  color:#ed1e25;
+}
+#webinar .article p a:hover {
+  color:#ed1e25;
+  text-decoration:underline;
+}
+#webinar.section-adfreak .subheader {
+  overflow: auto;
+  *overflow: hidden; /* for now */
+  zoom: 1;
+}
+#webinar.section-adfreak .subheader .headline,
+#webinar.section-adfreak .subheader .subheadline,
+#webinar.section-adfreak .subheader .byline {
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.webinar-item .timestamp, .webinar-item .bylineDate {
+  display:none;
+}
+
+.left-share-bar-wrapper {
+    display: block;
+}
+
+/* below copied over from article.css but replaced #article with #webinar */
+#webinar .colsarticle {
+  margin: 0;
+}
+#webinar.columns-detail .subheader .meta {
+  margin: 0;
+}
+#webinar .subheader .meta .fl {
+  float: right;
+  border: none 0;
+  margin: 0;
+}
+#webinar .subheader .meta .emailshare a, #webinar .subheader .meta .comments a {
+  color: #999;
+}
+#webinar .article p {
+  overflow:visible;
+  *zoom:1;
+}
+#webinar .article .gallery-img-description p {
+  text-align:left;
+}
+#webinar .article .gallery-img-description p b {
+  text-transform:none !important;
+  letter-spacing: 0 !important;
+}
+#webinar .article p a, .news-gallery-body p a {
+  color:#ed1e25;
+}
+#webinar .article p a:hover, .node-type-news-slide .news-gallery-body p a:hover {
+  color:#ed1e25;
+  text-decoration:underline;
+}
+#webinar .article-footer p, #webinar .colleft p, #webinar .colright p {
+  text-align:left;
+  text-indent:0;
+}
+#webinar .article-footer p.continue {
+  text-align:right;
+}
+#webinar .graph,
+#webinar .news-article-image
+{
+  position: relative;
+  /*border-bottom: solid 1px #ccc;*/
+  margin: 0 0 20px 0;
+  padding-bottom: 17px;
+  padding-bottom: 9px;
+}
+#webinar .graph .caption,
+#webinar .news-article-image .caption
+{
+  margin: 10px 0 -10px 0;
+  font: bold 11px Georgia, serif !important;
+  text-align: right;
+  color: #333 !important;
+  border-bottom: solid 1px #ccc;
+  padding: 0 10px 8px 0;
+}
+#webinar .q {
+  font: bold 23px/23px Georgia, serif;
+  margin:21px 0 4px;
+}
+#webinar .q span {
+  font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+  font-weight: normal;
+  color: #333;
+}
+#webinar .colright {
+  right: -168px;
+  left: auto;
+  float: right;
+  margin: 0 0 0 -148px !important;
+}
+#webinar .colright .ad {
+  position: static;
+  right: auto;
+  display: block;
+  float: none;
+  margin: 0 0 20px;
+}
+#webinar .article ol.list {
+  position: relative;
+  padding:0;
+  list-style-position: inside;
+  margin:24px 0 0;
+  overflow: visible;
+  *zoom:1;
+  font: normal 20px/24px "Flama", Arial;
+  color:#FFF;
+  counter-reset: item;
+}
+#webinar .article ol.list li {
+  background: url("/sites/all/themes/aw/images/sitewide/numberbg.gif") 0 0 no-repeat;
+  padding:11px 0 0 18px;
+  display:block;
+  border-bottom:0 none;
+  margin:0 0 -10px;
+}
+#webinar .article ol.list li:before {
+  content: counter(item);
+  counter-increment:item;
+}
+#webinar .article ol.list li div {
+  position: relative;
+  top:-22px;
+  margin:0 0 0 36px;
+  color: #000;
+  font: normal 16px/24px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+}
+.mac.gecko #webinar .article ol.list li div {
+  top:-23px;
+}
+#webinar .article ol.list li div h2 {
+  font-size: 21px
+}
+#webinar .article ol.list li div p, #webinar .article .media p  {
+  margin:14px 0 0;
+  /*width:485px;*/
+}
+
+/* do not automatically indent, and have automatic space between paragraphs. for articles, there is something in template.php for this */
+#webinar .article > p:first-of-type {
+  margin: 0;
+}
+#webinar .article > p {
+  margin: 16px 0 0 0;
+  text-indent: 0;
+}
+#webinar .news-article-image {
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Fix for Poplular / Latest lists */
+.node-type-webinar-article .mod.latest-news-popular-now .latest-news-popular-now-content ul li {
+  margin: 0 0 10px -22px;
+}
+
+.node-type-webinar-article .mod.latest-news-popular-now .latest-news-popular-now-content ul {
+  margin-bottom:15px;
+}
+
+
+
+/*******************************
+WEBINAR ARTICLES - NEW SELECTORS
+*******************************/
+.headings h1 {
+font-size: 48px;
+line-height: 48px;
+font-weight: bold;
+position: relative;
+margin: 0 0 10px;
+color: #000;
+letter-spacing: -2px;
+}

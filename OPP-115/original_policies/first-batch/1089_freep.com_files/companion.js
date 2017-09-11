@@ -1,0 +1,3 @@
+define(["jquery","underscore","baseview","modules/partner/companion-ad","utils"],function(e,i,t,s,r){"use strict";var n=t.extend({PROGRESSIVE_GALLERY_REFRESH_RATE:r.getNested(window.site_vars,"ADS","progressive_gallery_refresh_rate"),refreshCount:0,initialize:function(e){t.prototype.initialize.call(this,e),this.slides=e.slides,this.currentInfo=this.$(".pag-current-info"),this.subviews.ad=new s({el:this.$(".pag-ad"),adPlacement:"poster_gallery_companion"})},goToSlide:function(e){++this.refreshCount%this.PROGRESSIVE_GALLERY_REFRESH_RATE===0&&this.subviews.ad.refresh();var i=this.slides.eq(e),t=i.find(".pag-photo-info").html();this.currentInfo.html(t)}});return n});
+//# sourceMappingURL=companion.js
+//# sourceMappingURL=companion.js.map

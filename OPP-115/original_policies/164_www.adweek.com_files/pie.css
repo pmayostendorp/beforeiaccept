@@ -1,0 +1,53 @@
+.js #pie {
+	display:none;
+}
+#article .graph {
+/*	width:815px;*/
+}
+#article .article-pie .graph {
+	width:820px;
+}
+#pieholder {
+    width: 315px;
+    height: 325px;
+/*    margin: -7px 0 0 -15px;*/
+}
+    #pielabels, .pielabels {
+        position: absolute;
+        right: 0;
+        bottom: 13px;
+        width: 220px;
+        font: bold 22px/35px Georgia, serif;
+		overflow:hidden;
+		*zoom:1;
+    }
+	#pielabels {
+		right:240px;
+	}
+	#pielabels2 {
+		margin:0 0 0 19px;
+	}
+        #pielabels li, .pielabels li {
+            position: relative;
+            border-bottom: solid 1px #ccc;
+            cursor: pointer;
+            padding: 9px 0 7px 20px;
+            text-align: left;
+			width:200px;
+			/*margin:0 0 0 19px;*/
+			display:block;
+			font:bold 19px/22px Georgia, serif;
+        }
+            #pielabels li.nobd, #pielabels li:last-child, .pielabels li.nobd, .pielabels li:last-child {
+                border: none 0;
+            }
+            #pielabels li:hover, .pielabels li:hover  {
+                text-decoration: underline;
+            }
+            #pielabels li span, .pielabels li span {
+                position: absolute;
+                top: 14px;
+                left: 0;
+                width: 13px;
+                height: 13px;
+            }

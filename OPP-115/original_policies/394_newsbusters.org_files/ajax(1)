@@ -1,0 +1,94 @@
+var mboxCurrent = mboxFactories.get('default').get('Q3-2015-JS-V1-MOV-ACQ',0);mboxCurrent.setOffer(new mboxOfferAjax('<div id=\"mboxClick-Q3-2015-JS-V1-MOV-ACQ\" onclick=\"mboxFactories.get(\'default\').getSignaler().signal(\'click\', \'Q3-2015-JS-V1-MOV-ACQ-clicked\', \'mboxTarget=56603.685\')\"><!-- Offer Id: 140119  --><\/div><!-- Offer Id: 26703  --><!-- Offer Id: 107745  --><!-- Offer Id: 78763  -->\n<!-- AAM API call here -->'));mboxCurrent.getOffer().setOnLoad(function() {
+if (!window.tntFlashGlobals) tntFlashGlobals = {};
+//Update Inputs Here
+tntFlashGlobals.swf = "https://918ec7bd8a979be8d8f3-6e95fed53fb5a58b4332bc479f2dd214.ssl.cf5.rackcdn.com/childswfs/GM_BDL_ENG_79NPC5ST203MOV098x12_GETNOW_100VISA_SM_728x90.swf";
+tntFlashGlobals.banner_name ="TP79StarterTP";
+tntFlashGlobals.landing_page ="http://www.xfinity.com/move-transfer-deals?dfaid=4053494&cmp=0&cid=4053494";
+
+//To update jpg file
+tntFlashGlobals.gif = "https://918ec7bd8a979be8d8f3-6e95fed53fb5a58b4332bc479f2dd214.ssl.cf5.rackcdn.com/childswfs/GM_BDL_ENG_79NPC5ST203MOV098x12_GETNOW_100VISA_SM_728x90.jpg";
+
+//To update monitoring campaign info
+tntFlashGlobals.experience_name = "NED DMA";
+if (window.tntRenderFlash) tntRenderFlash();
+if (window.tntMboxTrack) tntMboxTrack("Q3-2015-JS-V1-MOV-ACQ_monitor", "creative_name=" + tntFlashGlobals.banner_name, "mbox_name=" + tntFlashGlobals.mboxName);
+ 
+if (typeof(s_tnt) == 'undefined') { 
+    s_tnt = ''; 
+} 
+s_tnt += '56603:275:0,'; 
+
+//if (window.tntRenderFlash) tntRenderFlash();
+if (window.tntRenderFlash && "Q3-2015-JS-V1-MOV-ACQ" != "target-global-mbox") tntRenderFlash();
+
+(function() {
+
+	if (!window.tntAamOffer) {
+		
+		window.tntAamOffer = true;
+	    var outList = [];
+
+		function tryAgain(args, _this) { var self = arguments.callee; var func = args.callee; func.current = (func.current || 0) + (func.interval || self.interval); if (func.current <= (func.max || self.max)) { setTimeout(function() { func.apply((_this || {}), Array.prototype.slice.call(args)) }, (func.interval || self.interval) ); return true; } else return false; }; 
+		tryAgain.max = 12000; 
+		tryAgain.interval = 500;
+
+		function tntLogIt(msg) {
+		    if (window.console && window.console.log) {
+		        console.log(msg);
+		    }
+		}
+
+	    function tntSendAamToSC() {
+		    if(outList.length > 0 && window.s) {
+		        // tntLogIt("[s.prop56=" + outList.join(",") + "]");
+		        // tntLogIt(s);			
+		        mboxFactoryDefault.addOnLoad(function() {
+		             s.linkTrackVars="prop56";
+		             s.prop56 = outList.join(",");
+		             s.tl(true,'o','neustar');
+		        });
+
+		    } else {
+	                tryAgain(arguments);
+	            }
+	    }
+
+		aam_tnt_cb = function(){
+
+		    if(outList.length == 0 && arguments[0].stuff != undefined && arguments[0].stuff != ""){
+
+		        for(var i = 0; i < arguments[0].stuff.length; i++){
+		
+		            if(arguments[0].stuff[i].cn =="aam_tnt"){
+		                if(arguments[0].stuff[0].cv.split(";")){
+		                    var demdex_raw = arguments[0].stuff[i].cv.split(";");
+		                    var tapMboxBuilder = mboxFactoryDefault.getUrlBuilder();
+		                    tapMboxBuilder.addParameters(demdex_raw);
+
+		                    for (var j=0; j<demdex_raw.length; j++) {
+		                        var splitVal = demdex_raw[j].split("=");
+					if (splitVal[0].match(/neustar_propensity|aam_segment|offsite_aam/g) && splitVal[1]) {
+						outList.push(splitVal[1]);
+					}
+		                    }  // for
+
+		                } // if
+
+		            } // if
+			
+		        } // for
+
+		        if (outList.length > 0 && !tntSendAamToSC.beenExecuted) {
+				tntSendAamToSC.beenExecuted = true;
+	            	        tntSendAamToSC();
+		        }
+		
+		    } // if
+
+		} // function
+		
+	}
+
+
+})();
+});mboxCurrent.loaded();

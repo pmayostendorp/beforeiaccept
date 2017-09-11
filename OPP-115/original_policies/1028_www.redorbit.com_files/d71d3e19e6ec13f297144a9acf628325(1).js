@@ -1,0 +1,3 @@
+var kid='d71d3e19e6ec13f297144a9acf628325';document.write('<div id="kmn_tag_'+kid+'" class="kmn-div">');
+kmn_sa.spark(kid,{codes:'p34,t12,t8,t11,h',srv:'a4'});kmn_data[kid]={chain:'N2',codes:['p34','t12','t8','t11','h'],full_index:1,order:'43p',w:300,h:250};var pubId=32702,siteId=55662,kadId=142785,kadtype=1,kadwidth=300,kadheight=250,kadpageurl='http%3A%2F%2Fredorbit.com';kmn_sa.write_js('//ads.pubmatic.com/AdServer/js/showad.js');
+document.write('</div>');

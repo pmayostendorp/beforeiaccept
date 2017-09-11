@@ -1,0 +1,309 @@
+if (!window.mraid) {document.write('\x3cdiv class="GoogleActiveViewClass" ' +'id="DfaVisibilityIdentifier_3101126085"\x3e');}
+(function() {
+  var DEBUG = ''.toLowerCase() == 'true';
+  var csiStart = (+new Date);
+  var studioObjects = window['studioV2'] = window['studioV2'] || {};
+  var publisherSideFilePath = unescape('');
+  if(publisherSideFilePath == '') {
+    publisherSideFilePath = '/doubleclick/DARTIframe.html';
+  } else if (publisherSideFilePath.charAt(publisherSideFilePath.length - 1) == '/') {
+    publisherSideFilePath += 'DARTIframe.html';
+  }
+  var bookingTimeMetaData = {
+  };
+
+  var runtimeMetaData = {
+  };
+
+  var exitUrlPatternMacroValues = {
+  };
+  var macroParser = function (macroName, value) {
+    return (value.indexOf(macroName) < 0) ? value : '';
+  };
+  var adServerData = {
+    eventReportingUrl: 'https://ad.doubleclick.net/activity;src=1713693;met=1;v=1;pid=116966584;aid=289866288;ko=0;cid=42116640;rid=42134427;rv=1;',
+    clickUrl: 'https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstk4p9LilHlDYXG3IK4G_aNFlB_s7osqJ8VyLMeqhf8KEb67UNWeBFI-1EInAIHg9wQNcfI76kahVxa8cG2pF0sOt9mVA_gLIriqgyXhB-gePb2RJ03twvBccqaRdNlVgWt&sig=Cg0ArKJSzBYCKDrwOQ_zEAE&adurl=http://r1.ace.advertising.com/click/site%3D871406/mnum%3D2015158/cstr%3D80358893%3D_55957f96_8722137462_871407*2015158*1183*0_1_/xsxdata%3D%24XSXDATA/imptid%3DAS3988500d18eb47bba611273c91aa6f1b/bnum%3D80358893/optn%3D64%3Ftrg%3D',
+    clickUrlTimesToEscape: '',
+    impressionUrl: 'https://googleads4.g.doubleclick.net/pcs/view?xai=AKAOjstk4p9LilHlDYXG3IK4G_aNFlB_s7osqJ8VyLMeqhf8KEb67UNWeBFI-1EInAIHg9wQNcfI76kahVxa8cG2pF0sOt9mVA_gLIriqgyXhB-gePb2RJ03twvBccqaRdNlVgWt&sig=Cg0ArKJSzPv2nHotrqiDEAE&adurl=',
+    geoData: 'ct=US&st=PA&city=13328&dma=10&zp=15206&bw=3',
+    siteName: 'N1558.1885636ADVERTISING.COMNPP',
+    siteId: '1906535',
+    adId: '0',
+    exitSuffix: '',
+    buyId: '8654229',
+    creativeId: '42116640',
+    placementId: '116966584',
+    advertiserId: '1713693',
+    keyValueOrdinal: '0',
+    renderingVersion: '1',
+    renderingId: '42134427',
+    randomNumber: '3101126085',
+    dynamicData: '',
+    stringReportingUrl: 'https://ad.doubleclick.net/activity;src=1713693;stragg=1;v=1;pid=116966584;aid=289866288;ko=0;cid=42116640;rid=42134427;rv=1;rn=3101126085;',
+    urlToGetKeywordsFor: '%LivePreviewSiteUrl',
+    bookingTimeMetaData: bookingTimeMetaData,
+    generatedAdSlot: false,
+    exitUrlPatternMacroValues: exitUrlPatternMacroValues,
+    renderingEnvironment: ('' == '1' ||
+        window['mraid']) ? 'IN_APP' : 'BROWSER',
+    placementDimensions: {
+      'w': '728',
+      'h': '90'
+    },
+    tag: {
+      adContainerElementId: macroParser('ad_container_id', ''),
+      hideObjects: '',
+      top: '',
+      left: '',
+      zIndex: '',
+      duration: '',
+      wmode: '',
+      preferHtml5Artwork: '' == 'true',
+      adSenseKeywords: '',
+      adSenseLatitude: '',
+      adSenseLongitude: '',
+      publisherSideFilePath: publisherSideFilePath,
+      runtimeMetaData: runtimeMetaData,
+      lidarEnabled: false,
+      expansionMode: '',
+      renderFloatInplace: ''.toLowerCase() == 'true',
+      tryToWriteHtmlInline: ''.toLowerCase() == 'true'
+    }
+  };
+
+    var scheme = location.protocol;
+  var staticResourceMediaServer = scheme == 'https:' ?
+       'https://s0.2mdn.net' :
+       'http://s0.2mdn.net';
+
+  var creativeMediaServer = scheme == 'https:' ?
+       'https://s0.2mdn.net' :
+       'http://s0.2mdn.net';
+
+  var backupImageUrl = '/1713693/RRI_fall2011_football_728x90.jpg';
+  if (!/^https?:/.test(backupImageUrl)) {
+    backupImageUrl = creativeMediaServer + backupImageUrl;
+  }
+  var backupImage = {
+    exitUrl: 'https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstk4p9LilHlDYXG3IK4G_aNFlB_s7osqJ8VyLMeqhf8KEb67UNWeBFI-1EInAIHg9wQNcfI76kahVxa8cG2pF0sOt9mVA_gLIriqgyXhB-gePb2RJ03twvBccqaRdNlVgWt&sig=Cg0ArKJSzBYCKDrwOQ_zEAE&adurl=http://r1.ace.advertising.com/click/site%3D871406/mnum%3D2015158/cstr%3D80358893%3D_55957f96_8722137462_871407*2015158*1183*0_1_/xsxdata%3D%24XSXDATA/imptid%3DAS3988500d18eb47bba611273c91aa6f1b/bnum%3D80358893/optn%3D64%3Ftrg%3Dhttp://www.redroof.com',
+    target: '_blank',
+    imageUrl: backupImageUrl,
+    width: '728',
+    height: '90',
+    backupDisplayActivityUrl: '',
+    thirdPartyBackupImpressionUrl: ''
+  };
+
+  var versionPrefix = DEBUG ? 'db_' : '';
+  var templateVersion = '200_73';
+  var renderingScriptPath = '/879366';
+  var rendererDisplayType = '';
+  rendererDisplayType += 'dfa7banner_';
+  rendererDisplayType += 'flash_';
+  var rendererFormat = 'inpage';
+  var rendererName = rendererDisplayType + rendererFormat;
+  var renderingLibrary = renderingScriptPath + '/' + rendererName + '_rendering_lib_' +
+      versionPrefix + templateVersion + '.js';
+  // Adserver has a logic to detect media files and prepend host name.
+  if (!/^https?:/.test(renderingLibrary)) {
+    renderingLibrary = staticResourceMediaServer + renderingLibrary;
+  }
+
+  var adCreativeDefinitions = {};
+
+  var creativeId = '42116640';
+  var adId = adCreativeDefinitions[adServerData.adId] ? adServerData.adId : 0;
+  // The unique creative is identified by combination of creative id and ad id.
+  // When the same creative(same creative id and same ad id) is served on the page more
+  // than once then they will share the creative definition yet there will be
+  // multiple instances of 'adResponses'.s
+  var creativeKey = [creativeId, adId].join('_');
+  var creativeDef = adCreativeDefinitions[adServerData.adId] ?
+      adCreativeDefinitions[adServerData.adId] :
+      '[%DEFAULT_PLCR_PATH%]';
+  if(!/^https?:/.test(creativeDef) && creativeDef.substring(0, 2) != '//') {
+    creativeDef = creativeMediaServer + creativeDef;
+  }
+    creativeDef = null;
+  studioObjects['creativeCount'] = studioObjects['creativeCount'] || 0;
+  var creativeDto = {
+    id: creativeId,
+    uniqueId: creativeId + '_' + studioObjects['creativeCount']++,
+    templateVersion: templateVersion,
+    adServerData: adServerData,
+    isPreviewEnvironment: '%PreviewMode' == 'true',
+    hasFlashAsset: true,
+    hasHtmlAsset: false,
+    requiresCss3Animations: false,
+    flashVersion: '8',
+    httpsMediaServer: 'https://s0.2mdn.net',
+    httpMediaServer: 'http://s0.2mdn.net',
+    renderingScriptPath: renderingScriptPath,
+    renderingLibrary: renderingLibrary,
+    rendererName: rendererName,
+    creativeDefinitionUrl: creativeDef,
+    creativeKey: creativeKey,
+    thirdPartyImpressionUrls: [''],
+    thirdPartyArtworkImpressionUrl: '',
+    breakoutToTop: false,
+    dimensions: {
+      width: '728px',
+      height: '90px'
+    },
+    backupImage: backupImage,
+    csiStart: csiStart,
+    csiAdRespTime: csiStart - (parseFloat('') || 0),
+    csiEvents: {},
+    hasModernizrFeatureChecks: false,
+    html5FeatureChecks: [
+    ],
+    hasSwiffyHtmlAsset: false
+  };
+
+  var inGdnIframe = window['IN_ADSENSE_IFRAME'] || false;
+  var inYahooSecureIframe = window.Y && Y.SandBox && Y.SandBox.vendor;
+  var inWinLiveIframe = false;
+  try {
+    inWinLiveIframe = !!window.$WLXRmAd;
+  } catch(e) {}
+  var inSafeFrame = window.$sf && window.$sf.ext;
+  var isMsnAjaxIframe = (typeof(inDapMgrIf) != 'undefined' && inDapMgrIf);
+  var breakoutIframe = ''.toLowerCase();
+  var shouldBreakout = (((false ||
+                          false) &&
+                         !inGdnIframe &&
+                         !inYahooSecureIframe &&
+                         !inSafeFrame &&
+                         !inWinLiveIframe) ||
+                        (true && breakoutIframe == 'true')) &&
+                       self != top &&
+                       !creativeDto.isPreviewEnvironment &&
+                       breakoutIframe != 'false';
+
+  if (adServerData.tag.adContainerElementId == '' &&
+      (true || false ||
+         adServerData.tag.renderFloatInplace)) {
+    var containerId = ['creative', creativeDto.uniqueId].join('_');
+    var divHtml = ['<div id="', containerId, '"></div>'].join('');
+    document.write(divHtml);
+    adServerData.tag.adContainerElementId = containerId;
+    adServerData.generatedAdSlot = true;
+  }
+  var creatives = studioObjects['creatives'] = studioObjects['creatives'] || {};
+  var creative = creatives[creativeKey] = creatives[creativeKey] || {};
+  var adResponses = creative['adResponses'] = creative['adResponses'] || [];
+  creative['shouldBreakout'] = creative['shouldBreakout'] || shouldBreakout;
+  var iframeBusterLibrary = renderingScriptPath + '/iframe_buster_' +
+      versionPrefix + templateVersion + '.js';
+  if(!/^https?:/.test(iframeBusterLibrary)) {
+    iframeBusterLibrary = staticResourceMediaServer + iframeBusterLibrary;
+  }
+  var loadedLibraries = studioObjects['loadedLibraries'] = studioObjects['loadedLibraries'] || {};
+  var versionedLibrary = loadedLibraries[templateVersion] = loadedLibraries[templateVersion] || {};
+  var typedLibrary = versionedLibrary[rendererName] = versionedLibrary[rendererName] || {};
+  adResponses.push({
+    creativeDto: creativeDto
+  });
+  if (shouldBreakout) {
+    if (versionedLibrary['breakout']) {
+      versionedLibrary['breakout']();
+    } else if (!versionedLibrary['breakoutLoading']) {
+      versionedLibrary['breakoutLoading'] = true;
+      document.write('<scr' + 'ipt type="text/javascript" src="' + iframeBusterLibrary + '" async="async"></scr' + 'ipt>');
+    }
+  } else if (typedLibrary['bootstrap'] && creative['creativeDefinition']) {
+    typedLibrary['bootstrap']();
+  } else {
+    if (!typedLibrary['loading']) {
+      typedLibrary['loading'] = true;
+      creativeDto.csiEvents['gb'] = (+new Date);
+      document.write('<scr' + 'ipt type="text/javascript" src="' + renderingLibrary + '"' + (adServerData.tag.tryToWriteHtmlInline ? '' : ' async="async"') + '></scr' + 'ipt>');
+    }
+  }
+  if (isMsnAjaxIframe) {
+    window.setTimeout("document.close();", 1000);
+  }
+  (function() {
+  var creativeDefinition = {
+    customScriptUrl: '',
+    isDynamic: false,
+    delayedImpression: false,
+    standardEventIds: {
+      HTML5_CREATIVE_IMPRESSION: '871060'
+    },
+    exitEvents: [
+      {
+        name: 'clickTag',
+        reportingId: '',
+        url: 'https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstk4p9LilHlDYXG3IK4G_aNFlB_s7osqJ8VyLMeqhf8KEb67UNWeBFI-1EInAIHg9wQNcfI76kahVxa8cG2pF0sOt9mVA_gLIriqgyXhB-gePb2RJ03twvBccqaRdNlVgWt&sig=Cg0ArKJSzBYCKDrwOQ_zEAE&adurl=http://r1.ace.advertising.com/click/site%3D871406/mnum%3D2015158/cstr%3D80358893%3D_55957f96_8722137462_871407*2015158*1183*0_1_/xsxdata%3D%24XSXDATA/imptid%3DAS3988500d18eb47bba611273c91aa6f1b/bnum%3D80358893/optn%3D64%3Ftrg%3Dhttp://www.redroof.com',
+        targetWindow: '_blank',
+        windowProperties: ''
+      }
+    ],
+    timerEvents: [
+    ],
+    counterEvents: [
+    ],
+    childFiles: [
+    ],
+    videoFiles: [
+    ],
+    videoEntries: [
+    ],
+    primaryAssets: [
+      {
+        id: '0',
+        artworkType: 'FLASH',
+        displayType: 'BANNER',
+        width: '728',
+        height: '90',
+        servingPath: '/1713693/RRI_fall2011_football_728x90.swf',
+        zIndex: '0',
+        customCss: '',
+        flashArtworkTypeData: {
+          actionscriptVersion: '1',
+          wmode: 'opaque',
+          sdkVersion: '',
+          flashBackgroundColor: '',
+          allowScriptAccess: 'never'
+        },
+        htmlArtworkTypeData: null,
+        floatingDisplayTypeData: null,
+        expandingDisplayTypeData: null,
+        imageGalleryTypeData: null,
+        pageSettings:null,
+layoutsConfig: null,
+layoutsApi: null
+      }
+    ]
+  }
+  var rendererDisplayType = '';
+  rendererDisplayType += 'dfa7banner_';
+  rendererDisplayType += 'flash_';
+  var rendererFormat = 'inpage';
+  var rendererName = rendererDisplayType + rendererFormat;
+
+  var creativeId = '42116640';
+  var adId = '0';
+  var templateVersion = '200_73';
+  var studioObjects = window['studioV2'] = window['studioV2'] || {};
+  var creativeObjects = studioObjects['creatives'] = studioObjects['creatives'] || {};
+  var creativeKey = [creativeId, adId].join('_');
+  var creative = creativeObjects[creativeKey] = creativeObjects[creativeKey] || {};
+  creative['creativeDefinition'] = creativeDefinition;
+  var adResponses = creative['adResponses'] || [];
+  for (var i = 0; i < adResponses.length; i++) {
+    adResponses[i].creativeDto && adResponses[i].creativeDto.csiEvents &&
+        (adResponses[i].creativeDto.csiEvents['pe'] =
+            adResponses[i].creativeDto.csiEvents['pe'] || (+new Date));
+  }
+  var loadedLibraries = studioObjects['loadedLibraries'] = studioObjects['loadedLibraries'] || {};
+  var versionedLibrary = loadedLibraries[templateVersion] = loadedLibraries[templateVersion] || {};
+  var typedLibrary = versionedLibrary[rendererName] = versionedLibrary[rendererName] || {};
+  if (typedLibrary['bootstrap']) {
+    typedLibrary.bootstrap();
+  }
+})();
+
+})();
+document.write('\n\x3cnoscript\x3e\n  \x3ca target\x3d\x22_blank\x22 href\x3d\x22https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjstk4p9LilHlDYXG3IK4G_aNFlB_s7osqJ8VyLMeqhf8KEb67UNWeBFI-1EInAIHg9wQNcfI76kahVxa8cG2pF0sOt9mVA_gLIriqgyXhB-gePb2RJ03twvBccqaRdNlVgWt\x26sig\x3dCg0ArKJSzBYCKDrwOQ_zEAE\x26adurl\x3dhttp://r1.ace.advertising.com/click/site%3D871406/mnum%3D2015158/cstr%3D80358893%3D_55957f96_8722137462_871407*2015158*1183*0_1_/xsxdata%3D%24XSXDATA/imptid%3DAS3988500d18eb47bba611273c91aa6f1b/bnum%3D80358893/optn%3D64%3Ftrg%3Dhttp://www.redroof.com\x22\x3e\n    \x3cimg border\x3d\x220\x22 alt\x3d\x22\x22 src\x3d\x22//s0.2mdn.net/1713693/RRI_fall2011_football_728x90.jpg\x22\n        width\x3d\x22728\x22 height\x3d\x2290\x22 /\x3e\n  \x3c/a\x3e\n\x3c/noscript\x3e\n');if (!window.mraid) {document.write('\x3c/div\x3e');}if (!window.mraid) {(function() {var avDiv = document.getElementById("DfaVisibilityIdentifier_3101126085");if (avDiv) {avDiv['_avi_'] = 'Bp5v-lX-VVZn1NI6MMJi7saAFAAAAABABOAHIAQngBAKgBj8';avDiv['_avihost_'] = 'pagead2.googlesyndication.com';avDiv['_avm_'] = 'la\x3d0\x26';}var glidar = document.createElement('script');glidar.type = 'text/javascript';glidar.async = true;glidar.src = '//pagead2.googlesyndication.com/pagead/js/lidar.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glidar, s);})();}(function(){var f=function(a,c,b){return a.call.apply(a.bind,arguments)},g=function(a,c,b){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var b=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(b,d);return a.apply(c,b)}}return function(){return a.apply(c,arguments)}},k=function(a,c,b){k=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?f:g;return k.apply(null,arguments)};var l=document,m=window;var n=function(a){return{visible:1,hidden:2,prerender:3,preview:4}[a.webkitVisibilityState||a.mozVisibilityState||a.visibilityState||""]||0},p=function(a){var c;a.mozVisibilityState?c="mozvisibilitychange":a.webkitVisibilityState?c="webkitvisibilitychange":a.visibilityState&&(c="visibilitychange");return c};var r=function(){this.g=l;this.j=m;this.i=!1;this.h=[];this.m={};if(3==n(this.g)){var a=k(this.o,this);this.n=a;var c=this.g,b=p(this.g);c.addEventListener?c.addEventListener(b,a,!1):c.attachEvent&&c.attachEvent("on"+b,a)}else q(this)};r.p=function(){return r.l?r.l:r.l=new r};var s=/^([^:]+:\/\/[^/]+)/m,t=/^\d*,(.+)$/m,q=function(a){if(!a.i){a.i=!0;for(var c=0;c<a.h.length;++c)a.k.apply(a,a.h[c]);a.h=[]}};r.prototype.q=function(a,c){var b=c.target.t();(b=t.exec(b))&&(this.m[a]=b[1])};r.prototype.k=function(a,c){var b;if(b=this.s)i:{try{var d=s.exec(this.j.location.href),e=s.exec(a);if(d&&e&&d[1]==e[1]&&c){var h=k(this.q,this,c);this.s(a,h);b=!0;break i}}catch(y){}b=!1}b||(b=this.j,b.google_image_requests||(b.google_image_requests=[]),d=b.document.createElement("img"),d.src=a,b.google_image_requests.push(d))};r.prototype.o=function(){if(3!=n(this.g)){q(this);var a=this.g,c=p(this.g),b=this.n;a.removeEventListener?a.removeEventListener(c,b,!1):a.detachEvent&&a.detachEvent("on"+c,b)}};var u=function(a,c){var b=/(google|doubleclick).*\/pagead\/adview/.test(a),d=r.p(),e=a;if(b){b="&vis="+n(d.g);c&&(b+="&ve=1");var h=e.indexOf("&adurl"),e=-1==h?e+b:e.substring(0,h)+b+e.substring(h)}d.i?d.k(e,c):d.h.push([e,c])},v=["pdib"],w=this;v[0]in w||!w.execScript||w.execScript("var "+v[0]);for(var x;v.length&&(x=v.shift());)v.length||void 0===u?w=w[x]?w[x]:w[x]={}:w[x]=u;})();pdib("https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjstk4p9LilHlDYXG3IK4G_aNFlB_s7osqJ8VyLMeqhf8KEb67UNWeBFI-1EInAIHg9wQNcfI76kahVxa8cG2pF0sOt9mVA_gLIriqgyXhB-gePb2RJ03twvBccqaRdNlVgWt\x26sig\x3dCg0ArKJSzPv2nHotrqiDEAE\x26adurl\x3d");

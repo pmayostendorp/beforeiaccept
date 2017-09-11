@@ -1,0 +1,756 @@
+/*FONTS*/
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(/assets/fonts/MLABS/ProximaNova-Regular.otf);
+}
+
+/*GLOBAL*/
+.MLABS-treatment-header
+{
+	font-family: "Proxima Nova";
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	width: 360px;
+	float:left;
+}
+
+.MLABS-treatment-header3
+{
+	font-family: "Proxima Nova";
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: left;
+	width: 459px;
+	float:left;
+	margin-top: 0px;
+}
+
+.MLABS-signup-button
+{
+	background: url('/images/MLABS/btn-sign-up-now.png');
+	width: 143px;
+	height: 28px;
+	float:right;
+    cursor: pointer;
+}
+
+.MLABS-signup-button:hover
+{
+	background-position: 0 -28px
+}
+
+.MLABS-popup-overlay
+{
+    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:black;
+    background: rgba(0,0,0,.8);
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    z-index: 10;
+    display:none;
+}
+
+.MLABS-popup
+{
+	background: url('/images/MLABS/modal-titlebar-bg.jpg') #FFF;
+	background-repeat: no-repeat;
+    width: 518px;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 99999999;
+    padding: 20px;
+    display:none;
+}
+
+.MLABS-popup .MLABS-close
+{
+	float:right;
+	margin-top: -8px;
+	margin-right: -5px;
+    cursor: pointer;
+}
+
+.MLABS-popup .MLABS-banner
+{
+	/*padding-top: 7px;*/
+	margin-left: -20px;
+	margin-top: -13px;
+	margin-bottom: 20px;
+}
+
+.MLABS-popup-headline
+{
+	font-family: Arial;
+	font-size: 24px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #481456;
+}
+
+.MLABS-popup-copy
+{
+	margin-top: 5px;
+	font-family: Arial;
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.MLABS-popup-headline2
+{
+	font-family: Arial;
+	font-size: 17px;
+	line-height: 22px;
+	font-weight: bold;
+	color: #000;
+}
+
+.MLABS-popup-ul li
+{
+	padding-bottom: 15px;
+	font-size: 17px;
+}
+
+.MLABS-popup-ul
+{
+	padding-left: 20px;
+	width: 240px;
+}
+
+.MLABS-short-input
+{
+	width: 212px; /* varies */
+	height: 30px;
+	background-color: #fff;
+	border: solid 1px #dddedc;
+	margin-right: 10px;
+	padding-left: 5px;
+}
+
+.MLABS-long-input
+{
+	width: 445px; /* varies */
+	height: 30px;
+	background-color: #fff;
+	border: solid 1px #dddedc;
+	padding-left: 5px;
+}
+
+.MLABS-input-default
+{
+	font-family: Arial;
+	font-size: 15px;
+	line-height: 30px;
+	color: #949393;
+}
+
+.MLABS-privacy
+{
+	font-family: Arial;
+	font-size: 11px;
+	line-height: 16px;
+	color: #737171;
+}
+
+.MLABS-button
+{
+    background-color: #E98D28;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+	font-family: Arial;
+	font-size: 16px;
+    font-weight: bold;
+    /*height: 26px;*/
+    padding: 6px 12px 6px 12px;
+    margin-top: 10px;
+}
+
+.center
+{
+	margin:0 auto;
+	display: block;
+}
+
+.text-center
+{
+	text-align: center;
+}
+
+.MLABS-headline3
+{
+	margin-left: 85px;
+	margin-right: 85px;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 17px;
+	font-weight: bold;
+	color: #603834;
+}
+
+ul.MLABS-headline3
+{
+	margin-left: 60px;
+	margin-right: 75px;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 17px;
+	font-weight: bold;
+	color: #603834;
+	list-style-image: url("/images/MLABS/li-elements.png");
+}
+
+ul.MLABS-headline3 li
+{
+	margin-bottom: 7px;
+}
+
+
+/*Treatment 1*/
+#MLABS-treatment-1-popup-newsletter
+{
+	background: url('/images/MLABS/newsletter4n.png');
+	background : url('/images/MLABS/newsletter4n.png')\9; /* IE8 and below */
+	background-position: 285px -4px;
+	background-repeat: no-repeat;
+	background-size: 212px;
+	font-family: Arial;
+}
+
+
+/*Treatment 3*/
+.MLABS-signup-buttonT3
+{
+	background: url('/images/MLABS/btn-redeem-offer.png');
+	width: 143px;
+	height: 28px;
+	float:right;
+    cursor: pointer;
+}
+
+.MLABS-signup-buttonT3:hover
+{
+	background-position: 0 -28px
+}
+.ctrBtn
+{
+	background: url('/images/MLABS/btn-reedem-offer-02.png');
+	width: 151px;
+	height: 37px;
+	float:right;
+    cursor: pointer;
+    margin-top:9px;
+}
+.top_row{
+	padding: 5px 0px 0px 0px;
+}
+
+/*Signup Page*/
+.MLABS-signup-bg
+{
+	background-image: url("/images/MLABS/form-bg.png");
+	width: 302px;
+	height:655px;
+	background-repeat: no-repeat;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 17px;
+	color: #fff;
+}
+
+.MLABS-privacy2
+{
+	margin-left: 85px;
+	margin-right: 85px;
+    color: #000000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+	text-align: center;
+}
+
+.MLABS-signup-bg table img
+{
+	float: right;
+	margin-top: -12px;
+}
+
+#signupFormTableTreatment
+{
+	width: 300px;
+	margin-top: 100px;
+}
+
+.signupFormTreatmentSubmit
+{
+    background-image: url('/images/MLABS/btn-sign-me-up.png');
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 181px;
+    height: 109px;
+    border: 0px;
+    cursor: pointer;
+    outline: 0;
+    background-color:transparent;
+    margin-top: -35px;
+}
+
+.signupFormTreatmentSubmit:hover
+{
+      background-position:  0px -109px;
+}
+
+#signupFormTableTreatment input, .customSelect
+{
+	margin-bottom: 10px;
+}
+
+#signupFormTableTreatment input[type=text]
+{
+	background-color: #000;
+	border: solid 2px #009eff;
+	display:inline-block;
+	color:white;
+	padding-left: 4px;
+	width: 136px;
+}
+
+.customSelect {
+/* This is the default class that is used */
+/* Put whatever custom styles you want here */
+	background-color: #000;
+	border: solid 2px #009eff;
+	width: 134px;
+	padding-left: 4px;
+	overflow: hidden;
+
+}
+
+.customSelect.customSelectHover {
+	/* Styles for when the select box is hovered */
+	font-color: white;
+	background-color: #000;
+
+}
+
+.customSelect.customSelectOpen {
+/* Styles for when the select box is open */
+	font-color: #000;
+	border: solid 2px #009eff;
+}
+
+.customSelect.customSelectFocus {
+/* Styles for when the select box is in focus */
+	background-color: #000;
+	border: solid 2px #009eff;
+}
+
+.customSelect.customSelectDisabledOption {
+	/* Styles for when the selected item is a disabled one */
+	background-color: #000;
+}
+
+.customSelect.customSelectDisabled {
+	/* Styles for when the select box itself is disabled */
+	background-color: #000;
+}
+
+.customSelectInner {
+	/* You can style the inner box too */
+	background-color: black;
+	background-image: url('/images/MLABS/icon-arrow.png');
+	background-position: 120px;
+	background-repeat: no-repeat;
+}
+
+
+.MLABS-form-error
+{
+	height: 18px;
+	/*width: 86px;*/
+	position: absolute;
+	margin-top: -13px;
+	margin-left: 0px;
+	color:red;
+	display: none;
+	padding-left: 5px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+.addressBlock
+{
+	/*display: none;*/
+}
+
+#itemError
+{
+	margin-top: -16px;
+	margin-left: 78px;
+}
+
+.text-left
+{
+	text-align: left;
+}
+.modal-number{
+	padding-top: 0px;
+	float: left;
+	clear: both;
+	padding-right: 12px;
+}
+.modal-number-txt{
+	float:left;
+}
+.t3modal{
+	height: 11px;
+	padding-top: 16px;
+	padding-bottom:16px;
+}
+.banner_persist{
+	height:70px;
+	background: #000;
+	background-position: top right;
+	background-repeat: repeat-x;
+	position: absolute;
+	clear: both;
+	margin:0 auto;
+	top:0px;
+	opacity: .8;
+    display:none;
+    width: 799px;
+    left:0;
+    right:0;
+
+    *margin-left:-400px;
+    *margin-right:-400px;
+    *left:50%;
+}
+.banner_persist .MLABS-signup-buttonT3{
+	position:relative;
+	bottom:15px;
+}
+.banner{
+	height:60px;
+}
+.banner_contain{
+	height: 54px;
+    margin: 0 auto;
+    position: relative;
+    width: 799px;
+
+}
+.MLABS-popup-headline2, .MLABS-popup-ul li, .MLABS-popup-copy {
+	text-align:left;
+}
+.pBanner{
+	float: right;
+	width: 500px;
+}
+.left{
+	float: left;
+	width: 326px;
+	height: 73px;
+}
+.right{
+	float: right;
+	top: -14px;
+	width: 162px;
+	position: absolute;
+	right: 10px;
+
+}
+.close_btn{
+	text-align: right;
+padding-right: 40px;
+position: relative;
+bottom: 6px;
+cursor: pointer;
+}
+.mainLogo{
+	position:relative;
+	bottom:9px;
+}
+.window {	
+	background-image:url(http://www5.neworleansonline.com/images/MLABS/bg-a2.png);	
+	background-position:top right;
+	background-repeat:repeat-x;
+}
+#banner{
+	 padding-bottom: 5px;
+}
+
+
+
+/*Booking Test CSS*/
+.advSearch{
+	color: #2a73d2;
+}
+
+#hotSearch a{
+	text-decoration: none;
+}
+.advSearch:hover{
+	color: #06326c;
+}
+
+#hotelsButton{
+	background-position: 0px 0px;
+}
+#hotelsButton:hover{
+	background-position: 0px 15px;
+}
+#bAndBButton{
+	background-position: 0px 0px;
+}
+#bAndBButton:hover{
+	background-position: 0px 15px;
+}
+#brwsButton{
+	background-position: 0px 46px;
+	background-image: url(/images/MLABS/booking/btn-browse-now.gif);
+	width: 172px;
+	height:46px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+
+}
+#brwsButton:hover{
+	background-position: 0px 0px;
+}
+.hotelTab{
+	background-image: url(/images/MLABS/booking/tab-hotels.gif);
+	width: 84px;
+	height: 23px;
+	background-repeat: no-repeat;
+	margin: 0px;
+	float:left;
+}
+
+.bbTab{
+	background-image: url(/images/MLABS/booking/tab-bbs.gif);
+	width: 144px;
+	height:23px;
+	background-repeat: no-repeat;
+	float:right;
+	margin: 0px;
+
+}
+.tabs-nav{
+	right: 2px;
+	bottom:13px;
+	height: 25px;
+	position:relative;
+	width:228px;
+
+}
+.bb{
+	background-image:url(/images/MLABS/booking/btn-bb.gif);
+	width: 85px;
+	height:15px;
+	margin:0px;
+	float:right;
+	background-position: 0px 0px;
+}
+.hb{
+	background-image:url(/images/MLABS/booking/btn-hotels.gif);
+	width:91px;
+	height:15px;
+	margin:0px;
+	float:left;
+	padding:0px;
+	background-position: 0px 0px;
+
+}
+
+
+
+/*Navigation Test treatment 1 CSS*/
+.drop2 a:hover, .drop3 a:hover{
+    text-decoration:none;
+}
+
+
+	
+
+
+
+/*Navigation Test treatment 2 CSS*/
+
+#newNav2{
+	z-index:100;
+	position:relative;top:7px;
+	height:57px;
+	color:#fff;
+	background-image:url(/images/MLABS/engagement/bg-blue-nav.png);
+	display:block;
+}
+#newNav2 .drop1{
+	height: 343px;
+}
+#newNav2 .box1{
+	height: 47px;
+	cursor: pointer;
+	float: left; 
+	font-weight: bold; 
+	font-family: 'Proxima Nova'; 
+	width: 164px; 
+	right: 9px; 
+	bottom: 4px; 
+	position: relative; 
+	color: rgb(255, 255, 255); 
+	z-index: 10;	
+}
+#newNav2 .box2{	
+	height: 47px;
+	cursor: pointer;
+	float: left; 
+	font-weight: bold; 
+	font-family: 'Proxima Nova'; 
+	width: 167px; 
+	right: 17px; 
+	bottom: 4px; 
+	position: relative; 
+	color: rgb(255, 255, 255); 
+	z-index: 10;	
+}
+#newNav2 .box3{	
+	height: 47px;
+	cursor: pointer;
+	float: left; 
+	font-weight: bold; 
+	font-family: 'Proxima Nova'; 
+	width: 168px; 
+	right: 20px; 
+	bottom: 4px; 
+	position: relative; 
+	color: rgb(255, 255, 255); 
+	z-index: 10;	
+}
+#newNav2 .box4{	
+	height: 47px;
+	cursor: pointer;
+	float: left; 
+	font-weight: bold; 
+	font-family: 'Proxima Nova'; 
+	width: 152px; 
+}
+#newNav2 .box34{	
+	height: 47px;
+	cursor: pointer;
+	float: left; 
+	font-weight: bold; 
+	font-family: 'Proxima Nova'; 
+	width: 145px; 
+	right: 26px; 
+	bottom: 4px; 
+	position: relative; 
+	color: rgb(255, 255, 255); 
+	z-index: 10;	
+}
+
+#newNav, #newNav1{
+	display:none;
+}
+.navTable{
+	display:none;
+}
+.leadCapt{
+	border: solid 1px #181818;
+	width: 199px;
+	height: 149px;	
+	background-color: #fff;
+	position: relative;
+	left: 14px;
+	margin-bottom:6px;
+}
+.leadCapt h1{
+	font-family: "Proxima Nova";
+	font-size: 17px;
+	color: #333;	
+	margin:0 auto;
+	margin-top:18px;
+}
+.leadCapt h2{
+	font-family: "Proxima Nova";
+	font-size: 13px;
+	color: #333;	
+}
+.leadCapt input{
+	width: 152px;
+	height: 30px;
+	border: solid 1px #181818;
+	font-family: "Proxima Nova";
+	font-size: 13px;
+	color: #acacac;
+	margin-left: 16px;
+	margin-top: 16px;
+	padding-left: 14px;
+	line-height:30px;
+}
+.leadCapt .sgnCta{
+	width: 146px;
+	height: 34px;
+	background-color: #255ec7;
+	font-family: "Proxima Nova";
+	font-size: 19px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 27px;
+	cursor:pointer;
+}
+.news_error{
+	color: red;
+	position: absolute;
+	font-size: 10px;
+	left: 12px;
+	display:none;
+}
+.trt1 .leadCapt{
+	height:149px;
+}
+.trt2 .leadCapt{
+	height:179px;
+}
+.trt2 h2, .trt3 h2, .trt5 h2, .trt6 h2{
+	text-align: center;
+	width: 156px;
+	margin: 0 auto;
+	margin-top: 6px;
+}
+.trt2 #eaText, .trt3 #eaText, .trt5 #eaText, .trt6 #eaText{
+	margin-top: 12px;	
+}
+.trt3 .leadCapt{
+	height:193px;
+}
+.trt5 .leadCapt{
+	height:178px;
+}
+.trt6 .leadCapt{
+	height:193px;
+}
+.sLink{
+	color: #143062;
+}
+.sLink:hover{
+	color: #e98d28;
+}
+#q{
+	bottom:7px!important\9; /* IE8 and below */
+}

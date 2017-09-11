@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0210)http://cdn-akamai.mookie1.com/html/groupm.html?xaxis_url=dailynews.com&adv_id=283421&io_id=${IO_ID}&cpg_id=1830719&cp_id=7623330&creative_id=27255327&supply_type=0&seller_member_id=1944&apple_ida=&aaid=&win_id= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body marginwidth="0" marginheight="0">
+<script>
+
+function cookie_check(ifd,ife){ var s=ife.indexOf(ifd); if(s==-1)return ""; s+=ifd.length; var e=ife.indexOf(";",s); if(e==-1)e=ife.length; return ife.substring(s,e); }
+// parseUri 1.2.2
+// (c) Steven Levithan <stevenlevithan.com>
+// MIT License
+
+function parseUri (str) {
+	var	o   = parseUri.options,
+		m   = o.parser[o.strictMode ? "strict" : "loose"].exec(str),
+		uri = {},
+		i   = 14;
+
+	while (i--) uri[o.key[i]] = m[i] || "";
+
+	uri[o.q.name] = {};
+	uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
+		if ($1) uri[o.q.name][$1] = $2;
+	});
+
+	return uri;
+};
+
+parseUri.options = {
+	strictMode: false,
+	key: ["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"],
+	q:   {
+		name:   "queryKey",
+		parser: /(?:^|&)([^&=]*)=?([^&]*)/g
+	},
+	parser: {
+		strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
+		loose:  /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
+	}
+};
+
+var is_http=false;
+if(document.location.protocol == "http:") {
+	is_http=true;
+}
+
+
+var Xaxis_ID=cookie_check("id=",document.cookie);
+var opt_out=cookie_check("optouts=",document.cookie);
+var three_pdi=cookie_check("3pdi=",document.cookie);
+
+var xaxis_full_url=document.location.toString();
+xaxis_full_url=decodeURIComponent(xaxis_full_url);
+
+var xaxis_string=xaxis_full_url.substring(xaxis_full_url.indexOf('?')+1,xaxis_full_url.length);
+
+var xaxis_string_pairs=xaxis_string.split('&');
+
+var xpa=false;
+var synch=false;
+var xaxis_domain='';
+var xaxis_path='';
+var ac_id='';
+var tag_id='';
+var country_id=''
+var xaxis_url='';
+
+var seller_member_id='';
+var adv_id='';
+var io_id='';
+var cpg_id='';
+var cp_id='';
+var creative_id='';
+
+// Mobile Device IDs
+var apple_ida='';
+var aaid='';
+var win_id='';
+var supply_type='';
+
+// TTD Data
+var ttd_campaign_id='';
+
+try {
+	for (var i = 0; i < xaxis_string_pairs.length; i++) {
+		var qs=xaxis_string_pairs[i].split('=');
+
+		if(qs[0] == 'seller_member_id') { 
+			seller_member_id=qs[1];
+		} 
+		if(qs[0] == 'xaxis_url') { 
+			xaxis_url=qs[1];
+		} 
+		if(qs[0] == 'cp_id') { 
+			cp_id=qs[1];
+		}
+		if(qs[0] == 'country') { 
+			country_id='gm_'+qs[1];
+		}
+		if(qs[0] == 'adv_id') { 
+			adv_id=qs[1];
+		}
+		if(qs[0] == 'io_id') { 
+			io_id=qs[1];
+		}
+		if(qs[0] == 'cpg_id') { 
+			cpg_id=qs[1];
+		}
+		if(qs[0] == 'creative_id') { 
+			creative_id=qs[1];
+		}
+		if(qs[0] == 'apple_ida') { 
+			apple_ida=qs[1];
+		}
+		if(qs[0] == 'aaid') { 
+			aaid=qs[1];
+		}
+		if(qs[0] == 'win_id') { 
+			win_id=qs[1];
+		}
+		if(qs[0] == 'supply_type') { 
+			supply_type=qs[1];
+		}
+		if(qs[0] == 'ttd_campaign_id') { 
+			ttd_campaign_id=qs[1];
+		}
+	}
+
+	xaxis_domain=parseUri(xaxis_url).host;
+	xaxis_domain=xaxis_domain.replace(/www./g,'')
+	xaxis_path=parseUri(xaxis_url).path;
+
+	if((country_id == 'us') || (country_id == '') ){
+		ac_id=2;
+		tag_id=seller_member_id;
+		country_id='xaxis_us';
+		xpa=true;
+		synch=true;
+	} else if(country_id == 'gm_ca') {
+		ac_id=36;
+		tag_id=seller_member_id;
+		country_id='xaxis_ca';
+		xpa=true;
+		synch=true;
+	} else if(country_id == 'gm_br') {
+		ac_id=44;
+		tag_id=1044;
+		xpa=true;
+		synch=false;
+	} else if(country_id == 'gm_mx') {
+		ac_id=45;
+		tag_id=1045;
+		xpa=true;
+		synch=false;
+	} else if(country_id == 'gm_ar') {
+		ac_id=46;
+		tag_id=1046;
+		xpa=true;
+		synch=false;
+	} else if(country_id == 'gm_co') {
+		ac_id=47;
+		tag_id=1047;
+		xpa=true;
+		synch=false;
+	} else if(country_id == 'gm_ch') {
+		ac_id=48;
+		tag_id=1048;
+		xpa=true;
+		synch=false;
+	} else if(country_id == 'gm_pe') {
+		ac_id=49;
+		tag_id=1049;
+		xpa=true;
+		synch=false;
+	} else if(country_id == 'gm_ve') {
+		ac_id=50;
+		tag_id=1040;
+		xpa=true;
+		synch=false;
+	}
+	if(xpa) {
+		// Do Learning Pixel
+		var ping_tdmp=new Image(1,1);
+		if (cpg_id != '') {
+			ping_tdmp.src = "//gmtdmp.mookie1.com/tagr/v1/imp?acid="+ac_id+"&inst=NA&tagid="+tag_id+"&oaslt.gmtsrc="+country_id+"&oaslt.gmttzd=-300&src.domain="+xaxis_domain+"&src.url="+xaxis_path+"&src.platformID=AN&src.IO="+io_id+"&src.LineItem="+cpg_id+"&src.campaignID="+cp_id;
+		} else {
+			ping_tdmp.src = "//gmtdmp.mookie1.com/tagr/v1/imp?acid="+ac_id+"&inst=NA&tagid="+tag_id+"&oaslt.gmtsrc="+country_id+"&oaslt.gmttzd=-300&src.domain="+xaxis_domain+"&src.url="+xaxis_path;
+		}
+	}
+	// Do Mobile	
+	if (apple_ida != '' || aaid != '' || win_id != '') {
+		var ping_xaxis_dmp=new Image(1,1);
+		ping_xaxis_dmp.src='//t.mookie1.com/t/v1/imp?migAgencyId=1049&migSource=appnx&&migRandom=&migTrackDataExt='+cpg_id+';'+creative_id+';0&migTrackFmtExt=li;cr;pl&migParam1='+supply_type+'&migParam2='+apple_ida+'&migParam3='+aaid+'&migParam4='+win_id;
+	}
+} catch (e) {}
+
+if(opt_out.length == 0) {
+	if(Xaxis_ID.length == 0) {
+		var xaxis_dmp_ping=new Image(1,1);
+		xaxis_dmp_ping.src='//t.mookie1.com/rsp?dnv=1234567890&rurl=//t.mookie1.com/t/v1/imp?guid=[MOOKIE]';
+	} else {
+
+		if(three_pdi.length == 0 ) {
+	
+			// Synch Daily
+			if( seller_member_id == '181' ) {
+				synch=false;
+			}
+
+
+			if(synch) {
+				var xaxis_synch=new Image(1,1);
+ 	 			xaxis_synch.src='//b3.mookie1.com/1/xaxis/synch/1@Bottom3';
+
+				var partner_url='//cdn-akamai.mookie1.com/html/x72.html';
+				var frame=document.createElement('iframe');
+				frame.style.width='0px';
+				frame.style.height='0px';
+				frame.frameBorder='0';
+				frame.style.position='absolute';
+				frame.style.top='0';
+				frame.style.left='0';
+				frame.scrolling='no';
+				frame.src=partner_url;
+				document.getElementsByTagName("head")[0].appendChild(frame);
+
+				// Set cookie with marker to do it all again in 1 day
+				var oas_d=new Date();
+				var oas_m=oas_d.getTime();
+				oas_d.setTime(oas_m+86400000);
+				document.cookie="3pdi=set;expires="+oas_d.toGMTString()+";path=/;domain=.mookie1.com";
+			}
+		}
+
+		if(cp_id == '7987351' || cp_id == '7987384') {
+			var rlsa_url='//b3.mookie1.com/2/xaxis/catalyst/rlsa/lal_getaquote/@x96';
+			var frame_2=document.createElement('iframe');
+			frame_2.style.width='0px';
+			frame_2.style.height='0px';
+			frame_2.frame_2='0';
+			frame_2.style.position='absolute';
+			frame_2.style.top='0';
+			frame_2.style.left='0';
+			frame_2.scrolling='no';
+			frame_2.src=rlsa_url;
+			document.getElementsByTagName("head")[0].appendChild(frame_2);
+		}
+	} 
+	if( seller_member_id == '1471' || seller_member_id == '200' ) {
+		var _comscore = _comscore || [];
+		_comscore.push({ c1: "8", c2: "13846818", c3: "2014060100000000001" });
+		(function () {
+			var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+			s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+			el.parentNode.insertBefore(s, el);
+		})();
+	}
+}
+</script>
+
+
+
+</body></html>

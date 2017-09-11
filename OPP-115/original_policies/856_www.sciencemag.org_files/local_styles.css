@@ -1,0 +1,21 @@
+#proxied-contents ul, #proxied-contents dl {margin-bottom: 1.3em;}
+#proxied-contents li, #proxied-contents dd  {margin-bottom: 1em;}
+#proxied-contents img {vertical-align: top;}
+#proxied-contents .LeftImage {float: left; margin: 0 8px 4px 0;}
+#proxied-contents .RightImage {float: right; margin: 0 0 4px 8px;}
+
+#proxied-contents .Simple {margin-left:10px;}
+
+#proxied-contents .Icon { vertical-align:middle; padding-left:5px;}
+
+#content-block p.SubDepartment { margin-top:20px; color:#C55; }
+#content-block hr.Separator { display: block; visibility: visible; width:50%; margin-left:auto; margin-right:auto; height: 1px; border: none; border-top: 1px solid #CCC; margin-bottom: 16px; }
+#content-block h4.IntraPageHeader {margin-bottom:10px;font-size:small;font-style:italic; font-weight:bold; color:#383838;}
+#content-block h3.ContentHead {margin-bottom:10px;}
+
+#proxied-contents dl {padding-top:10px;}
+
+#proxied-contents ol {margin-left:20px;}
+
+#proxied-contents ul.LinkList {margin-left:20px;}
+#proxied-contents ul.SecondNode {margin: 5px 0 0 10px}

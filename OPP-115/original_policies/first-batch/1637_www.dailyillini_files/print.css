@@ -1,0 +1,136 @@
+
+@media print {  
+  header {
+  	display: none;
+  }
+  
+  footer {
+  	display: none;
+  }
+  
+  .navbar {
+	display: none;
+  }
+  
+  .related-stories {
+  	display: none;
+  }
+  
+  .socialite {
+  	display: none;
+  }
+  
+  .share {
+  	display: none;
+  }
+  
+  .double {
+  	display: none;
+  }
+  
+  .spacer {
+  	display: none;
+  }
+  
+  .hairline {
+  	display: none;
+  }
+  
+  .integrated-media-left {
+  	display: none;
+  }
+  
+  .integrated-media-right {
+  	display: none;
+  }
+  
+  .leaderboard-wrap {
+  	display: none;
+  }
+  
+  .fancybox-single {
+  	width: 50%;
+  	height: 50%;
+  	padding: 0 20px 0 0;
+  	float: left;
+  }
+  
+  .vjs-poster {
+  	display: none;
+  }
+  
+  .vjs-tech {
+  	display: none;
+  }
+  
+  .video-js {
+  	display: none;
+  }
+  
+  .vjs-default-skin {
+  	display: none;
+  }
+  
+  .vjs-paused {
+  	display: none;
+  }
+  
+  .vjs-text-track-display {
+  	display: none;
+  }
+  
+  .vjs-loading-spinner {
+  	display: none;
+  }
+  
+  .vjs-big-play-button {
+  	display: none;
+  }
+  
+  .vjs-controls {
+  	display: none;
+  }
+  
+  .vjs-fade-out {
+  	display: none;	
+  }
+  
+  .dipity-embed {
+  	display: none;
+  }
+  
+  .text-center {
+  	width: 50%;
+  	height: 50%;
+  	float: left;
+  }
+  
+  #comments {
+  	display: none;
+  }
+  
+  #sharebox-horizontal {
+  	display: none;
+  }
+  
+  figcaption {
+  	width: 50%;
+  	margin: 0 10px 0 0;
+  	float: left;
+  }
+ 
+  h1 {
+  	font-size: 22px;
+  	margin: 6px 0 0 0;
+  }
+  
+  h2 {
+  	font-size: 16px;
+  }
+  
+  aside {
+  	font-size: 12px;
+  	margin: 4px 0 14px 0;
+  }
+  
+

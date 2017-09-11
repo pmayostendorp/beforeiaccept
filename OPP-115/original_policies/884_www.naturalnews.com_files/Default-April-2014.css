@@ -1,0 +1,823 @@
+/* BASIC SETTINGS -------------------------------------------------------------------------------------- */
+
+body {
+ margin: 0px;
+ padding-top: 0px;
+ padding-bottom: 15px;
+ padding-right: 10px;
+ padding-left: 10px;
+ background-repeat: repeat-x;
+}
+form {
+ margin: 0px;
+ padding: 0px;
+}
+div {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+}
+a {
+ color: #3366CC;
+ text-decoration: none;
+}
+a:hover {
+ color: #3399FF;
+ text-decoration: underline;
+}
+.Section-Headline {
+ font-family: "Lato", Arial, Helvetica, sans-serif;
+ font-size: 16px;
+ line-height: 100%;
+ color: #000000;
+ text-transform: uppercase;
+ font-weight: 400;
+ padding-bottom: 10px;
+}
+
+/* CONTAINERS/ ROWS  -------------------------------------------------------------------------------------- */
+
+.Clear {
+ clear: both;
+}
+#Container {
+ height: auto;
+ margin: 0px;
+ padding: 0px;
+}
+#Container-Collapse-Ad {
+ margin: 0px;
+ padding: 0px;
+ background-color: #000000;
+ height: 28px;
+}
+#Container-Info-Links {
+ height: auto;
+ margin: 0px;
+ padding: 0px;
+ background-color: #efefef;
+ height: 28px;
+}
+.Row {
+ width: 1240px;
+ clear: both;
+ margin: 0px auto;
+ padding: 0px;
+}
+.RowFlag {
+	width: 1240px;
+	height: 90px;
+	clear: both;
+	margin: 0px auto;
+	padding: 0px;
+	background-image: url(../images/NN-US-Flag-Masthead.jpg);
+	background-repeat: no-repeat;
+}
+.Footer {
+ width: 1240px;
+ clear: both;
+ margin: 0px auto;
+ padding: 0px;
+ display: block;
+	text-align: center;
+	font-size: 11px;
+	padding: 40px 0px 0px;
+	color: #999999;
+}
+
+#Search-1240 {
+	width: 1240px;
+	float: left;
+	display: inline-block;
+	margin-top: 20px;
+}
+#Search-1240-Headline {
+	width: 100%;
+	display: block;
+	padding-bottom: 20px;
+}
+#Search-1240-Headline h1 {
+ font-family: 'Lato', sans-serif;
+ font-size: 40px;
+ line-height: 44px;
+ color: #000000;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ font-weight: 400;
+ letter-spacing: -1px; 
+}
+
+
+/* TOP ROW INFO/LANGUAGE LINKS -------------------------------------------------------------------------------------- */
+
+#Asian-Links {
+ height: 28px;
+ width: 180px;
+ display: inline-block;
+ float: left;
+}
+#Language-Links {
+ height: 28px;
+ width: 220px;
+ display: inline-block;
+ float: left;
+ font-family: 'Lato', sans-serif;
+ color: #454545;
+ padding-top: 5px;
+ font-size: 12px;
+}
+#Language-Links a {
+ color: #454545;
+ text-decoration: none;
+}
+#Language-Links a:hover {
+ color: #454545;
+ text-decoration: underline;
+}
+#Info-Links {
+ height: 28px;
+ width: 840px;
+ display: inline-block;
+ font-size: 12px;
+ float: left;
+ text-align: right;
+ font-family: 'Lato', sans-serif;
+ color: #454545;
+ padding-top: 5px;
+}
+#Info-Links a {
+ color: #454545;
+ text-decoration: none;
+}
+#Info-Links a:hover {
+ color: #454545;
+ text-decoration: underline;
+}
+
+/* MASTHEAD -------------------------------------------------------------------------------------- */
+
+#Masthead-Logo {
+ height: 90px;
+ width: 395px;
+ display: inline-block;
+ float: left;
+}
+#Masthead-Logo-Trans {
+ height: 90px;
+ width: 420px;
+ display: inline-block;
+ float: left;
+}
+#Masthead-Links {
+ height: 50px;
+ width:1240px;
+}
+#Masthead-Links-2 {
+	height: 50px;
+	width:975px;
+	display: inline-block;
+	float: left;
+}
+#Masthead-Social {
+ height: 60px;
+ width: 345px;
+ padding-top: 30px;
+ display: inline-block;
+ float: left; 
+}
+#Masthead-Social-Trans {
+ height: 60px;
+ width: 340px;
+ padding-top: 30px;
+ display: inline-block;
+ float: left; 
+}
+#Masthead-Social div, #Masthead-Social-Trans div {
+ height: 23px;
+ width: 23px;
+ display: inline-block;
+ float: left; 
+ margin-right: 5px;
+}
+#Masthead-Newsletter {
+ height: 90px;
+ width: 500px;
+ display: inline-block;
+ float: left; 
+}
+#Masthead-Newsletter-Trans {
+ height: 90px;
+ width:480px;
+ display: inline-block;
+ float: left; 
+}
+
+/* MASTHEAD MUST READ/TRENDING LINKS  -------------------------------------------------------------------------------------- */
+
+#Trending-Title {
+ height: 30px;
+ width: 150px;
+ display: inline-block;
+ float: left;
+ background-color: #ffdf00;
+ background-image: url(../images/Masthead-Trending-Yellow-BG-3.gif);
+ background-repeat: repeat-x;
+}
+#Trending-Links {
+ height: 30px;
+ width: 1090px;
+ display: inline-block;
+ float: left;
+ background-color: #ffdf00;
+ background-image: url(../images/Masthead-Trending-Yellow-BG-3.gif);
+ background-repeat: repeat-x;
+}
+#Trending-Links div {
+ margin-right: 30px;
+ display: inline-block;
+ float: left;
+ font-size: 14px;
+ margin-top: 7px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #000000;
+}
+#Trending-Links div a {
+ color: #000000;
+ text-decoration: none;
+}
+#Trending-Links div a:hover {
+ color: #000000;
+ text-decoration: underline;
+}
+
+/* MASTHEAD GOOGLE SEARCH -------------------------------------------------------------------------------------- */
+
+#Google-Search {
+ height: 53px;
+ width: 1055px;
+ display: inline-block;
+ float: left;
+ background-color: #efefef;
+ background-image: url(../images/Background-Masthead-Google-Search-v2.gif);
+ background-repeat: no-repeat;
+ position: relative;
+}
+#Google-Search-2 {
+	height: 50px;
+	width: 265px;
+	display: inline-block;
+	float: left;
+	background-repeat: no-repeat;
+	position: relative;
+	background-image: url(../images/Background-Masthead-Google-Search-v3.gif);
+}
+#Google-Search-Input {
+ height: 28px;
+ width: 1002px;
+ padding-left: 3px;
+ display: inline-block;
+ float: left;
+ margin-right: 10px;
+ margin-top: 15px;
+}
+#Google-Search-Input-2 {
+	height: 28px;
+	width: 210px;
+	display: inline-block;
+	float: left;
+	margin-top: 12px;
+	margin-right: 15px;
+	padding-left: 10px;
+}
+#Google-Search-Button {
+	height: 28px;
+	width: 28px;
+	display: inline-block;
+	float: left;
+	margin-top: 12px;
+
+}
+.Search-Input {
+ width: 100%;
+	height: 18px;
+}
+
+/*  SUBSCRIBER OVERLAY MESSAGE -------------------------------------------------------------------------------------------  */
+
+#Subscriber-Overlay {
+ background-color: #FFFFFF;
+ height: 680px;
+ width: 950px;
+ position: relative;
+ z-index: 39003;
+ background-image: url(http://www.naturalnews.com/Images/Overlay-Instant-Access-Background-5.gif);
+ background-position: right bottom;
+ background-repeat: no-repeat;
+}
+#Subscriber-Overlay-Close {
+ position: absolute;
+ height: 21px;
+ width: 21px;
+ top: 10px;
+ z-index: 39005;
+ right: 10px;
+}
+#Subscriber-Overlay-Body {
+ font-family: 'Lato', san-serif;
+ font-size: 14px;
+ line-height: 20px;
+ color: #333333;
+ position: absolute;
+ height: 470px;
+ width: 840px;
+ top: 40px;
+ left: 30px;
+ z-index: 39004;
+ text-align: left;
+}
+#Subscriber-Overlay-Body a {
+ color: #999999;
+ text-decoration: none;
+}
+#Subscriber-Overlay-Body a:hover {
+ color: #999999;
+ text-decoration: underline;
+}
+#Subscriber-Overlay-Body h1 {
+ font-size: 24px;
+ line-height: 28px;
+ margin-top: 0px;
+ font-weight: bolder;
+ color: #0066CC;
+}
+#Notice {
+ width: 500px;
+ font-size: 12px;
+ line-height: 14px;
+ color: #666666;
+}
+#Notice a {
+ color: #999999;
+ text-decoration: underline;
+}
+.Subscriber-Overlay-Input {
+ height: 32px;
+ width: 400px;
+ font-size: 14px;
+}
+.Subscriber-Overlay-Captcha {
+ font-size: 14px;
+ height: 32px;
+ width: 94px;
+}
+#Subscriber-Overlay-Container {
+ position: fixed;
+ top: 0%;
+ left: 0%;
+ width: 100%;
+ height: 100%;
+ z-index: 39002;
+ display: none;
+}
+#Subscriber-Overlay-BG {
+ position: absolute;
+ top: 0%;
+ left: 0%;
+ width: 100%;
+ height: 100%;
+ z-index: 39001;
+ background-color:#000000;
+ -moz-opacity: 0.75;
+ opacity:.75;
+ filter: alpha(opacity=75);
+}
+
+/* INDEX SOCIAL BUTTONS -------------------------------------------------------------------- */
+
+.Index-Social-Icons {
+ height: 16px;
+ width: 100%;
+}
+.Index-Share-Count {
+	cursor: pointer;
+	height: 16px;
+	float: left;
+ font-size: 11px;
+	line-height: 16px;
+	color: #cccccc;
+	margin-left: 8px;
+	text-transform: uppercase;
+	vertical-align: bottom;
+}
+.Index-Share-Count b {
+ color: #FF3300;
+ font-weight: bold;
+}
+.Social-Gray-Icons {
+ cursor: pointer;
+ height: 16px;
+ width: 16px;
+ float: left;
+ margin-right: 2px;
+}
+.Index-Comment-Count {
+	height: 16px;
+ width: 60px;
+	float: left;
+ font-size: 11px;
+	line-height: 16px;
+	color: #cccccc;
+	margin-left: 8px;
+	text-transform: uppercase;
+	vertical-align: bottom;
+}
+.Index-Comment-Count a {
+ color: #00BFF3;
+ text-decoration: none;
+ font-weight: bold;
+}
+.Index-Comment-Count a:hover {
+ color: #00BFF3;
+ text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+ #Hot-News-Tabs {
+	 width: 100%;
+		font-size: 11px;
+	}
+	#Hot-News-Link {
+		 width: 220px;
+		font-size: 12px;
+		margin-top: 20px;
+	}
+#DayTab, #WeekTab, #MonthTab, #YearTab {
+}
+#DayTab a, #WeekTab a, #MonthTab a, #YearTab a {
+ color: #666666;
+ text-decoration: none;
+}
+#DayTab a:hover, #WeekTab a:hover, #MonthTab a:hover, #YearTab a:hover {
+ color: #000000;
+ text-decoration: none;
+}
+#DayTab ul, #WeekTab ul, #MonthTab ul, #YearTab ul {
+ margin: 0px;
+ padding: 0px;
+ list-style-type: none;
+}
+#DayTab li, #WeekTab li, #MonthTab li, #YearTab li {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ line-height: 120%;
+ color: #454545;
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: #cccccc;
+ margin-top: 10px;
+ padding-bottom: 10px;
+}
+#DayLink, #WeekLink, #MonthLink, #YearLink {
+ font-size: 11px;
+ margin-right: 4px;
+ margin-left: 4px;
+}
+#DayLink {
+margin-left: 0px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+.Footer-Column-1 {
+ margin-top: 40px;
+	float: left;
+	display: inline-block;
+	width: 190px;
+	margin-right: 20px;
+	text-align: left;
+	margin-left: 240px;
+}
+.Footer-Column-2 {
+ margin-top: 40px;
+	float: left;
+	display: inline-block;
+	width: 150px;
+	margin-right: 20px;
+	text-align: left;
+}
+.Footer-Column-3 {
+ margin-top: 40px;
+ float: left;
+	display: inline-block;
+ width: 620px;
+	text-align: left;
+	font-size: 11px;
+ color: #999999;
+}
+.Footer-Column-1 a, .Footer-Column-2 a {
+color: #999999;
+text-decoration: none;
+}
+.Footer-Column-1 a:hover, .Footer-Column-2 a:hover {
+color: #999999;
+text-decoration: underline;
+}
+.Breaking-News-Alert {
+	width: 1220px;
+	color: #ffffff;
+	font-size: 16px;
+	background-color: #cc0000;
+	padding: 10px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.Breaking-News-Alert a {
+ color: #ffffff;
+ text-decoration: underline;
+}
+
+
+/* Daily Deal Styles ------------------------------ */
+
+.Daily-Deal-Clear {
+ clear: both;
+}
+#Daily-Deal-260 {
+	background-color: #dedee7;
+	display: inline-block;
+	float: left;
+	height: auto;
+	width: 260px;
+	margin-bottom: 20px;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(http://www.naturalnews.com/images/HR-Daily-Deal-Background-3.jpg);
+ padding-top: 90px;
+}
+#Daily-Deal-Sticker {
+	display: block;
+	height: 45px;
+	width: 56px;
+	position: absolute;
+	right: 15px;
+	top: 80px;
+	z-index: 50;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1b1513;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	background-image: url(http://www.naturalnews.com/images/Starburst-F8ED95-60x60.png);
+	background-repeat: no-repeat;
+	line-height: 16px;
+	margin: 0px;
+	padding: 15px 0px 0px 4px;
+}
+#Daily-Deal-Image {
+ display: inline-block;
+	float: left;
+	height: auto;
+	width: 100%;
+	margin-bottom: 0px;
+}
+#Daily-Deal-Top {
+	background-color: #cc0000;
+	display: inline-block;
+	float: left;
+	height: auto;
+	width: 100%;
+	margin-bottom: 20px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#Daily-Deal-Photo {
+	background-color: #ffffff;
+	display: inline-block;
+	float: left;
+	height: 150px;
+	width: 150px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+	margin-left: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#Daily-Deal-Product {
+	color: #333333;
+	display: inline-block;
+	float: left;
+	width: 180px;
+	margin-bottom: 10px;
+	text-align: center;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 14px;
+}
+#Daily-Deal-Social {
+	color: #333333;
+	display: inline-block;
+	float: left;
+	width: 63px;
+	margin-bottom: 10px;
+	margin-left: 99px;
+	font-size: 14px;
+}
+#Daily-Deal-Social div {
+	display: inline-block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+#Daily-Deal-Numbers {
+	display: inline-block;
+	float: left;
+	width: 110px;
+	height: 60px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 20px;
+ font-size: 12px;
+ color: #333333;
+}
+#Daily-Deal-Price {
+ width: 100%;
+	display: inline-block;
+	float: left;
+	height: auto;
+	text-align: center;
+}
+#Daily-Deal-Retail {
+ width: 100%;
+	display: inline-block;
+	float: left;
+	height: auto;
+	text-align: center;
+}
+#Daily-Deal-Sale {
+ width: 100%;
+	display: inline-block;
+	float: left;
+ font-size: 20px;
+	color: #cc0000;
+ text-align: center;
+ font-weight: bold;
+}
+#Daily-Deal-Savings {
+ width: 100%;
+	display: inline-block;
+	float: left;
+	height: auto;
+	text-align: center;
+}
+
+#Daily-Deal-Button {
+	color: #333333;
+	display: inline-block;
+	float: left;
+	width: 110px;
+	height: 60px;
+	margin-bottom: 20px;
+	text-align: center;
+	margin-left: 0px;
+ margin-right: 10px;
+}
+
+#Daily-Deal-Bottom {
+	background-color: #4f5757;
+	display: inline-block;
+	float: left;
+	height: auto;
+	width: 100%;
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+ padding-bottom: 5px;
+}
+#Daily-Deal-Countdown {
+	background-color: #4f5757;
+	display: inline-block;
+	float: left;
+	height: auto;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+
+/* jQuery Countdown styles 2.0.0. ================================= */
+
+.is-countdown {
+	background-color: #666666;
+}
+.countdown-rtl {
+	direction: rtl;
+}
+.countdown-holding span {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0px;
+	text-align: center;
+}
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+	width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+.countdown-section {
+	display: block;
+	float: left;
+	font-size: 16px;
+	text-align: center;
+	color:#ffffff;
+		font-family: Arial, Helvetica, sans-serif;
+}
+.countdown-amount {
+	font-size: 16px;
+	font-weight: bold;
+}
+.countdown-period {
+    display: block;
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+
+/* TOP YELLOW BAR ALERT ================================ */
+
+#KickstarterBar {
+	width: 100%;
+	height: auto;
+	display: block;
+		background-color: #ffdf00;
+}
+#KickstarterText {
+	width: 1220px;
+	color: #000000;
+	font-size: 14px;
+	line-height: 20px;
+	display: block;
+	margin: 0px auto;
+	padding: 10px;
+}
+#KickstarterText a {
+ color: #000000;
+ text-decoration: underline;
+}
+
+
+/* SEARCH RESULTS PAGE ================================= */
+
+#GGSearch { display: block; width: 1240px; height: auto; }
+#GGDetails { display: block; width: 100%; height: auto; margin-bottom: 20px; font-size: 12px; color:#666666; }
+#GGLeft { display: inline-block; float: left; width: 850px; height: auto; margin-right: 40px; }
+#GGRight { display: inline-block; float: left; width: 350px; height: auto; }
+
+.GGRelated { color: #666666; font-size: 12px; line-height: 12px; margin-top: 0px; padding-top: 0px; padding-bottom: 5px; }
+
+#glistA, #glistB { display: block; padding: 10px; background-color: #fdf6e5; }
+#glistA div, #glistB div { display: block; width: 100%; margin-bottom: 25px; font-size: 13px; line-height: 15px; }
+
+#GGResults { display: block; width: 100%; padding-top: 15px; margin-top: 15px; margin-bottom: 15px; border-top-width: 1px; border-top-style: solid; border-top-color: #EDEDED; }
+#GGResults div { display: block; width: 70%; margin-bottom: 25px; font-size: 13px; line-height: 16px; }
+#GGPageNav { color: #000000; font-size: 13px; line-height: 13px; }
+#GGPageNav a { color: #000099; text-decoration: underline; }
+#GGPageNav a:visited { color: #660099; text-decoration: underline; }
+
+.GGST { font-size: 16px; line-height: 20px; }
+.GGST a { color: #0000cc; text-decoration: underline; }
+.GGST a:visited { color: #660099; text-decoration: underline; }
+.GGSU { color: #006621; }
+.GGSU a { color: #006621; text-decoration: none; }

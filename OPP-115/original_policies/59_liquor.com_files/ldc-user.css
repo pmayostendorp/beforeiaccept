@@ -1,0 +1,813 @@
+
+.clear {
+	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
+.clickable {
+	cursor: pointer;
+	position:relative;
+}
+
+
+
+/* *************************
+				User CSS
+*************************** */
+
+.ldc-user {
+	position: relative;
+	background: #FFF;
+	width: 300px;
+	margin: 5px 0px;
+	cursor: pointer;
+}
+
+.ldc-user-block {
+	border: 1px solid #6F7375;
+	position: relative;
+}
+
+.ldc-login-block {
+	background: #FFF;
+}
+
+.ldc-user-action {
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.ldc-user-pic {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.ldc-user-slug {
+	float: left;
+	padding: 5px 10px;
+	font-family: Ariel, Helvetica, san-serif;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.ldc-user .button {
+	padding: 10px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ldc-user-join {
+	color: #FFF;
+	background-color: #135C96;
+	background-image: -ms-linear-gradient(top left, #2D8BCE 0%, #135C96 100%);
+	background-image: -moz-linear-gradient(top left, #2D8BCE 0%, #135C96 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #2D8BCE), color-stop(1, #135C96));
+	background-image: -webkit-linear-gradient(top left, #2D8BCE 0%, #135C96 100%);
+	background-image: linear-gradient(to bottom right, #2D8BCE 0%, #135C96 100%);
+	margin-bottom: 3px;
+}
+
+.ldc-user-login {
+	color: #000;
+	background-color: #d7d5d6;
+	background-image: -ms-linear-gradient(top left, #f1f1f1 0%, #d7d5d6 100%);
+	background-image: -moz-linear-gradient(top left, #f1f1f1 0%, #d7d5d6 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #f1f1f1), color-stop(1, #d7d5d6));
+	background-image: -webkit-linear-gradient(top left, #f1f1f1 0%, #d7d5d6 100%);
+	background-image: linear-gradient(to bottom right, #f1f1f1 0%, #d7d5d6 100%);
+}
+
+.ldc-user-activity {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #d7d5d6;
+	cursor: pointer;
+}
+
+.ldc-user-activity-recipe {
+	margin: 2px 6px;
+	width: 16px;
+	height: 16px;
+	background: url('/wp-content/plugins/ldc-user/images/recipe.png') 0px 0px no-repeat;
+}
+
+.ldc-user-activity-recipe:hover {
+	background-position: 0px -16px;
+}
+
+.ldc-user-activity-spirits {
+	margin: 2px 6px;
+	width: 16px;
+	height: 16px;
+	background: url('/wp-content/plugins/ldc-user/images/spirits.png') 0px 0px no-repeat;
+}
+
+.ldc-user-activity-spirits:hover {
+	background-position: 0px -16px;
+}
+
+.ldc-signup-spirit-column .spirit {
+	margin: 0px;
+	text-align: left;
+}
+
+.ldc-user-activity-star {
+	margin: 2px 6px;
+	width: 16px;
+	height: 16px;
+	background: url('/wp-content/plugins/ldc-user/images/star.png') 0px 0px no-repeat;
+}
+
+.ldc-user-activity-star:hover {
+	background-position: 0px -16px;
+}
+
+.ldc-user-activity-count {
+	padding-bottom: 5px;
+	font-family: Ariel, Helvetica, san-serif;
+	font-size: 11px;
+	line-height: 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.ldc-user-activity a:hover {
+	text-decoration: none;
+}
+
+
+
+
+
+.ldc-user-popup {
+	font-size: .8em;
+	width: 625px;
+	height: 580px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.ldc-user-popup.smaller-popup {
+	width: 380px;
+	height: 480px;
+}
+
+.ldc-user-popup .bkg {
+	position: absolute;
+	background-image: url('/wp-content/plugins/ldc-user/images/popup-bkg.png');
+	background-repeat: no-repeat;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 50%;
+	height: 50%;
+	z-index: 1;
+}
+
+.ldc-user-popup .bkg.tl {
+	top: 0px;
+	left: 0px;
+	background-position: top left;
+}
+
+.ldc-user-popup .bkg.tr {
+	top: 0px;
+	right: 0px;
+	background-position: top right;
+}
+
+.ldc-user-popup .bkg.bl {
+	bottom: 0px;
+	left: 0px;
+	background-position: bottom left;
+}
+
+.ldc-user-popup .bkg.br {
+	bottom: 0px;
+	right: 0px;
+	background-position: bottom right;
+}
+
+.ldc-popup-form {
+	width: 100%;
+	padding: 40px 10% 0px 10%;
+	position: absolute;
+	z-index: 2;
+}
+
+.ldc-popup-form.step2 {
+	width: 100%;
+	padding: 30px 10% 0px 10%;
+}
+
+.ldc-user-popup-slug {
+	width: 100%;
+	margin-bottom: 10px;
+	border-bottom: 1px #e0e2e2 solid;
+}
+
+.ldc-user-popup-header {
+	font-family: Georgia, Times, serif;
+	font-size: 28px;
+	line-height: 30px;
+	margin: 10px 0px;
+	text-align: center;
+}
+
+.ldc-user-popup-alt,
+.ldc-user-popup-alt-mobile {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #006699;
+	cursor: pointer;
+	padding: 20px 0px 0px 10px;
+	float: left;
+}
+
+.ldc-user-popup-alt-bottom {
+	font-size: 10px;
+	line-height: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #006699;
+	cursor: pointer;
+	text-align: center;
+	padding: 28px 0px 0px 10px;
+}
+
+.ldc-user-popup-incidental {
+	font-size: 14px;
+	line-height: 16px;
+	color: #6f7375;
+	margin-bottom: 0px;	
+}
+
+.ldc-user-popup-incidental ul li {
+	margin: 10px 0px 10px 10px;
+}
+
+.ldc-user-popup-incidental p {
+	font-family: Georgia, Times, serif;
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: bold;
+}
+
+.ldc-user-popup-incidental p.incidental {
+	font-family: Arial, Helvetica, san-serif;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: normal;
+	margin: 10px;
+}
+
+.ldc-popup-form .input-row p {
+	font-family: Arial, Helvetica, san-serif;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
+	margin: 0px 0px 5px 0px;
+}
+
+
+.ldc-user-or-slug {
+	height: 23px;
+	margin-bottom: 33px; 
+}
+
+.ldc-user-fb-login {
+	width: 212px;
+	margin: 0px auto;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.ldc-user-or-bar {
+	border-bottom: 1px solid #e0e2e2;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+
+.ldc-user-or {
+	background-color: #6f7375;
+	color: #FFF;
+	font-size: 14px
+	line-height: 14px;
+	text-align: center;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding: 5px;
+	width: 25px;
+	height: 25px;
+	margin: -23px auto; 
+}
+
+.ldc-user-popup-infobox {
+	background-color: #e0e2e2;
+	padding: 15px 20px;
+	font-size: 11px;
+	line-height: 13px;
+	margin: 10px 0px;
+}
+
+.ldc-popup-form .input-row {
+	margin-bottom: 5px;
+}
+
+.ldc-popup-form .input-row-submit {
+	margin-top: 10px;
+}
+
+
+.ldc-popup-form input[type="text"],
+.ldc-popup-form input[type="password"] {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #6f7375;
+	-moz-box-shadow: inset 0px 0px 2px 2px #ddd;
+	-webkit-box-shadow: inset 0px 0px 2px 2px #ddd;
+	box-shadow: inset 0px 0px 2px 2px #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	width: 92%;
+}
+
+.ldc-popup-form input[type="text"].error,
+.ldc-popup-form input[type="password"].error,
+.ldc-popup-form select.error {
+	border: 1px solid #FF0000;
+}
+
+.ldc-popup-form input[type="text"].success,
+.ldc-popup-form input[type="password"].success,
+.ldc-popup-form select.success {
+	border: 1px solid #00FF00;
+}
+
+
+.ldc-popup-form input[type="checkbox"],
+.ldc-popup-form input[type="radio"] {
+	margin-left: 10px;
+}
+
+.ldc-user-popup label {
+	font-size: 10px;
+	line-height: 16px;
+	color: #6f7375;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.ldc-signup-spirit-column {
+	float: left;
+}
+
+.ldc-signup-spirit-column label {
+	font-size: 12px;
+}
+
+#ldc-user-login-error, #ldc-user-signup-error {
+	font-family: Arial, Helvetica, san-serif;
+	color: #FF0000;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	width: 140px;
+	float: left;
+	margin-top: 10px;
+	display: none;
+}
+
+.ldc-popup-form label.error {
+	color: #FF0000;
+	position: relative;
+	border: 0px;
+	font-size: 10px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+.ldc-user-working {
+	float: right;
+	margin: 7px;
+	display: none;
+}
+
+button.shiny-button {
+	font-family: Arial, Helvetica, san-serif;
+	color: #FFF;
+	padding: 10px 17px;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+	display: inline-block;
+	border: 2px solid #FFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	background: -webkit-linear-gradient(top, #dc5e33 0%,#dc5c31 50%,#d94b26 51%,#d94b26 100%);
+	background-color: #dc5e33;
+	-moz-box-shadow: -2px 4px 7px #666;
+	-webkit-box-shadow: -2px 4px 7px #666;
+	box-shadow: -2px 4px 7px #666;
+}
+
+button.shiny-button.working {
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+
+.ldc-user-fb-login-slug {
+	width: 300px;
+	float: left;
+}
+
+.dob-short {
+	display: none;
+}
+
+.label-small {
+	font-size: 12px;
+}
+
+.ldc-user-signup-error {
+	width: 190px;
+}
+
+#login-state-signup-form2 .ldc-user-popup-incidental {
+	width: 100%;
+	float: left;
+}
+
+.news-subs-1 {
+	width: 25%;
+	float: left;
+}
+
+.news-subs-2 {
+	width: 60%;
+	float: left;
+}
+
+.gender-bar-questions {
+	margin-left: 10px;
+	float: left;
+	width: 47%;
+}
+
+#goto-part2,
+#goto-part3 {
+	display: none;
+}
+
+.finish-row {
+	margin-top: 130px;
+	margin-right: 20px;
+}
+
+.ldc-user-popup-header-mobile {
+	display: none;
+}
+
+.ldc-user-popup-alt-mobile {
+	display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 680px) {
+
+	.ldc-user-popup-incidental.join {
+		display: none;
+	}
+	
+	.ldc-user-popup-infobox {
+		display: none;
+	}
+	
+	.news-subs-1 {
+		width: 99%;
+	}
+	
+	.news-subs-2 {
+		width: 1%;
+	}
+	
+	.ldc-user-popup {
+		width: 425px;
+		height: 540px;
+	}
+	
+	.gender-bar-questions .ldc-popup-form .input-row p  {
+		font-size: 9px;
+	}
+		
+	#login-state-signup-form2 .ldc-popup-form {
+		padding: 10px auto auto auto;
+	}
+	
+	#login-state-signup-form2 .ldc-user-popup-header {
+		font-size: 16px;
+		margin: 0px 10px 5px 10px;
+		padding-bottom: 5px;
+	}
+
+	#login-state-signup-form2 .ldc-user-popup-incidental.col1,
+	#login-state-signup-form2 .ldc-user-popup-incidental.col2 {
+		width: auto;
+		float: left;
+	}
+	
+	#login-state-signup-form2 .ldc-user-popup-incidental.part1 {
+		width: auto;
+		float: none;
+		margin-top: 5px;
+	}
+
+	#login-state-signup-form2 .ldc-user-popup-incidental.part2 {
+		width: auto;
+		float: none;
+	}
+
+	#login-state-signup-form2 .ldc-user-popup-incidental.part3 {
+		width: auto;
+		float: none;
+		display: none;
+	}
+	
+	#goto-part3 {
+		display: block;
+	}
+	
+	.ldc-user-popup label {
+		margin-right: 0px;
+	}
+	
+	.ldc-user-popup-header {
+		display: none;
+	}
+	
+	.ldc-user-popup-alt {
+		display: none;
+	}
+	
+	.ldc-user-popup-header-mobile {
+		display: block;
+		font-size: 12px;
+		line-height: 14px;
+		margin: 14px 8px 0px 8px;
+	}
+	
+	.ldc-user-popup-alt-mobile {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+		line-height: 14px;
+		margin: 0px;
+		padding: 6px 5px 5px 0px;
+	}
+	
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+	.ldc-user-popup {
+		width: 300px;
+		height: 340px;
+	}
+	
+	.ldc-user-popup.smaller-popup {
+		width: 300px;
+		height: 340px;
+	}
+	
+	.ldc-user-fb-login-slug {
+		width: 100%;
+	}
+
+	.ldc-popup-form {
+		padding: 12px 25px;
+	}
+		
+	.ldc-user-popup-slug {
+		border: 0px;
+		margin-bottom: 0px;
+	}
+	
+	.ldc-user-popup label {
+		font-size: 9px;
+	}
+	
+	.ldc-popup-form label.error  {
+		font-size: 9px;
+	}
+	
+	.ldc-popup-form input[type="text"], .ldc-popup-form input[type="password"] {
+		font-size: 10px;
+		line-height: normal;
+		padding: 1%;
+		width: 98%;
+	}
+	
+	.ldc-user-fb-login {
+		padding: 3px;
+	}
+	
+	.ldc-popup-form .input-row {
+		margin-bottom: 0px;
+		margin-top: 3px;
+	}
+	
+	.ldc-popup-form .input-row-submit {
+		margin-top: 0px;
+	}
+
+	
+	.ldc-user-popup .bkg {
+		background-size: 420%;
+	}
+	
+	.ldc-user-or-slug {
+		height: 15px;
+		margin-bottom: 0px;
+	}
+	
+	.ldc-user-or-bar {
+		display: none;
+	}
+	
+	.ldc-user-or {
+		background-color: inherit;
+		color: #6f7375;
+		font-size: 12px;
+		line-height: 14px;
+		margin: 0px;
+		padding: 0px;
+		width: auto;
+		height: auto;
+	}
+	
+	.dob-short {
+		display: block;
+	}
+
+	.dob-long {
+		display: none;
+	}
+	
+	#ldc-user-login-error, #ldc-user-signup-error {
+		width: 125px;
+		height: 27px;
+		font-size: 10px;
+		line-height: 13px;
+		overflow: hidden;
+	}
+
+	button.shiny-button {
+		margin: 5px;
+	}
+	
+	#login-state-signup-form2 .ldc-user-popup-incidental.part2 {
+		width: auto;
+		float: none;
+		display: none;
+	}
+
+	#goto-part3 {
+		display: block;
+	}
+	
+	#goto-part2 {
+		display: block;
+	}
+	
+	.ldc-user-popup-incidental p {
+		margin-top: 10px;
+	}
+}
+
+/* Styles for LDC-927 "Drinking is Better with Friends" module */
+#ldc-fb-welcome-msg {
+	font-size:17px;
+}
+
+#ldc-fb-welcome-msg-invite-txt {
+	font-size:25px;
+	font-style:italic;
+}
+#ldc-fb-friend-catch-up-txt {
+	float:left;
+	margin-left:90px;
+	font-style:italic;
+	font-size:14px
+}
+#ldc-fb-friend-list {
+	position: relative;
+	height: 300px;
+	width: 505px;
+	background-color: #EFEFEF;
+	overflow-y: scroll;
+}
+#ldc-fb-friend-list ul {
+	list-style-type:none;
+}
+
+#ldc-fb-friend-list ul li {
+	width:100%;
+	height:60px;
+	float:left;
+	border-bottom:1px solid #E0E2E2;
+	padding-top:10px
+}
+
+#ldc-fb-friend-list ul li img {
+	position:relative; 
+	float:left;
+	margin-left:20px;
+	border:1px solid #E0E2E2;
+}
+
+#ldc-fb-friend-searchbutton {
+	position: relative;
+	float: left;
+	background-color: #000;
+	margin-top: 3px;
+	height: 32px;
+	width: 13%;
+	margin-left: 2%;
+	border-radius: 3px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.ldc-fb-friend-search-div {
+	margin-bottom:20px;
+}
+
+#ldc-fb-goto-button {
+	position: relative;
+	float:left;
+	background-color: #000;
+	color:white;
+	font-weight:bold;
+	padding: 3px 8px 3px 8px;
+	border-radius: 3px;
+	margin-left:10px;
+	margin-top:-2px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.ldc-fb-li-text {
+	position:relative;
+	float:left;
+	margin-top:15px;
+	margin-left:15px;
+	font-family: Georgia,Times,serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 17px;
+	color: #6F7375;
+}
+
+.ldc-fb-li-invite {
+	position:relative;
+	float:right;
+	margin-top:9px;
+	margin-right:50px;
+	height:20px;
+	width:40px;
+	color:white;
+	background-color:#3B579D;
+	border-radius:3px;
+	font-family: Georgia,Times,serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 17px;
+	border:1px solid #E0E2E2;
+	cursor:pointer;
+	padding:3px 3px 1px 2px;
+}

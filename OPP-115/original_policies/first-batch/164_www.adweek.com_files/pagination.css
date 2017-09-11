@@ -1,0 +1,151 @@
+/*
+	PAGINATION
+*/
+
+/* Extend .rule for Article Subheader Tools */
+.ruler {
+    position: relative;
+	height:9px;
+	background:#efefef;
+	border-bottom:1px solid #d7d7d7;
+}
+.ruler-bottom {
+	border-bottom:0 none;
+	border-top:1px solid #d7d7d7;
+	margin-top:20px !important;
+}
+
+.ruler-tools {
+	height:28px;
+	margin:0 0 20px;
+	overflow:visible;
+}
+#category.listing .ruler-tools {
+	margin:0 0 10px;
+}
+#category.listing .colsAB .col {
+	margin-top:10px;
+}
+.ruler-tools .pagination, .gallery-tools .pagination {
+	float:right;
+}
+.ruler-tools .pagination, .searchresults-tools {
+	height:29px;
+}
+.ruler-bottom .pagination {
+	position:relative;
+	top:-1px;
+}
+.pagination, .pagination a, .pagination span, .ruler a, .searchresults-tools {
+	color:#999 !important;
+	font-size:11px;
+}
+.pagination a, .pagination span, .ruler .viewall a, .ruler .favorites a, .searchresults-tools a, .searchresults-tools span {
+	line-height:30px;
+	padding:0 10px 0 11px;
+	border-left:1px solid #d7d7d7;
+	display:block;
+	height:28px;
+}
+.mac .pagination a, .mac .pagination span,
+.mac .searchresults-tools a, .mac .searchresults-tools span {
+	line-height:32px;
+}
+.pagination a:hover, .searchresults-tools a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+.pagination a.current, .pagination a.current:hover,
+.searchresults-tools a.current, .searchresults-tools a.current:hover {
+	color:#000 !important;
+	text-decoration:none;
+	font-weight:bold;
+}
+.gallery-tools {
+    border-bottom: solid 4px #FFF;
+	height:29px;
+}
+.gallery-tools .pagination {
+	overflow:visible;
+}
+.gallery-tools .pagination a, .gallery-tools .pagination span {
+	border-left:0 none;
+	height:29px;
+	line-height:30px;
+}
+.gallery-tools .pagination .prev a, .gallery-tools .pagination .next a {
+	color:#FFF !important;
+	background:#fe0009;
+}
+.gallery-tools .pagination .prev a:hover, .gallery-tools .pagination .next a:hover {
+	color:#FFF;
+}
+.gallery-tools .pagination .prev a {
+	-webkit-border-top-left-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	border-top-left-radius: 2px;
+}
+.gallery-tools .pagination .next a {
+	margin:0 0 0 1px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topright: 2px;
+	border-top-right-radius: 2px;
+}
+.pagination .pagenumber, .pagination .pagenumber span{
+	font-size:27px;
+	line-height:27px;
+	color:#ccc;
+	font-family: "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+.pagination .pagenumber span {
+	margin:-1px 0 0;
+}
+
+#contributors.listing .ruler, .sponsored .ruler {
+	margin-bottom:20px;
+}
+.sponsored .ruler-bottom {
+	margin-bottom:0;
+}
+
+/*.pagination .viewall {
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+    .ruler .viewall a,
+    .ruler .favorites a {
+        border-left: none 0;
+        border-right: solid 1px #d7d7d7;
+        color: #999 !important;
+    }
+	.searchresults-tools span {
+        border-left: none 0;
+        border-right: none 0;
+    }
+        .ruler .viewall a:hover,
+        .ruler .viewall a:focus,
+        .ruler .favorites a:hover,
+        .ruler .favorites a:focus {
+            color:#333 !important;
+			text-decoration:underline;
+        }
+/*.pagination .favorites {
+    position: absolute;
+    top: 0;
+    left: 59px;
+}*/
+    .ruler .favorites a {
+        background: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png") 0 -621px; no-repeat;
+        padding-left: 27px;
+    }
+        .ruler .favorites a:hover,
+        .ruler .favorites a:focus {
+            background-position: 0 -701px;
+        }
+
+
+
+.page_left li{
+    float:left;
+}

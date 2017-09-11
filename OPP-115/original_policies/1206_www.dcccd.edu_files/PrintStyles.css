@@ -1,0 +1,22 @@
+﻿@media print
+{
+.ReaderMap { display: none; }
+     .PageAccessibility { display: none; }
+     .PageRibbon { display: none; }
+     .PageStatus { display: none; }
+     .PageLocations { display: none; }
+     .SearchContent { display: none; }
+     .QuickLinks { display:none;}
+     .PageSlider { display: none; }
+     .PageSidebar { background-image: none; }
+     .PageFooterNav { display: none; }
+     .MobileFooter { display: none; }
+     .NavContent {display:none;}
+     .PageSidebar {display:none}
+     
+     .PageContainer {font-family:Georgia, Times New Roman, serif; font-size:1.75em }
+     
+     .BottomFormatting { display: none; }
+     
+     .no-boxshadow .WithSidebar .PageMainContent { background-image: none; }
+}

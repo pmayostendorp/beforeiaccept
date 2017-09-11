@@ -1,0 +1,549 @@
+.fR {
+	text-align:left;
+	background: url("/sites/all/themes/aw/images/sitewide/more_links.png") right 0 no-repeat;
+	text-indent:-9999em;
+	display:block;
+}
+.fR_seemore {
+	background-position:right -10px;
+}
+.fR_seemore:hover {
+	background-position:right -40px;
+}
+
+.page-node.node-type-blogs .fR_seemore {
+	background-position:252px -637px;
+}
+
+.page-node.node-type-blogs.fR_seemore:hover {
+	background-position:252px -667px;
+}
+
+#blog .fR_seemore {
+	background-position:252px -637px;
+}
+#blog .fR_seemore:hover {
+	background-position:252px -667px;
+}
+.fR_morearticles {
+	background-position:right -70px;
+}
+.fR_morearticles:hover {
+	background-position:right -100px;
+}
+.fR_moreinptta {
+	background-position:right -130px;
+}
+.fR_moreinptta:hover {
+	background-position:right -160px;
+}
+.fR_seemorefeaturedjobs {
+	background-position:right -189px;
+}
+.fR_seemorefeaturedjobs:hover {
+	background-position:right -219px;
+}
+.fR_seemorefeaturedemployers {
+	background-position:right -249px;
+}
+.fR_seemorefeaturedemployers:hover {
+	background-position:right -279px;
+}
+.fR_seemorevideos {
+	background-position:right -309px;
+}
+.fR_seemorevideos:hover {
+	background-position:right -339px;
+}
+.fR_morein, .fR_moreinthepress, .fR_moreintelevision, .fR_moreintechnology, .fR_moreinaandb {
+	display:block !important;
+	float:left !important;
+	margin-right:4px !important;
+}
+.fR_morein {
+	background-position: 0 -368px;
+	width:42px;
+	margin-left:12px;
+}
+.fR_moreinthepress {
+	background-position:0 -398px;
+	width:60px;
+}
+.fR_moreinthepress:hover {
+	background-position:0 -428px;
+}
+.fR_moreintelevision {
+	background-position:0 -458px;
+	width:63px;
+}
+.fR_moreintelevision:hover {
+	background-position:0 -488px;
+}
+.fR_moreintechnology {
+	background-position:0 -518px;
+	width:70px;
+}
+.fR_moreintechnology:hover {
+	background-position:0 -548px;
+}
+.fR_moreinaandb {
+	background-position:0 -578px;
+	width:137px;
+	margin-right:0 !important;
+}
+.fR_moreinaandb:hover {
+	background-position:0 -608px;
+}
+.fR_seemorefeaturedwhitepapers {
+	background: transparent url("/sites/all/themes/aw/images/sitewide/related_bottom.png") no-repeat scroll right -60%;
+}
+.front .fR_seemorefeaturedwhitepapers {
+	margin: 0 0 24px 0;
+	padding: 0;
+    background: transparent url("/sites/all/themes/aw/images/sitewide/featured_bottom.png") no-repeat scroll right top;
+}
+.fR_seemorefeaturedwhitepapers:hover {
+	background-position: right 145%;
+}
+.front .fR_seemorefeaturedwhitepapers:hover {
+	background-position: right 110%;
+}
+.fR_seemoremodnewsgalleryrelated {
+	padding: 0 !important;
+    background: transparent url("/sites/all/themes/aw/images/sitewide/news-galley-see-more.png") no-repeat scroll right 0%;
+}
+.fR_seemoremodnewsgalleryrelated:hover {
+	background: transparent url("/sites/all/themes/aw/images/sitewide/news-galley-see-more.png") no-repeat scroll right 110%;
+}
+/* Subheadings */
+/*.h, */#footer-links .h6  {
+	background: url("/sites/all/themes/aw/images/sitewide/sprite_headings_v2.png") 0 0 no-repeat;
+	text-indent:-9999em;
+}
+.h-editorspicks {
+	background-position: 0 0;
+}
+.h-thefeed {
+	background-position: 0 -40px;
+}
+.h-columns {
+	background-position: 0 -80px;
+}
+.h-topics {
+	background-position: 0 -120px;
+}
+.h-mostpopular {
+	background-position: 0 -160px;
+}
+.h-fromthetalentgallery {
+	background-position: 0 -200px;
+}
+.h-ontwitter {
+	background-position: 0 0;
+}
+.h-addcomment {
+	background-position: 0 0;
+}
+.h-comments {
+	background-position: 0 -566px;
+	display:block;
+	float:left;
+	width:114px;
+	margin-right:5px;
+}
+.h-related {
+	background-position: 0 -600px;
+}
+.h-abouttheauthor {
+	background-position: 0 -640px;
+}
+.h-more {
+	background-position: 0 -680px;
+}
+.h-fromthearticle {
+	background-position: 0 -720px;
+}
+.h-recentvideos {
+	background-position: 0 -760px;
+}
+.h-recentgalleries {
+	background-position: 0 -800px;
+}
+.h-articleswithvideos {
+	background-position: 0 -840px;
+}
+.h-mostpopularvideos {
+	background-position: 0 -880px;
+}
+.h-alljobs {
+	background-position: 0 -920px;
+}
+.h-featuredjobs {
+	background-position: 0 -1000px;
+}
+.h-featuredemployers {
+	background-position: 0 -960px;
+}
+.h-featuredarticles {
+	background-position: 0 -1436px;
+}
+.h-aboutadfreak {
+	background-position: 0 0;
+}
+.h-contributors {
+	background-position: 0 0;
+}
+.h-blogroll {
+	background-position: 0 0;
+}
+.h-aboutthesponsor {
+	background-position: 0 -1200px;
+}
+.h-mostpopulararticles {
+	background-position: 0 0;
+}
+.h-upcomingappearances {
+	background-position:0 -1480px;
+}
+.h-mostpopulargalleries {
+	background-position:0 -1520px;
+}
+.h-relatedarticles {
+	background-position:0 -1560px;
+}
+.h-featuredposts, .mod-featured .mod-title {
+	background: url("/sites/all/themes/aw/images/sitewide/sprite_headings_v2.png") 0 0 no-repeat;
+	text-indent:-9999em;
+	background-position:0 -1600px;
+}
+.h-featuredresearch {
+    margin: 0 0 10px 0;
+    background: transparent url("/sites/all/themes/aw/images/sitewide/related_top.png") no-repeat scroll 5% center;
+    border-bottom: 1px solid #ccc;
+}
+.colC .h-featuredresearch {
+    border-bottom: none;
+}
+.front .h-featuredresearch {
+    margin: 0;
+    background: transparent url("/sites/all/themes/aw/images/sitewide/featured_top.png") no-repeat scroll 5% center;
+}
+.h-mod-news-gallery-related {
+    background: transparent url("/sites/all/themes/aw/images/news-gallery-more.png") no-repeat scroll 3% center;
+}
+.h-redvooks {
+	text-indent: 0;
+	background: none;
+}
+#footer-links .h6-adweekdotcom{
+	background-position: 0 -245px;
+}
+#footer-links .h6-affiliates {
+	background-position: 0 -285px;
+}
+#footer-links .h6-thepress {
+	background-position: 0 -325px;
+}
+#footer-links .h6-television {
+	background-position: 0 -365px;
+}
+#footer-links .h6-technology {
+	background-position: 0 -405px;
+}
+#footer-links .h6-advertisingbranding {
+	background-position: 0 -445px;
+}
+
+.icon {
+    /*background: url("/sites/all/themes/aw/images/sitewide/sprite.png") 0 0 no-repeat;*/
+}
+	.icon-rss {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position: -890px -590px;
+	}
+		.icon-rss:hover {
+			background-position: -10px -470px;
+		}
+    .icon-rss, .list-rss a {
+        /*background-position: 0 -619px;*/
+        padding-left: 20px !important;
+    }
+	.list-rss a {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-5px -462px;
+		padding-left:26px !important;
+
+	}
+    .icon-fb, .stButton .facebook {
+        background-image: url("/sites/all/themes/aw/images/FB-hover.png") !important ;
+        background-position: 0 0 !important ;
+        padding-left: 20px;
+    }
+
+	.st_facebook .stButton .facebook, .st_twitter .stButton .twitter {
+		*display:block;
+		*margin:0 5px 0 0;
+	}
+        .story-hover .chicklets.facebook, .icon-fb:hover,
+        .icon-fb:focus, .stButton .facebook:hover{
+            background-image: url("/sites/all/themes/aw/images/FB-up.png") !important ;
+            /*background-position: -10px -230px !important;*/
+        }
+
+    .icon-twitter {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png") !important;
+        background-position: -890px -670px !important;
+        padding-left: 20px;
+    }
+        .icon-twitter:hover,
+        .icon-twitter:focus, .stButton .twitter:hover {
+            background-position: -450px -670px;
+        }
+		#footer-site .icon-twitter:hover {
+			background-position: -10px -310px !important;
+		}
+
+		.stButton {
+			margin:0 !important;
+		}
+        .socialtools .icon-twitter, .socialtools .icon-fb {
+            padding: 0;
+        }
+		.stButton .linkedin {
+		  background: transparent url("/sites/all/themes/aw/images/linkedin-up.png") no-repeat scroll left top !important;
+		  opacity: 0.2;
+		}
+		.story-hover .stButton .linkedin, .stButton .linkedin:hover {
+		  background: transparent url("/sites/all/themes/aw/images/linkedin-up.png") no-repeat scroll left top !important;
+		  opacity: 1 !important;
+		}
+		.stButton .facebook, .stButton .twitter{
+            /*position:relative;
+			top:-2px;
+			cursor:pointer;*/
+        }
+		#blog .stButton .facebook, #blog .stButton .twitter,
+		#article.columns .stButton .facebook, #article.columns .stButton .twitter{
+            top:1px;
+        }
+		.story-listing .stButton .facebook, .story-listing .stButton .twitter{
+            top:-1px;
+        }
+
+        .mod-social .icon-twitter, .icon-twitter-grey  {
+			background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+            background-position: -450px -660px !important;
+            padding-left: 20px !important;
+        }
+		.icon-twitter-grey {
+			background-position: -450px -630px !important;
+			padding-left: 19px !important;
+		}
+		.icon-email-grey, .icon-subscribe {
+			background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+            background-position: -450px -710px;
+			padding-left: 24px !important;
+		}
+		#footer .icon-subscribe.magazine {
+			background-image: url("/sites/all/themes/aw/images/sitewide/magazine_sprite.png");
+			background-repeat: no-repeat;
+		}
+		#footer .icon-subscribe {
+			background-position: left top;
+		}
+		#footer .icon-subscribe:hover {
+			background-position: left bottom;
+		}
+		.bio .icon-email-grey:hover {
+			background-position:-450px -750px;
+		}
+		.bio .icon-twitter-grey:hover {
+			background-position:-450px -670px !important;
+		}
+		#header-tools .addthis_toolbox a {
+			background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+            background-position: -10px -181px;
+			width:15px;
+			height:34px;
+			margin:0 0 0 10px;
+		}
+		#header-tools .addthis_toolbox .addthis_button_facebook {
+			background-position: -890px -341px;
+		}
+		#header-tools .addthis_toolbox .addthis_button_twitter {
+			background-position: -890px -381px;
+		}
+		#header-tools .addthis_toolbox .addthis_button_email {
+			background-position: -890px -261px;
+			margin-right:5px;
+		}
+
+    .icon-sticker {
+        background: url("/sites/all/themes/aw/images/sitewide/sticker.png") 0 5px no-repeat;
+		width:85px;
+		height:85px;
+		display:block;
+    }
+	.mac.gecko .icon-sticker {
+		background-position:0 1px;
+	}
+	.subheader .headings .icon-sticker {
+		display:block;
+		float:left;
+		margin:0 11px 0 0;
+	}
+
+	/* ICON PLAY RED */
+	.icon-play-red {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-450px -510px;
+		width:17px;
+		height:11px;
+	}
+	#blog .icon-play-red {
+		background-position:-450px -550px;
+	}
+	.list .icon-play-red {
+		display:block;
+		float:left;
+		position:relative;
+		top:2px;
+		margin:0 4px 0 0;
+	}
+
+	/* ICON SPOTLIGHT */
+	.icon-spotlight {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+        background-position: -450px -790px;
+        padding:0 0 0 22px;
+		margin-left:-6px;
+    }
+	.icon-spotlight-listing {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+        background-position: -890px -510px;
+        padding:0 0 0 22px;
+		font-family:Georgia;
+		height:25px;
+		line-height:25px;
+		padding:0 0 0 33px;
+		margin:0 0 10px;
+	}
+
+	/* LIGHTBOXES */
+	#lightbox .icon-close {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		text-indent:-999em;
+		background-position:-875px -95px;
+		width:12px;
+		height:12px;
+		padding:15px;
+		position:absolute;
+		top:0;
+		right:0;
+		color:#FFF;
+	}
+	#lightbox .icon-close:hover {
+		background-position:-875px -135px;
+	}
+
+	/* ENLARGE */
+	.enlarge a, .mod-photo-enlarge a .icon-enlarge {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-880px -182px;
+	}
+
+	.mod-photo-enlarge-gallery .meta {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-450px -461px;
+	}
+	#top-nav li.current a, .pagination li a, .searchresults-tools li a {
+		position:relative;
+	}
+	#top-nav li.current a span, .pagination li a.current span, #jobs .filter li.current a span, .searchresults-tools li a.current span {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-449px -109px;
+		display:block;
+		width:10px !important;
+		height:5px !important;
+		position:absolute !important;
+		padding:0 !important;
+		margin:0 !important;
+		bottom:0 !important;
+		left:33% !important;
+		border:0 none !important;
+	}
+	.searchresults-tools li a.current span {
+		left:39% !important;
+	}
+	#top-nav li.current a span {
+		left:42% !important;
+	}
+	#jobs .filter li.current a span {
+		left:46% !important;
+	}
+	#top-nav li#top-nav-eventsappearances a span {
+		background-position:-890px -309px;
+	}
+	#top-nav li#top-nav-jobs.current a span {
+		background-position:-449px -269px;
+	}
+	.pagination li a.current span, .searchresults-tools li a.current span {
+		background-position:-451px -151px;
+		bottom:-1px !important;
+		width:10px !important;
+	}
+	.ruler-bottom .pagination li a.current span {
+		background-position:-451px -191px;
+		bottom:23px !important;
+	}
+
+	.rsvp-fb {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-889px -224px;
+		padding:0 0 0 20px;
+		display:block;
+		color:#999;
+	}
+
+	.icon-youtube {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-10px -1592px;
+		display:inline-block;
+		text-indent:-9999em;
+		height:24px;
+		width:57px;
+	}
+	.icon-buzzmedia {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-17px -1667px;
+		display:inline-block;
+		text-indent:-9999em;
+		width:158px;
+		height:22px;
+	}
+	#events #header-banner #logo a {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-348px -1589px;
+		display:inline-block;
+		text-indent:-9999em;
+		width:127px;
+		height:46px;
+	}
+	#events #header-banner h2 {
+		background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+		background-position:-348px -1637px;
+		display:inline-block;
+		text-indent:-9999em;
+		width:872px;
+		height:65px;
+	}
+
+    #footer .icon-fb, #footer .icon-fb:focus {
+        background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png") !important;
+        background-position: -890px -630px !important;
+        padding-left: 20px;
+    }
+
+    #footer .icon-fb:hover {
+        background-position: -10px -230px !important;
+    }

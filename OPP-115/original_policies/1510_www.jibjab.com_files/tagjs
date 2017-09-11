@@ -1,0 +1,2 @@
+_pa.setPartners({crw:["cd"],mrin:true,fbx:true,goo:true,yah:true,twtr:true})
+_pa.looperReady()

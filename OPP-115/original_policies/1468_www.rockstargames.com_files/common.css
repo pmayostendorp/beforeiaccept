@@ -1,0 +1,16 @@
+body {margin:0;padding:0;}
+a img, a, img { border:none; outline:none; }
+div, ul, input { -webkit-box-sizing:border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.inline_block {display:inline-block;zoom: 1;*display: inline;}
+.d_none {display:none;}
+.v_hidden {visibility:hidden;}
+.va_top {vertical-align:top;}
+.va_middle {vertical-align:middle;}
+.va_bottom {vertical-align:bottom;}
+.float_left {float:left;}
+.float_right {float:right;}
+.clear_left {clear:left;}
+.clear_right {clear:right;}
+.clear_both {clear:both;}
+.position_relative {position:relative;}
+.position_absolute {position:absolute;}

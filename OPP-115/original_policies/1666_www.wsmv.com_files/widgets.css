@@ -1,0 +1,204 @@
+
+#dsnsevents i, #dsnscommunityevents i {display:block;height:0;line-height:0;clear:both;font-size:0}
+#dsnsevents li, #dsnscommunityevents li, #dsnsevents h5, #dsnscommunityevents h5, #dsnsevents h6, #dsnscommunityevents h6 {margin:0;padding:0;border:none}
+#dsnsevents li img, #dsnscommunityevents li img {float:left;border:none;margin:0 5px 5px 0}
+#dsnsevents .last, #dsnsevents .secondary-links li, #dsnscommunityevents .last, #dsnscommunityevents li {border:none}
+#dsnscommunityevents .secondary-links .more, #dsnsevents .secondary-links .more {background:#EDEDED;display:block;padding:3px;margin-bottom:3px}
+#dsnscommunityevents .secondary-links .more:hover, #dsnsevents .secondary-links .more:hover {text-decoration:none;background:#ddd}
+
+/*#dsnsevents .tab-widget, #dsnscommunityevents .tab-widget {margin-bottom:10px;}*/
+
+/* Community & DMA Widget */
+.dsnstabs .story-3, .dsnstabs .story-4, .dsnstabs .story-5 {}
+#dsnscommunityevents .story-3 {display:block}
+#dsnsevents .dsnstabs li.story-2 {border:none}
+#dsnscommunityevents .dsnstabs li li.story-3 {border:none;}
+
+
+/* Tall DMA Widget */
+.dsnstallwidget .story-3, .dsnstallwidget .story-4, .dsnstallwidget .story-5 {display:block}
+#dsnsevents .dsnstabs .story-5 {border:none}
+
+#dsnscommunityevents .dsnstabs li {list-style:none;padding:0}
+#dsnsevents .dsnstabs ul li a, #dsnscommunityevents .dsnstabs ul li a {margin:0;padding:0}
+#dsnsevents .dsnstabs li li, #dsnscommunityevents .dsnstabs li li {border-bottom:5px solid #EAEAEA;padding-bottom:10px;margin-bottom:5px}
+
+#dsnsevents h4, #dsnscommunityevents h4 {background:url("http://s1.wp.com/wp-content/themes/vip/cbs-local/images/bg-block-h3.gif") repeat-x left bottom;padding:0;padding-bottom:6px;line-height:24px}
+#dsnsevents .tab-links, #dsnscommunityevents .tab-links {margin-bottom:12px}
+#dsnsevents .tab-links a, #dsnscommunityevents .tab-links a {color:#A1A2A1;top:5px;position:relative;padding-top:9px}
+#dsnsevents .tab-links a:hover, #dsnscommunityevents .tab-links a:hover, #dsnsevents .tab-links .dsactive, #dsnscommunityevents .tab-links .dsactive {color:#545554;text-decoration:none}
+#dsnsevents .tab-links .dsactive, #dsnscommunityevents .tab-links .dsactive {background:url(http://eventss3.datasphere.com/events/img/active-tab-marker.png) no-repeat top center}
+#dsnsevents .tab-links li, #dsnscommunityevents .tab-links li {display:inline;clear:none;border:none;margin-right:6px}
+#dsnsevents .secondary-links li, #dsnscommunityevents .secondary-links li {display:inline;}
+#dsnsevents li .thumb, #dsnscommunityevents li .thumb {float:right;display:none}
+#dsnsevents .second, #dsnsevents .third, #dsnscommunityevents .second, #dsnscommunityevents .third {display:none}
+#dsnsevents h5 a, #dsnscommunityevents h5 a {font-size:15px}
+#dsnsevents h6, #dsnscommunityevents h6, #dsnsevents h6 a, #dsnscommunityevents h6 a {font-size:12px}
+#dsnscommunityevents .dsnstabs {/*margin-top:5px;height:250px*/}
+/*#dsnscommunityevents .nearby, #dsnscommunityevents .dma {color:#999}*/
+#dsnsevents h4 a, #dsnscommunityevents h4 a {display:block;font-size:17px;text-transform:uppercase;color:#000}
+#dsnsevents h4 a:hover, #dsnscommunityevents h4 a:hover {color:#fff;text-decoration:none;background-color:#266EC4}
+#dsnsEventsPopup, #dsnscommunityevents .dsnschoosecom, #dsnsEventsPopup dd, #dsnsEventsPopup p, #dsnsEventsPopup .dsnspowered, #dsnsEventsPopup .dont-ask, #dsnscommunityevents .secondary-links, #dsnsevents .secondary-links
+	{display:block;font-family:Arial, Helvetica, sans-serif}
+#dsnscommunityevents .dsnschoosecom {font-weight:bold}
+#dsnsOverlay, #dsnsEventsPopup {display:none}
+
+
+
+
+
+#dsnscommunityevents .featured {border:2px dotted #ccc;border-width:2px 0;padding-top:5px;margin:5px;padding-bottom:10px}
+#dsnscommunityevents .featured dt {color:#999;text-transform:uppercase;background:url("http://eventss3.datasphere.com/events/img/sprite-1-1.png") no-repeat 0 -230px;text-indent:-9999px;width:110px;height:30px;display:block}
+#dsnscommunityevents .featured dd {margin:0}
+
+
+
+.dsnspopupopen {-webkit-box-shadow:#FFF 0px 0px 25px 0px;-moz-box-shadow:0px 0px 25px 0px #FFF;box-shadow:0px 0px 25px 0px #FFF;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;}
+#dsnsEventsPopup .button {font-family:Arial, sans-serif;font-size:18px;margin:auto;margin-bottom:5px;text-decoration:none;line-height:56px;font-weight:bold;display:block;color:#fff;text-align:center;background:url(http://eventss3.datasphere.com/events/img/cbs-button.png) no-repeat;width:270px;height:56px}
+#dsnsEventsPopup .graphic {float:left;margin-right:5px;display:inline}
+#dsnsEventsPopup .dsnsfooter {border-top:3px solid #ccc;clear:both;margin-top:10px;padding:18px 0 0;margin-right:20px}
+#dsnsEventsPopup .close {background:url(http://eventss3.datasphere.com/events/img/widget-close.png) no-repeat;float:right;height:44px;width:44px;text-indent:-9999px;margin:-35px -10px 0 0;overflow:hidden}
+#dsnsEventsPopup {position:absolute;background:#FFF;width:780px;padding:20px 0 20px 20px;border:3px solid #266EC4;z-index:9999999;}
+#dsnsEventsPopup dd ul, #dsnsEventsPopup dd ul a {width:200px; }
+
+
+#dsnsEventsPopup h2 {margin-right:20px;font-size:18px;margin-bottom:18px}
+#dsnsEventsPopup dl {overflow:hidden;margin:0 20px 20px 0}
+#dsnsEventsPopup dt {margin:0;margin-bottom:5px}
+#dsnsEventsPopup dd {margin:0}
+#dsnsEventsPopup dd ul {float:left;list-style:none;list-style-position:outside;padding:0;margin:0 15px 0 0;display:inline}
+#dsnsEventsPopup dd ul a {display:block;}
+
+#dsnsEventsPopup .dsnscommunities {width:100%;}
+#dsnsEventsPopup dd a {font-size:12px;display:block;border-bottom:1px dotted #ccc;text-decoration:none;padding:3px 0;}
+#dsnsEventsPopup dd a:hover {background:;color:;}
+#dsnsEventsPopup .dsnscommunities {overflow:hidden;float:left;}
+
+#dsnsEventsPopup .dsnspowered {display:none;text-transform:uppercase;font-size:12px;float:left;color:#555;margin-top:10px}
+#dsnsEventsPopup .dsnspowered img {vertical-align:middle;display:inline}
+#dsnsEventsPopup .buttons {display:inline;text-align:center;}
+#dsnsEventsPopup .button:hover {background-color:#2EA6DE}
+#dsnsEventsPopup .button:hover {background-position:bottom;}
+#dsnsEventsPopup .dont-ask {font-size:11px;text-align:center}
+
+#dsnscommunityevents .button {background:#266EC4;color:#fff;text-align:center;padding:5px;}
+.dsnsround {-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
+
+
+
+
+
+
+
+
+#dsnsEventsPopup dt {font-size:16px;font-weight:bold;margin:0;margin-bottom:5px}
+#dsnsEventsPopup dd a {color:#3d3d3d;padding-left:2px;}
+#dsnsEventsPopup h2 {font-weight:normal;border-bottom: 1px solid #cdcdcd;padding-bottom:5px;}
+#dsnscommunityevents .dsnstabs li {min-width:279px;}
+#maincontent #nocss #columns form #main-form {padding:12px;}
+
+
+
+
+
+
+
+/* constants */
+#dsnscommunityevents .hascommunity, #dsnscommunityevents .hascommunity .com {display:none}
+#dsnscommunityevents .dsnshascommunity .hascommunity {display:block}
+#dsnscommunityevents .dsnshascommunity .nocommunity {display:none}
+#dsnsevents, #dsnscommunityevents {background-repeat:no-repeat;visibility:hidden}
+.dsnspopupclosed .dsnscommunities, .dsnspopupclosed .dsnsfooter, .dsnspopupclosed img, .dsnspopupclosed h2, .dsnspopupclosed a, .dsnspopupclosed p {visibility:hidden}
+/* the widget css for WSMV */
+
+/*Styles for wider widget version*/
+#dsnscommunityevents {margin:5px 0;border: 1px solid #005795;/*background-color:#005795;*/border-radius:5px;
+-moz-box-shadow: 0 2px 5px #888;-webkit-box-shadow: 0 2px 5px#888;box-shadow: 0 2px 5px #888;}
+#dsnscommunityevents h4 {margin:0;padding:0;border-bottom:3px solid #e5e5e5;background:none;color:#fff!important;}
+#dsnscommunityevents h4 a {padding-left:7px;font-size:17px!important;color:#fff!important;border-bottom:2px solid #005795;}
+#dsnscommunityevents .dsnswidget{background: #ffffff; /* Old browsers */
+ background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 48%, #ffffff 100%); /* FF3.6+ */
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(48%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+ background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 48%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+ background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 48%,#ffffff 100%); /* Opera 11.10+ */
+ background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 48%,#ffffff 100%); /* IE10+ */
+ background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 48%,#ffffff 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */}
+#dsnscommunityevents ul{margin:0;padding:0}
+#dsnscommunityevents .tab-links a {margin-right:20px;}
+#dsnscommunityevents .tab-links a {font-weight:bold;}
+#dsnscommunityevents .tab-links a:hover, #dsnscommunityevents .tab-links .dsactive {color:#333!important;}
+#dsnsevents .tab-links .dsactive, #dsnscommunityevents .tab-links .dsactive {background: url("http://eventss3.datasphere.com/doppiowidget/img/arrow-sprite.png") no-repeat center -25px;}
+#dsnscommunityevents h5 a {font-size:13px!important; font-weight:normal;}
+#dsnscommunityevents h6, #dsnscommunityevents h6 a {color:#333!important;font-size:12px!important; font-weight:normal;}
+#dsnscommunityevents h5 a:hover, #dsnscommunityevents h6 a:hover {text-decoration:underline!important;}
+#dsnscommunityevents .tab-links, #dsnscommunityevents .dsnstabs {padding:0 5px;}
+#dsnscommunityevents a.dsnschoosecom {color:#fff;background-color:#005795;}
+
+/*Featured Event Styles*/
+#dsnscommunityevents .featured {border:2px dotted #ccc;border-width:2px 0;padding-top:5px;margin:5px;padding-bottom:10px}
+#dsnscommunityevents .featured  dt {color:#999;text-transform:uppercase;background:url("http://eventss3.datasphere.com/events/img/sprite-1-1.png") no-repeat 0 -230px;text-indent:-9999px;width:110px;height:30px;display:block}
+#dsnscommunityevents .featured dd {margin:0}
+
+/*Community Selected State - Change Community Btn*/
+#dsnscommunityevents .hascommunity .dsnschoosecom {padding: 3px 5px;}
+#dsnscommunityevents .hascommunity a.dsnschoosecom:hover {text-decoration:none!important;}
+#dsnscommunityevents a.dsnschoosecom:hover{text-decoration:none!important; color:#ccc!important;}
+#dsnscommunityevents .button:hover{-moz-box-shadow:inset 1px 1px 2px #005795;-webkit-box-shadow:inset 1px 1px 2px #005795;box-shadow:inset 1px 1px 2px #005795; }
+
+#dsnscommunityevents .secondary-links .more, #dsnsevents .secondary-links .more{background:transparent;color:#545554;padding:5px 0 0 5px;}
+#dsnscommunityevents .secondary-links .more:hover, #dsnsevents .secondary-links .more:hover{background:transparent;color:#999;}
+
+#dsnsevents .dsnstabs li li, #dsnscommunityevents .dsnstabs li li{background-color:white;border-radius:5px;padding:5px;
+-moz-box-shadow: inset 2px 2px 2px #888;-webkit-box-shadow: inset 2px 2px 2px #888;box-shadow: inset 2px 2px 2px #CCC;border:none;}
+#dsnscommunityevents h4  a {padding-left:5px;font-size:17px!important;color:#fff!important;border-bottom:3px solid #005795; background-color:#005795;}
+#dsnscommunityevents .button, #dsnscommunityevents .hascommunity .dsnschoosecom{
+background: #FFF; /* Old browsers */
+background: -moz-linear-gradient(top, #4493c4 1%, #005795 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#4493c4), color-stop(100%,#005795)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #4493c4 1%,#005795 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #4493c4 1%,#005795 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #4493c4 1%,#005795 100%); /* IE10+ */
+background: linear-gradient(to bottom, #4493c4 1%,#005795 100%); /* W3C */
+border:solid 1px:#005795;border-radius: 4px;
+box-shadow: 1px 2px 3px 0px #ccc;display: block;font-size: 12px;font-weight: bold;margin: 5px;text-align: center;
+}
+
+.dsnscommunities li {line-height: 14px; margin: 0 0 3px;}
+
+/*Popup Styles*/
+#dsnsEventsPopup .button{float:right!important;padding:0;
+background: rgb(246,248,249); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,248,249,1)), color-stop(50%,rgba(229,235,238,1)), color-stop(51%,rgba(215,222,227,1)), color-stop(100%,rgba(245,247,249,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+border:1px solid #BED5E3;
+color:#005795;display: block;font-family: Arial,sans-serif;font-size: 18px;font-weight: bold;height: 37px;line-height: 40px;margin: auto auto 5px;padding: 0;
+text-align: center;text-decoration: none;width: 253px;box-shadow: 3px 4px 3px -3px #ccc;}
+#dsnsEventsPopup .dont-ask {clear: both;float: right;font-size: 12px !important;}
+#dsnsEventsPopup .dsnsadvertise{float:left; font-size: 12px !important;}
+#dsnsEventsPopup dl {border-bottom: dotted 1px #ccc; margin:0 20px 5px 0;}
+#dsnsEventsPopup dd ul, #dsnsEventsPopup dd ul a{width:224px;}
+#dsnsEventsPopup .button:hover{color:#333;-moz-box-shadow:2px 2px 3px #ccc inset;-webkit-box-shadow:2px 2px 3px #ccc inset;box-shadow:2px 2px 3px #ccc inset;}
+#dsnsEventsPopup dd a:hover{color:#005795;text-shadow:2px 2px 2px #999 !important;background-color:transparent; font-weight:normal;}
+#dsnsEventsPopup dd a {color:#666; border:none;}
+#dsnsEventsPopup{border:3px solid #888;}
+#dsnsEventsPopup   .close{background:url("http://eventss3.datasphere.com/doppiowidget/img/doppio-close-btn-sprite-v3.png") no-repeat scroll 0 1px transparent;}
+#dsnsEventsPopup a, #dsnsEventsPopup a:link,#dsnsEventsPopup a:visited{color:#888;}
+#dsnsEventsPopup dt{color:#333; font-size:14px;}
+#dsnsEventsPopup h2 {color:#005795; margin-top:5px;}
+#dsnsEventsPopup .dsnscommunities{box-shadow: 2px 1px 3px #CCCCCC inset; border: 1px solid #CCCCCC; padding: 10px; width: 95%;background-color:white;}
+#dsnsEventsPopup img{padding-right:10px; width:25%;}
+#dsnsEventsPopup .dsnsfooter{border:none;}
+#dsnsEventsPopup{background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 27%, #e5e5e5 58%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(27%,#ffffff), color-stop(58%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 27%,#e5e5e5 58%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 27%,#e5e5e5 58%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 27%,#e5e5e5 58%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ffffff 27%,#e5e5e5 58%,#ffffff 100%); /* W3C */}
+/* */

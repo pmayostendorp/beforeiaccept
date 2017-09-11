@@ -1,0 +1,46 @@
+#pageslide {
+	/* These styles MUST be included. Do not change. */
+    display: none;
+	position: absolute;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	z-index: 999999;
+	/* Specify the width of your pageslide here */
+    width: 275px;
+	padding: 25px;
+	/* These styles are optional, and describe how the pageslide will look */
+    background-color: #f7f0e2;
+	color: #999;
+	background-image: url(../images/bg_quick_cart_slideout.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#total_price {
+	font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	color: #8b6c40;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 0.03em;
+	font-weight: normal;	
+}
+
+#close_button {
+	float: right;
+	width: 275px;
+	position: absolute;
+	text-align: right;
+}
+
+#checkout_btn {
+	margin-left: -25px;
+	position: relative;
+}
+
+#checkout_btn_edit {
+	margin-left: -25px;
+	margin-top: -15px;
+	position: relative;
+}

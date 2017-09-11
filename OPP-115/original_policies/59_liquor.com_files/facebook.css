@@ -1,0 +1,22 @@
+#ldc_signup_form .email-input {
+	float: left;
+	margin-right: 10px;	
+}
+
+#ldc_signup_form .subscribe {
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#ldc_signup_form .or-label {
+	float: left;
+ 	padding: 13px 0px;
+	margin-right: 10px;	
+}
+
+#ldc_signup_form .facebook-button {
+	float: left;
+	margin-top: 6px;
+	cursor: pointer;
+}

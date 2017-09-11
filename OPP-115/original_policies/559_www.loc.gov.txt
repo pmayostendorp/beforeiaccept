@@ -1,0 +1,121 @@
+About This Site
+The mission of the Library of Congress is to support the Congress in fulfilling its constitutional duties and to further the progress of knowledge and creativity for the benefit of the American people. Through its websites, the Library offers broad public access to a wide range of information, including historical materials that may contain offensive language or negative stereotypes. Such materials must be viewed in the context of the relevant time period. The Library of Congress does not endorse the views expressed in such materials.
+
+General Disclaimer
+Materials published on this website are intended for reference use only, do not constitute legal advice, and may not represent the official opinion of the United States Government.
+
+The Library of Congress websites have links to other federal agencies. We also link to other organizations' websites when there is a business reason to do so. This linking does not constitute the Library's endorsement of the content of their websites or of their policies or products.
+
+View the standard disclaimer for external links
+
+Security
+For site security and to ensure that this service remains available to all users, this government computer system employs software programs to monitor network traffic to identify unauthorized attempts to upload or change information, deny service, otherwise cause damage or access non-public information. Unauthorized attempts to upload information or change information are strictly prohibited and may be punishable under the United States criminal code (18 U.S.C. 1030). Information regarding possible violations of law may be provided to law enforcement officials.
+
+The Library reserves the right to block IP addresses that fail to honor the Library's robots.txt files or submit requests at a rate that negatively impacts service delivery to all Library patrons. Current guidelines recommend that software programs submit a total of no more than 10 requests per minute to Library applications, regardless of the number of machines used to submit requests. The Library also reserves the right to terminate programs that require more than 24 hours to complete.
+
+Top
+
+About Copyright and the Collections
+Whenever possible, the Library of Congress provides factual information about copyright owners and related matters in the catalog records, finding aids and other texts that accompany collections. As a publicly supported institution, the Library generally does not own rights in its collections. Therefore, it does not charge permission fees for use of such material and generally does not grant or deny permission to publish or otherwise distribute material in its collections. Permission and possible fees may be required from the copyright owner independently of the Library. It is the researcher's obligation to determine whether an item is protected or, potentially, in the public domain, and to satisfy copyright or other use restrictions when publishing or otherwise distributing materials found in the Library's collections. Transmission or reproduction of protected items beyond that allowed by fair use requires the written permission of the copyright owners. Researchers must make their own assessments of rights in light of their intended use.
+
+If you have any more information about an item you've seen on our website or if you are the copyright owner and believe our website has not properly attributed your work to you or has used it without permission, we want to hear from you. Please contact OGC@loc.gov with your contact information and a link to the relevant content.
+
+View more information about copyright law from the U.S. Copyright Office
+
+Top
+
+Privacy and Publicity Rights
+Privacy and publicity rights reflect separate and distinct interests from copyright interests. Patrons desiring to use materials from this website bear the responsibility of making individualized determinations as to whether privacy and publicity rights are implicated by the nature of the materials and how they use such materials.
+
+While copyright protects the copyright holder's property rights in the work or intellectual creation, privacy and publicity rights protect the interests of the person(s) who may be the subject(s) of the work or intellectual creation. Issues pertaining to privacy and publicity may arise when a researcher contemplates the use of letters, diary entries, photographs or reportage in visual, audio, and print formats found in library collections. Because two or more people are often involved in the work (e.g., photographer and subject, interviewer and interviewee) and because of the ease with which various media in digital format can be reused, photographs, audio files, and motion pictures represent materials in which issues of privacy and publicity emerge with some frequency.
+
+The distinctions among privacy rights, publicity rights, and copyright are best illustrated by example: An advertiser wishes to use a photograph for a print advertisement. The advertiser approaches the photographer, who holds the copyright in the photograph, and negotiates a license to use the photograph. The advertiser also is required to determine the relationship between the photographer and the subject of the photograph. If no formal relationship (e.g., a release form signed by the subject) exists that permits the photographer to license the use of the photograph for all uses or otherwise waives the subject's, sitter's or model's rights, then the advertiser must seek permission from the subject of the photograph because the subject has retained both privacy and publicity rights in the use of their likeness. The publicity right of the subject is that their image may not be commercially exploited without his/her consent and potentially compensation.
+
+While copyright is a federally protected right under the United States Copyright Act, with statutorily described fair use defenses against charges of copyright infringement, neither privacy nor publicity rights are the subject of federal law. Note also that while fair use is a defense to copyright infringement, fair use is not a defense to claims of violation of privacy or publicity rights. Privacy and publicity rights are the subject of state laws. What may be permitted in one state may not be permitted in another. Note also that related causes of action may be pursued under the federal Lanham Act, 15 U.S.C. § 1125 (a), for example, for unauthorized uses of a person's identity in order to create a false endorsement.
+
+While an individual's right to privacy generally ends when the individual dies, publicity rights associated with the commercial value connected with an individual's name, image or voice may continue. For example, many estates or representatives of famous authors, musicians, actors, photographers, politicians, sports figures, celebrities, and other public figures continue to control and license the uses of those figures' names, likenesses, etc.
+
+Although the risks for using an image in a periodical's "editorial" pages may be less than for use in advertising or for other commercial purposes, the risk can still be high if the person depicted is held up to ridicule or presented in a libelous manner. While it is true that famous or public figures who seek recognition have thereby surrendered some privacy, they may have the right to control the commercial use of their image (likeness, voice, signature, etc.). This principle recognizes that a celebrity's image can be an asset in trade.
+
+Top
+
+Privacy Policy
+Protecting your personal information and privacy is important to the Library. We collect, use, and share information obtained from our online visitors and subscribers to Short Message Service (SMS) notifications only in the following ways:
+
+We will only collect personal information that you voluntarily provide.
+We will only use the personal information you provide for its intended purpose.
+We will only disclose personal information to a government agency if required by law.
+We will only disclose personal information to contractors or associates to carry out your requests; these third parties follow our privacy policy or prominently display their own.
+We will not disclose your personal information to other outside parties without first obtaining your permission.
+We provide a safe online environment for children and follow COPPA principles.
+We have implemented safeguards to protect any information collected.
+For more information follow these links:
+
+Types of Information Collected
+Automatically Collected Information
+Information Collected for Measurement and Customization (Cookies)
+Personal Information
+Children’s Privacy Policy
+Types of Information Collected
+The Library collects several types of information, although never for commercial marketing use:
+
+Automatically Collected Information
+Information Collected for Measurement and Customization (Cookies)
+Personal Information
+The Library has implemented safeguards to protect this information, including only providing access to designated Library staff members that require this access to perform their duties.
+
+Automatically Collected Information
+The Library of Congress strives to provide the best experience for our Web and SMS users. To that end, the Library automatically collects and stores the following non-personally identifiable information:
+
+The name of the domain from which you access the Internet,
+The Internet Protocol address of your Internet provider’s gateway, or in some cases, the computer you are using,
+The date and time you access the Library’s site,
+The URL of the pages you visit and files you download,
+The Internet address of the website from which you linked directly to our site,
+Characteristics of your system, and
+Search terms used to come to the site and while on the site (in aggregate only).
+This information allows us to improve our website design, presentation and system performance. We collect this information from users who read, browse and/or download information from the Library’s websites. 
+
+Additionally, if you choose to receive our Library Alerts via text message delivered to cell phones by SMS messaging, we automatically collect your cell phone number so we can send you the Library Alerts. You can opt out of our Library Alerts at any time.
+
+Information Collected for Measurement and Customization (Cookies)
+The Library wants to provide our users with the best online experience possible. As such, we use commercial software products to analyze and report on aggregated web metrics data. This data is generally retained indefinitely to support the mission of our Library of Congress web properties.
+
+The Library uses three types of information collecting tools on its various websites: session cookies, persistent cookies, and other customization tools. "Cookies" are small files that a website transfers to your computer to allow the site to remember specific information. If you do not want cookies to be transferred to your computer, you may choose to opt out of their use by modifying your browser options. While you will still be able to access most features of the Library’s websites, certain features may not work as well or may be unavailable to you.
+
+Session cookies do not contain personal information and once you close your browser, the cookies disappear. The Library uses session cookies on our site for technical purposes such as to enable you to more easily navigate throughout the Library’s websites. Session cookies only collect non-personally identifiable data.
+
+Persistent cookies store information on your computer for longer periods of time and across multiple sessions. The Library never uses persistent cookies to collect personal identifiable information about our website visitors. The Library uses persistent cookies to improve our web metrics by distinguishing between new and returning visitors; to prevent repeated prompting to complete our customer satisfaction survey, to anonymously aggregate data on how visitors use our sites and to “remember” preferences that you voluntarily provide in order to create a more seamless experience. 
+
+Customization tools allow you to voluntarily provide information to personalize and improve your online experience on a particular Library website. This information is saved on our servers.
+
+Personal Information
+In order to use certain features of the Library’s websites, you may need to submit personal information so we can respond appropriately. We will inform you what information we require and will only use it for the stated purpose. Examples include making a purchase from the Library’s online gift shop, requesting a response on a feedback form and participating in the Library’s wikis or blog areas. By providing the information, you are giving consent to the Library to use the information for the stated purpose; if you do not want to provide the information, the feature will not be available to you.
+
+Occasionally, we may associate or contract with third parties in order to better serve you, for example, to fulfill your online order, or provide you with requested information or email updates, to collect your voluntarily provided feedback. Those sites will either follow our privacy policy or display their own. Except for the foregoing exceptions and for authorized government law enforcement activities, the Library does not provide personal information to outside organizations without first obtaining your permission.
+
+Children’s Privacy Policy
+Children are naturally curious about our world and the Library considers it part of its mission to reach out to them in creative and educational ways that protect their privacy. Certain Library websites offer educational content to children under 13 and this privacy policy, which complies with COPPA (the Children’s Online Privacy Protection Act), will be available at these sites by a link.
+
+Some of these sites provide games and activities, and occasionally, we collect personally identifiable information in order to complete the one-time game or activity. We do not use the information for any other purpose and delete the information as soon as practical. For example, in our Lifelong Literacy area, children can create an online picture postcard and email it to a friend. In order to send the online postcard, we need both email addresses as well as the child’s first name so that the recipient will know who sent the card. This information is not retained. If the child chooses to post the online postcard in our gallery, we will not post any personally identifying information.
+
+If we become aware that a child under the age of 13 has made a request for information, for example through our Ask a Librarian forms, we will respond to the request and any identifying information will be deleted once we have responded. Similarly, if we become aware that a child under 13 posted personally identifiable information on any of our websites, we will also delete that information.
+
+The Library will disclose information about a child under the age of 13 if it is necessary to protect the child or the site itself, or to respond to law enforcement.
+
+We take children's privacy very seriously, and encourage parents to contact us with any questions or concerns they may have via the web form at www.loc.gov/contact/web-site-comments/. Additionally, if parents want us to delete any collected personally identifiable information about their children under the age of 13, they can also contact us at the website address listed above.
+
+Top
+
+Linking to the Library's Website
+As a publicly supported U.S. Government institution, the Library generally does not own rights in its collections and what is posted on its website. Therefore, it does not charge permission fees for use of such material and generally does not grant or deny permission to publish or otherwise distribute material on its website. However, the Library requests that your link to the Library's website be presented in a manner that does not give the impression that the Library is making an express or implied endorsement of any good or service provided on your website and that the link is presented in a manner that clearly indicates that the user is leaving one site and accessing another.
+
+About Our Web Surveys
+The Library uses various types of online forms and surveys to collect opinions and feedback from a random sample of visitors. Primarily, the Library uses the ForeSee Results’ American Customer Satisfaction Index (ACSI) online survey on an ongoing basis to obtain feedback and data on visitors’ satisfaction with various Library of Congress web properties. The ACSI survey invitation pops up for a random sample of visitors; it is voluntary and does not collect personal information. The Library may also use other third party forms and surveys allowing you to provide feedback. All information you submit is voluntary.
+
+If you are randomly selected, a pop-up window will lead to the survey. The survey uses a persistent "cookie" to recognize that you have been invited to complete the survey and block subsequent prompts. If you have set up your Internet browser to ignore or disable pop-ups, you will not be able to be randomly selected for the survey. If you have disabled JavaScript in your browser, but are interested in responding to our survey if randomly selected, you will want to enable JavaScript and reload the website now.
+
+If you get the survey pop-up request, please consider completing it for us. Thank you for your time and comments.
+
+August 11, 2014
+

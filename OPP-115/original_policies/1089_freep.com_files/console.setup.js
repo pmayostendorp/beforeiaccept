@@ -1,0 +1,3 @@
+!function(){if(!window.console||!window.console.log){var o={};o.log=o.error=o.info=o.debug=o.warn=o.trace=o.dir=o.dirxml=o.time=o.timeEnd=o.assert=o.profile=function(){},window.console=o}window.console.group&&window.console.groupCollapsed&&window.console.groupEnd||(window.console.groupCollapsed=window.console.group=function(o){window.console.log(o)},window.console.groupEnd=function(){})}();
+//# sourceMappingURL=console.setup.js
+//# sourceMappingURL=console.setup.js.map

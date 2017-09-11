@@ -1,0 +1,69 @@
+2923,0,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+3699,0,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+4134,0,88,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+2924,1,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+3700,1,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+2925,2,84,"The site collects your unspecified information for personalization or customization. Collection happens on the website, and your data is identifiable."
+2926,2,84,"The site collects your unspecified information for analytics or research. Collection happens on the website, and your data is identifiable."
+2927,2,84,"The site collects your unspecified information for marketing purposes. Collection happens on the website, and your data is identifiable."
+2928,2,84,An unnamed third party does not receive unspecified information about you for an unspecified purpose.
+3707,2,82,The site collects your generic personal information for a basic service or feature. Collection happens on the website.
+3708,2,82,The site collects your generic personal information for analytics or research. Collection happens on the website.
+3709,2,82,An unnamed third party does not receive your unspecified personal information for an unspecified purpose. You can opt in for data collection.
+4135,2,88,The site collects your generic personal information for a basic service or feature. Collection happens on the website.
+4136,2,88,An unnamed third party does not receive your unspecified personal information for an unspecified purpose. The data is personally identifiable. You can opt in for data collection.
+2929,3,84,"The site collects your unspecified information for personalization or customization. Collection happens on the website, and your data is aggregated or anonymized."
+2930,3,84,A named third party does receive unspecified information about you for targeted advertising. The data is aggregated or anonymized.
+2931,3,84,An unspecified third party does not receive unspecified information about you for an unspecified purpose. The data is personally identifiable.
+3710,3,82,"The site collects your generic personal information for personalization or customization. Collection happens in an unspecified way, and your data is aggregated or anonymized."
+3711,3,82,"The site collects your generic personal information for advertising. Collection happens in an unspecified way, and your data is aggregated or anonymized."
+3713,3,82,A named third party does not receive unspecified information about you for targeted advertising. The data is personally identifiable.
+4137,3,88,"The site collects your unspecified information for personalization or customization. Collection happens on the website, and your data is aggregated or anonymized."
+4138,3,88,An unnamed third party does receive unspecified information about you for targeted advertising. The data is aggregated or anonymized.
+2932,4,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+3714,4,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+4139,4,88,A named third party does do something unspecified with unspecified information about you for targeted advertising.
+2933,5,84,The site collects your demographic information for analytics or research. Collection happens by a named service or third party.
+3715,5,82,The site collects your demographic information for analytics or research. Collection happens by a named service or third party.
+3716,5,82,The site collects an information type outside of our label scheme for analytics or research. Collection happens by a named service or third party.
+4140,5,88,A named third party does do something unspecified with your demographic information for analytics or research.
+4141,5,88,A named third party does do something unspecified with your activities on the website or app for analytics or research.
+2934,6,84,The site collects your demographic information for analytics or research. Collection happens on the website.
+3717,6,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+4144,6,88,The site collects your demographic information for analytics or research. Collection happens by a named service or third party.
+2935,7,84,The site collects your website activities for analytics or research. Collection happens on the website.
+3718,7,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+4143,7,88,The site collects your website activities for analytics or research. Collection happens by a named service or third party.
+2936,8,84,The site collects your unspecified information for analytics or research. Collection happens when you implicitly provide information by a named service or third party.
+2937,8,84,The site collects your website activities for analytics or research. Collection happens when you implicitly provide information by a named service or third party.
+2938,8,84,The site collects your demographic information for analytics or research. Collection happens when you implicitly provide information by a named service or third party.
+3719,8,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+2939,9,84,The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information in an unspecified way.
+2940,9,84,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information in an unspecified way.
+2941,9,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for personalization or customization.
+2942,9,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for targeted advertising.
+3722,9,82,A named third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+3723,9,82,A named third party does track on the first party website or app your cookies or tracking elements for targeted advertising.
+3724,9,82,The site collects your cookies or tracking elements for analytics or research. Collection happens on the website.
+3725,9,82,The site collects your cookies or tracking elements for advertising. Collection happens on the website.
+4148,9,88,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information on the website.
+2943,10,84,A named third party does track on the first party website or app unspecified information about you for targeted advertising. The data is aggregated or anonymized.
+2944,10,84,"You can opt out (by contacting the company) from the use of generic personal information by the site, which uses it for an unspecified purpose."
+3720,10,82,An unspecified third party does not receive your unspecified personal information for an unspecified purpose. The data is personally identifiable. You can opt out using the provided link.
+3721,10,82,A named third party does receive your unspecified personal information for targeted advertising.
+4149,10,88,A named third party does collect on the first party website or app unspecified information about you for targeted advertising.
+4150,10,88,A named third party does track on the first party website or app unspecified information about you for targeted advertising.
+2945,11,84,"You can use third party privacy settings to control the use of unspecified information by a third party, which collects or receives it for an unspecified purpose."
+3706,11,82,"You can opt out (by contacting the company) from the use of unspecified information by a third party, which collects or receives it for analytics or research."
+4145,11,88,You can use third party privacy settings to control the use of unspecified information by an unspecified party for analytics or research.
+2946,12,84,"Users with accounts can view their information, within the scope of information the company has learned about the user."
+2947,12,84,"Users with accounts can edit their information, within the scope of information the company has learned about the user."
+3703,12,82,"Users with accounts can view their information, within the scope of information the company has learned about the user."
+3704,12,82,"Users with accounts can view their information, within the scope of information explicitly provided by the user."
+3705,12,82,"A user can edit their information, within the scope of unspecified user information."
+4147,12,88,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+2948,13,84,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+3702,13,82,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+4146,13,88,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+2949,14,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+3701,14,82,The text does not fit into our label scheme.

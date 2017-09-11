@@ -1,0 +1,1 @@
+handleConfig({"Config":{"am_row_floor":1.15,"am_us_floor":2.85,"ca_row_floor":1.15,"ca_us_floor":2.85,"mob_floor":0.4,"ox_row_floor":1.15,"ox_us_floor":2.85,"p_row_floor":1.15,"p_us_floor":2.85,"r_row_floor":0.8,"r_us_floor":1.9},"Range":{"CountryCode":"US","EndRange":2918530679,"StartRange":2918528512},"Reason":null,"Status":"SUCCESS"});

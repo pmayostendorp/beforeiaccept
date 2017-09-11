@@ -1,0 +1,36 @@
+#footer, #topLinks, #siteSearch, #pageNav, #bottomBanner, #col-a, #header, #sectionHeader,  #breadcrumbs, #col-b
+{
+	display:none !important;
+}
+#content, #container2, #sectionHeader, #breadcrumbs
+{
+	border:none !important;
+}
+#container2
+{
+	overflow:visible !important;
+}
+#subFooter
+{
+	clear:both !important;
+	width:auto !important;
+}
+.footerAddress
+{
+	color:#444;
+}
+body
+{
+	background:none !important;
+}
+#content ul li, #col-b ul li
+{
+	 	 
+	background: none !important;
+	list-style:disc inside;
+
+}
+strike
+{
+	display:none !important;
+}

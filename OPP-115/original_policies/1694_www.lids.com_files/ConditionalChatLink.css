@@ -1,0 +1,512 @@
+.rn_ConditionalChatLink.rn_ChatAvailable
+{
+    display: block;
+}
+/* Lids.com Header/Footer Chat Images */
+/* Lids.com Unavailable */
+.rn_ConditionalChatLink.lids
+{
+	background-repeat:no-repeat;
+	display:block;
+	height:38px;
+	width:140px;
+}
+.rn_ConditionalChatLink.lids a span {
+	display: none;
+}
+.rn_ConditionalChatLink.lids a
+{
+	display:none;
+}
+/* Lids.com Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lids
+{
+	background-image:url("https://lids.custhelp.com/euf/assets/images/Chat/footer.gif");
+	background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids a
+{
+	display:block;
+	height:38px;
+	width:140px;
+}
+/* Lids.com Product Chat Images */
+/* Lids.com Unavailable */
+.rn_ConditionalChatLink.lids-product
+{
+	background-repeat:no-repeat;
+	display:block;
+	height:20px;
+	width:289px;
+}
+.rn_ConditionalChatLink.lids-product a
+{
+	display:none;
+}
+/* Lids.com Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-product
+{
+	background-image:url("https://lids.custhelp.com/euf/assets/images/Chat/chat_pptest.gif");
+	background-repeat:no-repeat;
+	margin-left:18%;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-product a
+{
+	display:block;
+	height:20px;
+	width:289px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-product a span {
+	display: none;
+}
+/* Lids.com Cart Chat Images */
+/* Lids.com Unavailable */
+.rn_ConditionalChatLink.lids-cart
+{
+    background-repeat:no-repeat;
+    display:block;
+    height:16px;
+    width:110px;
+
+}
+.rn_ConditionalChatLink.lids-cart a
+{
+    display:none;
+}
+/* Lids.com Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-cart
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/livechator.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-cart a
+{
+    display: block;
+    height:16px;
+    width:110px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-cart a span {
+	display: none;
+}
+/* Lids.com Checkout Images */
+/* Lids.com Unavailable */
+.rn_ConditionalChatLink.lids-checkout
+{
+    background-repeat:no-repeat;
+	display:block;
+	height:16px;
+	width:110px;
+}
+.rn_ConditionalChatLink.lids-checkout a
+{
+    display:none;
+}
+/* Lids.com Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-checkout
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/livechator.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-checkout a
+{
+    display: block;
+    height:16px;
+    width:110px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-checkout a span {
+	display: none;
+}
+/* Lids.com Help Chat Images */
+/* Lids.com Unavailable */
+.rn_ConditionalChatLink.lids-help
+{
+    background-repeat:no-repeat;
+    display:block;
+    height:36px;
+    width:200px;
+}
+.rn_ConditionalChatLink.lids-help a
+{
+    display:none;
+}
+/* Lids.com Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-help
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/LIDS-SidebarChat-Chat.jpg");	                        
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-help a
+{
+    display: block;
+    height:36px;
+    width:200px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lids-help a span {
+	display: none;
+}
+/* Lids.ca Header/Footer Chat Images */
+
+/* Lids.ca Unavailable */
+.rn_ConditionalChatLink.lidsca
+{
+    background-repeat:no-repeat;
+    display:block;
+    height:38px;
+    width:140px;
+}
+.rn_ConditionalChatLink.lidsca a
+{
+    display:none;
+}
+
+/* Lids.ca Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/footer.gif");
+    background-repeat:no-repeat; 
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca a
+{
+    display: block;
+    height:38px;
+    width:140px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca a span 
+{
+	display:none;
+}
+/* Lids.ca Product Chat Images */
+/* Lids.ca Unavailable */
+.rn_ConditionalChatLink.lidsca-product
+{
+    background-repeat:no-repeat;
+    display:block;
+    height:20px;
+    width:289px;
+}
+.rn_ConditionalChatLink.lidsca-product a
+{
+    display:none;
+}
+/* Lids.ca Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-product
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/chat_pptest.gif");
+    background-repeat:no-repeat;
+	margin-left:18%;
+} 
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-product a
+{
+    display: block;
+    height:20px;
+    width:289px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-product a span {
+	display: none;
+}
+/* Lids.ca Cart Chat Images */
+/* Lids.ca Unavailable */
+.rn_ConditionalChatLink.lidsca-cart
+{
+    background-repeat:no-repeat;
+    display:block;
+    height:16px;
+    width:110px;
+}
+.rn_ConditionalChatLink.lidsca-cart a
+{
+    display:none;
+}
+/* Lids.ca Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-cart
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/livechator.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-cart a
+{
+    display: block;
+    height:16px;
+    width:110px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-cart a span {
+	display: none;
+}
+/* Lids.ca Checkout Chat Images */
+/* Lids.ca Unavailable */
+.rn_ConditionalChatLink.lidsca-checkout
+{
+    background-repeat:no-repeat;
+    display:block;
+    height:16px;
+    width:110px;
+}
+.rn_ConditionalChatLink.lidsca-checkout a
+{
+    display:none;
+}
+/* Lids.ca Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-checkout
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/livechator.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-checkout a
+{
+    display: block;
+    height:16px;
+    width:110px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-checkout a span {
+	display: none;
+}
+/* Lids.ca Help Chat Images */
+/* Lids.ca Unavailable */
+.rn_ConditionalChatLink.lidsca-help
+{
+    background-repeat:no-repeat;
+    display:block;
+    height:36px;
+    width:200px;
+}
+.rn_ConditionalChatLink.lidsca-help a
+{
+    display:none;
+}
+/* Lids.ca Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-help
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/LIDS-SidebarChat-Chat.jpg");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-help a
+{
+    display: block;
+    height:36px;
+    width:200px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.lidsca-help a span {
+	display: none;
+}
+/* Clubhouse Header Chat Images */
+/* Buckeye Corner Unavailable */
+.rn_ConditionalChatLink.buckeye
+{
+    background-repeat:no-repeat;
+	float:left;
+	display:block;
+	height:24px;
+	width:103px;
+}
+.rn_ConditionalChatLink.buckeye a
+{
+    display:none;
+}
+/* Buckeye Corner Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/BuckeyeHomePage.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye a
+{
+    display: block;
+    height:24px;
+    width:103px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye a span {
+	display: none;
+}
+/* Seattle Teams Unavailable */
+.rn_ConditionalChatLink.seattle
+{
+    background-repeat:no-repeat;
+	display:block;
+	height:20px;
+	width:96px;
+}
+.rn_ConditionalChatLink.seattle a
+{
+    display:none;
+}
+/* Seattle Teams Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/header_chat_on.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle a
+{
+    display: block;
+    height:20px;
+    width:96px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle a span {
+	display: none;
+}
+/* Clubhouse Help Desk Chat Images */
+/* Buckeye Corner Unavailable */
+.rn_ConditionalChatLink.buckeye-help
+{
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.buckeye-help a
+{
+    display: block;
+    height:24px;
+    width:103px;
+}
+/* Buckeye Corner Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-help
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/chat-checkout-2.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-help a
+{
+    display: block;
+    height:50px;
+    width:200px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-help a span {
+	display: none;
+}
+/* Seattle Teams Unavailable */
+.rn_ConditionalChatLink.seattle-help
+{
+	background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.seattle-help a
+{
+    display: block;
+    height:14px;
+    width:72px;
+}
+/* Seattle Teams Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-help
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/chat-checkout-1.png");
+    background-repeat:no-repeat;
+	margin-left:10%;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-help a
+{
+    display: block;
+    height:50px;
+    width:160px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-help a span {
+	display: none;
+}
+/* Clubhouse Product Chat Images */
+/* Buckeye Corner Unavailable */
+.rn_ConditionalChatLink.buckeye-product
+{
+	background-image: url("//as00.estara.com/OneCC/200106296993/Lids/chat-sidebar-off.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.buckeye-product a
+{
+    display: block;
+    height:50px;
+    width:245px;
+}
+/* Buckeye Corner Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-product
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/chat-sidebar-on-1.png");
+    background-repeat:no-repeat;
+	margin-left: 4%;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-product a
+{
+    display: block;
+    height:50px;
+    width:245px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-product a span {
+	display: none;
+}
+/* Seattle Teams Unavailable */
+.rn_ConditionalChatLink.seattle-product
+{
+	background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.seattle-product a
+{
+    display: block;
+    height:14px;
+    width:72px;
+}
+/* Seattle Teams Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-product
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/images/Chat/chat-sidebar-on-1.png");
+    background-repeat:no-repeat;
+	margin-left: 18.4%;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-product a
+{
+    display: block;
+    height:50px;
+    width:245px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-product a span {
+	display: none;
+}
+/* Clubhouse Checkout Chat Images */
+/* Buckeye Corner Unavailable */
+.rn_ConditionalChatLink.buckeye-checkout
+{
+	background-image: url("https:://lids.custhelp.com/euf/assets/images/Chat/chat-sidebar-off.png");
+    background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.buckeye-checkout a
+{
+    display: block;
+    height:50px;
+    width:245px;
+}
+/* Buckeye Corner Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-checkout
+{
+    background-image: url("https://lids.custhelp.com/euf/assest/images/Chat/chat-sidebar-on-1.png");
+    background-repeat:no-repeat;
+	margin-left: 18.4%;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-checkout a
+{
+    display: block;
+    height:50px;
+    width:245px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.buckeye-checkout a span {
+	display: none;
+}
+/* Seattle Teams Unavailable */
+.rn_ConditionalChatLink.seattle-checkout
+{
+	background-repeat:no-repeat;
+}
+.rn_ConditionalChatLink.seattle-checkout a
+{
+    display: block;
+    height:14px;
+    width:72px;
+}
+/* Seattle Teams Available */
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-checkout
+{
+    background-image: url("https://lids.custhelp.com/euf/assets/Chat/chat-sidebar-on-1.jpg");
+    background-repeat:no-repeat;
+	margin-left: 18.4%;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-checkout a
+{
+    display: block;
+    height:50px;
+    width:245px;
+}
+.rn_ConditionalChatLink.rn_ChatAvailable.seattle-checkout a span {
+	display: none;
+}

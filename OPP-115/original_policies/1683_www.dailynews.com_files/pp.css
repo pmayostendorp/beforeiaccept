@@ -1,0 +1,959 @@
+#gregbox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 40px;
+	width: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 11040000;
+	display: none;
+}
+
+* html #gregbox-loading {	/* IE6 */
+	position: absolute;
+	margin-top: 0;
+}
+
+#gregbox-loading div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 480px;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+}
+
+#gregbox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	z-index: 11000000;
+	display: none;
+}
+
+* html #gregbox-overlay {	/* IE6 */
+	position: absolute;
+	width: 100%;
+}
+
+#gregbox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: auto;
+	display: none;
+}
+
+#gregbox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 20px;
+	z-index: 2147483647;   /* 11010000 */
+	display: none;
+    overflow-x:visible;
+}
+
+
+#gregbox-wrap div {
+    overflow-x:visible;
+
+}
+
+/*The old outer
+#gregbox-outer {
+	position: relative;
+	width:611px;
+	height: 550px; 
+	background: #60bb46;
+}*/
+
+#gregbox-outer {
+    width:600px;
+    height:525px;
+    z-index:2147483640;
+    position:absolute;
+    border: 6px solid #60bb46;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    box-shadow: 3px 3px 7px #333;
+    webkit-box-shadow: 3px 3px 7px #333;
+    background:#fff;
+}
+
+#gregbox-outer #innerFrame { background: #fff; }
+
+#pressplus-outer {
+    width:100%;
+    height:100%;
+    z-index:2147483640;
+    position:absolute;
+    border: 0px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    box-shadow: 3px 3px 7px #333;
+    webkit-box-shadow: 3px 3px 7px #333;
+    background:#fff;
+}
+
+#pressplus-outer #innerFrame { background: #fff; }
+
+#gregbox-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	overflow: hidden;
+}
+
+#gregbox-hide-sel-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+#gregbox-close {
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	width: 30px;
+	height: 30px;
+	background-image: url('http://s.ppjol.net/static/fb/fancy_close.png') !important;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	z-index: 2147483611;
+	display: none;
+}
+#gregbox-closeBtn {
+    z-index: 2147483647; /* fix for z-index on Close Button. new id to avoid possible conflicts */
+}
+
+#gregbox-wrap a  {
+    background-image:none;
+    background-color:transparent;
+    border:  none;
+}
+
+#gregbox-close a {
+    background-image:none;
+    background-color:transparent !important;
+    border:  none;
+}
+
+#gregbox-wrap a:hover {
+    background-image:none;
+    background-color:transparent;
+}
+
+#gregbox-close a:hover {
+    background-image:none;
+    background-color:transparent !important;
+}
+
+#fancybox_error {
+	color: #444;
+	font: normal 12px/20px Arial;
+	padding: 7px;
+	margin: 0;
+}
+
+#gregbox-content {
+	height: auto;
+	width: auto;
+	padding: 0;
+	margin: 0;
+}
+
+* html #gregbox-content {
+        border:1px solid #60bb46;
+}
+
+#gregbox-img {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	line-height: 0;
+	vertical-align: top;
+	-ms-interpolation-mode: bicubic;
+}
+
+#gregbox-frame {
+	position: relative;
+	width: 100%;
+	height: 505px;
+	border: none;
+	display: block;
+	background-color:#fff;
+}
+
+#gregbox-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: Arial;
+	font-size: 12px;
+	z-index: 11020000;
+}
+
+.gregbox-title-inside {
+	padding: 10px 0;
+	text-align: center;
+	color: #333;
+}
+
+.gregbox-title-outside {
+	padding-top: 5px;
+	color: #60bb46;
+	text-align: center;
+	font-weight: bold;
+}
+
+.gregbox-title-over {
+	color: #60bb46;
+	text-align: left;
+}
+
+#gregbox-title-over {
+	padding: 10px;
+	background-image: url('http://s.ppjol.net/static/fb/fancy_title_over.png');
+	display: block;
+}
+
+#gregbox-title-wrap {
+	display: inline-block;
+}
+
+#gregbox-title-wrap span {
+	height: 32px;
+	float: left;
+}
+
+#gregbox-title-left {
+	padding-left: 15px;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+	background-position: -40px -90px;
+	background-repeat: no-repeat;
+}
+
+#gregbox-title-main {
+	font-weight: bold;
+	line-height: 29px;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox-x.png');
+	background-position: 0px -40px;
+	color: #fff;
+}
+
+#gregbox-title-right {
+	padding-left: 15px;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+	background-position: -55px -90px;
+	background-repeat: no-repeat;
+}
+
+#gregbox-left, #gregbox-right {
+	position: absolute;
+	bottom: 0px;
+	height: 100%;
+	width: 35%;
+	cursor: pointer;
+	outline: none;
+	background-image: url('http://s.ppjol.net/static/fb/blank.gif');
+	z-index: 11020000;
+	display: none;
+}
+
+#gregbox-left {
+	left: 0px;
+}
+
+#gregbox-right {
+	right: 0px;
+}
+
+#gregbox-left-ico, #gregbox-right-ico {
+	position: absolute;
+	top: 50%;
+	left: -9999px;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	cursor: pointer;
+	z-index: 11020000;
+	display: block;
+}
+
+#gregbox-left-ico {
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+	background-position: -40px -30px;
+}
+
+#gregbox-right-ico {
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+	background-position: -40px -60px;
+}
+
+#gregbox-left:hover, #gregbox-right:hover {
+	visibility: visible;    /* IE6 */
+}
+
+#gregbox-left:hover span {
+	left: 20px;
+}
+
+#gregbox-right:hover span {
+	left: auto;
+	right: 20px;
+}
+
+.fancy-bg {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 10010000;
+}
+
+#fancy-bg-n {
+	top: -20px;
+	left: 0;
+	width: 100%;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox-x.png');
+}
+
+#fancy-bg-ne {
+	top: -20px;
+	right: -20px;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+	background-position: -40px -162px;
+}
+
+#fancy-bg-e {
+	top: 0;
+	right: -20px;
+	height: 100%;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox-y.png');
+	background-position: -20px 0px;
+}
+
+#fancy-bg-se {
+	bottom: -20px;
+	right: -20px;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+	background-position: -40px -182px;
+}
+
+#fancy-bg-s {
+	bottom: -20px;
+	left: 0;
+	width: 100%;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox-x.png');
+	background-position: 0px -20px;
+}
+
+#fancy-bg-sw {
+	bottom: -20px;
+	left: -20px;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+	background-position: -40px -142px;
+}
+
+#fancy-bg-w {
+	top: 0;
+	left: -20px;
+	height: 100%;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox-y.png');
+}
+
+#fancy-bg-nw {
+	top: -20px;
+	left: -20px;
+	background-image: url('http://s.ppjol.net/static/fb/fancybox.png');
+	background-position: -40px -122px;
+}
+
+.firstText {
+    color:#fff;
+    font-family:Arial,Helvetica, sans-serif;
+    font-size:10pt;
+    font-weight:bold;
+}
+
+.firstLink {
+    text-decoration:none;
+    /* color:#80db66; */
+    color:#dfffdf;
+    cursor:pointer;
+    font-family:Arial,helvetica, sans-serif;
+    font-size:10pt;
+    font-weight:bold;
+}
+
+
+.windowPane {
+        width:590px;
+        height:490px;
+        height: 493px\9; /* IE8 and below */
+        *height : 490px; /* IE7 and below */
+        position:absolute;
+        text-align:left;
+        top:5px;
+        left:0px;
+        margin-left:10px;
+        margin-top:12px;
+        color:#000000;
+        background-color:#ffffff;
+        display:none;
+        z-index:10990000;
+}
+
+.windowPaneHead {
+        font-weight:bold;
+        font-family:Arial,sans-serif;
+        font-size:14pt;
+        color:#006000;
+        padding-bottom:10px;
+}
+
+.windowPaneText {
+        font-family:Arial,sans-serif;
+        font-size:10pt;
+        color:#000000;
+}
+
+
+#pp-branding {
+        background-color: #60bb46;
+        background-image:url('http://s.ppjol.net/static/fb/bottom-branding-bg_transparent.png');
+        background-repeat: no-repeat;
+        height:41px;
+        *margin-left: 0px; /* IE7 */
+        *margin-right: 0px; /* IE7 */
+        margin-top:-39px;
+        position:relative;
+        width:100%;
+}
+
+#pp-branding-help {
+        background-image:url('http://s.ppjol.net/static/fb/bottom-branding-powered-by.png');
+        background-repeat: no-repeat;
+        float: left;
+        margin: 15px 0 0 189px;
+        width: 187px;
+        height: 17px;
+	    cursor:pointer;
+}
+
+#pp-branding-privacy {
+	    background-image:url('http://s.ppjol.net/static/fb/bottom-branding-privacy.png');
+        background-repeat: no-repeat;
+	    float: left;
+	    margin-top: 15px;
+	    width: 50px;
+	    height: 17px;
+}
+
+/* Extra Styles for Localized Footer */
+
+#pp-branding-localized { /* used for all languages with greater character count */
+        background-color: #60bb46;
+        background-image:url('http://s.ppjol.net/static/fb/bottom-branding-bg_localized.png');
+        background-repeat: no-repeat;
+        height:41px;
+        *margin-left: 0px; /* IE7 */
+        *margin-right: 0px; /* IE7 */
+        margin-top:-39px;
+        position:relative;
+        width:100%;
+}
+
+/* French */
+#pp-branding-help-FR {
+        background-image:url('http://s.ppjol.net/static/fb/bottom-branding-powered-by_FR.png');
+        background-repeat: no-repeat;
+        float: left;
+        margin: 15px 0 0 169px;
+        width: 194px;
+        height: 17px;
+	    cursor:pointer;
+}
+
+#pp-branding-privacy-FR {
+	    background-image:url('http://s.ppjol.net/static/fb/bottom-branding-privacy_FR.png');
+        background-repeat: no-repeat;
+	    float: left;
+	    margin-top: 15px;
+	    width: 80px;
+	    height: 17px;
+}
+
+/* Portuguese */
+#pp-branding-help-PT {
+        background-image:url('http://s.ppjol.net/static/fb/bottom-branding-powered-by_PT.png');
+        background-repeat: no-repeat;
+        float: left;
+        margin: 15px 0 0 163px;
+        width: 213px;
+        height: 17px;
+	    cursor:pointer;
+}
+
+#pp-branding-privacy-PT {
+	    background-image:url('http://s.ppjol.net/static/fb/bottom-branding-privacy_PT.png');
+        background-repeat: no-repeat;
+	    float: left;
+	    margin-top: 15px;
+	    width: 72px;
+	    height: 17px;
+}
+
+/* Spanish */
+#pp-branding-help-ES {
+        background-image:url('http://s.ppjol.net/static/fb/bottom-branding-powered-by_ES.png');
+        background-repeat: no-repeat;
+        float: left;
+        margin: 15px 0 0 176px;
+        width: 200px;
+        height: 17px;
+	    cursor:pointer;
+}
+
+#pp-branding-privacy-ES {
+	    background-image:url('http://s.ppjol.net/static/fb/bottom-branding-privacy_ES.png');
+        background-repeat: no-repeat;
+	    float: left;
+	    margin-top: 15px;
+	    width: 72px;
+	    height: 17px;
+}
+
+/* New Sign In tab */
+#gregbox-signInTab {
+    background-image:url('http://s.ppjol.net/static/fb/pp_sign-in_button.png');
+    background-repeat: no-repeat;
+    color:#fff;
+    cursor:pointer;
+    display:block;
+    font-family:Verdana,Arial,Helvetica;
+    font-size:14px;
+    font-weight:bold;
+    height:21px;
+    padding-top:4px;
+    position:absolute;
+    text-align:center;
+    text-shadow: 1px 1px #333;
+    transition: none;
+    width:97px;
+    z-index:2147483644;
+}
+
+a#gregbox-signInTab {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+
+.outsideText {
+	color:#ffffff;
+	font-face:Verdana,Arial,Helvetica;
+	font-size:11pt;
+	font-weight:bold;
+	padding-right:15px;
+}
+
+.signText {
+	text-decoration:none;
+	color:#ffffff;
+	cursor:pointer;
+	font-face:Verdana,Arial,helvetica;
+	font-size:10pt;
+}
+
+.hoverSignText {
+	text-decoration:none;
+	color:#60eb46;
+	cursor:pointer;
+	font-face:Verdana,Arial,helvetica;
+	font-size:10pt;
+}
+
+
+.button_left {
+    position:absolute;
+    float:left;
+    padding-left:10px;
+    top:460px;
+    left:5px;
+}
+
+.button_right {
+    position:absolute;
+    float:right;
+    padding-right:10px;
+    top:451px;
+    left:475px;
+}
+
+
+/* Hulk Button */
+label.button {
+	background: transparent url('http://s.ppjol.net/static/fb/pp_green_button_sm_right.png') no-repeat scroll top right;
+	color: #000000;
+	display: block;
+	float: left;
+	margin-right: 6px;
+	padding-right: 7px;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	height: 35px;
+	cursor:pointer;
+}
+label.button span {
+	display: block;
+	background: transparent url('http://s.ppjol.net/static/fb/pp_green_button_lg_left.png') no-repeat;
+	line-height: 14px;
+	min-width:60px;
+	padding: 9px 16px 13px 18px;
+	white-space: nowrap;
+	text-align: center;
+	cursor:pointer;
+}
+/* hide actual button input */
+label.button input {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	z-index: 2;
+	opacity: 0;
+	-moz-opacity:0 ;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE8 first */
+	filter:alpha(opacity: 0); /* IE5-IE7 second */
+	cursor:pointer;
+}
+
+label.button:hover, label.button:active {
+	background-position: bottom right;
+	color: #000;
+	outline: none; /* hide dotted outline in Firefox */
+	height:36px;
+}
+label.button:hover span, label.button:active span {
+	background-position: bottom left;
+	padding: 9px 16px 13px 18px;
+	line-height:14px;
+}
+
+/* Joe-Fixit Button */
+label.gbutton {
+	background: transparent url('http://s.ppjol.net/static/fb/pp_grey_button_sm_right.png') no-repeat scroll top right;
+	color: #000000;
+	display: block;
+	float: left;
+	margin-right: 6px;
+	padding-right: 7px;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	height: 35px;
+	cursor:pointer;
+}
+
+label.gbutton span {
+	display: block;
+	background: transparent url('http://s.ppjol.net/static/fb/pp_grey_button_lg_left.png') no-repeat;
+	line-height: 14px;
+	padding: 9px 16px 13px 18px;
+	white-space: nowrap;
+	text-align: center;
+	cursor:pointer;
+}
+/* hide actual button input */
+label.gbutton input {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	z-index: 2;
+	opacity: 0;
+	-moz-opacity:0 ;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE8 first */
+	filter:alpha(opacity: 0); /* IE5-IE7 second */
+	cursor:pointer;
+}
+
+label.gbutton:hover, label.gbutton:active {
+	background-position: bottom right;
+	color: #000;
+	height: 36px;
+	outline: none; /* hide dotted outline in Firefox */
+}
+label.gbutton:hover span, label.gbutton:active span {
+	background-position: bottom left;
+	line-height:14px;
+	/* padding: 6px 0 4px 18px; *//* push text down 1px */
+	padding: 9px 16px 13px 18px;
+}
+
+a.noLine:link { color:#336525; text-decoration:none; font-weight:bold; }
+a.noLine:visited { color:#336525; text-decoration:none; font-weight:bold; }
+a.noLine:hover { color:#888888; text-decoration:underline; font-weight:bold; }
+a.noLine:active { color:#336525; text-decoration:underline; font-weight:bold; }
+
+
+/* IE */
+
+#gregbox-loading.gregbox-ie div	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_loading.png', sizingMethod='scale'); }
+.gregbox-ie #gregbox-close		{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_close.png', sizingMethod='scale'); }
+
+.gregbox-ie #gregbox-title-over	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_title_over.png', sizingMethod='scale'); zoom: 1; }
+.gregbox-ie #gregbox-title-left	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_title_left.png', sizingMethod='scale'); }
+.gregbox-ie #gregbox-title-main	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_title_main.png', sizingMethod='scale'); }
+.gregbox-ie #gregbox-title-right	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_title_right.png', sizingMethod='scale'); }
+
+.gregbox-ie #gregbox-left-ico		{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_nav_left.png', sizingMethod='scale'); }
+.gregbox-ie #gregbox-right-ico	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_nav_right.png', sizingMethod='scale'); }
+
+.gregbox-ie .fancy-bg { background: transparent !important; }
+
+/* These styles are for IE functionality.  Don't screw around with these unless you know what you're doing. -- ggallant */
+.gregbox-ie #gregbox-content {
+        height: 490px;
+        width: 600px;
+        padding: 0;
+        margin: 0;
+        /* border:1px solid #60bb46; */
+}
+
+.gregbox-ie #gregbox-frame {
+        position: relative;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        width: 595px;
+        height: 500px;
+        border: none;
+        display: block;
+        background-color:#fff;
+}
+
+.gregbox-ie #gregbox-outer {
+        position: relative;
+        /* width: 100%; */
+        width:612px;
+        height: 550px;
+        background: #60bb46;
+        padding-top:3px;
+}
+
+.gregbox-ie #fancy-bg-n	{ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_shadow_n.png', sizingMethod='scale'); }
+.gregbox-ie #fancy-bg-ne	{ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_shadow_ne.png', sizingMethod='scale'); }
+.gregbox-ie #fancy-bg-e	{ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_shadow_e.png', sizingMethod='scale'); }
+.gregbox-ie #fancy-bg-se	{ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_shadow_se.png', sizingMethod='scale'); }
+.gregbox-ie #fancy-bg-s	{ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_shadow_s.png', sizingMethod='scale'); }
+.gregbox-ie #fancy-bg-sw	{ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_shadow_sw.png', sizingMethod='scale'); }
+.gregbox-ie #fancy-bg-w	{ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_shadow_w.png', sizingMethod='scale'); }
+.gregbox-ie #fancy-bg-nw	{ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s.ppjol.net/static/fb/fancy_shadow_nw.png', sizingMethod='scale'); }
+
+/*
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+    border-collapse:inherit;
+}
+*/
+#gregbox-wrap table { border:0px none transparent ; border-collapse:inherit; margin-top:0px; margin-bottom:0px;}
+
+#gregbox-wrap table td {padding:0px 0px 0px 0px; }  /* Override */
+
+table.sticky-header{ ; }  /* lub.onl. override */
+
+body table tr td {
+        padding:0px;
+}
+
+div.pressplus  {
+    padding:0px;
+    margin:0px;
+    overflow-x:visible;
+}
+
+span.pressplus {
+    padding:0px;
+    margin:0px;
+}
+
+div.upperText,
+div.upperTextAlt {
+    color:#f09;
+    font-weight:bold;
+    height: 23px;
+    padding-top: 4px;
+    position:absolute;
+    right:75px;
+    text-align:center;
+    top:-24px;
+    width: 97px;
+    z-index: 99999900;
+}
+
+/* Extra Styles for Localized Sign In Button */
+div.upperText-localization,
+div.upperTextAlt-localization {
+    color:#f09;
+    font-weight:bold;
+    height: 23px;
+    padding-top: 4px;
+    position:absolute;
+    right:75px;
+    text-align:center;
+    top:-24px;
+    width: 139px;
+    z-index: 99999900;
+}
+
+
+div.upperText span.welcomeText,
+div.upperTextAlt span.welcomeText {
+    color:#ffffff;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:10pt;
+    font-weight:bold;
+}
+
+
+div.upperText span.statusText,
+div.upperTextAlt span.statusText {
+    color:#fff;
+    cursor:pointer;
+    font-family:Verdana,Arial,helvetica;
+    font-size:10pt;
+    font-weight: bold;
+}
+
+
+div.shadowText,
+div.shadowTextAlt {
+ 	background: transparent url('http://s.ppjol.net/static/fb/pp_sign-in_button.png') no-repeat;
+    color:#333;
+    font-weight:bold;
+    height: 23px;
+    padding-top: 4px;
+    position:absolute;
+    right:76px;
+    text-align:center;
+    top:-23px;
+    width: 97px;
+    z-index: 99999800;
+}
+
+/* Extra Styles for Localized Sign In Button */
+div.shadowText-localization,
+div.shadowTextAlt-localization {
+ 	background: transparent url('http://s.ppjol.net/static/fb/pp_sign-in_button_localized.png') no-repeat;
+    color:#333;
+    font-weight:bold;
+    height: 23px;
+    padding-top: 4px;
+    position:absolute;
+    right:76px;
+    text-align:center;
+    top:-23px;
+    width: 139px;
+    z-index: 99999800;
+}
+
+div.shadowText span.welcomeText,
+div.shadowTextAlt span.welcomeText {
+    color:#303030;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:10pt;
+    font-weight:bold;
+}
+
+div.shadowText span.statusText,
+div.shadowTextAlt span.statusText {
+    color:#000;
+    cursor:pointer;
+    font-family:Verdana,Arial,helvetica;
+    font-size:10pt;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+div.upperText span.statusText:hover,
+div.upperTextAlt span.statusText:hover {
+	color: #e9ead4;
+}
+
+/* Adding in CSS styles since certain sites are stripping out our inline styling for debug from pp.js */
+#ppdebug {
+	z-index: 99999;
+	position: absolute;
+	bottom: 11px;
+	right: 10px;
+	padding: 2px;
+	background-color: #33aa33;
+	width: 380px;
+	height: auto;
+	text-align: center;
+}
+
+#ppdebugtxt {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	overflow: auto;
+	width: 380px;
+	height: auto;
+	font-size: 9px;
+	font-family: courier, courier new;
+	background-color: #fff;
+}
+
+
+
+/* This breaks affiliate sites.  Just leave it alone. --ggallant */
+/*
+* html table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0 0 -100px 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        height:550px;
+        background: transparent;
+}
+*/
+
+
+#pp-lightbox {
+    background: #fff;
+    border: 6px solid #60bb46;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    box-shadow: 3px 3px 7px #333;
+    webkit-box-shadow: 3px 3px 7px #333;
+    height:525px;
+    position: absolute;
+    width:600px;
+    z-index: 11000000;
+}

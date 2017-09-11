@@ -1,0 +1,319 @@
+if (!window.mraid) {document.write('\x3cdiv class="GoogleActiveViewClass" ' +'id="DfaVisibilityIdentifier_2118605561"\x3e');}
+(function() {
+  var DEBUG = ''.toLowerCase() == 'true';
+  var csiStart = (+new Date);
+  var studioObjects = window['studioV2'] = window['studioV2'] || {};
+  var publisherSideFilePath = unescape('');
+  if(publisherSideFilePath == '') {
+    publisherSideFilePath = '/doubleclick/DARTIframe.html';
+  } else if (publisherSideFilePath.charAt(publisherSideFilePath.length - 1) == '/') {
+    publisherSideFilePath += 'DARTIframe.html';
+  }
+  var bookingTimeMetaData = {
+  };
+
+  var runtimeMetaData = {
+  };
+
+  var exitUrlPatternMacroValues = {
+  };
+  var macroParser = function (macroName, value) {
+    return (value.indexOf(macroName) < 0) ? value : '';
+  };
+  var adServerData = {
+    eventReportingUrl: 'http://ad.doubleclick.net/activity;src=4468068;met=1;v=1;pid=118845056;aid=292296567;ko=0;cid=63610509;rid=63490509;rv=1;',
+    clickUrl: 'http://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssNoqCLyltQqitfRFQD0BAHxcn3Fa_W4HJo7vHiCiyabJP1SAdrgVr-Rc5RZIYq_LUwD3YHLRYqqoLiX1h4gQuCMVytKq4CnHDKc9IeCSa3yK4KTDCnnDbRtxZel0mjD05opL4&sig=Cg0ArKJSzIPnIrlambyuEAE&adurl=http://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCiEzHjJadVYfMAsON3AH7_oGgDq2Yn-AG3cCD344BwI23ARABIABgyZ6njNCk9A-CARdjYS1wdWItNTE2MjU1OTY5NTU3OTYxNMgBCeACAKgDAZgEAKoEqQFP0CU_IvRz4DCxzFxfTce6JBFtjcPUNQHnwfHe5SFjxUiH40tHjgtBLJcsDSpheEEdU8sh5vf1T8ieA-rbCQiVYqbvjgRvRqcx9oDalglvTdY19afatnIS9cMgTHgi2TinF31j2nBByLDfjCAhcdSY117Smin2PdCgmfP56xjg1ITzUa7Y29RBzvKdv317qqiQkYqFN-Ql3wrp8nB8Ztn24cR9iPFnsph24AQBgAbQ1fC7tJbvwbUBoAYh2AcA%26num%3D1%26sig%3DAOD64_2UwmuQX4XbSQMNvbIYA_uJjfH-lg%26client%3Dca-pub-5162559695579614%26adurl%3D',
+    clickUrlTimesToEscape: '',
+    impressionUrl: 'http://googleads4.g.doubleclick.net/pcs/view?xai=AKAOjssNoqCLyltQqitfRFQD0BAHxcn3Fa_W4HJo7vHiCiyabJP1SAdrgVr-Rc5RZIYq_LUwD3YHLRYqqoLiX1h4gQuCMVytKq4CnHDKc9IeCSa3yK4KTDCnnDbRtxZel0mjD05opL4&sig=Cg0ArKJSzGAQ3bJpTwsMEAE&adurl=',
+    geoData: 'ct=US&st=PA&city=13328&dma=10&zp=15213&bw=4',
+    siteName: 'N51901.1355339GOOGLE.COMDDMBIDMA',
+    siteId: '1781800',
+    adId: '0',
+    exitSuffix: '',
+    buyId: '8787167',
+    creativeId: '63610509',
+    placementId: '118845056',
+    advertiserId: '4468068',
+    keyValueOrdinal: '0',
+    renderingVersion: '1',
+    renderingId: '63490509',
+    randomNumber: '2118605561',
+    dynamicData: '',
+    stringReportingUrl: 'http://ad.doubleclick.net/activity;src=4468068;stragg=1;v=1;pid=118845056;aid=292296567;ko=0;cid=63610509;rid=63490509;rv=1;rn=2118605561;',
+    urlToGetKeywordsFor: '%LivePreviewSiteUrl',
+    bookingTimeMetaData: bookingTimeMetaData,
+    generatedAdSlot: false,
+    exitUrlPatternMacroValues: exitUrlPatternMacroValues,
+    renderingEnvironment: ('' == '1' ||
+        window['mraid']) ? 'IN_APP' : 'BROWSER',
+    placementDimensions: {
+      'w': '728',
+      'h': '90'
+    },
+    tag: {
+      adContainerElementId: macroParser('ad_container_id', ''),
+      hideObjects: '',
+      top: '',
+      left: '',
+      zIndex: '',
+      duration: '',
+      wmode: '',
+      preferHtml5Artwork: '' == 'true',
+      adSenseKeywords: '',
+      adSenseLatitude: '',
+      adSenseLongitude: '',
+      publisherSideFilePath: publisherSideFilePath,
+      runtimeMetaData: runtimeMetaData,
+      lidarEnabled: false,
+      expansionMode: '',
+      renderFloatInplace: ''.toLowerCase() == 'true',
+      tryToWriteHtmlInline: ''.toLowerCase() == 'true'
+    }
+  };
+
+  var scheme;
+  if ('http' == 'http' || 'http' == 'https') {
+    // DCM scheme macro usage.
+    scheme = 'http' + ':';
+  } else if ('%%SCHEME%%' == 'http' || '%%SCHEME%%' == 'https') {
+    // XFP scheme macro usage.
+    scheme = '%%SCHEME%%' + ':';
+  } else {
+    // preview usage.
+    scheme = location.protocol;
+  }
+  var staticResourceMediaServer = scheme == 'https:' ?
+       'https://s0.2mdn.net' :
+       'http://s0.2mdn.net';
+
+  var creativeMediaServer = scheme == 'https:' ?
+       'https://s0.2mdn.net' :
+       'http://s0.2mdn.net';
+
+  var backupImageUrl = '/4468068/BBY2015_0621_5290_Xbox_Custom_Regargeting_728x90.jpg';
+  if (!/^https?:/.test(backupImageUrl)) {
+    backupImageUrl = creativeMediaServer + backupImageUrl;
+  }
+  var backupImage = {
+    exitUrl: 'http://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssNoqCLyltQqitfRFQD0BAHxcn3Fa_W4HJo7vHiCiyabJP1SAdrgVr-Rc5RZIYq_LUwD3YHLRYqqoLiX1h4gQuCMVytKq4CnHDKc9IeCSa3yK4KTDCnnDbRtxZel0mjD05opL4&sig=Cg0ArKJSzIPnIrlambyuEAE&adurl=http://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCiEzHjJadVYfMAsON3AH7_oGgDq2Yn-AG3cCD344BwI23ARABIABgyZ6njNCk9A-CARdjYS1wdWItNTE2MjU1OTY5NTU3OTYxNMgBCeACAKgDAZgEAKoEqQFP0CU_IvRz4DCxzFxfTce6JBFtjcPUNQHnwfHe5SFjxUiH40tHjgtBLJcsDSpheEEdU8sh5vf1T8ieA-rbCQiVYqbvjgRvRqcx9oDalglvTdY19afatnIS9cMgTHgi2TinF31j2nBByLDfjCAhcdSY117Smin2PdCgmfP56xjg1ITzUa7Y29RBzvKdv317qqiQkYqFN-Ql3wrp8nB8Ztn24cR9iPFnsph24AQBgAbQ1fC7tJbvwbUBoAYh2AcA%26num%3D1%26sig%3DAOD64_2UwmuQX4XbSQMNvbIYA_uJjfH-lg%26client%3Dca-pub-5162559695579614%26adurl%3Dhttp://www.bestbuy.com/site/video-games/xbox-one/pcmcat300300050002.c%253Fid%253Dpcmcat300300050002%2526ref%253D166%2526loc%253DBAN_1781800_8787167',
+    target: '_blank',
+    imageUrl: backupImageUrl,
+    width: '728',
+    height: '90',
+    backupDisplayActivityUrl: '',
+    thirdPartyBackupImpressionUrl: ''
+  };
+
+  var versionPrefix = DEBUG ? 'db_' : '';
+  var templateVersion = '200_86';
+  var renderingScriptPath = '/879366';
+  var rendererDisplayType = '';
+  rendererDisplayType += 'dfa7banner_';
+  rendererDisplayType += 'flash_';
+  var rendererFormat = 'inpage';
+  var rendererName = rendererDisplayType + rendererFormat;
+  var renderingLibrary = renderingScriptPath + '/' + rendererName + '_rendering_lib_' +
+      versionPrefix + templateVersion + '.js';
+  // Adserver has a logic to detect media files and prepend host name.
+  if (!/^https?:/.test(renderingLibrary)) {
+    renderingLibrary = staticResourceMediaServer + renderingLibrary;
+  }
+
+  var adCreativeDefinitions = {};
+
+  var creativeId = '63610509';
+  var adId = adCreativeDefinitions[adServerData.adId] ? adServerData.adId : 0;
+  // The unique creative is identified by combination of creative id and ad id.
+  // When the same creative(same creative id and same ad id) is served on the page more
+  // than once then they will share the creative definition yet there will be
+  // multiple instances of 'adResponses'.s
+  var creativeKey = [creativeId, adId].join('_');
+  var creativeDef = adCreativeDefinitions[adServerData.adId] ?
+      adCreativeDefinitions[adServerData.adId] :
+      '[%DEFAULT_PLCR_PATH%]';
+  if(!/^https?:/.test(creativeDef) && creativeDef.substring(0, 2) != '//') {
+    creativeDef = creativeMediaServer + creativeDef;
+  }
+    creativeDef = null;
+  studioObjects['creativeCount'] = studioObjects['creativeCount'] || 0;
+  var creativeDto = {
+    id: creativeId,
+    uniqueId: creativeId + '_' + studioObjects['creativeCount']++,
+    templateVersion: templateVersion,
+    adServerData: adServerData,
+    isPreviewEnvironment: '%PreviewMode' == 'true',
+    hasFlashAsset: true,
+    hasHtmlAsset: false,
+    requiresCss3Animations: false,
+    flashVersion: '9',
+    httpsMediaServer: 'https://s0.2mdn.net',
+    httpMediaServer: 'http://s0.2mdn.net',
+    renderingScriptPath: renderingScriptPath,
+    renderingLibrary: renderingLibrary,
+    rendererName: rendererName,
+    creativeDefinitionUrl: creativeDef,
+    creativeKey: creativeKey,
+    thirdPartyImpressionUrls: [''],
+    thirdPartyArtworkImpressionUrl: '',
+    breakoutToTop: false,
+    dimensions: {
+      width: '728px',
+      height: '90px'
+    },
+    backupImage: backupImage,
+    csiStart: csiStart,
+    csiAdRespTime: csiStart - (parseFloat('') || 0),
+    csiEvents: {},
+    hasModernizrFeatureChecks: false,
+    html5FeatureChecks: [
+    ],
+    hasSwiffyHtmlAsset: false
+  };
+
+  var inGdnIframe = window['IN_ADSENSE_IFRAME'] || false;
+  var inYahooSecureIframe = window.Y && Y.SandBox && Y.SandBox.vendor;
+  var inWinLiveIframe = false;
+  try {
+    inWinLiveIframe = !!window.$WLXRmAd;
+  } catch(e) {}
+  var inSafeFrame = window.$sf && window.$sf.ext;
+  var isMsnAjaxIframe = (typeof(inDapMgrIf) != 'undefined' && inDapMgrIf);
+  var breakoutIframe = ''.toLowerCase();
+  var shouldBreakout = (((false ||
+                          false) &&
+                         !inGdnIframe &&
+                         !inYahooSecureIframe &&
+                         !inSafeFrame &&
+                         !inWinLiveIframe) ||
+                        (true && breakoutIframe == 'true')) &&
+                       self != top &&
+                       !creativeDto.isPreviewEnvironment &&
+                       breakoutIframe != 'false';
+
+  if (adServerData.tag.adContainerElementId == '' &&
+      (true || false ||
+         adServerData.tag.renderFloatInplace)) {
+    var containerId = ['creative', creativeDto.uniqueId].join('_');
+    var divHtml = ['<div id="', containerId, '"></div>'].join('');
+    document.write(divHtml);
+    adServerData.tag.adContainerElementId = containerId;
+    adServerData.generatedAdSlot = true;
+  }
+  var creatives = studioObjects['creatives'] = studioObjects['creatives'] || {};
+  var creative = creatives[creativeKey] = creatives[creativeKey] || {};
+  var adResponses = creative['adResponses'] = creative['adResponses'] || [];
+  creative['shouldBreakout'] = creative['shouldBreakout'] || shouldBreakout;
+  var iframeBusterLibrary = renderingScriptPath + '/iframe_buster_' +
+      versionPrefix + templateVersion + '.js';
+  if(!/^https?:/.test(iframeBusterLibrary)) {
+    iframeBusterLibrary = staticResourceMediaServer + iframeBusterLibrary;
+  }
+  var loadedLibraries = studioObjects['loadedLibraries'] = studioObjects['loadedLibraries'] || {};
+  var versionedLibrary = loadedLibraries[templateVersion] = loadedLibraries[templateVersion] || {};
+  var typedLibrary = versionedLibrary[rendererName] = versionedLibrary[rendererName] || {};
+  adResponses.push({
+    creativeDto: creativeDto
+  });
+  if (shouldBreakout) {
+    if (versionedLibrary['breakout']) {
+      versionedLibrary['breakout']();
+    } else if (!versionedLibrary['breakoutLoading']) {
+      versionedLibrary['breakoutLoading'] = true;
+      document.write('<scr' + 'ipt type="text/javascript" src="' + iframeBusterLibrary + '" async="async"></scr' + 'ipt>');
+    }
+  } else if (typedLibrary['bootstrap'] && creative['creativeDefinition']) {
+    typedLibrary['bootstrap']();
+  } else {
+    if (!typedLibrary['loading']) {
+      typedLibrary['loading'] = true;
+      creativeDto.csiEvents['gb'] = (+new Date);
+      document.write('<scr' + 'ipt type="text/javascript" src="' + renderingLibrary + '"' + (adServerData.tag.tryToWriteHtmlInline ? '' : ' async="async"') + '></scr' + 'ipt>');
+    }
+  }
+  if (isMsnAjaxIframe) {
+    window.setTimeout("document.close();", 1000);
+  }
+  (function() {
+  var creativeDefinition = {
+    customScriptUrl: '',
+    isDynamic: false,
+    delayedImpression: false,
+    standardEventIds: {
+      HTML5_CREATIVE_IMPRESSION: '871060'
+    },
+    exitEvents: [
+      {
+        name: 'clickTag1',
+        reportingId: '',
+        url: 'http://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssNoqCLyltQqitfRFQD0BAHxcn3Fa_W4HJo7vHiCiyabJP1SAdrgVr-Rc5RZIYq_LUwD3YHLRYqqoLiX1h4gQuCMVytKq4CnHDKc9IeCSa3yK4KTDCnnDbRtxZel0mjD05opL4&sig=Cg0ArKJSzIPnIrlambyuEAE&adurl=http://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCiEzHjJadVYfMAsON3AH7_oGgDq2Yn-AG3cCD344BwI23ARABIABgyZ6njNCk9A-CARdjYS1wdWItNTE2MjU1OTY5NTU3OTYxNMgBCeACAKgDAZgEAKoEqQFP0CU_IvRz4DCxzFxfTce6JBFtjcPUNQHnwfHe5SFjxUiH40tHjgtBLJcsDSpheEEdU8sh5vf1T8ieA-rbCQiVYqbvjgRvRqcx9oDalglvTdY19afatnIS9cMgTHgi2TinF31j2nBByLDfjCAhcdSY117Smin2PdCgmfP56xjg1ITzUa7Y29RBzvKdv317qqiQkYqFN-Ql3wrp8nB8Ztn24cR9iPFnsph24AQBgAbQ1fC7tJbvwbUBoAYh2AcA%26num%3D1%26sig%3DAOD64_2UwmuQX4XbSQMNvbIYA_uJjfH-lg%26client%3Dca-pub-5162559695579614%26adurl%3Dhttp://www.bestbuy.com/site/video-games/xbox-one/pcmcat300300050002.c%253Fid%253Dpcmcat300300050002%2526ref%253D166%2526loc%253DBAN_1781800_8787167',
+        targetWindow: '_blank',
+        windowProperties: ''
+      }
+    ],
+    timerEvents: [
+    ],
+    counterEvents: [
+    ],
+    childFiles: [
+    ],
+    videoFiles: [
+    ],
+    videoEntries: [
+    ],
+    primaryAssets: [
+      {
+        id: '0',
+        artworkType: 'FLASH',
+        displayType: 'BANNER',
+        width: '728',
+        height: '90',
+        servingPath: '/4468068/BBY2015_0621_5290_Xbox_Custom_Regargeting_728x90.swf',
+        zIndex: '0',
+        customCss: '',
+        flashArtworkTypeData: {
+          actionscriptVersion: '2',
+          wmode: 'opaque',
+          sdkVersion: '',
+          flashBackgroundColor: '',
+          allowScriptAccess: 'always'
+        },
+        htmlArtworkTypeData: null,
+        floatingDisplayTypeData: null,
+        expandingDisplayTypeData: null,
+        imageGalleryTypeData: null,
+        pageSettings:null,
+layoutsConfig: null,
+layoutsApi: null
+      }
+    ]
+  }
+  var rendererDisplayType = '';
+  rendererDisplayType += 'dfa7banner_';
+  rendererDisplayType += 'flash_';
+  var rendererFormat = 'inpage';
+  var rendererName = rendererDisplayType + rendererFormat;
+
+  var creativeId = '63610509';
+  var adId = '0';
+  var templateVersion = '200_86';
+  var studioObjects = window['studioV2'] = window['studioV2'] || {};
+  var creativeObjects = studioObjects['creatives'] = studioObjects['creatives'] || {};
+  var creativeKey = [creativeId, adId].join('_');
+  var creative = creativeObjects[creativeKey] = creativeObjects[creativeKey] || {};
+  creative['creativeDefinition'] = creativeDefinition;
+  var adResponses = creative['adResponses'] || [];
+  for (var i = 0; i < adResponses.length; i++) {
+    adResponses[i].creativeDto && adResponses[i].creativeDto.csiEvents &&
+        (adResponses[i].creativeDto.csiEvents['pe'] =
+            adResponses[i].creativeDto.csiEvents['pe'] || (+new Date));
+  }
+  var loadedLibraries = studioObjects['loadedLibraries'] = studioObjects['loadedLibraries'] || {};
+  var versionedLibrary = loadedLibraries[templateVersion] = loadedLibraries[templateVersion] || {};
+  var typedLibrary = versionedLibrary[rendererName] = versionedLibrary[rendererName] || {};
+  if (typedLibrary['bootstrap']) {
+    typedLibrary.bootstrap();
+  }
+})();
+
+})();
+document.write('\n\x3cnoscript\x3e\n  \x3ca target\x3d\x22_blank\x22 href\x3d\x22http://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjssNoqCLyltQqitfRFQD0BAHxcn3Fa_W4HJo7vHiCiyabJP1SAdrgVr-Rc5RZIYq_LUwD3YHLRYqqoLiX1h4gQuCMVytKq4CnHDKc9IeCSa3yK4KTDCnnDbRtxZel0mjD05opL4\x26sig\x3dCg0ArKJSzIPnIrlambyuEAE\x26adurl\x3dhttp://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCiEzHjJadVYfMAsON3AH7_oGgDq2Yn-AG3cCD344BwI23ARABIABgyZ6njNCk9A-CARdjYS1wdWItNTE2MjU1OTY5NTU3OTYxNMgBCeACAKgDAZgEAKoEqQFP0CU_IvRz4DCxzFxfTce6JBFtjcPUNQHnwfHe5SFjxUiH40tHjgtBLJcsDSpheEEdU8sh5vf1T8ieA-rbCQiVYqbvjgRvRqcx9oDalglvTdY19afatnIS9cMgTHgi2TinF31j2nBByLDfjCAhcdSY117Smin2PdCgmfP56xjg1ITzUa7Y29RBzvKdv317qqiQkYqFN-Ql3wrp8nB8Ztn24cR9iPFnsph24AQBgAbQ1fC7tJbvwbUBoAYh2AcA%26num%3D1%26sig%3DAOD64_2UwmuQX4XbSQMNvbIYA_uJjfH-lg%26client%3Dca-pub-5162559695579614%26adurl%3Dhttp://www.bestbuy.com/site/video-games/xbox-one/pcmcat300300050002.c%253Fid%253Dpcmcat300300050002%2526ref%253D166%2526loc%253DBAN_1781800_8787167\x22\x3e\n    \x3cimg border\x3d\x220\x22 alt\x3d\x22\x22 src\x3d\x22//s0.2mdn.net/4468068/BBY2015_0621_5290_Xbox_Custom_Regargeting_728x90.jpg\x22\n        width\x3d\x22728\x22 height\x3d\x2290\x22 /\x3e\n  \x3c/a\x3e\n\x3c/noscript\x3e\n\n\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://c.betrad.com/surly.js?;ad_w\x3d728;ad_h\x3d90;coid\x3d279;nid\x3d41641;\x22\x3e\x3c/script\x3e');if (!window.mraid) {document.write('\x3c/div\x3e');}if (!window.mraid) {(function() {var avDiv = document.getElementById("DfaVisibilityIdentifier_2118605561");if (avDiv) {avDiv['_avi_'] = 'Bg9VhjJadVbD3NY6F3QGS6YjoCgAAAAAQATgByAEJ4AQCoAY_';avDiv['_avihost_'] = 'pagead2.googlesyndication.com';avDiv['_avm_'] = 'la\x3d0\x26';}var glidar = document.createElement('script');glidar.type = 'text/javascript';glidar.async = true;glidar.src = '//pagead2.googlesyndication.com/pagead/js/lidar.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glidar, s);})();}(function(){var f=function(a,c,b){return a.call.apply(a.bind,arguments)},g=function(a,c,b){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var b=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(b,d);return a.apply(c,b)}}return function(){return a.apply(c,arguments)}},k=function(a,c,b){k=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?f:g;return k.apply(null,arguments)};var l=document,m=window;var n=function(a){return{visible:1,hidden:2,prerender:3,preview:4}[a.webkitVisibilityState||a.mozVisibilityState||a.visibilityState||""]||0},p=function(a){var c;a.mozVisibilityState?c="mozvisibilitychange":a.webkitVisibilityState?c="webkitvisibilitychange":a.visibilityState&&(c="visibilitychange");return c};var r=function(){this.g=l;this.j=m;this.i=!1;this.h=[];this.m={};if(3==n(this.g)){var a=k(this.o,this);this.n=a;var c=this.g,b=p(this.g);c.addEventListener?c.addEventListener(b,a,!1):c.attachEvent&&c.attachEvent("on"+b,a)}else q(this)};r.p=function(){return r.l?r.l:r.l=new r};var s=/^([^:]+:\/\/[^/]+)/m,t=/^\d*,(.+)$/m,q=function(a){if(!a.i){a.i=!0;for(var c=0;c<a.h.length;++c)a.k.apply(a,a.h[c]);a.h=[]}};r.prototype.q=function(a,c){var b=c.target.t();(b=t.exec(b))&&(this.m[a]=b[1])};r.prototype.k=function(a,c){var b;if(b=this.s)i:{try{var d=s.exec(this.j.location.href),e=s.exec(a);if(d&&e&&d[1]==e[1]&&c){var h=k(this.q,this,c);this.s(a,h);b=!0;break i}}catch(y){}b=!1}b||(b=this.j,b.google_image_requests||(b.google_image_requests=[]),d=b.document.createElement("img"),d.src=a,b.google_image_requests.push(d))};r.prototype.o=function(){if(3!=n(this.g)){q(this);var a=this.g,c=p(this.g),b=this.n;a.removeEventListener?a.removeEventListener(c,b,!1):a.detachEvent&&a.detachEvent("on"+c,b)}};var u=function(a,c){var b=/(google|doubleclick).*\/pagead\/adview/.test(a),d=r.p(),e=a;if(b){b="&vis="+n(d.g);c&&(b+="&ve=1");var h=e.indexOf("&adurl"),e=-1==h?e+b:e.substring(0,h)+b+e.substring(h)}d.i?d.k(e,c):d.h.push([e,c])},v=["pdib"],w=this;v[0]in w||!w.execScript||w.execScript("var "+v[0]);for(var x;v.length&&(x=v.shift());)v.length||void 0===u?w=w[x]?w[x]:w[x]={}:w[x]=u;})();pdib("http://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjssNoqCLyltQqitfRFQD0BAHxcn3Fa_W4HJo7vHiCiyabJP1SAdrgVr-Rc5RZIYq_LUwD3YHLRYqqoLiX1h4gQuCMVytKq4CnHDKc9IeCSa3yK4KTDCnnDbRtxZel0mjD05opL4\x26sig\x3dCg0ArKJSzGAQ3bJpTwsMEAE\x26adurl\x3d");

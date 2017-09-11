@@ -1,0 +1,151 @@
+.gigya-reset *, div.gigya-reset, .gigya-reset span, .gigya-reset a:hover, .gigya-reset a:visited, .gigya-reset a:link, .gigya-reset a:active {    
+    border: none;    padding: 0px;    margin: 0px;    color: inherit;    text-decoration: none;    width: auto;    float: none;    -moz-border-radius: 0;    border-radius: 0;    font-family: arial;    font-size: 12px;    color: #333333;    background: none;    text-align: left;}
+
+    .gigya-screen .gigya-error-msg {    color: #DD4B39;    font-size: 11px;    display: block;    visibility: hidden;}
+    
+    .gigya-screen .gigya-error-msg.gigya-error-msg-active {        color: #DD4B39;        font-size: 11px;        display: block;        visibility: visible;    }
+
+    .gigya-screen .gigya-terms-error,.gigya-screen input.gigya-error {    padding: 5px;    border-radius: 5px;    border: 1px solid #DD4B39;    -webkit-box-shadow: none !important;   -moz-box-shadow: none !important;   box-shadow: none !important;}
+.gigya-screen input.gigya-error[type=checkbox], .gigya-screen input.gigya-error[type=radio]{    padding: 0;}
+.gigya-screen input[disabled],.gigya-screen input:disabled {    background-color: #e1e1e1;    color: #4a4a4a;    border-color: #cccccc;}
+div.gigya-attach-file-upload-form {    position: absolute;    overflow: hidden;    font-size: 50px;    cursor: pointer;    filter: alpha(opacity=0);    opacity: 0;}
+div.gigya-photo-upload-form > input {    font-size: 500px;    direction: rtl;    height: 100%;    cursor: pointer;}
+.gigya-password-strength-bubble .gig-balloon-nub {    background-image: url('http://cdn2.gigya.com/gs/i/screenSet/triangle_left.png');    height: 16px;    width: 10px;    left: +2px;}
+.gigya-password-strength-bubble .gig-balloon-nub-up {    background-image: url('http://cdn2.gigya.com/gs/i/screenSet/triangle_up.png');    height: 10px;    width: 16px;    top: +2px;}
+.gigya-password-strength-bubble .gig-balloon-nub-right {    background-image: url('http://cdn2.gigya.com/gs/i/screenSet/triangle_right.png');    height: 16px;    width: 10px;    left: -2px;}
+.gigya-password-strength-bubble .gig-balloon-nub-down {    background-image: url('http://cdn2.gigya.com/gs/i/screenSet/triangle_down.png');    height: 10px;    width: 16px;    top: -2px;}
+.gigya-password-strength-bubble .gig-balloon-frame {    background-color: #F3F5F6;    -webkit-border-radius: 2px;    -moz-border-radius: 2px;    border-radius: 2px;    border: 1px solid #BFCFDA;    -webkit-box-shadow: inset 0 0 1px 1px RGBA(0,0,0,0.05);    -moz-box-shadow: inset 0 0 1px 1px RGBA(0,0,0,0.05);    box-shadow: inset 0 0 1px 1px RGBA(0,0,0,0.05);}
+.gigya-password-strength-bubble .gig-balloon {    position: relative;}
+.gigya-password-strength-bubble.gig-balloon-left .gig-balloon {    left: +10px;    top: +3px;}
+.gigya-password-strength-bubble.gig-balloon-right .gig-balloon {    left: -10px;    top: +3px;}
+.gigya-password-strength-bubble.gig-balloon-up .gig-balloon {    left: -5px;    top: +17px;}
+.gigya-password-strength-bubble.gig-balloon-down .gig-balloon {    left: -5px;    top: -12px;}
+.gigya-passwordStrength-text {    text-align: center;}
+span.gigya-passwordStrength-text {    font-weight: bold;}
+div.gigya-passwordStrength-text-requirements {    text-align: center;    width: 100%;    margin-top: 8px;}
+span.gigya-passwordStrength-scoreText {    margin-left: 3px;}
+.gigya-passwordStrength-too_weak .gigya-passwordStrength-scoreText {    color: #e76468;}
+.gigya-passwordStrength-weak .gigya-passwordStrength-scoreText {    color: #e76468;}
+.gigya-passwordStrength-fair .gigya-passwordStrength-scoreText {    color: #d99b4b;}
+.gigya-passwordStrength-strong .gigya-passwordStrength-scoreText {    color: #4ababc;}
+.gigya-passwordStrength-very_strong .gigya-passwordStrength-scoreText {    color: #4ababc;}
+div.gigya-passwordStrength-bar {    width: 100%;    height: 1px;    background-color: #b6b6b6;    margin-top: 8px;}
+div.gigya-passwordStrength-bar-too_weak {    width: 20%;    height: 100%;    background-color: #e76468;}
+div.gigya-passwordStrength-bar-weak {    width: 40%;    height: 100%;    background-color: #e76468;}
+div.gigya-passwordStrength-bar-fair {    width: 60%;    height: 100%;    background-color: #d99b4b;}
+div.gigya-passwordStrength-bar-strong {    width: 80%;    height: 100%;    background-color: #4ababc;}
+div.gigya-passwordStrength-bar-very_strong {    width: 100%;    height: 100%;    background-color: #4ababc;}
+.gigya-calculate-size {    position: absolute !important;    -ms-zoom: 1 !important;    zoom: 1 !important;    left: 10px !important;    top: -1000px !important;}
+    .gigya-calculate-size div.gigya-captcha {        min-width: 318px;        min-height: 129px;        _width: 318px;        _height: 129px;    }
+    .gigya-calculate-size div.gigya-social-login {        min-width: 110px;        min-height: 120px;        _width: 110px;        _height: 120px;    }
+    .gigya-calculate-size div.gigya-tfa {        min-width: 325px;        min-height: 200px;        _width: 325px;        _height: 200px;    }
+div.gigya-container {    display: none;}
+    div.gigya-container.gigya-container-enabled {        display: block;    }
+div.gigya-loginID-availability {    line-height: 18px;    background-repeat: no-repeat;    background-position: left center;}
+div.gigya-loginID-availability-available {    padding-left: 17px;    background-image: url('http://cdn2.gigya.com/gs/i/accounts/ok.png');    color: #4FA373;}
+div.gigya-loginID-availability-not-available {    padding-left: 16px;    background-image: url('http://cdn2.gigya.com/gs/i/accounts/error.png');    color: #DD4B39;}
+div.gigya-loginID-availability-progress {    padding-left: 20px;    background-image: url('http://cdn2.gigya.com/gs/i/accounts/smallLoader.gif');    color: #666666;}
+div.gigya-profile-photo {    border-radius: 3px;}
+.gigya-calculate-size div.gigya-profile-photo {    min-width: 64px;    min-height: 64px;}
+div.gigya-screen-dimmer {    position: absolute;    opacity: 0.5;    filter: 'alpha(opacity=50)';    background-color: #FFFFFF;}
+div.gigya-screen-loader {    position: absolute;    background: transparent url('http://cdn2.gigya.com/gs/i/accounts/bigLoader.gif') no-repeat center center;}
+div.gigya-screen-dialog {    /*position: absolute;       top: 25px;    left: 25px;*/  display: inline-block;   border: 8px solid #CCCCCC;    border-radius: 8px;    background-color: #FFFFFF;}
+div.gigya-screen-dialog-content {    overflow: auto;    padding: 25px;}
+div.gigya-screen-dialog-caption {    float: left;    font-weight: bold;    font-size: 16px;    font-family: arial;}
+div.gigya-screen-dialog-close {    line-height: 33px;    height: 33px;    width: 20px;    float: right;    background-image: url('http://cdn2.gigya.com/gs/i/accounts/close_dialog.png');    cursor: pointer;    background-position: right;    background-repeat: no-repeat;}
+div.gigya-screen-dialog-inner {    border: 1px solid #AAAAAA;}
+div.gigya-screen-dialog-top {    overflow: hidden;    zoom: 1;    background-color: #F3F3F3;    line-height: 33px;    padding: 0 10px 0 11px;}
+div.gigya-screen-dialog-mobile {    position: absolute;    display: inline-block;    top: 0;    left: 0;    background-color: #FFFFFF;    width: 100%;}
+    div.gigya-screen-dialog-mobile div.gigya-composite-control-captcha-widget {        padding: 0;    }
+    div.gigya-screen-dialog-mobile .gigya-screen {        width: 100%;    }
+div.gigya-secret-question {    display: none;}
+div.gigya-photo-upload {    height: 63px;    width: 300px;    zoom: 1;}
+div.gigya-photo-upload-button {    display: inline-block;    zoom: 1;    margin: 0 8px 8px 0;    font-weight: normal;    border: 1px solid #CECECE;    cursor: pointer;    padding: 0 12px;    color: #333333;    font-weight: bold;    border-radius: 4px;    line-height: 28px;    background: #F2F2F2;    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#F2F2F2");    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F2F2F2));    background: -moz-linear-gradient(top, #FFFFFF, #F2F2F2);}
+    div.gigya-photo-upload-button:hover {        background: #FFFFFF;        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F2F2F2", endColorstr="#FFFFFF");        background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#FFFFFF));        background: -moz-linear-gradient(top, #F2F2F2, #FFFFFF);    }
+div.gigya-photo-upload-text {    font-size: 11px;    color: #666666;}
+div.gigya-photo-upload-image {    border-radius: 6px;    background-position: center center;    background-repeat: no-repeat;    width: 64px;    height: 64px;    background-color: #F2F2F2;    float: left;    margin-right: 8px;}
+div.gigya-photo-upload-path {    white-space: nowrap;    width: 107px;    vertical-align: middle;    text-overflow: ellipsis;    overflow: hidden;    padding-right: 10px;    background-position: right;    background-repeat: no-repeat;    display: inline-block;    *display: inline;    zoom: 1;    padding-right: 20px;}
+h1.gigya-screen-caption {    border-bottom: 1px solid #dbdbdb;    font-size: 16px;    font-weight: bold;    color: #333;    padding-bottom: 5px;    margin-bottom: 45px;}
+.gigya-error-display {    display: none;}
+    .gigya-error-display.gigya-error-display-active {        display: block;    }
+.gigya-hidden {    display: none !important;}
+.gigya-screen .gigya-tfa input[type=text] {    margin: 5px 0px;    padding: 5px;    border-radius: 5px;    border: 1px solid #CCCCCC;}
+    .gigya-screen .gigya-tfa input[type=text]:focus, .gigya-screen .gigya-tfa input[type=text]:focus {        border-color: #87B9EA;    }
+    .gigya-show-checkmark.gigya-valid {        background-image: url('http://cdn2.gigya.com/gs/i/screenSet/checkmarkValid.png');        background-position-x: 100%;        background-position-x: calc(100% - 5px);        background-position-y: 50%;        background-position: right 5px center;        background-repeat: no-repeat;        padding-right: 25px;    }
+    .gigya-show-checkmark.gigya-pending {        background-image: url('http://cdn2.gigya.com/gs/i/screenSet/checkmarkPending.gif');        background-position-x: 100%;        background-position-x: calc(100% - 5px);        background-position-y: 50%;        background-position: right 5px center;        background-repeat: no-repeat;        padding-right: 25px;    }
+#gig_1429538585818_showScreenSet_social_0 td, #gig_1429538585818_showScreenSet_social_0 table {width:auto;font-size:1px;vertical-align:top;border-collapse:separate;border:none; padding:0px;margin:0px;}
+ #gig_1429538585818_showScreenSet_social_0 {}
+
+.loading {
+  font-size: 10px;
+  margin: 5em auto;
+  text-indent: -9999em;
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+  background: #ccc;
+  background: -moz-linear-gradient(left, #ccc 10%, rgba(204, 204, 204, 0) 42%);
+  background: -webkit-linear-gradient(left, #ccc 10%, rgba(204, 204, 204, 0) 42%);
+  background: -o-linear-gradient(left, #ccc 10%, rgba(204, 204, 204, 0) 42%);
+  background: -ms-linear-gradient(left, #ccc 10%, rgba(204, 204, 204, 0) 42%);
+  background: linear-gradient(to right, #ccc 10%, rgba(204, 204, 204, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+}
+.loading:before {
+  width: 50%;
+  height: 50%;
+  background: #ccc;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loading:after {
+  background: #fff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+div#loader {
+    /* z-index: 5; */
+    top: 25%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.dim {
+    opacity: .5;
+}
+

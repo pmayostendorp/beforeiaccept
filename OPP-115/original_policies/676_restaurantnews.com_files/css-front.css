@@ -1,0 +1,167 @@
+/*
+ | --------------------------------------------------------
+ | File        : css-front.css
+ | Project     : Special Recent Posts PRO Edition plugin for Wordpress
+ | Version     : 2.5.2
+ | Description : Main stylesheet.
+ | Author      : Luca Grandicelli
+ | Author URL  : http://www.lucagrandicelli.com
+ | Plugin URL  : http://www.specialrecentposts.com
+ | Copyright (C) 2011-2012 Luca Grandicelli
+ | --------------------------------------------------------
+ */
+
+/*
+ | ----------------------------------------
+ | General Section
+ | ----------------------------------------
+
+ | - ATTENTION IE users: The following rules are only compatible with IE8+
+ | - Please consider to specify custom CSS rules to support previous IE versions.
+ | - In order to mantain a minimum compatibnility with IE7, a special CSS file is stored at special-recent-posts/css/css-ie7-fix.css.
+ | - Feel free to modify this file which is loaded by a conditional statement in the HTML header of the rendered webpage.
+ */
+
+/* The Widget Title. */
+h3.srp-widget-title{
+	display: block;
+	margin-bottom: 10px;
+}
+ 
+/* The Recent Posts Container. */
+div.srp-widget-container {
+	display: table;
+	clear: both;
+}
+
+/* Fixing the outline on every link within the SRP container. */
+div.srp-widget-container a {
+	outline: none;
+}
+
+/* The widget title link */
+div.srp-widget-container a.srp-widget-title-link {
+	outline: none;
+}
+
+/* Single post entry box. */
+div.srp-widget-container div.srp-widget-singlepost {
+	padding: 0px 5px 10px 10px;
+	margin: 0px 0px 10px 0px;
+	border-bottom: 0px solid #CCCCCC;
+	clear: both;
+}
+
+/* The single row container and */
+div.srp-widget-container div.srp-single-row {
+	display: table-cell;
+	vertical-align: top;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 0px 0px;
+	border: none;
+}
+
+/* The single column container */
+div.srp-widget-container div.srp-widget-row {
+	clear: both;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+/* The multi-column class on each post entry */
+div.srp-widget-container div.srp-multi-column {
+	display: table-cell;
+	vertical-align: top;
+}
+
+/*
+ | ----------------------------------------
+ | Thumbnail Section
+ | ----------------------------------------
+ */
+
+/* The thumbnail box. */
+div.srp-widget-container div.srp-thumbnail-box {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 10px;
+}
+
+/* The thumbnail link. */
+div.srp-widget-container a.srp-widget-thmblink {
+	display: block;
+}
+
+/* The thumbnail image. */
+div.srp-widget-container img.srp-widget-thmb {
+	max-width: none;
+}
+
+div.srp-widget-container div.srp-thumbnail-box img.avatar {
+	max-width: none;
+}
+
+/*
+ | ----------------------------------------
+ | Content Section
+ | ----------------------------------------
+ */
+
+/* The content box. */
+div.srp-widget-container div.srp-content-box {
+	display: table-cell;
+	vertical-align: top;
+}
+
+/* The single post title. */
+div.srp-widget-container h4.srp-post-title {
+	display: block;
+}
+
+/* The single post title link. */
+div.srp-widget-container a.srp-post-title-link {
+text-decoration:none
+}
+
+/* The post excerpt. */
+div.srp-widget-container p.srp-widget-excerpt {
+	margin: 0px;
+}
+
+/* The linked Excerpt */
+div.srp-widget-container a.srp-linked-excerpt {
+}
+
+/* The stringbreak. */
+div.srp-widget-container span.srp-widget-stringbreak {
+}
+
+/* The stringbreak link. */
+div.srp-widget-container a.srp-widget-stringbreak-link {
+	margin: 0 0 0 5px;
+}
+
+/* The stringbreak link image. */
+div.srp-widget-container a.srp-widget-stringbreak-link-image {
+}
+
+/* The post date box. */
+div.srp-widget-container p.srp-widget-date {
+	margin: 0px;
+}
+
+/* The post author box. */
+div.srp-widget-container p.srp-widget-author {
+	margin: 0px;
+}
+
+/* The post category box. */
+div.srp-widget-container p.srp-widget-category {
+	margin: 0px;
+}
+
+/* The tags box */
+div.srp-widget-container p.srp-widget-tags {
+	margin: 0px;
+}

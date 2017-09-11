@@ -1,0 +1,210 @@
+.brandshare-teaser-label {
+  background-color:#eaeffa; 
+  color:#a9a9a9;
+  font:bold 12px/16px "Helvetica", Arial, sans-serif;
+  padding:5px 0 5px 10px;
+  margin-bottom:3px;
+}
+.brandshare-teaser-label-franchise {
+  background-color:#eaeffa; 
+  color:#a9a9a9;
+  font:bold 12px/16px "Helvetica", Arial, sans-serif;
+  padding:5px 0 5px 10px;
+  margin:6px 0 3px 0;
+}
+.brandshare-feed {
+  background-color:#eaeffa; 
+}
+.brandshare-feed-label, .brandshare-ep-right-label {
+  color:#a9a9a9;
+  font-size:12px;
+  line-height:16px;
+  font-family:"Helvetica", Arial, sans-serif;
+  font-weight: bold; /* RJ asked to make this bold; 500 wasn't bold enough */
+}
+.brandshare-ep-right-label {
+  margin-top:-3px;
+}
+.brandshare-ep-right-label p {
+  padding-top:0;margin-top:0;
+}
+.brandshare-label {
+  background-color:#eaeffa; 
+  color:#a9a9a9;
+  font:bold 12px/16px "Helvetica", Arial, sans-serif;
+  padding:5px 0 5px 10px;
+  margin-bottom: 13px !important;
+}
+.brandshare-ep-right-label {
+  background-color:#eaeffa; 
+  color:#a9a9a9;
+  font:bold 12px/16px "Helvetica", Arial, sans-serif;
+}
+#brandshare.section-adfreak .brandshare-label {
+  margin-bottom: 0px;
+}
+#brandshare .article p a {
+  color:#ed1e25;
+}
+#brandshare .article p a:hover {
+  color:#ed1e25;
+  text-decoration:underline;
+}
+#brandshare.section-adfreak .subheader {
+  overflow: auto;
+  *overflow: hidden; /* for now */
+  zoom: 1;
+}
+#brandshare.section-adfreak .subheader .headline, 
+#brandshare.section-adfreak .subheader .subheadline, 
+#brandshare.section-adfreak .subheader .byline {
+  font-size: 48px;
+  line-height: 50px;
+}
+
+/* below copied over from article.css but replaced #article with #brandshare */
+#brandshare .colsarticle {
+  margin: 0;
+}
+#brandshare.columns-detail .subheader .meta {
+  margin: 0;
+}
+#brandshare .subheader .meta .fl {
+  float: right;
+  border: none 0;
+  margin: 0;
+}
+#brandshare .subheader .meta .emailshare a, #brandshare .subheader .meta .comments a {
+  color: #999;
+}
+#brandshare .article p {
+  overflow:visible;
+  *zoom:1;
+}
+#brandshare .article .gallery-img-description p {
+  text-align:left;
+}
+#brandshare .article .gallery-img-description p b {
+  text-transform:none !important;
+  letter-spacing: 0 !important;
+}
+#brandshare .article p a, .news-gallery-body p a {
+  color:#ed1e25;
+}
+#brandshare .article p a:hover, .node-type-news-slide .news-gallery-body p a:hover {
+  color:#ed1e25;
+  text-decoration:underline;
+}
+#brandshare .article-footer p, #brandshare .colleft p, #brandshare .colright p {
+  text-align:left;
+  text-indent:0;
+}
+#brandshare .article-footer p.continue {
+  text-align:right;
+}
+#brandshare .graph,
+#brandshare .news-article-image
+{
+  position: relative;
+  /*border-bottom: solid 1px #ccc;*/
+  margin: 0 0 20px 0;
+  padding-bottom: 17px;
+  padding-bottom: 9px;
+}
+#brandshare .graph .caption,
+#brandshare .news-article-image .caption
+{
+  margin: 10px 0 -10px;
+  font: bold 11px Georgia, serif !important;
+  text-align: right;
+  color: #333 !important;
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 8px;
+}  
+#brandshare .q {
+  font: bold 23px/23px Georgia, serif;
+  margin:21px 0 4px;
+}
+#brandshare .q span {
+  font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+  font-weight: normal;
+  color: #333;
+}
+#brandshare .colright {
+  right: -168px;
+  left: auto;
+  float: right;
+  margin: 0 0 0 -148px !important;
+}
+#brandshare .colright .ad {
+  position: static;
+  right: auto;
+  display: block;
+  float: none;
+  margin: 0 0 20px;
+}
+#brandshare .article ol.list {
+  position: relative;
+  padding:0;
+  list-style-position: inside;
+  margin:24px 0 0;
+  overflow: visible;
+  *zoom:1;
+  font: normal 20px/24px "Flama", Arial;
+  color:#FFF;
+  counter-reset: item;
+}
+#brandshare .article ol.list li {
+  background: url("/sites/all/themes/aw/images/sitewide/numberbg.gif") 0 0 no-repeat;
+  padding:11px 0 0 18px;
+  display:block;
+  border-bottom:0 none;
+  margin:0 0 -10px;
+}
+#brandshare .article ol.list li:before {
+  content: counter(item);
+  counter-increment:item;
+}
+#brandshare .article ol.list li div {
+  position: relative;
+  top:-22px;
+  margin:0 0 0 36px;
+  color: #000;
+  font: normal 16px/24px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+}
+.mac.gecko #brandshare .article ol.list li div {
+  top:-23px;
+}
+#brandshare .article ol.list li div h2 {
+  font-size: 21px
+}
+#brandshare .article ol.list li div p, #brandshare .article .media p  {
+  margin:14px 0 0;
+  /*width:485px;*/
+}
+
+/* do not automatically indent, and have automatic space between paragraphs. for articles, there is something in template.php for this */
+#brandshare .article > p:first-of-type {
+  margin: 0;
+}
+#brandshare .article > p {
+  margin: 16px 0 0 0;
+  text-indent: 0;
+}
+#brandshare .news-article-image {
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Fix for Poplular / Latest lists */
+.node-type-brandshare-article .mod.latest-news-popular-now .latest-news-popular-now-content ul li {
+  margin: 0 0 10px -22px;
+}
+
+.node-type-brandshare-article .mod.latest-news-popular-now .latest-news-popular-now-content ul {
+  margin-bottom:15px;
+}
+
+
+

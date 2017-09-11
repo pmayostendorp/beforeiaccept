@@ -1,0 +1,1 @@
+Tynt.sc({"ap":"Learn more: ","domain":"naturalnews.com"})

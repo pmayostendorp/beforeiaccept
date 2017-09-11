@@ -1,0 +1,15 @@
+var AGAD = AGAD || {};
+(function (d) {
+    var adBody = '\n\n<!--adglue-div-->\n<div id=\"DFM-adPos-cube1\">\n  <script type=\"text\/javascript\">\n    googletag.cmd.push(function(){googletag.display(\'DFM-adPos-cube1\');});\n  <\/script>\n<\/div>\n\n<script src=\"http:\/\/as.studio.adglue.com\/adserve\/js\/ad.js\"><\/script>\n';
+    AGAD.paramList = AGSERVE.cubby.paramList;
+    
+    if (AGSERVE.cubby.synchronous) {
+        document.write('<div>' + adBody + '</div>');
+    } else {
+        var insertAfter = function(refNode, newNode) { refNode && refNode.parentNode.insertBefore(newNode, refNode.nextSibling); };
+        var e = d.createElement('div');
+        e.innerHTML = '<div style="display:none">_</div>' + adBody;
+        insertAfter(d.getElementById(AGSERVE.cubby.ref), e);
+        AGSERVE.execChildScripts(e);
+    }
+}(document));

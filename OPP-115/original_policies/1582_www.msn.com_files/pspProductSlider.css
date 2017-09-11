@@ -1,0 +1,224 @@
+﻿<%@ Page Language="C#" Inherits="Microsoft.Mscom.Rendering.Framework.CssPage" ContentType="text/css" %>
+
+
+#mycarousel
+{
+    /*background-color: rgb(227, 240, 249);*/
+    height: 6em;
+    width: 100%;
+    margin-left: 0.1em;
+}
+.psp_innderdiv
+{
+    margin-left: 4em;
+    height: 6em;
+    overflow: inherit;
+}
+.box
+{   
+    height: 2.4em;
+    width: 7.1em;
+    margin: 0.5em 0.1em 0.5em 0.1em;    
+    background-color: #0d689b; /*#0067a9;*/   
+    float:left;
+    display:none;
+}
+.boxSelected
+{
+    background-color: #084263 !important; /*#004785*/ 
+}
+
+.left_carousel_play
+{
+    /*background-image: url(/content/p/privacystatement/images/product_left_arrow.png);
+    width: 15px; 
+    height: 21px;
+    position: absolute;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 0em;
+    display: inline;
+    bottom: 1.6em;
+    padding-left: 0em;    
+    cursor:pointer;*/
+}
+.right_carousel_play
+{
+    /*background-image: url(/content/p/privacystatement/images/product_right_arrow.png);
+    background-repeat: no-repeat;
+    width: 15px; 
+    height: 21px;
+    position: absolute;    
+    float: right;
+    background-position: 0em;
+    display: inline;
+    right: -0.1em;
+    bottom: 1.6em;
+    cursor:pointer;*/
+}
+
+
+.mscarousel
+{
+    overflow: hidden;
+	display: inline;
+}
+.mscarousel img
+{
+    border: 0;
+}
+.mscarousel .child
+{
+    position: relative;    
+}
+.mscarousel .child .set, .mscarousel .set
+{
+    float: left;
+    position: relative;
+}
+.mscarousel .child .set .message, .mscarousel .set .message
+{
+    /*position:absolute; top:0; left:0; background-color:#333333; color:#fff; display:none;*/
+}
+.mscarousel .child .clear
+{
+    clear: both;
+}
+
+.hand
+{
+    cursor: pointer;
+}
+.CarousalWrapper
+{
+    width: 100%; height: 4em; /*6em; background-color: rgb(227, 240, 249)*/
+}
+.CarousalHeader
+{
+    Position:relative;
+}
+.CarouselText
+{
+    font-size:0.8em;
+    position:absolute;
+    bottom: 30%; 
+    color:white;
+    left: 3em; 
+}
+.CarouselImage {
+    margin-top: 2%;
+    margin-left: 6%;
+    height: 93%;
+}
+.DisabledImage
+{
+    filter: alpha(opacity=50);
+}
+.CarousalFocus
+{
+    border:0.025em dashed #b9b9b9;
+}
+.div_grey
+{
+   width:100% !important;
+}
+.printsummary
+{
+    display:none;
+    color:rgb(0, 71, 133);
+    font-weight:bold;
+    text-decoration:underline;
+    clear:both;
+    padding-top:0.4em;
+}
+
+.printDetailedContent
+{
+    display:none;
+    color:rgb(0, 71, 133);
+    font-weight:bold;
+    padding-top:0.6em;
+    text-decoration:underline;
+}
+
+/* V3 template header: Microsoft logo to align with Search box */
+#ctl00_ctl09_ctl00_MenuImage
+{
+    margin-top: 0px;
+}
+
+#ctl00_ctl09_ctl05_SearchControl
+{
+    margin-top:-18px;
+    margin-bottom:23px;
+}
+
+
+.mstLcpAllSitesText
+{
+   width:17.5em;
+}
+
+.logo_block
+{
+   width:11.7em;
+}
+
+.gcr_morePrivacyLinks
+{
+   height:auto !important;
+   min-height:8.2em;
+}
+
+#short_div
+{
+padding-top :1em;
+-webkit-text-size-adjust: none !important;
+}
+
+/* 
+.gcr_realtedLinks
+{
+    width:20.2em;
+    height:8.2em;
+    border:0.05em solid #dcdcdc;   
+    float:left;
+}
+.gcr_relatedLinksHeader
+{  
+    height:2em;
+    background-color:#585858;
+    color:white;
+}
+.gcr_relatedLinksHeaderContainer
+{
+    padding-top:0.25em;    
+    padding-left:0.35em;
+}
+
+.gcr_relatedLinksContent
+{     
+    font-family: segoe ui, sans-serif;
+    font-size:0.7em; 
+}
+
+
+.relatedLinks
+{
+    text-decoration:none!important;
+    padding-left:0.35em;
+    font-weight:600;
+}
+
+
+.div_r
+{
+    line-height:1.5em;
+}
+.div_rl_h
+{
+    font-family: segoe ui, sans-serif;
+    font-size:1em;   
+}
+
+ */

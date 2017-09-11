@@ -1,0 +1,532 @@
+/*
+ * ghindaVideoPlayer - jQuery plugin 1.0.0
+ *
+ * Copyright (c) 2010 Cristian-Ionut Colceriu
+ *
+ * ghindaVideoPlayer.css
+ * Styles for the ghindaVideoPlayer
+ *
+ */
+
+
+
+
+.loc-video-player {
+
+}
+
+
+
+
+
+
+
+
+/* base styles */
+.ghinda-video-player {}
+.ghinda-video-play, .ghinda-volume-button {
+	cursor: pointer;
+}
+.ghinda-video-timer {
+	cursor: default;
+}
+
+
+/* Start of simpledark default theme */
+.ghinda-video-player.simpledark {
+	float: left;
+	position: relative;
+	padding: 0px;
+	border: 5px solid #61625d;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	-moz-border-radius: 5px; /* FF1+ */
+	-webkit-border-radius: 5px; /* Saf3+, Chrome */
+	border-radius: 5px; /* Opera 10.5, IE 9 */
+
+	background: #000000;
+	background-image: -moz-linear-gradient(top, #313131, #000000); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #313131),color-stop(1, #000000)); /* Saf4+, Chrome */
+
+	box-shadow: inset 0 15px 35px #535353;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-controls {
+	position: relative;
+	padding-top: 5px;
+    margin: 5px;
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-play, .ghinda-video-player.simpledark .ghinda-video-seek, .ghinda-video-player.simpledark .ghinda-volume-box, .ghinda-video-timer {
+	float: left;
+}
+
+/* play, pause */
+.ghinda-video-player.simpledark .ghinda-video-play {
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin-right: 15px;
+	background: url(../images/play-icon.png) no-repeat;
+
+	opacity: 0.7;
+
+	-moz-transition: all 0.2s ease-in-out; /* Firefox */
+	-webkit-transition: all 0.2s ease-in-out; /* Safari and Chrome */
+	-o-transition: all 0.2s ease-in-out;  /* Opera */
+	transition: all 0.2s ease-in-out;
+}
+
+.ghinda-video-player.simpledark .ghinda-paused-button {
+	background: url(../images/pause-icon.png) no-repeat;
+}
+
+
+.ghinda-video-player.simpledark video {
+	float: left;
+}
+
+
+.ghinda-video-player.simpledark .ghinda-video-play:hover {
+    opacity: 1;
+}
+
+/* seek */
+.ghinda-video-player.simpledark .ghinda-video-seek {
+	position:relative;
+    width: 50%;
+	height: 10px;
+	margin-top: 5px;
+	border: 1px solid #494949;
+
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+
+	background: #535353;
+	background-image: -moz-linear-gradient(top, #535353, #333333);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #535353),color-stop(1, #333333));
+
+	box-shadow: inset 0 -3px 3px #333333;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-seek .ui-slider-handle {
+	width: 15px;
+	height: 15px;
+	border: 1px solid #333;
+	top: -4px;
+
+	-moz-border-radius:10px !important;
+	-webkit-border-radius:10px !important;
+	border-radius:10px !important;
+
+	background: #e6e6e6;
+	background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
+
+	box-shadow: inset 0 -3px 3px #d5d5d5;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-seek .ui-slider-handle.ui-state-hover {
+	background: #fff;
+}
+
+.ghinda-video-player.simpledark .ghinda-video-seek .ui-slider-range {
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+
+	background: #4cbae8;
+	background-image: -moz-linear-gradient(top, #4cbae8, #39a2ce);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #4cbae8),color-stop(1, #39a2ce));
+
+	box-shadow: inset 0 -3px 3px #39a2ce;
+}
+
+
+/* timer */
+.ghinda-video-player.simpledark .ghinda-video-timer {
+	margin-top: 5px;
+	margin-left: 10px;
+
+	color: #999;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+/* volume */
+.ghinda-video-player.simpledark .ghinda-volume-box {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+	width: 20px;
+	height: 30px;
+	color: #fff;
+	padding: 0px 10px;
+
+	-moz-transition: all 0.1s ease-in-out; /* Firefox */
+	-webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
+	-o-transition: all 0.2s ease-in-out;  /* Opera */
+	transition: all 0.1s ease-in-out;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-box:hover {
+	height: 135px;
+	padding-top: 5px;
+}
+
+
+.ghinda-video-player.simpledark .ghinda-volume-box:hover .ghinda-volume-slider {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-slider {
+	position: relative;
+	height: 100px;
+	width: 7px;
+	left: 4px;
+
+	visiblity: hidden;
+	opacity: 0;
+
+	border: 1px solid #444;
+
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+
+	background: #535353;
+	background-image: -moz-linear-gradient(top, #535353, #333333);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #535353),color-stop(1, #333333));
+
+	box-shadow: inset 0 3px 3px #333333;
+
+	-moz-transition: all 0.1s ease-in-out; /* Firefox */
+	-webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
+	-o-transition: all 0.1s ease-in-out;  /* Opera */
+	transition: all 0.1s ease-in-out;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-slider .ui-slider-handle {
+	width: 12px;
+	height: 12px;
+	left: -4px;
+	margin-bottom:-0.6em;
+	margin-left:0;
+	border: 1px solid #333;
+
+	-moz-border-radius:10px !important;
+	-webkit-border-radius:10px !important;
+	border-radius:10px !important;
+
+	background: #e6e6e6;
+	background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
+
+	box-shadow: inset 0 3px 3px #d5d5d5;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-slider .ui-slider-handle.ui-state-hover {
+	background: #fff;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-slider .ui-slider-range {
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+
+	background: #e6e6e6;
+	background-image: -moz-linear-gradient(top, #e6e6e6, #d5d5d5);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e6e6e6),color-stop(1, #d5d5d5));
+
+	box-shadow: inset 0 3px 3px #d5d5d5;
+}
+
+/* volume button */
+
+.ghinda-video-player.simpledark .ghinda-volume-button {
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/volume-full-icon.png) no-repeat;
+	text-indent: -9999px;
+
+	opacity: 0.8;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-button:hover {
+	opacity: 1;
+}
+
+.ghinda-video-player.simpledark .ghinda-volume-mute {
+	background: url(./images/volume-mute-icon.png) no-repeat;
+}
+
+
+/* Start of smalldark child theme */
+
+.ghinda-video-player.smalldark {
+	padding: 0px;
+}
+
+.ghinda-video-player.smalldark video:hover + .ghinda-video-controls {
+	visibility: visible;
+	opacity: 0.7;
+}
+
+.ghinda-video-player.smalldark .ghinda-video-controls:hover {
+	visibility: visible;
+	opacity: 0.7;
+}
+
+.ghinda-video-player.smalldark .ghinda-video-controls {
+	position: absolute;
+	top: 150px;
+	left: 80px;
+	width: 320px;
+	padding: 10px;
+
+	border: 1px solid #2E2E2E;
+
+	-moz-border-radius: 5px; /* FF1+ */
+	-webkit-border-radius: 5px; /* Saf3+, Chrome */
+	border-radius: 5px; /* Opera 10.5, IE 9 */
+
+	background: #000000;
+	background-image: -moz-linear-gradient(top, #313131, #000000); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #313131),color-stop(1, #000000)); /* Saf4+, Chrome */
+
+	opacity: 0;
+	visibility: hidden;
+
+	box-shadow: inset 0 15px 35px #535353;
+
+	-moz-transition: all 0.1s ease-in-out; /* Firefox */
+	-webkit-transition: all 0.1s ease-in-out; /* Safari and Chrome */
+	-o-transition: all 0.1s ease-in-out;  /* Opera */
+	transition: all 0.1s ease-in-out;
+}
+
+.ghinda-video-player.smalldark .ghinda-video-seek {
+	width: 200px;
+}
+
+.ghinda-video-player.smalldark .ghinda-volume-box {
+	bottom: 10px;
+}
+
+.ghinda-video-player.smalldark .ghinda-volume-box:hover {
+	height: 85px;
+}
+
+.ghinda-video-player.smalldark .ghinda-volume-slider {
+	height: 50px;
+}
+
+/* needed jquery ui styles
+ * using these, we don't depend on jQuery UI's stylsheet
+ */
+.ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	margin-left:-0.6em;
+	cursor: default;
+	outline: none;
+}
+
+.ui-slider-range {
+	display:block;
+	width:100%;
+	height:100%;
+	left:0;
+	bottom: 0;
+	border:0 none;
+	position:absolute;
+	z-index:1;
+}
+.locmedia-load-this {
+    display:none;
+}
+
+.locmedia-player-this {
+    display:none;
+}
+
+.locmedia-addobject-this {
+    display:none;
+}
+
+.locmedia-addplaylist-this {
+    display:none;
+}
+
+.locmedia-viewplaylist-this {
+    display:none;
+}
+
+.locmedia-player-container {
+    background-color: 'white' !important;
+}
+
+.locmedia-player-container .locmedia-video {
+    
+}
+
+.locmedia-player-container .locmedia-audio {
+    background-color: 'white' !important;
+}
+
+.locmedia-audio .locmedia-player {
+    background-color: 'white' !important;
+    display:block;
+    width:522px;
+}
+
+.locmedia-audio-small .locmedia-player {
+    background-color: 'white' !important;
+    display:block;
+    width:522px;
+    height:139px;
+}
+
+.locmedia-audio-medium .locmedia-player {
+    background-color: 'white' !important;
+    display:block;
+    width:522px;
+    height:148px;
+}
+
+.locmedia-viewplaylist-button a,
+.locmedia-viewplaylist-button a:link,
+.locmedia-viewplaylist-button a:active,
+.locmedia-viewplaylist-button a:visited {
+border: none;
+clear: none;
+font:normal normal normal 11px/17px Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+float: none;
+letter-spacing: normal;
+line-height:17px;
+outline: none;
+overflow: hidden;
+position: static;
+text-indent: 0;
+text-transform: none;
+vertical-align: top;
+white-space: normal;
+word-spacing: normal;
+display: block;
+text-align: left;
+margin:0;
+background: transparent url(../images/view_playlist.png) 0 0 no-repeat;
+padding: 1px 0 4px 30px;
+color:#036;
+text-decoration:underline;
+cursor:pointer;
+}
+.locmedia-viewplaylist-button a:hover,
+.locmedia-viewplaylist-button a:focus {
+color:#36c;
+}
+.locmedia-addtoplaylist-button a,
+.locmedia-addtoplaylist-button a:link,
+.locmedia-addtoplaylist-button a:active,
+.locmedia-addtoplaylist-button a:visited,
+.locmedia-addtoplaylist-button a:hover,
+.locmedia-addtoplaylist-button a:focus {
+	background: transparent url(../images/add_to_playlist.png) 0 0 no-repeat;
+	width:auto;
+	height:15px;
+	border:none; 
+	padding:0;
+	text-indent:-9000em;
+	overflow:hidden;
+	display:block;
+	text-align:left;
+	margin-top:0;
+}
+.locmedia-addtoplaylist-button.locmedia-button-overlay a,
+.locmedia-addtoplaylist-button.locmedia-button-overlay a:link,
+.locmedia-addtoplaylist-button.locmedia-button-overlay a:active,
+.locmedia-addtoplaylist-button.locmedia-button-overlay a:visited,
+.locmedia-addtoplaylist-button.locmedia-button-overlay a:hover,
+.locmedia-addtoplaylist-button.locmedia-button-overlay a:focus {
+	background: transparent url(../images/add_to_playlist_overlay.png) 0 0 no-repeat;
+}
+
+
+.locmedia-addalltoplaylist-linkbutton a,
+.locmedia-addalltoplaylist-linkbutton a:link,
+.locmedia-addalltoplaylist-linkbutton a:active,
+.locmedia-addalltoplaylist-linkbutton a:visited,
+.locmedia-addalltoplaylist-linkbutton a:hover,
+.locmedia-addalltoplaylist-linkbutton a:focus {
+//	background: transparent url(../images/add_to_playlist.png) 0 0 no-repeat;
+	width:auto;
+	height:15px;
+	border:none; 
+	padding:0;
+	text-indent:-9000em;
+//	overflow:hidden;
+//	display:block;
+//	text-align:left;
+	margin-top:0;
+}
+
+
+.locmedia-button-dialog {
+    
+}
+
+.locmedia-button-dialog div.ui-dialog-titlebar {
+    display:none;
+}
+
+.locmedia-button-dialog-off {
+    display:none;
+}
+
+/* Test Stuff, Remove later */
+div.test {
+    margin-bottom:10px;
+}
+/* caption */
+.captions_wrapper {
+	position:absolute;
+	bottom:71px;
+	font-size:14px;
+	color: white;
+	padding:0;
+	text-shadow:0px 0px 5px #000;
+	background-color: rgba(0,0,0,.5);
+	width:90%;
+	left:50%;
+	margin-left: -45%;
+}
+.captions_wrapper .captions {
+	padding:5px 15px;
+}
+/* logo */
+.ghinda-logo {
+	padding-left:5px;
+	padding-bottom:2px;
+}
+/* controller */
+.ghinda-video-player.simpledark .ghinda-video-controls {
+	padding-top:15px;
+}
+/* player */
+.ghinda-video-player.simpledark {
+	border:0 !important;
+	padding:5px !important;
+}

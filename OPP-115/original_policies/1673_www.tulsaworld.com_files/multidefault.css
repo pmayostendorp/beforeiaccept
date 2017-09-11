@@ -1,0 +1,179 @@
+shsMultisportScoreboard { width: 185px; }
+#shsMultisportScoreboard { font-family: Arial,Helvetica,sans-serif; font-size: 12px; vertical-align: top }
+
+#shsMultisportScoreboard .shsTable td, #shsMultisportScoreboard .shsTable th { font-size: 11px; }
+#shsMultisportScoreboard .shsTableTtlRow td, #shsMultisportScoreboard .shsTableTtlRow th { font-size: 12px;  }
+#shsMultisportScoreboard .shsTableSubttlRow td, #shsMultisportScoreboard .shsTableSubttlRow td { font-size: 11px; }
+#shsMultisportScoreboard .shsTableBowlttlRow td, #shsMultisportScoreboard .shsTableBowlttlRow td { font-size: 11px; }
+
+#shsMultisportScoreboard .teamRank { font-variant: small-caps; display: inline }
+#shsMultisportScoreboard .teamName { font-weight: normal; display: inline }
+#shsBody .teamRank { font-variant: small-caps; display: inline }
+#shsBody .teamName { font-weight: normal; display: inline }
+
+
+#shsMultisportScoreboard .shsMiniStatus { text-align: right }
+
+#shsFront #shsMultisportScoreboard .shsMiniCopyright, 
+#shsFrontNews #shsMultisportScoreboard .shsMiniCopyright,
+#shsMoreNews #shsMultisportScoreboard .shsMiniCopyright
+	{ display: none }
+#shsMultisportScoreboard .shsMiniCopyright { float: left; display: inline }
+#shsMultisportScoreboard .shsMiniCopyrightText { font-size: 9px; text-align: right }
+#shsMultisportScoreboard .shsMiniSportSpacer { height: 5px }
+
+#shsMultisportScoreboard .Spanish { display: none }
+
+#shsMultisportScoreboard .shsMiniStatus { width: 20% }
+#shsMultisportScoreboard .shsMiniTeamScore { width: 10% }
+#shsMultisportScoreboard .shsMiniTeamName { width: 70% }
+
+/*USE PADDINGS TO MAKE THE SEPARATORS WIDER
+#shsMultisportScoreboard tr.shsMiniRowSpacer td { height: 3px; background-color: #cccccc }
+#shsMultisportScoreboard td.shsMiniColSpacer { padding: 2px; background-color: #cccccc }
+*/
+
+#shsMultisportScoreboard tr.shsMiniRowSpacer td { height: 1px; background-color: #cccccc }
+#shsMultisportScoreboard td.shsMiniColSpacer { width: 1px; background-color: #cccccc }
+
+table.shsLinescore .teamRank { font-size: 11px; font-variant: small-caps; display: inline }
+table.shsLinescore .teamName { font-weight: bold; display: inline }
+
+
+#shsWidgets .shsLiveNav,#shsWidgets .shsGameHomeRuns, #shsWidgets .shsGamePitchers, #shsWidgets .shsScoreSpacer
+   {background-color: #FFFFFF}
+
+#shsTeamScoreboards td.gamedate { display: none }
+ 
+#shsWidgets td {font-size: 11px}
+
+.shsMatchDayRow {display: none}
+
+.shsMiniCopyright img {float: left; margin-top: 7px; margin-right: 7px}
+.shsMiniCopyrightText {color: #999; font-size: 10px}
+
+/*PROTECTION INDEX STYLES*/
+.shsNYLPIWidget {width: 300px !important}
+.shsNYLPIWidget .shsTableSubttlRow td {background: #0079c2 !important; color: #fff  !important}
+.shsNYLPIWidget .shsColTtlRow td {background: #0079c2 !important; color: #fff !important}
+.shsNYLPIWidget a {color: #0079c2 !important; text-decoration: none !important}
+.shsNYLPIWidget a:hover {text-decoration: underline !important}
+
+#shsMultisportScoreboard .shsDraftScoreboard .shsLogo {display: inline}
+/* NFL DRAFT */
+.team2sm_trans, .shsNFLteam2sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/buffalo_bills.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team15sm_trans, .shsNFLteam15sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/miami_dolphins.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team17sm_trans, .shsNFLteam17sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/newengland_patriots.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team20sm_trans, .shsNFLteam20sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/newyork_jets.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team7sm_trans, .shsNFLteam7sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/denver_broncos.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team12sm_trans, .shsNFLteam12sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/kansascity_chiefs.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team13sm_trans, .shsNFLteam13sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/oakland_raiders.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team24sm_trans, .shsNFLteam24sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/sandiego_chargers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team4sm_trans, .shsNFLteam4sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/cincinnati_bengals.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team5sm_trans, .shsNFLteam5sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/cleveland_browns.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team23sm_trans, .shsNFLteam23sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/pittsburgh_steelers.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team33sm_trans, .shsNFLteam33sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/baltimore_ravens.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team10sm_trans, .shsNFLteam10sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/tennessee_titans.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team11sm_trans, .shsNFLteam11sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/indianapolis_colts.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team30sm_trans, .shsNFLteam30sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/jacksonville_jaguars.png) no-repeat left center; padding-left:25px; height: 15px }
+.team34sm_trans, .shsNFLteam34sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/houston_texans.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team6sm_trans, .shsNFLteam6sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/dallas_cowboys.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team19sm_trans, .shsNFLteam19sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/newyork_giants.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team21sm_trans, .shsNFLteam21sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/philadelphia_eagles.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team28sm_trans, .shsNFLteam28sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/washington_redskins.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team14sm_trans, .shsNFLteam14sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/stlouis_rams.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team22sm_trans, .shsNFLteam22sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/arizona_cardinals.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team25sm_trans, .shsNFLteam25sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/sanfrancisco_49ers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team26sm_trans, .shsNFLteam26sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/seattle_seahawks.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team3sm_trans, .shsNFLteam3sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/chicago_bears.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team8sm_trans, .shsNFLteam8sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/detroit_lions.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team9sm_trans, .shsNFLteam9sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/greenbay_packers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team16sm_trans, .shsNFLteam16sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/minnesota_vikings.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team1sm_trans, .shsNFLteam1sm_trans  { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/atlanta_falcons.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team18sm_trans, .shsNFLteam18sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/neworleans_saints.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team27sm_trans, .shsNFLteam27sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/tampabay_buccaneers.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team29sm_trans, .shsNFLteam29sm_trans { display: inline-block; background: url(http://hosted.stats.com/fb/logos/nfl_23x15/carolina_panthers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+
+/* NBA DRAFT */
+.team2sm_trans, .shsNBAteam2sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/boston_celtics.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team17sm_trans, .shsNBAteam17sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/brooklyn_nets.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team18sm_trans, .shsNBAteam18sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/newyork_knicks.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team20sm_trans, .shsNBAteam20sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/philadelphia_76ers.png) no-repeat left center; padding-left: 	25px; height: 15px;}
+.team28sm_trans, .shsNBAteam28sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/toronto_raptors.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team4sm_trans, .shsNBAteam4sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/chicago_bulls.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team5sm_trans, .shsNBAteam5sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/cleveland_cavaliers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team8sm_trans, .shsNBAteam8sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/detroit_pistons.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team11sm_trans, .shsNBAteam11sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/indiana_pacers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team15sm_trans, .shsNBAteam15sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/milwaukee_bucks.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team1sm_trans, .shsNBAteam1sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/atlanta_hawks.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team30sm_trans, .shsNBAteam30sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/charlotte_hornets.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team14sm_trans, .shsNBAteam14sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/miami_heat.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team19sm_trans, .shsNBAteam19sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/orlando_magic.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team27sm_trans, .shsNBAteam27sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/washington_wizards.png) no-repeat left center; padding-left:25px; height: 15px }
+.team9sm_trans, .shsNBAteam9sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/goldenstate_warriors.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team12sm_trans, .shsNBAteam12sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/losangeles_clippers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team13sm_trans, .shsNBAteam13sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/losangeles_lakers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team21sm_trans, .shsNBAteam21sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/phoenix_suns.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team23sm_trans, .shsNBAteam23sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/sacramento_kings.png) no-repeat left center; padding-left: 25px; height: 15px }
+.team6sm_trans, .shsNBAteam6sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/dallas_mavericks.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team10sm_trans, .shsNBAteam10sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/houston_rockets.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team29sm_trans, .shsNBAteam29sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/memphis_grizzlies.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team3sm_trans, .shsNBAteam3sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/neworleans_pelicans.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team24sm_trans, .shsNBAteam24sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/sanantonio_spurs.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team7sm_trans, .shsNBAteam7sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/denver_nuggets.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team16sm_trans, .shsNBAteam16sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/minnesota_timberwolves.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team22sm_trans, .shsNBAteam22sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/portland_trailblazers.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team25sm_trans, .shsNBAteam25sm_trans  { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/oklahomacity_thunder.png) no-repeat left center; padding-left: 	25px; height: 15px }
+.team26sm_trans, .shsNBAteam26sm_trans { display: inline-block; background: url(http://hosted.stats.com/nba/logos/nba_23x15/utah_jazz.png) no-repeat left center; padding-left: 	25px; height: 15px }
+
+
+
+.foxLINK {display: none;}
+.usatLINK {display: none;}
+.mundoLINK {display: none;}
+
+.shsMiniStand_1column .shsTable .shsNamD {width: 40%}
+.shsMiniStand_1column .shsTable .shsNumD {width: 15%}
+
+#shsBody .shsTable.shsLinescore .teamName.shsMobile {display: none}
+
+.shsSportFront #shsMultisportScoreboard .shsLogo {display: none}
+.shsSportFront #shsMultisportScoreboard td {font-size: 12px}
+
+.shsSportFront .shsFrontSide {float: right;width: 25%;margin: 0 10px;}
+.shsSportFront .shsFrontMain {float: left;width: 70%;}
+
+/* HEADLINES WIDGETS */
+#shsMiniHeadlines .shsHeadlineList h2 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #000;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    width: 100%;
+    color: #fff;
+}
+
+#shsMiniHeadlines .shsHeadlineList {
+    background: #eeeeee;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #999;
+}
+
+#shsMiniHeadlines .shsHeadlineList ul {
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
+}
+
+@media only screen and (max-width: 480px) {
+
+	.shsSportFront .shsFrontMain {float: none;width: 100%;display: block;}
+	.shsSportFront .shsFrontSide {float: none;width: 100%;margin: 0;display: block;}
+	
+}

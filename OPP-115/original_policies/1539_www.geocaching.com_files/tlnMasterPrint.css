@@ -1,0 +1,337 @@
+﻿/* -----------------------------------------------------------------------
+
+[Introduction]
+Geocaching Top-Level Navigation Master Print Styles
+
+----------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------
+Begin Hidden Elements
+----------------------------------------------------------------------- */
+
+.SkipLinks,#Navigation,.BreadcrumbWidget,.MasterPageAds,.InlinePageAds,.WarningMessage.DownTime{
+display:none;
+}
+
+.PrintOnly {
+display:block;
+}
+
+/* -----------------------------------------------------------------------
+End Hidden Elements
+
+Begin Warning Messages
+----------------------------------------------------------------------- */
+
+.WarningMessage{
+margin-bottom:2em;
+text-align:center;
+font-style:italic;
+color:#8c0b0b;
+border-bottom:1px solid #8c0b0b;
+}
+
+/* -----------------------------------------------------------------------
+End Warning Messages
+
+Begin General Styling
+----------------------------------------------------------------------- */
+html {
+background:#fff;
+}
+body{
+padding:2em;
+font-family:Verdana,Arial,Helvetica,Geneva,sans-serif;
+background:none;
+color:#000;
+}
+footer, .FooterBottom{ 
+background:none;
+color:inherit;
+margin:0;
+padding:0;
+}
+.FooterBottom .container:after {
+background:none;
+}
+p{
+text-align:left;
+}
+.container,#Content .container,[class*="append-"],[class*="prepend-"]{
+padding-left:0;
+width:auto;
+}
+[class*="span-"]{
+float:none;
+width:auto;
+margin-right:0;
+}
+[class*="pull-"]{
+margin-left:0;
+}
+[class*="push-"]{
+margin-right:0;
+}
+
+/* -----------------------------------------------------------------------
+End General Styling
+
+Begin Legacy Styles
+----------------------------------------------------------------------- */
+
+.hideMe, .NoPrint{
+display:none;
+}
+
+/* -----------------------------------------------------------------------
+End Legacy Styles
+
+Begin Header
+----------------------------------------------------------------------- */
+
+header{
+display:none;
+}
+
+/* -----------------------------------------------------------------------
+End Header
+
+Begin Content
+----------------------------------------------------------------------- */
+
+#Content{
+padding:1em 0;
+}
+#Content .container {
+padding:0;
+}
+.InformationWidget {
+border-left:none;
+border-right:none;
+}
+
+/* -----------------------------------------------------------------------
+End Content
+
+Begin Footer
+----------------------------------------------------------------------- */
+footer > .container{
+display:none;
+}
+footer{
+padding-top:1em;
+text-align:left;
+border-top:1px solid #ddd;
+}
+
+/* -----------------------------------------------------------------------
+End Footer
+
+Begin Links
+----------------------------------------------------------------------- */
+
+a,a:link,a:visited,.FooterBottom a:link,.FooterBottom a:visited, #Content .SideBarWidget a:link{
+border:0;
+color:#000;
+outline:0;
+text-decoration:underline;
+}
+.WarningMessage a,.WarningMessage a:link,.WarningMessage a:active,.WarningMessage a:visited{
+color:#8c0b0b;
+text-decoration:none;
+}
+
+/* -----------------------------------------------------------------------
+End Links
+
+Begin Fonts
+----------------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6{
+color:#000;
+}
+
+/* -----------------------------------------------------------------------
+End Fonts
+
+Begin Forms
+----------------------------------------------------------------------- */
+
+.Warning,.Validation,.red,.OldWarning,.Warning *{
+color:red !important;
+}
+input[type="text"],input[type="password"],.Text,select,textarea {
+border:1px solid #000 !important;
+}
+
+/* -----------------------------------------------------------------------
+End Forms
+
+Begin Tables
+----------------------------------------------------------------------- */
+
+table.Table th,td.TableHeader,th.TableHeader{
+background-color:#ccc;
+}
+table.Table tr.AlternatingRow td,.AlternatingRow,table.Table tr td.AlternatingRow,
+table.Table tr.TertiaryRow td,.TertiaryRow,table.Table tr td.TertiaryRow,
+tr.Row1 td,tr.Row3 td,tr.Row5 td,tr.Row7 td,tr.Row9 td{
+background-color:#f1f1f1;
+}
+table.RadioButtonsTable,table.CheckboxTable{
+width:50%;
+}
+tr.BorderTop td,table.Table tr td.TableFooter,table.Table tfoot tr td{
+border-top:2px solid #fff;
+}
+table.Table tfoot tr td,table.Table tr td.TableFooter{
+background-color:#f1f1f1;
+}
+table.WordWrap {
+table-layout:fixed;
+word-wrap:break-word;
+}
+
+/* -----------------------------------------------------------------------
+End Tables
+
+Begin Home Page
+----------------------------------------------------------------------- */
+.home-hero {
+background:none;
+margin:0;
+}
+.HomePageWidget{
+margin-top:0;
+font-size:12px;
+border:none;
+color:#000;
+}
+.SideBarWidget{
+background:none;
+color:#000;
+min-height:0;
+text-align:left;
+}
+.SideBarWidget h2,.SideBarWidget h3{
+background:none;
+color:#000;
+padding:0;
+}
+p.WelcomeWidget{
+margin-bottom:0;
+padding:0;
+}
+.Step1Widget,.Step2Widget,.Step3Widget{
+margin-left:0;
+}
+.Step1Widget p,.Step2Widget p,.Step3Widget p{
+color:#000;
+margin-left:0;
+}
+.Step1Number p,.Step2Number p,.Step3Number p{
+position:static;
+}
+.StepsWidgetNumber.Step1Number{
+padding-left:0;
+}
+.HomeSearchWidget{
+position:relative;
+width:80%;
+}
+.HomeSearchWidget input.Search{
+color:#000;
+border:1px solid #000;
+border-radius:5px;
+margin:0;
+padding:4px;
+width:100%;
+}
+.HomeBanner{
+display:none;
+}
+
+/* -----------------------------------------------------------------------
+End Home Page
+
+Begin Cache Details
+----------------------------------------------------------------------- */
+
+.CacheNoteHelpImg,.FavoriteWidget,.StatusInformationWidget,.CDMapWidget .WidgetHeader,.leaflet-control-zoom,#map_preview_canvas,#imgFavoriteArrow,#Download,.ProfileWidget,#SignInWidget,.CoordInfoLink .arrow,.CacheInformationTable .DownloadLinks{
+display:none;
+}
+.CacheInformationTable .LocationData{
+background:none;
+border:none;
+}
+.CacheStarLabels{
+float:left;
+margin-right:4em;
+}
+.CacheStarLabels dt{
+font-weight:normal;
+}
+.CacheStarLabels dd{
+padding:0;
+}
+.CacheSize{
+float:left;
+}
+.CacheDescriptionHeader{
+margin-top:1em;
+}
+.CacheDetailPageAds,.GoogleAds{
+display:none;
+}
+.CacheDetailNavigationWidget{
+margin-bottom:1.5em;
+}
+.favorite-dropdown{
+display:none;
+}
+.UserSuppliedContent{
+margin-top:1em;
+}
+#dlgClipboard{
+display:none;
+}
+*+html .UserSuppliedContent img[align=right]{
+float:right;
+}
+.CoordInfoLinkWidget p{
+position:absolute;
+top:2em;
+right:10px;
+}
+.PageBreakBefore{
+height:15px;
+page-break-before:always;
+}
+a.CoordInfoLink,#uxFavContainerLink{
+text-decoration:none;
+}
+.logOwnerAvatar,.logOwnerStats,.logOwnerBadge,.LogContent p.LogText+.AlignRight,.LogImagesTable+.AlignRight,#pnlLazyLoad{
+display:none;
+}
+.LogDisplayRight,.LogDisplayRight .LogType{
+padding-left:0;
+}
+.LogDisplayRight .LogContent{
+border-left:none;
+padding-left:0;
+}
+.LogDisplayLeft,.LogDisplayRight,#log_tabs .LogDisplayRight{
+width:100%;
+}
+.LogImagesTable{
+background:none;
+border:none;
+margin-left:0;
+}
+.LogImagesTable tr td{
+background-color:transparent !important;
+}
+
+/*-----------------------------------------------------------------------
+End Cache Details
+----------------------------------------------------------------------- */

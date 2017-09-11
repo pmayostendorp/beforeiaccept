@@ -1,0 +1,300 @@
+/*
+	EVENTS
+*/
+
+#events #header {
+	height:151px;
+}
+#events #header, #events #footer{
+	background-color:#230648;
+}
+#events #header-banner {
+	height:auto;
+	margin:0;
+	padding:0;
+}
+/*#events #header-banner {
+	padding-left:120px;
+	background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+	background-position:-10px -1409px;
+	height:114px;
+}
+#events #header-banner h1 a {
+	color:#FFF;
+	font-weight:bold;
+	font-size:40px;
+	text-transform:uppercase;
+}
+#events #header-banner h1 {
+	float:none;
+}
+#events #header-banner p {
+	font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#9287a4;
+	position:absolute;
+	top:18px;
+	right:0;
+}
+
+#events #header-banner h2 {
+	font-size:77px;
+	font-weight:bold;
+	color:#FFF;
+}
+*/
+#events #pre-footer {
+	border-top:0 none;
+}
+#events #pre-footer .inner {
+	width:728px;
+}
+#events #pre-footer {
+	padding: 10px 0;
+}
+#events #pre-footer #footer-ad {
+	padding:0;
+	border-top:0 none;
+	height:auto;
+	background:#eee;
+}
+#events .footer-description {
+	color:#b2b2b2;
+	line-height:19px;
+	padding:15px 0;
+}
+#events #footer-site {
+	margin:1px 0 0;
+	border-top-color:#503f5d;
+}
+#events #footer-site, #events #footer-site a  {
+	/*color:#81718e;*/
+	color:#FFF;
+}
+#events .addthis_toolbox {
+	position:absolute;
+	top:0;
+	right:0;
+	font: normal 11px/34px Arial, sans-serif;
+	color:#808080;
+	border-left:1px solid #666;
+}
+#events .addthis_toolbox a {
+	font: normal 11px/34px Arial, sans-serif;
+	color:#808080;
+	text-indent:-9999em;
+	display:block;
+}
+#events .addthis_toolbox .at300bs {
+	display:none;
+}
+
+#events #main{
+	margin:17px 0 20px;
+}
+#events #main a {
+	color:#230648 !important;
+}
+#events #main b, #events #main strong {
+	font-weight:bold;
+}
+#events #main .db-separator {
+	margin:19px 0;
+}
+#events .mod {
+	border-top:0 none;
+}
+#events .mod-title {
+	border-bottom:2px solid #000;
+	padding:2px 0;
+	font-weight:bold !important;
+}
+#events .mod-footer a:hover {
+	text-decoration:underline;
+}
+#events .spanAB .mod {
+	border-bottom:1px solid #ccc;
+	margin:0 0 8px;
+	color:#666;
+	font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#events .spanAB .mod:last-child {
+	border-bottom:0 none;
+}
+#events .spanAB .mod-title {
+	font: bold 36px/36px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+	margin:5px 0 20px;
+}
+#events .spanAB h3.mod-title {
+	font-size:24px;
+	line-height:24px;
+	padding:5px 0;
+	margin-bottom:14px;
+}
+#events .spanAB .mod-content {
+	margin:0 0 2px;
+	border-top:0 none;
+	border-bottom:1px solid #ccc;
+	padding:0 0 16px;
+}
+#events .spanAB .mod:last-child .mod-content {
+	border-bottom:0 none;
+}
+#events .spanAB .mod-content ul {
+	/*margin-left:32px !important;*/
+	margin:0;
+}
+#events .spanAB .mod-content .cols-316 ul {
+	margin-top:20px;
+}
+#events .spanAB .mod-content ul li {
+	display: list-item;
+    list-style: disc inside;
+	
+}
+#events .media { 
+	margin:0 0 5px;
+}
+#events .media p {
+	font: normal 12px/14px Georgia, sans-serif !important;
+	margin:7px 0 20px !important;
+}
+#events .cols-316 .col p {
+	margin:-4px 0 0;
+}
+
+#events .colC .mod-title {
+	font-size:24px;
+	font-family:"Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+	padding:5px 0;
+}
+
+#events .colC .mod-content {
+	border-top:0 none !important;
+}
+#events .colC .mod-social a, #events .colC .mod-footer a {
+	font-weight:bold;
+}
+#events .colC .mod-social {
+	padding:0 0 2px;
+	border-bottom: 1px solid #ccc;
+	margin:0 0 15px;
+	color:#666;
+}
+#events .colC .mod-social .mod-content {
+	border-bottom: 1px solid #ccc;
+	padding:7px 0;
+}
+#events .colC .mod-social .mod-content p {
+	line-height:15px !important;
+}
+
+#events .colC .mod-footer {
+	text-transform: capitalize;
+	text-align:left;
+	letter-spacing:0;
+	color:#333;
+	padding:5px 0;
+}
+#events .colC .mod-footer a {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+#events .colC .mod-footer, #events .colC .mod-footer a {
+	font-size:12px;
+}
+
+/* Events Agenda */
+#events.agenda .spanAB .mod-title {
+	margin-bottom:0;
+}
+#events.agenda .spanAB .cols {
+	padding:17px 0;
+	border-bottom:1px solid #ccc;
+}
+#events.agenda .spanAB .cols .colleft {
+	width:147px;
+	text-align:right;
+	font-size:11px;
+	padding:2px 0 0;
+}
+#events.agenda .spanAB .cols .colright {
+	width:485px;
+	padding:0 0 0 20px;
+}
+#events.agenda .spanAB .cols .colright .headline {
+	font:normal 18px/18px Georgia, sans-serif;
+	color:#000;
+	padding:0 0 2px;
+	margin:28px 0 0;
+}
+#events.agenda .spanAB .cols .colright .headline:first-child {
+	margin:0;
+}
+#events.agenda .spanAB .cols .colright ul {
+	border-top:1px dotted #ccc;
+	margin-left:0 !important;
+	padding:4px 0 0;
+	margin:6px 0 0;
+}
+#events.agenda .spanAB .cols .colright li {
+	list-style-position: outside;
+}
+
+/* Events speakers */
+#events.speakers .spanAB .mod-title {
+	margin-bottom:0;
+}
+#events.speakers .cols-316 .col p {
+	margin:0;
+}
+#events.speakers .cols-316 .col {
+	border-top:2px solid #000;
+	padding:14px 0 17px;
+}
+#events.speakers .cols-316:first-child .col {
+	border-top:0 none;
+}
+.speaker-header {
+	position:relative;
+	font:normal 18px/18px Georgia;
+	color:#000;
+
+}
+.speaker-header {
+}
+.speaker-header span {
+	color:#666;
+	display:block;
+	font: 14px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.speaker-content {
+	border-top: 1px solid #ccc;
+	line-height:18px;
+	margin:8px 0 0;
+	padding:5px 0 0;
+}
+#events .speaker-content .media {
+	float:left;
+	margin: 5px 10px 5px 0;
+}
+#events .mod-title {
+	overflow:hidden;
+	*zoom:1;
+}
+#events .mod-title span.ff-Palatino, #events .mod-title em {
+	display:block;
+	float:left;
+}
+.feedadweek {
+	background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png");
+	background-position:-3px -1599px;
+	width:100px;
+	text-indent:-9999em;;
+}
+.win .feedadweek {
+	background-position:-3px -1597px;
+}
+.ie .feedadweek {
+	background-position:-3px -1598px;
+}

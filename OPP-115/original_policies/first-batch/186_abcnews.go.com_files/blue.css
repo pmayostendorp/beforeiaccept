@@ -1,0 +1,156 @@
+/* Elegance v2.1 - blue   */
+
+.colorscheme_bg,.wp-pagenavi .current,.paged-navigation .current,.additional_posts_module .post_grid_content,
+body,body>.multibg>.multibg,.wp-pagenavi .current,.paged-navigation .current,
+#footer,.fancy_meta span,#slider_module_inner .partial_gradient_slide .slide_overlay,
+.button_link,.fancy_button,#searchsubmit,#submit,.cluetip-default,
+.titled_box_title,.colored_box,.dropcap4,.pullquote4,.highlight,
+.tabs_button a.current,.fancy_header span,.minimal_table th{/*:Color Scheme*/
+background-color:#00437f;}
+.colorscheme_color,h1,.post_title,.post_title a,.intro_title,.tabs a.current,
+a:hover,.fancy_link,.dropcap2,.pullquote3,.highlight2,h5{/*:Color Scheme*/
+color:#00437f;}
+.colorscheme_border,.wp-pagenavi .current,.paged-navigation .current,
+body,#footer,.fancy_meta span,#slider_module_inner .partial_gradient_slide .slide_overlay,
+.button_link,.fancy_button,#searchsubmit,#submit,.cluetip-default,.cluetip-default .cluetip-arrows,
+.titled_box_title,.colored_box,.dropcap4,.pullquote4,.highlight,
+.tabs_button a.current,.fancy_header span,.minimal_table th{/*:Color Scheme*/
+border-color:#00437f;}
+.colorscheme_sprite,#content .mysite_twitter_widget li,#content .recentcomments,.post_comments_bubble,#content .activation_link_list li,
+#content .widget_archive li,#content .widget_categories li,#content .widget_links li,#content .widget_nav_menu li,
+#content .widget_pages li,#content .mysite_subnav_widget li,#content .widget_recent_entries li,
+#content .contact_widget_name,#content .contact_widget_phone,#content .contact_widget_email,
+.toggle,.toggle_accordion,.active,.toggle_frame .toggle,.toggle_frame .toggle_accordion,.toggle_frame .active,
+.fancy_list .arrow_list,.fancy_list .bullet_list,.fancy_list .check_list,.fancy_list .circle_arrow,.fancy_list .triangle_arrow,.fancy_list .comment_list,.fancy_list .minus_list,.fancy_list .plus_list,.fancy_list .star_list,.sitemap_list li,
+blockquote,.download_link,.email_link,.twitter_link,.dropcap,.dropcap3,.tabs_vertical li.current span, .featured_tabs li.current_page_item span{/*:Icon Sprite*/ 
+background-image:url(../images/shortcodes/sprites/custom_sprite_00437f.png);}
+
+
+/*:General Typography ~*~*/
+body{/*:Body Font */
+color:#666;font-size:12px;font-weight:normal;font-style:normal;font-family:"Lucida Sans Unicode","Lucida Grande","Droid Sans",sans-serif;}
+h1{/*:h1 Font*/ 
+/*color:#888@;*/font-size:41px;font-weight:normal;font-style:normal;font-family:segan;}
+h2{/*:h2 Font*/ 
+color:#444;font-size:31px;font-weight:normal;font-style:normal;font-family:segan;}
+h3{/*:h3 Font*/ 
+color:#444;font-size:27px;font-weight:normal;font-style:normal;font-family:segan;}
+h4{/*:h4 Font*/ 
+color:#333;font-size:20px;font-weight:normal;font-style:normal;font-family:segan;}
+h5{/*:h5 Font*/ 
+/*color:#444@;*/font-size:11px;font-weight:normal;font-style:normal;font-family:inherit;}
+h6{/*:h6 Font*/ 
+color:#aaa;font-size:10px;font-weight:normal;font-style:normal;font-family:inherit;}
+a{/*:Link */
+color:#aaa;text-decoration:none;}
+a:hover{/*:Link Hover */
+/*color:#888@;*/text-decoration:underline;}
+/*:Typo End ~*~*/
+
+
+/*:Body ~*~*/
+body{/*:Body BG+ */
+background-image:url(../images/body.png);background-color:#f9f9f9;background-repeat:repeat-x;background-attachment:scroll;background-position:center 5px;}
+body{/*:Body Top Border */
+/*border-top-color:inherit@;*/border-top-width:5px;border-top-style:solid;}
+/*:Body End ~*~*/
+
+
+/*:Header ~*~*/
+.logo a{/*:Logo Font */
+color:#292929;font-size:30px;font-weight:normal;font-style:normal;font-family:inherit;}
+#header{/*:Header Background */
+background-image:url(../images/header.png);background-color:transparent;background-repeat:no-repeat;background-attachment:scroll;background-position:center bottom;}
+/*:Header End ~*~*/
+
+
+/*:Menu ~*~*/
+.jqueryslidemenu a{/*:Menu Font */
+color:#808080;font-size:13px;font-weight:normal;font-style:normal;font-family:segan;}
+#primary_menu{/*:Menu Background */
+background-image:url(../images/menu_bg.png);background-color:transparent;background-repeat:repeat-x;background-attachment:scroll;background-position:left top;}
+/*:Menu End ~*~*/
+
+
+/*:Intro ~*~*/
+#intro .intro_title{/*:Intro Title Font */
+/*color:#888@;*/font-size:41px;font-weight:normal;font-style:normal;font-family:segan;}
+#intro .teaser{/*:Intro Teaser Font */
+color:#777;font-size:18px;font-weight:normal;font-style:normal;font-family:segan;}
+#slider_module+#intro h3{/*:Call to Action Font*/ 
+color:#777;font-size:20px;font-weight:normal;font-style:normal;font-family:segan;}
+#breadcrumbs,#breadcrumbs a{/*:Breadcrumbs Font */
+color:#bbb;font-size:10px;font-weight:normal;font-style:normal;font-family:inherit;}
+#intro{/*:Intro Background */
+background-image:url(../images/intro.png);background-color:transparent;background-repeat:no-repeat;background-attachment:scroll;background-position:center top;}
+#slider_module,#intro{/*:Intro Bottom Border */
+border-bottom-color:#dadada;border-bottom-width:1px;border-bottom-style:solid;}
+/*:Intro End ~*~*/
+
+
+/*:Main Content ~*~*/
+#sidebar .widgettitle,.about_author_title,.share_this_title,.additional_posts_title,.commentlist_title,#reply-title,#comments-title,
+.blog_tabs{/*:Section Titles Font */
+color:#444;font-size:13px;font-weight:normal;font-style:normal;font-family:segan;}
+#sidebar .widgettitle,.about_author_title,.share_this_title,.additional_posts_title,.commentlist_title,#reply-title,#comments-title,.blog_tabs{/*:Section Titles Background */
+background-image:url(../images/menu_bg.png);background-color:transparent;background-repeat:repeat-x;background-attachment:scroll;background-position:left top;}
+#sidebar .widgettitle,.about_author_title,.share_this_title,.additional_posts_title,.commentlist_title,#reply-title,#comments-title,.blog_tabs{/*:Section Titles Top Border */
+border-top-color:#dadada;border-top-width:1px;border-top-style:none;}
+#sidebar .widgettitle,.about_author_title,.share_this_title,.additional_posts_title,.commentlist_title,#reply-title,#comments-title,.blog_tabs{/*:Section Titles Bottom Border */
+border-bottom-color:#dadada;border-bottom-width:1px;border-bottom-style:none;}
+/*:Main End ~*~*/
+
+
+/*:Outro ~*~*/
+#outro,#outro a{/*:Outro Font */
+color:#777;font-size:18px;font-weight:normal;font-style:normal;font-family:segan;}
+#outro{/*:Outro Background */
+background-image:none;background-color:transparent;background-repeat:repeat;background-attachment:scroll;background-position:left top;}
+#outro_inner,.commentlist li{/*:Outro Top Border */
+border-top-color:#e0e0e0;border-top-width:1px;border-top-style:solid;}
+/*:Outro End ~*~*/
+
+
+/*:Footer ~*~*/
+#footer{/*:Footer Font */
+color:#eee;font-size:11px;font-weight:normal;font-style:normal;font-family:inherit;}
+#footer .widgettitle{/*:Footer Titles Font */
+color:#fff;font-size:14px;font-weight:normal;font-style:normal;font-family:inherit;}
+#footer a{/*:Footer Links */
+color:#eee;text-decoration:none;}
+#footer a:hover{/*:Footer Link Hover */
+color:#fff;text-decoration:none;} 
+#footer{/*:Footer Background */
+background-image:url(blue/footer.jpg);background-color:#003A6C;background-repeat:repeat-x;background-attachment:scroll;background-position:left top;}
+#footer_inner{/*:Footer Top Border */
+border-top-color:#dadada;border-top-width:0px;border-top-style:none;} 
+/*:Footer End ~*~*/
+
+
+/*:Sub Footer ~*~*/
+#sub_footer,#sub_footer a{/*:Sub Footer Font */
+color:#ccc;font-size:9px;font-weight:normal;font-style:normal;font-family:inherit;}
+#sub_footer{/*:Sub Footer Background */
+background-image:url(../images/sub_footer.png);/*background-color:inherit@;*/background-repeat:repeat-x;background-attachment:scroll;background-position:center top;}
+/*:Sub Footer End ~*~*/
+
+
+/*:Misc ~*~*/
+.post_title,.post_title a{/*:Post Title Color */ 
+/*color:inherit@;*/}
+.fancy_meta span,.partial_gradient_slide .slide_overlay{/*:Image Overlay Color */
+/*background-color:#111@;*/}
+.toggle a,.toggle_accordion a{/*:Toggle Title Font*/ 
+color:#888;font-size:15px;font-weight:normal;font-style:normal;font-family:segan;}
+#content .teaser{/*:Content Teaser Font */ 
+color:#777;font-size:18px;font-weight:normal;font-style:normal;font-family:segan;}
+/*:Misc End ~*~*/
+
+
+/* Custom CSS */
+
+#sidebar .widgettitle:after{content:" ";position:absolute;top:44px;left:0;width:100%;height:72px;z-index:-1;background:url(../images/widget_shadow.png) no-repeat center top;}
+#slider_module+#intro{background:none;}
+#slider_module+#intro+#content #content_inner{background-image:url(../images/intro.png);background-repeat:no-repeat;background-position:center top;}
+#slider_module+#intro+#content #content_inner,#slider_module+#intro{border-top:1px solid #E8E8E8;margin-top:1px;}
+.about_author_module,.share_this_module,#comments,#respond{background:url(../images/module_shadow.png) no-repeat center 44px;}

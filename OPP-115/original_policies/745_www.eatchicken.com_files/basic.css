@@ -1,0 +1,998 @@
+body { font-family: Geneva, Tahoma, sans-serif; background-color: #ffc; padding: 0px; margin: 0px; background-image: url(../images/homebackground.jpg); background-repeat: repeat-x; background-position: left top; margin: 0; padding: 0; }
+p { font-size: 12px; line-height:1.4;}
+h1 {color: #039; margin: 0; font-size: 14px; font-family: Trebuchet, Geneva, Tahoma, sans-serif; font-weight: bold; text-align: left; padding: 5px 10px 0 0; }
+h2 { color: #039; font-size: 13px; font-weight: bold; text-align: left; margin: 0; }
+h2 a {color: #06c; text-decoration: none; }
+h2 a:hover, h2 a:active {color: #039; text-decoration: none; }
+h3 { color: #06c; font-size: 13px; font-weight: bold; margin: 0 0 0; }
+/* Link */
+a:link { font-size: 12px; font-family: Geneva, Tahoma, sans-serif; color: #039; text-align: left }
+a:visited { color: #666; font-size: 12px; font-family: Geneva, Tahoma, sans-serif;  text-align: left  }
+a:hover { color: #900;font-size: 12px; font-family: Geneva, Tahoma, sans-serif; text-align: left  }
+a:active {color: #900; font-size: 12px; font-family: Geneva, Tahoma, sans-serif;  text-align: left }
+/* End Link */
+li { font-size: 12px; text-align: left; color: black
+; margin-top: 0.7em; margin-bottom: 0.7em; margin-left: 20px; }
+li a {
+color: #06c;
+}
+li a:visited {
+color: #666
+}
+li a:active, li a:hover {
+color: #039;
+}
+
+/* Layout */ 
+#outercontainer { 
+	margin: 0 auto; 
+	padding:0;
+	width: 988px;
+	min-height:700px;
+	background-image: url(../images/mainbackground.png); 
+	background-repeat: repeat-y; 
+	background-position: left top; 
+}
+#container { 
+	margin: 0 auto; 
+	width: 980px;
+	background-color: transparent;
+	clear:both;
+}
+
+/* Begin Left column */
+
+
+#leftcolcontainer { background-color: #fff; 
+margin:0; 
+padding:0; 
+float:left; 
+width:702px;
+background-image: url(../images/topbackground.jpg); 
+   background-repeat: no-repeat; 
+   background-position: right top; 
+   }
+
+#leftcol1{
+   height: 95px; 
+  width:702px;
+	
+}
+#leftcol1 #logo {
+float: left;
+width: 236px;
+}
+#leftcol1 #right {
+float: right;
+width: 465px
+}
+/* login menu */
+#leftcol1 #right #login { color: white; font-size: 10px; width: 420px; height: 35px; float: right; margin-right: 5px; clear: both; }
+#leftcol1 #right #login a {
+color: black;
+font-size: 11px;
+text-decoration: none;
+text-align: left;
+font-weight: normal;
+}
+#leftcol1 #right #login a:hover, #leftcol1 #right #login a:active {
+color: white;
+text-decoration: underline;
+}
+#leftcol1 #login #left {
+float: left;
+width: 14px;
+}
+#leftcol1 #right #login #middle { background-image: url(../images/loginmiddle.png); background-repeat: repeat-x; background-position: left top; float: left; width: 320px; height: 35px; padding-top: 5px; text-align: right }
+#leftcol1 #right #login #right1{
+float: left;
+width: 14px;
+}
+#leftcol1  #right #login #right2{
+float: right;
+width: 68px;
+height: 35px;
+}
+/* End login menu */
+/* Begin Top Nav */
+#leftcol1  #right #tnav {
+float: right; width: 410px; margin: 15px 5px 5px;
+}
+#leftcol1  #right #tnav a {
+display: inline; color: #0066CC; text-align: left; font-weight: normal; font-size: 12px; font-weight:bold; padding-left: 6px; text-decoration: none
+}
+#leftcol1 #right #tnav a:visited {color: #0066cc}
+#leftcol1 #right #tnav a:hover, #leftcol1 #right #tnav a:active {color: #003399 }/* End Top Nav */
+
+
+#leftcol2 { color: #fff; 
+	background-color: white; 
+	background-image: url(../images/navbar.jpg); 
+	background-repeat: repeat-x; 
+	background-position: left top; 
+	height: 43px;
+	width:702px;
+}
+/* Begin main nav */
+#leftcol2 #mainnav {
+padding-top:10px;
+}
+#leftcol2 #mainnav a {
+display: inline; color: white;  text-align: left; font-size: 14px; font-weight:bold; padding: 0 20px; text-decoration: none
+}
+#leftcol2 #mainnav a:hover {
+display: inline; color: #ffcc00; border: #cc9900 solid 1px; text-align: left; font-size: 14px; font-weight:bold; margin: 0 -1px; text-decoration: none
+}
+#leftcol2 #mainnav a.first {
+margin: 0 100px 0 60px;
+}
+#leftcol2 #mainnav a.first:hover {
+display: inline; color: #ffcc00; border: #cc9900 solid 1px; text-align: left; font-size: 14px; font-weight:bold; margin:0 99px 0 59px; text-decoration: none
+}
+/* end main nav */
+
+#leftcol3{
+  padding: 15px;
+	width:672px;
+}
+
+#leftcol4 { 
+   padding: 0; 
+   background-color: white; 
+   background-image: url(../images/headlinebackground.jpg); 
+   background-repeat: repeat-y; 
+   background-position: 219px top; 
+   height: 30px; 
+   margin: 0; 
+	width:702px;
+}
+
+#leftcol4sub { 
+   padding: 0; 
+   height: 30px; 
+   margin: 0; 
+}
+
+#leftcol4 p {
+   padding-top: 10px;
+   color: #0066CC;
+   font-size:10px;
+   font-weight:bold;
+}
+
+#subpageicons { height: 15px; float:right; padding-right:20px; display: inline; }
+
+#subpageicons a:link, #subpageicons a:active, #subpageicons a:hover, #subpageicons a:visited {
+	font-size: 10px !important;
+}
+#subpageicons a#email { vertical-align: top; padding-left: 5px; background:none;}
+#subpageicons a#print { vertical-align: top; padding-left: 5px; }
+#subpageicons a:link, #subpageicons a:visited { color:#36c;  }
+
+#subpageicons a:active, #subpageicons a:hover { color:#333;
+}
+
+
+#leftcol5 {
+   margin-top:10px;
+   padding:10px;
+	width:682px;
+}
+#leftcol6 {
+padding: 0; 
+   background-color: white; 
+   background-image: url(../images/headlinebackground.jpg); 
+   background-repeat: repeat-y; 
+   background-position: 219px top; 
+   height: 30px; 
+   margin: 0; 
+	width:702px;
+	}
+#leftcol7 {
+padding: 15px;
+padding-bottom:0;
+width: 702px;
+}
+#leftcol7 #left { width: 442px; float: left; background-image: url(../images/twoboxesbackground.jpg); background-repeat: no-repeat; background-position: left top; padding: 5px; }
+#leftcol7 #right { float: left; width: 200px; background-color: #ffffff; margin-left: 10px; }
+#leftcol8 {
+ padding: 15px;
+	width:700px;
+	bottom:50px;
+	float: left; 
+	font-size: 10px;
+	color: #666;
+}
+#leftcol8 a {
+display: inline; 
+color: #0066CC; 
+text-align: left; 
+font-weight: normal; 
+font-size: 12px; 
+padding: 0 3px; 
+text-decoration: none
+}
+#leftcol8 a:hover, #leftcol8 a:active, {
+color: #003399; 
+text-decoration: underline;
+
+}
+#specials {
+	color: #fff; 
+	background-color: transparent;  
+	padding: 0; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	width: 672px; height: 260px;
+}
+#specials p { color: #000; margin: 0; font-size: 12px; font-family: Geneva, Tahoma, sans-serif; text-align: left; padding: 10px 10px 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+#specials h1 { color: #039; margin: 0; font-size: 14px; font-family: Geneva, Tahoma, sans-serif; font-weight: bold; text-align: left; padding: 5px 10px 0; 
+}
+#specials a { text-decoration: none; color: #036;
+}
+#specials #left { color: #000; background-image: url(../images/threeboxesbackground.jpg); background-repeat: no-repeat; background-position: left top; width: 210px; height: 216px; float: left; padding: 5px; text-align: left; margin-left: 10px;}
+#specials #middle { color: #000; background-image: url(../images/threeboxesbackground.jpg); background-repeat: no-repeat; background-position: left top; width: 210px; height: 216px; float: left; text-align: left; padding: 5px;}
+#specials #right { color: #000; background-image: url(../images/threeboxesbackground.jpg); background-repeat: no-repeat; background-position: left top; width: 210px; height: 216px; float: right; text-align: left; padding: 5px;}
+/* End Left column */
+
+/* Right column */
+#rightcol {
+ float: right;
+ margin:0;
+ padding: 15px;
+ width: 248px;
+}
+#search { padding: 5px 5px 5px 0; background-color: #fff; background-image: url(../images/recipebackground.jpg); background-repeat: repeat-x; background-position: left top; text-align: left; width: 240px; }
+#find {margin-top: 0px
+}
+#Searchbuton {
+border: none; margin-top: 3px; margin-left: 20px; border: 0px
+}
+#ctl00_searchcont_SearchButton {
+border:0 none;
+margin-top:10px;
+}
+#search h1 {
+color: #900;
+text-align: left;
+font-size: 14px;
+margin: 0px;
+padding-left: 10px;
+}
+#search p {
+color: #039;
+text-align: left;
+font-size: 10px;
+font-family: Trebuchet, geneva, tahoma, sans-serif;
+text-align: left;
+padding-left: 10px;
+}
+.fieldHolder
+{ padding-left: 5px; width: 225px; height: 45px; background: url(../images/searchfield.jpg) no-repeat left 5px; margin-left: 8px }
+form.searchform { text-align:left; font-size:12px; color: #039; width:200px; margin-left: 10px;  }
+
+form.searchform a {
+color: #900;
+font-size: 14px;
+font-weight: bold
+}
+select { color: #039; padding: 5px; font-size: 12px; width: 170px; margin: 2px 5px; }
+form.searchform a {font-size:10px !important;}
+/* Search */
+
+.textInput2 {
+background:none repeat scroll 0 0 transparent;
+border:medium none;
+width:180px; }
+/* End search */
+
+#recipebox { 
+width: 240px;
+height: 130px;
+margin: 10px 0;
+padding: 5px 5px 5px 0;  
+background-color: #fff; 
+background-image: url(../images/recipebackground.jpg); 
+background-repeat: repeat-x; 
+background-position: left top;
+}
+#recipebox h1 {
+color: #900;
+text-align: left;
+font-size: 12px;
+margin: 0;
+padding-left: 10px;
+}
+#recipebox p {
+color: #039;
+text-align: left;
+font-size: 10px;
+font-family: Trebuchet, geneva, tahoma, sans-serif;
+text-align: left;
+padding-left: 10px;
+}
+#email { 
+width: 240px;
+height: 130px;
+background-image: url(../images/recipebackground.jpg); background-repeat: repeat-x; background-position: left top;
+padding: 5px 5px 5px 0px;  
+background-color: white;
+ margin-top: 10px;
+}
+#email h1 {
+color: #900;
+text-align: left;
+font-size: 12px;
+margin: 0px;
+padding-left: 10px;
+}
+#email p {
+color: #039;
+text-align: left;
+font-size: 10px;
+font-family: Trebuchet, geneva, tahoma, sans-serif;
+text-align: left;
+padding-left: 10px;
+}
+#twitter { width: 245px; height: 150px; margin-top: 10px; clear:both; }
+#twitter_div { 
+background-image: url(../images/twitterbackground.gif); 
+background-repeat: repeat-y; 
+background-position: left top;
+padding: 0 10px;
+}
+#twitter_div #twitter_update_list { font-size:11px; margin-left:0; padding-left:15px; }
+
+#twitter_div a#twitter-link:link  { color:#990000;}
+/* End Right Column */
+
+/* Begin Footer */
+
+#footer{ clear: both; width: 980px; background-image: url(../images/footerbackground.gif); background-repeat: repeat-x; background-position: left top; height: 63px; margin: 0 auto; padding: 0;
+}
+#footer #copyright {
+font-size: 9px;
+color: #666;
+text-align: left;
+padding: 5px 0 0 30px;
+}
+/* begin bottom nav */
+#footer #bottomnav{
+width: 500px;
+color: #cc9900;
+font-size: .7em;
+padding: 20px 0 0 30px;
+}
+
+#footer #bottomnav a, #bottomnav a:link, #bottomnav a:visited {
+color: #cc9900;
+display: inline;
+text-decoration: none;
+}
+
+#footer #bottomnav a:hover, #bottomnav a:active {
+color:#CC0000;
+text-decoration:none;
+}
+#footer #social { float: right; padding-top: 20px; padding-right: 20px; padding-left: 5px; }
+/* End Footer */
+/* End layout */
+
+/* IE PNG Fix */
+img { behavior: url(iepngfix.htc) }
+/* Rounded corner */
+.xtop, .xbottom {
+display : block;
+background : transparent;
+font-size : 1px;
+margin:0;
+padding:0;
+width: 80px
+}
+.xtop1, .xbottom1 {
+display : block;
+background : transparent;
+font-size : 1px;
+margin:0;
+padding:0;
+width: 72px
+}
+.xtop2, .xbottom2 {
+display : block;
+background : transparent;
+font-size : 1px;
+margin:0;
+padding:0;
+width: 110px
+}
+.xtop3, .xbottom3 {
+display : block;
+background : transparent;
+font-size : 1px;
+margin:0;
+padding:0;
+width: 110px
+}
+.xb1, .xb2, .xb3, .xb4 {
+display : block;
+overflow : hidden;
+}
+.xb1, .xb2, .xb3 {
+height : 1px;
+}
+.xb2, .xb3, .xb4 {
+background : transparent;
+border-left : 1px solid #cc9900;
+border-right : 1px solid #cc9900;
+}
+.xb1 {
+margin : 0 5px;
+background : #cc9900;
+}
+.xb2 {
+margin : 0 3px;
+border-width : 0 2px;
+}
+.xb3 {
+margin : 0 2px;
+}
+.xb4 {
+height : 2px;
+margin : 0 1px;
+}
+.xboxcontent {
+display : block;
+width: 78px;
+background : transparent;
+border-color : #cc9900;
+border-style : solid;
+border-width : 0 1px;
+}
+.xboxcontent1 {
+display : block;
+width: 70px;
+background : transparent;
+border-color : #cc9900;
+border-style : solid;
+border-width : 0 1px;
+}
+.xboxcontent2 {
+display : block;
+width: 100px;
+background : transparent;
+border-color : #cc9900;
+border-style : solid;
+border-width : 0 1px;
+}
+.xboxcontent3 {
+display : block;
+width:108px;
+background-color : transparent;
+border-color : #cc9900;
+border-style : solid;
+border-width : 0 1px;
+}
+.xboxcontent4 {
+display : block;
+width: 110px;
+background : transparent;
+border-color : #cc9900;
+border-style : solid;
+border-width : 0 1px;
+}
+/* end Rounded Corner */
+/*Rounded corner box with images */
+#box
+	{ margin-top: 10px; padding: 0px; text-align: left; width:250px; background-color: white; background-image: url(../images/barbecuerecipe.jpg); background-repeat: no-repeat; background-position: left 8px;;
+	}
+ 	
+#content
+	{
+	padding:10px 10px 10px 80px;
+	}
+
+#content h1
+	{
+	color:#0354c2;
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: helvetica, geneva, arial, sans-serif;
+	}
+		
+#content p
+	{
+	color:#3b3b3b;
+	font-size: 1em;
+	line-height: 1.3em;
+	font-family: Geneva, Tahoma, sans-serif;
+	}
+		
+/* ---=== border code follows ===--- */
+/*
+	tlc = top left corner
+	trc = top right corner
+	blc = bottom left corner
+	brc = bottom right corner
+	lb = left border
+	rb = right border
+	tb = top border
+	bb = bottom border 
+*/
+
+
+
+#tlc, #trc, #blc, #brc
+	{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	}
+
+#tlc
+	{
+	background-image:url(../images/tlc.jpg);
+	background-position: 0% 0%;
+	}
+
+#trc
+	{
+	background-image:url(../images/trc.jpg);
+	background-position: 100% 0%;
+	}
+	
+#blc
+	{
+	background-image:url(../images/blc.jpg);
+	background-position: 0% 100%;
+	}
+
+#brc
+	{
+	background-image:url(../images/brc.jpg);
+	background-position: 100% 100%;
+	}
+
+#tb, #bb
+	{
+	background-color: transparent;
+	background-repeat: repeat-x;
+	}
+			
+#tb
+	{
+	background-image:url(../images/t.jpg);
+	background-position: 0% 0%;
+	}
+
+#bb
+	{
+	background-image:url(../images/b.jpg);
+	background-position: 50% 100%;
+	}
+	
+#rb
+	{
+	background-image:url(../images/r.jpg);
+	background-position: 100% 0%;
+	background-repeat: repeat-y;
+	}
+
+#lb
+	{
+	background-image:url(../images/l.jpg);
+	background-position: 0% 100%;
+	background-repeat: repeat-y;
+	}
+/* Rounded corner box blue */
+	.roundedcornr_box_147154 {
+   background: #bcdaf4;
+}
+.roundedcornr_top_147154 div {
+   background: url(../images/roundedcornr_147154_tl.png) no-repeat top left;
+}
+.roundedcornr_top_147154 {
+   background: url(../images/roundedcornr_147154_tr.png) no-repeat top right;
+}
+.roundedcornr_bottom_147154 div {
+   background: url(../images/roundedcornr_147154_bl.png) no-repeat bottom left;
+}
+.roundedcornr_bottom_147154 {
+   background: url(../images/roundedcornr_147154_br.png) no-repeat bottom right;
+}
+
+.roundedcornr_top_147154 div, .roundedcornr_top_147154, 
+.roundedcornr_bottom_147154 div, .roundedcornr_bottom_147154 {
+   width: 100%;
+   height: 20px;
+   font-size: 1px;
+}
+.roundedcornr_content_147154 { margin: 0 20px; }
+/* Another rounded corner box */
+.roundedcornr_box_552066 {
+   background: #e5cc7f;
+}
+.roundedcornr_top_552066 div {
+   background: url(../images/roundedcornr_552066_tl.png) no-repeat top left;
+}
+.roundedcornr_top_552066 {
+   background: url(../images/roundedcornr_552066_tr.png) no-repeat top right;
+}
+.roundedcornr_bottom_552066 div {
+   background: url(../images/roundedcornr_552066_bl.png) no-repeat bottom left;
+}
+.roundedcornr_bottom_552066 {
+   background: url(../images/roundedcornr_552066_br.png) no-repeat bottom right;
+}
+
+.roundedcornr_top_552066 div, .roundedcornr_top_552066, 
+.roundedcornr_bottom_552066 div, .roundedcornr_bottom_552066 {
+   width: 100%;
+   height: 20px;
+   font-size: 1px;
+}
+.roundedcornr_content_552066 { margin: 0 10px; }
+
+#box2 { 
+margin-top: 10px; 
+width:245px; 
+background-color: white; 
+}
+
+
+
+#breadcrumbs, #breadcrumbs a {font-size:10px !important; color:#003399; text-decoration: none;}
+
+#breadcrumbs a:hover, #breadcrumbs a:active { color: #990000}
+
+#advancedsearch {
+float:right;
+clear:none;
+width:450px;
+margin-right:10px;
+}
+
+#advancedsearch p {
+	font-size: 12px !important;
+	padding:5px 10px;
+}
+
+.selectbox {
+	width:200px;
+}
+
+#searchresults {
+padding:10px;
+background-color:#fff5c9;
+color: #006;
+}
+
+
+code {
+color:#900;
+background-color:#FFFF00;
+}
+
+/* Rounded corner for search results div*/
+.ytop, .ybottom {
+display : block;
+background : transparent;
+font-size : 1px;
+margin:0;
+padding:0;
+}
+.ytop2, .ybottom2 {
+display : block;
+background : transparent;
+font-size : 1px;
+margin:0;
+padding:0;
+}
+.yb1, .yb2, .yb3, .yb4 {
+display : block;
+overflow : hidden;
+}
+.yb1, .yb2, .yb3 {
+height : 1px;
+}
+.yb2, .yb3, .yb4 {
+background-color : #fff5c9;
+border-left : 1px solid #fff5c9;
+border-right : 1px solid #fff5c9;
+}
+.yb1 {
+margin : 0 5px;
+background : #fff5c9;
+}
+.yb2 {
+margin : 0 3px;
+border-width : 0 2px;
+}
+.yb3 {
+margin : 0 2px;
+}
+.yb4 {
+height : 2px;
+margin : 0 1px;
+}
+.yboxcontent {
+display : block;
+background : transparent;
+border-color : #fff5c9;
+border-style : solid;
+border-width : 0 1px;
+}
+
+
+
+#tabs {
+	display:inline; 
+	list-style:none;
+	padding:0 1em;
+	margin:0;
+}
+#tabs li {
+	float:left;
+	margin:0;
+	padding:0;
+}
+#tabs img { border-style:none; }
+
+#tabs A {
+	display:block;
+	margin:0;
+	padding:0;
+	outline:none;
+}
+
+#newboxes1, #newboxes2, #newboxes3, #chickenmonth {
+padding:10px;
+}
+
+#newboxes1 { background-color:#ffc; }
+#newboxes1 a, #newboxes2 a, #newboxes3 a {
+color: #06c; font-size: 12px
+}
+#newboxes1 a:visited, #newboxes2 a:visited, #newboxes3 a:visited {
+color: #666;
+}
+#newboxes1 a:hover, #newboxes2 a:hover, #newsboxes3 a:hover, #newboxes1 a:active, #newboxes2 a:active, #newboxes3 a:active {
+color: #900;
+}
+#chickenmonth { background-color: #e5cc7f; }
+#chickenmonth a {
+color: #06c;
+}
+#chickenmonth a:visited {
+color: #666;
+}
+#chickenmonth a:hover, #chickenmonth a:active {
+color: #900;
+}
+#newboxes2 { background-color:#bcdaf4; }
+#newboxes3 { background-color:#e5cc7f; }
+
+#addrecipe { font-size: 12px; font-family: geneva, Arial, Helvetica, sans-serif; float: right; width: 460px; padding-right: 5px  }
+#addrecipe #background { background-color: #fcf6cc; padding: 10px; }
+#video, {
+float: right; width: 250px; color: #039; padding-bottom: 5px;  }
+#video a {display: inline; text-decoration: none; font-size: 12px; }
+
+#recipeboxsignup {
+float:right;
+clear:none;
+width:430px;
+background-color:#fff5c9;
+color: #006;
+padding:10px;
+margin:0;
+}
+ol { list-style-type: decimal; margin: 1em 0 1em 10px; }
+/* Recipe Page */
+#recipe1 {
+float: left; 
+width: 240px;
+}
+#recipe1 #photo 
+{
+float: right;
+width: 240px;
+}
+#recipe1 #photo img
+{
+float: right;
+}
+#recipefacts { 
+width: 185px;
+height: 138px;
+text-align: left;
+float: right;
+margin-top: 5px
+}
+#recipedescription, #recipesimilar { 
+width: 185px;
+float: right;
+margin-top: 5px
+}
+#recipe2 {
+float:right; 
+clear:none; width:420px;
+padding-right: 15px;
+}
+/* Search results */
+#sortresults {
+float:left;
+clear:  none;
+color: #06c;
+text-align: left;
+font-size: 11px
+}
+#sortresults a {
+color: #06C;
+text-decoration: none;
+}
+#sortresults a:visited {
+color: #666;
+text-decoration: none;
+}
+#sortresults a:hover, #sortresults a:hover {
+color: #900;
+text-decoration: underline;
+}
+.searchresultsitem {
+margin:10px;
+padding:10px;
+}
+.searchresultsitemwhite {
+margin:10px;
+padding:10px;
+background-color: white
+}
+.searchresultsitem_thumb { 
+float:left;
+clear:none;
+margin-right:20px;
+}
+.searchresultsnav {
+float:right;
+clear:none;
+font-size: 11px;
+color: #06c
+}
+.searchresultsnav a {
+color: #06c;
+text-decoration: none;
+}
+.searchresultsnav a:visited {
+color: #666;
+text-decoration: none;
+}
+.searchresultsnav a:hover, .searchresultsnav a:active {
+color: #900;
+text-decoration: underline;
+}
+/* form elements */
+input {
+border: 1px solid #900}
+textarea {
+border: 1px solid #900}
+
+.roundedcornr_content_552066 input {
+border: none; }
+roundedcornr_content_552066  {
+text-align: left;
+}
+
+/* My Recipe Page */
+#myrecipes {
+float: left; 
+width: 230px;
+background-color: #bcdaf4;
+margin: 10px;
+}
+#myrecipescontent {
+padding: 10px
+}
+#myrecipescontent a {
+color: #039;
+text-decoration: none
+}
+#myrecipescontent a:visited {
+color: black;
+text-decoration: none
+}
+#myrecipescontent a:hover, #myrecipescontent a:active {
+color: #900;
+text-decoration: underline
+}
+#profilesm {
+float: left;
+width: 57px;
+padding-right: 5px;
+padding-bottom: 5px
+}
+#myrecipeselect {
+background-color: #ffffcc;
+
+padding: 5px;
+color: #039;
+font-size: 12px;
+text-align: left;
+width: 200px
+}
+
+#myrecipeselect h2 {
+color: #900;
+font-size: 12px;
+font-weight: normal;
+}
+#myrecipeselect h2 a.selected {
+color: #900;
+font-size: 14px;
+font-weight: bold;
+text-decoration: none
+}
+#myrecipeselect h2 a.selected:hover, #myrecipeselect h2 a.selected:active {
+color: #039;
+}
+#myrecipeselect h2 a.off {
+color: #666;
+font-size: 12px;
+font-weight: bold;
+text-decoration: none
+}
+#myrecipeselect h2 a.off:hover, #myrecipeselect h2 a.off:active {
+color: #039;
+}
+.add {
+padding-left: 5px
+}
+#myrecipescontent #add {
+padding-top: 5px;
+float: right;
+width: 140px;
+}
+#myrecipescontent #add a { font-size: 12px; color: #900; background-image: url(../images/addbtn.png); background-repeat: no-repeat; padding-left: 15px; }
+#myrecipescontent #add a:visited {
+color: black
+}
+#myrecipescontent #add a:hover, #myrecipecsontent #add a:active {
+color: #039
+} 
+#recipenav {
+float: right;
+font-size: 13px;
+color: #900;
+width: 200px;
+padding: 0 5px;
+text-align: right
+}
+#recipenav a {
+text-decoration: none;
+}
+#recipenav a:visited {
+color: #666
+}
+
+#recipenav a:active, #recipenav a:hover {
+color: #039
+}
+.welcome {
+color: #900;
+font-size: 12px;
+text-align: left;
+font-weight: bold}
+.login {
+float: right;
+width: 150px;
+text-align:right}
+
+#chart { width: 600px; background-color: #bcdaf4; margin: 10px auto; padding: 10px; }
+#chart table { border: 1px solid #039; font-size: .75em; background-color: #ffc; text-align: center; padding: 3px }
+#chart table td { border-top: 1px solid #039; border-right: 1px solid #039; padding: 3px}
+#chart table td.right { border-top: 1px solid #039; border-right: none; padding: 3px}
+#chart table td.right2 { border-top: 1px solid #039; border-right: none; padding: 3px; text-align: left}
+#chart table td.top { background-color: white; border-top: none; border-right: 1px solid #039; padding: 3px; font-weight: bold; color: #039; font-size: 12px}
+#chart table td.top2 { background-color: white; border-top: none; border-right: none; padding: 3px; font-weight: bold; color: #039; font-size:12px}
+#chart table td.top3 { border-top: none; border-right: none; padding: 3px; text-align: left;font-size:12px}
+.dotted { width: 390px; border-bottom: 1px dotted #069; padding-top: 5px; margin-bottom: 5px }
+.twitter-timeline {
+	max-height: 240px !important; overflow: hidden !important;
+}

@@ -1,0 +1,11 @@
+if (window['google'] != undefined && window['google']['loader'] != undefined) {
+if (!window['google']['search']) {
+window['google']['search'] = {};
+google.search.Version = '1.0';
+google.search.NoOldNames = false;
+google.search.JSHash = 'cb6ef4de1f03dde8c26c6d526f8a1f35';
+google.search.LoadArgs = 'file\75search\46v\0751';
+}
+google.loader.writeLoadTag("css", google.loader.ServiceBase + "/api/search/1.0/cb6ef4de1f03dde8c26c6d526f8a1f35/default+en.css", false);
+google.loader.writeLoadTag("script", google.loader.ServiceBase + "/api/search/1.0/cb6ef4de1f03dde8c26c6d526f8a1f35/default+en.I.js", false);
+}

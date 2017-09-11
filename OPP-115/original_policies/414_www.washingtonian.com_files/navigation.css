@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	padding:0;
+	margin:0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+#nav1 {
+	margin-top:0;
+	width:100%;
+	background:url('images/blackbar.png') repeat-x;
+}
+#nav2 {
+	width:100%;
+	background:#ccc url('images/edge.gif') top repeat-x;
+}
+ul.dropmenu{
+position: relative;
+width:982px;
+height:38px;
+margin: 0 auto;
+padding: 0 0 0 10px;
+display:block;
+font-family:'Helvetica Neue',Helvetica,sans-serif;
+font-size: 15.18px;
+z-index:1003;
+}
+
+.dropmenu li, 
+.dropmenu2 li{
+position: relative;
+list-style: none;
+float:left;
+}
+
+.dropmenu li a{
+display: block;
+cursor: point;
+text-transform: uppercase;
+text-decoration: none;
+color:/*#fa0162*/ #fff;
+text-shadow:0px -1px 0px #555;
+padding:10px 0 0 18px;
+}
+.dropmenu li a#food  {
+	padding-left:1px;
+}
+.dropmenu li a:hover,
+.dropmenu li a:active {
+	color:#fa0162;
+	text-shadow:none;
+}
+.dropmenu li:hover ul, .dropmenu li:hover div{
+display: block;
+}
+
+.dropmenu ul {
+	position: absolute;
+	display: none;
+	width: 175px;
+	padding:0;
+	font-size:14px;
+	margin-top:6px;
+	border-bottom:4px solid #ccc;
+	border-top:1px solid #ccc;
+}
+.dropmenu ul li {
+	display:block;
+	float:none;
+}
+.dropmenu ul a {
+  display:block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:12.2px;
+  padding:6px 6px 6px 12px;
+  border-bottom:1px solid #333;
+}
+.dropmenu ul a:hover {
+	background-color:#222;
+}
+.dropmenu li div{
+	display: none;
+	position: absolute;
+	background:#000;
+	margin:0 0 0 18px;
+}
+.dropmenu li div ul{
+	position: relative !important;
+}
+ul.left{
+float: left;
+width: 175px;
+}
+ul.right{
+float: right;
+width: 168px;
+border-left:1px solid #333;
+}
+
+.food {
+	width:344px;
+	background-color:#ccc;
+}
+.red {
+	color:#ccc;
+}
+.dropmenu li div.food ul {
+	border-bottom:none;
+}
+.dropmenu li:hover div.food {
+	border-bottom:4px solid #ccc;
+	margin-left:0px;
+}
+
+/************ lower menu ************/
+
+ul.dropmenu2 {
+position: relative;
+margin:0 auto;
+width:982px;
+height:27px;
+display:block;
+font-family:'Helvetica Neue',Helvetica,sans-serif;
+z-index:1002;
+}
+
+.dropmenu2 ul li{
+float: none;
+}
+
+.dropmenu2 li:hover ul, .dropmenu2 li:hover div{
+display: block;
+}
+.dropmenu2 li a{
+	padding:0px;
+	display: block;
+	cursor: point;
+	font-size:11.18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#666;
+	text-shadow:0px 1px 0px #eee;
+	padding:9px 12px 0px 6px;
+} 
+.ie .dropmenu2 li a{
+font-size:10.5px;
+}
+.dropmenu2 li a#photos-nav {
+	padding-left:24px;
+}
+
+.dropmenu2 li a:hover{
+	color:#000;
+	text-shadow:none;
+}
+
+.dropmenu2 ul{
+	position: absolute;
+	display: none;
+	padding: 0px;
+	margin:0;
+}
+.dropmenu2 li ul li {
+	padding:0;
+	margin:0;
+}
+.dropmenu2 li ul {
+	background-color:#ccc;
+	padding:0;
+	width:100px;
+	border-bottom:3px solid #999;
+}
+.dropmenu2 li ul a {
+	display:block;
+	padding:4px 2px 3px 8px;
+	border-bottom:1px solid #888;
+}
+

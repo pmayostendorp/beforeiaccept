@@ -1,0 +1,4010 @@
+
+/* Connect Header Widget Styles */
+#connect-header, .connect-header {
+    height: 36px;
+}
+
+#connect-header h1, .connect-header h1 { display: none; }
+
+#connect-header ul, .connect-header ul {
+    margin:     0;
+    padding:    0;
+    list-style: none;
+    display:    inline;
+}
+
+#connect-header li, .connect-header li {
+	margin:   0;
+    padding:  0;
+    float: left;
+    display:  block;
+    *display: inline;
+    color:    #343434;
+    font-size :12px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+#connect-header li,
+#connect-header .yui-button button, .connect-header .yui-button button {
+    text-transform: none;
+}
+
+#connect-header li.border, .connect-header li.border {
+    margin: 10px 0px 0px 0px;
+    padding: 0 5px;
+    border-left: 1px solid #dae1e7;
+}
+
+#connect-header li a,  .connect-header li a,
+#connect-header li a:visited, .connect-header li a:visited,
+#connect-header li a:hover,  .connect-header li a:hover,
+#connect-header li a:active, .connect-header li a:active {
+    font-size: 12px;
+    text-decoration: none;    
+    padding: 0px 6px;
+}
+#connect-header li a:hover, .connect-header li a:hover {
+    text-decoration:underline;
+}
+
+#connect-header li a.gray,  .connect-header li a.gray,
+#connect-header li a.gray:visited, .connect-header li a.gray:visited,
+#connect-header li a.gray:hover,  .connect-header li a.gray:hover,
+#connect-header li a.gray:active, .connect-header li a.gray:active {
+    color:#343434;
+}
+
+#connect-header li a.ltgray,  .connect-header li a.ltgray,
+#connect-header li a.ltgray:visited, .connect-header li a.ltgray:visited,
+#connect-header li a.ltgray:hover,  .connect-header li a.ltgray:hover,
+#connect-header li a.ltgray:active, .connect-header li a.ltgray:active {
+    color:#b1b1b1;
+}
+
+#connect-header li a.pink,  .connect-header li a.pink,
+#connect-header li a.pink:visited, .connect-header li a.pink:visited,
+#connect-header li a.pink:hover,  .connect-header li a.pink:hover,
+#connect-header li a.pink:active, .connect-header li a.pink:active {
+    color:#c33a56;
+    font-size:12px;
+    float:none;
+    display:inline;
+}
+
+#connect-header li.homepage a, .connect-header li.homepage a { font-size: 11px; }
+
+
+#connect-button {
+/* 	overflow:      hidden; */
+	display:       inline-block;
+	margin:        -1px;
+	border:        1px transparent solid;
+}
+#connect-button button {
+	font-size:     12px;
+	height:   	   36px;
+	border:        0;
+	color: 		   #343434;
+	outline: none;
+	font-family: Arial, sans-serif;
+}
+#connect-header .connect-signin-btn button, .connect-header .connect-signin-btn button {
+	background:    URL('http://cdn.womensunitedonline.com/interface/widgets/header/connect-btn-signin.png') right center no-repeat #FFF;
+	padding-right: 106px;
+	height: 36px;
+	width: 160px;
+}
+#connect-overlay iframe, .connect-overlay iframe {
+	border-width:  0;
+	border: 0;
+	height: 315px;
+}
+
+.sign-in-box a { color: #aa3047; }
+#connect-header #connect-overlay li a,  #connect-header .connect-overlay li a,
+#connect-header #connect-overlay li a:visited, #connect-header .connect-overlay li a:visited,
+#connect-header #connect-overlay li a:hover,  #connect-header .connect-overlay li a:hover,
+#connect-header #connect-overlay li a:active, #connect-header .connect-overlay li a:active {
+    color: #aa3047;
+    text-decoration: none;    
+    padding: 0px; 
+}
+#connect-header li a:hover, .connect-header li a:hover {
+    text-decoration:underline;
+}
+.connect-loggedin #connect-button button, .connect-loggedin .connect-button button {
+	background:   url('http://cdn.womensunitedonline.com/interface/widgets/header/new-avatar.png') center left no-repeat;
+	padding-left: 26px;
+}
+.connect-loggedin #connect-button.has-avatar button, .connect-loggedin .connect-button.has-avatar button {
+	background:   url();
+	position:     relative;
+}
+.connect-loggedin #connect-button.has-avatar img, .connect-loggedin .connect-button.has-avatar img {
+	position:     absolute;
+	left:         0;
+	top:          5px;
+}
+
+/* Hack for FF because it can't render the <button> element correctly */
+@-moz-document url-prefix() {
+   .connect-loggedin #connect-button button { 
+		padding-left: 0;
+		width: 150px;
+		text-align: left;
+	}
+	.connect-loggedin #connect-button.has-avatar img {
+		position: relative;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+}
+
+.sign-in-box { margin-top: 10px; }
+.sign-in-box #login-errors { color: red; font-size: 12px; font-weight: bold; padding-bottom: 0; margin:0 15px; }
+.connect-form #login-errors { color: red; font-size: 12px; font-weight: bold; padding-bottom: 0 !important; margin:0 15px !important; }
+
+#hd .search-form { margin:0; padding: 4px; background:#f2f2f2; border:1px solid #e0e0e0; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+#hd .search-form .input-container { border: 1px solid #d7d7d7; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px;	padding-left: 6px; 	background: #FFF; height: 28px;}
+#hd .search-form form, #hd .search-form button { outline: none; border: none; }
+#hd .search-form input.search-box-header { margin:0; padding: 0; width:89%; padding: 5px 0; border: none; }
+#hd .search-form button { margin: auto;	padding: 0px; color: #fff; line-height: 29px; font-size: 12px; text-indent: -999em; font-weight: bold; text-transform: uppercase;
+    cursor:pointer;  border: 0; vertical-align: top; width:28px; height: 29px; background: url("http://cdn.womensunitedonline.com/links/links/search-button.png") no-repeat 0 0; }
+.ie #hd .search-form button { display:inline; }
+.ie7 #hd .search-form input.search-box-header {width: 87%; border: 0;}
+
+/* IE Hacks >_< */
+.connect-overlay-active .ie7 #hd { position: relative; z-index: 12001; }
+.connect-overlay-active .ie7 #bd, .connect-overlay-active .ie7 #nav { position: relative; z-index: 1; }
+body {
+	background-image: url(http://cdn.womensunitedonline.com/graphics/2005/new/sheknows-article-background.jpg);
+	background-repeat: repeat-y;
+	background-position: top center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+	margin:0;
+}
+body > a, body > table { position: absolute;}
+body > img {position:absolute;} /* this is a fix for ad tracking image that puts padding to the top of the page */
+a img { border: none; }
+#doc {
+	min-width:1000px;
+	margin:auto;
+	text-align:left;
+	width: 1000px;
+	/* I don't know why 17px is the magic number.  This is only needed
+	   to properly align the Rewards notification bar. */
+	padding: 0 17px;
+	background: #fff;
+}
+#doc #hd, #doc #bd {
+	margin: 0 10px;
+}
+
+#main, #sidebar {
+	border-top: 1px solid #CCCCCC;
+}
+
+/* Link Colors */
+a:link, a:active {color: #555;}
+a:visited {	color: #888888;	/*color: #db4c15;*/ }
+a:hover {color: #DE5494; /*color: #F90; */}
+/* a:link.reverse, a:active.reverse, a:visited.reverse { color : #f90; } */ /* becuase Kyle keeps wanting orange links */ /* How about No */
+
+/* DEV DEBUG INFO */
+.cake-sql-log {
+	display: none;
+	margin: 0 auto;
+	position: static;
+	text-align: left;
+	width: 1000px;
+}
+
+/* RIGHT SIDEBAR */
+#main .bd { border-right: 1px solid #CCC;}
+
+#sidebar {
+	float: right;
+	width: 340px;
+	text-align: center;
+}
+#sidebar .bd {
+	padding-top: 10px;
+/* 	padding: 10px 20px; */
+	text-align: center;
+}
+#sidebar .module {
+	margin: 0 auto 10px;
+	position: static;
+	max-width: 300px;
+}
+
+/* Sidebar for Articles - New design will be rolled out to all sidebars */
+/* body.articles table tr, body.articles div.wrapper, .article-giveaway .giveaway-content, body.articles table td.sidebar, .article-giveaway table td.sidebar { overflow:hidden; }  */
+.recaptchatable tr { overflow:inherit !important; }
+
+body.articles #sidebar,
+.article-giveaway #sidebar {
+	background: url('http://cdn.womensunitedonline.com/interface/right-sidebar-bg.jpg') 0 9999px repeat-x #f7f7f7;
+	text-align: center;
+	float:left;
+    width: 299px;
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+body.articles #sidebar .bd,
+.article-giveaway #sidebar .bd { padding: 15px 0px;}
+body.articles table #sidebar {border-spacing: 0;}
+
+/* Sidebar Modules */
+
+.box-cap { display: block; float: left; position: absolute; left: 10px; top: -15px; height: 16px;
+	background-color: #FFF;
+	border-top: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+	border-bottom: none;
+	border-left: 1px solid #d7d7d7;
+	z-index: 2;
+}
+.ie .box-cap {height: 17px;}
+.social-sidebar .box-cap {width: 175px;}
+.sidebar-trending .box-cap {width: 200px;}
+
+.sidebar-trending .box-arrow,
+.social-sidebar .box-arrow { background: transparent url('http://cdn.womensunitedonline.com/interface/box-cap-arrow.png'); height: 22px; width: 37px; position: absolute; bottom: -21px; 	z-index: 2;}
+
+.sidebar-trending .box-arrow { right: 60px;}
+.social-sidebar .box-arrow { left: 60px;}
+.ie.ie7 .sidebar-trending .box-arrow { bottom: -18px; }
+
+.sidebar-trending .module { margin: 0px !important; padding: 0px;}
+
+
+.content_block_right .social-sidebar h2,
+.content_block_right .sidebar-trending h2,
+.content_block_right .sidebar-popular h2,
+.social-sidebar h2,
+.sidebar-trending h2,
+.sidebar-popular h2 {
+	display: block; position: relative; top: -10px;
+	text-align: left; font-family: Georgia, serif; font-size: 25px; font-weight: normal; font-style: italic; text-transform: lowercase; letter-spacing: normal;
+	color: #212121;	padding: 0px 10px 10px 10px; margin: 0px; z-index: 3;
+}
+
+.content_block_right .sidebar-trending h2 {padding: 0px 20px;}
+
+.content_block_right .social-sidebar h2 em,
+.content_block_right .sidebar-trending h2 em,
+.content_block_right .sidebar-popular h2 em,
+.social-sidebar h2 em,
+.sidebar-trending h2 em,
+.sidebar-popular h2 em { font-family: Arial, sans-serif; text-transform: uppercase; font-size: 14px; font-style: normal; font-weight: bold; color: #474747;}
+
+.social-sidebar ul,
+.sidebar-trending ul,
+.sidebar-popular ul { clear:both; margin: 0px; padding: 0px; font-size: 12px; }
+
+.social-sidebar ul li,
+.sidebar-trending ul li,
+.sidebar-popular ul li { text-align: left; font-family: Arial, sans-serif; font-weight: bold; color: #000; list-style: none; }
+
+/* Social Icon box */
+.social-sidebar { width: 279px; margin: 30px 0px; padding: 0px 10px 10px 10px; position: relative; float: right; background-color: #FFF; border: 1px solid #d7d7d7;}
+.social-sidebar ul { border: 1px solid #dedede;}
+.social-sidebar li {
+	padding: 10px;
+	border-top: 1px solid #FFF;
+	border-right: 0px;
+	border-bottom: 1px solid #dedede;
+	border-left: 0px;
+}
+
+.social-sidebar li.twitter {background-color: #eee;}
+.social-sidebar li.googleplus {background-color: #e6e6e6;}
+.social-sidebar li.googleplus span,
+.social-sidebar li.pinterest span {color: #333; font-size: 11px; font-weight: normal; line-height: 1px; margin-left: 4px; display: inline-block; vertical-align: text-top;}
+.social-sidebar li.share {border: none; color: #004179; }
+.social-sidebar li.share a { color: #004179; padding-left: 20px; vertical-align: middle; line-height: 20px;}
+.social-sidebar li.share a.rss {background: url('http://cdn.womensunitedonline.com/icons/sidebar-rss.png') no-repeat center left;}
+.social-sidebar li.share a.newsletters {background: url('http://cdn.womensunitedonline.com/icons/sidebar-newsletters.png') no-repeat center left;}
+
+/* Hide Google Plus in IE7 - not supported */
+.ie.ie7 .social-sidebar li.googleplus {display: none;}
+
+
+/* Trending Stories box */
+.sidebar-trending {width: 299px; margin: 30px 0px; position: relative; float: right;}
+.content-block-right .sidebar-trending .title h2,
+.sidebar-trending h2 { padding: 0px 20px;}
+.trending_articles { margin-top: -29px; margin-bottom: 0px;}
+/* hide iframe for native ad */
+.trending_articles iframe {
+	display: none;
+}
+.sidebar-trending ul { margin: 0px; padding: 0px; }
+.sidebar-trending li {
+	min-height: 60px;
+	margin: 2px 0px 0px 0px;
+	padding: 15px;
+	background-color: #FFF;
+	border-top: 1px solid #D7D7D7;
+	border-right: 1px solid #D7D7D7;
+	border-bottom: 1px dotted #D7D7D7;
+	border-left: 1px solid #D7D7D7;
+}
+.sidebar-trending li.advertisement {
+	background-color: #ffffe7;
+}
+.sidebar-trending iframe {
+	display: none;
+}
+.sidebar-trending li.first { padding-top: 30px; margin: 0px; }
+.sidebar-trending li img { float: left; width: 80px; padding-right: 10px; border: 0px; }
+.sidebar-trending li div {float: right; width: 174px;}
+.sidebar-trending li .channel a {float: left; color: #666; text-transform: uppercase; font-size: 10px; font-family: Arial, sans-serif; width: 140px; }
+
+.sidebar-trending li .comments { float: right; background: url('http://cdn.womensunitedonline.com/icons/sidebar-comments.png') no-repeat; width: 28px; height: 16px; text-align: center; line-height: 16px; font-size: 11px; font-family: Arial, sans-serif; padding-left: 3px; }
+.sidebar-trending li .comments a {color: #212121;}
+.sidebar-trending li .title { float: left; padding-top: 5px;}
+
+.sidebar-trending li a:link .title,
+.sidebar-trending li a:visited .title,
+.sidebar-trending li a:active .title {color: #212121;}
+.sidebar-trending li a:hover .title {text-decoration: underline;}
+
+/* Popular Today box */
+/* link module - manually updated -- old link mod one */
+/*
+.sidebar-popular { width: 299px; margin: 30px 0px 20px 0px; position: relative; float: right; border-top: 1px dotted #d7d7d7; }
+.sidebar-popular .content-block-right .title h2,
+.sidebar-popular h2 { position: absolute; top: -20px; left: 20px; display: block; text-indent: 0px; height: auto; width: auto;}
+
+.sidebar-popular h2 {background-color: #FFF;}
+body.articles #sidebar .sidebar-popular h2,
+.article-giveaway #sidebar .sidebar-popular h2 {background-color: #F7F7F7;}
+
+.sidebar-popular .module .content-block-right,
+.sidebar-popular .module .content-block-right .block1 { background-image: none; width: auto; height: auto; margin: 0px; padding: 0px;}
+.sidebar-popular .module {margin: 0px; padding: 0px;}
+
+.sidebar-popular .block1_unordered_list_images .links { padding: 20px 0px; }
+.sidebar-popular .block1_unordered_list_images .links .image { width: 300px; overflow: hidden;}
+.sidebar-popular .block1_unordered_list_images .links .image img {width: 300px; border: none;}
+.sidebar-popular .block1_unordered_list_images .image_link { font-size: 15px; line-height: 20px;}
+.sidebar-popular .block1_unordered_list_images .image_link a:link,
+.sidebar-popular .block1_unordered_list_images .image_link a:visited,
+.sidebar-popular .block1_unordered_list_images .image_link a:active { color: #212121; }
+.sidebar-popular .block1_unordered_list_images .image_link a:hover { text-decoration: underline; }
+*/
+
+/* new popular today - content feed */
+.sidebar-popular { width: 299px; margin: 30px 0px 20px 0px; position: relative; float: right; border-top: 1px dotted #d7d7d7; }
+.feed-collection.popular-today .mod_header {}
+	.feed-collection.popular-today .mod_header h3 { position: absolute; top: -15px; left: 20px; display: block;	text-indent: 0px; height: auto;	width: auto; line-height:30px;
+			font-style: italic; font-family: Georgia, "Times New Roman", Times, serif; font-size: 25px; font-weight:normal; background-color: #F7F7F7;}
+
+	.feed-collection.popular-today .bg_img {margin-top: 20px;}
+		.feed-collection.popular-today .bg_img img {width: 100%; border: 0 none;}
+	.feed-collection.popular-today .item .title {font-size: 15px; line-height:21px; text-align:left;}
+		.feed-collection.popular-today .item .title a {color: #212121; font-weight: bold;}
+		.feed-collection.popular-today .item .title a:hover {text-decoration: underline;}
+
+
+
+
+/* thumbnails */
+.popular_today li { float: left; width: 90px; height: 110px; overflow: hidden; padding: 0px 4px 10px 4px; text-align: center; font-size: 11px; line-height: 12px; color: #212121;}
+
+.popular_today li a:link,
+.popular_today li a:visited,
+.popular_today li a:active { color: #212121;}
+.popular_today li a:hover { text-decoration: underline;}
+
+.popular_today li img,
+.popular_today li a img {width: 90px; border: none;}
+.popular_today li.first p {display: none;}
+
+/* ------------------------------------------------------- */
+
+/*Old footer*/
+#ft {
+	height: auto;
+/*	margin: 30px 0;*/
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+#ft .links {
+	background: url(http://cdn.womensunitedonline.com/nav/footer.gif) top left repeat-x;
+	color: #FFFFFF;
+	font-family: 'Century Gothic', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	padding-right: 5px;
+	margin-top: 0;
+	text-align: right;
+	white-space: nowrap;
+}
+#ft .links a {
+	color: #FFFFFF;
+	white-space: nowrap;
+}
+#ft .copyright {
+	color:#333333;
+	float: right;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	margin-right: 10px;
+	width:600px;
+}
+/*End old footer*/
+/*New Footer*/
+.new-foote-wrapper {
+background-color:#F3F2F1;
+margin:auto;
+	height:31px;
+	width:1000px;
+	line-height:31px;
+	margin-top:2px;}
+.new-footer-copyright {
+	float:left;
+	margin-left: 10px;
+}
+.new-footer-content {
+	float:right;
+	margin-right: 10px;
+	font-size: 12px;
+}
+/*End New Footer*/
+#main {
+	display: block;
+	float: left;
+	width: 640px;
+}
+#bd {
+	clear: left;
+	height: auto;
+	padding: 10px 0;
+	position: relative;
+	zoom: 1;
+}
+#bd:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.ellipsis {
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-ms-text-overflow:ellipsis;
+	-moz-binding:url(http://cdn.womensunitedonline.com/css/ellipsis-xbl.xml#ellipsis)
+}
+.header-roll {
+	width:350px;
+	margin-top:7px;
+	margin-left:10px;
+	float:right;
+	height:45px;
+}
+.header-roll-sponsor {
+	width:335px;
+	margin-top:-15px;
+	margin-left:10px;
+	float:right;
+	height:77px;
+}
+.header-roll-title {
+	color: #FF679D;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.header-roll-text {
+	color: #FF679D;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.box-content-right .title a:link, .box-content-right .title a:visited, .box-content-right .title a:active {
+	color: #333;
+}
+.box-content-right .title a:hover {
+	color:#000;
+}
+.left-header {
+	float:left;
+	width:660px;
+}
+.outer {
+	width: 1000px;
+	margin: auto;
+	background-color:#FFFFFF;
+}
+.searchbar {
+	background: #fff url(http://cdn.womensunitedonline.com/graphics/2005/new/search-background.jpg) center left no-repeat;
+	border:none;
+	font-size:12px;
+	height: 28px;
+	padding-top:15px;
+	padding-left:10px;
+	text-indent:10px;
+	width: 240px;
+}
+.searchbtn {
+	height: 28px;
+	width: 61px;
+	border:none;
+	border-color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	background:none;
+	color:#A21F5C;
+	cursor: pointer;
+}
+.sheknows-logo {
+	float:left;
+	width:300px;
+}
+.sheknows-search-box {
+	float:right;
+	width:325px;
+	height:45px;
+	margin-right: 5px;
+}
+/*
+.breadcrumbs {
+	font-size: 13px;
+	padding: 10px;
+	text-align: left;
+	font-family: georgia, serif;
+	margin-bottom: 8px;
+	letter-spacing: -0.4px;
+	color: #999;
+}
+.breadcrumbs strong {
+	font-weight: normal;
+	color: #333;
+}
+*/
+#main .bd {
+	/*
+	background-image: url(http://cdn.womensunitedonline.com/graphics/2005/new/sheknows-article-shadow_bkg.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+	border-right: 1px solid #ccc;
+	*/
+	display: block;
+	padding: 15px 10px;
+}
+
+/*navstyle06*/
+.most-recent-big-title {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+.most-recent-big-title a:hover {
+	color:#000;
+}
+.most-recent-small-title {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size:11px;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+.partners-small-title {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #c74202;
+	font-size:14px;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+.partners-small-text {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color: #e48a25;
+}
+a {
+	text-decoration:none;
+}
+.today-title {
+	color: #E20177;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	font-size: 22px;
+}
+.today-title a:link, .today-title a:visited, .today-title a:active {
+	color: #E20177;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+}
+.today-title a:hover {
+	color:#FF5819;
+}
+.today-sub-title
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 15px;
+	text-transform: uppercase;
+}
+.breast-cancer {
+	color: #B2217E;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.feature-title {
+	font-size: 12px;
+	font-weight: bold;
+}
+.featured-item
+{
+	background: url(http://cdn.womensunitedonline.com/interface/dot-grey.gif) bottom left repeat-x;
+	height: 85px;
+	clear: both;
+	margin-bottom: 5px;
+}
+.partner-articles-internal, .blog-roll-internal
+{ width:240px; overflow:hidden; height: 265px; padding: 5px; }
+.blog-roll-internal
+{ width:240px; height: 292px; overflow:hidden; padding: 5px; text-align: left; }
+.blog-roll-internal .featured-item { height: auto; padding-bottom: 5px; }
+.partner-articles-internal .blurb, .blog-roll-internal .blurb
+{ text-align: left; display: block; }
+.featured-contest-internal
+{ width:290px; overflow:hidden; height: 268px; margin-top: 5px; }
+.featured-promotions-internal
+{ width:290px; overflow:hidden; height: 359px; margin-top: 5px; }
+.featured-contest-internal .thumb, .featured-promotions-internal .thumb
+{ width:75px; float: left; display: block; }
+.featured-contest-internal .blurb, .featured-promotions-internal .blurb
+{ width:200px; text-align: left; display: block; float: right; margin-right: 5px; }
+.featured-contest-title {
+	font-family: Arial, sans-serif;
+	font-size:11px;
+	color:#000;
+	font-weight:bold;
+	/*line-height:20px*/
+}
+.featured-contest-blurb {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#080402;
+	line-height:15px
+}
+
+.more-most-recent-articles {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #a21f5c;
+	font-size: 11px;
+	font-weight: bold;
+	/*font-stretch: wider;*/
+}
+.most-recent-blurb
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #080402;
+}
+hr {
+	height: 0px;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+/* Already defined on line 194
+.today-title {
+     color: #E20177;
+     font-weight: bold;
+     font-family: 'Century Gothic', sans-serif;
+     font-size: 22px;
+}
+.today-title a:link, .today-title a:visited, .today-title a:active {
+     color: #E20177;
+     font-weight: bold;
+     font-family: 'Century Gothic', sans-serif;
+     font-size: 15px;
+}
+.today-title a:hover {
+     color:#FF5819;
+}
+*/
+.clear-both { clear:both; }
+/*END navstyle06*/
+/*Tim Styles aka newstyle.css*/
+/* global properties */
+.clear-box {
+	clear:both;
+}
+/* big block properties */
+.big-block {
+	/*padding-top: 15px;*/
+	width:1001px;
+	height: 260px;
+	margin-left:0;
+	margin-right:auto;
+	position:relative;
+	overflow:hidden;
+	font-family:Verdana, Arial, Helvetica;
+	visibility: visible;
+	/*border: 1px solid #00ff00;*/
+}
+.box {
+	margin: 10px 0 10px 0;
+	clear:both;
+	display:block;
+}
+/*  Big block left panel  */
+/*  Big block center flash panel  */
+.big-block .block-center {
+	float:left;
+	width:434px;
+}
+.big-block .block-flash {
+	margin-top:0;
+}
+/*  Big block left right  */
+.big-block .block-right {
+  margin-top:0;
+	float:left;
+	width:275px;
+	height:292px;
+	margin-left:10px;
+}
+.big-block .block-right a img{
+margin-left:20px;
+}
+/* Daily Dish styles duplicated at line 1098
+.module2-video-header {width:280px; height:280px; margin-left:10px; margin-top:0; border: 1px solid #000; }
+.module2-video-header .header2 { width:275px; margin-left:0; background-color: #DEDEDE; border: 1px solid #f00; }
+.module2-video-header .player2 { height:202px; width:262px; clear:both;}
+.module2-video-header .more2 { padding-top:5px; }
+.module2-video-header .more2 a:link, .module2-video-header .more2 a:active, .module2-video-header .more2 a:visited, .module2-video-header .more2 {color:#555555; font-size:12px; font-weight:bold; }
+.module2-video-header .more2 a:hover { color:#000000; font-size:12px; font-weight:bold;}
+*/
+
+/*END Tim Styles aka newstyle.css*/
+
+/* --- big-block (flashpanel) left side New for the smaller site redesign --- */
+.big-block #feature-articles { margin-top: 0; height: 248px; overflow: hidden; } /* background & other handled by #feature-articles  */
+.big-block .block-left #feature-articles { width: 257px; }
+.big-block .block-left { float: left; width: 257px; margin-right: 10px; margin-left: 0;}
+.big-block .block-left .today-title
+{	/*  This handles the Today on SheKnows at the top of the flash panel lefthand side */
+	font-size: 15px; font-weight: bold;
+	color: #a21f5c;
+	text-transform: uppercase; text-align: left;
+	margin-top: 14px; margin-left: 15px; margin-bottom: 0;
+}
+.big-block .block-left .box .box-image
+{	/* this handles the thumbnail */
+	width: 77px; height: 60px; overflow: hidden;
+	margin-left: 15px;
+	float: left; display: block;
+}
+.big-block .block-left .box a img { border: 0; }
+.big-block .block-left .box .box-content-right
+{	/* this handles the text next to the thumbnails */
+	width: 140px;
+	margin-left: 105px; margin-right: 4px;
+	text-align: left;
+	color: #000; font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.big-block .block-left .box .box-content-right a.title
+{ color: #000; font-size: 11px; font-weight: bold; }
+.big-block .block-left .box .box-content-right a.seemore, .video-item a.seemore
+{ color: #af1f5c; font-size: 11px; font-weight: bold; }
+/* --- /big-block (flashpanel) left side New for the smaller site redesign --- */
+
+.modules-topad {
+	/*background-color: #FBE7F0;*/
+	background-color : #ffffff;
+	display: block;
+	padding: 0;
+	margin: 0;
+	margin-top: -2px;
+	margin-bottom: 8px;
+	height: 96px;
+	position: relative;
+	overflow: visible;
+	width: 1000px;
+	z-index:99;
+}
+.top-ad-background {
+	background-color:#fff;
+	/*border-top: 2px solid #E40E75;*/
+	height: 94px;
+	margin:0;
+	*margin-top:-2px;
+	padding: 3px 0;
+	position: relative;
+	overflow: hidden;
+	width:1000px;
+}
+
+.ad728 {
+	margin-top:4px;
+	float:left;
+	width:728px;
+}
+.btn260
+{
+	float: left;
+	width: 260px;
+	height: 90px;
+	margin-right: 7px;
+	margin-top: 3px;
+	/*margin-left: 3px;*/
+}
+.btn728 {
+	margin-top:4px;
+	float:left;
+	width:257px;
+	height: 90px;
+	margin-right:15px;
+}
+.left-of-ad {
+	text-align:left;
+	padding:5px;
+	padding-top:12px;
+	background-image: url(http://cdn.womensunitedonline.com/interface/728-btn-background.jpg);
+	background-repeat: no-repeat;
+}
+
+.pagination {
+  margin:auto;
+  padding:10px 0;
+  width:100%;
+  text-align:center;
+  font-size:11px;
+  color:#FFF;
+  clear:both;
+}
+
+/**
+	Modules
+**/
+.modules, .modules .column {
+	min-height: 500px;
+	position: relative;
+	/*overflow: hidden;*/
+	/** IE6 Hack **/
+	_height: 500px;
+	_min-height: auto;
+	_overflow-y: visible;
+	/** IE Hack **/
+	zoom: 1;
+}
+.modules .column {
+	float: left;
+	text-align: center;
+}
+/* .modules-topad moved up to the ad stuff at line 386 to keep them together 2009-04-02 - dre */
+.modules {
+	margin-top: 10px;
+/*	margin-bottom: 25px;*/
+}
+.module {
+	margin: 0 auto;
+	padding-bottom: 8px;
+	position: static;
+    vertical-align: top;
+}
+.subchannel-layout .module {display: inline-block;}
+
+.ie7 .module {
+    display: inline;
+    float: left;
+}
+
+.modules .col1 {
+	width: 257px;
+	margin-left: 2px;
+}
+.modules .col2 {
+	width: 420px;
+	margin-left: 8px;
+}
+.modules .col3 {
+	width: 300px;
+	margin-left: 8px;
+}
+#feature-articles
+{
+	background:url(http://cdn.womensunitedonline.com/interface/background-flashpanel-block.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	margin-top: 15px;
+	text-align: center;
+	width: 251px;
+	min-height: 218px;
+	border: 1px solid #C2C2C2;
+}
+.module .partner-articles, .module .blog-roll, .module .recent-quizzes, .module .recent-toptens, .module .newsletter-signup
+{
+	margin:0;
+	width: 255px;
+	border: 1px solid #C2C2C2;
+}
+.module .featured-promotions,.module .featured-contests
+{
+	margin:0 auto;
+	width: 300px;
+	border: 1px solid #C2C2C2;
+}
+.partner-articles .seemore
+{ color: #af1f5c; font-size: 11px; font-weight: bold; }
+
+.big-block-pink {background-image:none; background-color:#ffffff;}
+
+.module-title
+{
+/*
+	background-image:url(http://cdn.womensunitedonline.com/interface/module-headers/pink.jpg);
+	background-repeat: repeat-x;
+*/
+	background-color: #a32143;
+	width: 100%;
+}
+.module-title h1
+{
+	margin: 0; padding: 0;
+	padding-left: 8px; padding: 5px;
+	color: #fff;
+	font-size: 20px; font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	text-transform: none; text-align: left;
+}
+.newsletter-signup .module-title h3
+{
+	margin: 0; padding: 0;
+	padding-left: 8px; padding: 5px;
+	color: #fff;
+	font-size: 20px; font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	text-transform: none; text-align: left;
+}
+
+#sidebar .newsletter-signup, #col3 .newsletter-signup
+{
+	width:  294px;
+	margin: auto;
+	padding: 2px;
+}
+
+#sidebar .newsletter-form, #col3 .newsletter-form
+{
+	line-height: 21px;
+}
+#sidebar .newsletter-form input, #col3 .newsletter-form input
+{
+	border:  1px solid #7e9db9;
+	width:   119px;
+	height:  17px;
+}
+#sidebar .newsletter-name, #col3 .newsletter-name
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+/**
+* Channel List module
+*
+* Often seen on homepage and channel landing pages
+**/
+.module .channel-list { text-align: left; }
+
+.channel-list .bd { line-height:23px; }
+.channel-list ul { display: block; float: left; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height:23px; list-style: inside square; margin: 0; margin-left: 0; padding: 0; white-space: nowrap; }
+.channel-list ul a { margin-left: -7px; }
+
+.channel-list .channel-item, .video-item
+{ background: url(http://cdn.womensunitedonline.com/interface/dot-pink.gif) bottom left repeat-x; margin-bottom: 10px; overflow: hidden; padding-bottom: 10px; position: relative; *zoom: 1; }
+
+.channel-list .title { color: #E20177; font-family: 'Century Gothic',sans-serif; font-size: 22px; font-weight: bold; line-height: 23px; text-transform: uppercase; }
+.channel-list .title a { color: #E20177; }
+.channel-list .title a:hover { color: #FF5819; }
+
+.channel-list .thumb { float:left; margin-right: 5px; margin-top: 4px; width:128px; }
+.video-item .thumb { float: left; margin-right: 5px; margin-top: 4px; width: 80px; }
+
+.channel-list .sponsorship { position: absolute; right: 0; }
+/** Custom font size for channel landing pages **/
+body.channels .channel-list .title { font-size: 18px; }
+
+
+
+
+
+
+.square { font-size:8px; }
+/*
+
+	Rating
+
+*/
+#RatingAddForm { display: inline; }
+.rtg-container {
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 80px;
+}
+.rtg-stars {
+	background-image: url(http://cdn.womensunitedonline.com/images/rating_stars.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+	display: block;
+	left: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.rtg-stars span {
+	display: none;
+}
+.rtg-stars-average {
+	background-position: bottom left;
+}
+.rtg-stars-active {
+	background-position: bottom left;
+	width: 0;
+}
+/* Spry Tabs */
+.TabbedPanels {
+	clear: none;
+	height: 54px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 1000px;
+}
+.TabbedPanelsTabGroup {
+	background: url(http://cdn.womensunitedonline.com/nav/navbar.jpg) top left repeat-x;
+	display: table;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	*display: block;
+}
+.TabbedPanelsTab {
+	border-left: 1px solid #fff;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: table-cell;
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+
+	*display: inline-block;
+	*float: left;
+}
+.TabbedPanelsTab a {
+	cursor: pointer;
+	display: block;
+	outline: 0;
+	padding: 10px 12px;
+}
+.FirstTabbedPanel {
+	border-left: 0;
+}
+.TabbedPanelsTabHover {
+	background-color: #A21F5C;
+}
+.TabbedPanelsTabSelected {
+	background-color: #A21F5C;
+	background-image: none;
+}
+.TabbedPanelsTab a, .TabbedPanelsContent a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+.TabbedPanelsContentGroup {
+	clear: both;
+	background-color: #9F1958;
+}
+.TabbedPanelsContent {
+	padding: 4px;
+	color:#FFFFFF;
+	width:990px;
+	overflow: hidden;
+	font-size:10px;
+}
+.LastTabbedPanel {
+	*float: none;
+	*padding: 10px auto;
+}
+.top-nav-bar {
+	margin:auto;
+	margin-top:10px;
+	width:1000px;
+	overflow:hidden;
+}
+/*END Spry Tabs*/
+
+/*sheknows.css*/
+.custom-article-color { color:#ffcccc;}
+.module-video-header {width:264px; height:280px; padding-left:11px; padding-top:5px; background: url(http://cdn.womensunitedonline.com/graphics/daily-dish/daily-dish-video-player.jpg) no-repeat; background-position:center;}
+.module-video-header .header {height:35px;}
+.module-video-header .player { padding-top:10px; height:202px;}
+.module-video-header a:link, .module-video-header a:active, .module-video-header a:visited {color:#fff; font-size:12px; font-weight:bold;}
+.module-video-header .more { text-align:center; padding: 10px 10px 0 0; color:#fff;}
+
+.clear-it {clear:both;}
+
+input {}
+input.submit {background-color:#A21F5C; border:none; color:#ffffff; clear:both;}
+input.submit:hover {background-color:#FF9900; border:none; color:#ffffff;}
+input.text, .text input { width: 300px; margin-left:8px;}
+label.text, .label label { margin-left: 10px;text-align:right; font-weight:bolder; color:#A21F5C; }
+img.captcha { float: left; margin:5px 10px 5px 5px; width:200px;}
+input.captcha { float:left; margin-left: 10px; margin-top:20px;}
+
+/* Comments */
+div.comments { max-width: 649px; margin-top: 20px; } /* Limit comment-box width for full-width articles */
+h3.comments { font-size: 22px; line-height: 24px; padding: 0px 0px 10px 0px; margin: 0px; }
+
+#commentBlock {clear: both;}
+.comments .comment-content { clear: both; background-color: #f1f1f1; border: 1px solid #CCC; padding: 15px; margin: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+h2.tab-header { background-color: #F7F7F7; border-top: 1px dotted #D7D7D7; border-bottom: 1px dotted #D7D7D7; height: 46px; position: relative; margin: 0px 0px 10px 0px; }
+h2.tab-header .title { position: absolute; bottom: -1px; left: 50px; float: left; display: block; padding: 3px 30px 0px 30px; margin: 0px; font-size: 20px; font-family: 'Georgia', serif; font-weight: normal; text-transform: lowercase; background-color: #FFF; border-top: 1px solid #D7D7D7; border-right: 1px solid #D7D7D7; border-bottom: 0px; border-left: 1px solid #D7D7D7; }
+
+.comments .comment-form h3 { float: left; display: block; padding: 2px 12px; margin: 0px; color: #FFF; font-size: 16px; font-family: 'Open Sans', 'Arial', sans-serif; font-weight: bold; background-color: #989898; }
+.comments .comment-form { padding-top: 30px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADxJREFUeNpiPHPmjAUDA8NEIN5tbGxcA6QZmIDYAYjNgDiQAQpYgHgpELMC8QGYIOP///8Z0AFWQYAAAwAkDg0yKUUMcgAAAABJRU5ErkJggg==) repeat-x;}
+
+.comments .input {margin-bottom: 10px;}
+.comments label, .commnets label.text, .comments .label label {
+	font-weight: bold; font-size: 14px;
+	color: #212121;
+	margin: 0px;
+	padding-right: 5px;
+	text-align: left;
+	vertical-align: top;
+}
+.comments .text { float: left; margin-right: 40px; }
+.comments .text input {line-height: 24px; width: 245px;}
+.comments textarea {width: 98%;}
+.comments .text input, .comments textarea {
+	background-color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 3px;
+	border: 1px solid #B7B7B7;
+	margin: 6px 0px;
+}
+
+.comments .button { color: #FFF; font-weight: bold; font-size: 14px;
+	border: 1px solid #ECEBEB;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	display: inline-block;
+	zoom: 1;
+	padding: 6px 15px;
+	text-transform: none;
+	margin-top: 8px;
+}
+
+.comments .comments-list span.name {
+	text-transform: none;
+	font-weight: bold;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.comments .comments-list span.date {
+	text-transform: uppercase;
+	color: #777;
+	text-indent: 12px;
+	font-weight: normal;
+	font-style: italic;
+	float: none;
+	padding-left: 4px;
+}
+
+.comments .comments-list p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #212121;
+	margin: 0px;
+	padding: 2px 0px 8px 0px;
+}
+
+.comments .comments-list .comment { padding: 16px 0px 0px 0px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADxJREFUeNpiPHPmjAUDA8NEIN5tbGxcA6QZmIDYAYjNgDiQAQpYgHgpELMC8QGYIOP///8Z0AFWQYAAAwAkDg0yKUUMcgAAAABJRU5ErkJggg==) repeat-x; }
+
+.comments .comments-list div.message {
+	border: none;
+	margin: 2px 0px 8px 0px;
+}
+
+/* Comments error messages */
+#comment_message {
+	border: 1px solid #BDE5F8;
+	background-color: #E8F6FD;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #00529B;
+	font-size: 12px;
+}
+
+/**	Giveaway pages
+**/
+.giveaways { padding-top: 10px; }
+.giveaways #main { margin-left: 10px; }
+.giveaways #sidebar { margin-right: 10px; padding-top: 10px; }
+.giveaways a { line-height:18px; }
+.giveaways h2 { color: #E70073; font-family: Arial, Helvetica, sans-serif; font-size: 140%; }
+.giveaways sup { color: #E70073; }
+.giveaways .new { color: #E70073; font-size: 120%; }
+.giveaways .left { display: block; float: left; position: relative; width: 400px; text-align: left; z-index: 2; }
+.giveaways .right { display: block; float: right; padding-right: 10px; position: relative; margin-left: 10px; text-align: right; }
+.giveaways .right img { border: none; display: block; margin: 30px 0 0 0; }
+.giveaways #invite legend { font-size: 12px; color: #a21f5c; text-transform: uppercase; font-weight: bolder; }
+.giveaways #invite fieldset { width: 518px; }
+.enter-giveaway { margin: 0 50px; }
+.enter-giveaway .input { position: relative; margin-bottom: 8px; overflow: hidden; zoom: 1; }
+.enter-giveaway label { margin-left: 0; color: #333333; }
+.enter-giveaway .label { display: block; float: left; line-height: 22px; text-align: right; width: 113px; }
+.enter-giveaway .field { display: block; float: left; width: 327px; }
+.enter-giveaway .select .field { margin-left: 6px; }
+
+.enter-giveaway .checkbox .label { width: auto; }
+.enter-giveaway .checkbox .field { margin-left: 121px; width: 20px; }
+
+.enter-giveaway .textarea .label { float: none; text-align: left; width: auto; }
+.enter-giveaway .textarea textarea { height: 80px; width: 440px; }
+
+.enter-giveaway .error-message { clear: left; font-weight: bold; margin-left: 121px; }
+
+.giveaway-confirm .label { font-size: 10px; margin-right: 8px; }
+.giveaway-confirm .field { font-size: 12px; line-height: 22px; }
+.giveaway-confirm .field em { color: #bbb; }
+
+
+/*Hearst feeds*/
+.hearst a:link, .hearst a:visited, .hearst a:active, .hearst { color:#990000; font-size:11px; font-weight:bold;}
+.hearst a:hover {color:#555555; }
+
+/* Sponsors signup form */
+.sponsors {font-size:12px; line-height:18px;}
+.sponsors .top-text { font-size: 14px; font-weight: bold; }
+.sponsors .required { color: #ff0000; }
+.sponsors .topform { width: 150px; display: block; float: left; text-align: right; font-weight: bold; margin-right: 5px; }
+.sponsors .bottomform { }
+.sponsors br { clear: both; }
+
+/* Right Sidebar */
+.sidebar_special-features		{
+	border: 1px solid #cccccc;
+	width: 300px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.sidebar_special-video		{
+	border: 1px solid #cccccc;
+	background-color: #F3F3F3;
+	width: 620px;
+	height:90px;
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#fiveMinThumbSeed { background-color: #f3f3f3; }
+.sidebar_special-features a, .sidebar_special-video a 	{ color: #3c3c3c; text-decoration: none; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.sidebar_special-features th, .sidebar_special-video th, .sidebar_get-involved th	{ background-color: #a32143; text-align: left; font-size: 20px; font-weight: bold; border-bottom: none; font-family: Georgia, "Times New Roman", Times, serif;line-hieght: 130%; padding: 5px; text-transform: none; font-weight: bold; color: #fff; }
+.sidebar_special-features td, .sidebar_special-video td	{ padding-top: 5px; }
+.sidebar_special-features ul, .sidebar_special-video ul, .sidebar_get-involved ul	{ padding-left: 25px; text-align: left; *margin-left: 0; }
+.sidebar_middle					{ width: 300px; clear: both; }
+.sidebar_find-more 				{
+	/*border-left: 1px solid #dddddd;*/
+	width: 125px;
+	float: left;
+	overflow: hidden;
+}
+.sidebar_ads {
+	margin:auto;
+	width:300px;
+	margin-bottom: 10px;
+}
+.sidebar_find-more h2 			{ background-color: #fff; color: #000; font-family: Georgia, "Times New Roman", Times, serif; /*border-bottom: 2px dashed #ccc; padding: 5px; margin-left: 5px;*/ font-size: 18px; font-weight: bold;  text-align: left; padding-bottom: 5px; margin-top: 1px; }
+.sidebar_find-more ul			{ margin-left: 0; margin-top: 0; padding-left: 0; margin-left: 5px; text-align: left; }
+.sidebar_find-more ul li		{ list-style: none; /*border-bottom: 1px dashed #3c3c3c;*/ padding-top: 5px; padding-bottom: 6px;}
+.sidebar_find-more a 			{ color: #3c3c3c; text-decoration: none; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.tall_ad						{
+	float: right;
+	width: 160px;
+	margin-top: 10px;
+}
+.sidebar_get-involved			{
+	border: 1px solid #cccccc;
+	width: 300px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sidebar_get-involved a 		{ color: #3c3c3c; text-decoration: none; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+/*.sidebar_get-involved th		{ background-color: #cccccc; text-align: left; font-size: 14px; font-weight: bold; }*/
+.sidebar_get-involved ul		{ padding-left: 25px; text-align: left; }
+.sidebar_links-ad {
+	width:300px;
+	margin:auto;
+	margin-bottom: 10px;
+}
+.sidebar_links-ad .tall_ad {
+	text-align: center;
+	width: auto;
+	float: none;
+}
+.channel_sidebar_special-features	{ border: 1px solid #cccccc; width: 300px; }
+.channel_sidebar_special-features a 	{ color: #3c3c3c; text-decoration: none; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.channel_sidebar_special-features th	{ background-color: #cccccc; text-align: left; font-size: 14px; font-weight: bold; }
+.channel_sidebar_special-features ul	{ margin: 0; padding-left: 25px; text-align: left;  }
+.channel_sidebar_find-more			{ float: left; border-left: 1px solid #dddddd; margin-left: 0px; width: 130px; }
+.channel_sidebar_find-more h2 		{ border-bottom: 1px dashed #3c3c3c; padding-bottom: 5px; margin-left: 5px; font-size: 16px; font-weight: bold; }
+.channel_sidebar_find-more ul		{ margin-left: 0; margin-top: 0; padding-left: 0; margin-left: 5px; text-align: left; }
+.channel_sidebar_find-more ul li	{ list-style: none; border-bottom: 1px dashed #3c3c3c; padding-top: 5px; padding-bottom: 6px;}
+.channel_sidebar_find-more a 		{ color: #3c3c3c; text-decoration: none; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.channel_sidebar_find-features a 	{ color: #3c3c3c; text-decoration: none; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.channel_sidebar_find-features th	{ background-color: #cccccc; text-align: left; font-size: 14px; font-weight: bold; }
+.channel_sidebar_find-features ul	{ margin: 0; padding-left: 25px; text-align: left;  }
+.channel_sidebar_get-involved		{ border: 1px solid #cccccc; width: 300px; }
+.channel_sidebar_get-involved a 	{ color: #3c3c3c; text-decoration: none; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.channel_sidebar_get-involved th	{ background-color: #cccccc; text-align: left; font-size: 14px; font-weight: bold; }
+.channel_sidebar_get-involved ul	{ margin: 0; padding-left: 25px; text-align: left; }
+
+/*sitemap*/
+.cat-Channel , .cat-Channel a {
+	font-family:'Century Gothic', Arial, sans-serif;
+	font-size:16px;
+	color:#990000;
+	font-weight:bold;
+}
+.sitemap-title {
+	font-family:'Century Gothic', Arial, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+.cat-SubChannel {
+	font-weight:bold;
+}
+
+/* ----- In Numbers ------------------------------------------------------------------- */
+.numbers-wedding {
+	background-image:url(http://cdn.womensunitedonline.com/interface/numbers/wedding/background.jpg);
+	background-repeat: no-repeat;
+	float:left;
+	height:248px;
+	width:277px;
+	margin-left: 10px;
+}
+.in-numbers-wedding { margin-top: 10px; margin-left: 18px; }
+.numbers-list-wedding { position:relative; top:10px; }
+.numbers-list-wedding .article-sub-title {
+	font-family:Century Gothic,Verdana;
+	font-size:36px;
+	/*font-weight: bold;*/
+	line-height:36px;
+	text-transform:uppercase;
+}
+/* ----- /In Numbers ------------------------------------------------------------------ */
+/* ----- Wedding Dress of the Day & Gallery ------------------------------------------- */
+.dress-of-the-day-box {
+	height:160px;
+	width:300px;
+	overflow: hidden;
+	border: none;
+	background-color: #fff;
+}
+.dress-info
+{
+	width: 150px; height: 145px;
+	background-color: #EFE8DE;
+	position: absolute; right: 0px;
+}
+.dod-title {
+	color: #CC0066;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Century Gothic, Arial, sans-serif;
+	font-size: 17px;
+}
+.dod-thumb {
+	width: 140px;
+	height: 140px;
+	overflow: hidden;
+	border: 1px solid #857D7B;
+	float: left;
+	margin: 0px;
+}
+.dod-designer {
+	position: relative; top: 35px; left: 25px; width: 120px;
+	margin-top: 0px;
+	color: #857D7B;
+}
+.dod-designer a { color: #857D7B; }
+.dod-seemore {
+	position: relative; top: 75px; left: 25px;
+	float: none;
+	margin-top: 0px;
+	margin-right: 0px;
+}
+.dodl-box { width: 300px; height: 450px; background-color: #5D4964; }
+.dodl-white { width: 275px; height: 385px; margin: 0 13px 0 13px; color: #5d4964; text-align: center; background-color: #ffffff; }
+.dodl-white .dodl-image { width: 228px height:332px; overflow: hidden; }
+.dodl-white a { color: #5d4964; font-size: 12px;}
+.dodl-white h2 { font-weight: normal; margin:3px; }
+
+/* ---- American Cancer Article Box ------------------------------------ */
+.container-going-green { width: 300px; height: 200px; background-image:url(http://cdn.womensunitedonline.com/american-cancer-society/background-300x200.jpg); background-repeat: no-repeat; color: #000000; }
+.going-green-link { margin: 0; padding: 0; padding-top: 105px; padding-left: 12px; text-align: left; }
+.going-green-link li { list-style: none; line-height: 18px; }
+.going-green-link li.more { margin-top: 5px; color: #286228; }
+.going-green-link li.more a {
+	color: #233F92;
+}
+.going-green-link li a { color: #000000; font-size: 12px; }
+/* ---- /American Cancer Article Box ----------------------------------- */
+
+.sites-we-like { padding-left: 12px }
+.sites-we-like ul li a { margin-left: 0px; }
+
+#rel_articles ul li { margin-left: 10px; }
+/* old footer file app/inc/footer.php*/
+
+.footer-wrapper {
+	background-image:none;
+	background-color:#E8E8E8;
+	height:20px;
+	width:1000px;
+}
+.footer-content {
+	height:20px;
+	width:850px;
+	float: right;
+	margin-right:5px;
+	text-align:right;
+	margin-top:0px;
+	font-family: Century Gothic, sans-serif;
+	font-weight: none;
+	font-size:12px;
+	color:#414040;
+}
+.footer-content a {
+	color:#414040;
+}
+
+.legal-disclaimer { font-size: smaller; font-style: italic; }
+
+/*Daily Dish*/
+.module2-video-header {width:284px; height:250px; margin-left:0px; margin-top:0px; background-color: #DFDFDF; }
+.module2-video-header .header2 {width:280px; margin-left:0; }
+.module2-video-header .header2 .dd-logo { text-align: left; }
+.module2-video-header .header2 .dd-logo .sponsored { margin: 0; padding: 0; margin-top: 7px; margin-right: 5px; margin-bottom: 3px; width : 100px; float: right; }
+.module2-video-header .header2 .dd-logo .sponsored a { margin: 0; padding: 0; border: 0; }
+.module2-video-header .header2 .dd-logo .dd-head { margin: 0; padding: 0; border: 0; width: 170px; float: left; margin-bottom: 3px;  }
+.module2-video-header .header2 .dd-logo .dd-head .dd { font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: bold; color: #3F3F3F; text-decoration:none; text-transform: uppercase; margin-left: 5px; margin-top: -2px;margin-bottom: 2px; display: inline-block; }
+.module2-video-header .header2 .dd-logo .dd-subhead { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #8D8C8C; text-transform: uppercase; margin-left: 7px; margin-top: 5px; }
+.module2-video-header .player2 { height:206px; width:284px; clear:both; }
+.module2-video-header .more2 { padding-top:5px; }
+.module2-video-header .more2 a:link, .module2-video-header .more2 a:active, .module2-video-header .more2 a:visited, .module2-video-header .more2 {color:#555555; font-size:12px; font-weight:bold; }
+.module2-video-header .more2 a:hover { color:#000000; font-size:12px; font-weight:bold;}
+/* ---- Daily Dish Redesign module ------------------------*/
+.video_title { font-family: Georgia, "Times New Roman", Times, serif; color : #d13f5d; font-size: 20px; text-transform: uppercase; font-weight: 200; }
+.video_title .black { color: #000; }
+.video_title_sponsored { width: 128px; float: right; margin-top: 5px; }
+.video_tabs { clear: both; width: 300px; height: 20px; position: relative; top: 10px; left: 0; margin-bottom: 10px; }
+.video_tabs ul { margin: 0; padding: 0; list-style: none; }
+.video_tabs ul li { display: block; float: left; text-align: center; text-transform: uppercase;  height: 20px; padding-top: 5px; }
+.video_tabs ul li a { color: #fff; font-size: 10px;}
+.video_tabs ul li.yesterday { width: 182px; }
+.video_tabs ul li.today { width: 117px; border-left: 1px solid #fff; }
+
+
+/* ---- Custom Links module -------------------------------*/
+.custom-links 				{ width:282px; height:249px; background:url(http://cdn.womensunitedonline.com/interface/background-flashpanel-block.jpg) repeat-x bottom left; border: 1px solid #c2c2c2; }
+.custom-links-content		{ padding:10px; }
+.custom-links-content h3 	{ margin: 0px; font-size:18px; line-height: 26px; font-family:Arial, Helvetica, sans-serif; font-weight: bold; }
+.custom-links-content li	{ line-height: 16px; }
+.custom-links-content ul	{margin-top:0px; margin-left:15px; padding-left:0px; list-style-type: square;}
+
+/* ---- Recipe of the Day module -------------------------- */
+.recipe-of-the-day	{ border: 1px solid #C2C2C2; }
+.recipe-of-the-day .seemore { color: #a21f5c; }
+.recipe-of-the-day .rod { background-color: #fff; padding-top:10px; padding-left: 10px; }
+.recipe-of-the-day .rod .thumb { float: left; border: 0; display: block; }
+.recipe-of-the-day .rod .recipes { text-align: left; display: block; margin-left: 110px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 18px; }
+.recipe-of-the-day .more-recipes { background-color: #E1E1E1; text-align: left; padding:10px; position: relative;  }
+.recipe-of-the-day .more-recipes ul { margin: 0; margin-top: 10px; padding: 0; line-height: 14px; }
+.recipe-of-the-day .more-recipes li { display: inline-block; float: left; width: 125px; margin-top: 0px; }
+
+/* --- Points & Prizes Banner --------------------------- */
+.pnp-hunt-word
+{
+	background:url(http://cdn.womensunitedonline.com/interface/background-flashpanel-block.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border: 1px solid #c2c2c2;
+	width: 997px; height: 71px;
+	margin-bottom: 0;
+}
+.pnp-hunt-word .pnp-blurb
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	margin-left: 10px; margin-top: 7px;
+	float: left;
+}
+.pnp-hunt-word .pnp-word
+{
+	width: 261px; height: 42px;
+	float: right;
+	margin-top: 13px; margin-right: 39px;
+}
+/* ---- Newsletter Signup module -------------------------- */
+.newsletter-signup { text-align: left; }
+.newsletter-signup form { margin-top: 5px; margin-bottom: 5px; }
+.newsletter-signup .bordered
+{
+	background-image: url(http://cdn.womensunitedonline.com/interface/dot-grey.gif);
+	background-position: bottom left; background-repeat: repeat-x;
+	font-size: 10px; font-weight: bold;
+}
+/* -----------------Micro Navbar on article pages ----------- */
+.micro-nav { width:1000px; background-image:url(http://cdn.womensunitedonline.com/micro-sites/organic/sub-nav.jpg); line-height:22px; height:22px; margin-left:-10px; padding-left:5px; }
+.micro-nav a:link, .micro-nav a:active, .micro-nav a:visited { color:#000; }
+.micro-nav a:hover { color:#990000; }
+
+/* ----------------- Daily Horoscope page ----------- */
+.horoscope, .tarot, .horoscope_popular_features, .forecast, .fengshui, .kua-energy, .daily-numerology, .astrology
+{
+	margin:0;
+	border: 1px solid #C2C2C2;
+}
+.col_container { width: 620px; }
+.col_container .left_column { width: 300px; float: left; margin-right: 20px; }
+.col_container .right_column { width: 300px; float: right; }
+
+/* Internals */
+.horoscope-internal, .tarot-internal, .fengshui-internal, .forecast-internal, .kua-energy-internal, .daily-numerology-internal, .astrology-internal
+{ margin: 5px; line-height: 18px; }
+
+/* Text blocks */
+.horoscope-text, .tarot-text, .fengshui-text
+{ margin-top: 10px; }
+.forecast-text {  }
+
+.horoscope { width: 300px; }
+.horoscope-date { color : #ff0066; font-weight: bold; font-size: 12px; }
+.horoscope form { margin-top: 10px; margin-bottom: 10px; }
+.tarot { width: 620px; }
+.fengshui { width: 300px; height: 177px; }
+.forecast { width: 620px; }
+.kua-energy { width: 300px; }
+.kua-energy form { margin-top: 10px; margin-bottom: 10px; }
+.daily-numerology { width: 300px; height: 115px; }
+.daily-numerology form { margin-top: 10px; margin-bottom: 10px; }
+.astrology { width: 300px; }
+.astrology form { margin-top: 10px; margin-bottom: 10px; }
+
+/* HTML Ads from OpenX */
+.adsk { background-color: #F4F4F4; }
+.adsk a { color:#008B98; }
+
+/* Block : Photo Gallery */
+.block_photo-gallery { width: 300px; min-height: 250px; border: 1px solid #f6f6f6; font-size: 10px; }
+.block_photo-gallery .gallery-thumb { display: block; float: left; width: 75px; height: 100px; margin: 5px;}
+.block_photo-gallery .gallery-thumb img { width: 70px; height: 70px; }
+
+/* Subnav Styles */
+.noBullets { list-style-type: none !important; }
+
+ul#subnav-social { float: right; margin: 0px 8px 0 0; padding: 0px; height: 34px; }
+ul#subnav-social li { float: left; height: 34px; }
+ul#subnav-social li.follow-us-text { margin-right: 8px; color: #fff; font-weight: bold; text-transform: uppercase; font-size: 14px; line-height: 34px; }
+ul#subnav-social li.follow-us { margin-top: 2px; }
+
+ul#subnav li.subnav-first {
+	/*border-left: 0px;*/
+}
+
+/* Internationalization content belt */
+.module.i8n_content_belt { display: none; padding-top: 20px; padding-right: 20px; background: url('http://cdn.womensunitedonline.com/sheknows/brown-border.gif') repeat-x scroll 0 -3px transparent; }
+.module.i8n_content_belt .country_image { float: left; width: 200px; margin-bottom: 15px; }
+.module.i8n_content_belt .country_image img { display: block; margin: auto 0; }
+.module.i8n_content_belt ul.links { float: right; width: 31%; padding: 0; margin: 0 0 11px 2%; }
+.module.i8n_content_belt ul.links:first-child { float: left; }
+.module.i8n_content_belt ul.links li {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.85;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background: url(http://cdn.womensunitedonline.com/interface/dots-sm-violet.gif) bottom left repeat-x;
+	overflow: hidden;
+	font-weight: bold;
+	text-align:left;
+}
+.module.i8n_content_belt ul.links li a { font-weight: normal; }
+.module.i8n_content_belt .seemore_channel_link { display: block; float: right; text-transform: uppercase; font-size: 10px; }
+
+
+ul#subnav li.subnav-home {
+	/*background: transparent url(http://cdn.womensunitedonline.com/interface/subnav-home-arrow.png) no-repeat right;*/
+	height: 34px;
+	overflow: hidden;
+	padding-right: 10px;
+	border-right: 0px;
+	text-transform: uppercase;
+}
+
+
+/* ---- Daily Dish Redesign module NEW ------------------------*/
+.sidebar_video_tabs { clear: both; padding: 5px 0px 15px 0px; height: 25px; }
+.sidebar_video_tabs ul { margin: 0; padding: 0; list-style: none; }
+.sidebar_video_tabs ul li { display: block; float: left;  border: 1px solid #727272; height: 28px; font-weight: bold; font-size: 14px; line-height: 28px; text-align: center; background-color: #FFFFFF; }
+.sidebar_video_tabs ul li.enlarge { width: 110px; margin-right: 4px; }
+*.sidebar_video_tabs ul li.enlarge_text { margin-top: 5px; }
+.sidebar_video_tabs ul li.seemore { width: 182px; }
+
+/* Content Module Headers - Hiding the H2 tag */
+.content-block-left .title h2,.content-block-right .title h2 { text-indent: -9999px; height: 0; width: 0; margin: 0; padding: 0; }
+
+/* Legal Disclaimer */
+.legal-disclaimer { font-size: smaller; font-style: italic; }
+
+/* Tags */
+.tags { background: url('http://cdn.womensunitedonline.com/icons/tag-micro-gray.png') no-repeat 0 60%; padding: 5px 0 5px 20px; }
+
+/*Comscore footer images*/
+.ft-logo img {border:none; margin:10px;}
+.ft-logo { text-align:center;}
+
+/*sktv widget styles*/
+.sktv_video_box {
+	border: 1px solid #ccc;
+	width: 278px;
+	padding:10px;
+	text-align: center;
+}
+.sktv_video_box .video_player {
+	padding: 10px 0px;
+}
+.sktv_video_box .video_list ul {
+	padding: 0px 12px 10px 12px;
+	margin: 0px;
+	background: url(http://cdn.womensunitedonline.com/interface/video-bg.gif) no-repeat top center;
+}
+.sktv_video_box .video_list ul li {
+	list-style-type: none;
+	line-height: 27px;
+	text-align: left;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+.sktv_video_box .video_list ul li .icon {
+	position: absolute;
+	right: 15px;
+	background: transparent url(http://cdn.womensunitedonline.com/interface/icons/icon_video.png) no-repeat center right;
+	width: 30px;
+	height: 22px;
+}
+.sktv_video_box .video_list ul li a:link,
+.sktv_video_box .video_list ul li a:active,
+.sktv_video_box .video_list ul li a:visited {
+	text-decoration: none;
+}
+.sktv_video_box .video_list ul li a:hover {
+	text-decoration: none;
+}
+.sktv_video_box .video_list ul li .watch {
+	position: absolute;
+	right: 15px;
+	text-align: right;
+	padding-right: 35px;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.sktv_video_box .video_list ul li .icon {
+	position: absolute;
+	right: 15px;
+	/*background: url(http://cdn.womensunitedonline.com/interface/icons/icon_video.png) no-repeat center right;*/
+	margin-top: 3px;
+}
+.sktv_video_box .color1 {
+	width: 27px !important;
+	height: 20px !important;
+}
+.sktv_video_box img.sktv-logo-sponsored { float: left; }
+.sktv_video_box p.sponsored { margin: 0px; float: right; }
+.sktv_video_box div.video-player { clear: both; }
+.sktv_video_title { display: none; }
+
+.sktv-video-box-new ul {
+	list-style: none;
+}
+.sktv-video-box-new li {
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px;
+	opacity: .6;
+	filter: alpha(opacity = 70);
+}
+.sktv-video-box-new li.selected {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+.sktv-video-box-new li img {
+	cursor: pointer;
+	width: 115px;
+	border: 1px solid transparent;
+}
+.sktv-video-box-new li.selected img {
+	border: 1px solid #000;
+}
+
+/* Points & Prizes Sales Integrations Key Words */
+.pnp_si_word { display: block; margin: 10px auto; border: 1px solid #AFAFAF; background-color: #EFEFEF; padding: 10px; width: 100%; text-align: center; }
+.pnp_si_word .word { font-weight: bold; font-size: 12px; color: #C13D55; }
+.pnp_si_word .value { font-weight: bold; }
+.pnp_si_word .dates { font-weight: bold; }/* Base Styles */
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color:#333333;
+}
+
+#doc #hd, #doc #bd {
+	margin:0;
+}
+
+a { text-decoration: none; }
+
+.ui-navbar
+{
+  margin:  5px 0;
+  width:   100%;
+}
+
+
+/**
+ * CSS ClearFix
+ *
+ * Automagically clears floating elements. The result is an element
+ * which "hasLayout" to the Browser.
+ */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[lang] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+/* end ClearFix */
+
+input[type="search"] { -webkit-appearance: none; -moz-appearance: none; }
+
+.banners
+{
+  margin:  0;
+  width:   100%;
+}
+.banners .ad-openx { float: left; display: block; }
+.banners .ad-banner { float: right; }
+.banners .fullwidth, .ad .fullwidth { width: 1000px; margin: auto; text-align: center; padding: auto; display: block; }
+.banners .fullwidth img, .ad .fullwidth img { margin:0 auto; }
+.banners .fullwidth table, .ad .fullwidth table { margin:0 auto; }
+.banners .leaderboard { text-align: center; margin: auto; min-width: 728px; background: #f6f6f6; padding: 4px 0; margin-top:5px;}
+.ie7 .banners .leaderboard { width: 1000px; }
+.banners .leaderboard .module {padding-bottom: 0; margin-bottom:0;}
+
+/* Force ads to render below navbar (hopefully) */
+
+.banners .ad-banner { position:relative; z-index:5; }
+
+.block1 table div { z-index: 1; }
+
+#bd { *height:1%; }
+
+
+.ad-placeholder
+{
+	background-color: #efe8de;
+	background: #efe8de url() center center no-repeat;
+}
+
+.ad-placeholder span
+{
+	display: none;
+}
+
+.module {  position: relative; zoom: 1;  }
+
+#doc #bd { margin-top: 5px; margin-bottom: 10px; }
+
+/* This holds columns one and two on the main channel landing pages */
+.main-channellanding
+{ width : 695px; float: left; position: relative; }
+
+.main-channellanding .col1
+{ width: 429px; float: left; position: relative; }
+.main-channellanding .col2
+{ width: 256px; margin-left: 10px; position: relative; }
+
+.main-channellanding .header { width: 695px; height: 335px; position: relative; margin-bottom: 5px; }
+.main-channellanding .content { width: 695px; height: 783px; position: relative; }
+
+/* Right Sidebars */
+/* This holds the rightside column on the main channel landing pages */
+.sidebar-channellanding
+{ width: 300px; float: right; position: relative; }
+
+
+.yui-overlay
+{
+  position:absolute;
+  visibility:hidden;
+  z-index:2;
+}
+
+/* Header Styles */
+#hd {display: block;}
+
+#hd .main { float: left; width: 565px; position: relative; } /* holds logo & #hd center div */
+#hd .right { float: right; width: 315px; position: relative; } /* holds search box */
+
+#hd .main img { max-width: 550px; }
+
+.sheknows-logo a
+{
+  display:     block;
+  overflow:    hidden;
+  position:    relative;
+  text-indent: -999px;
+  height:      105px;
+  width:       550px;
+  background:  url(http://cdn.womensunitedonline.com/channels/sheknows.gif) top left no-repeat;
+}
+
+/* Footer Styles */
+#ft { height: auto; margin: 0; position: relative; overflow: hidden; }
+.footer-wrapper { background-image:none; background-color:#E8E8E8; height:20px; width:1000px; }
+.footer-content { height:20px; width:850px; float: right; margin-right:5px; text-align:right; margin-top:0px; font-family: Century Gothic, sans-serif; font-weight: none; font-size:12px; color:#414040; }
+.new-footer-content a:link, .new-footer-content a:visited, .new-footer-content a:active { color:#000; }
+.new-footer-content a:hover {color:#555; }
+
+
+/* Channel Specific Nav (cause it doesn't have to be floofy */
+.nav-channel { display: inline-block; width: 100%; height: 34px; line-height: 34px; }
+.nav-channel ul { padding: 0; margin: 0; margin-left: 10px; font-size: 10px; list-style: inside; }
+.nav-channel ul li { color: #ffffff; list-style-type: square; list-style-position: inside; float: left; margin: 0; padding: 0 0.75em; }
+.nav-channel a:link,
+.nav-channel a:active,
+.nav-channel a:visited
+{
+  color:           #ffffff;
+  text-decoration: none;
+  margin-top:      8px;
+  font-weight:     bold;
+  margin-left:     -6px;
+  font-size:       12px;
+}
+
+
+.ui-navbar, .nav-channel {
+
+  background-color: #C13D55;
+
+}
+
+
+
+
+
+
+
+
+
+
+/**
+ *
+ * UI Icons section
+*/
+
+.ui-loading
+{
+  background: transparent url(http://cdn.womensunitedonline.com/redesign/indicators/snake.gif) no-repeat;
+}
+
+li.ui-loading
+{
+  min-height: 16px;
+  min-width:  16px;
+}
+
+
+.yui3-widget-loading {   position:absolute; top:-1000em; left:-1000em; }
+.yui3-overlay-loading {
+   /* Hide overlay markup offscreen */
+   position:absolute;
+   top:-1000em;
+   left:-1000em;
+}
+
+
+
+
+/** End UI Icons ******************************************************/
+
+
+
+/***
+ * Menu Bar
+ *
+ *
+*/
+
+.ui-navbar {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size:   12px;
+  line-height: 29px;
+  position:    relative;
+  *z-index:    12000;
+
+}
+
+.ui-navbar td { font-size: 100%;}
+
+.ui-navbar ul {
+
+  list-style:  none;
+  padding:     0;
+  margin:      0;
+}
+/* .ui-navbar ul li {line-height: 29px; } */
+
+
+/*
+    The following style rule trigger the "hasLayout" property in
+    IE (http://msdn2.microsoft.com/en-us/library/ms533776.aspx) for a
+    MenuBar instance's <ul> element, allowing both to clear their floated
+    child <li> elements.
+*/
+
+.ui-navbar ul, .ui-navbar-overlay .bd { *zoom: 1;}
+
+
+/*
+    Remove the "hasLayout" trigger for submenus of MenuBar instances as it
+    is unnecessary.
+*/
+
+.ui-navbar .yuimenu ul {  *zoom: normal;}
+
+/*
+    The following style rule allows a MenuBar instance's <ul> element to clear
+    its floated <li> elements in Firefox, Safari and and Opera.
+*/
+
+.ui-navbar>.bd>ul:after, .ui-navbar-overlay>.bd:after {
+
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+
+}
+
+.ui-navbaritem { float: left; display: inline-block;}
+
+.ui-navbaritemlabel {
+  display:  block;
+  position: relative;
+}
+
+.ui-navbaritem .yuimenu .bd {  position: relative;}
+
+.ui-navbaritemlabel { text-align: center;}
+
+.ui-shadow {
+  position:   absolute;
+  visibility: hidden;
+  z-index:    -1;
+}
+
+.ui-navbaritem .yui-overlay-hidden { display: none;}
+
+.ui-navbaritem-selected .ui-shadow {
+  top: 2px;
+  right: -3px;
+  left: -3px;
+  bottom: -3px;
+  visibility: visible;
+}
+
+.ui-navbaritem { position: relative;}
+
+.ui-navbaritem-selected {z-index: 12001;}
+
+.ui-navbaritem-selected .ui-navbaritemlabel { z-index: 4;}
+
+
+/* MenuBarItem style rules */
+
+.ui-navbaritem { border-left: solid 1px #A43448;}
+
+.ui-navbar li.first-of-type { border-left-color: transparent;}
+
+/*ie hacks */
+.ui-navbar li.first-of-type a { padding: 0 3px\9;}
+
+.ui-navbaritemlabel {
+  padding: 0 /* 10px */;
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px 0;
+  *position: relative; /*  Necessary to get negative margins in IE. */
+  margin: -1px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.ui-navbaritemlabel:link, .ui-navbaritemlabel:active, .ui-navbaritemlabel:visited { color: #fff; }
+.ui-navbaritemlabel:hover, .ui-navbaritem:hover {text-decoration: none;}
+
+.ui-navbaritemlabel {
+
+  /* padding-right: 20px; */
+
+  /*
+      Prevents the label from shifting left in IE when the
+      ".ui-navbarnav .ui-navbaritemlabel-selected"
+      rule us applied.
+  */
+
+  *display: inline-block;
+}
+
+.ui-navbaritem-selected .ui-navbaritemlabel
+{
+  background-color: #ffffff;
+  border-color: #a0a0a0;
+  border-width: 1px;
+  border-bottom-color: transparent;
+  margin: -1px;
+  color: #000;
+  position:  relative;
+  z-index:    4;
+}
+
+
+/* Menu style rules */
+
+.ui-navbar-overlay { font-size: 100%;}
+
+.ui-navbar-overlay {
+  position:   absolute;
+  text-align: left;
+  left:       -9999px;
+  top:        29px;
+  margin:     0 -1px;
+  *margin:    -1px 0;
+  visibility: hidden;
+}
+
+.ui-navbar-overlay .bd {
+  background-color: #fff;
+  display:          block;
+  _display:         inline;
+}
+
+.ui-navbar-col {
+  background:  #f0f0f0;
+  border-left: 2px solid #d8d8d8;
+  vertical-align: top;
+  width:       351px;
+}
+
+.ui-navbar-col.first {
+  background:   #fff;
+  border-left:  0;
+  min-width:        150px;
+  white-space: nowrap;
+  width:  auto;
+  *width  150px;
+}
+
+.ui-navbar-overlay {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #A0A0A0;
+}
+
+.ui-navbar-overlay ul {
+  padding: 0;
+  display: block;
+}
+
+
+/* Group titles */
+
+.ui-navbar-overlay h6 {
+
+  font-weight: bold;
+  color:       #222222;
+  display:     block;
+  margin:      0;
+  font-size:   100%;
+  padding:     3px 10px 0 10px;
+  white-space: nowrap;
+
+}
+
+
+/* MenuItem style rules */
+
+.ui-navbaritem {
+
+  border-bottom: 1px solid transparent;
+
+  /*
+      For IE 7 Quirks and IE 6 Strict Mode and Quirks Mode:
+      Used to collapse superfluous white space between <li> elements
+      that is triggered by the "display" property of the <a> elements being
+      set to "block."
+  */
+
+  _border-bottom: solid 1px #fff;
+
+}
+
+.ui-navbaritemlabel {
+
+  padding: 0 9px;
+  color:   #000;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+
+/* Menu states */
+
+
+/* Visible Menu */
+
+.ui-navbaritem-selected .ui-shadow {
+
+  background-color: #000;
+
+  /*
+      Opacity can be expensive, so defer the use of opacity until the
+      menu is visible.
+  */
+
+  opacity: .12;
+  *filter: alpha(opacity=12);  /* For IE */
+
+}
+
+.ui-navbaritem-selected .ui-navbar-overlay {
+
+  display:    block;
+  left:       0;
+  visibility: visible;
+
+}
+
+
+.ui-navbaritemlabel {
+
+  white-space: nowrap;
+
+}
+
+.ui-navbaritemlabel-selected,
+.ui-navbaritemlabel-selected:link,
+.ui-navbaritemlabel-selected:active,
+.ui-navbaritemlabel-selected:visited {
+  color: #000;
+}
+
+.ui-navbaritem ul a:link,
+.ui-navbaritem ul a:visited{
+  color: #313131;
+  white-space: nowrap;
+}
+
+.ui-navbar-overlay {
+  margin: 0 -1px;
+}
+
+.ui-navbar-overlay .first a {
+  display: block;
+  font-size: 12px;
+  padding: 0 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.ui-navbaritem .ui-navbar-overlay .first li:hover
+{
+	background-color: #f9e9eb;
+}
+
+
+.ui-navbar-overlay-feed {
+	min-width: 440px;
+}
+.ui-navbar-overlay-feed a {
+	font-size: 11px;
+}
+.ui-navbar-overlay-feed a:hover {
+	text-decoration: underline;
+}
+
+.ui-navbar .feed {
+
+}
+
+.ui-navbar .feed h6 {
+  margin-left: 17px;
+  padding-left: 0;
+}
+
+.ui-navbar .feed ul {
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+.ui-navbar .feed li {
+  display: block;
+  display: list-item;
+  font-size: 10px;
+  line-height: 17px;
+}
+
+.feed-loading
+{
+	background-image: url(http://cdn.womensunitedonline.com/redesign/indicators/wheel-throbber.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.ui-navbaritem-icon,
+.ui-navbaritem-home {
+  padding: 0;
+}
+
+.ui-navbaritem-home .ui-navbaritemlabel,
+.ui-navbaritem-icon .ui-navbaritemlabel {
+  background-image: url(http://cdn.womensunitedonline.com/interface/navicons.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+.ui-navbaritem-video .ui-navbaritemlabel {
+  background-position: bottom center;
+}
+.ui-navbaritem-home span,
+.ui-navbaritem-icon span {
+  display: none;
+}
+.ui-navbaritem-home .ui-navbaritemlabel,
+.ui-navbaritem-icon .ui-navbaritemlabel {
+  display: block;
+
+  width: 25px;
+}
+.ui-navbaritem-home.ui-navbaritem-selected,
+.ui-navbaritem-icon.ui-navbaritem-selected {
+	background-color: transparent;
+}
+.ui-navbar .ui-navbaritem-video.selected .ui-navbaritemlabel {
+	background-position: center;
+}
+
+.ui-navbar .ui-navbaritem-home,
+.ui-navbar .ui-navbaritem-icon {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.ui-navbaritem-home .ui-navbaritemlabel,
+.ui-navbaritem-icon .ui-navbaritemlabel {
+  height: 29px;
+  padding: 0 4px;
+}
+.ui-navbaritem-home .ui-navbaritemlabel {
+  background-color: transparent;
+  margin: 0;
+  border: 0;
+}
+#navbar .bd .ui-navbaritem-home {
+  border-color: transparent;
+}
+
+.ui-navbaritem .ui-navbar-new {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    display: block;
+    background-color: #ff9200;
+    color: #fff;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 10px;
+    padding: 0px 5px;
+    transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+}
+
+
+/*Daily Dish*/
+.module2-video-header {width:284px; height:250px; margin-left:0px; margin-top:0px; background-color: #DFDFDF; }
+.module2-video-header .header2 {width:280px; margin-left:0; }
+.module2-video-header .header2 .dd-logo { text-align: left; }
+.module2-video-header .header2 .dd-logo .sponsored { margin: 0; padding: 0; margin-top: 7px; margin-right: 5px; margin-bottom: 3px; width : 100px; float: right; }
+.module2-video-header .header2 .dd-logo .sponsored a { margin: 0; padding: 0; border: 0; }
+.module2-video-header .header2 .dd-logo .dd-head { margin: 0; padding: 0; border: 0; width: 170px; float: left; margin-bottom: 3px;  }
+.module2-video-header .header2 .dd-logo .dd-head .dd { font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: bold; color: #3F3F3F; text-decoration:none; text-transform: uppercase; margin-left: 5px; margin-top: -2px;margin-bottom: 2px; display: inline-block; }
+.module2-video-header .header2 .dd-logo .dd-subhead { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #8D8C8C; text-transform: uppercase; margin-left: 7px; margin-top: 5px; }
+.module2-video-header .player2 { height:206px; width:284px; clear:both; }
+.module2-video-header .more2 { padding-top:5px; }
+.module2-video-header .more2 a:link, .module2-video-header .more2 a:active, .module2-video-header .more2 a:visited, .module2-video-header .more2 {color:#555555; font-size:12px; font-weight:bold; }
+.module2-video-header .more2 a:hover { color:#000000; font-size:12px; font-weight:bold;}
+/* ---- Daily Dish Redesign module ------------------------*/
+.video_title { width: 300px; }
+.video_tabs { clear: both; width: 300px; height: 20px; position: relative; top: 0px; left: 0; }
+.video_tabs ul { margin: 0; padding: 0; list-style: none; }
+.video_tabs ul li { display: block; float: left; text-align: center; text-transform: uppercase;  height: 20px; padding-top: 5px; }
+.video_tabs ul li a { color: #fff; font-size: 10px;}
+.video_tabs ul li.yesterday { width: 182px; }
+.video_tabs ul li.today { width: 117px; border-left: 1px solid #fff; }
+
+/* HTML Ads from OpenX */
+.adsk { background-color: #F6F6F6; }
+.adsk a { color:#008B98; }
+
+/* Block : Photo Gallery */
+.block_photo-gallery { width: 300px; min-height: 250px; border: 1px solid #f6f6f6; font-size: 10px; }
+.block_photo-gallery .gallery-thumb { display: block; float: left; width: 75px; height: 100px; margin: 5px;}
+.block_photo-gallery .gallery-thumb img { width: 70px; height: 70px; }
+
+/* Pregnancy Calender Module */
+.pregnancy_calender {}
+.pregnancy-calender .pbform
+{
+	background-image: url(http://cdn.womensunitedonline.com/channels/parenting/pregcal-background.jpg); background-position: top left; background-repeat: no-repeat;
+	height: 134px; width: 227px;
+	position: relative; left: 8px;
+}
+.pregnancy-calender form { position: relative; top: 5px; margin: 0; padding: 0; }
+.pregnancy-calender .pbsel { position: relative; left: 10px; height: 32px; }
+.pregnancy-calender .pbsel img { position: relative; top: 8px;  left: 10px; }
+.pregnancy-calender .pbsel select { position: relative; top: 5px; left: 10px; width: 105px; }
+.pregnancy-calender .pbsub { position: absolute; top: 55px; left: 200px; }
+
+/* What's Hot */
+.whatshot-carousel { width: 998px; height: 75px; background-image: url(http://cdn.womensunitedonline.com/interface/background-whats-hot.jpg); background-repeat: repeat-x; border: 1px solid #f4f4f4; }
+.whatshot-carousel .wh-title { width: 174px; height: 76px; float: left; position: relative; }
+.whatshot-carousel .wh-title b { position: relative; top: 20px; left: 6px; font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold; font-size: 18px; }
+.whatshot-carousel .box { float: left; width: 240px; margin-right: 22px; }
+.whatshot-carousel .box .box-image { float: left; width: 77px; margin-right: 10px; }
+.whatshot-carousel .box .box-content-right { position: relative; top: 5px; }
+
+
+/* Global Popular Nav */
+/* When cleanup and bundling our code, create a new global directory and move into header.css */
+.popular-nav { border-bottom: 1px dotted #CCC; padding: 9px 0px; padding-bottom:4px; margin-bottom: 6px; text-align: center; overflow: hidden;}
+.popular-nav ul { margin: 0px; padding: 0px; }
+.popular-nav li, .popular-nav ul.links li { list-style: none; display: inline; text-transform: uppercase; padding: 0px 10px 0px 10px; font-size: 11px; background: none; }
+.popular-nav li a { color: #666; }
+.popular-nav h2 { display: none; }
+.popular-nav .module { padding-bottom: 0px;}
+/* adding a text align left to the box that the content belts run in. Had an issue with them aligning center */
+.call_out { text-align: left; }
+
+.revolving-links {width: 87%; float:left; margin: 0 auto;}
+
+.hd-seasonal { float:right; padding: 0; margin:0;}
+.hd-seasonal img {border:0 none; border-left: 1px solid #EAEAEA;  margin-top: -2px;}
+.hd-seasonal .text {display: none;}
+.hd-seasonal .feed-collection .feed-list {border:none; padding: 0;}
+.hd-seasonal .feed-collection .feed-list .feed-item {border:none; padding: 0; margin:0;}
+.hd-seasonal .feed-collection {margin: 0;}
+
+
+
+/* Featured contests homepage module styles */
+.featured-contests-homepage .links ol {
+	margin:15px 0 0 30px;
+	padding:0;
+}
+.featured-contests-homepage .links ol li {
+	margin: 20px 0;
+}
+.featured-contests-homepage .links ol li a {
+	font-family: Arial;
+	font-size: 13px;
+	height: 25px;
+	line-height: 25px;
+	vertical-align:top;
+}
+.ie7 .featured-contests-homepage .links ol li a { margin: 0 0 0 10px; }
+
+.adtable td * { z-index: 5000000 !important; }
+
+.ui-module
+{
+
+}
+
+.clearfix .module {
+	float: left;
+}
+
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.8.0r4
+
+-- modified for yui3 carousel
+*/
+.yui-overlay,.yui-panel-container{visibility:hidden;position:absolute;z-index:2;}.yui-panel{position:relative;}.yui-panel-container form{margin:0;}.mask{z-index:1;display:none;position:absolute;top:0;left:0;right:0;bottom:0;}.mask.block-scrollbars{overflow:auto;}.masked select,.drag select,.hide-select select{_visibility:hidden;}.yui-panel-container select{_visibility:inherit;}.hide-scrollbars,.hide-scrollbars *{overflow:hidden;}.hide-scrollbars select{display:none;}.show-scrollbars{overflow:auto;}.yui-panel-container.show-scrollbars,.yui-tt.show-scrollbars{overflow:visible;}.yui-panel-container.show-scrollbars .underlay,.yui-tt.show-scrollbars .yui-tt-shadow{overflow:auto;}.yui-panel-container.shadow .underlay.yui-force-redraw{padding-bottom:1px;}.yui-effect-fade .underlay,.yui-effect-fade .yui-tt-shadow{display:none;}.yui-tt-shadow{position:absolute;}.yui-override-padding{padding:0!important;}.yui-panel-container .container-close{overflow:hidden;text-indent:-10000em;text-decoration:none;}.yui-overlay.yui-force-redraw,.yui-panel-container.yui-force-redraw{margin-bottom:1px;}.yui-skin-sam .mask{background-color:#000;opacity:.25;filter:alpha(opacity=25);}.yui-skin-sam .yui-panel-container{padding:0 1px;*padding:2px;}.yui-skin-sam .yui-panel{position:relative;left:0;top:0;border-style:solid;border-width:1px 0;border-color:#808080;z-index:1;*border-width:1px;*zoom:1;_zoom:normal;}.yui-skin-sam .yui-panel .hd,.yui-skin-sam .yui-panel .bd,.yui-skin-sam .yui-panel .ft{border-style:solid;border-width:0 1px;border-color:#808080;margin:0 -1px;*margin:0;*border:0;}.yui-skin-sam .yui-panel .hd{border-bottom:solid 1px #ccc;}.yui-skin-sam .yui-panel .bd,.yui-skin-sam .yui-panel .ft{background-color:#F2F2F2;}.yui-skin-sam .yui-panel .hd{padding:0 10px;font-size:93%;line-height:2;*line-height:1.9;font-weight:bold;color:#000;background:url(http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/sprite.png) repeat-x 0 -200px;}.yui-skin-sam .yui-panel .bd{padding:10px;}.yui-skin-sam .yui-panel .ft{border-top:solid 1px #808080;padding:5px 10px;font-size:77%;}.yui-skin-sam .container-close{position:absolute;top:5px;right:6px;width:25px;height:15px;background:url(http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/sprite.png) no-repeat 0 -300px;cursor:pointer;}.yui-skin-sam .yui-panel-container .underlay{right:-1px;left:-1px;}.yui-skin-sam .yui-panel-container.matte{padding:9px 10px;background-color:#fff;}.yui-skin-sam .yui-panel-container.shadow{_padding:2px 4px 0 2px;}.yui-skin-sam .yui-panel-container.shadow .underlay{position:absolute;top:2px;left:-3px;right:-3px;bottom:-3px;*top:4px;*left:-1px;*right:-1px;*bottom:-1px;_top:0;_left:0;_right:0;_bottom:0;_margin-top:3px;_margin-left:-1px;background-color:#000;opacity:.12;filter:alpha(opacity=12);}.yui-skin-sam .yui-dialog .ft{border-top:none;padding:0 10px 10px 10px;font-size:100%;}.yui-skin-sam .yui-dialog .ft .button-group{display:block;text-align:right;}.yui-skin-sam .yui-dialog .ft button.default{font-weight:bold;}.yui-skin-sam .yui-dialog .ft span.default{border-color:#304369;background-position:0 -1400px;}.yui-skin-sam .yui-dialog .ft span.default .first-child{border-color:#304369;}.yui-skin-sam .yui-dialog .ft span.default button{color:#fff;}.yui-skin-sam .yui-dialog .ft span.yui-button-disabled{background-position:0 -1500px;border-color:#ccc;}.yui-skin-sam .yui-dialog .ft span.yui-button-disabled .first-child{border-color:#ccc;}.yui-skin-sam .yui-dialog .ft span.yui-button-disabled button{color:#a6a6a6;}.yui-skin-sam .yui-simple-dialog .bd .yui-icon{background:url(http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/sprite.png) no-repeat 0 0;width:16px;height:16px;margin-right:10px;float:left;}.yui-skin-sam .yui-simple-dialog .bd span.blckicon{background-position:0 -1100px;}.yui-skin-sam .yui-simple-dialog .bd span.alrticon{background-position:0 -1050px;}.yui-skin-sam .yui-simple-dialog .bd span.hlpicon{background-position:0 -1150px;}.yui-skin-sam .yui-simple-dialog .bd span.infoicon{background-position:0 -1200px;}.yui-skin-sam .yui-simple-dialog .bd span.warnicon{backgroun
+
+
+
+
+
+
+d-position:0 -1900px;}.yui-skin-sam .yui-simple-dialog .bd span.tipicon{background-position:0 -1250px;}.yui-skin-sam .yui-tt .bd{position:relative;top:0;left:0;z-index:1;color:#000;padding:2px 5px;border-color:#D4C237 #A6982B #A6982B #A6982B;border-width:1px;border-style:solid;background-color:#FFEE69;}.yui-skin-sam .yui-tt.show-scrollbars .bd{overflow:auto;}.yui-skin-sam .yui-tt-shadow{top:2px;right:-3px;left:-3px;bottom:-3px;background-color:#000;}.yui-skin-sam .yui-tt-shadow-visible{opacity:.12;filter:alpha(opacity=12);}
+
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.8.0r4
+
+-- modified for yui3 carousel
+*/
+.yui3-carousel{overflow:hidden;position:relative;text-align:left;zoom:1;}.yui3-carousel.yui3-carousel-visible{visibility:visible;}.yui3-carousel-content{overflow:visible;position:relative;text-align:center;}.yui3-carousel li{list-style:none;margin:1px;overflow:hidden;padding:0;position:absolute;text-align:center;}.yui3-carousel-vertical .yui3-carousel li{display:block;float:none;}.yui-log .carousel{background:#f2e886;}.yui3-carousel-nav{position:relative; z-index: 500; zoom:1;}.yui3-carousel-nav:after{content:".";display:block;height:0;clear:both;visibility:hidden;}.yui3-carousel-button-focus{outline:1px dotted #000;}.yui3-carousel-min-width{min-width:115px;}.yui3-carousel{overflow:hidden;position:relative;margin:0 auto;padding:0;text-align:left;*margin:0;}.yui3-carousel-horizontal .yui3-carousel{width:320000px;}.yui3-carousel-vertical .yui3-carousel{height:320000px;}.yui-skin-sam .yui3-carousel-nav select{position:static;}.yui-skin-sam .yui3-carousel,.yui-skin-sam .yui3-carousel-vertical{border:1px solid #808080;}.yui-skin-sam .yui3-carousel-nav{background:url(http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/sprite.png) repeat-x 0 0;padding:3px;text-align:right;}.yui-skin-sam .yui3-carousel-button{background:url(http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/sprite.png) no-repeat 0 -600px;float:right;height:19px;margin:5px;overflow:hidden;width:40px;}.yui-skin-sam .yui3-carousel-vertical .yui3-carousel-button{background-position:0 -800px;}.yui-skin-sam .yui3-carousel-button-disabled{background-position:0 -2000px;}.yui-skin-sam .yui3-carousel-vertical .yui3-carousel-button-disabled{background-position:0 -2100px;}.yui-skin-sam .yui3-carousel-button input,.yui-skin-sam .yui3-carousel-button button{background-color:transparent;border:0;cursor:pointer;display:block;height:44px;margin:-2px 0 0 -2px;padding:0 0 0 50px;}.yui-skin-sam span.yui3-carousel-first-button{background-position:0 -550px;margin-left:-100px;margin-right:50px;*margin:5px 5px 5px -90px;}.yui-skin-sam .yui3-carousel-vertical span.yui3-carousel-first-button{background-position:0 -750px;}.yui-skin-sam span.yui3-carousel-first-button-disabled{background-position:0 -1950px;}.yui-skin-sam .yui3-carousel-vertical span.yui3-carousel-first-button-disabled{background-position:0 -2050px;}.yui-skin-sam .yui3-carousel-nav ul{float:right;height:19px;margin:0;margin-left:-220px;margin-right:100px;*margin-left:-160px;*margin-right:0;padding:0;}.yui-skin-sam .yui3-carousel-min-width .yui3-carousel-nav ul{*margin-left:-170px;}.yui-skin-sam .yui3-carousel-nav select{position:relative;*right:50px;top:4px;}.yui-skin-sam .yui3-carousel-vertical .yui3-carousel-nav select{position:static;}.yui-skin-sam .yui3-carousel-vertical .yui3-carousel-nav ul,.yui-skin-sam .yui3-carousel-vertical .yui3-carousel-nav select{float:none;margin:0;*zoom:1;}.yui-skin-sam .yui3-carousel-nav ul li{background:url(http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/sprite.png) no-repeat 0 -650px;cursor:pointer;float:left;height:9px;list-style:none;margin:10px 0 0 5px;overflow:hidden;padding:0;width:9px;}.yui-skin-sam .yui3-carousel-nav ul:after{content:".";display:block;height:0;clear:both;visibility:hidden;}.yui-skin-sam .yui3-carousel-nav ul li a{display:block;width:100%;height:100%;text-indent:-10000px;text-align:left;overflow:hidden;}.yui-skin-sam .yui3-carousel-nav ul li.yui3-carousel-nav-page-focus{outline:1px dotted #000;}.yui-skin-sam .yui3-carousel-nav ul li.yui3-carousel-nav-page-selected{background-position:0 -700px;}.yui-skin-sam .yui3-carousel-item-loading{background:url(http://yui.yahooapis.com/2.8.0r4/build/carousel/assets/skins/sam/ajax-loader.gif) no-repeat 50% 50%;position:absolute;text-indent:-150px;}
+
+
+
+
+
+
+
+
+
+.whatshot
+{
+}
+
+.whatshot .hd
+{
+	color:              #b19566;
+	font-family:        Georgia;
+	font-size:          100%;
+	left:               -1px;
+	padding-bottom:     5px;
+	position:           relative;
+}
+.whatshot h2
+{
+	font-size:          36px;
+	font-weight:        normal;
+	line-height:        30px;
+	padding:            0;
+	margin:             0 0 10px;
+	text-indent:        1px;
+}
+
+.whatshot .yui3-carousel
+{
+	background-color:   #ffb037;
+	height:             20px;
+	width:              217px;
+	margin:             2px;
+}
+.whatshot .yui3-carousel-content
+{
+	color:              #ffffff;
+	font-size:          10px;
+	line-height:        20px;
+	margin:             0 16px;
+	text-transform:     uppercase;
+	width:              100%;
+}
+.whatshot .yui3-carousel-content a:link,
+.whatshot .yui3-carousel-content a:visited,
+.whatshot .yui3-carousel-content a:active
+{
+	color:              #ffffff;
+	text-decoration:    none;
+}
+.whatshot .yui3-carousel-content a:hover { color:#CCCCCC;}
+.whatshot ol li
+{
+	display:            block;
+	border:             0;
+	height:             20px;
+	width:              92px;
+}
+
+.whatshot .yui3-carousel .yui3-carousel-selected
+{
+	border-width:       0;
+	border-right-width: 1px;
+	margin:             0;
+	font-weight:        bold;
+}
+
+.whatshot .yui3-carousel-nav ul
+{
+	display: none;
+}
+
+.whatshot .yui3-carousel-button
+{
+	background:         #ffb037 url(http://cdn.womensunitedonline.com/redesign/sprite.png) no-repeat;
+	display:            block;
+	height:             20px;
+	position:           absolute;
+	overflow:           hidden;
+	top:                0;
+	width:              16px;
+}
+.whatshot .yui3-carousel-button button,
+.whatshot .yui3-carousel-button input
+{
+	background-color:   transparent;
+	border:             0;
+	padding-top:        50px;
+}
+.whatshot .yui3-carousel-first-button,
+.whatshot .yui3-carousel li
+{
+	border-right:       solid 1px #ffffff;
+}
+.whatshot .yui3-carousel-first-button
+{
+	background-position: -5px -262px;
+	left:               0;
+}
+.whatshot .yui3-carousel-next-button
+{
+	border-left:        solid 1px #ffffff;
+	background-position: -4px -227px;
+	right:              0;
+}
+.whatshot .yui3-carousel li
+{
+	margin:             0;
+}
+.whatshot .yui3-carousel-selected
+{
+	outline:            0;
+}
+
+.whatshot-list
+{
+	margin:             10px 5px;
+	padding:            0;
+}
+
+.whatshot-list a:visited, .whatshot-list a:link, .whatshot-list a:active
+{
+	color:              #5e433c;
+	text-decoration:    none;
+}
+
+.whatshot-list li
+{
+	background-image:   url(http://cdn.womensunitedonline.com/interface/dots-sm-orange.gif);
+	background-position:bottom;
+	background-repeat:  repeat-x;
+	clear:              left;
+	font-size:          14px;
+	line-height:        28px;
+	list-style:         none;
+	margin:             0;
+	padding:            0;
+	overflow:           hidden;
+	white-space:        nowrap;
+    text-overflow:      ellipsis;
+}
+
+.whatshot .ft
+{
+	height:             18px;
+	line-height:        15px;
+	position:relative;
+	left:4px;
+}
+
+.whatshot .ft a:link, .whatshot .ft a:visited, .whatshot .ft a:active
+{
+	background-image:   url(http://cdn.womensunitedonline.com/redesign/sprite.png);
+	background-repeat:  no-repeat;
+	background-position:right -330px;
+	padding:            2px 24px 4px 0;
+
+	color:              #6d6d6d;
+	font-size:          10px;
+	text-transform:     uppercase;
+	text-decoration:    none;
+	*display:           inline-block;
+}
+.whatshot-list a:hover, .whatshot .ft a:hover { color:#990000;}
+.whatshot .ft em
+{
+	font-style: normal;
+}
+
+
+
+/**
+ * WhatsHot Simple module
+ *
+ * Used when only 2 options are available in the WhatsHot carousel
+ */
+.whatshot-simple .yui3-carousel
+{
+	width:   234px;
+}
+.whatshot-simple .yui3-carousel-nav
+{
+	display: none;
+}
+
+.whatshot-simple .yui3-carousel-content
+{
+	margin:  0;
+}
+
+.whatshot-simple .yui3-carousel .yui3-carousel-selected
+{
+	background-color: #FE8605;
+}
+
+.whatshot-simple ol li
+{
+	margin:  0;
+	width:   116px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ui-flashpanel
+{
+    display:             block;
+    height:              337px;
+	margin-right:        22px;
+    position:            relative;
+    width:               422px;
+}
+
+.ui-flashpanel .yui3-carousel
+{
+	left:                0;
+	position:            absolute;
+	top:                 246px;
+	z-index:             3;
+	width:               100% !important;
+}
+
+.ui-flashpanel .yui3-carousel .yui3-carousel-wrapper {
+	overflow:			hidden;
+	margin:				0 32px;
+	width:				355px;
+	position:			relative;
+}
+
+.ui-flashpanel .yui3-carousel li
+{
+    border:              0;
+	cursor:              pointer;
+    outline:             0;
+    text-align:          center;
+}
+
+.ui-flashpanel .yui-content
+{
+    display:           block;
+    height:            297px;
+    position:          relative;
+    overflow:          hidden;
+    background-repeat: no-repeat;
+}
+
+.ui-flashpanel .yui3-carousel-nav
+{
+	position:          absolute;
+	margin:            -20px 0 0;
+	left:              0;
+	width:             100%;
+	height:            25px;
+	z-index:           3 !important;
+	top: 60%;
+}
+
+.ui-flashpanel .yui3-carousel-content
+{
+	padding: 0;
+    z-index: 4;
+}
+
+.ui-flashpanel .yui3-carousel-nav ul
+{
+    display: none;
+}
+
+.ui-flashpanel .yui3-carousel-first-button-disabled,
+.ui-flashpanel .yui3-carousel-button-disabled
+{
+    display: none;
+}
+
+.ui-flashpanel .yui3-carousel-button
+{
+    background-color: transparent;
+    background-image: url(http://cdn.womensunitedonline.com/redesign/sprite.png);
+    background-position: 0 -225px;
+    background-repeat: no-repeat;
+    height: 25px;
+    margin: 0 4px;
+    overflow: hidden;
+    width: 28px;
+}
+
+.ui-flashpanel .yui3-carousel-button
+{
+	float: right;
+}
+
+.ui-flashpanel .yui3-carousel-button button,
+.ui-flashpanel .yui3-carousel-button input
+{
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	padding-top: 50px;
+}
+
+.ui-flashpanel .yui3-carousel-first-button
+{
+	float: left;
+	background-position: 0 -260px;
+}
+
+.ui-flashpanel .yui-content .yui-overlay
+{
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.ui-flashpanel .yui-content .bd
+{
+	font-size: 14px;
+	line-height: 15px;
+	margin-right: 52%;
+	overflow: hidden;
+	padding: 13px;
+}
+.ui-flashpanel .yui-content .bd li { margin-bottom:10px; }
+
+.ui-flashpanel .yui-content h2
+{
+	font-family: Georgia,'Times New Roman',times,serif;
+	font-size: 30px;
+	font-weight: normal;
+	line-height:32px;
+	margin:0;
+	padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Video Playlist Module
+ *
+ */
+.video-playlist
+{
+	position: relative;
+	top:10px;
+}
+
+.video-playlist li
+{
+	border:     0;
+	text-align: left;
+	height:70px;
+
+}
+
+.video-playlist a:visited, .video-playlist a:link, .video-playlist a:active
+{
+	font-weight: bold;
+}
+
+.video-playlist-title
+{
+	display: block;
+}
+
+.video-playlist .yui3-carousel-nav ul,
+.video-playlist .yui3-carousel-first-button
+{
+	display: none;
+}
+
+.video-playlist-thumb
+{
+	display:      block;
+	float:        left;
+	height:       75px;
+	margin-right: 10px;
+	text-align:   center;
+	width:        113px;
+}
+
+.video-playlist-thumb img
+{
+	margin:  0 auto;
+}
+
+.video-playlist .yui3-carousel-next-button
+{
+	background: #f2f2f2 url(http://cdn.womensunitedonline.com/redesign/sprite.png) -62px -300px no-repeat;;
+	height:     75px;
+	overflow:   hidden;
+	position:   absolute;
+	right:      0;
+	top:        0;
+	width:      35px;
+	z-index:    2;
+}
+
+.video-playlist .yui3-carousel-next-button button
+{
+	background:   transparent;
+	border:       0;
+	height:       100%;
+	padding-left: 60px;
+}
+
+.video-playlist a img
+{
+	border: 0;
+}
+
+
+.video-playlist .yui3-carousel-content
+{
+	float: left;
+}
+
+.video-playlist .yui3-carousel-selected
+{
+	border: 0;
+	margin: 0;
+}
+
+
+.content-block-right .video-playlist ol li
+{
+	margin: 0;
+	padding-right: 45px;
+	width: 255px;
+}
+
+
+
+
+
+
+
+
+/**
+ * Primary Channel layout
+ *
+ */
+.channel-layout .whatshot
+{
+	width:              225px;
+}
+
+.channel-layout .ui-flashpanel .yui3-carousel li
+{
+    background:    transparent url(http://cdn.womensunitedonline.com/redesign/sprite.png) no-repeat 0 -100px;
+    font-family:   Georgia,'Times New Roman',times,serif;
+    font-size:     16px;
+    font-weight:   bold;
+    height:        82px;
+    line-height:   82px;
+    padding-right: 7px;
+    width:         82px;
+}
+
+.channel-layout .ui-flashpanel .yui3-carousel .yui3-carousel-selected
+{
+    background-position: 0 0;
+}
+
+.channel-layout .yui-content .bd
+{
+	background: url(http://cdn.womensunitedonline.com/interface/flash-panel-bg.png) top left repeat;
+
+	color:         #ffffff;
+
+	/* Restrict the content size to avoid Carousel-button / Panel-text intersection */
+	height:        100%;
+}
+
+.channel-layout .yui-content .sponsored .bd
+{
+	background-image: url();
+}
+
+.channel-layout .ui-flashpanel .yui-content h2
+{
+	height:        100px;
+	overflow:      hidden;
+	margin-bottom: 8px;
+}
+
+.channel-layout .ui-flashpanel .yui-content a:link, .channel-layout .ui-flashpanel .yui-content a:visited, .channel-layout .ui-flashpanel .yui-content a:active { color:#FFFFFF; }
+.channel-layout .ui-flashpanel .yui-content a:hover { color:#CCCCCC; }
+.channel-layout .ui-flashpanel .yui-content ul  { margin:0; padding:0; margin-left:18px; }
+
+
+
+
+
+/**
+ * Secondary channel landing pages have a wider flash panel.
+ *
+ * These styles are specific to a wider flash panel.
+ */
+
+.subchannel-layout .whatshot
+{
+	width:        280px;
+	padding-left: 10px;
+}
+
+.subchannel-layout .whatshot .yui3-carousel
+{
+	width:        280px;
+}
+
+.subchannel-layout .whatshot ol li
+{
+	width:      139px;
+}
+
+.subchannel-layout .ui-flashpanel
+{
+	background: #EFE8DE;
+	width:      696px;
+	height:     324px;
+	margin:     1px;
+}
+
+.subchannel-layout .ui-flashpanel h2
+{
+	color:      #F19EC8;
+	font-size:  48px;
+	line-height:60px;
+	font-weight:normal;
+}
+
+.subchannel-layout .ui-flashpanel .yui-content
+{
+	height:     285px;
+}
+
+.subchannel-layout .ui-flashpanel .yui-overlay
+{
+	background-position: bottom right;
+}
+
+.subchannel-layout .ui-flashpanel .yui3-carousel
+{
+	top:              284px;
+	width:            100%;
+}
+
+.subchannel-layout .ui-flashpanel .yui3-carousel
+{
+	width:            auto;
+}
+
+.subchannel-layout .ui-flashpanel .yui3-carousel .yui3-carousel li
+{
+	background-color: #F19EC8;
+	font-size:        12px;
+	height:           18px;
+	line-height:      18px;
+	padding:          0 10px;
+	margin-right:     8px;
+	float:            left;
+	position:         static;
+}
+
+.subchannel-layout .ui-flashpanel .yui3-carousel .yui3-carousel .yui3-carousel-selected
+{
+	background-color: #E6529E;
+}
+.subchannel-layout .ui-flashpanel .yui-content .bd
+{
+	margin-right:0;
+	margin-top:10px;
+	height:    100%;
+	overflow:  hidden;
+}
+.subchannel-layout .ui-flashpanel .yui-overlay
+{
+	background-position: top left;
+	 overflow:			 hidden;
+}
+.subchannel-layout .ui-flashpanel .yui3-carousel
+{
+	top:              282px;
+	 overflow:			 hidden;
+}
+.subchannel-layout .ui-flashpanel .yui-content .yui-overlay .bd ul { margin-left:20px; padding:0px; position:relative; top:0px; }
+.subchannel-layout .ui-flashpanel .yui-content .yui-overlay .bd li { margin-left:20px; padding:0px; margin:0px; line-height:24px; font-family:Arial, Helvetica, sans-serif; font-size:13px;  }
+.subchannel-layout .yui-content .yui-overlay .bd a:link, .subchannel-layout .yui-content .yui-overlay .bd a:visited, .subchannel-layout .yui-content .yui-overlay .bd a:active { color:#000;}
+.subchannel-layout .yui-content .yui-overlay .bd a:hover {color:#555;}
+.yui3-carousel-selected  {color:#FFFFFF;}
+
+.subchannel-layout {
+	width:998px;
+	height:327px;
+	border: 1px solid #D3D3D3;
+	overflow: hidden;
+	margin-bottom:10px;
+    white-space: nowrap;
+}
+.subchannel-layout .whatshot { padding-left:0px; margin:1px; padding:8px; border:solid 1px #D3D3D3; height:306px;}
+.subchannel-layout .ui-flashpanel .yui-content .yui-overlay .bd ul {  position:relative; top:80px; left:5px; }
+/**
+ * Styles for ui-block module
+ */
+
+/* Container for all .yui3-skui-block children */
+.ui-blocks {
+	*zoom: 1;
+}
+
+/* Generic styles for yui3-skui-block */
+.yui3-skui-block {
+	display: inline-block;
+	*display: inline;
+	*float: left;
+	*zoom: auto;
+}
+
+.ie7 .ui-blocks {
+	width: 100%;
+	overflow:hidden;
+}
+.ie7 .yui3-skui-block {
+	position: relative;
+	left: 1px;
+}
+
+
+/* default skin (white bg) */
+.blocks-entertainment, 
+.blocks-footer { border-top: 1px dashed #ccc; padding-top: 30px; clear: both; }
+
+
+/* custom skinning */
+/* dark skin (black bg) */
+#dark .module { background-color: #1E1E1E; }
+
+#dark .blocks-entertainment, 
+#dark .blocks-footer { border-top: none; padding-top: 10px; }
+
+#dark .blocks-entertainment .yui3-skui-block, 
+#dark .blocks-footer .yui3-skui-block {	border-right: 1px solid #333; }
+
+#dark .blocks-entertainment .yui3-skui-block .yui3-widget-bd li a, 
+#dark .blocks-footer .yui3-skui-block .yui3-widget-bd li a { color: #999; }
+
+
+.blocks-entertainment .yui3-skui-block { width: 20%;}
+.blocks-footer .yui3-skui-block { width: 15%; }
+
+.blocks-entertainment .yui3-skui-block, .blocks-footer .yui3-skui-block {
+	vertical-align: top;
+	margin: 0 0 20px 0;
+	padding: 0 20px 0 20px;
+	border-right: 1px solid #ccc;
+}
+
+.blocks-entertainment .yui3-skui-block .yui3-widget-hd, 
+.blocks-footer .yui3-skui-block .yui3-widget-hd { display:block; background-repeat: no-repeat; }
+
+.blocks-entertainment .yui3-skui-block-title,
+.blocks-footer .yui3-skui-block-title { display:block; text-indent:-9999px; overflow: hidden; }
+
+.blocks-entertainment .yui3-widget-hd {  display:block; width: 172px; height: 53px; }
+.blocks-entertainment .yui3-skui-block .yui3-widget-hd { margin-bottom: 15px; }
+
+.blocks-footer .yui3-widget-hd { display:block; width: 150px; height: 50px; }
+.blocks-footer .yui3-skui-block .yui3-widget-hd { margin-bottom: 10px; }
+
+.blocks-entertainment .yui3-skui-block .yui3-widget-bd ul, 
+.blocks-footer .yui3-skui-block .yui3-widget-bd ul { list-style-type: none; margin: 0; padding: 0; }
+
+.blocks-entertainment .yui3-skui-block .yui3-widget-bd li { padding-bottom: 16px;}
+.blocks-footer .yui3-skui-block .yui3-widget-bd li { padding-bottom: 5px; font-size: 12px;}
+
+.blocks-entertainment .yui3-skui-block:nth-child(4n), 
+.blocks-entertainment .yui3-skui-block:nth-child(8n), 
+.blocks-footer .yui3-skui-block:nth-child(5n)  { border-right: none; }
+
+.blocks-entertainment .yui3-skui-block .yui3-widget-bd li a, 
+.blocks-footer .yui3-skui-block .yui3-widget-bd li a { color: #4f4f4f; }
+
+.blocks-entertainment .yui3-skui-block .yui3-widget-bd li a:hover, 
+.blocks-footer .yui3-skui-block .yui3-widget-bd li a:hover { color: #f12375; }/* nav layout dropdown */
+#mainnav-menus {
+  height: 30px;
+}
+#mainnav-menus .ui-navbaritem.selected,
+#mainnav-menus .ui-navbaritem.active {
+  background-color: #fff;
+  background-image: none;
+  box-shadow: 1px 0px 0px #ccc;
+  border-top: 1px solid #ccc;
+  margin-top: -2px;
+  padding-bottom: 2px;
+}
+#mainnav-menus .ui-navbaritem.selected a,
+#mainnav-menus .ui-navbaritem.active a {
+  color: #000;
+  cursor: pointer;
+}
+#mainnav-contentbox {
+  display: none;
+  position: absolute;
+  z-index: 9000000;
+  background: #eee;
+  min-height: 375px;
+  width: 1001px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  -moz-box-shadow: 0 2px 2px #ccc;
+  -webkit-box-shadow: 0 4px 3px #ccc;
+  box-shadow: 0 4px 3px #ccc;
+  /* global */
+
+  /* sk 3 small wide general overrides */
+  /* pagination */
+
+  /* mod styles */
+
+  /* feeds */
+
+  /* photo gallery */
+
+  /* video mod */
+
+  /* sk tv shows */
+
+  /* this keeps the rollover state on dropdown to be equal widths for TV */
+
+  /* printables and gift guids*/
+
+  /*overrides container width settings*/
+
+  /* man candy mod */
+
+  /* external link */
+
+  /* overrides editors pick to where image is not located on bottom */
+
+  /* quizzes */
+
+  /* contests */
+
+  /* this overrides a class that overrides padding on contest page */
+
+  /* dares */
+
+  /* steal the look */
+
+}
+#mainnav-contentbox .sk-w-1,
+#mainnav-contentbox .sk-w-2,
+#mainnav-contentbox .sk-w-3,
+#mainnav-contentbox .sk-w-4,
+#mainnav-contentbox .sk-w-5,
+#mainnav-contentbox .sk-w-equal {
+  float: left;
+  overflow: hidden;
+  padding: 5px 10px;
+  position: relative;
+  height: 340px;
+}
+#mainnav-contentbox .sk-w-1 {
+  width: 60px;
+}
+#mainnav-contentbox .sk-w-2 {
+  width: 140px;
+}
+#mainnav-contentbox .sk-w-3 {
+  width: 180px;
+}
+#mainnav-contentbox .sk-w-equal {
+  width: 233px;
+}
+#mainnav-contentbox .sk-w-equal.middle {
+  width: 234px;
+}
+#mainnav-contentbox .sk-w-4 {
+  width: 210px;
+}
+#mainnav-contentbox .sk-w-5 {
+  width: 260px;
+}
+#mainnav-contentbox .middle {
+  border-right: 2px solid #ebebeb;
+  border-left: 2px solid #ebebeb;
+  height: 340px;
+}
+#mainnav-contentbox .last {
+  border: 0 none;
+  margin-right: 0;
+}
+#mainnav-contentbox .white {
+  background: #fff;
+}
+#mainnav-contentbox .slider-container {
+  background: #FFF;
+  overflow: hidden;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+  height: 345px;
+  width: 768px;
+  position: relative;
+}
+#mainnav-contentbox .slider-container.loading {
+  background: #ffffff url('http://cdn.womensunitedonline.com/interface/ajaxSpinner.gif') center no-repeat;
+}
+#mainnav-contentbox .slider-container a {
+  color: #333;
+}
+#mainnav-contentbox .slider-panels {
+  width: 764px;
+}
+#mainnav-contentbox .clear-both {
+  clear: both;
+}
+#mainnav-contentbox h4,
+#mainnav-contentbox .StealTheLook .title {
+  font-family: 'Open Sans Light', 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 32px;
+  color: #282828;
+  padding: 0;
+  margin: 0;
+  letter-spacing: -1px;
+}
+#mainnav-contentbox a.subtitle {
+  font-size: 13px;
+  font-style: normal;
+  color: #b4b4b4;
+  text-transform: uppercase;
+  line-height: 16px;
+  display: block;
+}
+#mainnav-contentbox a:hover {
+  text-decoration: underline;
+}
+#mainnav-contentbox .top-space {
+  height: 2px;
+  background: #FFF;
+  width: 100%;
+}
+#mainnav-contentbox .more {
+  border-top: 1px dotted #666;
+  clear: both;
+  background: none!important;
+}
+#mainnav-contentbox .more a,
+#mainnav-contentbox .bottom a {
+  font-size: 11px;
+  color: #979797;
+  text-transform: uppercase;
+}
+#mainnav-contentbox .no-border {
+  border: none!important;
+  color: #c1c1c1;
+  background: none!important;
+}
+#mainnav-contentbox .more {
+  border-top: 1px dotted #666;
+  float: none;
+  width: auto;
+}
+#mainnav-contentbox .center {
+  text-align: center;
+}
+#mainnav-contentbox .loading_spinner {
+  margin: 0 auto;
+  display: block;
+  margin-top: 110px;
+  width: auto!important;
+}
+#mainnav-contentbox p {
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+#mainnav-contentbox .bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+#mainnav-contentbox img {
+  border: none;
+}
+#mainnav-contentbox .Videos.sk-w-3 img {
+  width: 100%;
+}
+#mainnav-contentbox .ArticleColumn.sk-w-3 .see-more-articles,
+#mainnav-contentbox .ArticleColumn.sk-w-3 .see-more-contests {
+  float: none;
+}
+#mainnav-contentbox .ArticleColumn.sk-w-3 img {
+  margin-bottom: 0;
+  width: 100%;
+}
+#mainnav-contentbox .ArticleColumn.sk-w-3 li:first-child {
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  width: 97%;
+  background: url("http://cdn.womensunitedonline.com/magazine/icons/listDisc.png") no-repeat 0 10px;
+}
+#mainnav-contentbox #mainnav_pagination {
+  position: absolute;
+  right: 0;
+  width: 764px;
+  margin-top: 8px;
+}
+#mainnav-contentbox #mainnav_pagination #pagination_buttons {
+  margin: 0 auto;
+}
+#mainnav-contentbox #mainnav_pagination .arrow {
+  width: 10px;
+  height: 10px;
+  float: left;
+  cursor: pointer;
+}
+#mainnav-contentbox #mainnav_pagination .button {
+  background: url("http://cdn.womensunitedonline.com/nav/scroll-btn.png") no-repeat;
+  background-position: 0 -12px;
+  width: 13px;
+  height: 12px;
+  float: left;
+  margin: 0 2px;
+  cursor: pointer;
+}
+#mainnav-contentbox #mainnav_pagination .button.selected {
+  background-position: 0 1px;
+}
+#mainnav-contentbox #mainnav_pagination .left,
+#mainnav-contentbox #mainnav_pagination .right {
+  width: auto;
+}
+#mainnav-contentbox #mainnav_pagination .arrow {
+  background: url('http://cdn.womensunitedonline.com/nav/nav-pag-arrows.png') no-repeat 0 -15px;
+  width: 12px;
+  height: 15px;
+  text-indent: -999em;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+#mainnav-contentbox #mainnav_pagination .arrow.right {
+  background-position: 0 -1px;
+  margin: 0 0 0 20px;
+}
+#mainnav-contentbox ul.channel-links {
+  font-size: 13px;
+  padding-left: 7px;
+}
+#mainnav-contentbox ul.channel-links li {
+  display: block;
+  padding: 2px 0 3px;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 17px;
+}
+#mainnav-contentbox ul.channel-links li a {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #565656;
+  padding-right: 0;
+  display: block;
+}
+#mainnav-contentbox ul.channel-links li a[href^="http"] span {
+  background: url("http://cdn.womensunitedonline.com/magazine/icons/external_link_icon.png") no-repeat top right;
+  padding-right: 20px;
+}
+#mainnav-contentbox ul.channel-links li a[href^="http://sheknows"] span,
+#mainnav-contentbox ul.channel-links li a[href^="http://www.sheknows"] span {
+  background: none;
+}
+#mainnav-contentbox ul.channel-links li a {
+  *background: none !important;
+}
+#mainnav-contentbox ul.channel-links .selected {
+  background-image: none;
+}
+#mainnav-contentbox ul.channel-links li.selected a {
+  font-weight: bold;
+  text-decoration: none;
+  background: url("http://cdn.womensunitedonline.com/nav/nav-arrow.png") no-repeat top right;
+  width: 203px;
+}
+#mainnav-contentbox .article-list {
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+}
+#mainnav-contentbox .article-list li {
+  border-bottom: 1px dotted #666666;
+  clear: both;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  width: 97%;
+  background: url("http://cdn.womensunitedonline.com/magazine/icons/listDisc.png") no-repeat 0 10px;
+}
+#mainnav-contentbox .article-list li:first-child {
+  background: none;
+  padding: 4px 0 9px;
+  margin-top: 7px;
+}
+#mainnav-contentbox .article-list .article-image {
+  float: left;
+  margin: 0;
+  height: 72px;
+  width: 83px;
+  overflow: hidden;
+  margin-right: 10px;
+  position: relative;
+}
+#mainnav-contentbox .article-list .article-image img {
+  max-width: 95px;
+  border: none;
+  display: block;
+  margin: 0;
+}
+#mainnav-contentbox .article-list .bottom {
+  background: none!important;
+}
+#mainnav-contentbox .article-list .article-heading {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 18px;
+}
+#mainnav-contentbox .article-list span.date-posted {
+  color: #666666;
+  font-size: 10px;
+  clear: right;
+  display: block;
+}
+#mainnav-contentbox .article-list .loading,
+#mainnav-contentbox .article-list .load-more-articles.loading,
+#mainnav-contentbox .article-list .load-more-contests.loading {
+  background: url('http://cdn.womensunitedonline.com/interface/ajaxSpinner.gif') no-repeat;
+  text-indent: -999em;
+  display: block;
+  width: 16px;
+  float: left;
+  margin-left: 50px;
+}
+#mainnav-contentbox .article-list .load-more-articles,
+#mainnav-contentbox .article-list .load-more-contests {
+  float: left;
+  font-style: normal!important;
+}
+#mainnav-contentbox .article-list .load-more-articles,
+#mainnav-contentbox .article-list .load-more-contests {
+  background: url('http://cdn.womensunitedonline.com/nav/refresh-icon.png') no-repeat 0 3px;
+  padding-left: 15px;
+}
+#mainnav-contentbox .article-list .see-more-articles,
+#mainnav-contentbox .article-list .see-more-contests {
+  float: right;
+}
+#mainnav-contentbox .article-list .see-more-articles,
+#mainnav-contentbox .article-list .see-more-contests {
+  margin-right: 10px;
+  font-style: normal!important;
+}
+#mainnav-contentbox .slider-container.food-and-recipes .ArticleColumn img {
+  margin-bottom: -20px;
+}
+#mainnav-contentbox .nav-photo-gallery {
+  padding: 10px 0;
+}
+#mainnav-contentbox .nav-photo-gallery li {
+  width: 80px;
+  float: left;
+  margin: 0 5px 8px 0;
+  display: block;
+}
+#mainnav-contentbox .nav-photo-gallery a {
+  display: block;
+}
+#mainnav-contentbox .nav-photo-gallery .gallery-image {
+  height: 82px;
+  overflow: hidden;
+}
+#mainnav-contentbox .nav-photo-gallery .gallery-image img {
+  max-width: 70px;
+}
+#mainnav-contentbox .nav-photo-gallery .gallery-title {
+  font-size: 13px;
+  padding: 2px 0;
+  line-height: 16px;
+  height: 32px;
+  overflow: hidden;
+}
+#mainnav-contentbox .nav-photo-gallery .gallery-number {
+  font-size: 10px;
+  color: #bbbbbb;
+  line-height: 15px;
+}
+#mainnav-contentbox .Videos,
+#mainnav-contentbox .SKTVShow {
+  padding-bottom: 5px;
+}
+#mainnav-contentbox .Videos h4,
+#mainnav-contentbox .SKTVShow h4 {
+  margin-bottom: 15px;
+}
+#mainnav-contentbox .Videos img,
+#mainnav-contentbox .SKTVShow img {
+  max-height: 100px;
+}
+#mainnav-contentbox .Videos .video-container,
+#mainnav-contentbox .SKTVShow .video-container {
+  border-bottom: 1px dotted #666666;
+  padding-bottom: 10px;
+}
+#mainnav-contentbox .Videos .video-container .description,
+#mainnav-contentbox .SKTVShow .video-container .description {
+  font-size: 15px;
+  line-height: 18px;
+  margin: -5px 0 0;
+}
+#mainnav-contentbox .Videos .image-container .description,
+#mainnav-contentbox .SKTVShow .image-container .description {
+  font-size: 13px;
+  line-height: 15px;
+  margin: -10px 0 0;
+}
+#mainnav-contentbox .Videos a,
+#mainnav-contentbox .SKTVShow a {
+  color: #333;
+}
+#mainnav-contentbox .Videos .nav-more,
+#mainnav-contentbox .SKTVShow .nav-more {
+  border: none;
+}
+#mainnav-contentbox .Videos.sk-w-3 .image-container {
+  margin-top: 6px;
+}
+#mainnav-contentbox .SKTVShow ul,
+#mainnav-contentbox .SKTVShow li {
+  margin: 0;
+  padding: 0;
+}
+#mainnav-contentbox .SKTVShow .more {
+  padding: 0;
+}
+#mainnav-contentbox .SKTVShow .image-container {
+  height: 60px;
+}
+#mainnav-contentbox .SKTVShow .title {
+  font-size: 14px;
+  color: #2a2a2a;
+  font-weight: bold;
+  padding: 10px 0;
+  height: 45px;
+  overflow: hidden;
+}
+#mainnav-contentbox .SKTVShow .description {
+  font-size: 12px;
+  display: none;
+}
+#mainnav-contentbox .SKTVShow embed {
+  width: 213px;
+  height: 136px;
+}
+#mainnav-contentbox .SKTVShow .video-container {
+  border: none;
+}
+#mainnav-contentbox .slider-container.sheknowstv .sk-w-5 {
+  width: 233px;
+}
+#mainnav-contentbox .Printable.sk-w-3,
+#mainnav-contentbox .GiftGuide.sk-w-3 {
+  padding: 5px 0 0 22px;
+  width: 176px;
+}
+#mainnav-contentbox .Printable,
+#mainnav-contentbox .GiftGuide {
+  padding: 5px 0 0 20px;
+}
+#mainnav-contentbox .Printable li,
+#mainnav-contentbox .GiftGuide li {
+  width: 82px;
+  float: left;
+  margin: 0 5px 8px 0;
+  display: block;
+}
+#mainnav-contentbox .Printable a,
+#mainnav-contentbox .GiftGuide a {
+  display: block;
+}
+#mainnav-contentbox .Printable .gallery-image,
+#mainnav-contentbox .GiftGuide .gallery-image {
+  height: 65px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  width: 65px;
+  padding: 5px 2px;
+}
+#mainnav-contentbox .Printable .gallery-image img,
+#mainnav-contentbox .GiftGuide .gallery-image img {
+  max-width: 55px;
+}
+#mainnav-contentbox .Printable .gallery-title,
+#mainnav-contentbox .GiftGuide .gallery-title {
+  font-size: 13px;
+  padding: 2px 0;
+  line-height: 16px;
+  max-height: 31px;
+  overflow: hidden;
+  display: block;
+}
+#mainnav-contentbox .Printable .gallery-number,
+#mainnav-contentbox .GiftGuide .gallery-number {
+  font-size: 10px;
+  color: #bbbbbb;
+  line-height: 15px;
+}
+#mainnav-contentbox .Printable .nav-more,
+#mainnav-contentbox .GiftGuide .nav-more {
+  border: none;
+}
+#mainnav-contentbox .Printable .center,
+#mainnav-contentbox .GiftGuide .center,
+#mainnav-contentbox .Printable .view-all,
+#mainnav-contentbox .GiftGuide .view-all {
+  width: 88%;
+}
+#mainnav-contentbox .Printable .view-all,
+#mainnav-contentbox .GiftGuide .view-all {
+  text-align: center;
+  margin-top: 7px;
+}
+#mainnav-contentbox .Printable .view-all a,
+#mainnav-contentbox .GiftGuide .view-all a {
+  color: #979797;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+#mainnav-contentbox .sk-w-3 .article-image {
+  display: none;
+}
+#mainnav-contentbox .ArticleColumn {
+  padding-bottom: 10px;
+}
+#mainnav-contentbox .ArticleColumn img {
+  margin-bottom: -5px;
+  max-width: 265px;
+}
+#mainnav-contentbox .ExternalLink h4 {
+  display: none;
+}
+#mainnav-contentbox .ExternalLink .more {
+  padding: 0;
+}
+#mainnav-contentbox .ExternalLink .image-container {
+  margin-top: 7px;
+}
+#mainnav-contentbox .ExternalLink .description {
+  padding-bottom: 7px;
+  margin-top: -5px;
+}
+#mainnav-contentbox .media-img {
+  width: 100%;
+}
+#mainnav-contentbox .media-img img {
+  margin: 10px 0 5px;
+  max-height: 150px;
+  display: block;
+  width: auto;
+}
+
+#mainnav-contentbox .media-img.full img {
+    max-height: none;
+}
+
+#mainnav-contentbox .EditorsPick .blurb {
+  font-size: 14px;
+  font-style: italic;
+}
+#mainnav-contentbox .EditorsPick .media-img a {
+  text-decoration: none;
+}
+#mainnav-contentbox .Featured .media-img img {
+  position: relative;
+  bottom: 0;
+}
+#mainnav-contentbox .Quiz.sk-w-3 li:first-child .question {
+  width: 105px;
+}
+#mainnav-contentbox .Quiz {
+  background: url('http://cdn.womensunitedonline.com/nav/q-text.png') no-repeat 0 45px;
+}
+#mainnav-contentbox .Quiz li:first-child {
+  min-height: 75px;
+  border: none;
+  background: none;
+}
+#mainnav-contentbox .Quiz li:first-child .question {
+  font-size: 19px;
+  line-height: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  float: right;
+  width: 175px;
+  margin-top: 10px;
+}
+#mainnav-contentbox .Quiz li:first-child .question a {
+  color: #333;
+}
+#mainnav-contentbox .Quiz li {
+  border-bottom: 1px dotted #666666;
+  clear: both;
+  display: block;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  background: url("http://cdn.womensunitedonline.com/magazine/icons/listDisc.png") no-repeat 0 8px;
+}
+#mainnav-contentbox .Quiz .question {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+}
+#mainnav-contentbox .Quiz .question a {
+  color: #666;
+}
+#mainnav-contentbox .Quiz .bg-quiz {
+  position: absolute;
+  max-width: 210%;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+#mainnav-contentbox .Quiz .nav-more {
+  border: none;
+}
+#mainnav-contentbox .slider-container.contests {
+  padding: 0;
+}
+#mainnav-contentbox .Contests img {
+  max-width: 100%;
+}
+#mainnav-contentbox .Dare h4 {
+  text-indent: -999em;
+  background: url('http://cdn.womensunitedonline.com/nav/dares-nav.png') no-repeat;
+  width: 240px;
+  height: 70px;
+}
+#mainnav-contentbox .Dare img {
+  margin-right: 10px;
+}
+#mainnav-contentbox .Dare .button {
+  background: #3b5997;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #FFF;
+}
+#mainnav-contentbox .Dare p {
+  font-size: 16px;
+  line-height: 19px;
+}
+#mainnav-contentbox .Dare .dares-container {
+  margin-top: 10px;
+}
+#mainnav-contentbox .StealTheLook.sk-w-3 div {
+  width: 100%;
+}
+#mainnav-contentbox .StealTheLook.sk-w-3 .subtitle {
+  display: none;
+}
+#mainnav-contentbox .StealTheLook.sk-w-3 img {
+  min-height: 290px;
+}
+#mainnav-contentbox .StealTheLook.sk-w-3 h4 {
+  background: url('http://cdn.womensunitedonline.com/nav/steal-the-look-small.png') no-repeat;
+  width: 177px;
+  height: 30px;
+  text-indent: -999em;
+  padding-bottom: 8px;
+}
+#mainnav-contentbox .StealTheLook {
+  height: 325px;
+  position: relative;
+}
+#mainnav-contentbox .StealTheLook img {
+  position: absolute;
+  width: 260px;
+}
+#mainnav-contentbox .StealTheLook div {
+  width: 70%;
+  position: absolute;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 8px;
+}
+#mainnav-contentbox .StealTheLook div span {
+  display: block;
+}
+#mainnav-contentbox .StealTheLook div .title {
+  margin-bottom: 10px;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin: 0;
+  color: #2b2b2b;
+}
+#mainnav-contentbox .StealTheLook div .blurb {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 17px;
+  color: #666;
+}
+#mainnav-contentbox .StealTheLook.sk-w-3 img {
+  width: 180px;
+}
+#mainnav-contentbox .StealTheLook.sk-w-3 div {
+  width: 164px;
+}
+.ie8 .StealTheLook div,
+.ie7 .StealTheLook div {
+  background: url("http://cdn.womensunitedonline.com/interface/overlay-white.png");
+}
+/* sub nav menu overrides */
+#subnav-navbar .bd ul#subnav {
+  float: left;
+  position: relative;
+  height: 27px;
+  overflow: hidden !important;
+  padding: 0;
+  margin: 0;
+}
+#subnav-navbar .bd ul#subnav li:hover {
+  background: none;
+}
+#subnav-navbar .bd ul#subnav a:hover {
+  text-decoration: underline;
+}
+#subnav-navbar .bd ul#subnav li {
+  border: none;
+  list-style: none;
+  float: left;
+  padding: 0 8px;
+  line-height: 24px;
+  height: 24px;
+}
+#subnav-navbar .bd ul#subnav li a {
+  color: #777;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 18px;
+  text-decoration: none;
+}

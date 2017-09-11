@@ -1,0 +1,28 @@
+oas_tag.displayAds({"Ad" : [ {
+   "Pos": "Bottom",
+   "H": "90",
+   "W": "728",
+   "AdType": "image\/jpeg",
+   "Text": "<A HREF=\"http:\/\/oascentral.miaminewtimes.com\/RealMedia\/ads\/click_lx.ads\/www.miaminewtimes.com\/home-misc\/L31\/538229139\/Bottom\/TheVoice\/mia_House-TasteOftheNation_070615_All_ROS\/429503.1.jpg\/525065787a4657646d4c59414231752f?x\" target=\"_blank\"><IMG SRC=\"http:\/\/imagec17.247realmedia.com\/RealMedia\/ads\/Creatives\/TheVoice\/mia_House-TasteOftheNation_070615_All_ROS\/429503.1.jpg\/1435777651\"  WIDTH=728 HEIGHT=90 ALT=\"MNT_Taste_of_the_Nation\"  BORDER=\"0\"><\/A>",
+   "Ref": "",
+   "CampKey" : "605143295",
+   "ExclCamp" : ""
+} , {
+   "Pos": "Frame1",
+   "H": "0",
+   "W": "0",
+   "AdType": "image\/jpeg",
+   "Text": "<A HREF=\"http:\/\/oascentral.miaminewtimes.com\/RealMedia\/ads\/click_lx.ads\/www.miaminewtimes.com\/home-misc\/L31\/893487811\/Frame1\/TheVoice\/mia_HolySmokes_070815_Skin_Hm\/newreskin.jpg\/525065787a4657646d4c59414231752f?x\" target=\"_blank\"><IMG SRC=\"http:\/\/imagec17.247realmedia.com\/RealMedia\/ads\/Creatives\/TheVoice\/mia_HolySmokes_070815_Skin_Hm\/newreskin.jpg\/1436376554\"  ALT=\"\"  BORDER=\"0\"><\/A>",
+   "Ref": "",
+   "CampKey" : "605146098",
+   "ExclCamp" : ""
+} , {
+   "Pos": "Top",
+   "H": "90",
+   "W": "728",
+   "AdType": "image\/gif",
+   "Text": "<A HREF=\"http:\/\/oascentral.miaminewtimes.com\/RealMedia\/ads\/click_lx.ads\/www.miaminewtimes.com\/home-misc\/L31\/226434738\/Top\/TheVoice\/mia_IronFork_060115_All_ROS\/417941.1.gif\/525065787a4657646d4c59414231752f?x\" target=\"_blank\"><IMG SRC=\"http:\/\/imagec17.247realmedia.com\/RealMedia\/ads\/Creatives\/TheVoice\/mia_IronFork_060115_All_ROS\/417941.1.gif\/1432833632\"  WIDTH=728 HEIGHT=90 ALT=\"Iron Fork\"  BORDER=\"0\"><\/A>",
+   "Ref": "",
+   "CampKey" : "605115575",
+   "ExclCamp" : ""
+} ]});

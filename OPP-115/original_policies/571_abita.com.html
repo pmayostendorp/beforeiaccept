@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://abita.com/sign_up/privacy_policy -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Abita.com</title>
+<link href="./571_abita.com_files/abita.css" rel="stylesheet" type="text/css">
+<link href="https://abita.com/css/the-tooltip.css" rel="stylesheet">
+<link rel="image_src" href="https://abita.com/images/abita_logo_header.png">
+<link rel="stylesheet" href="./571_abita.com_files/prettyPhoto.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./571_abita.com_files/jquery.pageslide.css">
+
+<script async="" src="./571_abita.com_files/analytics.js"></script><script id="facebook-jssdk" src="./571_abita.com_files/all.js"></script><script id="twitter-wjs" src="./571_abita.com_files/widgets.js"></script><script type="text/javascript" src="./571_abita.com_files/jquery-1.8.2.min.js"></script>
+<script src="./571_abita.com_files/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+<!--
+var sipPos = 0;
+$(document).ready(function() {
+  $("#panel-tab").click(function(e) {
+    e.preventDefault();
+    $("#panel").animate({ top: sipPos }, 400, 'linear', function() {
+      if(sipPos == 0) { sipPos = -65; }
+      else { sipPos = 0; }
+    });
+  });
+});
+-->
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<script type="text/javascript" src="./571_abita.com_files/jquery.form.js"></script>
+  
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+
+      // writing a save customer info form to every page for ajax updating.
+      /*$.get('/cart/x_save_customer_info_form', function(data) {
+        $('body').append(data); 
+        $("#hidden_save_customer_info_form").attr("style", "display:none"); 
+      }); */
+/*
+      // when billing and shipping data is changed, this is fired. 
+      $("#state, #shipping_state, #country_code, #shipping_country_code, #zip, #shipping_zip, #region, #shipping_region").live('change',function(){
+        // display a message indicating that we're updating fields cost
+        update_fields(); 
+
+        $('#hidden_save_customer_info_form form').ajaxSubmit({
+          success: function(data) {load_fields();}
+        });
+      });
+      
+      function update_fields()
+      {
+        // update the value of the hidden form field
+        $('#hidden_country_code') .val( $("#country_code").val() );
+        $('#hidden_state')      .val( $("#state").val() );
+        $('#hidden_zip')      .val( $("#zip").val() );
+        $('#hidden_region')     .val( $("#region").val() );
+
+        $('#hidden_shipping_country_code')  .val( $("#shipping_country_code").val() );
+        $('#hidden_shipping_state')     .val( $("#shipping_state").val() );
+        $('#hidden_shipping_zip')     .val( $("#shipping_zip").val() );
+        $('#hidden_shipping_region')    .val( $("#shipping_region").val() );
+      }
+      function load_fields()
+      {
+        $('.cart_tax')      .html( 'updating...' );
+        $('.cart_total')    .html( 'updating...' );
+        $('.cart_shipping')   .html( 'updating...' );
+        $('.cart_subtotal')   .html( 'updating...' );
+        $('.cart_discount')   .html( 'updating...' );
+        
+        $('.cart_tax'). load('/cart/x_tax');
+        $('.cart_total').load('/cart/x_total');
+        $('.cart_shipping').load('/cart/x_shipping');
+        $('.cart_discount').load('/cart/x_discount');
+        $('.cart_subtotal').load('/cart/x_subtotal');
+      }
+*/
+      function set_config(act, param)
+      {$.get('https://abita.com/cart/x_set_config/'+act+"/"+param, function(data) {load_fields();});
+      }
+      $("#checkout_button").click(function(){
+        $("#return_url").val("shop/checkout_step2"); 
+        $("#update_cart_form").submit(); 
+        return false; 
+      }); 
+      $("#update_button").click(function(){
+        $("#return_url").val("shop/checkout_step1"); 
+        $("#update_cart_form").submit(); 
+        return false;
+      });
+    }); 
+  </script>
+
+  <script type="text/javascript" src="./571_abita.com_files/jquery-ui-1.8.24.custom.min.js"></script>
+  <script type="text/javascript" src="./571_abita.com_files/socialize.js">
+  {
+    siteName: 'abita.com'
+    ,enabledProviders: 'facebook,twitter,google,yahoo'
+  }
+  </script> 
+  
+
+<script>
+
+function createCookie(name, value, days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+    } else var expires = "";
+    document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = escape(name) + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return unescape(c.substring(nameEQ.length, c.length));
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name, "", -1);
+}
+
+
+var isMobile = function() { return /(iphone|ipod|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent); };
+
+if(isMobile() && readCookie('desktopVersion') != "true") {
+
+  //console.log('Browser meets mobile redirect conditions');
+
+  current_url = window.location.href;
+  segment_1 = "sign_up";
+  segment_2 = "privacy_policy";
+  segment_3 = "";
+  segment_4 = "";
+  segment_5 = "";
+  segment_6 = "";
+
+  if (segment_1 == "") { window.location.href = "https://abita.com/mobile/"; }
+  else if(segment_1 == "find_abita") { window.location.href = "https://abita.com/mobile/find_abita"; }
+  else if(segment_1 == "learn" && segment_2 == "drink_responsibly") { window.location.href = "https://abita.com/mobile/drink_responsibly"; }
+  else if(segment_1 == "brews") {
+    if (segment_2 == "our_brews" && segment_3 != "") { window.location.href = "https://abita.com/mobile/brews/our_brews/"+segment_3; }
+    else if (segment_2 == "select_series") { window.location.href = "https://abita.com/mobile/brews/select_series"; }
+    else if (segment_2 == "select_locations") { window.location.href = "https://abita.com/mobile/brews/select_locations"; }
+    else if (segment_2 == "recipes") {
+        if(segment_3 != "") { window.location.href = "https://abita.com/mobile/recipes/"+segment_3; }
+        else { window.location.href = "https://abita.com/mobile/recipes"; }
+    }
+    else if (segment_2 == "brewmasters_blog") {
+        if(segment_3 != "") { window.location.href = "https://abita.com/mobile/news/brews_brewmasters_blog/"+segment_3; }
+        else { window.location.href = "https://abita.com/mobile/news/brews_brewmasters_blog/"; }
+    }
+    else { window.location.href = "https://abita.com/mobile/brews"; }
+  }
+  else if(segment_1 == "party") {
+    if (segment_2 == "pub_crawls" && segment_3 != "") { window.location.href = "https://abita.com/mobile/party/pub_crawls/"+segment_3+"/"+segment_4; }
+    else if (segment_2 == "dinner_series" && segment_3 != "") { window.location.href = "https://abita.com/mobile/party/dinner_series/"+segment_3+"/"+segment_4; }
+    else if(segment_2 == "sponsored_events" && segment_3 != "") { window.location.href = "https://abita.com/mobile/party/sponsored_events/"+segment_3+"/"+segment_4; }
+    else if(segment_2 == "events") { window.location.href = "https://abita.com/mobile/party/events/"+segment_5+"/"+segment_6; }
+    else { window.location.href = "https://abita.com/mobile/party"; }
+  }
+  else if(segment_1 == "shop") {
+    if (segment_2 != "") {
+      if (segment_4 != "") { window.location.href = "https://abita.com/mobile/shop/"+segment_2+"/"+segment_4; }
+      else { window.location.href = "https://abita.com/mobile/shop/"+segment_2; }
+    }
+    else { window.location.href = "https://abita.com/mobile/shop"; }
+  }
+  else if(segment_1 == "news") {
+    if (segment_2 != "") {
+      if (segment_3 != "") { window.location.href = "https://abita.com/mobile/news/"+segment_2+"/"+segment_3; }
+      else { window.location.href = "https://abita.com/mobile/mobile/news/"; }
+    }
+    else { window.location.href = "https://abita.com/mobile/news"; }
+  }
+
+}
+
+</script>
+
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body onload="MM_preloadImages(&#39;https://abita.com/images/btn_header_distributors_o.png&#39;,&#39;https://abita.com/images/btn_header_find_abita_o.png&#39;,&#39;https://abita.com/images/btn_header_visit_abita_o.png&#39;,&#39;https://abita.com/images/btn_header_contact_abita_o.png&#39;,&#39;https://abita.com/images/sm_newsletter_o.png&#39;,&#39;https://abita.com/images/sm_twitter_o.png&#39;,&#39;https://abita.com/images/sm_facebook_o.png&#39;)" data-twttr-rendered="true">
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./571_abita.com_files/xRlIuTsSMoE.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f26aa29544" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" src="./571_abita.com_files/ping.html" style="display: none;"></iframe></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=244734072215704";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="panel-wrapper">
+<div id="panel-content">
+<div id="panel"><div style="width:212px;"><a href="https://abita.com/sign_up/privacy_policy#" id="panel-tab"><img src="./571_abita.com_files/slide_out_like.png" width="212" height="7" border="0"><img src="./571_abita.com_files/slide_out_like-02.png" width="30" height="27" border="0"><img src="./571_abita.com_files/slide_out_like.gif" width="27" height="27" border="0"><img src="./571_abita.com_files/slide_out_like-03.png" width="155" height="27" border="0"><img src="./571_abita.com_files/slide_out_like-04.png" width="212" height="17" border="0"></a></div>
+  <table width="212" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="25" rowspan="3">&nbsp;</td>
+        <td width="174" height="8"></td>
+        <td width="13" rowspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="180" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+              <td width="55" rowspan="2" align="left" valign="top"><img src="./571_abita.com_files/sm_abita_logo.jpg" width="46" height="46"></td>
+              <td width="125" height="25" align="left" valign="top"><div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/abita" data-send="false" data-layout="button_count" data-width="125" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=244734072215704&amp;container_width=125&amp;href=https%3A%2F%2Fwww.facebook.com%2Fabita&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=125"><span style="vertical-align: bottom; width: 86px; height: 20px;"><iframe name="f342aae878" width="125px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./571_abita.com_files/like.html" style="border: none; visibility: visible; width: 86px; height: 20px;" class=""></iframe></span></div></td>
+          </tr>
+            <tr>
+              <td align="left" valign="top"><div id="twitter"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./571_abita.com_files/follow_button.403b2a3ca10837290e034c22c8a16c06.en.html" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 59px; height: 20px;"></iframe></div></td>
+            </tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td height="15"></td>
+      </tr>
+</tbody></table>
+    </div>
+    </div>
+    </div>
+
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td align="left" valign="top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg_header">
+      <tbody><tr>
+        <td><table width="900" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td height="55" align="left" valign="top">
+        </td>
+        <td width="275" rowspan="4" align="left" valign="top"><a href="https://abita.com/"><img src="./571_abita.com_files/abita_wi_logo_header.png" width="143" height="119" alt="Abita Beer" style="margin-top:10px; margin-left:63px;"><!--<img src="/images/abita_logo_header.png" width="143" height="119" alt="Abita Beer" style="margin-top:10px; margin-left:63px;"/>--></a></td>
+        <td height="55" align="right" valign="top" style="padding-right:10px;">
+        <div style="position:relative; width:182px">
+        <a href="https://abita.com/my_abita"><img src="./571_abita.com_files/myAbitaLoginHome.png"></a><a href="https://abita.com/embeds/slideout_my_abita_new?return_addr=/sign_up/privacy_policy" class="first"><img src="./571_abita.com_files/myAbitaSignIn.png"></a>        </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="313" height="22" align="left" valign="bottom"><a href="https://abita.com/distributors/details" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Distributors&#39;,&#39;&#39;,&#39;/images/btn_header_distributors_o.png&#39;,1)"><img src="./571_abita.com_files/btn_header_distributors.png" alt="Distributors" name="Distributors" width="103" height="22" border="0" id="Distributors" style="margin-left:18px;"></a></td>
+        <td width="313" height="22" align="right" valign="bottom"><a href="https://abita.com/find_abita" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image2&#39;,&#39;&#39;,&#39;/images/btn_header_find_abita_o.png&#39;,1)"><img src="./571_abita.com_files/btn_header_find_abita.png" alt="Find Abita" name="Image2" width="81" height="22" border="0" id="Image2"></a><a href="https://abita.com/visit_abita" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image3&#39;,&#39;&#39;,&#39;/images/btn_header_visit_abita_o.png&#39;,1)"><img src="./571_abita.com_files/btn_header_visit_abita.png" alt="Visit Abita" name="Image3" width="81" height="22" border="0" id="Image3"></a><a href="https://abita.com/sign_up/contact_info" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image4&#39;,&#39;&#39;,&#39;/images/btn_header_contact_abita_o.png&#39;,1)"><img src="./571_abita.com_files/btn_header_contact_abita.png" alt="Contact Abita" name="Image4" width="95" height="22" border="0" id="Image4" style="margin-right:18px;"></a></td>
+      </tr>
+      <tr>
+        <td height="14"></td>
+        <td height="14"></td>
+      </tr>
+      <tr>
+        <td height="39" align="left" valign="top">
+          
+          <div id="mainNavLeft">
+            <ul>
+              <li class="nav_divider"><img src="./571_abita.com_files/nav_divider.png" width="1" height="37"></li>
+              <li><a href="https://abita.com/party">Party</a></li>
+              <li class="nav_divider"><img src="./571_abita.com_files/nav_divider.png" width="1" height="37"></li>
+              <li><a href="https://abita.com/learn">Learn</a></li>
+              <li class="nav_divider"><img src="./571_abita.com_files/nav_divider.png" width="1" height="37"></li>
+              <li><a href="https://abita.com/brews">Brews</a></li>
+              <li class="nav_divider"><img src="./571_abita.com_files/nav_divider.png" width="1" height="37"></li>
+              </ul>
+            </div>
+        </td>
+        <td height="39" align="right" valign="top">
+          <div id="mainNavRight">
+            <ul>
+              <li class="nav_divider"><img src="./571_abita.com_files/nav_divider.png" width="1" height="37"></li>
+              <li><a href="https://abita.com/sign_up">Sign Up</a></li>
+              <li class="nav_divider"><img src="./571_abita.com_files/nav_divider.png" width="1" height="37"></li>
+              <li><a href="https://abita.com/shop">Shop</a></li>
+              <li class="nav_divider"><img src="./571_abita.com_files/nav_divider.png" width="1" height="37"></li>
+              <li><a href="https://abita.com/news/abita_in_the_news">News</a></li>
+              <li class="nav_divider"><img src="./571_abita.com_files/nav_divider.png" width="1" height="37"></li>
+              </ul>
+          </div></td>
+      </tr>
+    </tbody></table></td>
+      </tr>
+    </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td height="123" align="left" valign="top" class="bg_main_content_repeat"><table width="900" border="0" cellspacing="0" cellpadding="0" class="bg_main_content_top">
+      <tbody><tr>
+        <td><table width="900" border="0" cellspacing="0" cellpadding="0" class="bg_main_content_bottom">
+          <tbody><tr>
+            <td height="500" align="left" valign="top">
+
+
+
+
+
+<table width="900" border="0" cellspacing="45" cellpadding="0">
+              <tbody><tr>
+                <td height="351" align="left" valign="top"><table width="810" border="0" cellspacing="0" cellpadding="0">
+                  <tbody><tr>
+                    <td>&nbsp;</td>
+                    <td width="7" rowspan="2">&nbsp;</td>
+                    <td width="573">&nbsp;</td>
+                    </tr>
+                  <tr>
+                    <td align="right" valign="top"><table width="230" border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+                        <td width="12" rowspan="5" align="left" valign="top"><img src="./571_abita.com_files/spacer.gif" width="13" height="12"></td>
+                        <td width="205" align="left" valign="top">
+                          
+
+
+
+
+
+
+
+
+<div id="sideNav">
+  <ul>
+    <h3 style="text-align:right; margin-bottom:3px;">Sign Up</h3>
+      <li><a href="https://abita.com/sign_up">Email</a></li>
+      <li><a href="./571_abita.com_files/571_abita.com.html">PRIVACY POLICY</a></li>
+      <li><a href="https://abita.com/sign_up/terms_of_use">TERMS OF USE</a></li>
+      <li><a href="https://abita.com/sign_up/contact_info">CONTACT INFO</a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+						</td>
+                        <td width="12" rowspan="5" align="left" valign="top"><img src="./571_abita.com_files/spacer.gif" alt="" width="13" height="12"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="middle">                        <div id="dotted_divider" style="margin-bottom:8px;"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top">
+                        							<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg_sb_repeat">
+                          <tbody><tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody><tr>
+                            <td width="100%" height="156" align="left" valign="top" class="bg_sb_topCap"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody><tr>
+                            <td width="100%" height="255" align="left" valign="top" class="bg_sb_bottomCap">
+
+<div id="sidebar_ads">
+<div style="height:10px;"></div>
+
+<a href="http://abita.com/shop" onmouseover="ad1.src=&quot;https://abita.com/images/sidebar_ads/sidegraphic_merchandise_rollover.jpg&quot; " onmouseout="ad1.src=&quot;https://abita.com/images/sidebar_ads/sidegraphic_merchandise.jpg&quot; ">
+<img src="./571_abita.com_files/sidegraphic_merchandise.jpg" name="ad1">
+</a>
+
+<a href="http://abita.com/brews/our_brews/seersucker-summer-pils" onmouseover="ad2.src=&quot;https://abita.com/images/sidebar_ads/Seersucker_now_available_o.jpg&quot; " onmouseout="ad2.src=&quot;https://abita.com/images/sidebar_ads/Seersucker_now_available.jpg&quot; ">
+<img src="./571_abita.com_files/Seersucker_now_available.jpg" name="ad2">
+</a>
+
+<!--
+<a href="http://abita.com/brews/our_brews/spring-ipa" onMouseOver='ad2.src="https://abita.com/images/sidebar_ads/sg_SIPA_in_stores_now_o.jpg" ' onMouseOut='ad2.src="https://abita.com/images/sidebar_ads/sg_SIPA_in_stores_now.jpg" '>
+<img src="https://abita.com/images/sidebar_ads/sg_SIPA_in_stores_now.jpg" name="ad2">
+</a>
+-->
+
+<script language="JavaScript">
+<!--
+
+function random_imglink(){
+var myimages=new Array()
+//specify random images below. You can have as many as you wish
+myimages[1]="https://abita.com/images/sidebar_ads/side_LemonWheatHarvest"
+//myimages[2]="https://abita.com/images/sidebar_ads/sg_TwoBoots"
+
+//specify corresponding links below
+var imagelinks=new Array()
+imagelinks[1]="http://abita.com/find_abita"
+//imagelinks[2]="https://abita.com/find_abita"
+
+var ry=Math.floor(Math.random()*myimages.length)
+if (ry==0)
+ry=1
+
+document.write('<a href="'+imagelinks[ry]+'"'+' onMouseOver="ad3.src=\''+myimages[ry]+'_o.jpg\'" onMouseOut="ad3.src=\''+myimages[ry]+'.jpg\'"><img src="'+myimages[ry]+'.jpg" border=0 name="ad3"></a>')
+}
+
+random_imglink()
+//-->
+ 
+
+</script><a href="http://abita.com/find_abita" onmouseover="ad3.src=&#39;https://abita.com/images/sidebar_ads/side_LemonWheatHarvest_o.jpg&#39;" onmouseout="ad3.src=&#39;https://abita.com/images/sidebar_ads/side_LemonWheatHarvest.jpg&#39;"><img src="./571_abita.com_files/side_LemonWheatHarvest.jpg" border="0" name="ad3"></a>
+
+
+<!--<a href="https://abita.com/brews/our_brews/pecan" onMouseOver='ad3.src="https://abita.com/images/sidebar_ads/sg_pecan_in_stores_o.jpg" ' onMouseOut='ad3.src="https://abita.com/images/sidebar_ads/sg_pecan_in_stores.jpg" '>
+<img src="https://abita.com/images/sidebar_ads/sg_pecan_in_stores.jpg" name="ad3">
+</a>-->
+
+</div>
+<div style="height:5px;"></div>
+<!--
+<a href="https://abita.com/embeds/slideout_my_abita" class="first"><br>
+                            My ABITA - Open Left</a><br>
+<br>
+<a href="#cart" class="second">Cart - Open Right</a>
+<div id="cart" style="display:none">
+    <h2>Abita Shopping Cart Preview</h2>
+    <a href="javascript:$.pageslide.close()">Close</a>
+</div>
+-->
+
+</td>
+                          </tr>
+                        </tbody></table></td>
+                          </tr>
+                        </tbody></table></td>
+                          </tr>
+</tbody></table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><div id="dotted_divider" style="margin-top:8px; margin-bottom:25px;" "=""></div></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top">
+							<table width="198" border="0" cellspacing="0" cellpadding="0">
+                          <tbody><tr>
+                            <td colspan="7" align="right" class="sidebar subtitle" style="padding-bottom:7px;">Let's Be Friends!</td>
+                          </tr>
+                          <tr>
+                            <td width="32" align="right"><a href="https://www.facebook.com/abita" target="_blank" onmouseover="MM_swapImage(&#39;Image18&#39;,&#39;&#39;,&#39;https://abita.com/images/sm_facebook_o.png&#39;,1)" onmouseout="MM_swapImgRestore()"><img src="./571_abita.com_files/sm_facebook.png" name="Image18" width="32" height="32" border="0" id="Image18"></a></td>
+                            <td width="9" align="center"><img src="./571_abita.com_files/sm_divider.png" width="1" height="32"></td>
+                            <td width="32" align="right"><a href="https://twitter.com/#!/theabitabeer" target="_blank" onmouseover="MM_swapImage(&#39;Image17&#39;,&#39;&#39;,&#39;https://abita.com/images/sm_twitter_o.png&#39;,1)" onmouseout="MM_swapImgRestore()"><img src="./571_abita.com_files/sm_twitter.png" name="Image17" width="32" height="32" border="0" id="Image17"></a></td>
+                            <td width="9" align="center"><img src="./571_abita.com_files/sm_divider.png" width="1" height="32"></td>
+                            <td width="32" align="right"><a href="http://www.pinterest.com/abitabeer" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image140&#39;,&#39;&#39;,&#39;https://abita.com/images/sm_pinterest_o.png&#39;,1)"><img src="./571_abita.com_files/sm_pinterest.png" name="Image140" width="32" height="32" border="0" id="Image140"></a></td>
+							    <td width="9" align="center"><img src="./571_abita.com_files/sm_divider.png" width="1" height="32"></td>
+                            <td width="32" align="right"><a href="http://instagram.com/abitabeer" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image141&#39;,&#39;&#39;,&#39;https://abita.com/images/sm_instagram_o.png&#39;,1)"><img src="./571_abita.com_files/sm_instagram.png" name="Image141" width="32" height="32" border="0" id="Image141"></a></td>
+			    <td width="9" align="center"><img src="./571_abita.com_files/sm_divider.png" width="1" height="32"></td>
+                            <td width="32" align="right"><a href="https://abita.com/sign_up" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image16&#39;,&#39;&#39;,&#39;https://abita.com/images/sm_newsletter_o.png&#39;,1)"><img src="./571_abita.com_files/sm_newsletter.png" name="Image16" width="32" height="32" border="0" id="Image16"></a></td>
+                          </tr>
+			  <tr>
+			    <td width="32" align="right"><a href="https://www.youtube.com/channel/UC3fqpewZIVlDgb5HavFp8xw" target="_blank" onmouseover="MM_swapImage(&#39;Image142&#39;,&#39;&#39;,&#39;https://abita.com/images/sm_youtube_o.png&#39;,1)" onmouseout="MM_swapImgRestore()"><img src="./571_abita.com_files/sm_youtube.png" name="Image142" width="32" height="32" border="0" id="Image142"></a></td>
+			  </tr>
+                        </tbody></table>
+						</td>
+                      </tr>
+</tbody></table></td>
+                    <td align="left" valign="top">
+  <!-- CONTENT AREA BEGIN -->
+                      <span id="contentCheck"><table width="571" border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+                        <td width="13"><img src="./571_abita.com_files/spacer.gif" alt="" width="35" height="12"></td>
+                        <td width="543">
+							
+					        <h1>PRIVACY POLICY</h1>
+								<p>
+	Copyright © 2008 Abita and ABITA.COM, LLC TM. All Right Reserved.</p>
+<p>
+	Abita is committed to protecting your privacy. By accessing this website, you are consenting to the information collection and use practices described in this privacy statement.</p>
+<h6>
+	Collection of your Personal Information:</h6>
+<p>
+	We will ask you when we need information that personally identifies you (personal information) or allows us to contact you to provide a service or carry out a transaction that you have requested such as receiving information about Abita products and services, entering a contest, ordering e-mail newsletters, joining a limited-access premium site or service, or when purchasing, downloading and/or registering Abita products. The personal information we collect may include your name, title, company or organization name, work e-mail, work phone, work or home address, information about your job function, information about your company, information about circumstances related to your purchase, and payment information.</p>
+<p>
+	We may collect certain information about your visit, such as the name of the Internet service provider and the Internet Protocol (IP) address through which you access the Internet; the date and time you access the site; the pages that you access while at the Site and the Internet address of the Web site from which you linked directly to our site. This information is used to help improve the site, analyze trends and administer the site.</p>
+<h6>
+	Control of your Personal Information:</h6>
+<p>
+	Except as otherwise described in this statement, personal information you provide on the site will not be shared outside of Abita and its controlled subsidiaries and affiliates without your permission.</p>
+<p>
+	Please be aware that this privacy statement and any choices you make on the site will not necessarily apply to personal information you may have provided to Abita in the context of other, separately operated, Abita products or services.</p>
+<p>
+	ABITA.COM may send out periodic e-mails informing you of issues related to a product or service you requested, or confirming you requested a product or service such as invoices and confirmations. In some services offered by ABITA.COM, contact with the customer is a necessary part of the service.</p>
+<p>
+	Some services offered on ABITA.COM may collect information that is not accessible to the customer via our website. In such cases, you can access your personal information by contacting ABITA.COM as described at the bottom of this statement, or through alternative means of access described by the service.</p>
+<h6>
+	Security of your Personal Information:</h6>
+<p>
+	Abita is committed to protecting the security of your personal information. We use a variety of security technologies and procedures to help protect your personal information from unauthorized access, use, or disclosure. For example, we store the personal information you provide on computer servers with limited access that are located in controlled facilities. Additionally, when we transmit sensitive personal information (such as a credit card number) over the Internet, we protect it through the use of encryption, such as the Secure Socket Layer (SSL) protocol.</p>
+<h6>
+	Protection of Children's Personal Information</h6>
+<p>
+	ABITA.COM does not knowingly collect any personal information from children. It is against our Terms of Use for anyone under 21 to submit data to our site.</p>
+<h6>
+	Use of Cookies</h6>
+<p>
+	We may use cookies and/or web beacons on this website to ensure the integrity of the registration process and to personalize the site. Cookies and Web Beacons cannot be used to run programs or deliver viruses to your computer. You can usually modify your browser setting to decline cookies if you prefer. If you choose to decline cookies, you may not be able to fully experience the interactive features of this or other Web sites you visit. ABITA.COM prohibits Web Beacons from being used to collect or access your personal information.</p>
+<h6>
+	Unsubscribe Information</h6>
+<p>
+	Instructions to remove an email address are located on the bottom of every promotional email. Alternatively, unsubscribe requests may be handled using our online <a href="https://abita.com/sign_up">unsubscription form</a>.</p>
+<h6>
+	How to Contact Us</h6>
+<p>
+	If you have any questions or concerns about the ABITA.COM online privacy policy or its implementation you may contact us at: ABITA.COM Customer Care, Attn: Privacy Policy Issues, PO Box 1510, Abita Springs, LA 70420; or online at friends@ABITA.COM</p>
+<p>
+	You may also send an e-mail or letter to the above e-mail or street address requesting access to or correction of your personally identifiable information. For verification purposes please include your first name, last name, e-mail address and the password you use for said ABITA.COM service.</p>
+
+						</td>
+                        <td width="15"><img src="./571_abita.com_files/spacer.gif" alt="" width="35" height="12"></td>
+                      </tr>
+</tbody></table></span>
+                      <script>if($('#contentCheck').html() == ''){ $('#contentCheck').html('<center><span class="subtitle"><font size="50px"><br>OOPS!</font><br><br>That page seems to have gone missing.</span></center>'); }</script>
+  <!-- CONTENT AREA END -->
+                      </td>
+                  </tr>
+                  </tbody></table></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+            </tbody></table>
+</td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+   <tr>
+    <td height="245" align="left" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg_footer">
+      <tbody><tr>
+        <td><div id="footer_nav_group_wrapper">
+    <div id="footer_nav_group">
+      <ul>
+        <h4>Party</h4>
+            <li><a href="https://abita.com/party">Events</a></li><br>
+      
+      
+      <li><a href="https://abita.com/party/tv_spots">TV Spots</a></li><br>
+      <li><a href="https://abita.com/party/party_pack">Party Pack</a></li><br>
+      <li><a href="https://abita.com/party/downloads">Downloads</a></li><br>
+      </ul>
+    </div>
+    <div id="footer_nav_group">
+      <ul>
+        <h4>Learn</h4>
+        <li><a href="https://abita.com/learn/about_us">About Us</a></li><br>
+            <li><a href="https://abita.com/learn/brewery_tour">Brewery Tour</a></li><br>
+            <li><a href="https://abita.com/learn/how_we_make_beer_ingredients">How We Make Beer</a></li><br>
+            <li><a href="https://abita.com/learn/green_brewing">Green Brewing</a></li><br>
+            <li><a href="https://abita.com/learn/giving_back">Giving Back</a></li><br>
+            <li><a href="https://abita.com/learn/beer_glasses">Glassware</a></li><br>
+            <li><a href="https://abita.com/learn/drink_responsibly">Drink Responsibly</a></li><br>
+            <li><a href="https://abita.com/learn/pry_off_instructions">Pry Off Instructions</a></li><br>
+            <li><a href="https://abita.com/learn/town_of_abita_springs">Town of Abita Springs</a></li><br>
+      </ul>
+    </div>
+    <div id="footer_nav_group">
+      <ul>
+        <h4>Brews</h4>
+        <li><a href="https://abita.com/brews/our_brews">Our Brews</a></li><br>
+        <li><a href="https://abita.com/brews/beer_freshness">Beer Freshness</a></li><br>
+            <li><a href="https://abita.com/brews/beer_clean">Beer Clean</a></li><br>
+        <li><a href="https://abita.com/brews/brewmasters_blog">Brewmasters Blog</a></li><br>
+        <li><a href="https://abita.com/brews/tips_and_tricks">Tips &amp; Tricks</a></li><br>
+        <li><a href="https://abita.com/brews/beer_encyclopedia">Beer Encyclopedia</a></li><br>
+        <li><a href="https://abita.com/brews/beer_charts">Beer Charts</a></li><br>
+        <li><a href="https://abita.com/brews/food_pairings">Food Pairings</a></li><br>
+        <li><a href="https://abita.com/brews/beer_mixes">Beer Mixes</a></li><br>
+        <li><a href="https://abita.com/brews/recipes">Recipes</a></li><br>
+      </ul>
+    </div>
+    <div id="footer_nav_group">
+      <ul>
+        <h4>News</h4>
+        <li><a href="https://abita.com/news/abita_in_the_news">Abita In The News</a></li><br>
+            <li><a href="https://abita.com/news/press_releases">Press Releases</a></li><br>
+        <li><a href="https://abita.com/news/awards">Awards</a></li><br>
+        <li><a href="https://abita.com/news/faqs">FAQ</a></li><br>
+      </ul>
+    </div>
+    <div id="footer_nav_group">
+      <ul>
+        <h4>Shop</h4>
+            <li><a href="https://abita.com/shop/14/get-sos-gear">Get SOS Gear</a></li><br>
+        <li><a href="https://abita.com/shop/22/whats-new">What's New</a></li><br>
+        <li><a href="https://abita.com/shop/4/apparel">Apparel</a></li><br>
+        <li><a href="https://abita.com/shop/15/cookbook">Cookbook</a></li><br>
+        <li><a href="https://abita.com/shop/16/bar-essentials">Bar Essentials</a></li><br>
+        <li><a href="https://abita.com/shop/17/glassware">Glassware</a></li><br>
+        <li><a href="https://abita.com/shop/19/artwork">Artwork</a></li><br>
+        <li><a href="https://abita.com/shop/20/outdoors">Outdoors</a></li><br>
+      </ul>
+    </div>
+    <div id="footer_nav_group">
+      <ul>
+        <h4>Sign up</h4>
+        <li><a href="https://abita.com/sign_up">Email Newsletter</a></li><br>
+        <li><a href="./571_abita.com_files/571_abita.com.html">Privacy Policy</a></li><br>
+        <li><a href="https://abita.com/sign_up/terms_of_use">Terms of Use</a></li><br>
+        <li><a href="https://abita.com/sign_up/contact_info">Contact Info</a></li><br><br>
+            <li><h4 style="margin-bottom:0px; color:https://abita.com/917752">Let's Be Friends!</h4></li><br>
+            <li><table id="footer_sm" width="56" border="0" cellspacing="0" cellpadding="0">
+                          <tbody><tr>
+                            <td width="19" height="19" align="left"><a href="https://www.facebook.com/abita" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image26&#39;,&#39;&#39;,&#39;https://abita.com/images/footer_sm.png&#39;,1)"><img src="./571_abita.com_files/footer_sm_o.png" name="Image26" width="19" height="19" border="0" id="Image26"></a></td>
+                            <td width="18" height="19" align="left"><a href="https://twitter.com/#!/theabitabeer" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image27&#39;,&#39;&#39;,&#39;https://abita.com/images/footer_sm-02.png&#39;,1)"><img src="./571_abita.com_files/footer_sm_o-02.png" name="Image27" width="18" height="19" hspace="10" border="0" id="Image27"></a></td>
+                            <td width="19" height="19" align="left"><a href="https://abita.com/sign_up" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image28&#39;,&#39;&#39;,&#39;https://abita.com/images/footer_sm-03.png&#39;,1)"><img src="./571_abita.com_files/footer_sm_o-03.png" name="Image28" width="19" height="19" border="0" id="Image28"></a></td>
+                          </tr>
+                          <tr>
+                            <td width="19" align="left"><a href="http://www.pinterest.com/abitabeer/" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image130&#39;,&#39;&#39;,&#39;https://abita.com/images/footer_sm-04.png&#39;,1)"><img src="./571_abita.com_files/footer_sm_o-04.png" name="Image130" width="19" height="19" border="0" id="Image130"></a></td>
+                            <td width="19" align="left"><a href="http://instagram.com/abitabeer" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image131&#39;,&#39;&#39;,&#39;https://abita.com/images/footer_sm-05.png&#39;,1)"><img src="./571_abita.com_files/footer_sm_o-05.png" name="Image131" width="19" height="19" hspace="10" border="0" id="Image131"></a></td>
+			    <td width="19" height="19" align="left"><a href="https://www.youtube.com/channel/UC3fqpewZIVlDgb5HavFp8xw" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;Image132&#39;,&#39;&#39;,&#39;https://abita.com/images/footer_sm-06.png&#39;,1)"><img src="./571_abita.com_files/footer_sm_o-06.png" name="Image132" width="19" height="19" border="0" id="Image132"></a></td>
+                          </tr>
+                        </tbody></table></li>
+             <li><a href="http://www.peoplewhothink.com/" target="_blank"><img src="./571_abita.com_files/inn_logo.png" style="margin-top:30px;-webkit-filter: invert(100%);"></a></li>
+      </ul>
+    </div>
+    </div></td>
+      </tr>
+    </tbody></table>
+    </td>
+  </tr>
+  <tr>
+    <td height="55" align="left" valign="top">&nbsp;</td>
+  </tr>
+</tbody></table>
+
+<!-- CART VIEW SLIDE OUT - START -->
+<div id="cart-view" style="display:none">
+
+<div id="checkout_btn" style="margin-top:-18px;"><a href="javascript:$.pageslide.close()"><img src="./571_abita.com_files/btn_close_slideout.png"></a></div>
+
+
+<div id="checkout_btn"><a href="https://abita.com/shop/checkout_step1"><img src="./571_abita.com_files/btn_proceed_to_checkout.png"></a></div>
+
+
+
+
+	<div class="store_block" style="margin-top:10px;">
+	<h3>ABITA Cart Quick View</h3>
+ <div id="dotted_divider" style="margin-top:15px; margin-bottom:5px;"></div>
+	
+	
+			    <p><span style="color:#999">There is nothing in your cart</span></p>
+			
+	</div>
+</div>
+<!-- CART VIEW SLIDE OUT - END -->
+<script src="./571_abita.com_files/jquery.pageslide.min.js"></script><div id="pageslide" style="display: none;"></div>
+<script>
+        /* Default pageslide, moves to the right */
+        $(".first").pageslide();
+        
+        /* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
+        $(".second").pageslide({ direction: "left", modal: true });
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:'',theme:'light_square'});
+    $("a[rel^='sm']").prettyPhoto();
+  });
+</script>
+
+<link rel="stylesheet" href="./571_abita.com_files/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" href="./571_abita.com_files/jqtransform.css" type="text/css" media="all">	
+
+<script type="text/javascript" src="./571_abita.com_files/jquery.jqtransform.js"></script>
+<script language="javascript">
+		$(function(){$('form').jqTransform({imgPath:'jqtransformplugin/img/'});
+		});
+</script>
+
+<!--VISISTAT SNIPPET//-->
+<script type="text/javascript">
+//<![CDATA[
+var DID=67516;
+var pcheck=(window.location.protocol == "https:") ? "https://sniff.visistat.com/live.js":"http://sniff.visistat.com/live.js";
+document.writeln('<scr'+'ipt src="'+pcheck+'" type="text\/javascript"><\/scr'+'ipt>');
+//]]>
+</script><script src="./571_abita.com_files/live.js" type="text/javascript"></script>
+
+<!--VISISTAT SNIPPET//-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47544020-16', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Code for Action: Louisiana Tourism Abita - Retargeting  -->
+<!-- Begin Rocket Fuel Conversion Action Tracking Code Version 7 -->
+<img src="./571_abita.com_files/ca.gif" height="0" width="0" style="display:none" alt="Rocket Fuel">
+<!-- End Rocket Fuel Conversion Action Tracking Code Version7 -->
+
+
+
+</body></html>

@@ -1,0 +1,150 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+/*
+ * Really small screens and up
+ */
+/* @media only screen and (min-width: 220px) {} */
+/*
+ * Smalltouch sizes and up
+ */
+/* @media only screen and (min-width: 320px) {} */
+/*
+ * Smalltouch sizes and down
+ */
+@media only screen and (max-width: 480px) {
+  /* 
+   * Float Region Blocks - custom media query CSS example:
+   * 
+   * Float regions blocks is an Extension you can enable in the appearance
+   * settings for your theme. This feature allows you to automatically float
+   * blocks in regions, you can switch it on and off depending on your
+   * requirements. For design purposes you many want to remove the floats for
+   * devices where the entire theme is just one column - for example small
+   * mobile phones. The following CSS is inside the custom media query:
+   *
+   *   @media only screen and (max-width: 480px){}
+   *
+   * This will target devices with a maximum width of 480px - most small phones.
+   * In these smaller screen sizes we can remove the float and widths so all
+   * blocks stack instead of displaying horizonally. The selector used is an
+   * "attribute selector" which will match on any float block class. Use your
+   * inspector or Firebug to get the classes from the page output if you need
+   * more granular control over block alignment and stacking.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/responsive\.custom\.scss}line{font-family:\0000357}}
+  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+  }
+}
+/*
+ * Tablet sizes and up
+ */
+/* @media only screen and (min-width: 768px) {} */
+/*
+ * Desktops/laptops and up
+ */
+/* @media only screen and (min-width: 1025px) {} */
+@media only screen and (min-width: 975px) and (max-width: 1024px) {
+  /*
+   * Theming for Our history page tablet
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\000036}}
+  .page-our-history #sk-menu {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\000037}}
+  .page-our-history .pane-bean-our-history-header {
+    height: auto;
+    width: 100%;
+    line-height: 0;
+    background-color: transparent;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000312}}
+  .page-our-history .pane-bean-our-history-header .field-name-field-display-title {
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: -3.5px;
+    top: 50%;
+    margin: -35px -0 0 -165px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000317}}
+  .page-our-history .pane-bean-our-history-header .field-name-field-subtitle {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0px;
+    bottom: 50px;
+    margin-left: -55px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000321}}
+  .page-our-history .pane-bean-our-history-header .field-name-field-subtitle a {
+    padding: 47px 0px 30px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000323}}
+  .page-our-history .pane-bean-our-history-header .field-name-field-subtitle a:before {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000328}}
+  .page-our-history .pane-bean-our-history-header .field-name-field-subtitle.skrollable-before a {
+    -webkit-animation: 0;
+    -moz-animation: 0;
+    -o-animation: 0;
+    animation: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000337}}
+  .page-our-history .pane-bean-history-introduction {
+    padding: 140px 165px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000339}}
+  .page-our-history .pane-bean-history-introduction .field-name-field-subtitle {
+    font-size: 11px;
+    line-height: 28px;
+    letter-spacing: -0.22px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000342}}
+  .page-our-history .pane-bean-history-introduction .field-name-field-body {
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: -0.56px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/tablet\/_our_history\.scss}line{font-family:\0000346}}
+  .page-our-history .pane-our-history-decades-panel-pane-1 {
+    padding-bottom: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/ipad\.scss}line{font-family:\000038}}
+  .page-our-history .pane-bean-history-introduction {
+    padding: 190px 275px;
+  }
+}
+/* custom breakpoint for nav */
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/responsive\.custom\.scss}line{font-family:\0000379}}
+  #superfish-1 li a img {
+    width: 140px;
+    padding-bottom: 5px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/responsive\.custom\.scss}line{font-family:\0000384}}
+  ul.sf-menu > li a.sf-depth-1 {
+    font-size: 10px;
+    padding: 29px 0 26px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/nbcuni\/sites\/all\/themes\/nbcuni\/sass\/responsive\.custom\.scss}line{font-family:\0000389}}
+  .view-home-page-hero .views-field-topic {
+    font-size: 10px !important;
+  }
+}

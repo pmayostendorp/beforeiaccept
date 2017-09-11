@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://www.tout.com/widgets/d9rb9u -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="29544232cb"></script><script src="nr-632.min.js"></script><script type="text/javascript" async="" defer="" src="events"></script><script type="text/javascript" async="" src="tracker.js"></script><script type="text/javascript" async="" src="mixpanel-2-latest.min.js"></script><script async="" src="analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"29544232cb","applicationID":"544645","transactionName":"cQlbEhRaXFRRE00TWlYBUBIVGkNQWxY=","queueTime":0,"applicationTime":36,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwQAUVBADQcEUlVX"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:20,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(3),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(4),t(5),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:8,3:3,4:7,5:6,6:21,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:21,2:22,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:22,2:21,ee:"QJf3ax"}],7:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:22,2:21,ee:"QJf3ax"}],8:[function(t,e){function n(){u.inPlace(this,p,"fn-")}function r(t,e){u.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),u=c(a),f=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,u.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:5,2:22,ee:"QJf3ax"}],9:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=n(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=n(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var f=0;c>f;f++)e.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:10,3:8,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],10:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],11:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:20,2:21,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===f.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=u.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),u=c.document,f=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:f,features:{}};u.addEventListener?(u.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(u.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:20,2:11,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],20:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],21:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],22:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:21,ee:"QJf3ax"}]},{},["G9z0Bl",4,9]);</script>
+<meta name="google" value="notranslate">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta content="authenticity_token" name="csrf-param">
+<meta content="CJbO+r3V50uJKmX6u01EWWz4MJ3UHTSpdrwW3tYI8K0=" name="csrf-token">
+<link href="css(1)" rel="stylesheet" type="text/css">
+<script src="ima3.js" type="text/javascript"></script>
+<link href="base-31d0c80f1150a101709632d48f3d78d7.css" media="screen" rel="stylesheet" type="text/css">
+<!--[if lte IE 9]>
+<script>
+  //<![CDATA[
+    document.createElement("video");
+  //]]>
+</script>
+
+<![endif]-->
+<!--[if lte IE 7]>
+<link href="http://d2cjdr17j9fuin.cloudfront.net/assets/browsers/ie7-78b6366603b8807dafcbb3f158ba925a.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE]>
+<link href="http://d2cjdr17j9fuin.cloudfront.net/assets/browsers/ie-420cb8b6a5c7ad33351925add3fc80f7.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body class="widgets show logged_out display_default ">
+
+<div id="widget_app" lang="en-US" class="not-touch-device html-format vertical-widget"><div class="header-container"><div class="widget-header"><ul class="tabs"><li class="tab"><div><div class="header" style="background-color: rgb(255, 255, 255);">
+  <div class="header_inner">
+    
+
+      
+
+      <h1 style="color: rgb(0, 0, 0); font-family: helvetica, &#39;Open Sans Condensed&#39;, &#39;Open Sans&#39;, Arial, sans-serif;">Video News Feed</h1>
+
+    
+  </div>
+  <img src="bright_blue_square.png" class="active-tab-image">
+</div>
+</div></li></ul></div></div>
+<div class="widgets"><div class="widget"><div class="playlists commentable-true" style="height: 407px;"><div class="playlist"><div class="playlist-inner">
+  <div class="new-touts-container"></div>
+
+  <ul class="touts mCustomScrollbar _mCS_1" style="height: 407px;"><div class="mCustomScrollBox mCS-light" id="mCSB_1" style="position:relative; height:100%; overflow:hidden; max-width:100%;"><div class="mCSB_container" style="position: relative; top: 0px;">
+    <div class="inner"><li class="tout"><div class="mode unviewed tout-uid-trk2jm active" data-tout-uid="trk2jm">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0.jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="johnemccoy.png" alt="JohnEMcCoy">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:42</div>
+      <div class="time timeago" datetime="2015-07-02T17:38:42Z">18m</div>
+      <div class="author"><a href="http://www.tout.com/u/JohnEMcCoy" target="_blank">John McCoy</a></div>
+      <p class="text" title="U.S. Citizenship and Immigration Services in LA administer the Oath of Allegiance to 150 local children #newUScitizen">U.S. Citizenship and Immigration Services in LA administer the Oath of Allegiance to 150 local children #newUScitizen</p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/JohnEMcCoy" target="_blank">John McCoy</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/trk2jm/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/trk2jm/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/trk2jm/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/trk2jm/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/trk2jm/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/trk2jm" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/trk2jm&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="U.S. Citizenship and Immigration Services in LA administer the Oath of Allegiance to 150 local children #newUScitizen">U.S. Citizenship and Immigration Services in LA administer the Oath of Allegiance to 150 local children #newUScitizen</p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0.jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/trk2jm/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/trk2jm/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/trk2jm/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/trk2jm/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/trk2jm/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/trk2jm" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/trk2jm&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-1l535p" data-tout-uid="1l535p">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(1).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="johnemccoy.png" alt="JohnEMcCoy">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:30</div>
+      <div class="time timeago" datetime="2015-07-02T17:13:41Z">43m</div>
+      <div class="author"><a href="http://www.tout.com/u/JohnEMcCoy" target="_blank">John McCoy</a></div>
+      <p class="text" title="Citizenship and Immigration Services in LA administer the Oath of Allegiance to 150 local children #newUSCitizen ">Citizenship and Immigration Services in LA administer the Oath of Allegiance to 150 local children #newUSCitizen </p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/JohnEMcCoy" target="_blank">John McCoy</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/1l535p/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/1l535p/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/1l535p/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/1l535p/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/1l535p/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/1l535p" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/1l535p&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Citizenship and Immigration Services in LA administer the Oath of Allegiance to 150 local children #newUSCitizen ">Citizenship and Immigration Services in LA administer the Oath of Allegiance to 150 local children #newUSCitizen </p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(1).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/1l535p/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/1l535p/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/1l535p/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/1l535p/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/1l535p/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/1l535p" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/1l535p&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-y1tebn" data-tout-uid="y1tebn">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(2).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="dailynewsphoto.jpg" alt="vidcrane2">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:32</div>
+      <div class="time timeago" datetime="2015-07-01T22:39:40Z">19hrs</div>
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <p class="text" title="Laure Shepard hopes the murder of her son&#39;s father, La&#39;Chalon Broadus, will be solved.  The murder took place in 2004.">Laure Shepard hopes the murder of her son's father, La'Chalon Broadus, will be solved.  The murder took place in 2004.</p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/y1tebn/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/y1tebn/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/y1tebn/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/y1tebn/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/y1tebn/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/y1tebn" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/y1tebn&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Laure Shepard hopes the murder of her son&#39;s father, La&#39;Chalon Broadus, will be solved.  The murder took place in 2004.">Laure Shepard hopes the murder of her son's father, La'Chalon Broadus, will be solved.  The murder took place in 2004.</p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(2).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/y1tebn/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/y1tebn/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/y1tebn/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/y1tebn/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/y1tebn/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/y1tebn" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/y1tebn&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-58lwsk" data-tout-uid="58lwsk">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(3).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="steven_webcam.jpg" alt="passthejoe">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:22</div>
+      <div class="time timeago" datetime="2015-07-01T00:06:49Z">2d</div>
+      <div class="author"><a href="http://www.tout.com/u/passthejoe" target="_blank">Steven Rosenberg</a></div>
+      <p class="text" title="First a dust storm in #VanNuys, now #rain in #ShermanOaks ">First a dust storm in #VanNuys, now #rain in #ShermanOaks </p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/passthejoe" target="_blank">Steven Rosenberg</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/58lwsk/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/58lwsk/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/58lwsk/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/58lwsk/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/58lwsk/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/58lwsk" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/58lwsk&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="First a dust storm in #VanNuys, now #rain in #ShermanOaks ">First a dust storm in #VanNuys, now #rain in #ShermanOaks </p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(3).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/58lwsk/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/58lwsk/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/58lwsk/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/58lwsk/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/58lwsk/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/58lwsk" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/58lwsk&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-qhgj6w" data-tout-uid="qhgj6w">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(4).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="johnemccoy.png" alt="JohnEMcCoy">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:52</div>
+      <div class="time timeago" datetime="2015-06-30T21:41:33Z">2d</div>
+      <div class="author"><a href="http://www.tout.com/u/JohnEMcCoy" target="_blank">John McCoy</a></div>
+      <p class="text" title="Bunni Benaron donates R.Hero statue at Boys and Girls Club of the West Valley to honor First Responders ">Bunni Benaron donates R.Hero statue at Boys and Girls Club of the West Valley to honor First Responders </p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/JohnEMcCoy" target="_blank">John McCoy</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/qhgj6w/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/qhgj6w/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/qhgj6w/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/qhgj6w/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/qhgj6w/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/qhgj6w" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/qhgj6w&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Bunni Benaron donates R.Hero statue at Boys and Girls Club of the West Valley to honor First Responders ">Bunni Benaron donates R.Hero statue at Boys and Girls Club of the West Valley to honor First Responders </p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(4).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/qhgj6w/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/qhgj6w/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/qhgj6w/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/qhgj6w/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/qhgj6w/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/qhgj6w" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/qhgj6w&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-mjpm0p" data-tout-uid="mjpm0p">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(5).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="dailynewsphoto.jpg" alt="vidcrane2">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:45</div>
+      <div class="time timeago" datetime="2015-06-30T20:23:43Z">2d</div>
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <p class="text" title="Lidia #Rodriguez talks about the alleged murder of her son by #LAPD officer #HenrySolis.">Lidia #Rodriguez talks about the alleged murder of her son by #LAPD officer #HenrySolis.</p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/mjpm0p/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/mjpm0p/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/mjpm0p/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/mjpm0p/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/mjpm0p/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/mjpm0p" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/mjpm0p&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Lidia #Rodriguez talks about the alleged murder of her son by #LAPD officer #HenrySolis.">Lidia #Rodriguez talks about the alleged murder of her son by #LAPD officer #HenrySolis.</p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(5).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/mjpm0p/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/mjpm0p/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/mjpm0p/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/mjpm0p/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/mjpm0p/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/mjpm0p" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/mjpm0p&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-q16ye9" data-tout-uid="q16ye9">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(6).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="dailynewsphoto.jpg" alt="vidcrane2">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">1:57</div>
+      <div class="time timeago" datetime="2015-06-29T20:00:20Z">3d</div>
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <p class="text" title="The #HomeAgain #Shelter opens it&#39;&#39;s doors in #Northridge, CA.  The new shelter will house #homeless families and help them get back on their feet. ">The #HomeAgain #Shelter opens it''s doors in #Northridge, CA.  The new shelter will house #homeless families and help them get back on their feet. </p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/q16ye9/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/q16ye9/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/q16ye9/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/q16ye9/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/q16ye9/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/q16ye9" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/q16ye9&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="The #HomeAgain #Shelter opens it&#39;&#39;s doors in #Northridge, CA.  The new shelter will house #homeless families and help them get back on their feet. ">The #HomeAgain #Shelter opens it''s doors in #Northridge, CA.  The new shelter will house #homeless families and help them get back on their feet. </p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(6).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/q16ye9/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/q16ye9/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/q16ye9/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/q16ye9/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/q16ye9/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/q16ye9" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/q16ye9&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-zhr21o" data-tout-uid="zhr21o">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(7).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="MarkMedina.jpg" alt="MarkMedina">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:07</div>
+      <div class="time timeago" datetime="2015-06-29T19:01:53Z">3d</div>
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <p class="text" title="Julius Randle throws down a dunk">Julius Randle throws down a dunk</p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/zhr21o/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/zhr21o/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/zhr21o/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/zhr21o/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/zhr21o/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/zhr21o" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/zhr21o&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Julius Randle throws down a dunk">Julius Randle throws down a dunk</p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(7).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/zhr21o/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/zhr21o/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/zhr21o/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/zhr21o/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/zhr21o/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/zhr21o" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/zhr21o&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-ke3jww" data-tout-uid="ke3jww">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(8).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="MarkMedina.jpg" alt="MarkMedina">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:32</div>
+      <div class="time timeago" datetime="2015-06-29T18:59:56Z">3d</div>
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <p class="text" title="Julius Randle working with Lakers assistant Larry Lewis ">Julius Randle working with Lakers assistant Larry Lewis </p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/ke3jww/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/ke3jww/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/ke3jww/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/ke3jww/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/ke3jww/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/ke3jww" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/ke3jww&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Julius Randle working with Lakers assistant Larry Lewis ">Julius Randle working with Lakers assistant Larry Lewis </p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(8).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/ke3jww/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/ke3jww/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/ke3jww/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/ke3jww/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/ke3jww/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/ke3jww" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/ke3jww&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-as7b77" data-tout-uid="as7b77">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(9).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="MarkMedina.jpg" alt="MarkMedina">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:22</div>
+      <div class="time timeago" datetime="2015-06-29T18:34:11Z">3d</div>
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <p class="text" title="Tarik Black putting in some work too">Tarik Black putting in some work too</p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/as7b77/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/as7b77/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/as7b77/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/as7b77/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/as7b77/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/as7b77" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/as7b77&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Tarik Black putting in some work too">Tarik Black putting in some work too</p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(9).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/as7b77/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/as7b77/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/as7b77/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/as7b77/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/as7b77/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/as7b77" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/as7b77&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-3agtbz" data-tout-uid="3agtbz">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(10).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="MarkMedina.jpg" alt="MarkMedina">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:13</div>
+      <div class="time timeago" datetime="2015-06-29T18:28:12Z">3d</div>
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <p class="text" title="Julius Randle showing some of his mid range ">Julius Randle showing some of his mid range </p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/3agtbz/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/3agtbz/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/3agtbz/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/3agtbz/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/3agtbz/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/3agtbz" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/3agtbz&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Julius Randle showing some of his mid range ">Julius Randle showing some of his mid range </p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(10).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/3agtbz/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/3agtbz/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/3agtbz/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/3agtbz/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/3agtbz/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/3agtbz" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/3agtbz&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-cujg0e" data-tout-uid="cujg0e">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(11).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="MarkMedina.jpg" alt="MarkMedina">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">0:39</div>
+      <div class="time timeago" datetime="2015-06-29T18:25:45Z">3d</div>
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <p class="text" title="Julius Randle showing off some of his mid range ">Julius Randle showing off some of his mid range </p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/MarkMedina" target="_blank">Mark Medina</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/cujg0e/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/cujg0e/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/cujg0e/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/cujg0e/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/cujg0e/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/cujg0e" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/cujg0e&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="Julius Randle showing off some of his mid range ">Julius Randle showing off some of his mid range </p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(11).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/cujg0e/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/cujg0e/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/cujg0e/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/cujg0e/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/cujg0e/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/cujg0e" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/cujg0e&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-ck113w" data-tout-uid="ck113w">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(12).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="dailynewsphoto.jpg" alt="vidcrane2">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">1:00</div>
+      <div class="time timeago" datetime="2015-06-29T03:46:29Z">4d</div>
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <p class="text" title="#BET awards with #AverySunshine">#BET awards with #AverySunshine</p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/ck113w/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/ck113w/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/ck113w/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/ck113w/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/ck113w/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/ck113w" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/ck113w&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="#BET awards with #AverySunshine">#BET awards with #AverySunshine</p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(12).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/ck113w/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/ck113w/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/ck113w/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/ck113w/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/ck113w/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/ck113w" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/ck113w&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-svam4i" data-tout-uid="svam4i">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(13).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="dailynewsphoto.jpg" alt="vidcrane2">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">1:31</div>
+      <div class="time timeago" datetime="2015-06-29T03:38:38Z">4d</div>
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <p class="text" title="#BET awards with #IdaRodriguez">#BET awards with #IdaRodriguez</p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/svam4i/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/svam4i/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/svam4i/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/svam4i/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/svam4i/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/svam4i" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/svam4i&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="#BET awards with #IdaRodriguez">#BET awards with #IdaRodriguez</p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(13).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/svam4i/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/svam4i/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/svam4i/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/svam4i/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/svam4i/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/svam4i" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/svam4i&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li><li class="tout"><div class="mode unviewed tout-uid-de2cqo" data-tout-uid="de2cqo">
+  <div class="info">
+    <div class="poster">
+     <img src="poster-0(14).jpg">
+    </div>
+
+    <div class="avatar">
+      <img src="dailynewsphoto.jpg" alt="vidcrane2">
+    </div>
+
+    <div class="metadata">
+      <div class="duration">1:30</div>
+      <div class="time timeago" datetime="2015-06-29T03:33:48Z">4d</div>
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <p class="text" title="#BET awards with #RichHomieQuan">#BET awards with #RichHomieQuan</p>
+    </div>
+
+    <div class="landscape-metadata">
+      <div class="author"><a href="http://www.tout.com/u/vidcrane2" target="_blank">David Crane</a></div>
+      <ul class="components">
+        <li class="landscape-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/de2cqo/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/de2cqo/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/de2cqo/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/de2cqo/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/de2cqo/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/de2cqo" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/de2cqo&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+        <li class="landscape-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+      </ul>
+      <p class="text" title="#BET awards with #RichHomieQuan">#BET awards with #RichHomieQuan</p>
+    </div>
+  </div>
+
+  <div class="player-and-poster">
+    <div class="video"><div class="tout-player mode-poster" style="width: 298px; height: 250px;">
+  <div class="wrapper-for-poster">
+    <img class="poster" src="poster-0(14).jpg" style="width: 298px; height: 167.625px; position: absolute; left: 50%; top: 50%; margin: -83.8125px 0px 0px -149px;">
+    <span class="play-button"></span>
+  </div>
+
+  <div class="wrapper-for-ad"></div>
+  <div class="wrapper-for-tout"></div>
+</div>
+</div>
+    <div class="arrows">
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="previous arrow"><img src="arrow_previous.png"></a>
+      <a href="http://www.tout.com/widgets/d9rb9u#" class="next arrow"><img src="arrow_next.png"></a>
+    </div>
+  </div>
+
+  <ul class="components">
+    <li class="component action-component reply-button commentable"><span class="reply-inner no-replies">
+  <span class="icon pictos"></span>
+  <span class="action_text">Reply</span>
+  <span class="count">0</span>
+  <span class="label">Replies</span>
+</span>
+</li>
+    <li class="vertical-shares-display shares-display"><div class="share-drawer">
+  <ul class="share-bar">
+    <li>Share:</li>
+    <li><a id="share_facebook" href="http://www.tout.com/m/de2cqo/share/facebook" target="_blank">Share to Facebook</a></li>
+    <li><a id="share_twitter" href="http://www.tout.com/m/de2cqo/share/twitter" target="_blank">Share to Twitter</a></li>
+    <li><a id="share_googleplus" href="http://www.tout.com/m/de2cqo/share/google" target="_blank">Share to Google Plus</a></li>
+    <li><a id="share_linkedin" href="http://www.tout.com/m/de2cqo/share/linkedin" target="_blank">Share to LinkedIn</a></li>
+    <li><a id="share_pinterest" href="http://www.tout.com/m/de2cqo/share/pinterest" target="_blank">Share to Pinterest</a></li>
+    <li><a id="share_permalink" href="http://www.tout.com/m/de2cqo" target="_blank">Copy URL&gt;</a></li>
+    <li><a id="share_embed_code" href="javascript:void(0)" data-embed-code="&lt;iframe width=&quot;420&quot; height=&quot;315&quot; frameborder=&quot;0&quot; id=&quot;tout_embed&quot; src=&quot;//www.tout.com/embed/touts/de2cqo&quot;&gt;&lt;/iframe&gt;">Copy Embed Code</a></li>
+  </ul>
+</div>
+</li>
+    <li class="vertical-share-button component action-component share-button"><span class="share-inner">
+  <span class="icon"></span>
+  <span class="label">Share</span>
+</span>
+</li>
+  </ul>
+</div>
+</li></div>
+    <img src="spinner_small.gif" class="loading-spinner" style="display: none;">
+  </div><div class="mCSB_scrollTools" style="position: absolute; display: block;"><div class="mCSB_draggerContainer"><div class="mCSB_dragger" style="position: absolute; top: 0px; height: 30px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="position: relative; line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></ul>
+</div>
+</div></div>
+</div></div>
+<style id="position_elements">  body .widgets { height: 407px; } </style></div>
+
+<script>window.gon = {};gon.env="production";gon.root_url="http://www.tout.com/";gon.secure_root_url="https://www.tout.com/";gon.host="www.tout.com";gon.asset_host_url="//d2cjdr17j9fuin.cloudfront.net/assets/";gon.current_user={};gon.localepath="/locales";gon.format="html";gon.pusher_key="bf9cd54c54eadc2cf783";gon.mtv_base_url="http://mtv.tout.com/v0";gon.release_version="None";gon.player={"videojs_swf_url":"//d2cjdr17j9fuin.cloudfront.net/assets/video-js-0596225818dca935a3627dafae48e015.swf","jwplayer_assets_base_path":"http://d2cjdr17j9fuin.cloudfront.net/assets/vendor/jwplayer/","black_video_mp4_url":"http://d2cjdr17j9fuin.cloudfront.net/assets/one_second_black-b8caf54ea2125aa67081e69d55efeb0e.mp4"};gon.locale="en-US";gon.widget_uid="d9rb9u";</script>
+<script>
+  //<![CDATA[
+    var AppUser = {user_id: '', username: '', maxDuration: 15};
+    window.UserIntentData = {opener_data_url: 'http://www.tout.com', opener_proxy_url: 'http://www.tout.com/authorizations/proxy', after_sign_in_url: 'http://www.tout.com/widgets/d9rb9u', facebook_url: 'https://www.tout.com/authorizations/facebook/new?opener_data=http%3A%2F%2Fwww.tout.com', twitter_url: 'https://www.tout.com/authorizations/twitter/new?opener_data=http%3A%2F%2Fwww.tout.com', login_url: 'https://www.tout.com/users/sign_in', signup_url: 'https://www.tout.com/users/sign_up'};
+  //]]>
+</script>
+
+
+<script src="pusher.min.js" type="text/javascript"></script>
+<script src="widget-2f99e18f6dab59d7a99850e2a3df4241.js" type="text/javascript"></script>
+
+<script>
+  //<![CDATA[
+    $(document).ready(function(){
+      var appView = new applitude.StreamWidget.Views.AppView({
+        el: $("#widget_app"),
+        widgetUid: applitude.environment.widget_uid
+      });
+      appView.render();
+    });
+  //]]>
+</script>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21457813-1', 'auto');  // Replace with your property ID.
+  ga('send', 'pageview');
+
+  </script>
+  <!-- End Google Analytics -->
+
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+</script>
+<!-- end Mixpanel -->
+
+<script type="text/javascript">
+mixpanel.init("8f42d6c99005ef738c46dc8f6350829b");
+mixpanel.register({"User Type": "Visitor"});
+mixpanel.register({"Platform": "Web"});
+
+
+// Currently tracking every page request except widgets because widgets has its own tracking already.
+// Might be changed later to be just once per day
+
+</script>
+
+
+<script>
+  //<![CDATA[
+    var aq = [];
+      aq.push(["init"]);
+      (function(){
+          var b,a,e,d,c;
+          b=document.createElement("script");
+          b.type="text/javascript";
+          b.async=true;
+          b.src=(document.location.protocol==="https:"?"https:":"http:")+
+      "//analytics.tout.com/tracker.js";
+          a=document.getElementsByTagName("script")[0];
+          a.parentNode.insertBefore(b,a);
+          e=function(f){
+              return function(){
+                  aq.push([f].concat(Array.prototype.slice.call(arguments,0)))
+              }
+          };
+          d=["init","track"];
+          for(c=0;c<d.length;c++){aq[d[c]]=e(d[c])}
+      })();
+  //]]>
+</script>
+
+
+
+
+
+
+</body></html>

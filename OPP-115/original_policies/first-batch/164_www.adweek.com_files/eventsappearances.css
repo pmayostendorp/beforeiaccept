@@ -1,0 +1,131 @@
+#eventsappearances {
+    
+}
+    #eventsappearances #main .subheader .ruler {
+        margin: 0 0 20px;
+    }
+
+    #eventsappearances #main .inner > .cols {
+        overflow: auto;
+    }
+    #eventsappearances #main .colsAB {
+        overflow: auto;
+    }
+    
+.events {
+    
+}
+    .event {
+        position: relative;
+        border-top: solid 1px #999;
+        padding-top: 18px;
+        padding-right: 170px;
+    }
+        .event:first-child {
+            border: none 0;
+            padding-top: 0;
+        }
+        .event .header {
+            border-bottom: dotted 1px #ccc;
+            margin-bottom: 6px;
+            padding-bottom: 1px;
+        }
+            .event .headline,
+            .event .subheadline,
+            .event .byline,
+            .event .socialtools,
+            .event .socialtools li {
+                display: inline;
+                float: none;
+                font: 24px/24px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+            }
+                .event .headline {
+                    position: relative;
+                    font-family: Arial, sans-serif;
+                }
+                    .event .headline a {
+                        font-weight: bold;
+                        color: #e5002d;
+                    }
+                .event .subheadline {
+                    color: #999;
+                }
+                .event .byline {
+                    color: #ccc;
+                }
+            .event .socialtools {
+                display: inline;
+                float: none;
+            }
+            .event p {
+                margin: 0 0 20px;
+                font: 13px/20px Georgia, serif;
+                color: #666;
+            }
+                .event p.em {
+                    font: 16px/19px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+                    font-style: italic;
+                }
+                    .event p strong {
+                        font-weight: bold;
+                        font-style: normal;
+                        color: #333;
+                    }
+                .event p .more {
+                    text-transform: uppercase;
+                    color: #e5002d;
+					font-weight:bold;
+					letter-spacing:1px;
+					font-size:11px;
+                }
+            .event .h3 {
+                display: block;
+                border-bottom: solid 1px #ccc;
+                margin: 0 0 15px;
+                font: 21px/25px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+                color: #666;
+				padding:0 0 4px;
+            }
+            .event img.events-logo {
+                position: absolute;
+                top: 20px;
+                right: 0;
+            }
+			.event:first-child img {
+				top:0;
+			}
+            
+        .event .list-x {
+            margin: 0;
+			padding:0;
+        }
+            .event ol.list-x {
+                border-bottom: solid 1px #ccc;
+                margin-bottom: 15px;
+            }
+            .event .list-x li {
+                display: list-item;
+                list-style: disc outside; /* list-style-position: outside; isn't working :-( */
+                margin-left: 17px;
+				margin-right:8px;
+                padding: 0;
+                font: bold 16px/20px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+                color: #666;
+				width:138px;
+            }
+			.event .list-x li:nth-child(3) {
+				margin-right:0;
+			}
+                .event ol.list-x li {
+                    list-style-type: decimal;
+                    color: #000;
+					margin-left:20px;
+					width:135px;
+                }
+                .event .list-x li p {
+                    font: italic 16px/20px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+                }
+                
+.view-adweek-events .views-row{
+  overflow: hidden;
+}

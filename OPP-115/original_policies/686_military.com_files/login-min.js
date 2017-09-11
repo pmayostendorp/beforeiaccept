@@ -1,0 +1,7 @@
+(function($){$.fn.login_widgets=function(options){var defaults={};var options=$.extend(defaults,options);return this.each(function(){login=_login_widgets.get_login();
+fn=login?$(this).attr("id")+"_lo":$(this).attr("id")+"_li";eval("var is_fn = $.isFunction(_login_widgets."+fn+");");if(is_fn){$(this).empty();eval("$(this).html(_login_widgets."+fn+"());");
+}});};_login_widgets={get_login:function(){var loginInfoCookie=GetCookie("LoginInfo");if(loginInfoCookie!=null){return loginInfoCookie.split("|");}else{return false;
+}},nav0_account_li:function(){return $('<li>Not a member? <a href="http://www.military.com/newmembers/member-registration?vlv_redir='+encodeURIComponent(document.URL)+'">Join now for FREE</a></li><li><a href="http://www.military.com/member-reg/login.html?vlv_redir='+encodeURIComponent(document.URL)+'">Login</a></li>');
+},nav0_account_lo:function(){var strMyAccount=_login_widgets.get_login()?"http://www.military.com/profile/member-profile.html":"http://www.military.com/newmembers/member-registration?vlv_redir="+encodeURIComponent(document.URL);
+return $("<li>Welcome "+login[2]+"</li><li><a href="+strMyAccount+'>My Account</a></li><li><a href="http://www.military.com/Logout?strRedirectURL='+encodeURIComponent(document.URL)+'">Logout</a></li>');
+}};})(jQuery);

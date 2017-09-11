@@ -1,0 +1,27 @@
+/* $Id: tablefield.css,v 1.1 2009/10/27 17:27:05 kevinhankens Exp $ */
+
+#content-field-edit-form .node-tablefield .form-text,
+.node-form .node-tablefield .form-text {
+  width: auto;
+  margin: 1px 1px 1px 1px;
+  padding: 1px 1px 1px 1px;
+}
+#content-field-edit-form .node-tablefield .form-item,
+.node-form .node-tablefield .form-item {
+  float: left;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+#content-field-edit-form .node-tablefield table,
+.node-form .node-tablefield table {
+  width: auto;
+}
+#content-field-edit-form .node-tablefield table tr td,
+.node-form .node-tablefield table tr td {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+#content-field-edit-form .node-tablefield .tablefield-rebuild,
+.node-form .node-tablefield .tablefield-rebuild {
+  margin-top: 0.5em;
+}

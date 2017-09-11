@@ -1,0 +1,1881 @@
+/* primary color (background, headers) */
+/* secondary color (links, text) */
+/* tertiary color (hovers, accents) */
+/* SK Pink */
+/* SK Love */
+/* SK Parenting */
+/* SK Shopping */
+/* SK Sweepstakes */
+/* SK Living */
+/* SK Pets */
+/* SK Home */
+/* SK How-To */
+/* SK Health */
+/* SK Entertainment */
+/* MAGAZINE ARTICLE AND WIDGET STYLES */
+/* This stylesheet pulls from the CDN */
+/* .mag {  */
+/* General Styles */
+/* margin: 0px; */
+.clear,
+.clearer,
+.clear-it {
+  clear: both;
+}
+/* Position/Size/Padding Options */
+.float-right,
+.right {
+  float: right;
+  /* widget padding */
+
+}
+.float-right .quote-box,
+.right .quote-box,
+.float-right .qa-box.stencil,
+.right .qa-box.stencil {
+  margin: 20px 0px 20px 20px;
+}
+.float-left,
+.left {
+  float: left;
+  /* widget padding */
+
+}
+.float-left .quote-box,
+.left .quote-box,
+.float-left .qa-box.stencil,
+.left .qa-box.stencil {
+  margin: 20px 20px 20px 0px;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.margin-right {
+  margin-right: 20px;
+}
+.margin-left {
+  margin-left: 20px;
+}
+.topleft {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.topright {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.bottomleft {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.bottomright {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.width-100 {
+  width: auto;
+}
+.width-90 {
+  width: 90%;
+}
+.width-80 {
+  width: 80%;
+}
+.width-75 {
+  width: 75%;
+}
+.width-70 {
+  width: 70%;
+}
+.width-60 {
+  width: 60%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-40 {
+  width: 40%;
+}
+.width-30 {
+  width: 30%;
+}
+.width-25 {
+  width: 25%;
+}
+.width-20 {
+  width: 20%;
+}
+.width-15 {
+  width: 15%;
+}
+.width-10 {
+  width: 10%;
+}
+img.img_border {
+  border: 1px solid #eaeaea;
+}
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+.article a:hover {
+  text-decoration: underline;
+}
+a img {
+  border: 0;
+}
+hr {
+  border-bottom: 1px solid #CCC;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+/* Custom anchor classes -overwrites default pink */
+a.dark-caps {
+  color: #212121 !important;
+  text-transform: uppercase !important;
+  font-size: 12px;
+}
+/* Custom h3 titles */
+.custom_hdr .border {
+  text-align: left;
+  border-bottom: 2px dotted #eaeaea;
+  padding-bottom: 8px;
+  background: none;
+}
+.custom_hdr .number {
+  background: url('http://cdn.womensunitedonline.com/magazine/icons/circle-darkgray.png') top center no-repeat;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+.custom_hdr h3 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 22px;
+}
+.custom_hdr.above {
+  text-align: center;
+}
+.custom_hdr.side .number {
+  float: left;
+  width: 22px;
+  margin-right: 10px;
+}
+.custom_hdr.arrows .arrow {
+  background: url('http://cdn.womensunitedonline.com/magazine/icons/arrow-tag-gray.png') top left no-repeat;
+  margin-right: 10px;
+  padding-left: 20px;
+  line-height: 22px;
+}
+/* 2 Column Template - normal width with sidebar */
+.two_column {
+  width: 100%;
+}
+.two_column ul {
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+}
+.two_column li {
+  list-style: none;
+  line-height: 27px;
+  border-bottom: 1px dotted #CCC;
+}
+.two_column table,
+.two_column tr {
+  padding: 0px;
+  margin: 0px;
+}
+.two_column td {
+  vertical-align: top;
+  width: 50%;
+  padding: 10px 20px 0px 0px;
+}
+/* 3 Column Template - full width no sidebar */.three_column {
+  width: 100%;
+}
+.three_column ul {
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+}
+.three_column li {
+  border-bottom: 1px dotted #CCC;
+  list-style: none;
+  line-height: 27px;
+}
+.three_column table,
+.three_column tr {
+  padding: 0px;
+  margin: 0px;
+}
+.three_column td {
+  vertical-align: top;
+  width: 30%;
+  padding: 10px 10px 10px 15px;
+}
+/* Custom border - large dotted */
+.border_lrg_dot {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAYAAAAvZezQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADlJREFUeNpiPHPmDAMQdACxCxDPYoEyyhkgoIMJSLxnQID3IBVngTgMiI1BWhj////PgAwICwAEGABCHBHhVzY/GgAAAABJRU5ErkJggg==") repeat-y;
+}
+/* } */
+/*-------------------------------------------------*/
+/*--- COLOR PALETTES ---*/
+/* .mag {  */
+/* If no color is specified - default = pink */.pink h1,
+.pink h2,
+.pink h3,
+.pink h4 {
+  color: #a32143;
+}
+.pink a:link,
+.pink li a:link,
+.pink a:active,
+.pink li a:active {
+  color: #7b051b;
+}
+.pink a:visited,
+.pink li a:visited,
+.pink a:hover,
+.pink li a:hover {
+  color: #c13d55;
+}
+.pink .quote-box,
+.pink .qa-box .text-box,
+.pink .img-box table {
+  background-color: #a32143;
+}
+.bg-pink {
+  background-color: #a32143;
+}
+.txt-pink {
+  color: #a32143;
+}
+/* white */
+.white .quote-box,
+.white .qa-box .text-box,
+.white .img-box table {
+  background-color: #ffffff;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.txt-white {
+  color: #ffffff;
+}
+/* black */
+.black h1,
+.black h2,
+.black h3,
+.black h4 {
+  color: #000000;
+}
+.black a:link,
+.black li a:link,
+.black a:active,
+.black li a:active {
+  color: #000000;
+}
+.black a:visited,
+.black li a:visited,
+.black a:hover,
+.black li a:hover {
+  color: #666666;
+}
+.black .border_lrg_dot {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAYAAAAvZezQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADJJREFUeNpiYICADiA+A8RpII4LEP+H4ncgAWMkgbuMUC2hUIlZjP///2dABoQFAAIMABpBEhZIGWwcAAAAAElFTkSuQmCC") repeat-y;
+}
+.black .quote-box,
+.black .qa-box .text-box,
+.black .img-box table {
+  background-color: #000000;
+}
+.bg-black {
+  background-color: #000000;
+}
+.txt-black {
+  color: #000000;
+}
+/* charcoal */
+.charcoal a:link,
+.charcoal li a:link,
+.charcoal a:active,
+.charcoal li a:active {
+  color: #444444;
+}
+.charcoal a:visited,
+.charcoal li a:visited,
+.charcoal a:hover,
+.charcoal li a:hover {
+  color: #666666;
+}
+.charcoal h1,
+.charcoal h2,
+.charcoal h3,
+.charcoal h4 {
+  color: #444444;
+}
+.charcoal .border_lrg_dot {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAYAAAAvZezQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADlJREFUeNpiTEtLYwCCDiB2AeJZLFBGOQMEdDABifcMCPAepOIsEIcBsTFIC+P///8ZkAFhAYAAAwC2MxCvY3ZMYAAAAABJRU5ErkJggg==") repeat-y;
+}
+.charcoal .quote-box,
+.charcoal .qa-box .text-box,
+.charcoal .img-box table {
+  background-color: #444444;
+}
+.bg-charcoal {
+  background-color: #444444;
+}
+.txt-charcoal {
+  color: #444444;
+}
+/* slate */
+.slate h1,
+.slate h2,
+.slate h3,
+.slate h4 {
+  color: #666666;
+}
+.slate a:link,
+.slate li a:link,
+.slate a:active,
+.slate li a:active {
+  color: #666666;
+}
+.slate a:visited,
+.slate li a:visited,
+.slate a:hover,
+.slate li a:hover {
+  color: #999999;
+}
+.slate .border_lrg_dot {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiPHPmDAMQdACxCxDPMjY2nsUABUxQwXIgNoYqYkCWfI/ER2YzsADxWSAOg+qchSzJ+P//fwZcgHxJgAADAH6BE0X3d/IyAAAAAElFTkSuQmCC") repeat-x;
+}
+.slate .quote-box,
+.slate .qa-box .text-box,
+.slate .img-box table {
+  background-color: #666666;
+}
+.bg-slate {
+  background-color: #666666;
+}
+.txt-slate {
+  color: #666666;
+}
+/* gray */
+.gray h1,
+.gray h2,
+.gray h3,
+.gray h4 {
+  color: #999999;
+}
+.gray a:link,
+.gray li a:link,
+.gray a:active,
+.gray li a:active {
+  color: #999999;
+}
+.gray a:visited,
+.gray li a:visited,
+.gray a:hover,
+.gray li a:hover {
+  color: #cccccc;
+}
+.gray .border_lrg_dot {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiPHPmDAMQdACxCxDPMjY2nsUABUxQwXIgNoYqYkCWfI/ER2YzsADxWSAOg+qchSzJ+P//fwZcgHxJgAADAH6BE0X3d/IyAAAAAElFTkSuQmCC") repeat-x;
+}
+.gray .quote-box,
+.gray .qa-box .text-box,
+.gray .img-box table {
+  background-color: #999999;
+}
+.bg-gray {
+  background-color: #999999;
+}
+.txt-gray {
+  color: #999999;
+}
+/* pale gray */
+.palegray h1,
+.palegray h2,
+.palegray h3,
+.palegray h4 {
+  color: #cccccc;
+}
+.palegray a:link,
+.palegray li a:link,
+.palegray a:active,
+.palegray li a:active {
+  color: #cccccc;
+}
+.palegray a:visited,
+.palegray li a:visited,
+.palegray a:hover,
+.palegray li a:hover {
+  color: #eaeaea;
+}
+.palegray .border_lrg_dot {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiPHPmDAMQdACxCxDPMjY2nsUABUxQwXIgNoYqYkCWfI/ER2YzsADxWSAOg+qchSzJ+P//fwZcgHxJgAADAH6BE0X3d/IyAAAAAElFTkSuQmCC") repeat-x;
+}
+.palegray .quote-box,
+.palegray .qa-box .text-box,
+.palegray .img-box table {
+  background-color: #cccccc;
+}
+.bg-palegray {
+  background-color: #cccccc;
+}
+.txt-palegray {
+  color: #cccccc;
+}
+/* brown */
+.brown h1,
+.brown h2,
+.brown h3,
+.brown h4 {
+  color: #43352a;
+}
+.brown a:link,
+.brown li a:link,
+.brown a:active,
+.brown li a:active {
+  color: #43352a;
+}
+.brown a:visited,
+.brown li a:visited,
+.brown a:hover,
+.brown li a:hover {
+  color: #b19680;
+}
+.brown .quote-box,
+.brown .qa-box .text-box,
+.brown .img-box table {
+  background-color: #43352a;
+}
+.bg-brown {
+  background-color: #43352a;
+}
+.txt-brown {
+  color: #43352a;
+}
+/* tan */
+.tan h1,
+.tan h2,
+.tan h3,
+.tan h4 {
+  color: #b19680;
+}
+.tan a:link,
+.tan li a:link,
+.tan a:active,
+.tan li a:active {
+  color: #664b34;
+}
+.tan a:visited,
+.tan li a:visited,
+.tan a:hover,
+.tan li a:hover {
+  color: #b19680;
+}
+.tan .quote-box,
+.tan .qa-box .text-box,
+.tan .img-box table {
+  background-color: #b19680;
+}
+.bg-tan {
+  background-color: #b19680;
+}
+.txt-tan {
+  color: #b19680;
+}
+/* red */
+.red h1,
+.red h2,
+.red h3,
+.red h4 {
+  color: #ca0202;
+}
+.red a:link,
+.red li a:link,
+.red a:active,
+.red li a:active {
+  color: #820000;
+}
+.red a:visited,
+.red li a:visited,
+.red a:hover,
+.red li a:hover {
+  color: #ff4242;
+}
+.red .quote-box,
+.red .qa-box .text-box,
+.red .img-box table {
+  background-color: #ca0202;
+}
+.bg-red {
+  background-color: #ca0202;
+}
+.txt-red {
+  color: #ca0202;
+}
+/* orange */
+.orange h1,
+.orange h2,
+.orange h3,
+.orange h4 {
+  color: #e46516;
+}
+.orange a:link,
+.orange li a:link,
+.orange a:active,
+.orange li a:active {
+  color: #e46516;
+}
+.orange a:visited,
+.orange li a:visited,
+.orange a:hover,
+.orange li a:hover {
+  color: #ffb037;
+}
+.orange .quote-box,
+.orange .qa-box .text-box,
+.orange .img-box table {
+  background-color: #e46516;
+}
+.bg-orange {
+  background-color: #e46516;
+}
+.txt-orange {
+  color: #e46516;
+}
+/* macncheese */
+.macncheese h1,
+.macncheese h2,
+.macncheese h3,
+.macncheese h4 {
+  color: #ffb037;
+}
+.macncheese a:link,
+.macncheese li a:link,
+.macncheese a:active,
+.macncheese li a:active {
+  color: #fe8605;
+}
+.macncheese a:visited,
+.macncheese li a:visited,
+.macncheese a:hover,
+.macncheese li a:hover {
+  color: #ffb037;
+}
+.macncheese .quote-box,
+.macncheese .qa-box .text-box,
+.macncheese .img-box table {
+  background-color: #ffb037;
+}
+.bg-macncheese {
+  background-color: #ffb037;
+}
+.txt-macncheese {
+  color: #ffb037;
+}
+/* yellow */
+.yellow h1,
+.yellow h2,
+.yellow h3,
+.yellow h4 {
+  color: #ffcc00;
+}
+.yellow a:link,
+.yellow li a:link,
+.yellow a:active,
+.yellow li a:active {
+  color: #ffcc00;
+}
+.yellow a:visited,
+.yellow li a:visited,
+.yellow a:hover,
+.yellow li a:hover {
+  color: #fff700;
+}
+.yellow .quote-box,
+.yellow .qa-box .text-box,
+.yellow .img-box table {
+  background-color: #fff700;
+}
+.bg-yellow {
+  background-color: #fff700;
+}
+.txt-yellow {
+  color: #fff700;
+}
+/* kiwi */
+.kiwi h1,
+.kiwi h2,
+.kiwi h3,
+.kiwi h4 {
+  color: #99cc00;
+}
+.kiwi a:link,
+.kiwi li a:link,
+.kiwi a:active,
+.kiwi li a:active {
+  color: #669900;
+}
+.kiwi a:visited,
+.kiwi li a:visited,
+.kiwi a:hover,
+.kiwi li a:hover {
+  color: #99cc00;
+}
+.kiwi .quote-box,
+.kiwi .qa-box .text-box,
+.kiwi .img-box table {
+  background-color: #99cc00;
+}
+.bg-kiwi {
+  background-color: #99cc00;
+}
+.txt-kiwi {
+  color: #99cc00;
+}
+/* green */
+.green h1,
+.green h2,
+.green h3,
+.green h4 {
+  color: #00cc33;
+}
+.green a:link,
+.green li a:link,
+.green a:active,
+.green li a:active {
+  color: #009926;
+}
+.green a:visited,
+.green li a:visited,
+.green a:hover,
+.green li a:hover {
+  color: #00cc33;
+}
+.green .quote-box,
+.green .qa-box .text-box,
+.green .img-box table {
+  background-color: #00cc33;
+}
+.bg-green {
+  background-color: #00cc33;
+}
+.txt-green {
+  color: #00cc33;
+}
+/* shamrock */
+.shamrock h1,
+.shamrock h2,
+.shamrock h3,
+.shamrock h4 {
+  color: #0e8a4b;
+}
+.shamrock a:link,
+.shamrock li a:link,
+.shamrock a:active,
+.shamrock li a:active {
+  color: #0e8a4b;
+}
+.shamrock a:visited,
+.shamrock li a:visited,
+.shamrock a:hover,
+.shamrock li a:hover {
+  color: #45b87e;
+}
+.shamrock .quote-box,
+.shamrock .qa-box .text-box,
+.shamrock .img-box table {
+  background-color: #0e8a4b;
+}
+.bg-shamrock {
+  background-color: #0e8a4b;
+}
+.txt-shamrock {
+  color: #0e8a4b;
+}
+/* sage */
+.sage h1,
+.sage h2,
+.sage h3,
+.sage h4 {
+  color: #81b872;
+}
+.sage a:link,
+.sage li a:link,
+.sage a:active,
+.sage li a:active {
+  color: #517247;
+}
+.sage a:visited,
+.sage li a:visited,
+.sage a:hover,
+.sage li a:hover {
+  color: #81b872;
+}
+.sage .quote-box,
+.sage .qa-box .text-box,
+.sage .img-box table {
+  background-color: #81b872;
+}
+.bg-sage {
+  background-color: #81b872;
+}
+.txt-sage {
+  color: #81b872;
+}
+/* blue */
+.blue h1,
+.blue h2,
+.blue h3,
+.blue h4 {
+  color: #0033cc;
+}
+.blue a:link,
+.blue li a:link,
+.blue a:active,
+.blue li a:active {
+  color: #0033cc;
+}
+.blue a:visited,
+.blue li a:visited,
+.blue a:hover,
+.blue li a:hover {
+  color: #8eaafd;
+}
+.blue .quote-box,
+.blue .qa-box .text-box,
+.blue .img-box table {
+  background-color: #0033cc;
+}
+.bg-blue {
+  background-color: #0033cc;
+}
+.txt-blue {
+  color: #0033cc;
+}
+/* azure */
+.azure h1,
+.azure h2,
+.azure h3,
+.azure h4 {
+  color: #0a8cfe;
+}
+.azure a:link,
+.azure li a:link,
+.azure a:active,
+.azure li a:active {
+  color: #0a8cfe;
+}
+.azure a:visited,
+.azure li a:visited,
+.azure a:hover,
+.azure li a:hover {
+  color: #73c5ff;
+}
+.azure .quote-box,
+.azure .qa-box .text-box,
+.azure .img-box table {
+  background-color: #0a8cfe;
+}
+.bg-azure {
+  background-color: #0a8cfe;
+}
+.txt-azure {
+  color: #0a8cfe;
+}
+/* skyblue */
+.skyblue h1,
+.skyblue h2,
+.skyblue h3,
+.skyblue h4 {
+  color: #6fb4d3;
+}
+.skyblue a:link,
+.skyblue li a:link,
+.skyblue a:active,
+.skyblue li a:active {
+  color: #2f778a;
+}
+.skyblue a:visited,
+.skyblue li a:visited,
+.skyblue a:hover,
+.skyblue li a:hover {
+  color: #6fb4d3;
+}
+.skyblue .quote-box,
+.skyblue .qa-box .text-box,
+.skyblue .img-box table {
+  background-color: #6fb4d3;
+}
+.bg-skyblue {
+  background-color: #6fb4d3;
+}
+.txt-skyblue {
+  color: #6fb4d3;
+}
+/* denim */
+.denim h1,
+.denim h2,
+.denim h3,
+.denim h4 {
+  color: #0061aa;
+}
+.denim a:link,
+.denim li a:link,
+.denim a:active,
+.denim li a:active {
+  color: #0061aa;
+}
+.denim a:visited,
+.denim li a:visited,
+.denim a:hover,
+.denim li a:hover {
+  color: #0194fd;
+}
+.denim .quote-box,
+.denim .qa-box .text-box,
+.denim .img-box table {
+  background-color: #0061aa;
+}
+.bg-denim {
+  background-color: #0061aa;
+}
+.txt-denim {
+  color: #0061aa;
+}
+/* navy */
+.navy h1,
+.navy h2,
+.navy h3,
+.navy h4 {
+  color: #000033;
+}
+.navy a:link,
+.navy li a:link,
+.navy a:active,
+.navy li a:active {
+  color: #000033;
+}
+.navy a:visited,
+.navy li a:visited,
+.navy a:hover,
+.navy li a:hover {
+  color: #4c4c70;
+}
+.navy .quote-box,
+.navy .qa-box .text-box,
+.navy .img-box table {
+  background-color: #000033;
+}
+.navy .border_lrg_dot {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAYAAAAvZezQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD1JREFUeNpiFBDRZwCCDiB2AeJZjEABEGM3AwS8ZwIRDAjwnpmDS+I5kHENiO8BcQHj////GZABYQGAAAMA9rYSD7ZzFLYAAAAASUVORK5CYII=") repeat-y;
+}
+.bg-navy {
+  background-color: #000033;
+}
+.txt-navy {
+  color: #000033;
+}
+/* violet */
+.violet h1,
+.violet h2,
+.violet h3,
+.violet h4 {
+  color: #694291;
+}
+.violet a:link,
+.violet li a:link,
+.violet a:active,
+.violet li a:active {
+  color: #694291;
+}
+.violet a:visited,
+.violet li a:visited,
+.violet a:hover,
+.violet li a:hover {
+  color: #a085bc;
+}
+.violet .quote-box,
+.violet .qa-box .text-box,
+.violet .img-box table {
+  background-color: #694291;
+}
+.bg-violet {
+  background-color: #694291;
+}
+.txt-violet {
+  color: #694291;
+}
+/* orchid */
+.orchid h1,
+.orchid h2,
+.orchid h3,
+.orchid h4 {
+  color: #9a3a84;
+}
+.orchid a:link,
+.orchid li a:link,
+.orchid a:active,
+.orchid li a:active {
+  color: #9a3a84;
+}
+.orchid a:visited,
+.orchid li a:visited,
+.orchid a:hover,
+.orchid li a:hover {
+  color: #d78dc4;
+}
+.orchid .quote-box,
+.orchid .qa-box .text-box,
+.orchid .img-box table {
+  background-color: #9a3a84;
+}
+.bg-orchid {
+  background-color: #9a3a84;
+}
+.txt-orchid {
+  color: #9a3a84;
+}
+/* magenta */
+.magenta h1,
+.magenta h2,
+.magenta h3,
+.magenta h4 {
+  color: #bd057f;
+}
+.magenta a:link,
+.magenta li a:link,
+.magenta a:active,
+.magenta li a:active {
+  color: #881a61;
+}
+.magenta a:visited,
+.magenta li a:visited,
+.magenta a:hover,
+.magenta li a:hover {
+  color: #d84faa;
+}
+.magenta .quote-box,
+.magenta .qa-box .text-box,
+.magenta .img-box table {
+  background-color: #bd057f;
+}
+.bg-magenta {
+  background-color: #bd057f;
+}
+.txt-magenta {
+  color: #bd057f;
+}
+/* lightpink */
+.lightpink h1,
+.lightpink h2,
+.lightpink h3,
+.lightpink h4 {
+  color: #ff6699;
+}
+.lightpink a:link,
+.lightpink li a:link,
+.lightpink a:active,
+.lightpink li a:active {
+  color: #ff3377;
+}
+.lightpink a:visited,
+.lightpink li a:visited,
+.lightpink a:hover,
+.lightpink li a:hover {
+  color: #ff6699;
+}
+.lightpink .quote-box,
+.lightpink .qa-box .text-box,
+.lightpink .img-box table {
+  background-color: #ff6699;
+}
+.bg-lightpink {
+  background-color: #ff6699;
+}
+.txt-lightpink {
+  color: #ff6699;
+}
+/* } */
+/*-------------------------------------------------*/
+/* PULLQUOTES */
+.pullquote {
+  margin: 10px 0px;
+}
+.pullquote.float-right {
+  margin-left: 10px;
+}
+.pullquote.float-left {
+  margin-right: 10px;
+}
+.pullquote.tidbit {
+  padding: 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  font-weight: 600;
+  /* San-serif text on colored background */
+
+}
+.pullquote.tidbit strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+.pullquote.tidbit a {
+  color: #212121 !important;
+}
+.pullquote.fancy {
+  padding: 10px;
+  color: #FFF;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+}
+.pullquote.fancy a {
+  color: #CCC;
+}
+/* Serif text on colored background */
+.pullquote.blownup {
+  padding: 10px 0px;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  line-height: 33px;
+}
+/* extra large text with no background */
+.pullquote.headline {
+  padding: 10px 0px;
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 45px;
+  line-height: 38px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 300;
+  /* mimics headline style */
+
+  /* em = quote styles */
+
+}
+.pullquote.headline em {
+  font-family: Georgia, serif;
+  padding: 0px 5px;
+  font-size: 70px;
+  font-style: normal;
+}
+.pullquote.callout_star {
+  padding: 10px;
+  color: #FFF;
+  min-height: 40px;
+}
+.pullquote.callout_star h4 {
+  float: left;
+  font-size: 45px;
+  line-height: 38px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 300;
+  margin: 0;
+  padding-right: 20px;
+  font-family: 'Open Sans Light', sans-serif;
+}
+.pullquote.callout_star p {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.pullquote.callout_star a {
+  color: #CCC;
+}
+.pullquote.callout_star.bg-palegray a {
+  color: #777;
+}
+/*-------------------------------------------------*/
+/* QA BOXES - With colored backgrounds */
+.qa-box {
+  margin: 0px;
+  padding: 0px;
+}
+.qa-box .text-box h2 {
+  margin: 0px 15px 10px 15px;
+  padding: 20px 0px 10px 0px;
+  border-bottom: 1px dotted;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFF;
+}
+.qa-box .text-box p {
+  margin: 0px;
+  padding: 0px 15px 20px 15px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+}
+.qa-box.stencil {
+  padding: 0px;
+}
+.qa-box.stencil h1 {
+  background: transparent url(http://cdn.womensunitedonline.com/magazine/qa-box/qa-stencil.png) no-repeat bottom center;
+  height: 172px;
+  width: 200px;
+  text-indent: -9999px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+.qa-box.cutout {
+  position: relative;
+}
+.qa-box.cutout .bg-img {
+  padding: 0px;
+  margin: 0px;
+  width: 600px;
+  height: 420px;
+}
+.qa-box.cutout .bg-img img {
+  width: 600px;
+  height: 420px;
+}
+.qa-box.cutout .wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.qa-box.cutout .text-box {
+  height: 248px;
+}
+.qa-box.cutout h1 {
+  height: 172px;
+  width: 200px;
+  text-indent: -9999px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+/* Color pallettes */
+.qa-box .text-box,
+.pink .qa-box .text-box {
+  color: #FFF;
+  border-color: #FFF;
+  width: 200px;
+}
+.white .qa-box .text-box,
+.yellow .qa-box .text-box {
+  color: #333;
+  border-color: #333;
+}
+.white .qa-box .text-box h2,
+.yellow .qa-box .text-box h2 {
+  color: #333;
+}
+.pink .qa-box.cutout h1 {
+  background: transparent url(http://cdn.womensunitedonline.com/magazine/qa-box/qa-cutout.png) no-repeat bottom center;
+}
+.pink .qa-box .text-box {
+  background: #a32143;
+}
+.white .qa-box.cutout h1 {
+  background: transparent url(http://cdn.womensunitedonline.com/magazine/qa-box/qa-cutout-white.png) no-repeat bottom center;
+}
+.white .qa-box .text-box {
+  background: #ffffff;
+}
+.black .qa-box.cutout h1 {
+  background: transparent url(http://cdn.womensunitedonline.com/magazine/qa-box/qa-cutout-black.png) no-repeat bottom center;
+}
+.black .qa-box .text-box {
+  background: #000000;
+}
+.charcoal .qa-box.cutout h1 {
+  background: transparent url(http://cdn.womensunitedonline.com/magazine/qa-box/qa-cutout-charcoal.png) no-repeat bottom center;
+}
+.charcoal .qa-box .text-box {
+  background: #444444;
+}
+/*-------------------------------------------------*/
+/* QUOTE BOXES - Floating quote boxes with colored backgrounds */
+.quote-box {
+  width: 160px;
+  padding: 30px 20px 10px 20px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /* big quote */
+
+  /* small quote */
+
+}
+.quote-box p {
+  margin: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted;
+  font-style: italic;
+}
+.quote-box em {
+  font-size: 80px;
+  line-height: 2px;
+  vertical-align: bottom;
+  font-style: normal;
+  padding-top: 10px;
+}
+.quote-box p em {
+  font-size: 40px;
+  line-height: 2px;
+  vertical-align: bottom;
+  font-style: normal;
+}
+.quote-box .signature {
+  text-align: right;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  padding-top: 10px;
+}
+.left .quote-box {
+  margin: 20px 20px 20px 0px;
+}
+/* Color pallettes */
+.quote-box {
+  background-color: #a32143;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.white .quote-box,
+.yellow .quote-box {
+  color: #444444;
+  border-color: #444444;
+}
+/*-------------------------------------------------*/
+/* STICKERS - Round sticker with and without a border */
+.sticker {
+  font-family: Open Sans, sans-serif;
+  margin: 10px;
+  position: relative;
+}
+.sticker .round-sticker {
+  background: url(http://cdn.womensunitedonline.com/magazine/stickers/sticker.png) no-repeat;
+  height: 201px;
+  width: 201px;
+}
+.sticker .round-sticker .text {
+  text-align: center;
+  color: #FFF;
+  padding: 30px 20px 20px 20px;
+}
+.sticker .round-sticker .text a {
+  color: #CCC;
+}
+.sticker .round-sticker h2 {
+  font-size: 32px;
+  line-height: 26px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding: 0px;
+  margin: 0px;
+  color: #FFF;
+  text-transform: none;
+}
+.sticker .round-sticker p {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 5px 0px 0px 0px;
+  margin: 0px;
+}
+.sticker .round-sticker.border {
+  background: url(http://cdn.womensunitedonline.com/magazine/stickers/sticker-border.png) no-repeat;
+  border: 0px;
+}
+.sticker .round-sticker.topright {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.sticker .round-sticker.topleft {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.sticker .round-sticker.bottomright {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+.sticker .round-sticker.bottomleft {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+.sticker.left {
+  margin: 10px 20px 10px 0px;
+}
+.sticker.right {
+  margin: 10px 0px 10px 20px;
+}
+/*-------------------------------------------------*/
+/* 3 COLUMNS of IMAGES - 3 columns of images with various titles and captions */
+.img-box {
+  line-height: 0px;
+}
+.img-box table {
+  border-collapse: collapse;
+}
+.img-box img {
+  float: left;
+  border-right: 8px solid #ffffff;
+}
+.img-box .caption {
+  padding: 10px 15px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+.img-box .caption h3 {
+  color: #ffffff;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.img-box table {
+  background-color: #a32143;
+  color: #ffffff;
+}
+.white .img-box table .caption,
+.yellow .img-box table .caption,
+.white .img-box table h3,
+.yellow .img-box table h3 {
+  color: #444444;
+}
+/*-------------------------------------------------*/
+/* 3 COLUMNS of IMAGES - 3 columns of images with various titles and captions */
+.photo-caption {
+  margin: 0px;
+  padding: 0px;
+}
+.photo-caption .img {
+  padding: 0px;
+  margin: 0px;
+  line-height: 0;
+}
+.photo-caption .caption {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
+  text-align: center;
+}
+.photo-caption h3 {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+  text-align: center;
+  margin: 0px;
+}
+/* Images with title and caption below */
+.photo-caption.title-basic .item {
+  float: left;
+  padding: 10px 9px 10px 0px;
+  width: 200px;
+}
+.photo-caption.title-basic .item.last {
+  padding-right: 0px;
+}
+.photo-caption.title-basic h3 {
+  background: none;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 7px 0px;
+  margin: 0px;
+  text-align: left;
+  font-weight: 600;
+}
+.photo-caption.title-basic .caption {
+  text-align: left;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* 4 COLUMNS of IMAGES - 4 columns of images with title below */
+.photo-caption.four-cols .item {
+  float: left;
+  padding: 10px 8px 10px 0px;
+  width: 148px;
+}
+.photo-caption.four-cols .item.last {
+  padding-right: 0px;
+}
+.photo-caption.four-cols .img img {
+  max-width: 148px;
+}
+.photo-caption.four-cols h3 {
+  background: none;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 7px 0px;
+  margin: 0px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.photo-caption.four-cols h3 a {
+  color: #3e3e3e;
+}
+.photo-caption.four-cols .caption {
+  text-align: left;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* Images with floating title and caption below */
+.photo-caption.title-float .item {
+  float: left;
+  padding: 10px 9px 10px 0px;
+  width: 200px;
+}
+.photo-caption.title-float .item.last {
+  padding-right: 0px;
+}
+.photo-caption.title-float .img-wrapper {
+  position: relative;
+}
+.photo-caption.title-float .img-wrapper img {
+  position: relative;
+}
+.photo-caption.title-float .img-wrapper .title {
+  color: #ffffff;
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  font-size: 18px;
+  padding: 3px 10px;
+  text-align: center;
+  margin: 8px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.photo-caption.title-float .img-wrapper .caption {
+  padding-top: 0;
+}
+.photo-caption.title-float .img-wrapper .caption p {
+  padding: 0;
+  margin: 0;
+}
+/* Images with title and caption in an overlay box */
+.photo-caption.title-overlay .item {
+  float: left;
+  padding: 10px 9px 10px 0px;
+  width: 200px;
+}
+.photo-caption.title-overlay .item.last {
+  padding-right: 0px;
+}
+.photo-caption.title-overlay .img {
+  position: relative;
+}
+.photo-caption.title-overlay .overlay {
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  min-height: 120px;
+  padding: 10px;
+  margin: 0px;
+  line-height: 20px;
+  background: transparent url(http://cdn.womensunitedonline.com/interface/flash-panel-bg.png) repeat;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 16px;
+}
+.photo-caption.title-overlay .overlay h3 {
+  color: #ffffff;
+  background: none;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0px 0px 5px 0px;
+  margin: 0px;
+  text-align: left;
+}
+.photo-caption.title-overlay.white .overlay {
+  background: transparent url(http://cdn.womensunitedonline.com/magazine/icons/overlay-white.png) repeat;
+  color: #000;
+}
+.photo-caption.title-overlay.white .overlay h3 {
+  color: #000000;
+}
+/* Image with caption in a white overlay box at bottom */
+.photo-caption.white-overlay {
+  position: relative;
+}
+.photo-caption.white-overlay .img-wrapper {
+  position: relative;
+}
+.photo-caption.white-overlay .img-wrapper img {
+  position: relative;
+}
+.photo-caption.white-overlay .img-wrapper .caption {
+  position: absolute;
+  bottom: 15px;
+  background: url(http://cdn.womensunitedonline.com/magazine/icons/overlay-white.png) repeat;
+  padding: 10px;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.photo-caption.white-overlay .img-wrapper.float-left {
+  padding-right: 10px;
+}
+.photo-caption.white-overlay .img-wrapper.float-right {
+  padding-left: 10px;
+}
+/* Image with title on black and caption on gray box */
+.photo-caption.background-box .item {
+  width: 200px;
+  background-color: #EAEAEA;
+  float: left;
+  margin-right: 9px;
+}
+.photo-caption.background-box .item h3 {
+  background-color: #212121;
+  color: #FFF;
+  padding: 5px 10px;
+  text-align: center;
+}
+.photo-caption.background-box .item .caption {
+  padding: 5px 15px;
+  text-align: left;
+}
+.photo-caption.background-box .item.last {
+  margin-right: 0px;
+}
+/*-------------------------------------------------*/
+/* FACEBOOK COMMENTS BOX - What readers are saying */
+.facebook_box.tall {
+  width: 245px;
+}
+.facebook_box.tall.left {
+  margin: 20px 20px 20px 0px;
+}
+.facebook_box.tall.right {
+  margin: 20px 0px 20px 20px;
+}
+.facebook_box.wide {
+  width: 100%;
+}
+.facebook_box.wide div.comments {
+  padding: 10px;
+  width: 95%;
+}
+.facebook_box.wide .chimein_button {
+  width: 290px;
+  font-size: 16px;
+  padding: 8px;
+}
+.facebook_box div.comments {
+  border: 1px solid #CCC;
+  background: #fff;
+  padding: 10px 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.facebook_box .comments h3 {
+  color: #a32143;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 0px 10px 10px 10px;
+  margin: 0px;
+}
+.facebook_box .comments ul {
+  margin: 0px;
+  padding: 0px;
+  border-top: 1px solid #CCC;
+}
+.facebook_box .comments li {
+  clear: both;
+  border-bottom: 1px solid #CCC;
+  background-color: #e2e2e2;
+  list-style: none;
+  padding: 10px;
+  margin: 1px 0px;
+  min-height: 56px;
+}
+.facebook_box .comments li img {
+  float: left;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+  padding: 2px;
+}
+.facebook_box .comments li p {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 60px;
+  color: #515050;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+}
+.facebook_box .comments li p em {
+  color: #c33d58;
+  font-style: normal;
+  font-weight: bold;
+}
+.facebook_box .comments li:nth-child(even) {
+  background-color: #f6f6f6;
+}
+.facebook_box .chimein_button {
+  background-color: #a32143;
+  color: #FFF;
+  margin: 10px 0px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  /* Shadows for everyone else */
+
+  -moz-box-shadow: 2px 2px 2px #b0b0b0;
+  -webkit-box-shadow: 2px 2px 2px #b0b0b0;
+  box-shadow: 2px 2px 2px #b0b0b0;
+  /* Shadows for IE */
+
+  zoom: 1;
+  /* This enables hasLayout, which is required for older IE browsers */
+  /* filter: progid:DXImageTransform.Microsoft.Shadow(color='#b0b0b0', Direction=135, Strength=3); */
+
+}
+.facebook_box .chimein_button a:link,
+.facebook_box .chimein_button a:visited,
+.facebook_box .chimein_button a:active,
+.facebook_box .chimein_button a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+.facebook_box .chimein_button::after {
+  content: "►";
+  padding-left: 4px;
+}
+/*-------------------------------------------------*/
+/* Overlap New Article Box - Floating quote boxes with colored backgrounds */
+.headline-overlay {
+  position: relative;
+}
+.headline-overlay .wrapperBox.right {
+  right: 0;
+  top: 20px;
+}
+.headline-overlay .wrapperBox.left {
+  left: 0;
+  top: 20px;
+}
+.headline-overlay .wrapperBox {
+  position: absolute;
+}
+.headline-overlay .wrapperBox .headtag {
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.headline-overlay .wrapperBox .headtag span {
+  padding: 3px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.headline-overlay .wrapperBox .headtag span .nofill {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  background: none;
+  color: #212121;
+}
+.headline-overlay .subhead {
+  overflow: hidden;
+  background: url(http://cdn.womensunitedonline.com/magazine/icons/overlay-white.png) repeat;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  margin: 0px;
+}
+.headline-overlay .text {
+  margin: 20px;
+}
+.headline-overlay .noBg {
+  background: none;
+  border: none;
+  padding: 0px;
+}
+.headline-overlay.accent-title .wrapperBox {
+  padding: 20px;
+}
+.headline-overlay.accent-title .sub-title h2 {
+  color: #b9b9b9;
+  font-size: 60px;
+  line-height: 55px;
+  letter-spacing: -6px;
+}
+.headline-overlay.accent-title .sub-title h2 span.accent {
+  font-size: 80px;
+  color: #494949;
+}
+.headline-overlay.accent-title .blurb p {
+  padding: 0;
+  margin: 0;
+}
+.headline-overlay.side-by-side .wrapper-box {
+  position: relative;
+}
+/*-------------------------------------------------*/
+/* Magazine Custom Columns - multiple column layouts for a true magazine feel */
+.custom_columns .headtag {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+.custom_columns .headline {
+  color: #212121;
+  font-size: 50px;
+  line-height: 46px;
+  text-transform: uppercase;
+  margin: 0px;
+  letter-spacing: -1px;
+}
+.custom_columns .blurb {
+  font-size: 16px;
+  line-height: 22px;
+  color: #474747;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+.custom_columns .full_width {
+  width: 100%;
+}
+.custom_columns .two_column .col1 {
+  width: 300px;
+  margin-right: 19px;
+}
+.custom_columns .two_column .col2 {
+  width: 300px;
+}
+.custom_columns .two_column.border .col1 {
+  border-right: 1px dotted #333;
+  padding-right: 19px;
+  width: 290px;
+}
+.custom_columns .two_column.border .col2 {
+  width: 290px;
+}
+.custom_columns img.float-right,
+.custom_columns .float-right img {
+  margin-left: 20px;
+}
+.custom_columns img.float-left,
+.custom_columns .float-left img {
+  margin-right: 20px;
+}
+.custom_columns.photo_header h2 {
+  padding: 10px 0 0 0;
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 50px;
+  line-height: 46px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 300;
+  color: #212121;
+}
+.custom_columns.photo_header .header.horz .col1 {
+  width: 450px;
+  float: left;
+}
+.custom_columns.photo_header .header.horz .col1 img {
+  max-width: 450px;
+}
+.custom_columns.photo_header .header.horz .col2 {
+  width: 150px;
+  padding-left: 9px;
+  float: left;
+}
+.custom_columns.photo_header .header.vert .col1 {
+  width: 360px;
+  float: left;
+}
+.custom_columns.photo_header .header.vert .col1 img {
+  max-width: 360px;
+  margin: 0;
+}
+.custom_columns.photo_header .header.vert .col2 {
+  width: 240px;
+  padding-left: 19px;
+  float: left;
+}
+.custom_columns.full_width_photo .header {
+  position: relative;
+  margin-bottom: 20px;
+}
+.custom_columns.full_width_photo .header .banner {
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  width: 270px;
+  height: 100%;
+  background: url(http://cdn.womensunitedonline.com/magazine/icons/overlay-white.png) repeat;
+  padding: 0px 20px;
+}
+.custom_columns.full_width_photo .header .banner .sub-title h2,
+.custom_columns.full_width_photo .header .banner .sub-title {
+  font-size: 50px;
+  line-height: 46px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  padding-top: 20px;
+  margin: 0;
+}
+.custom_columns.full_width_photo .header .banner .blurb {
+  font-size: 16px;
+}
+.custom_columns.full_width_photo .header .pullquote.headline {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 200px;
+  font-size: 45px;
+  line-height: 38px;
+}
+.custom_columns.full_width_photo .content.arrow {
+  background: url('http://cdn.womensunitedonline.com/magazine/icons/chevron-lrg-right.png') no-repeat;
+  padding: 10px 0 0 50px;
+}
+.custom_columns.full_width_photo h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+/*-------------------------------------------------*/
+/* Header Girl Crush */
+.header-girl-crush.headline-overlay h3.headtag {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #898989;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin: 0;
+}
+/*-------------------------------------------------*/

@@ -1,0 +1,110 @@
+1674,0,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+2039,0,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+2728,0,88,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+1675,1,84,"The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information on the website, and your data is aggregated or anonymized."
+1676,1,84,"The site collects your computer information for an unspecified purpose. Collection happens when you implicitly provide information on the website, and your data is aggregated or anonymized."
+1677,1,84,"The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information on the website, and your data is aggregated or anonymized."
+1681,1,84,The site does not collect your contact information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+1682,1,84,The site does not collect your location information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+1683,1,84,The site does not collect your unspecified information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+2065,1,82,"The site collects your IP address or device IDs for an unspecified purpose. Collection happens on the website, and your data is aggregated or anonymized."
+2066,1,82,"The site collects your computer information for an unspecified purpose. Collection happens on the website, and your data is aggregated or anonymized."
+2067,1,82,"The site collects your website activities for an unspecified purpose. Collection happens on the website, and your data is aggregated or anonymized."
+2734,1,88,"The site collects your IP address or device IDs for an unspecified purpose. Collection happens on the website, and your data is aggregated or anonymized."
+2735,1,88,"The site collects your computer information for an unspecified purpose. Collection happens on the website, and your data is aggregated or anonymized."
+2736,1,88,"The site collects your website activities for an unspecified purpose. Collection happens on the website, and your data is aggregated or anonymized."
+1684,2,84,The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information on the website. You can configure your privacy with browser settings.
+1685,2,84,"The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information on the website, and your data is aggregated or anonymized. You can configure your privacy with browser settings."
+1686,2,84,"The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information on the website, and your data is aggregated or anonymized. You can configure your privacy with browser settings."
+2071,2,82,The site collects your cookies or tracking elements for analytics or research. Collection happens on the website. You can configure your privacy with browser settings.
+2073,2,82,The site collects your cookies or tracking elements for advertising. Collection happens on the website. You can configure your privacy with browser settings.
+2737,2,88,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information on the website. You can configure your privacy with browser settings.
+1688,3,84,"The site collects your generic personal information for an unspecified purpose. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+2082,3,82,"The site collects your generic personal information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+2084,3,82,"The site collects your generic personal information for an additional (non-basic) service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+2086,3,82,"The site collects your generic personal information for marketing purposes. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+2741,3,88,"The site collects your generic personal information for a basic service or feature. Collection happens when you explicitly provide information on the website for users with accounts, and your data is identifiable."
+2742,3,88,"The site collects your generic personal information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+1692,4,84,The site collects your contact information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way.
+1693,4,84,The site collects your location information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way.
+1694,4,84,The site collects your demographic information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way.
+1695,4,84,The site collects your website activities for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way.
+1696,4,84,The site collects your generic personal information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way.
+1697,4,84,The site collects your unspecified information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way.
+2092,4,82,The site collects your contact information for a basic service or feature. Collection happens in an unspecified way.
+2093,4,82,The site collects your demographic information for a basic service or feature. Collection happens in an unspecified way.
+2096,4,82,The site collects your user profile for a basic service or feature. Collection happens in an unspecified way.
+2743,4,88,"The site collects your contact information for an unspecified purpose. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+2744,4,88,"The site collects your demographic information for an unspecified purpose. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+1699,5,84,"The site collects your generic personal information for a basic service or feature. Collection happens when you implicitly provide information on the website, and your data is identifiable."
+1700,5,84,"The site collects your generic personal information for personalization or customization. Collection happens when you implicitly provide information on the website, and your data is identifiable."
+1701,5,84,"The site collects your generic personal information for personalization or customization. Collection happens when you implicitly provide information on the website for users with accounts, and your data is identifiable."
+2099,5,82,"The site collects your generic personal information for marketing purposes. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+2101,5,82,"The site collects your generic personal information for personalization or customization. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+2102,5,82,"The site collects your generic personal information for analytics or research. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+2745,5,88,"The site collects your generic personal information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+1704,6,84,"The site collects your generic personal information for marketing purposes. Collection happens when you implicitly provide information in an unspecified way, and your data is identifiable. You can opt out by contacting the company for the use of your information."
+1705,6,84,A named third party does do something unspecified with your unspecified personal information for an unspecified purpose. The data is personally identifiable. You can opt out by contacting the company.
+2107,6,82,"The site collects your generic personal information for marketing purposes. Collection happens in an unspecified way, and your data is identifiable. You can opt out by contacting the company."
+2112,6,82,A named third party does receive your unspecified personal information for analytics or research. The data is personally identifiable. You can opt out by contacting the company.
+2114,6,82,A named third party does receive your unspecified personal information for a basic service or feature. The data is personally identifiable. You can opt out by contacting the company.
+2115,6,82,A named third party does receive your unspecified personal information for an additional (non-basic) service or feature. The data is personally identifiable. You can opt out by contacting the company.
+2116,6,82,A named third party does receive your unspecified personal information for marketing purposes. The data is personally identifiable. You can opt out by contacting the company.
+2746,6,88,"The site collects your generic personal information for marketing purposes. Collection happens when you implicitly provide information on the website, and your data is identifiable."
+2747,6,88,An unnamed third party does receive your unspecified personal information for analytics or research. The data is personally identifiable. You can opt out by contacting the company for the use of your information.
+2748,6,88,An unnamed third party does receive your unspecified personal information for a basic service or feature. The data is personally identifiable. You can opt out by contacting the company for the use of your information.
+2749,6,88,An unnamed third party does receive your unspecified personal information for targeted advertising. The data is personally identifiable. You can opt out by contacting the company for the use of your information.
+2750,6,88,An unnamed third party does receive your unspecified personal information for marketing purposes. The data is personally identifiable. You can opt out by contacting the company for the use of your information.
+1710,7,84,A named third party does receive your unspecified personal information for a basic service or feature. The data is personally identifiable.
+2120,7,82,Data is accessible to employees/third parties on a need-to-know basis.
+2121,7,82,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+2126,7,82,A named third party does receive your unspecified personal information for a basic service or feature. The data is personally identifiable.
+2127,7,82,A named third party does receive your unspecified personal information for service operations or security. The data is personally identifiable.
+2751,7,88,Data is accessible to employees/third parties on a need-to-know basis.
+2752,7,88,An unnamed third party does receive your unspecified personal information for a basic service or feature. The data is personally identifiable.
+1714,8,84,"The site collects your generic personal information for marketing purposes. Collection happens when you implicitly provide information by an unnamed service or third party, and your data is identifiable."
+2136,8,82,"The site collects your generic personal information for marketing purposes. Collection happens by an unnamed service or third party, and your data is identifiable."
+2753,8,88,"The site collects your generic personal information for marketing purposes. Collection happens when you implicitly provide information by an unnamed service or third party, and your data is identifiable."
+1716,9,84,An unspecified third party does receive unspecified information about you for mergers or acquisitions.
+1717,9,84,An unspecified third party does receive unspecified information about you for legal requirements.
+2129,9,82,An unnamed third party does receive your unspecified personal information for mergers or acquisitions.
+2130,9,82,An unnamed third party does receive your unspecified personal information for legal requirements.
+2754,9,88,An unnamed third party does receive your unspecified personal information for mergers or acquisitions. The data is personally identifiable.
+2755,9,88,An unnamed third party does receive your unspecified personal information for legal requirements. The data is personally identifiable.
+1719,10,84,An unnamed third party does collect on the first party website or app your unspecified personal information for an unspecified purpose. The data is personally identifiable.
+1720,10,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+2152,10,82,An unnamed third party does receive your unspecified personal information for an unspecified purpose. The data is personally identifiable.
+2756,10,88,The text describes a specific data practice that is not covered by our label scheme.
+1721,11,84,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+2053,11,82,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+2738,11,88,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+1722,12,84,"The company/organization has a privacy or security program/organization in place addressing, for example, how to protect data against unauthorized access or privacy training for employees."
+2159,12,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+2757,12,88,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+1725,13,84,"You can opt out (by contacting the company) from the use of unspecified information by the site, which uses it for marketing purposes."
+1726,13,84,"You can opt out (by contacting the company) from the use of unspecified information by a third party, which uses it for marketing purposes."
+2156,13,82,You can opt out (by contacting the company) from the use of unspecified information by an unspecified party for marketing purposes.
+2758,13,88,"You can opt out (by contacting the company) from the use of unspecified information by the site, which uses it for marketing purposes."
+2759,13,88,"You can opt out (by contacting the company) from the use of unspecified information by a third party, which uses it for marketing purposes."
+1727,14,84,"When a change of an unspecified nature is made to the privacy policy, users are personally notified. Users' choices regarding policy changes are not mentioned or are unclear."
+1728,14,84,"When a change of an unspecified nature is made to the privacy policy, users are notified in an unspecified manner. Users' choices regarding policy changes are not mentioned or are unclear."
+2158,14,82,The text describes a specific data practice that is not covered by our label scheme.
+2760,14,88,"When a change of an unspecified nature is made to the privacy policy, users are personally notified. Users' choices regarding policy changes are not mentioned or are unclear."
+2761,14,88,"A user's unspecified information is retained for an unspecified duration to perform a requested service, and then it is deleted.."
+2762,14,88,"A user's contact information is retained for an unspecified duration to perform a requested service, and then it is deleted.."
+1730,15,84,"A user can edit their information, within the scope of information explicitly provided by the user."
+2166,15,82,"A user can access, edit, or delete personal information in a manner not covered by our label scheme, within the scope of information explicitly provided by the user."
+2763,15,88,"A user can edit their information, within the scope of information the company has learned about the user."
+1732,16,84,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+2040,16,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+2739,16,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+1733,17,84,"When a change of an unspecified nature is made to the privacy policy, users are notified when visiting the website. Users have no options regarding the change."
+1734,17,84,"When a change of an unspecified nature is made to the privacy policy, users are personally notified. Users have no options regarding the change."
+2041,17,82,"When a change of an unspecified nature is made to the privacy policy, users are notified when visiting the website. Users' choices regarding policy changes are not mentioned or are unclear."
+2042,17,82,"When a change of an unspecified nature is made to the privacy policy, users are personally notified. Users' choices regarding policy changes are not mentioned or are unclear."
+2043,17,82,"When a change of an unspecified nature is made to the privacy policy, users are notified in a manner outside of our label scheme. Users' choices regarding policy changes are not mentioned or are unclear."
+2764,17,88,"When a change of an unspecified nature is made to the privacy policy, users are notified when visiting the website. Users can participate in a process to influence the change."
+2765,17,88,"When a change of an unspecified nature is made to the privacy policy, users are personally notified. Users can participate in a process to influence the change."
+1736,18,84,You can choose not to use a service or feature to avoid the use of unspecified information by an unspecified party for an unspecified purpose.
+2051,18,82,You can choose not to use a service or feature to avoid the use of unspecified information by an unspecified party for an unspecified purpose.
+2766,18,88,The text does not fit into our label scheme.

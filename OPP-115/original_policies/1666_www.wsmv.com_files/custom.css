@@ -1,0 +1,37 @@
+#WNAffWSMV #WNFooter #csFooter .csFooterCol.csFirst img {
+  margin: 2px 2px 0;
+  border: 0;
+}
+
+/* Social Links */
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial,
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial a,
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial span {
+	float: left;
+}
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial {
+	padding-top: 2px;
+	position: relative;
+		left: 50px;
+	width: 200px;
+}
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial a {
+	background: url("http://ftpcontent.worldnow.com/wncustom/custom/wsmv/2012/social_icons.png");
+	height: 22px;
+	width: 22px;
+	margin-left: 6px;
+}
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial a#twitter{ background-position: -22px 0; }
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial a#google { background-position: -44px 0; }
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial a#mobile { background-position: -66px 0; }
+
+#WNAffWSMV #WNContainerMemberSearch-headertop #csSocial span {
+	color: #818181;
+	padding-top: 6px;
+	text-transform: uppercase;
+}
+
+/* WNAD52 Placement */
+#DisplaySizeId82 #WNAd52 {
+	float: right;
+}

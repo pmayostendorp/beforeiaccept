@@ -1,0 +1,24 @@
+OX_6868247307({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.oncampusweb.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "adunits" : [
+      {
+        "auid":"536882120",
+        "chain":[
+          {
+            "is_fallback":0,
+            "ad_id":"537127826",
+            "width":"200",
+            "height":"90",
+            "html":"<a href='http://ox-d.oncampusweb.com/w/1.0/rc?ts=1fHJpZD1hOGVjODY4My1iZDYxLTRiNGEtYjIwZi0zZDkyNTQwZTFmMGJ8cnQ9MTQzNTg1OTc1NHxhdWlkPTUzNjg4MjEyMHxhdW09RE1JRC5XRUJ8c3NpZD01MzY4NzA5NDZ8c2lkPTUzNjg3MTA5NnxwdWI9NTM2ODcxNTEzfHBjPVVTRHxyYWlkPTNkOTYxZDhhLWJkOTEtNDNhOC05Yjk0LTliMzY1ODU3NzhiZnxhaWQ9NTM3MTI3ODI2fHQ9MXxhcz0yMDB4OTB8bGlkPTUzNjkxMjA4N3xvaWQ9NTM2ODk2MTE2fHA9MHxwcj0wfGFkdj01MzY4NzM1Njh8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfGJtPUJVWUlORy5IT1VTRXx1cj1xWWxhSGZvWXVE' target='_blank'><img src='http://ox-i.oncampusweb.com/166/166499c5-908b-47b6-86b9-86d039ad5a9a/45d/45db6bf0fc7543a5bd9d14041a295b80.gif' height='90' width='200' border='0' alt=''/></a>\n",
+            "target":"_blank",
+            "ts":"1fHJpZD1hOGVjODY4My1iZDYxLTRiNGEtYjIwZi0zZDkyNTQwZTFmMGJ8cnQ9MTQzNTg1OTc1NHxhdWlkPTUzNjg4MjEyMHxhdW09RE1JRC5XRUJ8c3NpZD01MzY4NzA5NDZ8c2lkPTUzNjg3MTA5NnxwdWI9NTM2ODcxNTEzfHBjPVVTRHxyYWlkPTNkOTYxZDhhLWJkOTEtNDNhOC05Yjk0LTliMzY1ODU3NzhiZnxhaWQ9NTM3MTI3ODI2fHQ9MXxhcz0yMDB4OTB8bGlkPTUzNjkxMjA4N3xvaWQ9NTM2ODk2MTE2fHA9MHxwcj0wfGFkdj01MzY4NzM1Njh8YWM9VVNEfHBtPVBSSUNJTkcuQ1BNfGJtPUJVWUlORy5IT1VTRXx1cj1xWWxhSGZvWXVE",
+            "type":"image",
+            "ad_url":"http://ox-i.oncampusweb.com/166/166499c5-908b-47b6-86b9-86d039ad5a9a/45d/45db6bf0fc7543a5bd9d14041a295b80.gif"
+          }
+        ]
+      }
+    ]
+  }
+});

@@ -1,0 +1,133 @@
+html, body {background: #fff;}
+
+#vss {
+width: 972px;
+left:auto;
+right:auto;
+}
+
+#topbanner {
+	width: 972px;
+	height: 80px;
+	background: #213452;
+	display: block;
+	background-image: url("topbar.jpg");
+}
+#banner {
+	width: 972px;
+	background: #213452;
+	display: block;
+	margin: 1px 0px;
+	padding: 2px 0px;
+}
+#topmenu {
+  width:972px;
+  color: white;
+  background-color: #213452;
+  font-family: arial,helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  text-align: left;
+  padding: 4px 0px;
+  margin: 1px 0px;
+  text-indent: 8px;
+}
+#content{
+width:972px;
+display: table;
+table-layout: auto;
+border-spacing: 6px;
+vertical-align: top;
+}
+
+
+#topmenu a:link, #topmenu a:visited, #topmenu a:active
+{
+	color: #ffffff;
+	background-color: #213452;
+	text-decoration: none;
+}
+#topmenu a:hover
+{
+	color: #ffe8a0;
+	background-color: 213452;
+	text-decoration: underline;
+}
+
+#smenu {
+display: table-cell;
+background: #036;
+width: 170px;
+color: #fff;
+font-size: small;
+font-family: arial, helvetica, sans-serif;
+margin-right: 6px;
+}
+#smenu h2 {
+font: bold small arial, helvetica, sans-serif;
+display: block;
+border-width: 1px 0;
+border-style: solid;
+border-color: #ddd;
+margin: 0px 0px;
+padding: 3px 5px;
+color: #fff;
+background: #000;
+}
+#smenu ul {
+list-style:none;
+text-indent: -12px;
+margin: 0 3px 0 15px;
+padding: 0;
+}
+#smenu p {
+	margin: 0 3px 0 3px;
+}
+#smenu ul ul {
+list-style:none;
+margin-left: 12px;
+padding: 0;
+}
+#smenu a {
+color: #fff;
+text-decoration: none;
+font-weight: normal;
+}
+#smenu a:hover {
+color: #ff3;
+text-decoration: underline;
+background: #369;
+}
+#smenu ul li {
+font-weight: bold;
+}
+#body {
+display: table-cell;
+}
+#rightcol {
+display: table-cell;
+width: 160px;
+}
+#bc
+{
+width: 972px;
+font: bold small "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+border-width: 0 0 1px 0;
+border-style: solid;
+border-color: #000;
+}
+
+#bc a{
+background: transparent url(../images/bc.gif) no-repeat center right;
+text-decoration: none;
+padding-right: 18px;
+color: #900;
+}
+#bc a:visited, .breadcrumb a:active {
+color: #900;
+}
+
+#bc a:hover {
+text-decoration: underline;
+color: #C2A000;
+}

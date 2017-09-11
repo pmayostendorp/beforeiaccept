@@ -1,0 +1,34 @@
+OX_6912516555({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.pittpostgazette.servedbyopenx.com/{medium}/1.0/{rtype}?ee=res&ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=5&ph=2968c969-f170-4578-9198-942acd4c7a77",
+    "adunits" : [
+      {
+        "auid":"537975242",
+        "chain_revenue":"",
+        "chain":[
+          {
+            "is_fallback":0,
+            "framed":1,
+            "ad_id":"537405053",
+            "adv_acct_id":"537094950",
+            "is_ng":1,
+            "adv_id":"152d07b1-da41-4c40-ad18-fe74c269534a:537094950",
+            "brand_id":"",
+            "cpipc":1052,
+            "auct_win_is_deal":0,
+            "pub_rev":"1052",
+            "width":"728",
+            "height":"90",
+            "html":"<!-- BEGIN TAG - DO NOT MODIFY -->\n<script type=\"text/javascript\">\n//<![CDATA[\nepom_key = \"2782c62457779d3f187cf86f375a874c\";\nepom_channel = \"\";\nepom_code_format = \"ads-sync.js\";\nepom_ads_host = \"//www.adshost2.com\";\nepom_click = \"\";\nepom_custom_params = {};\n\ndocument.write(\"<script type='text\\/javascript' src='\"+(location.protocol == 'https:' ? 'https:' : 'http:') + \"//www.adshost2.com\\/js/show_ads.js'><\\/script>\");\n//]]>\n</script>\n<!-- END TAG -->",
+            "target":"_blank",
+            "ts":"1fHJpZD1hOTgwMzRmZi1jODVjLTQ3ODAtOWIwNS1lODdiMTFlYTU3MDB8cnQ9MTQzNTg3NzE4M3xhdWlkPTUzNzk3NTI0MnxhdW09RE1JRC5XRUJ8c2lkPTUzNzE5NDE5OXxwdWI9NTM3MTEwOTE1fHBjPVVTRHx4dD1yZXN8cmFpZD1kMTdhNTk3ZC01ODNiLTQxNGMtYmZmZi1jMjk0Y2Y5Y2I1N2R8YWlkPTUzNzQwNTA1M3x0PTR8YXM9NzI4eDkwfGxpZD01MzcyNzEzNDF8b2lkPTUzNzE4NTgzOHxwPTEzMjB8cHI9MTA1MnxhZHY9NTM3MDk0OTUwfGFjPVVTRHxwbT1QUklDSU5HLkNQTXxtPTF8YWk9MTUyZDA3YjEtZGE0MS00YzQwLWFkMTgtZmU3NGMyNjk1MzRhfG1jPVVTRHxtcj0yNjh8cGk9MTA1MnxtdWk9YTkyY2M2YTItYjNmMi03MGRkLTkwYzctNTYzMmVjMzRhOWQ0fG13PTYwfG1hPTRmYTdmYTM0LWY1ODAtNDNhMS04ZjMwLWVkNjdkOTViY2IzM3xtcnQ9MTQzNTg3NzE4M3xtcmM9V09OfG13YT01MzcwOTQ5NTB8bXdiPTE1MDB8bWFwPTEzMjB8ZWxnPTF8bW9jPVVTRHxtb3I9MjY4fG1wYz1VU0R8bXByPTEwNTJ8bXBmPTEwMDB8bW1mPTEwMDB8bXBuZj0xMDAwfG1tbmY9MTAwMHxwY3Y9Mjh8bW89T1h8bXB1PTEwNTJ8bWNwPTEzMjB8bXdjPTUzNzE4NTgzOHxtd3A9NTM3MjcxMzQxfG13Y3I9NTM3NDA1MDUzfHVyPWtLQmN1UEtldnE",
+            "type":"html",
+            "ad_url":"<!-- BEGIN TAG - DO NOT MODIFY -->\n<script type=\"text/javascript\">\n//<![CDATA[\nepom_key = \"2782c62457779d3f187cf86f375a874c\";\nepom_channel = \"\";\nepom_code_format = \"ads-sync.js\";\nepom_ads_host = \"//www.adshost2.com\";\nepom_click = \"\";\nepom_custom_params = {};\n\ndocument.write(\"<script type='text\\/javascript' src='\"+(location.protocol == 'https:' ? 'https:' : 'http:') + \"//www.adshost2.com\\/js/show_ads.js'><\\/script>\");\n//]]>\n</script>\n<!-- END TAG -->"
+          }
+        ]
+      }
+    ]
+  }
+});

@@ -1,0 +1,75 @@
+
+/* BACKGROUND */
+::selection, .button, #home_icon, .tags li:hover, #flickrphotos_blog.thumbs li img:hover  {background-color: #6f9db2;}
+
+.blog-bar, #logotype, .button_down, #description, #filters li.active, #skill .bar, .flickr_title{background-color: #6f9db2;}
+
+ .menu_trigger.active, .mobileAreaMenu li, .services_tab.active, .newsletter{background-color: #6f9db2!important;;}
+
+
+/* BACKGROUND RGBA */
+.over {background-color: rgba(111,157,178,.9); }
+.ie8 .over {background-color: #6f9db2;}
+
+/* BORDER */
+.team_details {
+	border-top: 5px solid #6f9db2;
+}
+
+#footer {
+	border-top: 5px solid #6f9db2;
+}
+
+/* COLOR */
+a, /*#filters li:hover a,*/ .blog-boddy a:hover, .post-info .post-author:hover, .tweet_list a, .caption_color {color:#6f9db2;}
+.descripcion_services p {color:#6f9db2;}
+a.readmore:hover{
+    color:#ff3300;
+}
+
+/* PAGE TITLE */
+
+/*.page_title {background: #6f9db2 url('../../images/bg/titlepattern.png');}*/
+.page_title {background-color: #6f9db2;}
+
+
+.divider_title.about {
+	background-image: url(../../images/skins/blue/about_line.png);	
+}
+.divider_title.team {
+	background-image: url(../../images/skins/blue/team_line.png);	
+}
+.divider_title.portfolio {
+	background-image: url(../../images/skins/blue/portfolio_line.png);	
+}
+.divider_title.services {
+	background-image: url(../../images/skins/blue/services_line.png);	
+}
+.divider_title.blog {
+	background-image: url(../../images/skins/blue/blog_line.png);	
+}
+.divider_title.contact {
+	background-image: url(../../images/skins/blue/contact_line.png);	
+}
+
+.icon_views {
+	background-image: url(../../images/skins/blue/views.png);
+	background-repeat: no-repeat;
+	min-height: 40px;
+	background-position: center;
+
+}
+.icon_loves {
+	background-image: url(../../images/skins/blue/heart.png);
+	background-repeat: no-repeat;
+	min-height: 40px;
+	background-position: center;
+}
+
+.icons {margin-bottom:15px;}
+.icon_comments {
+	background-image: url(../../images/skins/blue/comment.png);
+	background-repeat: no-repeat;
+	min-height: 40px;
+	background-position: center;
+}

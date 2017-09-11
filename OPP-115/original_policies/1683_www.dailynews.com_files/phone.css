@@ -1,0 +1,67 @@
+#fd-device-phone {
+	display:			inline !important;
+}
+
+
+#cpf-overlay, #cpf-busy-spinner, #cpf-closeButton, #cpf-tickerTree {
+	display:			none !important;
+}
+
+#cpf-root {
+	left:				-200px; /* Not important cause this trumps inline style */
+}
+
+#cpf-viewbox-sidebar {
+	width: 				175px;
+	margin:				0px;
+	overflow-x:         hidden;
+	overflow-y:         auto;
+	background-color:	black;
+	box-shadow:			4px 4px 4px #888;
+	-moz-box-shadow:	4px 4px 4px #888;
+	webkit-box-shadow:	4px 4px 4px #888;
+	-khtml-box-shadow:	4px 4px 4px #888;
+	
+	border-radius:			0px 8px 8px 0px;
+	-moz-border-radius:		0px 8px 8px 0px;
+    -webkit-border-radius:	0px 8px 8px 0px;
+    -khtml-border-radius:	0px 8px 8px 0px;	
+}
+
+.cpf-viewbox-sidebar-button {
+	width:              45px;
+	height:				45px;
+	margin:				0px;
+	background-color:	inherit;
+}
+	
+.cpf-viewbox-sidebar-button-text {
+	display:            block !important;
+	position:			relative;
+	width:              120px;
+	height:				45px;
+	left:				45px;
+	margin:				0px;
+	line-height:        4.2;	
+	color:				white;
+	background-color:	inherit;
+/*
+	border-radius:			0px;
+	-moz-border-radius:		0px;
+    -webkit-border-radius:	0px;
+    -khtml-border-radius:	0px;
+*/		
+}
+
+#cpf-viewbox-feedback-tab {
+	bottom: 			0px;
+    width: 				45px;
+    height: 			39px;
+    background-color:	inherit;
+    background-image: 	url(../images/feedBackTab_small.png);    
+    background-repeat: 	no-repeat;
+}
+
+#cpf-save {
+    width: 				90%;
+}

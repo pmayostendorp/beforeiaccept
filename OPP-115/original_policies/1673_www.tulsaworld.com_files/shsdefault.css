@@ -1,0 +1,830 @@
+.shsLogo {display: none;}
+.shsMoreNews {display: none;}
+.shsSSX {display: none}
+.shsUSEnglish {display: none}
+.shsSTATSMatchCast {display: none}
+.shsOddsLink {display: none}
+
+#shsNavTable { width: 100%; margin: 10px auto; }
+#shsNavTable td,
+#shsNavTable td a:link, #shsNavTable td a:visited, #shsNavTable td a:hover, #shsNavTable td a, 
+#shsNavTable th
+	{ color: #000000; font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-weight: bold; text-align: center; vertical-align: middle; padding: 1px }
+#shsNavTable th { background-color: #999999; color: #ffffff; font-size: 16px }
+.shsHomeLink { visibility: collapse; display: none }
+
+#shsBody { font-family: Arial,Helvetica,sans-serif; font-size: 12px; vertical-align: top }
+#shsBody h2 { font-size: 16px; text-align: center; }
+
+#shsTimestamp { font-size: 9px; padding: 0px 5px; text-align: left }
+.shsTableLegend { font-size: 9px; padding: 0px 5px; text-align: left; font-style: italic }
+#shsInset .shsTableLegend {text-align: center; padding-bottom: 3px}
+
+.shsCopyrightText {font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 10px; padding-top: 10px; vertical-align: middle; text-align: left; clear: both; line-height: 15px}
+
+.shsTable { width: 100%; margin: auto; }
+.shsHeadTable { width: 100%; margin: auto; }
+.shsGriddedTable { width: 100%; margin: auto; background: #cccccc }
+
+
+.shsTable td, .shsTable th { font-size: 12px; vertical-align: middle }
+.shsHeadTable td, .shsHeadTable th { font-size: 12px; vertical-align: middle }
+
+.shsTableTtlRow { background-color: #999999; color: #ffffff; }
+.shsTableTtlRow td, .shsTableTtlRow th { font-size: 14px; font-weight: bold; text-align: center }
+.shsTableTtlRow td.shsTeamCol {width: 50%; text-align: left}
+.shsTableTtlRow td a, .shsTableTtlRow th a {color: #ffffff; text-decoration: none }
+.shsTableTtlRow td a:link, .shsTableTtlRow th a:link,
+.shsTableTtlRow td a:visited, .shsTableTtlRow th a:visited,
+.shsTableTtlRow td a:hover, .shsTableTtlRow th a:hover,
+.shsTableTtlRow td a, .shsTableTtlRow th a
+	{ text-decoration: underline }
+.shsTableTtlRow .shsNamD {text-align: left}
+.shsTableTtlRow .shsNumD {text-align: right}
+.shsTableSubttlRow .shsNamD {text-align: left}
+.shsTableSubttlRow .shsNumD {text-align: right}
+
+.shsTableSubttlRow { background-color: #cccccc; color: #000000; }
+.shsTableSubttlRow td, .shsTableSubttlRow th { font-size: 13px; font-weight: bold; text-align: center }
+.shsTableSubttlRow td a, .shsTableSubttlRow th a {color: #000000; text-decoration: none }
+.shsTableSubttlRow td a:hover, .shsTableSubttlRow th a:hover { text-decoration: underline }
+.shsColTtlRow { background-color: #eeeeee; color: #000000; }
+.shsColTtlRow td, .shsColTtlRow th { font-weight: bold; text-align: center }
+.shsColTtlRow td a, .shsColTtlRow th a {color: #000000; text-decoration: none }
+.shsColTtlRow td a:hover, .shsColTtlRow th a:hover { text-decoration: underline }
+.shsTableSubttlRow td.shsNamD {text-align: left}
+.shsColTtlRow td.shsNamD {text-align: left}
+
+.shsTableBowlttlRow td { background-color: #000000; color: #ffffff; }
+.shsTableBowlttlRow td, .shsTableBowlttlRow th { font-size: 13px; font-weight: bold; text-align: center }
+.shsTableBowlttlRow td a, .shsTableBowlttlRow th a {color: #ffffff; text-decoration: none }
+.shsTableBowlttlRow td a:hover, .shsTableBowlttlRow th a:hover { text-decoration: underline }
+
+.shsTablePlayoffttlRow td { background-color: #000000; color: #ffffff; }
+.shsTablePlayoffttlRow td, .shsTablePlayoffttlRow th { font-size: 13px; font-weight: bold; text-align: center }
+.shsTablePlayoffttlRow td a, .shsTablePlayoffttlRow th a {color: #ffffff; text-decoration: none }
+.shsTablePlayoffttlRow td a:hover, .shsTablePlayoffttlRow th a:hover { text-decoration: underline }
+
+.shsRow0Row { background-color: #ffffff; text-align: left; }
+.shsRow1Row { background-color: #eeeeee; text-align: left; }
+.shsSpacerRow { }
+
+.shsNamD { text-align: left }
+.shsTotD { text-align: center }
+.shsNumD { text-align: right }
+
+.shsColTtlRow td.shsTotD { text-align: center }
+.shsColTtlRow td.shsNumD { text-align: right }
+
+.warning { color: #ff0000 }
+
+#shsBody select, #shsBody td select, #shsBody input, #shsBody td input { font-size: 10px }
+
+table.shsLinescore { border: 1px solid #999999; }
+table.shsLinescore td { padding: 0px }
+table.shsLinescore td table { width: 100%; background-color: #ffffff; }
+/* Previously 5px but extra innings made it go over */
+table.shsLinescore table td { padding-left: 4px; padding-right: 4px }
+
+#shsRefreshControl { font-size: 11px; padding-left: 10px }
+#shsWeekNav { font-size: 11px; padding-left: 10px; clear: both;}
+.shsLiveNav { width: 100%; font-size: 11px; text-align: center; margin: auto;  }
+.shsPageNav { font-size: 12px }
+
+#shsScoreboard .shsLeaderCat, #shsPreview .shsLeaderCat, #shsRecap .shsLeaderCat, #shsCBKScoreboard .shsLeaderCat,
+#shsScoreboard .shsLeader, #shsPreview .shsLeader, #shsRecap .shsLeader, #shsCBKScoreboard .shsLeader
+	{ font-size: 11px; padding-left: 10px }
+#shsScoreboard .shsLeaderTtl, #shsPreview .shsLeaderTtl, #shsRecap .shsLeaderTtl
+	{ font-weight: bold; font-size: 12px; padding-top: 5px }
+
+.shsStatCategory { padding: 10px 0px; clear: both }
+.shsStatCatForTeam { width: 48%; display: inline; float: left; padding: 0px 5px }
+#shsScoringSummary { width: 48%; display: inline; float: left; padding: 0px 5px }
+#shsTeamStats { width: 48%; display: inline; float: left; padding: 0px 5px }
+.shsGameDetails { width: 100%; text-align: left; clear:both; font-size: 12px; padding: 10px 5px }
+
+.shsGameWinner, .shsGameWinner td { font-weight: bold }
+
+#shsLeaders .shsLeaderRow td { font-size: 11px }
+#shsLeaders .shsLeaderRow td.shsLeaderConf { font-size: 11px }
+#shsLeaders .shsLeaderRow select { font-size: 11px }
+#shsLeaders .shsMoreLeaders { text-align: center; background-color: #cccccc; color: #000000;}
+#shsLeaders .shsMoreLeaders form { margin-top:0px; margin-bottom:0px; }
+.shsLeadersDate {font-weight: bold; margin-left: 4px;}
+
+/* New 02/08/2006 */
+#shsBody .shsStoryLabel { font-weight: bold }
+#shsBody .shsHeadline { font-weight: bold; font-size: 20px }
+#shsFront .shsHeadline { font-size: 20px }
+#shsBody #shsBodyLeadin { font-weight: bold }
+#shsBody #shsByline   { margin-top: 0em; margin-bottom: 0em; display: inline }
+#shsBody #shsByTitle { font-style: italic; margin-top: 0em; margin-bottom: 0em; display: inline }
+#shsRecap .shsNotes { font-style: italic }
+#shsBody #shsStoryDate { text-align: right; font-style: italic }
+#shsBody .shsByDesc {display: inline}
+/* New 02/08/2006 */
+
+
+
+#shsBody #shsInset { float: right; width: 300px; display: inline; text-align: center; margin-left: 10px }
+#shsBody #shsInset table.shsLinescore
+	{ width: auto; margin: auto }
+#shsBody #shsInset .shsBulletList,
+#shsBody #shsInset .shsHeadlineList,
+#shsAPStory .shsHeadlineList
+	{ text-align: left; background-color: #eeeeee; border: 1px dotted black; margin: 10px 0px; padding: 0px 8px }
+
+/* OLD LOGO */
+#shsBody #shsInset .shsBulletList { width: 260px; background: #eeeeee url(http://hosted.stats.com/config/according_to_stats.gif) no-repeat center top; padding-top: 35px; }
+
+/*######################################################*/
+/* New Changes made for According to STATS section */	
+/* 04/16/09 - medelnant */
+/* NEW LOGO */
+#shsBody #shsInset .shsBulletList h2, #shsInset .shsHeadlineList h2 { display: none }
+#shsBody #shsInset .shsBulletList ol, #shsBody .shsHeadlineList ul { padding-left: 0px; margin-left: 10px }
+#shsBody #shsInset .shsBulletList li, #shsBody .shsHeadlineList li { list-style: disc outside; padding-left: 0px; margin-left: 0px }
+#shsBody #shsInset .shsBulletList div.shsAccordingDefault { display: none; width: 260px;background: #eeeeee url(/config/according_to_stats_default.gif) no-repeat center top; height: 40px;text-indent: -9999px;margin: 10px 0 0 0;}
+#shsBody #shsInset .shsBulletList a.shsTwit { display: block; width: 265px;background: #eeeeee url(/config/according_to_stats_twitter.gif) no-repeat left top; height: 40px;text-indent: -9999px;margin: 0px 0 0 -5px;}
+/* End new changes 04/16/09 */
+/*#####################################################*/
+
+
+/*#shsFront .shsHeadlineList { width: 280px; text-align: left; background: #eeeeee url(http://hosted.stats.com/config/headlines_header.gif) no-repeat left top; border: 2px solid #005B94; padding: 21px 8px 0px 8px }*/
+#shsFront td, #shsFront th { font-size: 12px }
+
+
+#shsFront .shsHeadlineList { width: 280px; text-align: left; background: #eeeeee; border: 2px solid #005B94; padding: 0px 0px 0px 0px }
+#shsFront .shsHeadlineList li { margin: 0px 8px 0px 8px }
+#shsFront .shsHeadlineList h2 { display: block; margin: 0px; width: 280px; text-align: center; background-color: #005B94; color: #ffffff}
+
+.shsStoryPhoto { margin: 5px; float: right; display: inline; width: 300px; text-align: center; clear: right }
+.shsStoryPhoto .shsPhotoCaption { margin: 2px 20px; text-align: center }
+.shsPhoto {  }
+.shsPhotoCaption { font-size: 10px; font-style: italic }
+.shsFrontPhoto { margin: 5px; float: right; display: inline; width: 256px; text-align: center; clear: right }
+
+.shsCalMonth { background-color: #999999; color: #ffffff; }
+.shsCalMonth td, .shsTableTtlRow th { text-align: center; font-size: 14px; font-weight: bold; width: 120px }
+.shsCalMonthPrev { width: 18px }
+.shsCalMonthNext { width: 18px }
+.shsCalMonthName { background-color: #999999; color: #ffffff; }
+.shsCalDays{ background-color: #eeeeee; color: #000000; }
+.shsCalDays td, .shsCalDays th { text-align: center; font-size: 10px }
+.shsCalDate { background-color: #ffffff; }
+.shsCalDate td, .shsCalDate td a:link, .shsCalDate td a:visited, .shsCalDate td a:hover, .shsCalDate td a
+{ text-align: center; font-size: 10px; text-decoration: none }
+
+.shsGlossaryTerm { font-weight: bold }
+.shsGlossaryDefinition { }
+
+#shsBody #shsOdds .shsTable .shsHeadTable { width: auto }
+ 
+.shsWeekNav td {font-size: 12px;}
+.shsWeekNav table {width: 100%; text-align: center;}
+
+
+.shsWeekNav-on {font-weight: bold;}
+.shsWeekNav-on a { color: #000000; text-decoration: none;}
+
+#shsFront .shsHeadline { font-size: 20px }
+#shsFront .shsSmallHeadline { font-size: 18px; font-weight: bold; }
+#shsFront .shsHLSpacer { height: 1px; background-color: #efefef }
+#shsFront .shsSmallHL {vertical-align: top; font-size: 30px}
+#shsFront .shsSmallHLInfo {vertical-align: middle; font-size: 12px}
+#shsFront .shsHLPhoto, #shsTeamPages .shsHLPhoto {float: left; margin-right: 5px}
+#shsFront .shsCollapseIcon { text-decoration: none; color: #000000}
+#shsFront .shsCollapse { text-decoration: none; color: #000000}
+
+#shsMoreNews .shsHeadline { font-size: 14px }
+#shsMoreNews .shsSmallHeadline { font-size: 18px; font-weight: bold; }
+#shsMoreNews .shsHLSpacer { height: 1px; background-color: #efefef }
+#shsMoreNews .shsSmallHL {vertical-align: top; font-size: 30px}
+#shsMoreNews .shsSmallHLInfo {vertical-align: middle; font-size: 12px}
+#shsMoreNews .shsHLPhoto {float: left; margin-right: 5px}
+#shsMoreNews .shsCollapseIcon { text-decoration: none; color: #000000}
+#shsMoreNews .shsCollapse { text-decoration: none; color: #000000}
+#shsMoreNews #shsPageNav {text-align: center;}
+#shsMoreNews .shsPhotoCaption {display: none}
+#shsMoreNews .shsHeadline { font-size: 18px; font-weight: bold; }
+#shsRecentStories #shsPageNav td {font-size: 10pt}
+#shsBody #shsRecentStories h2 {margin-bottom: 10px}
+#shsBody #shsRecentStories {font-weight: bold}
+#shsBody #shsRecentStories ul {margin-bottom: 15px}
+#shsBody #shsRecentStories ul li {list-style: square; margin-left: 15px; border-bottom: 1px solid #ccc}
+#shsBody #shsRecentStories ul li a {font-weight: normal}
+
+#shsDraftRefresh {text-align: center; margin: auto;}
+#shsDraftNews {background-color: #efefef;  width: 500px; margin: auto;text-align: center; margin-top: 8px}
+#shsDraftNews h4 {text-align: center; font-size: 14px; font-weight: bold; line-height: 30px}
+#shsDraftNews li {list-style: disc; margin-left: 20px; margin-right: 10px; padding: 5px 0px; border-top: 1px dotted #ccc; text-align: left;}
+
+#shsMastheadScoreboard { padding: 10px 0px; text-align: center }
+#shsMastheadScoreboard .shsTable { width: 550px }
+#shsMastheadScoreboard table { width: 100%; text-align: center }
+#shsMastheadScoreboard tr.shsTableTtlRow td { border: 0px; font-size: 12px; padding: 2px 4px }
+#shsMastheadScoreboard td { padding: 2px; vertical-align: middle; text-align: left }
+#shsMastheadScoreboard td.shsTotD { text-align: center }
+#shsMastheadScoreboard td.shsNumD { text-align: right }
+#shsMastheadScoreboard .shsMastheadScore { border: 2px solid #cccccc; width: 30px; padding: 5px; font-weight: bold; font-size: 20px; text-align: center; vertical-align: middle }
+#shsMastheadScoreboard .shsTimeoutCount { font-weight: bold; font-size: 11px; text-align: center}
+#shsMastheadScoreboard .shsLiveNav { padding: 2px }
+#shsAwayMastheadLogo { text-align: right }
+#shsAwayMastheadLogo img { float: right }
+#shsHomeMastheadLogo { text-align: left }
+#shsHomeMastheadLogo img { float: left }
+
+
+/* Timezone Display/Hiding */
+.shsTimezone {display: none} /* catch-all to hide anything not shown */
+.shsETZone {display: inline} /* Eastern Time (GMT-5) */
+.shsCTZone {display: none} /* Central Time (GMT-6) */
+.shsMTZone {display: none} /* Mountain Time (GMT-7) */
+.shsPTZone {display: none} /* Pacific Time (GMT-8) */
+.shsGMTZone {display: none} /* Greenwich Mean Time */
+.shsCSTZone {display: none} /* China Standard Time (GMT+8) */
+.shsCETZone {display: none} /* Central Europe Time (GMT+1) */
+.shsBSTZone {display: none} /* British Standard Time (GMT+1) */
+.shsJSTZone {display: none} /* Japanese Standard Time (GMT+1) */
+
+
+.shsPlayerName td, td.shsPlayerName {font-size: 20px; font-weight: bold}
+.shsTeamName td {font-size: 16px; font-weight: bold}
+.shsTeamName {font-size: 16px; font-weight: bold}
+
+.shsPlayerPageNav {text-align: center; padding-top: 0px; margin-bottom: 10px; border-bottom: 1px solid #ccc;padding-bottom: 5px}
+.shsPlayerPageNav strong {background-color: #fff; padding-bottom: 1px; margin: 0px}
+.shsPlayerPageNav a {margin: 0px}
+
+.shsPlayerPageNav strong {
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   padding: 2px 25px 6px 25px;
+   margin: 0px 3px 10px 3px;
+   color: #000000
+}
+
+.shsPlayerPageNav a {
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   padding: 2px 25px 5px 25px;
+   margin: 0px 3px 10px 3px;
+   background-color: #ececec;
+   /*color: #898989 !important;*/
+   font-weight: bold;
+}
+
+.shsTeamPageNav {text-align: center; padding-top: 0px; margin-bottom: 10px; border-bottom: 1px solid #ccc;padding-bottom: 5px}
+.shsTeamPageNav strong {background-color: #fff; padding-bottom: 1px; margin: 0px}
+.shsTeamPageNav a {margin: 0px}
+
+.shsTeamPageNav strong {
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   padding: 2px 25px 6px 25px;
+   margin: 0px 3px 10px 3px;
+   color: #000000
+}
+
+.shsTeamPageNav a {
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   padding: 2px 25px 5px 25px;
+   margin: 0px 3px 10px 3px;
+   background-color: #ececec;
+   /*color: #898989 !important;*/
+   font-weight: bold;
+}
+
+
+/* .shsPlayerPageNav {text-align: center}
+.shsPlayerPageNav strong {
+   border-top: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   padding: 2px 5px 0px 5px;
+   margin: 0px 0px 0px 10px;
+   color: #000000
+}
+
+.shsPlayerPageNav a {
+   border-top: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   padding: 2px 5px 0px 5px;
+   margin: 0px 0px 0px 10px;
+   background-color: #cfcfcf;
+} */
+
+.shsPlayerPageNav .shsPlayerStatsTab {display: inline; border-bottom: 0px;}
+.shsPlayerPageNav .shsPlayerSplitsTab {display: inline; border-bottom: 0px;}
+.shsPlayerPageNav .shsPlayerLogsTab {display: inline; border-bottom: 0px;}
+.shsPlayerPageNav .shsPlayerNewsTab {display: inline; border-bottom: 0px;}
+.shsPlayerPageNav .shsPlayerFieldTab {display: inline; border-bottom: 0px;}
+
+.shsTeamPageNav .shsTeamStatsTab {display: inline; border-bottom: 0px;}
+.shsTeamPageNav .shsTeamLogsTab {display: inline; border-bottom: 0px;}
+.shsTeamPageNav .shsTeamSplitsTab {display: inline; border-bottom: 0px;}
+
+.shsTeamSchedNav {text-align: center; padding-top: 0px; margin-bottom: 10px; border-bottom: 1px solid #ccc;padding-bottom: 5px}
+.shsTeamSchedNav strong {background-color: #fff; padding-bottom: 1px; margin: 0px}
+.shsTeamSchedNav a {margin: 0px}
+
+.shsTeamSchedNav strong {
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   padding: 2px 5px 6px 5px;
+   margin: 0px 3px 10px 3px;
+   color: #000000
+}
+
+.shsTeamSchedNav a {
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   padding: 2px 5px 5px 5px;
+   margin: 0px 3px 10px 3px;
+   background-color: #ececec;
+   /*color: #898989 !important;*/
+   font-weight: bold;
+}
+
+/*Fantasy Projections*/
+.shsFantasyProjections .shsSearchBox {text-align: right;margin:5px 0;}
+.shsFantasyProjections .shsSearchBox .shsSearchField {height: 25px;font-size: 12px;padding:0 5px;width:150px;}
+.shsFantasyProjections .shsSearchBox .shsSearchBtn {border: 0;height:29px;background:#B22124;color:#fff;font-size:11px;width:50px;}
+.shsFantasyProjections .shsSearchBox .shsSearchBtn:hover {cursor:pointer;background:#9c1c1e;}
+.shsFantasyProjections .shsMobile {display:none;}
+.shsFantasyProjections .shsNonMobile {display:block;}
+.shsFantasyProjections .fullTmName {display:inline-block;}
+.shsFantasyProjections .abbvTmName {display:none;}
+/*.shsFantasyProjections .shsTable.shsBorderTable tr.shsTableTtlRow td.shsNumD {cursor:pointer;}
+.shsFantasyProjections .shsTable.shsBorderTable tr.shsTableTtlRow td.shsNumD:hover {background:#5e0b08;}
+.shsFantasyProjections .shsTable.shsBorderTable tr.shsRow0Row:hover td, .shsFantasyProjections .shsTable.shsBorderTable tr.shsRow1Row:hover td {background:#e5e5e5;}*/
+.shsPositionNav {background:#efefef;line-height: 20px;height: 44px;text-align: center;border-bottom: 2px solid #B22124;display: block;width: 100%;margin: 0.5em 0;clear: both;}
+.shsPositionNav a, .shsPositionNav strong {min-width: 44px;height: 44px;line-height: 44px;display: inline-block;vertical-align: middle;text-align: center;float: left;padding: 0 .5em;}
+.shsPositionNav strong {background: #B22124;color: #fff;}
+.shsPositionNav a {color: #B22124;}
+.shsPositionNav a:hover {text-decoration: underline;background: #e5e5e5;}
+
+.shsTeamSchedNav .shsTeamSchedTab {display: inline; border-bottom: 0px;}
+.shsTeamSchedNav .shsTeamSchedTab {display: inline; border-bottom: 0px;}
+.shsTeamSchedNav .shsTeamSchedTab {display: inline; border-bottom: 0px;}
+
+.shsTopPlayerNews {padding-bottom: 10px}
+.shsTopPlayerNews .shsMoreNewsItem {display: none}
+.shsTopPlayerNews .shsNewsItem {display: none}
+.shsMoreNewsItem td {border-top: 1px solid black}
+.shsNewsItem td {border-top: 1px solid black}
+.shsTableTtlRow .shsSorted {background-color: #5e0b08; color: #ffffff}
+.shsSorted {background-color: #eeeeee; color: #000000}
+
+.shsOfficialBox {width: 100%; font-style: italic; text-align: center; font-weight: bold; display: none}
+
+.shsMiniRowSpacer {line-height: 0px}
+
+.shsScoreboardSpacerCol {width: 1%}
+.shsScoreboardCol {width: 49%; vertical-align: top}
+
+/* NEW 7/14/2008 */
+/*#shsFront #shsInteractivesList { width: 280px; text-align: left; background: #eeeeee; border: 2px solid #005B94; padding: 0px 0px 0px 0px }*/
+#shsFront #shsInteractivesList { width: 280px; text-align: left; padding: 0px 0px 0px 0px }
+#shsFront #shsInteractivesList ul {padding-left: 10px}
+#shsFront #shsInteractivesList h2 { display: block; margin: 0px; width: 280px; text-align: center; background-color: #005B94; color: #ffffff}
+#shsFront #shsInteractivesList div a { margin: 8px 8px 0px 8px; vertical-align: middle; display: block; height: 32px; line-height: 32px; }
+#shsFront #shsInteractivesList div img { float: left; margin-right: 5px }
+/* END NEW 7/14/2008 */
+
+
+.shsIFBLgName {display: none}
+
+.shsInjDate {width: 12%}
+.shsInjName {width: 28%}
+.shsInjStatus {width: 60%}
+
+.shsTableTtlRow td.shsTeamCol {width: 50%; text-align: left}
+
+#shsColumnists {font-size: 11px;}
+.shsWritersTable {border: 3px solid #ccc; width: 100%}
+.shsWriterName {font-size: 20px; color: #fff; font-weight: bold; border-bottom: 2px solid #ccc;background: #cd242b;padding: 0 0 1px 5px;}
+#shsColumnists ul {width: auto;margin: 0;padding: 0;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;margin: 2px 0 2px 0;}
+#shsColumnists ul li {margin: 0 0 0 18px;padding: 8px 0 8px 0px;border-bottom: 1px solid #ccc;}
+#shsColumnists ul li a {color: #4a73a1;}
+.shsWritersTable form {margin: 0;padding: 0;background: transparent;height: 40px;padding: 10px 0 0 0;text-align: center;border-top: 2px solid #ccc;border-bottom: 2px solid #ccc;}
+#shsColumnists .shsWritersTable form select {padding: 3px;width: 200px;font-size: 11px;border: 2px solid #ccc;}
+
+.shsMiniCopyright {padding-top: 2px}
+
+#shsCBKScoreboard .shsLeaderTtl, #shsWCBKScoreboard .shsLeaderTtl { font-weight: bold; font-size: 12px; padding-top: 0px }
+
+#shsFrontNews .shsMiniCopyrightText, #shsFront .shsMiniCopyrightText {display: none}
+#shsFrontNews .shsMiniCopyright img, #shsFront .shsMiniCopyright img {display: none}
+
+#shsFront .shsFrontLeaders {background-color: #ccc}
+
+
+
+
+/* TEAM PAGE STYLES */
+#shsTeamPages .shsTeamHeadlines {margin-right: 5px}
+#shsTeamPages .shsHeadlineList { width: 280px; text-align: left; background: #eeeeee; border: 2px solid #005B94; padding: 0px 0px 0px 0px; font-size: 9pt }
+#shsTeamPages .shsHeadlineList li { margin: 0px 8px 0px 8px }
+#shsTeamPages .shsHeadlineList h2 { display: block; margin: 0px; width: 280px; text-align: center; background-color: #005B94; color: #ffffff; line-height: 20px}
+
+#shsTeamPages p {font-size: 10pt}
+#shsBody.shsTeamPage h2, #shsTeamPages h2 { line-height: 50px }
+#shsTeamPages .shsHeadlineList, #shsTeamPages .shsHeadlineList h2 { width: 100% }
+#shsTeamPages .shsTeamInjury .shsPageNav {display: none}
+/*#shsTeamPages #shsTimestamp {display: none}*/
+#shsTeamPages .shsTeamTrans .shsPageNav {display: none}
+#shsTeamPages .shsTeamTrans h2{display: none}
+#shsTeamPages .shsHeadlineList, #shsTeamPages .shsHeadlineList h2 { width: 100% }
+#shsTeamPages .shsTeamName {font-weight: bold; font-size: 16px}
+
+#shsTeamPages .shsTeamSched {border: 1px solid #999}
+#shsTeamPages .shsTeamStandings {border: 1px solid #999;}
+#shsTeamPages .shsTeamLeaders {border: 1px solid #999}
+#shsTeamPages .shsTeamTransInj {border: 1px solid #999}
+#shsTeamPages .shsTeamTransInj {border: 1px solid #999}
+#shsTeamPages .shsTeamPolls {border: 1px solid #999}
+#shsTeamPages #shsBody {padding: 0; width: auto}
+
+.shsStorySport {font-weight: bold}
+#shsInset .shsStorySport {display: none}
+
+.shsLinescoreSpacer {width: 1%}
+
+#shsTeamPages div.gamedate {background-color: #000; color: #fff; line-height: 20px; font-weight: bold; padding-left: 5px; font-size: 14px; display: none}
+#shsTeamPages .gamedate {background: #000; text-align: left; padding-left: 5px; color: #fff}
+#shsTeamPages .shsMiniCopyright img, #shsTeamPages .shsMiniCopyrightText {display: none} 
+#shsTeamPages #shsBody {width: 100%}
+
+.shsH2HTable {background-color: #ccc}
+
+
+/*#####################################
+Hosted Cleanup Styles
+#####################################*/
+/*MastHead H2 display + style*/
+#shsBody h2 {margin: 0px 0; padding: 0 0px; text-align: left;}
+#shsBody  .shsIFBLgName {display: inline;}
+#shsBody  .h2PageTitle {font-size: 20px; color: #3d3d3d; border-bottom: 2px solid #ececec; display: block; padding: 5px 0; font-weight: bold;} 
+
+/*Seperate Table title for sections within layout*/
+#shsBody h2.shsTableTitle {margin: 0;padding: 0;font-size: 16px;border-bottom: 1px solid #ccc;text-align: left;padding: 0 0 0 0px;color: #000;margin: 0 0 2px 0;}
+
+/*Default Data Table*/
+.shsBorderTable {border-left: 1px solid #ccc;border-top: 1px solid #ccc;}
+.shsBorderTable .shsTableTtlRow td , .shsTableTtlRow th {font-size: 12px;line-height: 18px;}
+.shsBorderTable .shsTableSubttlRow td {}
+.shsBorderTable  td{border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;padding: 3px;}
+.shsBorderTable  th{border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;padding: 3px;}
+.shsBorderTable .shsColTtlRow td {font-size: 12px;line-height: 18px;}
+.shsBorderTable .shsColTtlRow td a {color: #fff;}
+
+/*Legend Table*/
+.shsPageLegendTable {font-size: 11px;color: gray;margin: 0 0 10px 0;width: 150px;}
+.shsPageLegendTable td {}
+.shsPageLegendTable .shsTableTtlRow td {background: #ccc; border-color: #ccc; }
+.shsPageLegendTable .shsTotD { background: #ccc; border-color: #9a9a9a; width: 10%; color: #393939; }
+.shsPageLegendTable .shsTableTtlRow .shsTotD {color: #fff;}
+.shsPageLegendTable .shsNamD {padding: 0 0 0 10px; width: 90%; background: url(http://hosted.stats.com/images/legend_rowTile.gif) 0 0 repeat-x;}
+
+/*Relative Body*/
+#shsBody,
+#shsIFBTeamstats {position: relative;}
+
+.shsFeatMastHead {position: relative;}
+
+/*New SubNav Container*/
+.shsSubNav {position: absolute; top: 0; right: 0; border-bottom: 2px solid #ececec;margin: 0 2px 2px 2px; text-align: right;}
+.shsSubNav a {padding: 0 5px;}
+
+/*Description Box*/
+div.shsLeaderDesc {padding: 5px;margin: 0 0 0px 0;font-style: normal;font-size: 11px;color: gray;}
+
+/*Driver Info Page - nascar*/
+.shsDriverInfo td {vertical-align: top;}
+.shsCarNumber {font-size: 25px;height: 50px;line-height: 50px;width: 50px;border: 1px solid #ccc;margin: 0 5px 0 0;text-align: center;}
+
+/*Sport Masthead*/
+
+.shsSportMastHead .shsPlayerHeadShot {width: 85px; vertical-align: middle;}
+.shsPlayerStatBoxTD {width: 25%;}
+#shsPlayerStatBox {text-align: center; width: 100%; margin: 3px 0 0 0;}
+#shsPlayerStatBox td {text-align: center;	font-size: 11px !important;}
+.shsPlayerMastHeaderContainer {padding: 5px 0 0 0;}
+html .shsTotD {text-align: center !important;}
+.shsPlayerBioInfo {}
+.shsPlayerBioInfo td {font-size: 11px !important;}
+.shsPlayerBioInfo td strong {font-size: 11px !important;}
+html .shsPlayerBioInfo #shsPlayerStatBox td {border-right: 1px solid #ccc !important; border-bottom: 1px solid #ccc !important; text-align: center !important;}
+
+.shsSportMastHead {text-align: left;width: 100%;border-bottom: 1px solid #ccc;padding: 3px 0;}
+.shsSportMastHead td {vertical-align: top;text-align: left;}
+.shsSportMastHead .shsTable {width: auto; margin: 0 0 0 0;}
+.shsSportMastHead .shsTable  td {text-align: left;vertical-align: top;padding: 3px;}
+.shsSportMastHead .shsPlayerHeadShot {width: 85px;/*display: none;*/}
+#shsBody .shsSportMastHead  .shsPlayerBasicInfo {font-size: 20px;font-weight: bold;line-height: 24px;}
+.shsSportMastHead  .shsPlayerBasicInfo{border: none;}
+.shsSportMastHead .shsPlayerName {color: #555;}
+.shsSportMastHead .shsPlayerPosition {font-weight: normal;font-size: 16px;}
+.shsSportMastHead .shsPlayerBioInfo {line-height: 23px;}
+.shsSportMastHead .shsPlayerBioInfo  td{ padding: 0 15px 0 0;border: none;}
+.shsSportMastHead .shsPlayerBioInfo  strong {color: #6e6e6e;font-size: 13px;}
+
+.shsContentDivider {border-top: 3px solid #555;width: 100%;}
+
+/*ScoreBoard MastHead*/
+.shsScoreboardMasthead {position: relative;padding-bottom: 18px;}
+.shsScoreboardMasthead .h2PageTitle {margin: 0 0 2px 0;}
+
+.shsScoreboardMasthead #shsWeekNav {position: absolute;font-size: 11px;}
+
+.shsScoreboardMasthead #shsRefreshControl {padding: 0 0 2px 0;margin: 0 0 2px 0;font-size: 10px;text-align: right; padding: 3px; position: absolute; top: 40px; right:5px;}
+#shsCBKScoreboard .shsScoreboardMasthead .shsPageNav {padding: 0 0 2px 0;margin: 0 0 2px 0;font-size: 10px;text-align: right; padding: 3px; position: absolute; top: 40px; right:5px;}
+	
+.shsScoreboardMasthead .shsCalendarDiv {position: absolute; top: 0; right: 0; margin: 0 0 0 0; background: #fff;}
+.shsScoreboardMasthead .shsCalendar {border-left: 1px solid #ccc; border-top: 1px solid #ccc;}
+.shsScoreboardMasthead .shsCalendar td {text-align: center; font-size: 10px;}
+.shsScoreboardMasthead .shsCalMonth td {text-align: center;border: none;border-right: 1px solid #ccc;}
+.shsScoreboardMasthead .shsCalMonth td table td {border: none;color: #fff;font-weight: bold;}
+.shsScoreboardMasthead .shsCalMonth td a {color: #fff;text-decoration: none;}
+.shsScoreboardMasthead .shsCalDays  td{font-weight: bold;border-bottom:1px solid #ccc;border-right: 1px solid #636363;color: #fff; background: #3D3D3D;}
+.shsScoreboardMasthead .shsCalDays td.shsLast {border-right: 1px solid #ccc;}
+.shsScoreboardMasthead .shsCalDate td {border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;}
+.shsScoreboardMasthead .shsCalDays  td, .shsCalDate td {padding: 2px;}
+#shsBody .shsScoreboardMasthead .shsCalMonth td.shsCalMonthNext a {color: #fff}
+#shsBody .shsScoreboardMasthead .shsCalMonth td.shsCalMonthPrev a {color: #fff}
+
+#shsCalendarComponent {position: absolute; top: 11px; right: 5px; margin: 0; padding: 0; text-align: right; width: 75px;}
+#shsCalendarComponent li {list-style: none;}
+#shsCalendarComponent #shsCalendarLink a.shsToggleLink{text-decoration: none; background: url(http://hosted.stats.com/mlb/calendar.gif) 0 0 no-repeat; padding: 0 0 0 20px; height: 16px; line-height: 16px; display: block; font-weight: bold;}
+#shsCalendarComponent #shsActiveCalendar {display: none;}
+
+.shsPageNav {
+position:absolute;
+right:5px;
+top:0px;
+}
+
+#shsTeamPages div.gamedate {display: block}
+
+.shs_scheduleNav {
+	position: relative;width: 525px;
+}
+.shs_scheduleNav table td {
+}
+.shs_scheduleNav ul {
+	margin: 0;
+	padding: 0;
+}
+.shs_scheduleNav ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0 !important;
+	float: left;
+	border: 1px solid #dddddd;
+	height: 20px;
+	background: url(http://hosted.stats.com/fb/graphics/gradient_tile_x.gif) repeat-x;
+	position: relative;
+	font-size:12px;
+}
+.shs_scheduleNav ul.shs_group li {
+	border-right: none;
+}
+.shs_scheduleNav ul.shs_group li.shs_last {
+	border-right: 1px solid #dddddd;
+}
+.shs_scheduleNav ul li a {
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 3px;
+	text-decoration: none;
+	color: #545454;
+}
+#shsBody .shs_scheduleNav ul li:hover a,
+#shsBody .shs_scheduleNav ul li a.shs_active	{
+	background: #585858;
+	color: #fff;
+	text-decoration: underline;
+}
+.shs_scheduleNav ul li ul {
+	margin: 0;
+	padding: 0 5px;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 120px;
+	background: #585858;
+	display: none;
+}
+.shs_scheduleNav ul li ul li {
+	float: none !important;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border-bottom: 1px dotted #dddddd;
+	text-align: right;
+}
+.shs_scheduleNav ul li:hover li a {
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	text-decoration: none;
+}
+.shs_scheduleNav ul li ul li:hover a {
+	color: #fff;
+	text-decoration: underline;
+}
+.shs_scheduleNav ul li:hover ul {
+	display: inline-block;
+}
+
+.shsBorderTable td.shsGameLogsTD {padding: 0; border: 0}
+.shsBorderTable td.shsGameLogsTD table {border: 0}
+
+.shsYearNav {display: none;}
+
+/*#################################################
+NEW MASTHEAD TABLE*/
+
+/*
+#shsPageMastHeadBlock {background: transparent; border-bottom: 2px solid #efefef;}
+#shsPageMastHeadBlock td {padding: 5px 0 3px 0;}
+#shsPageMastHeadBlock .shsLeftCol {vertical-align: bottom; text-align: left;}
+#shsPageMastHeadBlock .shsRightCol {vertical-align: top; text-align: right;}
+.h2PageTitle {width: auto; height: auto; font-size: 20px; color: #3d3d3d; display: block;font-weight: bold; position: inherit;bottom: 3px;left: 0;}
+*?
+/*Clears Margins and Padding from elements inside shsPageNav : add elements that are not accounted for*/
+/*
+.shsPageNav  input, .shsPageNav select, .shsPageNav form{margin: 2px 0; padding: 0;}
+*/
+
+/*END NEW MASTHEAD TABLE 
+#################################################*/
+
+.shsHeaderNav {text-align: center; background: #efefef; border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; padding: 3px 5px;}
+
+
+/* STORY PAGE STYLES - START */
+#shsAPStory {padding-left: 0px; padding-right: 0px}
+#shsAPStory p.shsHeadline {border-bottom: 1px solid #ccc; padding-top: 0; margin-bottom: 5px; padding-bottom: 5px; line-height: normal;}
+#shsAPStory p {padding-top: 10px; padding-left: 0px; padding-right: 0px; line-height: 18px; margin: 5px}
+#shsAPStory div#shsByTitle {margin-left: 5px }
+
+#shsRecap {padding-left: 0px; padding-right: 0px}
+#shsRecap p.shsHeadline {border-bottom: 1px solid #ccc; padding-top: 0; margin-bottom: 5px; padding-bottom: 5px}
+#shsRecap p {padding-top: 10px; padding-left: 0px; padding-right: 0px; line-height: 18px}
+#shsRecap div#shsByTitle {margin-left: 5px }
+
+#shsPreview {padding-left: 0px; padding-right: 0px}
+#shsPreview p.shsHeadline {border-bottom: 1px solid #ccc; padding-top: 0; margin-bottom: 5px; padding-bottom: 5px}
+#shsPreview p {padding-top: 10px; padding-left: 0px; padding-right: 0px; line-height: 18px}
+#shsPreview div#shsByTitle {margin-left: 5px }
+
+#shsFantasyStory {padding-left: 0px; padding-right: 0px}
+#shsFantasyStory p.shsHeadline {border-bottom: 1px solid #ccc; padding-top: 0; margin-bottom: 5px; padding-bottom: 5px}
+#shsFantasyStory p {padding-top: 10px; padding-left: 0px; padding-right: 0px; line-height: 18px; margin: 5px}
+#shsFantasyStory div#shsByTitle {margin-left: 5px }
+#shsFantasyStory #shsInset .shsHeadlineList h2 {display: block; width: 100%; border-bottom: 1px dotted #ccc; text-align: center}
+
+#shsFeatureStory {padding-left: 0px; padding-right: 0px}
+#shsFeatureStory p.shsHeadline {border-bottom: 1px solid #ccc; padding-top: 0; margin-bottom: 5px; padding-bottom: 5px}
+#shsFeatureStory p {padding-top: 10px; padding-left: 0px; padding-right: 0px; line-height: 18px; margin: 5px}
+#shsFeatureStory div#shsByTitle {margin-left: 5px }
+#shsFeatureStory #shsInset .shsHeadlineList h2 {display: block; width: 100%; border-bottom: 1px dotted #ccc; text-align: center}
+
+#shsCapsules {padding-left: 0px; padding-right: 0px}
+#shsCapsules p.shsHeadline {border-bottom: 1px solid #ccc; padding-top: 0; margin-bottom: 5px; padding-bottom: 5px; }
+#shsCapsules.shsCapsulesList p.shsHeadline {border-bottom: 0px; margin-bottom: 0px; padding-bottom: 0px; padding-left: 0px}
+#shsCapsules.shsCapsulesList ul.shsNFLCapsules {list-style: none; margin: 0}
+#shsCapsules p {padding-top: 0px; padding-left: 0px; padding-right: 0px; line-height: 18px; margin: 5px}
+#shsCapsules div#shsByTitle {margin-left: 5px }
+#shsCapsules .shsHeadline a {font-size: 17px}
+#shsCapsules li {border-bottom: 1px solid #ccc; margin-bottom: 20px}
+#shsCapsules td.shsCapsulesScoreboard {width: auto; vertical-align: top}
+#shsCapsules #shsMultisportScoreboard .shsMiniCopyright {display: none}
+#shsCapsules .shsParagraphSpacer {border-bottom: 1px solid #ccc; padding-top: 5px; margin-bottom: 15px}
+
+#shsBody #shsInset {width: 275px}
+#shsBody #shsInset .shsHeadlineList {background: #fff; margin: 0; padding: 0; border: 1px solid #ccc; width: 275px}
+#shsBody #shsInset .shsHeadlineList ul {margin: 0;}
+#shsBody #shsInset .shsHeadlineList ul li {color: #000;display: block;width: auto;padding: 5px 5px 5px 20px;border-bottom: 1px dotted #ccc; background: url(http://hosted.stats.com/images/document_text.gif) 0 5px no-repeat; font-size: 11px; margin: 0}
+#shsBody #shsInset .shsHeadlineList ul li a {color: #000; font-size: 12px}
+
+#shsBody .shsStoryPhoto {width: 275px}
+/* STORY PAGE STYLES - END */
+
+/* NEW FRONT PAGE STYLES - START */
+#shsSecondHalfHeadlines {float: right;  width: 46%}
+#shsFirstHalfHeadlines {float: left; width: 46%}
+#shsFrontNews .shsFrontLeaders td {line-height: 17px}
+
+#shsFrontNews td, #shsFront li {font-size: 11px}
+
+#shsFrontNews .shsFrontPhoto { margin: 5px; float: left; display: inline; width: auto; text-align: center; clear: right;  }
+#shsFrontNews .shsFrontPhoto img {border:2px solid #CCCCCC;}
+
+#shsFrontNews p {font-size: 12px}
+
+#shsFrontNews p.shsHeadline {font-size: 21px !important;font-weight: bold;margin: 0 0 10px 0;border-bottom: 1px solid #ccc; padding-bottom: 10px}
+#shsFrontNews p.shsSmallHeadline {font-size: 18px !important;font-weight: bold;margin: 0 0 10px 0;border-bottom: 1px solid #ccc;}
+#shsBody .shsSmallHL p {font-size: 16px !important;font-weight: bold;margin: 0 0 10px 0;border-bottom: 1px solid #ccc;}
+#shsFrontNews p.shsParagraph0 {margin-bottom: 10px}
+#shsFrontNews p.shsParagraph1 {margin-bottom: 10px}
+#shsFrontNews p.shsParagraph2 {margin-bottom: 10px}
+#shsFrontNews p.shsParagraph3 {margin-bottom: 10px}
+
+#shsFrontNews .shsHeadlineList { width: auto;border: 0px solid #ccc;padding: 0px; background: #fff; margin-bottom: 10px}
+
+#shsFrontNews .shsHeadlineList h2{width: 100%;text-align: center;background: transparent;color: #000;font-weight: bold;height: 25px;line-height: 25px;border-bottom: 2px solid #ccc;border-top: 2px solid #ccc;font-size: 20px;padding: 0;letter-spacing: 0;}
+#shsFrontNews .shsHeadlineList ul {margin: 0 !important;padding: 0 0 10px 0;}
+#shsFrontNews .shsHeadlineList ul li {color: #000;display: block;width: auto;padding: 2px 5px 2px 15px;border-bottom: 1px dotted #ccc; background: url(http://hosted.stats.com/images/document_text.gif) 0 5px no-repeat; font-size: 11px; margin: 0}
+#shsFrontNews .shsHeadlineList ul li a {font-size: 11px;color: #000;}
+#shsFrontNews .shsHeadlineList ul li.shsBlankLI {background: none}
+
+#shsFrontNews .shsFrontStoryTable {margin-right: 8px}
+#shsFrontNews .shsFrontStoryTable p {text-align: right; line-height: 15px}
+#shsFrontNews .shsFrontStoryTable p.shsHeadline {text-align: left}
+#shsFrontNews .shsFrontStoryTable p.shsParagraph1 {text-align: left}
+#shsFrontNews .shsFrontStoryTable p.shsParagraph2 {text-align: left}
+#shsFrontNews .shsFrontStoryTable p.shsParagraph3 {text-align: left}
+
+#shsFrontNews .shsMoreNews {border-bottom: 2px solid #ccc}
+#shsFrontNews .shsBot5 {display: none}
+#shsFrontNews .shsFrontPhoto img {max-width: 250px}
+#shsFrontNews .shsTableTtlRow td a {color: #fff}
+/* NEW FRONT PAGE STYLES - END */
+
+.shsCurrentDay {background: #cccccc; color: #000000; font-weight: bold;}
+
+/* NEW TEAMPAGE STYLES - START */
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamHeadlines .shsHeadlineList { border: 1px solid #999;width: 99.5%; padding: 0; margin: 0}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamHeadlines .shsHeadlineList li {font-size: 12px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamHeadlines {margin: 0}
+#shsBody #shsTeamPages .shsTeamPageTable .shsLinescore {margin-bottom: 0}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamSched {margin-right: 0px; margin-top: 5px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamSched .shsMoreResults {display: none}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamStandings {margin-left: 0px; margin-top: 5px; margin-right: 0px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamLeaders {margin-right: 0px; margin-top: 5px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamTransInj {margin-left: 0px; margin-top: 5px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamPolls {margin-right: 0px; margin-top: 5px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamScoreboard {margin-top: 0px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamPageLeft {padding-right: 2px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTeamPageRight {padding-left: 1px}
+#shsBody #shsTeamPages .shsTeamPollsLeft {padding-right: 1px}
+#shsBody #shsTeamPages .shsTeamPollsRight {padding-left: 1px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsShopAd div.shsSmallShopAd {width: 99.5%; margin-top: 5px; border: 1px solid #999}
+
+#shsBody #shsTeamPages .shsTeamPageTable .shsTixAd {background: url(/multisport/graphics/tickets.jpg) no-repeat; height: 90px; margin: 5px auto; width: 300px}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTixAdText {text-align: center; padding-top: 10px; font-size: 11px;}
+#shsBody #shsTeamPages .shsTeamPageTable .shsTixAdText div {line-height: 17px}
+/* NEW TEAMPAGE STYLES - END */
+
+
+.shsPreDraft .shsTable td.shsTotD {font-weight: bold; text-align: center; font-size: 15px !important; border: 1px solid #999}
+.shsPreDraft .shsTable td span.shsPreDraftLabel {color: #ff0000}
+
+#shsMiniBody #shsSecondHalfHeadlines {float: none;  width: 100%}
+#shsMiniBody #shsFirstHalfHeadlines {float: none; width: 100%}
+
+/* Team Page/Widget Scoreboards */
+.shsMiniTeamScores {border: 1px solid #E5E5E5;}
+.shsMiniTeamScores .shsColTtlRow .shsActive {background-color: #363636; color: #ffffff;}
+.shsMiniTeamScores td {border-right: 1px solid #E5E5E5; vertical-align: top;}
+.shsMiniTeamScores td.pos5 {border-right:0px;} 
+
+/* Touchdown Widget */
+.shsTDWidgetNav {text-align: center; padding-top: 0px; margin-bottom: 10px; border-bottom: 1px solid #ccc;padding-bottom: 5px}
+.shsTDWidgetNav strong {background-color: #fff; padding-bottom: 1px; margin: 0px}
+.shsTDWidgetNav a {margin: 0px}
+.shsTDWidgetNav strong {
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   padding: 2px 25px 6px 25px;
+   margin: 0px 3px 10px 3px;
+   color: #000000
+}
+.shsTDWidgetNav a {
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   padding: 2px 25px 5px 25px;
+   margin: 0px 3px 10px 3px;
+   background-color: #ececec;
+   font-weight: bold;
+}
+.shsTDWidgetNav .shsTDWidgetNavTab {display: inline; border-bottom: 0px;}
+
+#shsBody .shsPageNav a, #shsBody .shsPageNav strong, #shsBody .shsPageNav b, .shsMoreStats form strong {padding-right:3px;}
+
+#shsMiniStats .shsAdditionalPlayers {display: none}

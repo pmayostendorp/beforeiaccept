@@ -1,0 +1,39 @@
+14859,0,129,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+14860,1,129,A named third party does collect on the first party website or app your activities on the website or app for targeted advertising. The data is aggregated or anonymized.
+14861,1,129,A named third party does collect on the first party website or app your cookies or tracking elements for targeted advertising. The data is aggregated or anonymized.
+14862,2,129,The site collects your generic personal information for a basic service or feature. Collection happens in an unspecified way.
+14863,2,129,The site collects your contact information for a basic service or feature. Collection happens in an unspecified way.
+14864,3,129,A named third party does receive your contact information for targeted advertising. The data is aggregated or anonymized.
+14865,3,129,A named third party does receive your activities on the website or app for targeted advertising. The data is aggregated or anonymized.
+14866,3,129,A named third party does receive information about you not covered by our label scheme for targeted advertising. The data is aggregated or anonymized.
+14867,4,129,"You can opt out (by contacting the company) from the use of unspecified information by the site, which uses it for marketing purposes."
+14868,4,129,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+14869,5,129,You can make a choice about your privacy not described by our label scheme the use of unspecified information by an unspecified party for advertising.
+14870,6,129,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+14871,6,129,"Data is stored securely, e.g. in an encrypted format or database."
+16038,0,132,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+16041,1,132,A named third party does track on the first party website or app your unspecified personal information for targeted advertising. The data is aggregated or anonymized.
+16042,2,132,The site collects your contact information for a basic service or feature. Collection happens on the website.
+16043,3,132,A named third party does receive your contact information for targeted advertising.
+16044,3,132,A named third party does receive information about you not covered by our label scheme for targeted advertising.
+16050,4,132,"You can opt out (by contacting the company) from the use of contact information by the site, which uses it for marketing purposes."
+16054,5,132,"You can opt out (via a link) from the use of generic personal information by the site, which uses it for advertising."
+16055,6,132,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+14051,0,127,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+14053,0,127,Data is accessible to employees/third parties on a need-to-know basis.
+14054,0,127,A specific security measure not covered above.
+14056,1,127,The text describes a specific data practice that is not covered by our label scheme.
+14057,2,127,The site collects your generic personal information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way.
+14058,2,127,The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way.
+14059,3,127,An unnamed third party does receive unspecified information about you for targeted advertising. The data is personally identifiable.
+14060,3,127,An unnamed third party does receive unspecified information about you for targeted advertising.
+14061,3,127,An unnamed third party does receive your contact information for targeted advertising. The data is personally identifiable.
+14062,3,127,An unnamed third party does receive your activities on the website or app for targeted advertising.
+14063,3,127,An unnamed third party does receive information about you not covered by our label scheme for targeted advertising.
+14064,3,127,The text describes a specific data practice that is not covered by our label scheme.
+14065,4,127,"You can opt out (by contacting the company) from the use of contact information by the site, which uses it for marketing purposes."
+14066,4,127,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+14067,5,127,"You can opt out (via a link) from the use of unspecified information by a third party, which uses it for advertising."
+14068,5,127,The text describes a specific data practice that is not covered by our label scheme.
+14070,6,127,"Data is stored securely, e.g. in an encrypted format or database."
+14071,6,127,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."

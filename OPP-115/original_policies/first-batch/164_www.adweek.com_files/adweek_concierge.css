@@ -1,0 +1,33 @@
+#sailthru-concierge .recommendationThumb img {
+    /* max-width: 50px; */
+}
+#sailthru-concierge .recommendationThumb {
+	display: block;
+	overflow: hidden;
+}
+#sailthru-concierge .recommendationThumb a {
+	display: block;
+}
+.sailthruRecommendation {
+	border-top: 2px solid #ed1d25 !important;
+}
+
+.recommendationDetails {
+    float: right;
+    margin-left: 5px;
+    width: 135px;
+}
+
+.sailthruRecommendation .recommendationCategory {
+	font-size: 10px;
+}
+
+.sailthruRecommendation span.recommendationTitle {
+    margin: 5px 0px 5px 2px;
+}
+.sailthruRecommendation span.recommendationTitle a {
+    font-size: 14px;
+}
+.sailthruRecommendation .recommendationFooter {
+	display: none;
+}

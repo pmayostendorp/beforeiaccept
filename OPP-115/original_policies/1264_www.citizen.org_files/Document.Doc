@@ -1,0 +1,107 @@
+/* 	
+
+Dynamic iframe script, by DaydreamServices.com
+		
+Purpose: 	to wipe any preset or inline styles defined on an <IFRAME> tag, and set the height 
+			on the fly to the size of the inner page inside the iframe.  Includes a "host header sniffer"
+			script that will only execute the script if the domain is a preset value in an array.
+
+*/					
+			
+//document.domain = "citizen.org";		
+					
+// Array of sites that are valid
+// For example: ["localhost", "someothersite.com", "google.com"];
+var sites = ["citizeninternet.org", "www.citizeninternet.org", "citizen.org", "www.citizen.org"];
+
+// Check if the provided object exists in the provided array
+function includes(arr, obj) {
+    var found = false;
+    
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] === obj) {
+            found = true;
+        }
+    }
+    
+    return found;
+}
+
+$(document).ready(
+    function() {
+        // Check if the site we are currenly on matches an entry in our array
+        if (includes(sites, window.location.hostname)) {
+		    // Loop through and null each iframe height attribute
+		    // This overrides the inline styles placed by BBNC
+		    $('iframe').each(
+		        function(idx,el){
+			        el.style.height='';
+			    }
+		    );
+    		
+            // source: http://sonspring.com/journal/jquery-iframe-sizing
+	        // Set specific variable to represent all iframe tags.
+		    var iFrames = document.getElementsByTagName('iframe');
+		    
+		    // We need to modify the src values for the iframes in the page,
+		    // This is necessary due to security restrictions, if the iframes aren't 
+		    // pointing at the same domain as the current domain, the script below will fail
+		    // with a security exception becase javascript does not allow
+		    for (var i = 0, j = iFrames.length; i < j; i++) {
+			    var iSource = iFrames[i].src.replace('www.citizen.org', window.location.hostname);
+				
+			    iFrames[i].src = '';
+			    iFrames[i].src = iSource;
+			}
+
+		    // Resize heights.
+		    function iResize() {
+			    // Iterate through all iframes in the page.
+			    for (var i = 0, j = iFrames.length; i < j; i++) {
+				    // Set inline style to equal the body height of the iframed content.
+				    changeHeight(iFrames[i]);
+			    }
+		    }
+
+		    // Check if browser is Safari or Opera.
+		    if ($.browser.safari || $.browser.opera) {
+			    // Start timer when loaded.
+			    $('iframe').load(
+			        function() {
+					    setTimeout(iResize, 0);
+				    }
+			    );
+
+			    // Safari and Opera need a kick-start.
+			    for (var i = 0, j = iFrames.length; i < j; i++) {
+				    var iSource = iFrames[i].src;
+    				
+				    iFrames[i].src = '';
+				    iFrames[i].src = iSource;
+			    }
+		    } else {
+			    // For other good browsers.
+			    $('iframe').load(
+			        function() {
+					    // Set inline style to equal the body height of the iframed content.
+                        changeHeight(this);
+				    }
+			    );
+		    }
+        }
+    }
+);					
+
+// Change the height of the iframe accordingly based on the browser        
+function changeHeight(iframe) {
+
+    var innerDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+
+    if ($.browser.msie) {
+        // Works in IE
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    } else {
+        iframe.style.height = innerDoc.body.offsetHeight + 32 + 'px'; //Extra height FireFox
+    }
+} 
+             

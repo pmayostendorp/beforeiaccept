@@ -1,0 +1,24 @@
+OX_5798799662({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.oncampusweb.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "adunits" : [
+      {
+        "auid":"537240546",
+        "chain":[
+          {
+            "is_fallback":0,
+            "ad_id":"537779053",
+            "width":"300",
+            "height":"100",
+            "html":"<a href='http://ox-d.oncampusweb.com/w/1.0/rc?ts=1fHJpZD0yNWJiM2I5OC1lNjAyLTQwNjYtYWI3OS1hZWQzODNlY2NmMWF8cnQ9MTQzNTg1OTc1NXxhdWlkPTUzNzI0MDU0NnxhdW09RE1JRC5XRUJ8c3NpZD01MzY4NzA5NDZ8c2lkPTUzNjg3MTA5NnxwdWI9NTM2ODcxNTEzfHBjPVVTRHxyYWlkPWFjNmIxNjE1LTE2ZDAtNDQwYi05MGY3LTJhNWFiYjY5YzI2MnxhaWQ9NTM3Nzc5MDUzfHQ9MXxhcz0zMDB4MTAwfGxpZD01MzY5MTIwNTR8b2lkPTUzNjg5NjExMHxwPTB8cHI9MHxhZHY9NTM2ODczNTY4fGFjPVVTRHxwbT1QUklDSU5HLkNQTXxibT1CVVlJTkcuSE9VU0V8dXI9WkFzZWhXcUY0Zw' target='_blank'><img src='http://ox-i.oncampusweb.com/166/166499c5-908b-47b6-86b9-86d039ad5a9a/d67/d67ab27726864af2af1f0fd6846bf5e9.gif' height='100' width='300' border='0' alt=''/></a>\n",
+            "target":"_blank",
+            "ts":"1fHJpZD0yNWJiM2I5OC1lNjAyLTQwNjYtYWI3OS1hZWQzODNlY2NmMWF8cnQ9MTQzNTg1OTc1NXxhdWlkPTUzNzI0MDU0NnxhdW09RE1JRC5XRUJ8c3NpZD01MzY4NzA5NDZ8c2lkPTUzNjg3MTA5NnxwdWI9NTM2ODcxNTEzfHBjPVVTRHxyYWlkPWFjNmIxNjE1LTE2ZDAtNDQwYi05MGY3LTJhNWFiYjY5YzI2MnxhaWQ9NTM3Nzc5MDUzfHQ9MXxhcz0zMDB4MTAwfGxpZD01MzY5MTIwNTR8b2lkPTUzNjg5NjExMHxwPTB8cHI9MHxhZHY9NTM2ODczNTY4fGFjPVVTRHxwbT1QUklDSU5HLkNQTXxibT1CVVlJTkcuSE9VU0V8dXI9WkFzZWhXcUY0Zw",
+            "type":"image",
+            "ad_url":"http://ox-i.oncampusweb.com/166/166499c5-908b-47b6-86b9-86d039ad5a9a/d67/d67ab27726864af2af1f0fd6846bf5e9.gif"
+          }
+        ]
+      }
+    ]
+  }
+});

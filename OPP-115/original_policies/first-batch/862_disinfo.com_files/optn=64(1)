@@ -1,0 +1,119 @@
+if (!window.mraid) {document.write('\x3cdiv class="GoogleActiveViewClass" ' +'id="DfaVisibilityIdentifier_1063517696"\x3e');}document.write('\x3c!-- Copyright 2008 DoubleClick, a division of Google Inc. All rights reserved. --\x3e\n\x3c!-- Code auto-generated on Thu Aug 01 14:55:34 EDT 2013 --\x3e\n\x3cscript src\x3d\x22https://s0.2mdn.net/879366/flashwrite_1_2.js\x22\x3e\x3c/script\x3e\n');function DCFlash(id,pVM){
+var swf = "https://s0.2mdn.net/2179194/2-Personal_Savings_HYSA_Champion_300x250.swf";
+var gif = "https://s0.2mdn.net/2179194/Personal_Savings_Rateless_300x250.gif";
+var minV = 8;
+var FWH = ' width="300" height="250" ';
+var url = escape("https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstC9il0mz-whF0uwwBTA_Ilf5qJBcm4bC8u_-iIo3-FQ3hwFTeGRpGmA13jxx8VUySIzwBQLcdzuiHZAIX8BohiQJWyetlcj9BbZ0bbIyjbA0O81NRVl3xcrs9UxygTkitb&sig=Cg0ArKJSzN3YNcn8uHWMEAE&adurl=http://r1.ace.advertising.com/click/site%3D866302/mnum%3D2076295/cstr%3D53882091%3D_55957f94_6067431237_866302*2076295*-20*0_1_/xsxdata%3D%24XSXDATA/imptid%3DAS39885010fe6948868c8c443bdf899baa/bnum%3D53882091/optn%3D64%3Ftrg%3Dhttp://personalsavings.americanexpress.com/savings-product.html");
+var fscUrl = url;
+var fscUrlClickTagFound = false;
+var wmode = "opaque";
+var bg = "";
+var dcallowscriptaccess = "never";
+
+var openWindow = "false";
+var winW = 0;
+var winH = 0;
+var winL = 0;
+var winT = 0;
+
+var moviePath=swf.substring(0,swf.lastIndexOf("/"));
+var sm=new Array();
+sm[1] = "";
+sm[2] = "https://s0.2mdn.net/ads/richmedia/studio/appengine/10aac2c5-e700-4977-a178-f16efaf8ea32_HYSA_Rate_updateJan2015.xml";
+sm[3] = "";
+sm[4] = "";
+sm[5] = "";
+
+var defaultCtVal = escape("https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstC9il0mz-whF0uwwBTA_Ilf5qJBcm4bC8u_-iIo3-FQ3hwFTeGRpGmA13jxx8VUySIzwBQLcdzuiHZAIX8BohiQJWyetlcj9BbZ0bbIyjbA0O81NRVl3xcrs9UxygTkitb&sig=Cg0ArKJSzN3YNcn8uHWMEAE&adurl=http://r1.ace.advertising.com/click/site%3D866302/mnum%3D2076295/cstr%3D53882091%3D_55957f94_6067431237_866302*2076295*-20*0_1_/xsxdata%3D%24XSXDATA/imptid%3DAS39885010fe6948868c8c443bdf899baa/bnum%3D53882091/optn%3D64%3Ftrg%3Dhttp://personalsavings.americanexpress.com/savings-product.html");
+var ctp=new Array();
+var ctv=new Array();
+ctp[0] = "clickTag";
+ctv[0] = "";
+ctp[1] = "clickTag";
+ctv[1] = "";
+ctp[2] = "clickTag";
+ctv[2] = "";
+ctp[3] = "clickTag";
+ctv[3] = "";
+
+
+var fv='"moviePath='+moviePath+'/'+'&moviepath='+moviePath+'/';
+for(i=1;i<sm.length;i++){if(sm[i]!=""){fv+="&submovie"+i+"="+escape(sm[i]);}}
+for(var ctIndex = 0; ctIndex < ctp.length; ctIndex++) {
+  var ctParam = ctp[ctIndex];
+  var ctVal = ctv[ctIndex];
+  if(ctVal != null && typeof(ctVal) == 'string') {
+    if(ctVal == "") {
+      ctVal = defaultCtVal;
+    }
+    else {
+      ctVal = escape("https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstC9il0mz-whF0uwwBTA_Ilf5qJBcm4bC8u_-iIo3-FQ3hwFTeGRpGmA13jxx8VUySIzwBQLcdzuiHZAIX8BohiQJWyetlcj9BbZ0bbIyjbA0O81NRVl3xcrs9UxygTkitb&sig=Cg0ArKJSzN3YNcn8uHWMEAE&adurl=http://r1.ace.advertising.com/click/site%3D866302/mnum%3D2076295/cstr%3D53882091%3D_55957f94_6067431237_866302*2076295*-20*0_1_/xsxdata%3D%24XSXDATA/imptid%3DAS39885010fe6948868c8c443bdf899baa/bnum%3D53882091/optn%3D64%3Ftrg%3D" + ctVal);
+    }
+    if(ctParam.toLowerCase() == "clicktag") {
+      fscUrl = ctVal;
+      fscUrlClickTagFound = true;
+    }
+    else if(!fscUrlClickTagFound) {
+      fscUrl = ctVal;
+    }
+    fv += "&" + ctParam + "=" + ctVal;
+  }
+}
+fv+='"';
+var bgo=(bg=="")?"":'<param name="bgcolor" value="#'+bg+'">';
+var bge=(bg=="")?"":' bgcolor="#'+bg+'"';
+function FSWin(){if((openWindow=="false")&&(id=="DCF0"))alert('openWindow is wrong.');
+var dcw = 800;
+var dch = 600;
+// IE
+if(!window.innerWidth)
+{
+  // strict mode
+  if(!(document.documentElement.clientWidth == 0))
+  {
+    dcw = document.documentElement.clientWidth;
+    dch = document.documentElement.clientHeight;
+  }
+  // quirks mode
+  else if(document.body)
+  {
+    dcw = document.body.clientWidth;
+    dch = document.body.clientHeight;
+  }
+}
+// w3c
+else
+{
+  dcw = window.innerWidth;
+  dch = window.innerHeight;
+}
+if(openWindow=="center"){winL=Math.floor((dcw-winW)/2);winT=Math.floor((dch-winH)/2);}window.open(unescape(fscUrl),id,"width="+winW+",height="+winH+",top="+winT+",left="+winL+",status=no,toolbar=no,menubar=no,location=no");}this.FSWin = FSWin;
+ua=navigator.userAgent;
+if(minV<=pVM&&(openWindow=="false"||(ua.indexOf("Mac")<0&&ua.indexOf("Opera")<0))){
+  var adcode='<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="'+id+'"'+FWH+'>'+
+    '<param name="movie" value="'+swf+'"><param name="flashvars" value='+fv+'><param name="quality" value="high"><param name="wmode" value="'+wmode+'"><param name="base" value="'+swf.substring(0,swf.lastIndexOf("/"))+'"><PARAM NAME="AllowScriptAccess" VALUE="'+dcallowscriptaccess+'">'+bgo+
+    '<embed src="'+swf+'" flashvars='+fv+bge+FWH+' type="application/x-shockwave-flash" quality="high" swliveconnect="true" wmode="'+wmode+'" name="'+id+'" base="'+swf.substring(0,swf.lastIndexOf("/"))+'" AllowScriptAccess="'+dcallowscriptaccess+'"></embed></object>';
+  if(('j'!="j")&&(typeof dclkFlashWrite!="undefined")){dclkFlashWrite(adcode);}else{document.write(adcode);}
+}else{
+  document.write('<a target="_blank" href="'+unescape(url)+'"><img src="'+gif+'"'+FWH+'border="0" alt="Advertisement" galleryimg="no"></a>');
+}}
+function getFlashVersion(){
+// code derived from SWFObject (http://code.google.com/p/swfobject/)
+ var vfv = "0,0,0";
+  try {
+ try {
+   var axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+     try {axo.AllowScriptAccess = "always"; }catch(e) {return "6";}
+  }catch(e) {}
+ vfv = new ActiveXObject("ShockwaveFlash.ShockwaveFlash").GetVariable("$version");}
+ catch(e) {
+   try {if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){vfv= navigator.plugins["Shockwave Flash"].description;}}
+   catch(e) {}
+}
+ return vfv.replace(/\D+/g, ",").match(/^,?(.+),?$/)[1].split(',').shift();
+}
+var DCid=(isNaN("292198790"))?"DCF2":"DCF292198790";
+var pVM=getFlashVersion();
+eval("function "+DCid+"_DoFSCommand(c,a){if(c=='openWindow')o"+DCid+".FSWin();}o"+DCid+"=new DCFlash('"+DCid+"',pVM);");
+//-->
+document.write('\n\x3cnoscript\x3e\x3ca target\x3d\x22_blank\x22 href\x3d\x22https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjstC9il0mz-whF0uwwBTA_Ilf5qJBcm4bC8u_-iIo3-FQ3hwFTeGRpGmA13jxx8VUySIzwBQLcdzuiHZAIX8BohiQJWyetlcj9BbZ0bbIyjbA0O81NRVl3xcrs9UxygTkitb\x26sig\x3dCg0ArKJSzN3YNcn8uHWMEAE\x26adurl\x3dhttp://r1.ace.advertising.com/click/site%3D866302/mnum%3D2076295/cstr%3D53882091%3D_55957f94_6067431237_866302*2076295*-20*0_1_/xsxdata%3D%24XSXDATA/imptid%3DAS39885010fe6948868c8c443bdf899baa/bnum%3D53882091/optn%3D64%3Ftrg%3Dhttp://personalsavings.americanexpress.com/savings-product.html\x22\x3e\x3cimg src\x3d\x22https://s0.2mdn.net/2179194/Personal_Savings_Rateless_300x250.gif\x22 width\x3d\x22300\x22 height\x3d\x22250\x22 border\x3d\x220\x22 alt\x3d\x22Advertisement\x22 galleryimg\x3d\x22no\x22\x3e\x3c/a\x3e\x3c/noscript\x3e');if (!window.mraid) {document.write('\x3c/div\x3e');}if (!window.mraid) {(function() {var avDiv = document.getElementById("DfaVisibilityIdentifier_1063517696");if (avDiv) {avDiv['_avi_'] = 'Bk19jlH-VVf-KEJSN3AHhgYW4BAAAAAAQATgByAEJ4AQCoAY_';avDiv['_avihost_'] = 'pagead2.googlesyndication.com';avDiv['_avm_'] = 'la\x3d0\x26';}var glidar = document.createElement('script');glidar.type = 'text/javascript';glidar.async = true;glidar.src = '//pagead2.googlesyndication.com/pagead/js/lidar.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glidar, s);})();}document.write('\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://c.betrad.com/surly.js?;ad_wxh\x3d300x250;coid\x3d273;nid\x3d41570;crid\x3d1453;\x22\x3e\x3c/script\x3e');(function(){var f=function(a,c,b){return a.call.apply(a.bind,arguments)},g=function(a,c,b){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var b=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(b,d);return a.apply(c,b)}}return function(){return a.apply(c,arguments)}},k=function(a,c,b){k=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?f:g;return k.apply(null,arguments)};var l=document,m=window;var n=function(a){return{visible:1,hidden:2,prerender:3,preview:4}[a.webkitVisibilityState||a.mozVisibilityState||a.visibilityState||""]||0},p=function(a){var c;a.mozVisibilityState?c="mozvisibilitychange":a.webkitVisibilityState?c="webkitvisibilitychange":a.visibilityState&&(c="visibilitychange");return c};var r=function(){this.g=l;this.j=m;this.i=!1;this.h=[];this.m={};if(3==n(this.g)){var a=k(this.o,this);this.n=a;var c=this.g,b=p(this.g);c.addEventListener?c.addEventListener(b,a,!1):c.attachEvent&&c.attachEvent("on"+b,a)}else q(this)};r.p=function(){return r.l?r.l:r.l=new r};var s=/^([^:]+:\/\/[^/]+)/m,t=/^\d*,(.+)$/m,q=function(a){if(!a.i){a.i=!0;for(var c=0;c<a.h.length;++c)a.k.apply(a,a.h[c]);a.h=[]}};r.prototype.q=function(a,c){var b=c.target.t();(b=t.exec(b))&&(this.m[a]=b[1])};r.prototype.k=function(a,c){var b;if(b=this.s)i:{try{var d=s.exec(this.j.location.href),e=s.exec(a);if(d&&e&&d[1]==e[1]&&c){var h=k(this.q,this,c);this.s(a,h);b=!0;break i}}catch(y){}b=!1}b||(b=this.j,b.google_image_requests||(b.google_image_requests=[]),d=b.document.createElement("img"),d.src=a,b.google_image_requests.push(d))};r.prototype.o=function(){if(3!=n(this.g)){q(this);var a=this.g,c=p(this.g),b=this.n;a.removeEventListener?a.removeEventListener(c,b,!1):a.detachEvent&&a.detachEvent("on"+c,b)}};var u=function(a,c){var b=/(google|doubleclick).*\/pagead\/adview/.test(a),d=r.p(),e=a;if(b){b="&vis="+n(d.g);c&&(b+="&ve=1");var h=e.indexOf("&adurl"),e=-1==h?e+b:e.substring(0,h)+b+e.substring(h)}d.i?d.k(e,c):d.h.push([e,c])},v=["pdib"],w=this;v[0]in w||!w.execScript||w.execScript("var "+v[0]);for(var x;v.length&&(x=v.shift());)v.length||void 0===u?w=w[x]?w[x]:w[x]={}:w[x]=u;})();pdib("https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjstC9il0mz-whF0uwwBTA_Ilf5qJBcm4bC8u_-iIo3-FQ3hwFTeGRpGmA13jxx8VUySIzwBQLcdzuiHZAIX8BohiQJWyetlcj9BbZ0bbIyjbA0O81NRVl3xcrs9UxygTkitb\x26sig\x3dCg0ArKJSzFxxd7viMaM-EAE\x26adurl\x3d");

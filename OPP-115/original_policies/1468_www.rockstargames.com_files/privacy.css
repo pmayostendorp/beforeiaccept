@@ -1,0 +1,25 @@
+.controller_privacy #page > .content > div { padding:20px; }
+.controller_privacy #page > .content > div .nav { text-align:center; }
+.controller_privacy #page > .content > div .nav li { display:inline; margin-right:10px; }
+.controller_privacy #page > .content > div .nav li a { text-decoration:underline; color:#ccc; }
+.controller_privacy #page > .content > div .nav li a.selected { color:#000; } 
+.controller_privacy #page > .content > div #dl_content { margin:0 167px; }
+.controller_privacy #page > .content > div #wrapper { width:645px; margin:auto; }
+.controller_privacy #page > .content > div #content { margin-bottom:60px; }
+.controller_privacy #page > .content > div #title { text-align:center; margin:25px 0; }
+.controller_privacy #page > .content > div .normal, .controller_privacy #page > .content > div ol, .controller_privacy #page > .content > div ul, .controller_privacy #page > .content > div .strong, .controller_privacy #page > .content > div .h1, .controller_privacy #page > .content > div .h2, .controller_privacy #page > .content > div a { color: #333; font-family: Arial, Helvetica, sans-serif; } 
+.controller_privacy #page > .content > div .normal, .controller_privacy #page > .content > div ol, .controller_privacy #page > .content > div ul { font-size:11px; }
+.controller_privacy #page > .content > div .strong { font-size:11px; }
+.controller_privacy #page > .content > div .h1 { font-weight:bold; font-size:11px; }
+.controller_privacy #page > .content > div .h2 { font-weight: bold; font-size:11px; }
+.controller_privacy #page > .content > div object { outline:none; }
+.controller_privacy #page > .content > div ul.lotsofcontent li { margin-bottom:15px; }
+.controller_privacy #page > .content > div #esrb_logo { margin-top:15px; margin-left:15px; float:left; }
+.controller_privacy #page > .content > div .anchor { text-decoration:none; color:#333; }
+.controller_privacy #page > .content > div .link:link, .controller_privacy #page > .content > div a:link { color:#999; text-decoration:none; }
+.controller_privacy #page > .content > div .link:hover, .controller_privacy #page > .content > div a:hover { color:#333; text-decoration:underline; }
+.controller_privacy #page > .content h1 a:hover { text-decoration:none; }
+
+.controller_privacy #page p.normal { margin-bottom:10px; }
+
+.controller_privacy #page > .content > div .input { margin-bottom:5px; }

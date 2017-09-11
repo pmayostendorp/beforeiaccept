@@ -1,0 +1,45 @@
+body {
+  padding-top: 0 !important; }
+
+.fluid-container,
+#article .article-body > section {
+  width: inherit !important;
+  max-width: inherit !important;
+  margin: 0 0.5in;
+  padding-right: 0 !important; }
+
+#site-header-container {
+  display: none; }
+
+#article:before {
+  content: url('http://cdn.theatlantic.com/assets/static/theatlantic/common/img/logo-black.svg?c8a3ab13efc5');
+  display: block;
+  width: 198px;
+  margin: 10px auto 0; }
+
+#article .social-icons,
+#article .ad-article-wrapper,
+#article .ad-boxinjector-wrapper,
+#article .article-after .ad-article-wrapper-bottom,
+#article .article-tools .article-links,
+#taboola-container,
+#article-most-popular,
+#article-comments,
+#site-footer {
+  display: none !important; }
+
+#article .article-above .lead-img .img {
+  padding: 0; }
+
+#article .article-above .lead-img img {
+  position: static; }
+
+#article .article-after {
+  width: 100% !important;
+  position: static !important; }
+
+#article .module-authors {
+  display: block !important; }
+
+#article .module-authors .module-label {
+  display: block !important; }

@@ -1,0 +1,294 @@
+﻿/* _lcid="1033" _version="12.0.4518"
+    _LocalBinding */
+.floatLeft
+{
+	float:left;
+    margin-right:0px; 
+    margin-left: 0px; 
+    margin-top:5px;
+}
+.floatRight
+{
+	float:right;
+    min-width:100px;
+    margin-left:10px; 
+    margin-right: 0px; 
+    margin-top:5px;
+}
+.welcomeImage 
+{
+	float:left;
+}
+.welcomeImage img
+{
+    margin-right:10px; 
+    margin-left: 0px;     
+    margin-top:0px;
+   	border:solid 1px #CCCCCC; 
+}
+.caption, .caption1,.caption2 
+{
+      font-size:8pt; 
+      font-family:verdana; 
+      color:#666666; 
+      padding-bottom:10px;
+      margin-top:-3px;
+      /*min-width:200px;*/     
+}
+.caption p,.caption1 p,.caption2 p 
+
+{ 
+      padding-top: 2px; 
+      margin-bottom: 2px; 
+}
+.header 
+{ 
+      padding-bottom:0px;
+      padding-right:0px; 
+      padding-left: 0px; 
+      text-align:right; 
+      white-space:nowrap;
+      border-bottom:solid 1px #cccccc;
+      font-family:tahoma;  
+      font-size:8pt;  
+      color:#666666; 
+}
+.dateLine 
+{
+      font-weight:bold;  
+      float:left;
+      white-space:nowrap;
+}
+.pageContent
+{ 
+      font-family:tahoma; 
+      font-size:small;
+       
+}
+.pageContent2
+{ 
+      font-family:tahoma; 
+      font-size:small;       
+}
+
+
+.pageContent UL, x:-moz-any-link,x:default
+{    
+    /*display:inline-block;*/	/* 06/03/2010 commented to solve misaligned bullet and text*/
+}
+html>body .pageContent UL
+{    
+    /**display:inline; */	 /* 06/03/2010 commented to solve misaligned bullet and text*/
+    /**margin-top:20px;*/    
+}
+
+html>body .pageContent UL li
+{
+	/**display:inline-block;*/ /* 06/03/2010 commented to solve misaligned bullet and text*/	
+}
+
+.pageContent A{
+	/*color:#006699; ahsan*/
+}
+.splashLinkArea
+{
+    *height:100px;
+    min-height:100px;
+	border:solid 1px #CCCCCC; 	
+}
+.imageSplash
+{
+    text-align:center;
+    display:block;
+    width:100%;
+}
+.imageSplash img
+{
+	border:solid 1px #CCCCCC; 	
+}
+.splashLinkFrame
+{
+    width:100%;
+    display:block;
+    clear:both;
+    min-height:100px;
+    *height:100px;
+}
+.floatingRelatedLinks
+{
+	border:solid 1px #CCCCCC;
+    margin-left:10px; 
+    margin-right: 0px; 
+    margin-top:5px;
+	float:right;
+	min-width:150px;
+	*width:150px;
+	display:inline;
+}
+.removeMargins
+{
+	margin-top:-11px;
+	margin-left:-11px;
+	margin-right:-10px;
+}
+
+/*
+functionalhomeareatitle {
+color:#77A5D4;
+font-size:13px;
+font-weight:bold;
+padding-bottom:5px;
+padding-top:12px;
+text-transform:uppercase;
+}
+.functionalhomeareatitle a:link {
+color:#77A5D4;
+font-size:13px;
+font-weight:bold;
+padding-bottom:5px;
+padding-top:12px;
+text-decoration:none;
+text-transform:uppercase;
+}
+.functionalhomeareatitle a:hover {
+color:#77A5D4;
+font-size:13px;
+font-weight:bold;
+padding-bottom:5px;
+padding-top:12px;
+text-decoration:none;
+text-transform:uppercase;
+}
+.functionalhomeareatitle a:visited {
+color:#77A5D4;
+font-size:13px;
+font-weight:bold;
+padding-bottom:5px;
+padding-top:12px;
+text-decoration:none;
+text-transform:uppercase;
+}
+.functionalhomearealink {
+font-size:12px;
+font-weight:bold;
+padding-bottom:10px;
+padding-right:10px;
+padding-top:5px;
+text-align:right;
+}
+.functionalhomearealink img {
+vertical-align:middle;
+}*/
+
+
+
+
+/**************** FUNTIONAL AREA HOME PAGE LAYOUT *******************************/
+.functionalhomeareatitle {
+color:#77A5D4;
+font-size:13px;
+font-weight:bold;
+padding-bottom:5px;
+padding-top:12px;
+text-transform:uppercase;
+}
+.functionalhomeareatitle a:link {
+text-decoration:none;
+color:#77A5D4;
+}
+.functionalhomeareatitle a:hover {
+text-decoration:none;
+color:#77A5D4;
+}
+.functionalhomeareatitle a:visited {
+color:#77A5D4;
+text-decoration:none;
+}
+
+.sidebarContent {
+font-size:small;
+
+}
+
+.sidebarContent p {
+margin:0px 0px 0px 0px;
+font-size:small;
+
+}
+
+.functionalhomearealink {
+padding-bottom:10px;
+padding-right:10px;
+padding-top:5px;
+text-align:right;
+font-weight:bold;
+font-family:Verdana,Arial, MS Sans Serif;
+font-size:small;
+color:#006699;
+
+}
+.functionalhomearealink a:link {
+text-decoration:underline;
+}
+.functionalhomearealink a:hover {
+text-decoration:none;
+}
+.functionalhomearealink a:visited {
+color:#660000;
+}
+.functionalhomearealink img {
+vertical-align: middle;
+border:none;
+padding-left:5px;
+}
+.shortcutURL{
+	font-weight:normal;
+	font-size:x-small;
+	font-family:Verdana,Arial,MS Sans Serif;
+	color:black;
+	text-align:right;
+	padding:10px 5px 0px 10px;
+	float:right;	
+}
+
+
+/***************** FEATURE PROFILE PAGE LAYOUT **********************/
+
+.fphomeareatitle {
+color:#77A5D4;
+font-size:13px;
+font-weight:bold;
+padding-bottom:5px;
+padding-top:12px;
+text-transform:uppercase;
+}
+.fphomearealink {
+padding-bottom:10px;
+padding-right:10px;
+padding-top:5px;
+text-align:right;
+font-weight:bold;
+font-family:Verdana,Arial, MS Sans Serif;
+font-size:small;
+
+}
+.fphomearealink
+{
+	color:#006699;
+}
+.fphomearealink a:link {
+text-decoration:underline;
+}
+.fphomearealink a:hover {
+text-decoration:none;
+}
+.fphomearealink a:visited {
+color:#660000;
+}
+.fphomearealink img {
+vertical-align: bottom;
+border:none;
+padding-left:5px;
+}
+
+

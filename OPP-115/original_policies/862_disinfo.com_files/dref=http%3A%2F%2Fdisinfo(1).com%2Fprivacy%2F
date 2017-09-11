@@ -1,0 +1,23 @@
+function AdClicked(url)
+{ 
+    var clickLineDisabled = "$dcli";
+    if(clickLineDisabled=="1")
+    {
+        return;
+    }
+    
+    var winOpen = "1";
+    if(winOpen == "1")
+    {
+        window.open(url,"");
+    }else
+    {
+        parent.location.href=url; 
+    }
+}
+var clickLineVarName1325326325 = 'http://r1.ace.advertising.com/click/site=866302/mnum=2062022/bnum=75232901/cstr=75232901=_55957f94_1325326325_866302*2062022*-20*0_1_/xsxdata=$xsxdata/xsinvid=0/imptid=AS3988503165e34cf884a8e0d3ce1d31c2/deviceid=/optn=64?trg=';
+
+document.write('<a href="javascript:AdClicked(clickLineVarName1325326325);" target="_self">');
+document.write('<img src="http://bannerfarm.ace.advertising.com/CDN/266237/936974_sec.gif" border="0" width="300" height="250" alt="Click to learn more...">');
+document.write('</a>');
+document.write("<scr"+"ipt src='http://js.moatads.com/advertisingdotcom370674952587/moatad.js#moatClientLevel1=2062022&moatClientLevel2=266237&zMoatMediaWidth=300&zMoatMediaHeight=250&zMoatSegmentID=-20&zMoatImpressionID=AS3988503165e34cf884a8e0d3ce1d31c2&moatClientSlicer1=866302&moatClientSlicer2=0&zMoatSiteDomain=disinfo.com&zMoatDevice=$device_category' type='text/javascript'></scr"+"ipt>");

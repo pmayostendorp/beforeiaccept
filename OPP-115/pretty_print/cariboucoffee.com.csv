@@ -1,0 +1,141 @@
+7594,0,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8385,0,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+22190,0,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7595,1,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8386,1,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+22191,1,123,The text does not fit into our label scheme.
+7596,2,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8387,2,103,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+8389,2,103,The site collects your unspecified information for an unspecified purpose. Collection happens on the website.
+22192,2,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7597,3,96,"When a change is made to the privacy policy that significantly affects data practices, users are notified when visiting the website. Users' choices regarding policy changes are not mentioned or are unclear."
+8396,3,103,"When a change of an unspecified nature is made to the privacy policy, users are notified when visiting the website. Users' choices regarding policy changes are not mentioned or are unclear."
+8407,3,103,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+22193,3,123,"You can choose not to use a service or feature to avoid the use of unspecified information by the site, which collects it for an unspecified purpose."
+22194,3,123,"You can choose not to use a service or feature to avoid the use of unspecified information by the site, which uses it for an unspecified purpose."
+22195,3,123,"When a minor change is made to the privacy policy that does not significantly affect data practices, users are notified when visiting the website. Users' choices regarding policy changes are not mentioned or are unclear."
+22196,3,123,"When a minor change is made to the privacy policy that does not significantly affect data practices, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+7598,4,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8405,4,103,"When a change of an unspecified nature is made to the privacy policy, users are notified in an unspecified manner. Users have no options regarding the change."
+22197,4,123,"When a change of an unspecified nature is made to the privacy policy, users are notified in an unspecified manner. Users have no options regarding the change."
+22198,4,123,You can choose not to use a service or feature to avoid the use of unspecified information by an unspecified party for an unspecified purpose.
+7599,5,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8408,5,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+22199,5,123,The site collects your unspecified information for a basic service or feature. Collection happens on the website.
+7600,6,96,An unspecified third party does not do something outside of our label scheme with your unspecified personal information for an unspecified purpose. The data is personally identifiable.
+7601,6,96,An unspecified third party does not receive your unspecified personal information for an unspecified purpose. The data is personally identifiable.
+8417,6,103,"The site does not collect your generic personal information for an unspecified purpose. Collection happens when you explicitly provide information by some means outside of our label scheme, and your data is identifiable."
+22200,6,123,An unnamed third party does not receive your unspecified personal information for an unspecified purpose. The data is personally identifiable.
+22201,6,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7602,7,96,An unnamed third party does receive your unspecified personal information for service operations or security. The data is personally identifiable.
+8418,7,103,A named third party does receive your unspecified personal information for service operations or security. The data is personally identifiable.
+22202,7,123,A named third party does receive your unspecified personal information for service operations or security. The data is personally identifiable.
+7603,8,96,The text describes a specific data practice that is not covered by our label scheme.
+8419,8,103,Data is accessible to employees/third parties on a need-to-know basis.
+22206,8,123,Data is accessible to employees/third parties on a need-to-know basis.
+7604,9,96,Data is accessible to employees/third parties on a need-to-know basis.
+7605,9,96,A specific security measure not covered above.
+8426,9,103,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+22205,9,123,Data is accessible to employees/third parties on a need-to-know basis.
+7606,10,96,"The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable. You can choose not to use the service or feature for the collection of your information."
+7607,10,96,"The site collects your financial information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable. You can choose not to use the service or feature for the collection of your information."
+7608,10,96,An unnamed third party does receive your financial information for a basic service or feature. The data is personally identifiable. You can choose not to use the service or feature for the collection or sharing of your information.
+8435,10,103,The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information on the website.
+8436,10,103,A named third party does receive your financial information for a basic service or feature.
+22208,10,123,The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way.
+22209,10,123,The site collects your financial information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way.
+22210,10,123,A named third party does receive your financial information for a basic service or feature.
+7609,11,96,"The site collects your contact information for an additional (non-basic) service or feature. Collection happens when you explicitly provide information on the website for users with accounts, and your data is identifiable. You can choose not to use the service or feature for the collection of your information."
+8437,11,103,The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information on the website for a user type outside of our label scheme.
+22211,11,123,The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information on the website for users with accounts.
+7610,12,96,The site collects your unspecified information for an additional (non-basic) service or feature. Collection happens when you explicitly provide information on the website. You can choose not to use the service or feature for the collection of your information.
+7611,12,96,An unnamed third party does not receive unspecified information about you for an additional (non-basic) service or feature. You can choose not to use the service or feature for the collection or sharing of your information.
+8456,12,103,The site collects your unspecified information for a purpose outside of our label scheme. Collection happens on the website.
+22212,12,123,The site collects your unspecified information for a purpose outside of our label scheme. Collection happens when you explicitly provide information in an unspecified way.
+22213,12,123,An unnamed third party does not receive unspecified information about you for a purpose outside of our label scheme.
+7612,13,96,"You can opt in for the use of unspecified information by the site, which collects it for an additional (non-basic) service or feature."
+8462,13,103,"A user's information of a type not covered by our label scheme is retained for an unspecified duration to perform a requested service, and then it is deleted.."
+22214,13,123,Another part of the company or institution does receive unspecified information about you for a purpose outside of our label scheme.
+7613,14,96,An unspecified third party does receive unspecified information about you for legal requirements.
+7614,14,96,An unspecified third party does receive unspecified information about you for service operations or security.
+8470,14,103,An unspecified third party does receive your unspecified personal information for legal requirements. The data is personally identifiable.
+22215,14,123,An unnamed third party does receive unspecified information about you for legal requirements. The data is personally identifiable.
+22216,14,123,An unnamed third party does receive unspecified information about you for service operations or security. The data is personally identifiable.
+7615,15,96,The site collects your computer information for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+7616,15,96,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+8473,15,103,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+8475,15,103,The site collects your computer information for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+8477,15,103,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+22217,15,123,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+22218,15,123,The site collects your computer information for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+22219,15,123,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+7617,16,96,The site collects your unspecified information for analytics or research. Collection happens in an unspecified way.
+8482,16,103,The site collects your unspecified information for analytics or research. Collection happens in an unspecified way.
+22220,16,123,The site collects your unspecified information for service operations or security. Collection happens on the website.
+22221,16,123,The site collects your unspecified information for personalization or customization. Collection happens on the website.
+22222,16,123,The site collects your unspecified information for analytics or research. Collection happens on the website.
+7618,17,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8485,17,103,The site collects your cookies or tracking elements for personalization or customization. Collection happens on the website.
+22224,17,123,The site collects your cookies or tracking elements for personalization or customization. Collection happens on the website.
+22225,17,123,The site collects your cookies or tracking elements for service operations or security. Collection happens on the website.
+22226,17,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7619,18,96,"You can use privacy configuration settings (in your browser or on your device) to control the use of unspecified information by the site, which uses it for a basic service or feature."
+8492,18,103,"You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by the site, which collects it for service operations or security."
+22227,18,123,"You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by the site, which uses it for a basic service or feature."
+7620,19,96,A named third party does track on the first party website or app unspecified information about you for targeted advertising.
+8495,19,103,The site collects your cookies or tracking elements for advertising. Collection happens in an unspecified way.
+22228,19,123,The site collects your cookies or tracking elements for advertising. Collection happens by a named service or third party.
+22229,19,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7621,20,96,An unspecified third party does receive unspecified information about you for an unspecified purpose. The identifiability of the data is not covered by our label scheme. You can opt out using the provided link for the collection or sharing of your information.
+8501,20,103,"The site collects your cookies or tracking elements for an unspecified purpose. Collection happens in an unspecified way, and your data is aggregated or anonymized."
+8509,20,103,"You can opt out (via a link) from the use of unspecified information by a third party, which collects or receives it for an unspecified purpose."
+8515,20,103,An unspecified third party does receive unspecified information about you for an unspecified purpose. The data is aggregated or anonymized. You can opt out using the provided link.
+22230,20,123,"The site collects your cookies or tracking elements for an unspecified purpose. Collection happens in an unspecified way, and your data is aggregated or anonymized."
+22231,20,123,"You can opt out (via a link) from the use of cookies and tracking elements by a third party, which collects or receives it for an unspecified purpose."
+7622,21,96,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+8621,21,103,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+22232,21,123,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+22233,21,123,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+7623,22,96,The text describes a specific data practice that is not covered by our label scheme.
+8622,22,103,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+22234,22,123,A specific security measure not covered above.
+7624,23,96,"You can opt in for the use of demographic information by the site, which uses it for marketing purposes."
+7625,23,96,"You can opt in for the use of unspecified information by the site, which uses it for marketing purposes."
+8623,23,103,"A user type outside of our label scheme can opt in for the use of contact information by the site, which uses it for marketing purposes."
+22235,23,123,The text does not fit into our label scheme.
+7626,24,96,"You can choose not to use a service or feature to avoid the use of unspecified information by the site, which uses it for a basic service or feature."
+8624,24,103,The text describes a specific data practice that is not covered by our label scheme.
+22237,24,123,The site collects your website activities for a basic service or feature. Collection happens when you explicitly provide information on the website.
+7627,25,96,The policy makes a statement about how data from children is treated.
+8625,25,103,The policy makes a statement about how data from children is treated.
+22238,25,123,The policy makes a statement about how data from children is treated.
+7628,26,96,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+8626,26,103,"A type of user outside of our label scheme can edit their information, within the scope of information explicitly provided by the user."
+22239,26,123,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+7629,27,96,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+8627,27,103,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+8628,27,103,The text describes a specific data practice that is not covered by our label scheme.
+22240,27,123,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+22241,27,123,The text does not fit into our label scheme.
+7630,28,96,The site collects your unspecified information for an unspecified purpose. Collection happens when you explicitly provide information on the website. You can choose not to use the service or feature for the use of your information.
+8629,28,103,The site collects your user profile for a purpose outside of our label scheme. Collection happens when you explicitly provide information on the website.
+22242,28,123,The site collects your unspecified information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+7631,29,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8630,29,103,The text describes a specific data practice that is not covered by our label scheme.
+22243,29,123,The text does not fit into our label scheme.
+7632,30,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8631,30,103,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+22244,30,123,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7633,31,96,"You can opt in for the use of contact information by the site, which uses it for marketing purposes."
+7634,31,96,"You can opt out (by contacting the company) from the use of contact information by the site, which uses it for marketing purposes."
+8632,31,103,"You can opt out (by contacting the company) from the use of contact information by the site, which uses it for marketing purposes."
+22245,31,123,"You can opt in for the use of contact information by the site, which uses it for advertising."
+22246,31,123,"You can opt out (by contacting the company) from the use of contact information by the site, which uses it for advertising."
+7635,32,96,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+8633,32,103,An unspecified third party does receive your contact information for an unspecified purpose.
+8634,32,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+22247,32,123,Security measures are not mentioned or unclear.
+22248,32,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7636,33,96,The policy makes a statement about how data from children is treated.
+8635,33,103,The policy makes a statement about how data from children is treated.
+22249,33,123,The policy makes a statement about how data from children is treated.

@@ -1,0 +1,247 @@
+189,0,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+527,0,82,The text does not fit into our label scheme.
+1010,0,88,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+190,1,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+529,1,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+1011,1,88,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+1012,1,88,The text describes a specific data practice that is not covered by our label scheme.
+191,2,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+528,2,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+1014,2,88,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+192,3,84,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+193,3,84,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information by an unnamed service or third party.
+530,3,82,The site collects your generic personal information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way.
+531,3,82,The site collects your generic personal information for service operations or security. Collection happens when you implicitly provide information in an unspecified way.
+532,3,82,The site collects your generic personal information for an unspecified purpose. Collection happens by an unnamed service or third party.
+1022,3,88,The site collects your generic personal information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+1024,3,88,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+1026,3,88,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information by an unnamed service or third party.
+194,4,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+533,4,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+195,5,84,"The site collects your contact information for personalization or customization. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable."
+196,5,84,"The site collects your demographic information for personalization or customization. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable."
+197,5,84,"The site collects your location information for personalization or customization. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable."
+198,5,84,"The site collects your generic personal information for personalization or customization. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable."
+199,5,84,"The site collects your financial information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable."
+534,5,82,The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way.
+535,5,82,The site collects your financial information for an unspecified purpose. Collection happens in an unspecified way.
+1029,5,88,"The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+1035,5,88,"The site collects your financial information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+200,6,84,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+201,6,84,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+552,6,82,The site collects your user profile for an additional (non-basic) service or feature. Collection happens when you explicitly provide information in an unspecified way.
+553,6,82,The site collects your generic personal information for an additional (non-basic) service or feature. Collection happens when you explicitly provide information in an unspecified way.
+554,6,82,The site collects your generic personal information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way.
+1042,6,88,"The site collects your unspecified information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+1043,6,88,"The site collects your unspecified information for an additional (non-basic) service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+202,7,84,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+203,7,84,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+204,7,84,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+205,7,84,The site collects your location information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+555,7,82,The site collects your IP address or device IDs for a basic service or feature. Collection happens in an unspecified way.
+556,7,82,The site collects your website activities for a basic service or feature. Collection happens in an unspecified way.
+557,7,82,The site collects your cookies or tracking elements for a basic service or feature. Collection happens in an unspecified way.
+558,7,82,The site collects your location information for a basic service or feature. Collection happens in an unspecified way.
+1045,7,88,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+1051,7,88,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+1054,7,88,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+206,8,84,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information by an unnamed service or third party.
+207,8,84,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information by a named service or third party.
+559,8,82,The site collects your generic personal information for an unspecified purpose. Collection happens by an unnamed service or third party.
+560,8,82,The site collects your social media data for an additional (non-basic) service or feature. Collection happens by an unnamed service or third party.
+1055,8,88,The site collects your unspecified information for an unspecified purpose. Collection happens when you implicitly provide information by an unnamed service or third party.
+208,9,84,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way. You can choose not to use the service or feature.
+209,9,84,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way. You can choose not to use the service or feature.
+210,9,84,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way. You can choose not to use the service or feature.
+561,9,82,"You can opt in for the use of generic personal information by the site, which collects it for an unspecified purpose."
+562,9,82,The site collects your generic personal information for an unspecified purpose. Collection happens in an unspecified way. You can opt in for data collection for the collection of your information.
+563,9,82,The site collects your IP address or device IDs for an unspecified purpose. Collection happens in an unspecified way. You can opt in for data collection for the collection of your information.
+564,9,82,The site collects your website activities for an unspecified purpose. Collection happens in an unspecified way. You can opt in for data collection for the collection of your information.
+1056,9,88,The site collects your generic personal information for an unspecified purpose. Collection happens when you explicitly provide information on the website. You can opt in for data collection for the collection of your information.
+211,10,84,The site collects your generic personal information for marketing purposes. Collection happens when you implicitly provide information in an unspecified way.
+212,10,84,The site collects your generic personal information for a basic service or feature. Collection happens when you implicitly provide information in an unspecified way.
+213,10,84,The site collects your generic personal information for personalization or customization. Collection happens when you implicitly provide information in an unspecified way.
+565,10,82,The site collects your generic personal information for personalization or customization. Collection happens in an unspecified way. You can make a choice about the use of your information.
+566,10,82,The site collects your generic personal information for a basic service or feature. Collection happens in an unspecified way. You can make a choice about the use of your information.
+567,10,82,The site collects your generic personal information for marketing purposes. Collection happens in an unspecified way. You can make a choice about the use of your information.
+1058,10,88,"The site collects your unspecified information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+1059,10,88,"The site collects your unspecified information for personalization or customization. Collection happens when you explicitly provide information on the website, and your data is identifiable."
+214,11,84,The text describes a specific data practice that is not covered by our label scheme.
+568,11,82,"You can make no specified choices about the use of unspecified information by the site, which uses it for legal requirements."
+569,11,82,"You can make no specified choices about the use of unspecified information by the site, which uses it for a basic service or feature."
+570,11,82,"You can make no specified choices about the use of unspecified information by the site, which uses it for a purpose outside of our label scheme."
+1061,11,88,"The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable. You can opt out using the provided link for the use of your information."
+215,12,84,The site collects your generic personal information for advertising. Collection happens when you implicitly provide information in an unspecified way.
+571,12,82,The site collects your generic personal information for advertising. Collection happens in an unspecified way.
+572,12,82,The site collects your generic personal information for marketing purposes. Collection happens in an unspecified way.
+1078,12,88,The site collects your unspecified information for advertising. Collection happens on the website.
+1081,12,88,The site collects your unspecified information for advertising. Collection happens on other websites.
+216,13,84,The site collects your generic personal information for analytics or research. Collection happens when you implicitly provide information in an unspecified way.
+573,13,82,The site collects your generic personal information for analytics or research. Collection happens in an unspecified way.
+1082,13,88,The site collects your demographic information for analytics or research. Collection happens on the website.
+1083,13,88,The site collects your website activities for analytics or research. Collection happens on the website.
+217,14,84,The site collects your generic personal information for legal requirements. Collection happens when you implicitly provide information in an unspecified way.
+218,14,84,The site collects your generic personal information for service operations or security. Collection happens when you implicitly provide information in an unspecified way.
+574,14,82,The site collects your generic personal information for legal requirements. Collection happens in an unspecified way.
+575,14,82,The site collects your generic personal information for service operations or security. Collection happens in an unspecified way.
+1084,14,88,"The site collects your generic personal information for legal requirements. Collection happens on the website, and your data is identifiable."
+219,15,84,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way. You can opt in for data collection.
+551,15,82,The site collects your generic personal information for an unspecified purpose. Collection happens in an unspecified way. You can opt in for data collection for the use of your information.
+1085,15,88,The site collects your unspecified information for an unspecified purpose. Collection happens when you explicitly provide information on the website. You can opt in for data collection.
+220,16,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+548,16,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+1086,16,88,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+221,17,84,Another part of the company or institution does receive your unspecified personal information for an unspecified purpose.
+547,17,82,Another part of the company or institution does receive your unspecified personal information for an unspecified purpose.
+1087,17,88,Another part of the company or institution does receive unspecified information about you for an unspecified purpose.
+222,18,84,A named third party does receive your unspecified personal information for an unspecified purpose.
+223,18,84,A named third party does receive your unspecified personal information for targeted advertising.
+549,18,82,An unnamed third party does receive your unspecified personal information for an additional (non-basic) service or feature.
+550,18,82,An unnamed third party does receive your unspecified personal information for marketing purposes.
+1088,18,88,The text describes a specific data practice that is not covered by our label scheme.
+1089,18,88,An unnamed third party does receive unspecified information about you for an additional (non-basic) service or feature. You can opt in for data collection.
+224,19,84,A named third party does receive your unspecified personal information for an unspecified purpose.
+225,19,84,A named third party does receive your financial information for an unspecified purpose.
+576,19,82,An unnamed third party does receive your unspecified personal information for service operations or security.
+577,19,82,An unnamed third party does receive your financial information for a basic service or feature.
+1090,19,88,An unnamed third party does receive unspecified information about you for a basic service or feature.
+1091,19,88,An unnamed third party does receive unspecified information about you for targeted advertising.
+1092,19,88,An unnamed third party does receive your financial information for a basic service or feature. The data is personally identifiable. You can choose not to use the service or feature.
+226,20,84,An unspecified third party does receive your unspecified personal information for legal requirements.
+227,20,84,An unspecified third party does receive your unspecified personal information for service operations or security.
+578,20,82,An unnamed third party does receive your unspecified personal information for service operations or security.
+579,20,82,An unnamed third party does receive your unspecified personal information for legal requirements.
+1093,20,88,An unnamed third party does receive your unspecified personal information for legal requirements. The data is personally identifiable.
+229,21,84,A named third party does receive your unspecified personal information for an unspecified purpose. You can choose not to use the service or feature.
+545,21,82,"You can choose not to use a service or feature to avoid the use of generic personal information by a third party, which collects or receives it for an additional (non-basic) service or feature."
+546,21,82,An unnamed third party does receive your unspecified personal information for an additional (non-basic) service or feature. You can choose not to use the service or feature for the use of your information.
+1094,21,88,The text describes a specific data practice that is not covered by our label scheme.
+1095,21,88,A third party outside of our label scheme does receive unspecified information about you for an unspecified purpose. You can choose not to use the service or feature.
+230,22,84,An unnamed third party does receive your unspecified personal information for a basic service or feature.
+231,22,84,An unnamed third party does receive your unspecified personal information for targeted advertising.
+232,22,84,An unnamed third party does receive your cookies or tracking elements for a basic service or feature.
+233,22,84,An unnamed third party does receive your cookies or tracking elements for targeted advertising.
+542,22,82,An unnamed third party does receive your cookies or tracking elements for targeted advertising.
+543,22,82,An unnamed third party does receive your cookies or tracking elements for service operations or security.
+544,22,82,An unnamed third party does receive your cookies or tracking elements for a basic service or feature.
+1096,22,88,An unnamed third party does collect on the first party website or app your cookies or tracking elements for an unspecified purpose.
+1102,22,88,An unnamed third party does receive your cookies or tracking elements for an unspecified purpose.
+1103,22,88,An unnamed third party does do something outside of our label scheme with your cookies or tracking elements for an unspecified purpose.
+1106,22,88,The site collects your unspecified information for an unspecified purpose. Collection happens when you implicitly provide information by other websites.
+234,23,84,An unnamed third party does receive your unspecified personal information for mergers or acquisitions.
+541,23,82,An unnamed third party does receive your unspecified personal information for mergers or acquisitions.
+1115,23,88,An unnamed third party does receive unspecified information about you for mergers or acquisitions.
+235,24,84,An unnamed third party does receive your unspecified personal information for an unspecified purpose. You can opt in for data collection.
+540,24,82,An unnamed third party does receive your unspecified personal information for an unspecified purpose. You can opt in for data collection.
+1120,24,88,An unnamed third party does receive unspecified information about you for an unspecified purpose. You can opt in for data collection.
+236,25,84,An unnamed third party does receive your unspecified personal information for an unspecified purpose. The data is aggregated or anonymized.
+539,25,82,An unnamed third party does receive unspecified information about you for analytics or research. The data is aggregated or anonymized.
+1122,25,88,An unnamed third party does receive your activities on the website or app for an unspecified purpose. The data is aggregated or anonymized.
+237,26,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+580,26,82,The text does not fit into our label scheme.
+1124,26,88,The text describes a specific data practice that is not covered by our label scheme.
+238,27,84,"Users with accounts can edit their information, within the scope of unspecified user information."
+581,27,82,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+582,27,82,"Users with accounts can view their information, within the scope of transactional data (e.g., online activity, purchases)."
+1131,27,88,"Users with accounts can edit their information, within the scope of information the company has learned about the user."
+239,28,84,The text describes a specific data practice that is not covered by our label scheme.
+538,28,82,You can make no specified choices about the use of unspecified information by an unspecified party for marketing purposes.
+1142,28,88,"The site collects your contact information for marketing purposes. Collection happens on the website, and your data is identifiable. You can opt out using the provided link."
+240,29,84,You can use third party privacy settings to control the use of unspecified information by an unspecified party for an unspecified purpose.
+583,29,82,"You can use third party privacy settings to control the use of unspecified information by a third party, which uses it for advertising."
+1145,29,88,You can use third party privacy settings to control the use of unspecified information by an unspecified party for advertising.
+241,30,84,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+537,30,82,"Data is stored securely, e.g. in an encrypted format or database."
+1147,30,88,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+242,31,84,The policy makes a statement about how data from children is treated.
+536,31,82,The policy makes a statement about how data from children is treated.
+1148,31,88,The policy makes a statement about how data from children is treated.
+243,32,84,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+584,32,82,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+585,32,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+1150,32,88,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+244,33,84,The website ignores Do Not Track headers and the user's Do Not Track preference.
+586,33,82,The website ignores Do Not Track headers and the user's Do Not Track preference.
+1151,33,88,The website ignores Do Not Track headers and the user's Do Not Track preference.
+245,34,84,"The policy makes specific provisions for international audiences, non-US citizens, or non-European citizens (e.g., about international data transfer)."
+587,34,82,The site collects your generic personal information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way. You can choose not to use the service or feature for the collection and use of your information.
+588,34,82,The site collects your generic personal information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way. You can choose not to use the service or feature for the collection and use of your information.
+589,34,82,"The policy makes specific provisions for international audiences, non-US citizens, or non-European citizens (e.g., about international data transfer)."
+1152,34,88,"The policy makes specific provisions for international audiences, non-US citizens, or non-European citizens (e.g., about international data transfer)."
+246,35,84,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+247,35,84,"When a change of an unspecified nature is made to the privacy policy, users are notified in an unspecified manner. Users' choices regarding policy changes are not mentioned or are unclear."
+590,35,82,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users have no options regarding the change."
+591,35,82,"When a change of an unspecified nature is made to the privacy policy, users are notified in an unspecified manner. Users have no options regarding the change."
+1163,35,88,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users can participate in a process to influence the change."
+249,36,84,The site collects your cookies or tracking elements for a basic service or feature. Collection happens when you implicitly provide information in an unspecified way.
+250,36,84,The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information in an unspecified way.
+251,36,84,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information in an unspecified way.
+252,36,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for a basic service or feature.
+253,36,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+254,36,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for targeted advertising.
+255,36,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for personalization or customization.
+256,36,84,The site collects your cookies or tracking elements for analytics or research. Collection happens when you implicitly provide information in an unspecified way.
+596,36,82,The site collects your cookies or tracking elements for analytics or research. Collection happens in an unspecified way.
+597,36,82,The site collects your cookies or tracking elements for advertising. Collection happens in an unspecified way.
+598,36,82,The site collects your cookies or tracking elements for personalization or customization. Collection happens in an unspecified way.
+599,36,82,An unnamed third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+600,36,82,An unnamed third party does track on the first party website or app your cookies or tracking elements for targeted advertising.
+601,36,82,An unnamed third party does track on the first party website or app your cookies or tracking elements for personalization or customization.
+1166,36,88,The site collects your cookies or tracking elements for service operations or security. Collection happens when you implicitly provide information on the website.
+1167,36,88,The site collects your cookies or tracking elements for analytics or research. Collection happens when you implicitly provide information on the website.
+1168,36,88,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information on the website.
+1169,36,88,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information on other websites.
+1172,36,88,The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information on the website.
+257,37,84,The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information in an unspecified way.
+258,37,84,The site collects your cookies or tracking elements for analytics or research. Collection happens when you implicitly provide information in an unspecified way.
+259,37,84,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information in an unspecified way.
+260,37,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for personalization or customization.
+261,37,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+262,37,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for targeted advertising.
+604,37,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+1173,37,88,"The site collects your user profile for personalization or customization. Collection happens when you implicitly provide information on the website for users with accounts, and your data is identifiable."
+1177,37,88,The site collects your cookies or tracking elements for analytics or research. Collection happens when you implicitly provide information on the website.
+1182,37,88,"The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information on the website for users with accounts, and your data is identifiable."
+1186,37,88,An unnamed third party does receive your cookies or tracking elements for analytics or research.
+1187,37,88,An unnamed third party does receive your cookies or tracking elements for targeted advertising.
+263,38,84,You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by an unspecified party for an unspecified purpose.
+602,38,82,You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by an unspecified party for an unspecified purpose.
+1188,38,88,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you explicitly provide information on the website. You can configure your privacy with browser settings.
+264,39,84,The site collects your cookies or tracking elements for analytics or research. Collection happens when you implicitly provide information in an unspecified way.
+265,39,84,The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information in an unspecified way.
+266,39,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+267,39,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for personalization or customization.
+605,39,82,The site collects your website activities for analytics or research. Collection happens in an unspecified way.
+606,39,82,The site collects your IP address or device IDs for analytics or research. Collection happens in an unspecified way.
+607,39,82,The site collects your website activities for advertising. Collection happens in an unspecified way.
+608,39,82,The site collects your IP address or device IDs for advertising. Collection happens in an unspecified way.
+609,39,82,The site collects your website activities for personalization or customization. Collection happens in an unspecified way.
+610,39,82,The site collects your IP address or device IDs for personalization or customization. Collection happens in an unspecified way.
+611,39,82,An unnamed third party does do something unspecified with your activities on the website or app for analytics or research.
+612,39,82,An unnamed third party does do something unspecified with your IP address or device IDs for analytics or research.
+613,39,82,An unnamed third party does do something unspecified with your activities on the website or app for targeted advertising.
+614,39,82,An unnamed third party does do something unspecified with your IP address or device IDs for targeted advertising.
+615,39,82,An unnamed third party does do something unspecified with your activities on the website or app for personalization or customization.
+616,39,82,An unnamed third party does do something unspecified with your IP address or device IDs for personalization or customization.
+1323,39,88,The site collects your cookies or tracking elements for analytics or research. Collection happens when you implicitly provide information on the website.
+1324,39,88,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information on the website.
+1325,39,88,An unnamed third party does do something unspecified with your cookies or tracking elements for analytics or research.
+1326,39,88,An unnamed third party does do something unspecified with your cookies or tracking elements for targeted advertising.
+268,40,84,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way. You can opt out using the provided link.
+269,40,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for an unspecified purpose. You can configure your privacy with browser settings.
+270,40,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for an unspecified purpose. You can opt out using the provided link.
+271,40,84,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way. You can configure your privacy with browser settings.
+617,40,82,The site collects your website activities for a basic service or feature. Collection happens in an unspecified way.
+618,40,82,An unnamed third party does track on the first party website or app your activities on the website or app for a basic service or feature.
+1327,40,88,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information on the website. You can configure your privacy with browser settings.
+1328,40,88,An unnamed third party does do something unspecified with your cookies or tracking elements for an unspecified purpose. You can configure your privacy with browser settings.
+272,41,84,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information in an unspecified way. You can configure your privacy with third-party user settings.
+273,41,84,An unnamed third party does track on the first party website or app your cookies or tracking elements for targeted advertising. You can configure your privacy with third-party user settings.
+594,41,82,The site collects your cookies or tracking elements for advertising. Collection happens in an unspecified way.
+595,41,82,An unnamed third party does track on the first party website or app your cookies or tracking elements for targeted advertising.
+1329,41,88,The site collects your cookies or tracking elements for advertising. Collection happens when you implicitly provide information on the website.
+1330,41,88,An unnamed third party does do something unspecified with your cookies or tracking elements for an unspecified purpose.
+274,42,84,You can use third party privacy settings to control the use of cookies and tracking elements by an unspecified party for an unspecified purpose.
+592,42,82,You can use third party privacy settings to control the use of cookies and tracking elements by an unspecified party for an unspecified purpose.
+593,42,82,You can use third party privacy settings to control the use of unspecified information by an unspecified party for advertising.
+1331,42,88,You can use third party privacy settings to control the use of cookies and tracking elements by an unspecified party for advertising.

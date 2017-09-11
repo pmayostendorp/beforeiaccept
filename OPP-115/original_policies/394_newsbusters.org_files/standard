@@ -1,0 +1,80 @@
+var mboxCurrent=mboxFactories.get('default').get('target-global-mbox',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-target-global-mbox-0">');/* Offer id: 26695*/ 
+
+_mboxDefaultContentOffer = function() {
+  this._onLoad = function() {};
+};
+
+_mboxDefaultContentOffer.prototype.setOnLoad = function(_onLoad) {
+  this._onLoad = _onLoad;
+};
+
+_mboxDefaultContentOffer.prototype.shouldAppendClickHandler = function(_mbox, _clickHandlerDiv, _defaultDiv) {
+  var _result = _mbox.getFetcher && _mbox.getFetcher().getType() === 'ajax';
+  _result = _result && _mbox.getDiv() === _mbox.getDefaultDiv();
+  _result = _result && _clickHandlerDiv !== null;
+  _result = _result && _clickHandlerDiv !== _defaultDiv;
+
+  return  _result;
+};
+
+_mboxDefaultContentOffer.prototype.appendClickHandlerIfRequired = function(_mbox, _clickHandlerDiv, _defaultDiv) {
+  if (this.shouldAppendClickHandler(_mbox, _clickHandlerDiv, _defaultDiv)) {
+    _defaultDiv.appendChild(_clickHandlerDiv);
+  }
+};
+
+_mboxDefaultContentOffer.prototype.onClickHandler = function(_mbox) {
+  // just use _mbox.getName() when everyone is on mboxVersion >= 21
+  var _mboxName = _mbox.getName ? _mbox.getName() : _mbox.id;
+  var _clickDiv = document.getElementById('mboxClick-' + _mboxName);
+
+  if (_clickDiv !== null) {
+    _clickDiv.onclick();
+  }
+};
+
+_mboxDefaultContentOffer.prototype.show = function(_mbox) {
+  try {
+    var _self = this;
+    var _defaultDiv = _mbox.getDefaultDiv();
+
+    if (_defaultDiv === null) {
+      return 0;
+    }
+
+    _defaultDiv.onclick = function () {
+      _self.onClickHandler(_mbox);
+    };
+
+    var _clickHandlerDiv = _mbox.getDiv();
+    var _result = _mbox.hide();
+
+    if (_result === 1) {
+      this.appendClickHandlerIfRequired(_mbox, _clickHandlerDiv, _defaultDiv);
+      this._onLoad();
+    }
+
+    return _result;
+  } catch (e) {
+    var _errorMessage = "Default content offer caused exception: " + e;
+
+    if (_mbox.setMessage) {
+      _mbox.setMessage(_errorMessage);
+    } else {
+      _mbox.setError(_errorMessage);
+    }
+
+    return 0;
+  }
+};
+
+(function(){
+  var shouldShowMbox = mboxCurrent.getFetcher && mboxCurrent.getFetcher().getType() === 'ajax';
+
+  mboxCurrent.setOffer(new _mboxDefaultContentOffer());
+
+  if (shouldShowMbox) {
+    mboxCurrent.show();
+  }
+}());
+document.write('<!-- Offer Id: 26703  --><script type=\"text\/javascript\"> \r\nif (typeof(s_tnt) == \'undefined\') { \r\n    s_tnt = \'\'; \r\n} \r\ns_tnt += \'49249:0:0,\'; \r\n<\/script>');document.write('<!-- Offer Id: 107745  --><script>\r\n\/\/if (window.tntRenderFlash) tntRenderFlash();\r\nif (window.tntRenderFlash && \"target-global-mbox\" != \"target-global-mbox\") tntRenderFlash();\r\n<\/script>');document.write('<!-- Offer Id: 78763  --><script type=\"text\/javascript\">\r\n(function() {\r\n\r\n\tif (!window.tntAamOffer) {\r\n\t\t\r\n\t\twindow.tntAamOffer = true;\r\n\t    var outList = [];\r\n\r\n\t\tfunction tryAgain(args, _this) { var self = arguments.callee; var func = args.callee; func.current = (func.current || 0) + (func.interval || self.interval); if (func.current <= (func.max || self.max)) { setTimeout(function() { func.apply((_this || {}), Array.prototype.slice.call(args)) }, (func.interval || self.interval) ); return true; } else return false; }; \r\n\t\ttryAgain.max = 12000; \r\n\t\ttryAgain.interval = 500;\r\n\r\n\t\tfunction tntLogIt(msg) {\r\n\t\t    if (window.console && window.console.log) {\r\n\t\t        console.log(msg);\r\n\t\t    }\r\n\t\t}\r\n\r\n\t    function tntSendAamToSC() {\r\n\t\t    if(outList.length > 0 && window.s) {\r\n\t\t        \/\/ tntLogIt(\"[s.prop56=\" + outList.join(\",\") + \"]\");\r\n\t\t        \/\/ tntLogIt(s);\t\t\t\r\n\t\t        mboxFactoryDefault.addOnLoad(function() {\r\n\t\t             s.linkTrackVars=\"prop56\";\r\n\t\t             s.prop56 = outList.join(\",\");\r\n\t\t             s.tl(true,\'o\',\'neustar\');\r\n\t\t        });\r\n\r\n\t\t    } else {\r\n\t                tryAgain(arguments);\r\n\t            }\r\n\t    }\r\n\r\n\t\taam_tnt_cb = function(){\r\n\r\n\t\t    if(outList.length == 0 && arguments[0].stuff != undefined && arguments[0].stuff != \"\"){\r\n\r\n\t\t        for(var i = 0; i < arguments[0].stuff.length; i++){\r\n\t\t\r\n\t\t            if(arguments[0].stuff[i].cn ==\"aam_tnt\"){\r\n\t\t                if(arguments[0].stuff[0].cv.split(\";\")){\r\n\t\t                    var demdex_raw = arguments[0].stuff[i].cv.split(\";\");\r\n\t\t                    var tapMboxBuilder = mboxFactoryDefault.getUrlBuilder();\r\n\t\t                    tapMboxBuilder.addParameters(demdex_raw);\r\n\r\n\t\t                    for (var j=0; j<demdex_raw.length; j++) {\r\n\t\t                        var splitVal = demdex_raw[j].split(\"=\");\r\n\t\t\t\t\tif (splitVal[0].match(\/neustar_propensity|aam_segment|offsite_aam\/g) && splitVal[1]) {\r\n\t\t\t\t\t\toutList.push(splitVal[1]);\r\n\t\t\t\t\t}\r\n\t\t                    }  \/\/ for\r\n\r\n\t\t                } \/\/ if\r\n\r\n\t\t            } \/\/ if\r\n\t\t\t\r\n\t\t        } \/\/ for\r\n\r\n\t\t        if (outList.length > 0 && !tntSendAamToSC.beenExecuted) {\r\n\t\t\t\ttntSendAamToSC.beenExecuted = true;\r\n\t            \t        tntSendAamToSC();\r\n\t\t        }\r\n\t\t\r\n\t\t    } \/\/ if\r\n\r\n\t\t} \/\/ function\r\n\t\t\r\n\t}\r\n\r\n\r\n})();\r\n<\/script>\r\n<!-- AAM API call here -->\r\n<script type=\"text\/javaScript\" language=\"javascript\" src=\"\/\/comcast.demdex.net\/event?d_stuff=1&d_dst=1&d_rtbd=json&d_cts=1&d_cb=aam_tnt_cb\"><\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('target-global-mbox',0).loaded();mboxFactories.get('default').getCookieManager().setCookie("session","1435866690819-710717",1860);

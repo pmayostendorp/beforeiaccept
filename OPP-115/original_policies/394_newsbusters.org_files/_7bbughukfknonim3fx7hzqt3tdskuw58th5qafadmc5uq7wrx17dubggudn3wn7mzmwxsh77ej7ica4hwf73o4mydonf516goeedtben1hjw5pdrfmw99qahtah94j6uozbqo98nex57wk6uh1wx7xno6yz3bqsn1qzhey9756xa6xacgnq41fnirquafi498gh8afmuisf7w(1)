@@ -1,0 +1,481 @@
+if (!window.mraid) {document.write('\x3cdiv class="GoogleActiveViewClass" ' +'id="DfaVisibilityIdentifier_3359514766"\x3e');}
+
+if (!window.mraid) {document.write('\x3cdiv class="GoogleActiveViewClass" ' +'id="DfaVisibilityIdentifier_3689010810196640910"\x3e');}
+
+tntFlashGlobals = {
+	version:"18.0",
+	baseDomain: "https://918ec7bd8a979be8d8f3-6e95fed53fb5a58b4332bc479f2dd214.ssl.cf5.rackcdn.com",
+	placementID: "119650605",
+	siteID: "1408063",
+	campaignID: "8518985",
+	dfaClickTracker: "https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssC_R8Dzahl63Ei6uEMmKRx48Gc1lzg9K_eZ3llwTteTM5B4uDM5BynhdH4OXlNECmiGWP9nJ2zNVSCkcT090umj4E4VT9S3SFO7eevaeHlxdq33FIWQ4JtnFAV1LjfdSkjnOJYuS0&sig=Cg0ArKJSzF7vPIAEgTaTEAE&adurl=http://rs.gwallet.com/r1/adclick/b5818409c403525S6R5B36238F39474T355548d/_7bbughukfknonim3fx7hzqt3tdskuw58th5qafadmc5uq7wrx17dubggudn3wn7mzmwxsh77ej7ica4hwf73o4mydonf516goeedtben1hjw5pdrfmw99qahtah94j6uozbqo98nex57wk6uh1wx7xno6yz3bqsn1qzhey9756xa6xacgnq41fnirquafi498gh8afmuisf7w%3F",
+	dfaCreative: "63720586",
+	location_data : "ct=US&st=PA&city=13328&dma=10&zp=15206&bw=3", 
+	publisher_data : "N8667.287481.RADIUMONE.COM", 
+	pixel_id : "",
+	creativeID: "59002192", //Not used. Creative is sent from T&T.
+	
+	swfDimensions: "728x90",//DO NOT CHANGE THIS LINE
+	gif: "https://918ec7bd8a979be8d8f3-6e95fed53fb5a58b4332bc479f2dd214.ssl.cf5.rackcdn.com/childswfs/GM_BDL_ENG_NoOffer_GETNOW_NOOFF_RMHTML_728x90.jpg",
+	swf: "https://918ec7bd8a979be8d8f3-6e95fed53fb5a58b4332bc479f2dd214.ssl.cf5.rackcdn.com/childswfs/GM_BDL_ENG_NoOffer_GETNOW_NOOFF_RMHTML_728x90.jpg",
+	landing_page: "https://www.comcast.com/?dfaid=4053494&cmp=0&cid=4053494",//DO NOT CHANGE THIS LINE	
+	swfClassId: "clsid:d27cdb6e-ae6d-11cf-96b8-444553540000",	
+	mboxName: "Q3-2015-JS-V1-MOV-ACQ", //DO NOT CHANGE THIS LINE: The mbox name. This needs to change for a campaign and/or division
+	isWeatherCall: false,//DO NOT CHANGE THIS LINE
+	//defaults
+	banner_name: "STATIC",
+	experience_name: "",
+	aam_cv: ""
+	
+};
+
+var results = new RegExp("[\\?&]zp=([^&#]*)").exec(tntFlashGlobals.location_data);
+tntFlashGlobals.zipCode = results == null ? "11201" : decodeURIComponent(results[1].replace(/\+/g, " "));
+tntFlashGlobals.idRoot = tntFlashGlobals.mboxName.replace(/[^A-Za-z0-9\_]/g,"_");
+tntFlashGlobals.mboxNameClick = tntFlashGlobals.mboxName + "_click";
+tntFlashGlobals.swfWidth = tntFlashGlobals.swfDimensions.split("x")[0];
+tntFlashGlobals.swfHeight = tntFlashGlobals.swfDimensions.split("x")[1];
+tntFlashGlobals.containerName = tntFlashGlobals.idRoot + '_innerContainer';
+
+tntAddScript = function(url, callback, error){
+    var scr = document.createElement("script");
+    scr.type = "text/javascript";
+    scr.setAttribute("charset", "ISO-8859-1");
+    if (!callback) {callback=function(){};};
+    if (!error) {error=function(){};};
+    if (scr.readyState){ /*IE*/
+        scr.onreadystatechange = function(){
+            if (scr.readyState == "loaded" || scr.readyState == "complete"){
+                scr.onreadystatechange = null;
+                callback();
+            }else{error();};
+        };
+    } else { 
+        scr.onload = function(){ callback(); };
+        scr.onerror = function(){ error(); };
+    }
+    scr.src = url;
+    var body = document.getElementsByTagName('body')[0]; 
+    if (body.firstChild) body.insertBefore(scr, body.firstChild); else body.appendChild(scr);
+}
+
+tntAddImage = function(url,callback) { var self = arguments.callee; self.img = document.createElement('img'); self.img.src = url + (url.indexOf("?")>-1 ? "&" : "?") + "rand=" + Math.ceil(Math.random()*99999999); self.img.style.display = "none"; if (callback) {     self.img.onload = function() { callback(); }; self.img.onreadystatechange = function() { if (this.readyState == 'complete' || this.readyState == 'loaded') { callback(); }  }; } };
+
+tntCreateElement = function(nodeName,attributes,inner) { function isSpecialAttr(attrName) { switch(attrName) { case "name": case "colspan": return true; default: return false; } };	 var elem = null; if (true || navigator.userAgent.match("MSIE|Trident")==null) { elem = document.createElement(nodeName); if (typeof(attributes) == "object" && attributes != null) { for (var attName in attributes) { var attValue = attributes[attName]; if (attName=="class")  elem.className = attValue; else elem.setAttribute(attName,attValue); } } } else { var attrStr = ""; if (typeof(attributes) == "object" && attributes != null) { for (var attName in attributes) { if (isSpecialAttr(attName)) { var attValue = attributes[attName]; if (attName=="class")  attName = "className"; attrStr += " " + attName + "='" + attValue + "'"; } }			 } elem = document.createElement("<" + nodeName + attrStr + "></" + nodeName + ">"); if (typeof(attributes) == "object" && attributes != null) { for (var attName in attributes) { if (!isSpecialAttr(attName)) { var attValue = attributes[attName]; if (attName=="class")  elem.className = attValue; else elem.setAttribute(attName,attValue); } }				 } } if (typeof(inner)=="string") elem.innerHTML = inner; else if (typeof(inner)=="object") elem.appendChild(inner); return elem; };  
+
+tntGetOuterHtml = function(innerElem) {
+	var div = document.createElement("div");
+	div.appendChild(innerElem);
+	return div.innerHTML;
+}
+
+tntMboxTrack = function(mbox) { var d = new Date(); if (window.mboxFactoryDefault) { var ub = mboxFactoryDefault.getUrlBuilder().clone(); ub.addParameter("mbox", mbox); ub.addParameter('mboxTime', d.getTime() - (d.getTimezoneOffset() * 60000)); ub.addParameters(Array.prototype.slice.call(arguments).slice(1)); var img = new Image(); img.src = ub.buildUrl().replace("/mbox/undefined", "/mbox/ajax"); img.style.display = "none"; if (document.body) document.body.insertBefore(img, document.body.firstChild); } };
+
+
+// DCFlash Class 
+DCFlash = function(id) {
+
+	var minV = 9;
+	var url = escape(tntFlashGlobals.landing_page);
+	var wmode = "transparent";
+	var bg = "same as SWF";
+	var dcallowscriptaccess = "always";
+
+	var cookieID = "PROBABLY NOT NEEDED";
+
+	var openWindow = "false";
+	var winW = 600;
+	var winH = 400;
+	var winL = 0;
+	var winT = 0;
+
+	var moviePath=tntFlashGlobals.swf.substring(0,tntFlashGlobals.swf.lastIndexOf("/"));
+	var sm=new Array();
+	sm[1] = "";
+	sm[2] = "";
+	sm[3] = "";
+	sm[4] = "";
+	sm[5] = "";
+
+	var ct=new Array();
+	ct[0] = ""; //"{mbox.clickThrough}";if(ct[0].substr(0,4)!="http"){ct[0]="";}         
+	ct[1] = "";
+	ct[2] = "";
+	ct[3] = "";
+	ct[4] = "";
+	ct[5] = "";
+	ct[6] = "";
+	ct[7] = "";
+	ct[8] = "";
+	ct[9] = "";
+	ct[10] = "";
+	
+
+	//var fv = 'clickTag=' + url + '&creativeID=' + tntFlashGlobals.creativeID + '&placementID=' + tntFlashGlobals.placementID + 
+	//		 '&siteID=' + tntFlashGlobals.siteID + '&campaignID=' + tntFlashGlobals.campaignID + '&cookieID=' + cookieID;
+	var fv = 'creativeID=' + tntFlashGlobals.creativeID + '&placementID=' + tntFlashGlobals.placementID + 
+	'&siteID=' + tntFlashGlobals.siteID + '&campaignID=' + tntFlashGlobals.campaignID + '&cookieID=' + cookieID; 
+
+	for (var i = 1; i < sm.length; i++) {
+		if (sm[i] != "") {
+			fv += "&submovie" + i + "=" + escape(sm[i]);
+		}
+	}
+	
+	var clickTagVariations = ["clickTag","clickTAG","clicktag"];
+	for (var i=0; i<clickTagVariations.length; i++) {
+		fv += "&" + clickTagVariations[i] + "=" + url;
+	}	
+	for (i = 1; i < ct.length; i++) {
+		if (ct[i] != "") {
+			if (ct[i].indexOf("http") == 0) {
+				x = escape("https://ad.doubleclick.net/click%3Bh%3Dv8/3f9b/3/0/%2a/r%3B283490208%3B0-0%3B0%3B107656142%3B4307-300/250%3B58881852/58770926/1%3B%3B%7Esscs%3D%3f" + ct[i]);
+			} else {
+				x = escape(ct[i]);
+			}
+			for (var j=0; j<clickTagVariations.length; j++) {
+				fv += "&" + clickTagVariations[j] + j + "=" + x;
+			}	
+	        //fv += "&clickTag" + i + "=" + x + "&clickTAG" + i + "=" + x + "&clicktag" + i + "=" + x;
+	    }
+	}
+	
+	//fv += '"';
+	var bgo = (bg == "same as SWF") ? "" : '<param name="bgcolor" value="#' + bg + '">';
+	var bge = (bg == "same as SWF") ? "" : ' bgcolor="#' + bg + '"';
+
+	function FSWin() {
+	    //if ((openWindow == "false") && (id == "DCF0")) alert('openWindow is wrong.');
+	    if ((openWindow == "center") && window.screen) {
+	    	winL = Math.floor((screen.availWidth - winW) / 2);
+	    	winT = Math.floor((screen.availHeight - winH) / 2);
+	    }
+	    window.open(unescape(url), id, "width=" + winW + ",height=" + winH + ",top=" + winT + 
+	    	",left=" + winL + ",status=no,toolbar=no,menubar=no,location=no");
+	}
+	this.FSWin = FSWin;
+	ua = navigator.userAgent;
+
+
+	var parent = document.getElementById(tntFlashGlobals.containerName); 
+
+
+	if (minV <= pVM && (openWindow == "false" || (ua.indexOf("Mac") < 0 && ua.indexOf("Opera") < 0))) {
+
+		var adcode = '';
+	    if (tntFlashGlobals.swf.indexOf('.gif') == -1) {//SWF is loaded, not default image
+
+
+	    	if (navigator.userAgent.match(/MSIE|Trident/)) {
+
+	    		var innerHTML = "";
+
+	    		innerHTML += '<PARAM NAME="FlashVars" VALUE="' + fv + '"></PARAM>\n';
+	    		innerHTML += '<PARAM NAME="Movie" VALUE="' + tntFlashGlobals.swf + '"></PARAM>\n';
+	    		innerHTML += '<PARAM NAME="Quality" VALUE="high"></PARAM>\n';
+	    		innerHTML += '<PARAM NAME="WMode" VALUE="' + wmode + '"></PARAM>\n';
+	    		innerHTML += '<PARAM NAME="Base" VALUE="' + tntFlashGlobals.swf.substring(0, tntFlashGlobals.swf.lastIndexOf("/")) + '"></PARAM>\n';
+	    		innerHTML += '<PARAM NAME="AllowScriptAccess" VALUE="' + dcallowscriptaccess  + '"></PARAM>\n';
+
+		    var embedHTML = tntGetOuterHtml(tntCreateElement("EMBED", {
+		    	"FlashVars": fv,
+		    	"src": tntFlashGlobals.swf,
+		    	"height": tntFlashGlobals.swfHeight,
+		    	"width": tntFlashGlobals.swfWidth,
+		    	"type": "application/x-shockwave-flash",
+		    	"quality": "high",
+		    	"swliveconnect": "true",
+		    	"wmode": wmode,
+		    	"name": id,
+		    	"base": tntFlashGlobals.swf.substring(0, tntFlashGlobals.swf.lastIndexOf("/")),
+		    	"AllowScriptAccess": dcallowscriptaccess
+		    }));
+		    if (embedHTML.indexOf("</EMBED>")==-1) embedHTML += "</EMBED>\n";
+
+
+		    var objHTML = '<OBJECT classid="' + tntFlashGlobals.swfClassId + '" id="' + id + '" height="' + tntFlashGlobals.swfHeight + '" width="' + tntFlashGlobals.swfWidth + '">' + innerHTML + embedHTML + '</OBJECT>';
+
+		    parent.innerHTML += objHTML;
+
+		} else {
+
+			var obj = tntCreateElement("object", { 
+				"classid": tntFlashGlobals.swfClassId, 
+				"id": id, 
+				"height": tntFlashGlobals.swfHeight, 
+				"width": tntFlashGlobals.swfWidth 
+			});
+
+
+			obj.appendChild(tntCreateElement("param", { "name": "flashVars", "value": fv }));
+
+			obj.appendChild(tntCreateElement("param", { "name": "movie", "value": tntFlashGlobals.swf  + "?clickTAG=" + url }));
+
+			obj.appendChild(tntCreateElement("param", { "name": "quality", "value": "high" }));
+			obj.appendChild(tntCreateElement("param", { "name": "wmode", "value": wmode }));
+			obj.appendChild(tntCreateElement("param", { "name": "base", "value": tntFlashGlobals.swf.substring(0, tntFlashGlobals.swf.lastIndexOf("/")) }));
+			obj.appendChild(tntCreateElement("param", { "name": "AllowScriptAccess", "value": dcallowscriptaccess }));
+
+			var embed = tntCreateElement("embed", {
+				"src": tntFlashGlobals.swf,
+				"height": tntFlashGlobals.swfHeight,
+				"width": tntFlashGlobals.swfWidth,
+				"type": "application/x-shockwave-flash",
+				"quality": "high",
+				"swliveconnect": "true",
+				"wmode": wmode,
+				"name": id,
+				"FlashVars": fv,
+				"base": tntFlashGlobals.swf.substring(0, tntFlashGlobals.swf.lastIndexOf("/")),
+				"AllowScriptAccess": dcallowscriptaccess
+			});
+			try { 
+				obj.appendChild(embed);			
+			} catch(e) { }
+
+			parent.appendChild(obj);
+
+		}	
+
+
+		var container = parent;
+		container.style.position = 'relative';
+		var div = document.createElement('a');
+		div.setAttribute("href",tntFlashGlobals.dfaClickTracker + tntFlashGlobals.landing_page);
+		div.setAttribute("target","_blank");
+		div.id = tntFlashGlobals.idRoot + '_overFlashElement';
+		div.className = 'over-flash-element';
+		container.appendChild(div, container);
+		div.style.position = 'absolute';
+		div.style.top = '0';
+		div.style.left = '0';
+		div.style.width = '100%';
+		div.style.height = '100%';
+		div.style.cursor = 'pointer';
+		div.style.zIndex = '999';
+		div.style.display = "block";
+		div.style.opacity = 0;
+		div.style.filter = "alpha(opacity=0)";
+		div.style.backgroundColor="#fff";
+
+		div.onclick = function() {
+			tntMboxTrack(tntFlashGlobals.mboxNameClick, "clicked=flash_cta");
+	    //window.open(tntFlashGlobals.dfaClickTracker + tntFlashGlobals.landing_page, '_blank');
+	};
+	parent.insertBefore(div,parent.firstChild);
+	
+	    }else{//show default image
+	    	var a = tntCreateElement("a", { "href": tntFlashGlobals.dfaClickTracker + tntFlashGlobals.landing_page, "onclick": "tntMboxTrack(\'" + tntFlashGlobals.mboxNameClick + "\',\'clicked=flash_cta\')", "target": "_blank" });
+	    	a.appendChild(tntCreateElement("img", { "src": tntFlashGlobals.gif, "border": "0" }));
+	    	parent.appendChild(a);
+	    }
+
+	} else {
+		
+		var a = tntCreateElement("a", { "href": unescape(url), "onclick": "tntMboxTrack(\'" + tntFlashGlobals.mboxNameClick + "\',\'clicked=flash_cta\')", "target": "_blank" });
+		a.appendChild(tntCreateElement("img", { 
+			"src": tntFlashGlobals.gif, 
+			"height": tntFlashGlobals.swfHeight,
+			"width": tntFlashGlobals.swfWidth,
+			"border": "0", 
+			"alt": "", 
+			"galleryimg": "no" 
+		}));
+		parent.appendChild(a);
+		parent.appendChild(tntCreateElement("img",{
+			"src": "https://fishnchips.112.2o7.net/b/ss/tnt-test/1/H.25.1--NS/0?pageName=" + tntFlashGlobals.swfWidth + "x" + tntFlashGlobals.swfHeight,
+			"height": "1",
+			"width": "1",
+			"border": "0",
+			"alt": "",
+			"style": "display:none"
+		}));
+
+	}
+
+	
+} // function DCFlash
+
+// RENDER FLASH ------------------------------------------------------------------------------------------------------------------
+tntRenderFlash = function() {
+
+	if (!tntRenderFlash.hasBeenExecuted) {
+
+
+	tntRenderFlash.hasBeenExecuted = true; // important to prevent from running multiple times
+
+	pVM = 0;
+	var DCid = (isNaN("{mbox.adId")) ? "DCF2" : "DCF{mbox.adId}";
+	if (navigator.plugins && navigator.mimeTypes.length) {
+		var x = navigator.plugins["Shockwave Flash"];
+		if (x && x.description) {
+			var pVF = x.description;
+			var y = pVF.indexOf("Flash ") + 6;
+			pVM = pVF.substring(y, pVF.indexOf(".", y));
+		}
+	} else if (window.ActiveXObject && window.execScript) {
+		window.execScript('on error resume next\npVM=2\ndo\npVM=pVM+1\nset swControl = '+
+			'CreateObject("ShockwaveFlash.ShockwaveFlash."&pVM)\nloop while Err = 0\nOn '+
+			'Error Resume Next\npVM=pVM-1\nSub ' + 
+			DCid + '_FSCommand(ByVal command, ByVal args)\nCall ' + DCid + '_DoFSCommand'+
+			'(command, args)\nEnd Sub\n', "VBScript");
+	} else if (navigator.userAgent.match(/Trident/)) { // IE 11 and above.
+		var minWorkingVer = 9;
+		var tempObj = false;
+		var prevTempObj = false;
+		for (var i=minWorkingVer; i<20; i++) {
+			try {
+				tempObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash." + i);
+
+				prevTempObj = tempObj;
+				minWorkingVer = i;
+			} catch (e) {
+				tempObj = false;
+			}
+		}
+
+		if (!prevTempObj) {
+			try { tempObj = new ActiveXObject("ShockwaveFlash.ShockwaveFlash"); prevTempObj = tempObj; } catch(e) { };
+		}
+		try {
+			if (prevTempObj && prevTempObj.GetVariable("$version")) {
+				var flashVersion = prevTempObj.GetVariable("$version") || "";
+				var parsedVersion = (flashVersion.split(" ")[1] || "").split(",")[0];
+				if (parsedVersion)
+					pVM = parseInt(parsedVersion,10);
+			}
+		} catch(e) { };
+	}   
+	
+	eval("function " + DCid + "_DoFSCommand(c,a){if(c=='openWindow')o" + DCid + ".FSWin();}o" + DCid + 
+		"=new DCFlash('" + DCid + "',pVM);");
+	
+}
+
+} // function tntRenderFlash
+
+
+
+// MBOX.JS DEPENDENT CODE --------------------------------------------------------------------------------------------------------
+tntMboxJsSpecificCode = function(weather) {
+
+	if (window.mboxFactoryDefault) {
+
+		if (!tntMboxJsSpecificCode.hasBeenExecuted) { 
+
+			tntMboxJsSpecificCode.hasBeenExecuted = true;
+
+			var div = document.createElement("div");
+			div.id = tntFlashGlobals.idRoot + "_div";
+			var body = document.getElementsByTagName("body")[0];
+			if (body) body.insertBefore(div,body.firstChild);
+
+			mboxDefine(div.id,tntFlashGlobals.mboxName);
+
+			var mboxArguments = [tntFlashGlobals.mboxName, 
+								"width=" + tntFlashGlobals.swfWidth, 
+								"height=" + tntFlashGlobals.swfHeight, 
+								"AAMsegment=" + tntFlashGlobals.aam_cv, 
+								"weather=" + weather, 
+								"pixel_id=" + tntFlashGlobals.pixel_id,
+								"publisher=" + tntFlashGlobals.publisher_data];
+			//build AAM arguments, if any
+			if(typeof tntFlashGlobals.aam_cv === 'string' && tntFlashGlobals.aam_cv.length > 0){//ex: a=1;b=2;c=3,4,5;d=6
+				var aam_cv_vals = (tntFlashGlobals.aam_cv.indexOf(';')!=-1) ? tntFlashGlobals.aam_cv.split(';') : [tntFlashGlobals.aam_cv];
+				for (var i = aam_cv_vals.length - 1; i >= 0; i--) {
+					var val = aam_cv_vals[i];
+					if (val.indexOf('=')!=-1) {
+						var parts = val.split('=');
+						mboxArguments.push( parts[0]+'='+ parts[1] );  
+					};
+				};
+				
+			};
+			mboxUpdate.apply(undefined,mboxArguments);
+
+			tntMboxCallback();
+
+			// protection in case mbox call does not return.
+			if (window.mboxFactoryDefault && window.mboxFactoryDefault.isEnabled && !window.mboxFactoryDefault.isEnabled())
+				tntRenderFlash();
+			else
+				setTimeout(tntRenderFlash,15000);
+
+
+        } // if (!hadBeenExecuted)	
+
+    } else {
+    	setTimeout(arguments.callee,500);
+    }
+}
+
+
+// AUDIENCE MANAGER --------------------------------------------------------------------------------------------------------------
+// callback functions
+function aam_tnt_cb (){		
+	if(typeof(arguments[0].stuff) != "undefined" && arguments[0].stuff != ""){
+		for(var i = 0; i < arguments[0].stuff.length; i++){
+			if(arguments[0].stuff[i].cn =="aam_tnt"){
+				tntFlashGlobals.aam_cv = arguments[0].stuff[i].cv;
+			}
+		}
+	}
+}
+tntAddScript("//comcast.demdex.net/event?d_event=imp&d_stuff=1&d_dst=1&d_rtbd=json&d_cts=1&d_cb=aam_tnt_cb");
+
+tntMboxCallback = function(){
+	var interval = 100,
+        timeout = 3000;
+
+    var _callback = function(){
+		try{
+			tntAddImage("https://comcast.demdex.net/event?d_campaign=" + tntFlashGlobals.campaignID + 
+					"&d_site=" +  tntFlashGlobals.siteID + 
+					"&d_placement=" + tntFlashGlobals.placementID + 
+					"&d_creative=" + encodeURIComponent( tntFlashGlobals.dfaCreative ) + 
+					"&d_creative_dat=" + tntFlashGlobals.banner_name + 
+					"&d_experience_id=" +  tntFlashGlobals.experience_name + 
+					"&d_cb=" + Math.floor(Math.random()*10000) +
+					"&d_event=imp&d_src=1478"
+			);
+			tntAddImage("https://log.dmtry.com/redir/1/0/3879/" + 
+					tntFlashGlobals.placementID + "/" + 
+					tntFlashGlobals.banner_name + 
+					"/1/165/0/977/1.ver?at=i&d=PxImp");
+		}catch(e){}
+    };
+
+    var checker = setInterval(function () {
+		var obj = tntFlashGlobals.banner_name;
+		if(timeout <= 0) {
+			clearInterval(checker);
+			_callback();
+			return;
+		}
+		if(typeof obj==='string' && obj!=='STATIC' && obj.length>0){//banner_name is set!
+			clearInterval(checker);
+			_callback();
+		  	return;
+		}
+		console.log('waiting for '+obj);
+		timeout -= interval;
+	}, interval); 
+
+}; 
+
+//VU: removed line 20140106
+//tntAddScript("https://choices.truste.com/ca?pid=comcast01&aid=comcast01&cid=%ebuy_1408066_109771419_59002192&js=st_0");
+
+document.write('<div id="' + tntFlashGlobals.containerName + '"></div>');
+document.write('\n\n\n\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://918ec7bd8a979be8d8f3-6e95fed53fb5a58b4332bc479f2dd214.ssl.cf5.rackcdn.com/mbox/mbox_2015.js\x22\x3e\x3c/script\x3e\n\n');
+
+//VU: removed weather call 20140106
+if(tntFlashGlobals.isWeatherCall && typeof tntFlashGlobals.zipCode === "string" && tntFlashGlobals.zipCode.length > 0) {//VU 12112014 dyn load with err handler
+	setTimeout(tntMboxJsSpecificCode,5000);
+	tntAddScript('https://www.cweatherdatatrigger.com/get-one-zip-weather.php?zipcode='+tntFlashGlobals.zipCode+'&callBack=tntMboxJsSpecificCode',tntMboxJsSpecificCode,tntMboxJsSpecificCode);
+	//document.write('\n\n\n\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.cweatherdatatrigger.com/get-one-zip-weather.php?zipcode='+tntFlashGlobals.zipCode+'&callBack=tntMboxJsSpecificCode\x22\x3e\x3c/script\x3e\n\n');
+}else {
+	tntMboxJsSpecificCode();
+}
+
+if (!window.mraid) {document.write('\x3c/div\x3e');}if (!window.mraid) {(function() {var avDiv = document.getElementById("DfaVisibilityIdentifier_3359514766");if (avDiv) {avDiv['_avi_'] = 'BsdA4kJaVVdWOBcWAMYLcm_AOAAAAABABOAHIAQngBAKgBj8';avDiv['_avihost_'] = 'pagead2.googlesyndication.com';avDiv['_avm_'] = 'la\x3d0\x26';}var glidar = document.createElement('script');glidar.type = 'text/javascript';glidar.async = true;glidar.src = '//pagead2.googlesyndication.com/pagead/js/lidar.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glidar, s);})();}document.write('\x3cimg src\x3d\x22https://comcast.demdex.net/event?d_event\x3dimp\x26amp;d_src\x3d1478\x26amp;d_site\x3d1408063\x26amp;d_creative\x3d63720586\x26amp;d_placement\x3d119650605\x26amp;d_campaign\x3d8518985\x26amp;d_cb\x3d3359514766\x22 height\x3d\x221\x22 width\x3d\x221\x22 border\x3d\x220\x22\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://cdn.doubleverify.com/dvtp_src.js?ctx\x3d971108\x26amp;cmp\x3d8518985\x26amp;sid\x3d1408063\x26amp;plc\x3d119650605\x26amp;num\x3d\x26amp;adid\x3d\x26amp;advid\x3d4053494\x26amp;adsrv\x3d1\x26amp;region\x3d30\x26amp;btreg\x3d292443025\x26amp;btadsrv\x3ddoubleclick\x26amp;crt\x3d63720586\x26amp;crtname\x3d\x26amp;chnl\x3d\x26amp;unit\x3d\x26amp;pid\x3d\x26amp;uid\x3d\x26amp;dvtagver\x3d6.1.src\x22\x3e\x3c/script\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://choices.truste.com/ca?pid\x3dcomcast01\x26amp;aid\x3dcomcast01\x26amp;cid\x3d%ebuy_1408063_119650605_63720586\x26amp;js\x3dst_0\x22\x3e\x3c/script\x3e');(function(){var f=function(a,c,b){return a.call.apply(a.bind,arguments)},g=function(a,c,b){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var b=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(b,d);return a.apply(c,b)}}return function(){return a.apply(c,arguments)}},k=function(a,c,b){k=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?f:g;return k.apply(null,arguments)};var l=document,m=window;var n=function(a){return{visible:1,hidden:2,prerender:3,preview:4}[a.webkitVisibilityState||a.mozVisibilityState||a.visibilityState||""]||0},p=function(a){var c;a.mozVisibilityState?c="mozvisibilitychange":a.webkitVisibilityState?c="webkitvisibilitychange":a.visibilityState&&(c="visibilitychange");return c};var r=function(){this.g=l;this.j=m;this.i=!1;this.h=[];this.m={};if(3==n(this.g)){var a=k(this.o,this);this.n=a;var c=this.g,b=p(this.g);c.addEventListener?c.addEventListener(b,a,!1):c.attachEvent&&c.attachEvent("on"+b,a)}else q(this)};r.p=function(){return r.l?r.l:r.l=new r};var s=/^([^:]+:\/\/[^/]+)/m,t=/^\d*,(.+)$/m,q=function(a){if(!a.i){a.i=!0;for(var c=0;c<a.h.length;++c)a.k.apply(a,a.h[c]);a.h=[]}};r.prototype.q=function(a,c){var b=c.target.t();(b=t.exec(b))&&(this.m[a]=b[1])};r.prototype.k=function(a,c){var b;if(b=this.s)i:{try{var d=s.exec(this.j.location.href),e=s.exec(a);if(d&&e&&d[1]==e[1]&&c){var h=k(this.q,this,c);this.s(a,h);b=!0;break i}}catch(y){}b=!1}b||(b=this.j,b.google_image_requests||(b.google_image_requests=[]),d=b.document.createElement("img"),d.src=a,b.google_image_requests.push(d))};r.prototype.o=function(){if(3!=n(this.g)){q(this);var a=this.g,c=p(this.g),b=this.n;a.removeEventListener?a.removeEventListener(c,b,!1):a.detachEvent&&a.detachEvent("on"+c,b)}};var u=function(a,c){var b=/(google|doubleclick).*\/pagead\/adview/.test(a),d=r.p(),e=a;if(b){b="&vis="+n(d.g);c&&(b+="&ve=1");var h=e.indexOf("&adurl"),e=-1==h?e+b:e.substring(0,h)+b+e.substring(h)}d.i?d.k(e,c):d.h.push([e,c])},v=["pdib"],w=this;v[0]in w||!w.execScript||w.execScript("var "+v[0]);for(var x;v.length&&(x=v.shift());)v.length||void 0===u?w=w[x]?w[x]:w[x]={}:w[x]=u;})();pdib("https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjssC_R8Dzahl63Ei6uEMmKRx48Gc1lzg9K_eZ3llwTteTM5B4uDM5BynhdH4OXlNECmiGWP9nJ2zNVSCkcT090umj4E4VT9S3SFO7eevaeHlxdq33FIWQ4JtnFAV1LjfdSkjnOJYuS0\x26sig\x3dCg0ArKJSzBtllR_bm4ADEAE\x26adurl\x3d");

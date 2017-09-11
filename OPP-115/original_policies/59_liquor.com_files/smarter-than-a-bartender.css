@@ -1,0 +1,55 @@
+.smarter-than-a-bartender {
+	background-image: url('http://liquor.assets.s3.amazonaws.com/house-ads/smarter-than-a-bartender-bkg.jpg');
+	background-position: center center;
+	padding: 20px 0px;
+	margin: 20px 0px;
+}
+
+.smarter-than-a-bartender h6 {
+	font-size: 3em;
+	text-transform: uppercase;
+	color: white;
+}
+
+.smarter-than-a-bartender p {
+	font-size: 1.25em;
+	color: white;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+
+	.smarter-than-a-bartender h6 {
+		font-size: 2.5em;
+	}
+
+	.smarter-than-a-bartender p {
+		font-size: 1.25em;
+	}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 922px) {
+
+	.smarter-than-a-bartender h6 {
+		font-size: 2.25em;
+	}
+
+	.smarter-than-a-bartender p {
+		font-size: 1.15em;
+	}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 766px) {
+
+	.smarter-than-a-bartender h6 {
+		font-size: 2.0em;
+	}
+
+	.smarter-than-a-bartender p {
+		font-size: 1em;
+	}
+
+
+}

@@ -1,0 +1,2 @@
+$(document).ready(function(){$(".ticker-tape-summary").each(function(){var tickerComponent=$(this);var ticker=tickerComponent.find("ul").lightSlider({gallery:false,item:1,vertical:true,verticalHeight:29,slideMargin:0,loop:true,auto:true,speed:200,pause:2000,controls:true,onSliderLoad:function(el){tickerComponent.hover(function(){ticker.pause();
+},function(){ticker.play();});}});});});

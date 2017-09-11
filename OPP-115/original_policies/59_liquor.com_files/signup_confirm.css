@@ -1,0 +1,211 @@
+#ldc_hd_register_popup #register_button {
+	text-align:right;
+	padding-right:37px;
+	margin-top:0px;
+}
+
+#ldc_hd_register_popup #checkbox {
+	font-family: helvetica;
+	color: #434851;
+	font-size: 11px;
+	text-align: left;
+	margin-top: 5px;
+	margin-left: 51px;
+}
+
+#ldc_hd_register_popup #checkbox span {
+	font-family:helvetica;
+	color:#974c18;
+	font-size:11px;
+}
+
+#ldc_hd_signin_popup #reg_img {
+	float:left;
+	width:62px;
+	margin-top:104px !important;
+	height:33px;
+}
+
+#ldc_hd_register_popup #create input {
+	border-radius:3px;
+	margin-top:4px;
+	border: 1px solid #DADADA;
+	padding:5px;
+	width:172px;
+	height:16px;
+	border:1px solid #F4F4F4;
+	-moz-box-shadow: inset 0 0 5px 5px #B9B9B9;
+	-webkit-box-shadow: inset 0 1px 5px 5px #B9B9B9;
+	box-shadow: inset 0 3px 1px 0px #B9B9B9
+}
+
+#ldc_hd_register_popup #create {
+	margin-top:10px;
+}
+
+#signup_confirm_form {
+}
+
+#ldc_hd_signup_confirm_popup #top {
+	background:url("http://liquor.com/wp-content/uploads/2012/03/header_popup.png");
+	height:98px;
+	width:973px;
+}
+
+#ldc_hd_signup_confirm_popup #bottom {
+	background:url("http://liquor.com/wp-content/uploads/2012/03/bottom_popup.png");
+	height:98px;
+	width:973px;
+}
+
+#ldc_hd_signup_confirm_popup #middle {
+	background-image: url("http://liquor.com/wp-content/uploads/2012/03/middle_popup.png") ;
+	width:973px;
+	background-repeat:repeat-y;
+	height:300px;
+	margin-top:-17px;
+}
+
+#ldc_hd_signup_confirm_popup {
+	width:980px;
+	height:480px;
+	margin: 0 auto;
+}
+
+#ldc_hd_recheck_info td {
+		color: #444444;
+		font-family: helvetica,arial;
+		font-size: 13px;
+	padding-bottom:10px;
+}
+
+#ldc_hd_signup_confirm_popup #notice {
+	margin-top:12px;
+	font-size:12px;
+	line-height:16px;
+	font-family:helvetica, arial;
+	color:#444444;
+	font-weight:normal;
+	width:210px;
+	height:70px;
+	background-color:#F1F1F1;
+	border-radius:5px;
+	padding-left:18px;
+	padding-right:10px;
+	padding-top:9px;
+	padding-bottom:5px;
+}
+
+#ldc_hd_signup_confirm_popup #checkboxes {
+	margin-top:7px;
+	font-family:helvetica, arial;
+	font-weight:normal;
+	color:#444444;
+}
+
+#ldc_hd_signup_confirm_popup #edition {
+	border-right:1px dotted #D5D5D5;
+	width:260px;
+	padding-left:42px;
+	float:left;
+	padding-right:4px;
+	color:#1c1c1f;
+	font-family:georgia;
+	font-weight:bold;
+	font-size:13px;
+	line-height:17px;
+	padding-top:10px;
+}
+
+#ldc_hd_signup_confirm_popup #button {
+	text-align: right;
+	padding-right: 50px;
+	background-color: white;
+	border: 0;
+	width: 130px;
+	margin-left: 810px;
+	margin-top:10px;
+}
+
+#ldc_hd_signup_confirm_popup #questions #checkboxes {
+	font-size:13px;
+	font-family:helvetica, arial;
+	color:#444444;
+}
+
+#ldc_hd_signup_confirm_popup #info {
+	float:left;
+	padding-left: 27px;
+	padding-right: 26px;
+	width: 300px;
+	color:#1c1c1f;
+	font-family:georgia;
+	font-weight:bold;
+	font-size:13px;
+	line-height:17px;
+	padding-top:10px;
+}
+
+#ldc_hd_signup_confirm_popup #questions p {
+	font-size:13px;
+	font-family:helvetica;
+	font-weight:normal;
+	color:#444444;
+	padding:0;
+	margin:0;
+}
+
+#ldc_hd_signup_confirm_popup #questions {
+	border-left:1px dotted #D5D5D5;
+	float:left;
+	padding-top:10px;
+	width:280px;
+	padding-left:26px;
+	color:#1c1c1f;
+	font-family:georgia;
+	font-weight:bold;
+	font-size:13px;
+	line-height:17px;
+	cursor:pointer;
+}
+
+/*
+#ldc_hd_signup_confirm_popup #recheck_info {
+	margin-top:20px;
+}
+*/
+
+#signup_confirm_form .shadowed-text-input {
+	border:1px solid #BEBEBE;
+	-moz-box-shadow: inset 0 0 5px 5px #CECECE;
+	-webkit-box-shadow: inset 0 1px 5px 5px #CECECE;
+	box-shadow: inset 0 3px 1px 0px #CECECE;
+	padding-left:5px;
+	width:165px;
+	border-radius:3px;
+	moz-border-radius:3px;
+}
+
+/*
+#ldc_hd_signup_confirm_popup #recheck_info input {
+	border:1px solid #BEBEBE;
+	-moz-box-shadow: inset 0 0 5px 5px #CECECE;
+	-webkit-box-shadow: inset 0 1px 5px 5px #CECECE;
+	box-shadow: inset 0 3px 1px 0px #CECECE;
+	padding-left:5px;
+	width:165px;
+	margin-bottom:4px;
+	height:25px;
+	border-radius:3px;
+	color:#6f7375;
+}
+*/
+
+form#signup_confirm_form div#top label {
+	display: block;
+	font-family: Georgia, Times, serif;
+	font-size: 28px !important;
+	line-height: 30px;
+	padding-top: 53px;
+	text-align: center;
+}

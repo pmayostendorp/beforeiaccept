@@ -1,0 +1,132 @@
+.adweek_nodequeue_mod {
+  border-top: 4px solid #000;
+}
+
+.mod .adweek_nodequeue_mod {
+  border-top: none;
+}
+
+.styled_noqueue_item,
+.styled_nodequeue {
+  width: 100%;
+}
+
+.styled_noqueue_item {
+  padding: 7px 0;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.styled_noqueue_item.first {
+  border-top: 1px solid #bfbfbf;
+}
+
+.styled_noqueue_item .side {
+  width: 50%;
+  float: left;
+}
+
+.styled_noqueue_item_text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  font-weight: bold;
+  height: 84px;
+}
+
+.styled_noqueue_item .wide-text {
+  height: auto;
+}
+
+.styled_noqueue_item_text a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.styled_noqueue_item_text .text_wrapper {
+  padding: 0 10px 0 3px;
+}
+
+.styled_noqueue_item_subhead {
+  color: gray;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/**********************************/
+/***  Article Newsletter Block  ***/
+/**********************************/
+.adweek_article_newsletters_block_mod {
+  background: #eaeaea;
+  color: #797979;
+  padding: 15px 20px;
+  margin: 30px 0 15px 0;
+}
+.adweek_article_newsletters_block_mod  .newsletters-selection ul li {
+  list-style-type: none;
+  list-style-position: inherit;
+}
+.adweek_article_newsletters_block_mod  .newsletters-selection li { 
+  margin: 0;
+  font: inherit;
+}
+.adweek_article_newsletters_block_mod .title { font-size: 18px; }
+.adweek_article_newsletters_block_mod .title strong { font-weight: bold; }
+.adweek_article_newsletters_block_mod input[name=email] {
+  border: 0;
+  color: #a9a9a9;
+  font-size: 13px;
+  height: 35px;
+  margin: 15px 17px 15px 0px;
+  padding: 0px 10px;
+  width: 333px;
+}
+.adweek_article_newsletters_block_mod input[type=submit] {
+  background: #d74942;
+  border: 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  height: 35px;
+  text-align: center;
+  width: 100px;
+}
+.adweek_article_newsletters_block_mod .newsletters-selection {
+  font-size: 14px;
+  line-height: 30px;
+}
+.adweek_article_newsletters_block_mod .newsletters-selection p { padding-bottom: 7px; }
+.adweek_article_newsletters_block_mod .newsletters-selection input[type="checkbox"] + label::before {
+  background-image: url(../../../../themes/aw/images/newsletter-sprite.png);
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  margin: 0 10px -4px 0;
+  width: 20px;
+}
+.adweek_article_newsletters_block_mod .newsletters-selection input[type="checkbox"] { display: none; }
+.adweek_article_newsletters_block_mod .newsletters-selection input[type="checkbox"] + label::before { background-position: -23px 0px; }
+.adweek_article_newsletters_block_mod .newsletters-selection input[type="checkbox"]:checked + label::before { background-position: 0px 0px; }
+.adweek_article_newsletters_block_mod .newsletters-selection .left {
+  float: left;
+  width: 240px;
+}
+.adweek_article_newsletters_block_mod .newsletters-selection ul .featured {
+	display: none;
+}
+
+/* needed to use an id to avoid adfreak css */
+.adweek_article_newsletters_block_mod #newsletters_block_thank_you {
+  padding: 98px 0px;
+  text-align: center;
+}
+.adweek_article_newsletters_block_mod #newsletters_block_thank_you p {
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  color: #797979;
+}
+

@@ -1,0 +1,88 @@
+
+P {
+  font-family: Arial;
+  font-size: 11pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+H1 {
+  font-family: Arial;
+  font-size: 16pt;
+  font-style: normal;
+  font-weight: bolder;
+  color: #000099;
+}
+
+H2 {
+  font-family: Arial;
+  font-size: 12pt;
+  color: #000099;
+  font-weight: bolder;
+}
+
+BODY {
+  background-image: url(/jimagelib/Background.gif);
+  font-family: Arial;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: black;
+}
+
+H3 {
+  font-family: Arial;
+  font-size: 16pt;
+  color: #000099;
+  font-weight: bolder;
+}
+
+H4 {
+  font-family: Arial;
+  font-size: 14pt;
+  color: #000099;
+  font-weight: bold;
+}
+
+H5 {
+  font-family: Arial;
+  font-size: 14pt;
+  font-style: italic;
+  color: #000099;
+  font-weight: bolder;
+}
+
+A {
+  font-family: Arial;
+  color: #000066;
+  font-weight: bold;
+}
+
+LI {
+  color: #000099;
+  font-size: 12pt;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+H6 {
+  font-family: Arial;
+  color: #000099;
+  font-weight: bolder;
+}
+
+OL {
+  font-family: Arial;
+  font-size: 12pt;
+  font-style: normal;
+  color: #000099;
+}
+
+UL {
+  font-family: Arial;
+  font-size: 12pt;
+  font-style: normal;
+  color: #000099;
+}

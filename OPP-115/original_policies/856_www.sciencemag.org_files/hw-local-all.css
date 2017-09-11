@@ -1,0 +1,35 @@
+.cit-vol {
+	font-weight: bold;
+}
+
+#pageid-searchall #col-main {
+	margin-left: 150px;
+}
+.el-guildline {
+	display:block;
+	font-size:.75em;
+	font-weight: normal;
+}
+#pageid-instusage #content-block {
+	left: 30px !important;
+	width: 800px !important;
+}
+#pageid-instusage #col-2 {
+	display: none !important;
+}
+#pageid-instusage #content-block table tr td {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+#pageid-articleusage div#content-block .cit-extra .cit-views{
+        padding-left:0;
+        margin-left:-6px;
+}
+#pageid-articleusage .cit .cit-metadata .cit-first-element{
+        margin-left:0;
+        padding-left:0;
+}
+
+.hw-pub-id-magazine_home #footer, .hw-pub-id-journals-landing #footer, .hw-pub-id-archive #footer, .hw-pub-id-search #footer, .hw-pub-id-express #footer, .hw-pub-id-issue #footer { padding-bottom: 70px !important; } 
+

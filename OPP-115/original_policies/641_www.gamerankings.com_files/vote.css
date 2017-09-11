@@ -1,0 +1,314 @@
+/* CSS Document for voting widgets */
+
+.voteButton a, .voteButton a:hover, .votedButton a, .votedButton a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.voteContainer {
+    padding: 0 12px;
+    text-align: center;
+    margin: 0 auto;
+    width: 5.9em;
+}
+
+.voteContainerLong {
+    padding: 0 12px;
+    text-align: center;
+    margin: 0 auto;
+    width: 9.5em;
+}
+
+.voteStatusBlock {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.voteButton a.voteUp, .voteButton a.voteDown {
+    border-top: 1px solid #c4c9da;
+    border-right: 1px solid #878da4;
+    border-bottom: 1px solid #878da4;
+    border-left: 1px solid #c4c9da;
+    display: block;
+    margin: 0 0 2px 0;
+    text-align: center;
+    zoom: 1; /* IE 6 hack to enable 'hasLayout' so the entire box is clickable instead of just the text */
+}
+
+.voteButton a.voteUp {
+    background: transparent url( /img/vote/promotebg_off.png ) no-repeat scroll center top;
+    padding-top: 28px;
+    padding-bottom: 2px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.voteButton a.voteUp:hover {
+    background: transparent url( /img/vote/promotebg_hover.png ) no-repeat scroll center top;
+    border-top: 1px solid #ffae00;
+    border-right: 1px solid #c38500;
+    border-bottom: 1px solid #c38500;
+    border-left: 1px solid #ffae00;
+}
+
+
+.voteButton a.voteUp:active {
+    background: transparent url( /img/vote/promotebg_click.png ) no-repeat scroll center top;
+    border: 1px solid #ffae00;
+}
+
+.voteButton a.voteDown {
+    background: transparent url( /img/vote/demotebg_off.png ) no-repeat scroll center center;
+    padding: 2px 8px;
+}
+
+.voteButton a.voteDown:hover {
+    background: transparent url( /img/vote/demotebg_hover.png ) no-repeat scroll center center;
+    border-top: 1px solid #f55050;
+    border-right: 1px solid #ac0000;
+    border-bottom: 1px solid #ac0000;
+    border-left: 1px solid #f55050;
+}
+
+.voteButton a.voteDown:active {
+    background-color: #d4d7e1;
+    background-image: none;
+    border-top: 1px solid #f55050;
+    border-right: 1px solid #ac0000;
+    border-bottom: 1px solid #ac0000;
+    border-left: 1px solid #f55050;
+    color: #ac0000;
+}
+
+.insideVote, .insideVoted {
+    display: block;
+    text-align: center;
+}
+
+.insideVoted {
+    font-weight: bold;
+}
+
+.voteButton .insideVoted {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+.votedButton .insideVote {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+/* switching to votedUpButton should disable the right button of voteUp or voteDown without changing the buttons' attributes */
+.votedUpButton .voteUp, .votedDownButton .voteDown {
+    border-top: 1px solid #c4c9da;
+    border-right: 1px solid #878da4;
+    border-bottom: 1px solid #878da4;
+    border-left: 1px solid #c4c9da;
+    display: block;
+    margin: 0 0 2px 0;
+    padding-top: 28px;
+    padding-bottom: 2px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.votedUpButton .voteUp {
+    background: transparent url( /img/vote/promotebg_on.png ) no-repeat scroll center top;
+}
+
+.votedDownButton .voteDown {
+    background: transparent url( /img/vote/demotebg_on.png ) no-repeat scroll center top;
+}
+
+.votedDownButton .voteUp, .votedUpButton .voteDown {
+    display: none;
+}
+
+.voteStatusBlock .label {
+    font-size: 93%;
+}
+
+.voteStatusBlock .score {
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 108%;
+}
+
+.lockedVoteButton {
+    border: 1px solid #c4c9da;
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*---- vote animation  ----*/
+
+.voteScoreFloater {
+    position: relative;
+    left: 0px;
+    top: -40px;
+    z-index: 4;
+    font-weight: bold;
+    color: #cc0000;
+    line-height: 1em;
+}
+
+/*----- up-down inline -----*/
+
+.voteUDInline span, .voteUDInline a {
+	display: inline-block; 
+}
+
+.voteUDInlineVote, .voteUDInlineVoted {
+	height: 20px;
+	line-height: 20px;
+}
+
+.voteUDInlineUpCount, .voteUDInlineDownCount {
+	padding-left: 20px;	
+	margin-left: 6px;
+}
+	
+.voteUDInlineUpCount {
+	background: transparent url(/img/vote/vote_up.png) no-repeat scroll left top;
+}	
+
+.voteUDInlineDownCount {
+	background: transparent url(/img/vote/vote_down.png) no-repeat scroll left 4px;
+}
+
+.voteUDInlineDown {
+	margin-left: 10px;
+}
+
+.voteUDInlineCurrentVote {
+	margin-left: 14px;
+}
+
+/*----- Knowledge up-down inline -----*/
+
+.articleRendererBorderRight .voteUDInlineVote .voteUDInlineUp,
+.articleRendererBorderRight .voteUDInlineVoted.voteUDInlineVotedDown .voteUDInlineUp{
+	background: transparent url( /img/knowledge/ThumbUpDown.png ) 0px -158px;
+	
+}
+
+.articleRendererBorderRight .voteUDInlineVote .voteUDInlineDown,
+.articleRendererBorderRight .voteUDInlineVoted.voteUDInlineVotedUp .voteUDInlineDown{
+	background: transparent url( /img/knowledge/ThumbUpDown.png ) 0px -129px;
+}
+
+.articleRendererBorderRight .voteUDInlineVoted.voteUDInlineVotedUp .voteUDInlineUp{
+	background: transparent url( /img/knowledge/ThumbUpDown.png ) 0px -41px;
+}
+
+.articleRendererBorderRight .voteUDInlineVoted.voteUDInlineVotedDown .voteUDInlineDown{
+	background: transparent url( /img/knowledge/ThumbUpDown.png ) 0px -12px;
+}
+
+.articleRendererBorderRight .voteUDInlineUpCount,
+.articleRendererBorderRight .voteUDInlineDownCount{
+	background: none;
+	position:relative;
+	top: 4px;
+	padding-left: 1px;
+    margin-left: 0px;
+}
+
+.articleRendererBorderRight .voteUDInlineUp{
+	display:inline-block;
+	width: 23px;
+	height: 20px;
+	text-indent:-9999px;
+	outline:none;
+	position:relative;
+	top: 0px;
+}
+
+.articleRendererBorderRight .voteUDInlineDown{
+	display:inline-block;
+	width: 23px;
+	height: 20px;
+	text-indent:-9999px;
+	outline:none;
+	position:relative;
+	top: 1px;
+}
+
+.articleRendererBorderRight a.voteUDInlineUp:hover{
+	background: transparent url( /img/knowledge/ThumbUpDown.png ) 0px -98px;
+}
+
+.articleRendererBorderRight a.voteUDInlineDown:hover{
+	background: transparent url( /img/knowledge/ThumbUpDown.png ) 0px -69px;
+}
+
+/*----- star voting -----*/
+
+div.starRatingPanel {
+    display: table-cell;
+}
+
+table.stars {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border-spacing: 0;
+}
+
+table.stars div {
+    width: 16px;
+    height: 15px;
+    padding-right: 1px;
+}
+
+table.mouseOver {
+    cursor: pointer;
+}
+
+table.mouseOut div.idleStar {
+    background: transparent url( /img/vote/rating_star_grey_outline.png ) no-repeat scroll center top;
+}
+
+table.mouseOver div.idleStar {
+    background: transparent url( /img/vote/rating_star_blue_outline.png ) no-repeat scroll center top;
+}
+
+.chosenStar {
+    background: transparent url( /img/vote/rating_star_blue.png ) no-repeat scroll center top;
+}
+
+/*-------- like/unlike ---------*/
+.likeApexComponent {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.likeApexComponent_count_separator {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #999;
+}
+
+.likeApexComponent .likeApexComponent_likeLink{
+    color: #015BA7;
+    text-decoration: none;
+}
+
+.likeSavingText {
+    display: none;
+}
+

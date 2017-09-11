@@ -1,0 +1,33 @@
+/* printer friendly stylesheet */
+@media print{
+
+
+	header#section-header, footer#section-footer, 		/* hide header and footer*/
+	#toolbar,											/* hide drupal admin toolbar */
+	#zone-postscript-wrapper,							/* hide social media icons */
+	.block-menu-block,									/* hide left menu */
+	.flex-nav-container									/* hide featured slider */
+	{
+		display: none;
+	}
+
+	/* auto drop accordions */
+	.ui-accordion-content{
+		display: block!important;
+	}
+
+	/* move items up */
+	#region-sidebar-first, #region-content, div#breadcrumb{
+		margin-top: 0;
+		padding-top: 0;
+	}	
+
+	/* add the logo since we have hidden the header */
+	#section-content:before {
+		content: url(http://www-test.austincc.edu/sites/all/themes/subtheme01/img/logo-printer.jpg);
+		display: block;
+		margin-bottom: 30px;
+	}
+
+
+}

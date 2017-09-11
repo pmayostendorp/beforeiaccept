@@ -1,0 +1,201 @@
+/*
+UL {list-style: url(http...) disc}
+*/
+
+a.tcl:link       { color: #FFFFFF; text-decoration: none }
+a.tcl:visited    { color: #FFFFFF; text-decoration: none }
+a.tcl:active     { color: #FFFF80; text-decoration: none }
+a.tcl:hover      { color: #ffff33; text-decoration: underline }
+
+a.ct:link       { color: #000000; text-decoration: none }
+a.ct:visited    { color: #000000; text-decoration: none }
+a.ct:active     { color: #990000; text-decoration: none }
+a.ct:hover      { color: #990000; text-decoration: underline }
+
+a:link       { color: #990000; text-decoration: underline }
+a:visited    { color: #337F33; text-decoration: underline }
+a:active     { color: #990000; text-decoration: underline }
+a:hover      { color: #C2A000; text-decoration: underline }
+
+h1 {Font-family:arial, helvetica, sans-serif;}
+h2 {Font-family:arial, helvetica, sans-serif;}
+h3 {Font-family:arial, helvetica, sans-serif;}
+h4 {Font-family:arial, helvetica, sans-serif;}
+h5 {Font-family:arial, helvetica, sans-serif;}
+
+#mainmenu {
+  color: white;
+  background-color: black;
+  font-family: arial,helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  text-align: left;
+  padding: 2px 2px 2px 2px;
+  border-style: double;
+  border-width: 6px;
+  border-color: white;
+}
+
+#mainmenu a:link, #mainmenu a:visited, #mainmenu a:active
+{
+	color: #ffffff;
+	background-color: black;
+	text-decoration: none;
+}
+#mainmenu a:hover
+{
+	color: #ffe8a0;
+	background-color: black;
+	text-decoration: underline;
+}
+
+.topmenu {
+  color: white;
+  text-align: left;
+  background: black;
+  padding: 1px 1px 1px 1px;
+  border-style: double;
+  border-width: 6px;
+  border-color: white;
+  font-family: arial,helvetica, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.box {
+  color: #ffffc0;
+  text-align: center;
+  background: #213452;
+  padding: 4px 10px 4px 10px;
+  border-style: double;
+  border-width: 6px;
+  border-color: white;
+  font-family: arial,helvetica, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.indent
+{margin-left: 36px;}
+
+.caption
+{font-family:arial, helvetica, sans-serif; font-size: x-small; }
+
+.title
+{font-family:arial, helvetica, sans-serif; font-size:24pt; font-weight:bold; }
+
+.titlequote
+{font-family:arial, helvetica, sans-serif; font-size: 14pt; font-style:italic; }
+
+.ct
+{font-family:arial, helvetica, sans-serif; font-weight:bold; }
+
+/* The following are table of contents styles */
+
+.tch
+{color: #FFFFFF; font-family:arial, helvetica, sans-serif; font-size:small; font-weight:bold; margin-right:3px; }
+
+.tct
+{color: #99FFFF; font-family:arial, helvetica, sans-serif; font-size:small; margin-right:3px; }
+
+.tcl
+{font-family:arial, helvetica, sans-serif; font-size:small;}
+
+.tci
+{margin-left:12px; }
+
+.tchi
+{text-indent:-12px; margin-left:12px; }
+
+.tctable
+{font-family:arial, helvetica, sans-serif; font-size:small; margin-left:0px; margin-right:5px; border-right:0px; border-left:0px; border-top: gray 1px solid; border-bottom: gray 1px solid; }
+
+hr.hr45 {width: 45%; height: 6px; color: #000; background-color: #000; margin-left: 0px;}
+
+.tctable2
+{font-family:arial, helvetica, sans-serif; font-size: small; }
+
+/* The following are Statistics tables */
+
+.stat
+{font-family:arial, helvetica, sans-serif; font-size:medium; border-collapse: collapse; }
+
+.stath1, .dath1
+{background: #244669; color: #FFF;}
+
+.statr1
+{background: #EEF5FF; color: #000;}
+.statr1 th
+{border: 2px solid white; padding: 1px 10px 1px 10px; text-align:left;}
+.statr1 td
+{border: 2px solid white; padding: 1px 10px 1px 10px; text-align:right;}
+.datr1
+{background: #EEF5FF; color: #000; border: 2px solid white; padding: 1px 10px 1px 10px;}
+
+.statwhite
+{background: #ffffff; color: #000;}
+
+.statr2
+{background: #DDE5FF; color: #000;}
+.statr2 th
+{border: 2px solid white; padding: 1px 10px 1px 10px; text-align:left;}
+.statr2 td
+{border: 2px solid white; padding: 1px 10px 1px 10px; text-align:right;}
+.datr2
+{background: #DDE5FF; color: #000; border: 2px solid white; padding: 1px 10px 1px 10px;}
+
+.stati
+{margin-left:12px;}
+
+.copyright {font-size: x-small; font-family: arial, helvetica, sans-serif; text-align: center; }
+
+.left{margin-right: 6px; float: left;}
+.right{margin-left: 6px; float: right;}
+.textl {text-align: left;}
+.textr {text-align: right;}
+.center{text-align: center;}
+
+.ss
+{font-family:arial,helvetica,sans-serif; }
+
+.ss7
+{font-family:arial,helvetica,sans-serif; font-size: xx-small;}
+
+.ss6
+{font-family:arial,helvetica,sans-serif; font-size: x-small;}
+
+.ss5
+{font-family:arial,helvetica,sans-serif; font-size: small;}
+
+.ss4
+{font-family:arial,helvetica,sans-serif; font-size: medium;}
+
+.ss3
+{font-family:arial,helvetica,sans-serif; font-size: large;}
+
+.ss2
+{font-family:arial,helvetica,sans-serif; font-size: x-large;}
+
+.ss1
+{font-family:arial,helvetica,sans-serif; font-size: xx-large;}
+
+.vssh7
+{font-family:arial,helvetica,sans-serif; font-weight: bold; font-size: xx-small;}
+
+.vssh6
+{font-family:arial,helvetica,sans-serif; font-weight: bold; font-size: x-small;}
+
+.vssh5
+{font-family:arial,helvetica,sans-serif; font-weight: bold; font-size: small;}
+
+.vssh4
+{font-family:arial,helvetica,sans-serif; font-weight: bold; font-size: medium;}
+
+.vssh3
+{font-family:arial,helvetica,sans-serif; font-weight: bold; font-size: large;}
+
+.vssh2
+{font-family:arial,helvetica,sans-serif; font-weight: bold; font-size: x-large;}
+
+.vssh1
+{font-family:arial,helvetica,sans-serif; font-weight: bold; font-size: xx-large;}

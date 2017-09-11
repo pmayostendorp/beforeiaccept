@@ -1,0 +1,125 @@
+/*
+	GRID
+*/
+.cols, .list-rss, .cols-rss {
+	overflow:hidden;
+	*zoom:1;
+}
+
+.cols.colsAB {
+	overflow:visible;
+}
+.col, .list-rss li {
+	float:left
+}
+
+/* ABC cols (standard like HOMEPAGE) */
+.colsAB, .spanAB {
+	width:652px;
+	float: left;
+}
+.colA {
+	width:232px;
+	margin:0 20px 0 0
+}
+.colB {
+	width:400px
+}
+.colC {
+	width:316px;
+	margin:0 0 0 20px
+}
+.colsAB.ddfL, .colC.ddfR {
+	width: 484px;
+	float: left;
+}
+
+#main .article-generic, .article-generic .article {
+	margin:0 !important;
+	padding:13px 0 0 !important;
+}
+#main .article-generic, .article-generic .article a {
+	color: #ED1D25;
+}
+.mt20{
+	margin-top:20px !important;
+}
+.mb20 {
+	margin-bottom:20px !important;
+}
+
+/* ABC cols (sections like TOPICS, CATEGORIES...) */
+/* No longer a relative grid but fixed width inside content well */
+.listing .colA {
+	width:148px;
+	margin-right:19px;
+}
+
+.listing .colB {
+	width:652px;
+}
+
+.w485 {
+	width:485px;
+}
+
+/* 148px wide col */
+.cols-148 {
+	margin-left:-20px
+}
+.cols-148 .col {
+	width:148px;
+	margin-left:20px !important
+}
+.cols-148 .thumb {
+	margin-bottom:20px
+}
+.cols-148 .span3 {
+	width:484px;
+}
+
+/* 247px wide col */
+.cols-247 {
+	/*margin-left: -42px;*/
+}
+
+.cols-247 .col {
+	width: 247px;
+	/*margin-left: 42px;*/
+}
+
+/* 316px wide col */
+.cols-316, .list-rss, .cols-rss {
+	margin-left:-20px !important;
+}
+
+.cols-316 .views-field-field-sa-section-header-fid {
+	margin-left:20px !important;
+}
+
+.cols-316 .col, .colsarticle .colright, .list-rss li, .cols-rss .col {
+	width:316px !important;
+	margin-left:20px !important;
+	position:relative;
+}
+.js .cols-316 .story, .js #events.speakers .cols-316 .col {
+	visibility:hidden;
+}
+.cols-316 .align-bottom {
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.cols-316 .align-top {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.cols-147 {
+    margin-left: -10px;
+}
+    .cols-147 .col {
+        width: 147px;
+        margin-left: 10px;
+    }

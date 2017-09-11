@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* Undertone Full Page Styles */
+#utOverlay {
+	background:#000;
+	filter: alpha(opacity=70);
+	opacity: .7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999;
+	margin: 0;
+	padding: 0;
+}
+#utAdBackdrop {
+	background-color: white;
+	left: 50%;
+	opacity: 1;
+	position: fixed;
+	top: 60px;
+	z-index: 9999999;
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+#utbanner {
+	margin: 0;
+	padding: 0;
+}
+#utMinimize {
+	font-weight: bold;
+	display: none;
+	margin: 0;
+	padding: 0;
+	cursor:pointer;
+} 
+#utLogo {
+	position: relative;
+	z-index: 9999999;
+	display: none;
+	margin: 0;
+	padding: 0;
+	float:left;
+	width:200px;
+}
+#utMetaLinks {
+	position: absolute;
+	top:10px;
+	right:10px;
+	z-index: 9999999;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width:200px;
+}
+#utImg {
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-align:left;
+}
+#aboutUndertone {
+	position: relative;
+	font-weight: normal;
+	font-family: arial, sans-serif;
+	z-index: 9999999;
+	padding: 10px 0;
+	font-size: 11px;
+	display: none;
+	margin: 0;
+	text-align:right;
+}
+#aboutUndertone a {
+	text-decoration: none;
+	color: #666666;
+	margin: 0;
+	padding: 0;
+}
+#utPipe {
+	margin:0 5px;
+	padding:0;
+}
+#utAboutLink {
+	text-align:right;
+}
+.utClear {
+	display:block;
+	clear:both;
+}

@@ -1,0 +1,72 @@
+
+.listing_withSlider .subheader {
+  margin-bottom: 16px;
+}
+
+.colsAB #features {
+    width: 650px;
+    height: 237px;
+    margin: 0 0 10px;
+}
+    .colsAB #features ul.slider {
+    }
+        .colsAB #features .slider li {
+            width: 316px;
+            height: 237px;
+            padding: 0 0 0 334px;
+        }
+            .colsAB #features .slider .story {
+                background: #fff;
+                padding: 0;
+                width: 316px;
+                height: 252px;
+            }
+                .colsAB #features .story .story-header {
+                }
+                    .colsAB #features .story .headline, 
+                    .colsAB #features .story .subheadline, 
+                    .colsAB #features .story .byline {
+                      font-size: 22px;
+                      line-height: 23px;
+                    }
+                    .colsAB #features .story .byline {
+                      color: #cfcfcf;
+                    }
+                #franchise .colsAB #features .story p.summary {
+                  font-size: 12px !important;
+                  line-height: 16px !important;
+                }
+            .colsAB #features .slider li img {
+            }
+        
+.colsAB #features .paginator {
+    right: 0;
+    width: 300px;
+    font-size: 20px;
+    
+    border-bottom: 1px solid #bfbfbf;
+}
+    .colsAB #features .paginator li {
+    }
+        .colsAB #features .paginator li a {
+            color: #ccc;
+        }
+            .colsAB #features .paginator li a:hover, 
+            .colsAB #features .paginator li.current a {
+                color: #808080;
+            }
+        .colsAB #features .paginator li.next, 
+        .colsAB #features .paginator li.prev {
+        }
+        .colsAB #features .paginator li.prev {
+        }
+            .colsAB #features .paginator li.next a, 
+            .colsAB #features .paginator li.prev a {
+                background-image: url("/sites/all/themes/aw/images/sitewide/slider_paginator.png");
+            }
+                .colsAB #features .paginator li.prev a:hover {
+                }
+                .colsAB #features .paginator li.next a {
+                }
+                    .colsAB #features .paginator li.next a:hover {
+                    }

@@ -1,0 +1,230 @@
+15594,0,131,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+15595,1,131,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+15596,1,131,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+15597,2,131,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+15598,3,131,"When a change of an unspecified nature is made to the privacy policy, users are notified in an unspecified manner. Users can participate in a process to influence the change."
+15599,4,131,The site collects your unspecified information for an unspecified purpose. Collection happens by some means outside of our label scheme.
+15600,4,131,The site collects your contact information for a basic service or feature. Collection happens by some means outside of our label scheme for users with accounts.
+15601,4,131,The site collects your contact information for an additional (non-basic) service or feature. Collection happens by some means outside of our label scheme for users without accounts.
+15602,4,131,The site collects your financial information for an additional (non-basic) service or feature. Collection happens by some means outside of our label scheme for users without accounts.
+15603,4,131,The site collects your location information for an additional (non-basic) service or feature. Collection happens by some means outside of our label scheme for users with accounts.
+15604,4,131,The site collects your demographic information for an additional (non-basic) service or feature. Collection happens by some means outside of our label scheme for users with accounts.
+15605,4,131,The site collects your unspecified information for marketing purposes. Collection happens by some means outside of our label scheme for users with accounts.
+15606,4,131,The site collects an information type outside of our label scheme for a basic service or feature. Collection happens by some means outside of our label scheme for users with accounts.
+15607,4,131,The site collects your contact information for marketing purposes. Collection happens by some means outside of our label scheme for users with accounts.
+15608,4,131,The site collects an information type outside of our label scheme for an additional (non-basic) service or feature. Collection happens by some means outside of our label scheme for users with accounts.
+15609,4,131,The site collects an information type outside of our label scheme for a purpose outside of our label scheme. Collection happens by some means outside of our label scheme for users with accounts.
+15610,4,131,The site collects your survey data for analytics or research. Collection happens when you explicitly provide information in an unspecified way.
+15611,5,131,The site collects your location information for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+15613,5,131,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+15614,5,131,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+15615,5,131,The site collects an information type outside of our label scheme for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+15617,5,131,The site collects your user profile for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+15618,5,131,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+15619,6,131,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens in an unspecified way.
+15620,6,131,The site collects your cookies or tracking elements for personalization or customization. Collection happens in an unspecified way.
+15621,7,131,The site collects your unspecified information for service operations or security. Collection happens in an unspecified way.
+15622,7,131,The site collects your unspecified information for a basic service or feature. Collection happens in an unspecified way.
+15623,7,131,The site collects your unspecified information for marketing purposes. Collection happens in an unspecified way.
+15624,7,131,The site collects your unspecified information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+15625,7,131,The site collects your unspecified information for an additional (non-basic) service or feature. Collection happens in an unspecified way.
+15626,7,131,The site collects your unspecified information for analytics or research. Collection happens in an unspecified way.
+15627,7,131,The site collects your unspecified information for personalization or customization. Collection happens in an unspecified way.
+15628,7,131,The site collects your contact information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+15629,8,131,An unspecified third party does not receive unspecified information about you for an unspecified purpose. The data is personally identifiable.
+15630,8,131,An unspecified third party does not receive your contact information for an unspecified purpose. The data is personally identifiable.
+15631,8,131,Other users does receive your unspecified personal information for an unspecified purpose. You can choose not to use the service or feature for the collection or sharing of your information.
+15632,8,131,Other users does receive your contact information for an unspecified purpose. You can choose not to use the service or feature for the collection or sharing of your information.
+15633,8,131,Other users does receive your user profile for an unspecified purpose. You can choose not to use the service or feature for the collection or sharing of your information.
+15634,8,131,The public does receive your user profile for a basic service or feature. You can choose not to use the service or feature for the collection or sharing of your information.
+15635,8,131,The public does receive your location information for a basic service or feature. You can choose not to use the service or feature for the collection or sharing of your information.
+15636,8,131,The public does receive information about you not covered by our label scheme for a basic service or feature. You can choose not to use the service or feature for the collection or sharing of your information.
+15637,9,131,An unnamed third party does receive unspecified information about you for a purpose outside of our label scheme.
+15638,9,131,An unnamed third party does receive your user profile for a purpose outside of our label scheme.
+15639,9,131,An unnamed third party does receive your location information for an unspecified purpose. The identifiability of the data is not covered by our label scheme.
+15640,9,131,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+15641,9,131,An unnamed third party does receive unspecified information about you for marketing purposes.
+15642,10,131,An unnamed third party does do something outside of our label scheme with your unspecified personal information for service operations or security.
+15643,11,131,An unspecified third party does do something unspecified with your unspecified personal information for legal requirements.
+15644,11,131,An unspecified third party does do something unspecified with your unspecified personal information for service operations or security.
+15645,12,131,An unnamed third party does do something outside of our label scheme with information about you not covered by our label scheme for mergers or acquisitions.
+15646,12,131,The text describes a specific data practice that is not covered by our label scheme.
+15648,13,131,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+15649,13,131,"User authentication, e.g., login to a user account, is encrypted/secured."
+15650,13,131,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+15651,13,131,The text does not fit into our label scheme.
+15652,14,131,"You can choose not to use a service or feature to avoid the use of unspecified information by the site, which collects it for a basic service or feature."
+15653,14,131,"You can opt out (via a link) from the use of contact information by the site, which uses it for marketing purposes."
+15654,14,131,"You can use privacy configuration settings (in the website or app) to control the use of contact information by the site, which uses it for an additional (non-basic) service or feature."
+15656,14,131,"You can use privacy configuration settings (in the website or app) to control the use of information of a type not covered by our label scheme by the site, which uses it for a purpose outside of our label scheme."
+15657,14,131,"Users with accounts can edit their information, within the scope of unspecified user information."
+15658,15,131,The site collects your cookies or tracking elements for a basic service or feature. Collection happens by some means outside of our label scheme.
+15659,16,131,The site collects an information type outside of our label scheme for service operations or security. Collection happens on the website.
+15660,16,131,The site collects your computer information for service operations or security. Collection happens on the website.
+15661,16,131,The site collects your website activities for service operations or security. Collection happens on the website.
+15662,16,131,The site collects your IP address or device IDs for service operations or security. Collection happens on the website.
+15663,17,131,The site collects your cookies or tracking elements for personalization or customization. Collection happens by some means outside of our label scheme.
+15664,17,131,The site collects your cookies or tracking elements for a purpose outside of our label scheme. Collection happens by some means outside of our label scheme.
+15665,17,131,The site collects your cookies or tracking elements for analytics or research. Collection happens by some means outside of our label scheme.
+15666,17,131,An unspecified third party does track on the first party website or app your cookies or tracking elements for personalization or customization.
+15667,17,131,An unspecified third party does track on the first party website or app your cookies or tracking elements for a purpose outside of our label scheme.
+15668,17,131,An unspecified third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+15669,18,131,A named third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+15670,19,131,"You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by the site, which collects it for a basic service or feature."
+15671,20,131,The text does not fit into our label scheme.
+15672,20,131,"When a minor change is made to the privacy policy that does not significantly affect data practices, users are notified in a manner outside of our label scheme. Users' choices regarding policy changes are not mentioned or are unclear."
+15673,21,131,"A user can edit their information, within the scope of unspecified user information."
+15674,21,131,"A user can delete their account (although the company or organization may continue to keep some data), within the scope of unspecified user information."
+15675,21,131,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+15676,22,131,The policy makes a statement about how data from children is treated.
+15677,23,131,"The policy makes specific provisions for international audiences, non-US citizens, or non-European citizens (e.g., about international data transfer)."
+15678,24,131,The text describes a specific data practice that is not covered by our label scheme.
+15679,25,131,The text describes a specific data practice that is not covered by our label scheme.
+15680,26,131,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+15681,26,131,"When a change of an unspecified nature is made to the privacy policy, users are personally notified. Users' choices regarding policy changes are not mentioned or are unclear."
+17860,0,132,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+17861,1,132,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+17862,2,132,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+17863,3,132,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+17864,4,132,The site collects your contact information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+17865,4,132,The site collects your financial information for an additional (non-basic) service or feature. Collection happens when you explicitly provide information on the website.
+17866,4,132,The site collects your location information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+17867,5,132,The site collects your location information for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+17868,5,132,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+17869,5,132,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+17870,5,132,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information on the website.
+17871,6,132,The site collects your cookies or tracking elements for personalization or customization. Collection happens on the website.
+17872,7,132,The site collects your generic personal information for a basic service or feature. Collection happens on the website.
+17873,7,132,The site collects your generic personal information for analytics or research. Collection happens on the website.
+17874,7,132,The site collects your generic personal information for marketing purposes. Collection happens on the website.
+17875,7,132,The site collects your generic personal information for service operations or security. Collection happens on the website.
+17876,7,132,The site collects your generic personal information for personalization or customization. Collection happens on the website.
+17877,7,132,The site collects your generic personal information for an additional (non-basic) service or feature. Collection happens on the website.
+17878,8,132,Other users does receive your unspecified personal information for an additional (non-basic) service or feature.
+17879,9,132,An unnamed third party does receive your unspecified personal information for marketing purposes.
+17880,10,132,A named third party does receive your unspecified personal information for an additional (non-basic) service or feature.
+17881,11,132,A named third party does receive your unspecified personal information for legal requirements.
+17882,11,132,A named third party does receive your unspecified personal information for service operations or security.
+17883,12,132,Another part of the company or institution does receive your unspecified personal information for mergers or acquisitions.
+17884,13,132,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+17885,13,132,"User authentication, e.g., login to a user account, is encrypted/secured."
+17886,14,132,"You can opt out (via a link) from the use of unspecified information by the site, which collects it for an unspecified purpose."
+17887,14,132,"You can opt out (via a link) from the use of contact information by the site, which uses it for marketing purposes."
+17888,14,132,"A user can edit their information, within the scope of unspecified user information."
+17889,15,132,The site collects your cookies or tracking elements for a basic service or feature. Collection happens on the website.
+17890,16,132,The site collects your computer information for service operations or security. Collection happens on the website.
+17891,16,132,The site collects your computer information for analytics or research. Collection happens on the website.
+17892,16,132,The site collects your website activities for service operations or security. Collection happens on the website.
+17893,16,132,The site collects your IP address or device IDs for service operations or security. Collection happens on the website.
+17894,17,132,The site collects your cookies or tracking elements for personalization or customization. Collection happens on the website.
+17896,18,132,A named third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+17897,19,132,You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by an unspecified party for personalization or customization.
+17898,20,132,A named third party does collect on the first party website or app your cookies or tracking elements for targeted advertising.
+17899,21,132,"A user can edit their information, within the scope of unspecified user information."
+17900,22,132,The policy makes a statement about how data from children is treated.
+17901,23,132,"The policy makes specific provisions for international audiences, non-US citizens, or non-European citizens (e.g., about international data transfer)."
+17902,24,132,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+17903,25,132,An unnamed third party does collect on the first party website or app your unspecified personal information for an unspecified purpose.
+17904,26,132,"When a change is made to the privacy policy that significantly affects data practices, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+14702,0,127,The text does not fit into our label scheme.
+14703,1,127,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+14704,2,127,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+14705,3,127,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+14762,4,127,The site collects your unspecified information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way. You can opt in for data collection for the collection of your information.
+14763,4,127,The site collects your unspecified information for an unspecified purpose. Collection happens when you explicitly provide information by an unnamed service or third party. You can opt in for data collection for the collection of your information.
+14764,4,127,The site collects your contact information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way for users with accounts. You can opt in for data collection for the collection of your information.
+14765,4,127,The site collects your financial information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way for users with accounts. You can opt in for data collection for the collection of your information.
+14766,4,127,The site collects your financial information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way. You can opt in for data collection for the collection of your information.
+14767,4,127,The site collects your user profile for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way for users with accounts. You can opt in for data collection for the collection of your information.
+14768,4,127,The site collects your location information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way for users with accounts. You can opt in for data collection for the collection of your information.
+14769,4,127,The site collects your demographic information for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way for users with accounts. You can opt in for data collection for the collection of your information.
+14771,4,127,The site collects your unspecified information for marketing purposes. Collection happens when you explicitly provide information in an unspecified way. You can opt in for data collection for the collection of your information.
+14772,4,127,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way. You can opt in for data collection for the collection of your information.
+14773,4,127,The site collects your website activities for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way. You can opt in for data collection for the collection of your information.
+14774,4,127,The site collects your survey data for an unspecified purpose. Collection happens when you explicitly provide information in an unspecified way. You can opt in for data collection for the collection of your information.
+14706,5,127,The site collects your location information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+14707,5,127,The site collects your computer information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+14708,5,127,The site collects your IP address or device IDs for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+14709,5,127,The site collects your website activities for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+14710,5,127,The site collects your user profile for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way for users with accounts.
+14711,5,127,The site collects your cookies or tracking elements for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way.
+14712,6,127,"The site collects your unspecified information for an unspecified purpose. Collection happens when you implicitly provide information in an unspecified way, and your data is identifiable."
+14713,6,127,"The site collects your unspecified information for a purpose outside of our label scheme. Collection happens when you implicitly provide information in an unspecified way, and your data is identifiable."
+14714,6,127,"The site collects your unspecified information for personalization or customization. Collection happens when you implicitly provide information in an unspecified way, and your data is identifiable."
+14775,7,127,"The site collects your unspecified information for an unspecified purpose. Collection happens in an unspecified way, and your data is identifiable. You can opt in for data collection for the collection and use of your information."
+14778,7,127,"The site collects your unspecified information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable. You can opt in for data collection for the collection and use of your information."
+14779,7,127,"The site collects your unspecified information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way for users with accounts, and your data is identifiable. You can opt in for data collection for the collection and use of your information."
+14780,7,127,"The site collects your unspecified information for service operations or security. Collection happens in an unspecified way, and your data is identifiable."
+14781,7,127,"The site collects your unspecified information for marketing purposes. Collection happens in an unspecified way, and your data is identifiable."
+14782,7,127,"The site collects your unspecified information for a basic service or feature. Collection happens in an unspecified way, and your data is identifiable."
+14783,7,127,"The site collects your unspecified information for an additional (non-basic) service or feature. Collection happens in an unspecified way, and your data is identifiable."
+14784,7,127,"The site collects your unspecified information for analytics or research. Collection happens in an unspecified way, and your data is identifiable."
+14785,7,127,"The site collects your unspecified information for personalization or customization. Collection happens in an unspecified way, and your data is identifiable."
+14786,7,127,"The site collects your contact information for an unspecified purpose. Collection happens in an unspecified way, and your data is identifiable. You can opt in for data collection for the collection and use of your information."
+14787,7,127,"The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way, and your data is identifiable. You can opt in for data collection for the collection and use of your information."
+14788,7,127,"The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information in an unspecified way for users with accounts, and your data is identifiable. You can opt in for data collection for the collection and use of your information."
+14789,7,127,"The site collects your contact information for service operations or security. Collection happens in an unspecified way, and your data is identifiable."
+14790,7,127,"The site collects your contact information for marketing purposes. Collection happens in an unspecified way, and your data is identifiable."
+14791,7,127,"The site collects your contact information for a basic service or feature. Collection happens in an unspecified way, and your data is identifiable."
+14792,7,127,"The site collects your contact information for an additional (non-basic) service or feature. Collection happens in an unspecified way, and your data is identifiable."
+14793,7,127,"The site collects your contact information for analytics or research. Collection happens in an unspecified way, and your data is identifiable."
+14794,7,127,"The site collects your contact information for personalization or customization. Collection happens in an unspecified way, and your data is identifiable."
+14715,8,127,An unnamed third party does receive unspecified information about you for marketing purposes. The data is personally identifiable.
+14716,8,127,Other users does see your unspecified personal information for an unspecified purpose. This applies to users with accounts. You can opt in for data collection for the collection or sharing of your information.
+14717,8,127,Other users does see your contact information for an unspecified purpose. This applies to users with accounts. You can opt in for data collection for the collection or sharing of your information.
+14718,8,127,Other users does see your user profile for an unspecified purpose. This applies to users with accounts. You can opt in for data collection for the collection or sharing of your information.
+14719,8,127,An unnamed third party does receive your user profile for an unspecified purpose. This applies to users with accounts. You can opt in for data collection for the collection or sharing of your information.
+14720,8,127,An unnamed third party does receive your location information for an unspecified purpose. This applies to users with accounts. You can opt in for data collection for the collection or sharing of your information.
+14721,8,127,An unnamed third party does receive unspecified information about you for an unspecified purpose. This applies to users with accounts. You can opt in for data collection for the collection or sharing of your information.
+14795,9,127,An unnamed third party does receive your user profile for a purpose outside of our label scheme. This applies to users with accounts.
+14796,9,127,A named third party does receive your location information for a purpose outside of our label scheme. The data is aggregated or anonymized.
+14797,9,127,The text describes a specific data practice that is not covered by our label scheme.
+14798,9,127,A named third party does receive your location information for a basic service or feature. The data is aggregated or anonymized.
+14799,9,127,An unnamed third party does receive unspecified information about you for an additional (non-basic) service or feature. You can opt in for data collection for the collection or sharing of your information.
+14722,10,127,An unnamed third party does receive your unspecified personal information for service operations or security.
+14723,10,127,Data is accessible to employees/third parties on a need-to-know basis.
+14724,11,127,An unspecified third party does receive your unspecified personal information for legal requirements.
+14725,11,127,An unspecified third party does receive your unspecified personal information for service operations or security.
+14726,12,127,A third party outside of our label scheme does receive your unspecified personal information for mergers or acquisitions.
+14729,12,127,The text describes a specific data practice that is not covered by our label scheme.
+14730,13,127,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+14731,13,127,"User authentication, e.g., login to a user account, is encrypted/secured."
+14732,13,127,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+14804,14,127,"You can opt in for the use of unspecified information by the site, which collects it for a basic service or feature."
+14805,14,127,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+14806,14,127,"A user with an account can opt out (via a link) from the use of contact information by the site, which uses it for marketing purposes."
+14807,14,127,"A user with an account can use privacy configuration settings (in the website or app) to control the use of contact information by the site, which uses it for marketing purposes."
+14808,14,127,The text describes a specific data practice that is not covered by our label scheme.
+14809,14,127,The text does not fit into our label scheme.
+14810,14,127,"A user with an account can use third party privacy settings to control the use of social media data by the site, which collects it for an additional (non-basic) service or feature."
+14733,15,127,The site collects your cookies or tracking elements for an additional (non-basic) service or feature. Collection happens when you implicitly provide information in an unspecified way.
+14734,15,127,The site collects your cookies or tracking elements for an additional (non-basic) service or feature. Collection happens when you implicitly provide information in the mobile app.
+14735,16,127,The site collects your computer information for service operations or security. Collection happens when you implicitly provide information in an unspecified way for users without accounts.
+14736,16,127,The site collects your computer information for analytics or research. Collection happens when you implicitly provide information in an unspecified way for users without accounts.
+14737,16,127,The site collects your website activities for service operations or security. Collection happens when you implicitly provide information in an unspecified way for users without accounts.
+14738,16,127,The site collects your website activities for analytics or research. Collection happens when you implicitly provide information in an unspecified way for users without accounts.
+14739,16,127,The site collects your IP address or device IDs for service operations or security. Collection happens when you implicitly provide information in an unspecified way for users without accounts.
+14740,16,127,The site collects your IP address or device IDs for analytics or research. Collection happens when you implicitly provide information in an unspecified way for users without accounts.
+14741,17,127,"The site collects your cookies or tracking elements for personalization or customization. Collection happens when you implicitly provide information in an unspecified way, and your data is identifiable."
+14743,17,127,"The site collects your cookies or tracking elements for analytics or research. Collection happens when you implicitly provide information in an unspecified way, and your data is identifiable."
+14744,17,127,"The site collects your cookies or tracking elements for marketing purposes. Collection happens when you implicitly provide information in an unspecified way, and your data is identifiable."
+14745,17,127,An unnamed third party does track on the first party website or app your cookies or tracking elements for personalization or customization. The data is personally identifiable.
+14746,17,127,An unnamed third party does track on the first party website or app your cookies or tracking elements for analytics or research. The data is personally identifiable.
+14747,17,127,An unnamed third party does track on the first party website or app your cookies or tracking elements for marketing purposes. The data is personally identifiable.
+14748,18,127,An unnamed third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+14749,18,127,A named third party does track on the first party website or app your cookies or tracking elements for analytics or research.
+14750,19,127,"A user with an account can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by the site, which collects it for a basic service or feature."
+14751,19,127,"A user with an account can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by a third party, which collects or receives it for a basic service or feature."
+14800,20,127,"When a change is made to the privacy policy that significantly affects data practices, users receive no notification. Users' choices regarding policy changes are not mentioned or are unclear."
+14802,20,127,The text describes a specific data practice that is not covered by our label scheme.
+14803,20,127,A named third party does track on the first party website or app your cookies or tracking elements for targeted advertising. You can configure your privacy with third-party user settings for the collection or sharing and use of your information.
+14752,21,127,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+14753,21,127,"Users with accounts can edit their information, within the scope of unspecified user information."
+14754,22,127,The policy makes a statement about how data from children is treated.
+14755,23,127,"The policy makes specific provisions for international audiences, non-US citizens, or non-European citizens (e.g., about international data transfer)."
+14756,24,127,The text describes a specific data practice that is not covered by our label scheme.
+14757,25,127,An unnamed third party does collect on the first party website or app your unspecified personal information for an unspecified purpose.
+14758,25,127,An unnamed third party does collect on the first party website or app information about you not covered by our label scheme for an unspecified purpose.
+14759,25,127,The text does not fit into our label scheme.
+14760,26,127,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+14761,26,127,"When a change of an unspecified nature is made to the privacy policy, users are personally notified. Users have a choice not covered by our label scheme."

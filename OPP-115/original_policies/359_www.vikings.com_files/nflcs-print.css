@@ -1,0 +1,20 @@
+.print-head a {
+	display: none;
+}
+.print-body .module {
+	overflow: visible;
+}
+
+.print-body .mod-wrp-1,
+.print-body .mod-wrp-2,
+.print-body .mod-wrp-3,
+.print-body .mod-wrp-4,
+.print-body .mod-wrp-5 {
+	border: 1px solid #fff;
+}
+
+.print-body a,
+.print-body a:hover {
+	text-decoration: none;
+	color: #000;
+}

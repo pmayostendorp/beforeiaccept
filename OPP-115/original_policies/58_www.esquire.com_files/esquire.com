@@ -1,0 +1,1 @@
+PARSELY.pInit({"apikey":"esquire.com","settings":{"debug":false,"widget":false,"tracker":true},"customizations":null,"track_ip_addresses":true,"bundle":"/code/ptrack-v0.4.2-engaged-time.js","track_third_party_cookies":true,"uuid":"a15d01ce-61f7-4584-b4df-4d252b446ca8","network_uuid":"df482264-38d5-43bc-88e5-8ed080569cca","apikey_uuid":"a15d01ce-61f7-4584-b4df-4d252b446ca8"});

@@ -1,0 +1,25 @@
+OX_3267341870({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://us-ads.openx.net/{medium}/1.0/{rtype}?ee=res&ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=6&ph=94ef58655625200a8cfc5b15afcd0b94ad52d590",
+    "adunits" : [
+      {
+        "auid":"537982801",
+        "chain":[
+          {
+            "is_fallback":1,
+            "ad_id":"0",
+            "width":"728",
+            "height":"90",
+            "html":"<!--/* OpenX Asynchronous JavaScript tag */-->\n\n<!-- /*\n * The tag in this template has been generated for use on a\n * non-SSL page. If this tag is to be placed on an SSL page, change the\n * 'http://us-ads.openx.net/...'\n * to\n * 'https://us-ads.openx.net/...'\n */ -->\n\n<div id=\"537982804_INSERT_SLOT_ID_HERE\" style=\"width:728px;height:90px;margin:0;padding:0\">\n  <noscript><iframe id=\"0edacb9ade\" name=\"0edacb9ade\" src=\"http://us-ads.openx.net/w/1.0/afr?auid=537982804&cb=INSERT_RANDOM_NUMBER_HERE\" frameborder=\"0\" scrolling=\"no\" width=\"728\" height=\"90\"><a href=\"http://us-ads.openx.net/w/1.0/rc?cs=0edacb9ade&cb=INSERT_RANDOM_NUMBER_HERE\" ><img src=\"http://us-ads.openx.net/w/1.0/ai?auid=537982804&cs=0edacb9ade&cb=INSERT_RANDOM_NUMBER_HERE\" border=\"0\" alt=\"\"></a></iframe></noscript>\n</div>\n<script type=\"text/javascript\">\n  var OX_ads = OX_ads || [];\n  OX_ads.push({\n     slot_id: \"537982804_INSERT_SLOT_ID_HERE\",\n     auid: \"537982804\"\n  });\n</script>\n\n<script type=\"text/javascript\" src=\"http://us-ads.openx.net/w/1.0/jstag\"></script>\n",
+            "target":"_blank",
+            "ts":"1fHJpZD1iNGQzOGQ1Mi0zNTg5LTRkZTktYjI1Yi0yZTAwNTQ2MDIxNTB8cnQ9MTQzNTg3MDA3N3xhdWlkPTUzNzk4MjgwMXxhdW09RE1JRC5XRUJ8c2lkPTUzNzE5NTU1NXxwdWI9NTM3MDg1ODc4fHBjPVVTRHx4dD1yZXN8cmFpZD05YjI2ZjJhZS1lZTQzLTQzODktOWJjNy1hMGFmYzE1MzhkMzF8dXI9QnRZNjBxVkJYNw",
+            "type":"html",
+            "ad_url":"<!--/* OpenX Asynchronous JavaScript tag */-->\n\n<!-- /*\n * The tag in this template has been generated for use on a\n * non-SSL page. If this tag is to be placed on an SSL page, change the\n * 'http://us-ads.openx.net/...'\n * to\n * 'https://us-ads.openx.net/...'\n */ -->\n\n<div id=\"537982804_INSERT_SLOT_ID_HERE\" style=\"width:728px;height:90px;margin:0;padding:0\">\n  <noscript><iframe id=\"0edacb9ade\" name=\"0edacb9ade\" src=\"http://us-ads.openx.net/w/1.0/afr?auid=537982804&cb=INSERT_RANDOM_NUMBER_HERE\" frameborder=\"0\" scrolling=\"no\" width=\"728\" height=\"90\"><a href=\"http://us-ads.openx.net/w/1.0/rc?cs=0edacb9ade&cb=INSERT_RANDOM_NUMBER_HERE\" ><img src=\"http://us-ads.openx.net/w/1.0/ai?auid=537982804&cs=0edacb9ade&cb=INSERT_RANDOM_NUMBER_HERE\" border=\"0\" alt=\"\"></a></iframe></noscript>\n</div>\n<script type=\"text/javascript\">\n  var OX_ads = OX_ads || [];\n  OX_ads.push({\n     slot_id: \"537982804_INSERT_SLOT_ID_HERE\",\n     auid: \"537982804\"\n  });\n</script>\n\n<script type=\"text/javascript\" src=\"http://us-ads.openx.net/w/1.0/jstag\"></script>\n"
+          }
+        ]
+      }
+    ]
+  }
+});

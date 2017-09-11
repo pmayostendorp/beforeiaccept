@@ -1,0 +1,46 @@
+/* 
+This CSS resource incorporates links to font software which is 
+the valuable copyrighted property of WebType LLC, The Font Bureau 
+and/or their suppliers. You may not attempt to copy, install, 
+redistribute, convert, modify or reverse engineer this font 
+software. Please contact WebType with any questions: www.webtype.com
+*/
+
+body:after { content: ''; background-image: url(//pls.webtype.com/v.gif?ct=31126,31126,31126,16009,16009,16009,16007,16007,16007,16008,16008,16008&r=3252&p=2575&h=raYmXdV9XEsT2Yism%2bCf6Q%3d%3d); }
+
+@font-face {
+ font-family: "Benton Regular";
+ src: url("//cloud.webtype.com/webtype/ff/2/14797e84-f4de-4167-a868-ec0cd9467d54");
+ src:  url("//cloud.webtype.com/webtype/ff/2/14797e84-f4de-4167-a868-ec0cd9467d54#iefix")  format("embedded-opentype"),
+  url("//cloud.webtype.com/webtype/ff/1/2f25c51e-b757-4d87-bec3-2b1fb0de66d4") format("truetype"),
+  url("//cloud.webtype.com/webtype/ff/3/62271ecb-7faa-4be3-a69f-fe9a1ae3083e") format("woff");
+ font-style: normal;
+ font-weight: normal;
+}
+@font-face {
+ font-family: "Benton Regular Italic";
+ src: url("//cloud.webtype.com/webtype/ff/2/b73281d6-a1be-49dc-ad12-967fd8ea2952");
+ src:  url("//cloud.webtype.com/webtype/ff/2/b73281d6-a1be-49dc-ad12-967fd8ea2952#iefix")  format("embedded-opentype"),
+  url("//cloud.webtype.com/webtype/ff/1/2c53451a-efe4-431f-bafb-3e90780ff55e") format("truetype"),
+  url("//cloud.webtype.com/webtype/ff/3/e4880767-7639-44fd-bd61-141e210b150f") format("woff");
+ font-style: italic;
+ font-weight: normal;
+}
+@font-face {
+ font-family: "Benton Bold Italic";
+ src: url("//cloud.webtype.com/webtype/ff/2/20f161fc-8d3b-46e9-ad36-c460b0b551ac");
+ src:  url("//cloud.webtype.com/webtype/ff/2/20f161fc-8d3b-46e9-ad36-c460b0b551ac#iefix")  format("embedded-opentype"),
+  url("//cloud.webtype.com/webtype/ff/1/3d37e2ba-4205-48aa-bcf8-ed2a0cce4e32") format("truetype"),
+  url("//cloud.webtype.com/webtype/ff/3/9532bd7d-8990-4b6f-92a7-e391f880b0e0") format("woff");
+ font-style: italic;
+ font-weight: bold;
+}
+@font-face {
+ font-family: "Benton Bold";
+ src: url("//cloud.webtype.com/webtype/ff/2/edbc45e9-1ab8-477d-8cd6-afd8da01f2ca");
+ src:  url("//cloud.webtype.com/webtype/ff/2/edbc45e9-1ab8-477d-8cd6-afd8da01f2ca#iefix")  format("embedded-opentype"),
+  url("//cloud.webtype.com/webtype/ff/1/c3f4e0ea-349d-4d22-b3e1-3587bad04e22") format("truetype"),
+  url("//cloud.webtype.com/webtype/ff/3/a859cf66-3590-45b0-821a-35180a96e131") format("woff");
+ font-style: normal;
+ font-weight: bold;
+}

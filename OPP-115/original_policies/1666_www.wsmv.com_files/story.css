@@ -1,0 +1,58 @@
+﻿body, .columnsall, .columns, .column, #WNFooter
+{
+	background: none !important;
+	background-color:#FFF !important;
+	border:0 !important;
+	color:#000 !important;
+	width:607px !important;
+}
+
+a 
+{
+	color:#000 !important;
+	text-decoration:underline !important;
+}
+
+
+
+#WNFooter
+{
+	border-top:1px #000 solid !important;
+}
+
+#WNHeader h1,
+.wnContainerMemberSearch,
+#WNNavSearchSwitch,
+#WNBrandingImage,
+#WNHeader map,
+.wnMainMenu,
+.wnJavascriptAd, 
+.wnIframeAd,
+.wnMultiAd,
+.wnDS,
+.displaysize,
+.wnBlock.displaySize,
+.column,
+#WNMenuCol1,
+#WNStoryUtils,
+.wnFacebookTools-Like,
+#WNStoryRelatedBox,
+#wnSocialToolsSection,
+#WNFooter img.wnFooter,
+body > *, /* Just Hide all direct descenders, then show approved ones */
+#dockFrame_left, #dockFrame_right, #dockFrame_top, #dockFrame_bottom, #dockFrame_shadow
+{
+	display: none !important;
+}
+
+#WNCol23 /* column height manager fix/reset */
+{
+	min-height:0 !important;
+}
+
+#WNHeader, #WNColsAll, #WNFooter, /* Reshow all needed direct descenders, previously hidden*/
+#WNAd1, #WNPrintBrandingImage, #WNFooter img.wnFooter.printable 
+{
+	display: block !important;
+	margin:0 auto !important;
+}

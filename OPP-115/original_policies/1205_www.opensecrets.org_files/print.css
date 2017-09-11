@@ -1,0 +1,209 @@
+body {
+}
+
+.dontprintme {
+	display:none;
+}
+
+.printme {}
+	
+.floatright {
+	float:right;
+	margin:0 0 10px 20px;
+}
+
+.floatleft {
+	float:left;
+	margin:0 20px 10px 0;
+}	
+
+.alignbottom {
+	vertical-align:bottom;
+}
+
+img {vertical-align:bottom;}
+
+a img {border:none;}
+
+/*structural stuff */
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+
+#topBar {
+	display:none;
+}
+
+#nav {
+	display:none;
+}
+
+/* +++++++ STUFF IN THE SEARCH BAR +++++++++++ */
+
+#searchBar {
+	display:none;
+}
+
+#header {
+	border-bottom:1px solid black;
+	margin-bottom:.25in;
+	padding-bottom:.1in;
+}
+
+#supportWrapper {
+	display:none;
+}
+
+/* +++++++ STUFF IN THE SECTION SPECIFIC BAR +++++++++++ */
+
+#sectionBar {
+	display:none;
+}
+
+#sectionBarInterior {
+	display:none;
+}
+
+/* STUFF IN THE MAIN BODY CONTENT AREA */
+
+#contentWrapper {
+
+}
+
+#leftColumn {
+	display:none;
+}
+
+/* SIDBEAR CALLOUT STUFF */
+
+#sidebarWrapper {
+	display:none;
+}
+
+#mainColumn {
+}
+
+.containerBox {
+	border:1px solid #5f5f5f;
+	padding:2px;
+	float:left;
+}
+
+
+#disclaimer {
+	text-align:center;
+	clear:both;
+	color:#666;
+}
+
+#contentWrapperBottom {
+	display:none;
+}
+
+/* STUFF IN THE FOOTER AREA */
+
+#footerWrapper {
+	border-top:1px solid black;
+}
+
+#copyrightWrapper {
+	float:left;
+	width:;
+	text-align:left;
+}
+
+#footerNavWrapper {
+	display:none;
+}
+
+#webbyBanner {
+	display:none;
+}
+
+/* DATA DISPLAY TABLES */
+.datadisplay {
+	margin:0;
+	padding:0;
+	background:#e0e6ec;
+	border-top:1px solid #5f5f5f;
+	border-left:1px solid #5f5f5f;
+}
+
+.datadisplay td {
+	padding:4;
+	text-align:left;
+	vertical-align:top;
+	border-bottom:1px solid #5f5f5f;
+	border-right:1px solid #5f5f5f;
+}
+
+.datadisplay th {
+	padding:4;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+	background:#999;
+	border-bottom:1px solid #5f5f5f;
+	border-right:1px solid #5f5f5f;
+}
+
+.even {
+	background:#f0f3f6;
+}
+
+/* CONTENT STUFF */
+
+/* These styles control text and links */
+
+p, td, li {font-family:Arial, Helvetica, sans-serif; font-size:10pt;}
+
+#mainColumn p, #relatedBox p, #disclaimer p {margin:0 0 1em 0;}
+
+#mainColumn ul, #mainColumn ol {margin:.5em 0 1em 0;	padding-left:1.5em;}
+#mainColumn li {margin:0 0 .3em 0;}
+
+.subnav ul {margin:0 0 0 1em; padding:0 0 1em 0; color:#841628;}
+.subnav li {margin:0 0 .5em 1em;}
+.subnav li a {margin:0; padding:0 !important;}
+.subnav li a:hover {margin:0; padding:0 !important; background:none !important;}
+
+h1{font-family:Arial, Helvetica, sans-serif; font-size:18pt; margin:0 0 0 0; color:#841628;}
+h2{font-family:Arial, Helvetica, sans-serif; font-size:12pt; margin:2em 0 .2em 0; color:#841628; clear:left;}
+h3{font-family:Arial, Helvetica, sans-serif; font-size:12pt; margin:0 0 0 0; color:#000; clear:left;}
+h4{font-family:Arial, Helvetica, sans-serif; font-size:10pt; margin:0 0 0 0; color:#000; clear:left;}
+h5{font-family:Arial, Helvetica, sans-serif; font-size:9pt; margin:0 0 0 0; color:#4d547e; text-transform:uppercase; font-weight:100;}
+
+.ruleAbove { border-top:1px solid #841628;}
+.headerWithIcons  { border-top:1px solid #841628; margin:2em 0 .2em 0;}
+.headerWithIcons  h2 { display:inline;}
+
+a:link {color:#283ba9; text-decoration:underline;}
+a:hover {color:#283ba9; text-decoration:none;}
+a:visited {color:#666; text-decoration:underline;}
+a:visited:hover {color:#666; text-decoration:none;}
+
+#relatedBox a:link {color:white; text-decoration:underline;}
+#relatedBox a:hover {color:white; text-decoration:none;}
+#relatedBox a:visited {color:#ccc; text-decoration:underline;}
+#relatedBox a:visited:hover {color:#ccc; text-decoration:none;}
+
+#footerWrapper {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:8pt;
+	color:#666;
+}
+
+.smallText {font-size:8pt;}
+
+/* BLOG SIDEBAR */
+#banner, #banner-inner, #beta, #beta-inner, .content-nav, .addthis_toolbox {
+	display:none;
+}
+
+.asset-content, .asset-body, .content, .content-inner, .alpha, .alpha-inner, .entry-asset, .asset, .contentWrapper, .mainColumn, div {
+position: static !important;
+overflow: visible !important;
+float: none !important;
+}

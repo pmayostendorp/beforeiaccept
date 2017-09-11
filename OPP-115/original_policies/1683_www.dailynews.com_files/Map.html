@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)http://www.sigalert.com/Portlet/Map.asp?partner=LADailyNews&lat=33.85347&lon=-117.28584&z=2&th=blue&urqs=1&url=/traffic -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	    <title>Traffic Report</title>
+		<link rel="stylesheet" type="text/css" href="reset-min.css">
+        
+		
+		    <link rel="stylesheet" type="text/css" href="Map-combo.css">
+		
+        
+		<script type="text/javascript">
+		    
+var GiPageviewRefreshIntervalSeconds	= 20;
+var GiPageviewRefreshDelaySeconds		= 10;
+var GiDataRefreshIntervalMinutes		= 5;
+            var GstrImageDir = "http://cdn-static.sigalert.com/151/Images",
+                GstrCookieDomain = ".sigalert.com",
+                GstrBuildNumber = "151",
+	            GbEmailAjaxErrors = true;
+            
+		</script>
+        
+		
+		    <script src="Map-combo.js"></script>
+		
+		
+		<script src="SoCalMap.js"></script>
+        <script type="text/javascript">
+            Sigalert.common.Location.set(1000, "SoCal", "SoCal", "Inland Empire", "Inland Empire", "Riverside-SanBernardino", 33.85347, -117.28584, 2);
+            Sigalert.common.Host.set("/Data", "http://static.sigalert.com/AdPushpins");
+        </script>
+        
+		<script src="urchin.js"></script>
+		<script type="text/javascript">
+			try {
+				_uacct = "UA-85482-1";
+				urchinTracker("/PTracker/region=" + Sigalert.common.Location.getAdArea() + "/partner=LADailyNews/page=/map");
+			}
+			catch (ex) {
+				/* empty */
+			}
+		</script>
+	</head>
+	<body marginwidth="0" marginheight="0">
+		<noscript>&lt;p&gt;&lt;a href="http://www.sigalert.com"&gt;Traffic Report by Sigalert.com&lt;/a&gt;&lt;/p&gt;</noscript>
+		<div id="idPortletBorder" style="border-width: 0px;">
+			<div id="idPortletViewport" style="width: 640px; height: 300px;"><div class="widget map"><div class="widget-content map-content"><div class="MapControl" style="height: 300px;"><div class="map-viewport"><div class="map-layers" style="margin-left: 0px; margin-top: 0px; left: 556px; top: 254px;"><div class="widget map-layer widget-content map-layer-content background-layer"><img class=" map-tile" src="SoCalZ2-x6y2.png" style="width: 300px; height: 300px; left: -600px; top: -300px;"><img class=" map-tile" src="SoCalZ2-x6y3.png" style="width: 300px; height: 300px; left: -600px; top: 0px;"><img class=" map-tile" src="SoCalZ2-x7y2.png" style="width: 300px; height: 300px; left: -300px; top: -300px;"><img class=" map-tile" src="SoCalZ2-x7y3.png" style="width: 300px; height: 300px; left: -300px; top: 0px;"><img class=" map-tile" src="SoCalZ2-x8y2.png" style="width: 300px; height: 300px; left: 0px; top: -300px;"><img class=" map-tile" src="SoCalZ2-x8y3.png" style="width: 300px; height: 300px; left: 0px; top: 0px;"></div><div class="widget map-layer widget-content map-layer-content traffic-layer"><img class=" map-tile" src="x6y2.png" style="width: 300px; height: 300px; left: -600px; top: -300px;"><img class=" map-tile" src="x6y3.png" style="width: 300px; height: 300px; left: -600px; top: 0px;"><img class=" map-tile" src="x7y2.png" style="width: 300px; height: 300px; left: -300px; top: -300px;"><img class=" map-tile" src="x7y3.png" style="width: 300px; height: 300px; left: -300px; top: 0px;"><img class=" map-tile" src="x8y2.png" style="width: 300px; height: 300px; left: 0px; top: -300px;"><img class=" map-tile" src="x8y3.png" style="width: 300px; height: 300px; left: 0px; top: 0px;"></div></div><div class="map-covers"></div></div></div></div></div><div id="idPortletLogo">Powered by Total Traffic</div></div>
+		</div>
+		<script type="text/javascript">
+		    Sigalert.data.Manager.defaultDataAccessorOptions = {
+                mapTiles: true
+            };
+            
+		    Sigalert.common.PageInitializer.subscribe(function() {
+		        YAHOO.util.Event.on("idPortletViewport", "click", function () {
+		            Map.fullReport("/traffic", "");
+		        });
+		        
+		        Map.init("http://cdn-tiles.sigalert.com/15/Blue", 0, "", false);
+		    });
+	        Sigalert.common.PageInitializer.init(Sigalert.common.Location.getRegion(), Sigalert.common.Location.getMapBaseName());
+		</script>
+	
+
+</body></html>

@@ -1,0 +1,3 @@
+if (bt_parameter("preview")=="on") { document.cookie="btPreview=true;domain=" + document.location.hostname + ";path=/"; console.log("BrightTag preview mode activated."); }
+else if (bt_parameter("preview")=="off") { document.cookie="btPreview=;domain=" + document.location.hostname + ";path=/;expires=Sun, 19 Aug 14 08:45:55 UTC"; console.log("BrightTag preview mode deactivated."); }
+else if (bt_cookie("btPreview")) { console.log("BrightTag preview mode.") }

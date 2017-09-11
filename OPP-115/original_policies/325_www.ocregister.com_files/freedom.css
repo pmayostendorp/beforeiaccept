@@ -1,0 +1,206 @@
+/* NEW */
+.subHdrYellow {
+	font-family:Arial, Helvetica, Sans-Serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding:3px;
+	background-color:#092869;
+	border-bottom:1px solid #666666;
+}
+.resultsHdr {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.searchText {
+	font-family:Arial, Helvetica, Sans-Serif;
+	font-size:11px;
+	color:#000000;
+	padding:4px;
+}
+.searchText a:link, .searchText a:active, .searchText a:visited {
+	color:#092869;
+	text-decoration:none;
+}
+.searchText a:hover {
+	color:#000000;
+	text-decoration:underline;
+}
+.searchFooter {
+	font-family:Arial, Helvetica, Sans-Serif;
+	font-size:11px;
+	color:#FFFFFF;
+	padding:3px;
+}
+.searchFooter a:link, .searchFooter a:active, .searchFooter a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.searchFooter a:hover {
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+/* OLD Styles */
+
+.body {  font-family: Arial, Helvetica, sans-serif; font-size: 11px}
+
+A:link.body {
+	text-decoration : none;
+	font-size :  11px;
+	color: #0A296A;
+	font-family : Arial, Helvetica, sans-serif;
+	}
+
+A:visited.body {
+	text-decoration : none;
+	font-size :  11px;
+	color: #0A296A;
+	font-family : Arial, Helvetica, sans-serif;
+	}
+
+A:active.body {
+	text-decoration : none;
+	font-size :  11px;
+	color: #000000;
+	font-family : Arial, Helvetica, sans-serif;
+	}
+
+A:hover.body {
+	text-decoration : underline;
+	font-size :  11px;
+	color: #990000;
+	font-family : Arial, Helvetica, sans-serif;
+	}
+	
+.interior {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.interior ul {
+	margin-top:-10px;
+}
+
+.interior h1 {
+	font-size:18px;
+	color:#0A296A;
+}
+
+.tagline {
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+	color:#0A296A;
+	font-style:italic;
+}
+
+A:link.interior {
+	text-decoration : none;
+	font-size :  12px;
+	color: #0A296A;
+	font-family : Arial, Helvetica, sans-serif;
+	}
+
+A:visited.interior {
+	text-decoration : none;
+	font-size :  12px;
+	color: #0A296A;
+	font-family : Arial, Helvetica, sans-serif;
+	}
+
+A:active.interior {
+	text-decoration : none;
+	font-size :  12px;
+	color: #000000;
+	font-family : Arial, Helvetica, sans-serif;
+	}
+
+A:hover.interior {
+	text-decoration : underline;
+	font-size :  12px;
+	color: #990000;
+	font-family : Arial, Helvetica, sans-serif;
+	}
+.ffPictures {
+	border:1px solid #333333;
+}
+.ffCutline {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 10px;
+	width:300px;
+	float: right;
+	margin-left:8px;
+	margin-bottom:8px;
+}
+.fiPhoto {
+	background-color:#092869;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:6px;
+	color:#FFFFFF;
+	vertical-align:top;
+	width:250px;
+}
+.fiPhoto a {
+	color:#FFFFFF;
+	text-decoration:none;
+	padding-left:8px;
+}
+.fiPhoto a:hover {
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+.fiContent {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	padding-right:12px;
+	vertical-align:top;
+}
+.fiContent a {
+	color:#092869;
+	text-decoration:none;
+}
+.fiContent a:hover {
+	color:#092869;
+	text-decoration:underline;
+}
+.fiContnet {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+}
+.fiContnet b {
+	font-size:13px;
+	color:#092869;
+}
+.fiContgray {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+}
+.fiContgray b {
+	font-size:13px;
+	color:#092869;
+}
+.subNav {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-bottom:6px;
+	padding-left:4px;
+	border-bottom:2px solid #092869;
+}
+.subNav a {
+	color:#092869;
+	text-decoration:none;
+}
+.subNav a:hover {
+	color:#000000;
+	text-decoration:none;
+}
+.subNavSpace {
+	height:10px;
+}
+.intContentArea {
+	padding:4px 12px 12px 12px;
+}

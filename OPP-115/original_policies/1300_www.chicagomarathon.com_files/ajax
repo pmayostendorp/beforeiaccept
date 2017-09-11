@@ -1,0 +1,107 @@
+var mboxCurrent = mboxFactories.get('default').get('bac_global_bottom',0);mboxCurrent.setOffer(new mboxOfferAjax('<!-- Offer Id: 160151  -->'));mboxCurrent.getOffer().setOnLoad(function() {/* Offer id: 346*/ 
+
+_mboxDefaultContentOffer = function() {
+  this._onLoad = function() {};
+};
+
+_mboxDefaultContentOffer.prototype.setOnLoad = function(_onLoad) {
+  this._onLoad = _onLoad;
+};
+
+_mboxDefaultContentOffer.prototype.shouldAppendClickHandler = function(_mbox, _clickHandlerDiv, _defaultDiv) {
+  var _result = _mbox.getFetcher && _mbox.getFetcher().getType() === 'ajax';
+  _result = _result && _mbox.getDiv() === _mbox.getDefaultDiv();
+  _result = _result && _clickHandlerDiv !== null;
+  _result = _result && _clickHandlerDiv !== _defaultDiv;
+
+  return  _result;
+};
+
+_mboxDefaultContentOffer.prototype.appendClickHandlerIfRequired = function(_mbox, _clickHandlerDiv, _defaultDiv) {
+  if (this.shouldAppendClickHandler(_mbox, _clickHandlerDiv, _defaultDiv)) {
+    _defaultDiv.appendChild(_clickHandlerDiv);
+  }
+};
+
+_mboxDefaultContentOffer.prototype.onClickHandler = function(_mbox) {
+  // just use _mbox.getName() when everyone is on mboxVersion >= 21
+  var _mboxName = _mbox.getName ? _mbox.getName() : _mbox.id;
+  var _clickDiv = document.getElementById('mboxClick-' + _mboxName);
+
+  if (_clickDiv !== null) {
+    _clickDiv.onclick();
+  }
+};
+
+_mboxDefaultContentOffer.prototype.show = function(_mbox) {
+  try {
+    var _self = this;
+    var _defaultDiv = _mbox.getDefaultDiv();
+
+    if (_defaultDiv === null) {
+      return 0;
+    }
+
+    _defaultDiv.onclick = function () {
+      _self.onClickHandler(_mbox);
+    };
+
+    var _clickHandlerDiv = _mbox.getDiv();
+    var _result = _mbox.hide();
+
+    if (_result === 1) {
+      this.appendClickHandlerIfRequired(_mbox, _clickHandlerDiv, _defaultDiv);
+      this._onLoad();
+    }
+
+    return _result;
+  } catch (e) {
+    var _errorMessage = "Default content offer caused exception: " + e;
+
+    if (_mbox.setMessage) {
+      _mbox.setMessage(_errorMessage);
+    } else {
+      _mbox.setError(_errorMessage);
+    }
+
+    return 0;
+  }
+};
+
+(function(){
+  var shouldShowMbox = mboxCurrent.getFetcher && mboxCurrent.getFetcher().getType() === 'ajax';
+
+  mboxCurrent.setOffer(new _mboxDefaultContentOffer());
+
+  if (shouldShowMbox) {
+    mboxCurrent.show();
+  }
+}());
+
+/*seTTCookie() v1 */
+function seTTCookie(a,b,c){var d=new Date();d.setTime(d.getTime()+c);var e='; expires='+d.toGMTString();document.cookie=(a+'='+b+e+'; path=/; domain=bankofamerica.com')}
+/*geTTCookieVal() Profile v1 */
+function geTTCookieVal(n){return(v=new RegExp('^'+n+'=.*|;\\s*'+n+'=.*').exec(document.cookie))?v[0].split('=')[1].split(';')[0]:''};
+      function readCookie(name) {
+         var value = "; " + document.cookie;
+         var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+      }
+      {
+         var ThrottleVal = readCookie("throttle_value");
+         var isSBCustomer = readCookie("isSBCustomer");
+         var runOnce = geTTCookieVal("me_runonce") || "yes";
+      }
+
+      if ((runOnce !="no")) {
+		if (ThrottleVal == 999) {
+	        seTTCookie("me_runonce","no",30 * 60 * 1000);
+            document.write("<img src='https://merrilledge.tt.omtrdc.net/m2/merrilledge/ubox/image?mbox=optOut&profile.throttle_value=999&mboxDefault=https%3A//www.bankofamerica.com/pa/global-assets/1.0/graphic/blank.gif' height='1px' width='1px' />");
+         }
+		if ((isSBCustomer == "true") ) {
+           seTTCookie("me_runonce","no",30 * 60 * 1000);
+		   document.write("<img src='https://bankofamerica.tt.omtrdc.net/m2/bankofamerica/ubox/image?mbox=bac_isSBCustomer&profile.isSBCustomer=true&mboxDefault=https%3A//www.bankofamerica.com/pa/global-assets/1.0/graphic/blank.gif' height='1px' width='1px' />");
+         }
+
+	  }
+});mboxCurrent.loaded();mboxFactories.get('default').getPCId().forceId("1436393617158-319264.17_76");

@@ -1,0 +1,612 @@
+/*
+
+    These update existing styles to make the franchise pages display correctly
+
+ */
+
+
+/* take over banner styles are universal, because this might come up again in the future on other sections */
+
+.takeover #top-banner {
+    background: none;
+    text-align: center;
+    height: 177px;
+    position: relative;
+    overflow: visible;
+}
+    .takeover #top-banner a {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 287px;
+        overflow: hidden;
+    }
+        .takeover #top-banner a img {
+            position: absolute;
+            left: 50%;
+            margin-left: -800px;
+            width: 1600px;
+        }
+.takeover #header .inner,
+.takeover #main .inner,
+.takeover #top-header .inner {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+    .takeover #header .inner,
+    .takeover #main .inner {
+        background: #fff;
+    }
+
+/* headings */
+#franchise .subheader .headings {
+    margin-bottom: 10px;
+}
+    #franchise .subheader .headings img {
+        display: block;
+        margin: 0 0 10px;
+    }
+    #franchise .subheader .headings h1 {
+        padding: 20px 0 5px;
+        display: block;
+        margin: 0;
+    }
+
+/* sliding feature area, universal, may be useful else where on the site */
+#features {
+    width: 986px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 26px 0;
+}
+    #features ul.slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        width: 9999em;
+    }
+        #features .slider li {
+            display: inline;
+            float: left;
+            margin: 0;
+            width: 338px;
+            height: 350px;
+            overflow: hidden;
+            padding: 0 0 0 648px;
+            position: relative;
+            z-index: 9999;
+        }
+            #features .slider .story {
+                background: #000;
+                background: rgba(0,0,0,.8);
+                padding: 26px 26px 60px;
+                height: 264px;
+                width: 286px;
+                position: relative;
+                z-index: 2;
+            }
+            /*#ddf .slider .story {
+                background: #d1d2d4;
+                padding: 26px 26px 60px;
+                height: 264px;
+                width: 286px;
+                position: relative;
+                z-index: 2;
+            }
+                #ddf .slider .story a.ddf-read-more {
+                    display: block;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    width: 144px;
+                    height: 35px;
+                    text-align: center;
+                    font: normal 16px/35px "Helvetica Neue",​ Helvetica,​ Arial;
+                    text-transform: uppercase;
+                    background: transparent url("/sites/all/themes/aw/images/sitewide/ddf_read_more.png") no-repeat scroll left top;
+                }
+                #ddf .slider .story a.ddf-read-more:hover {
+                    text-decoration: none;
+                }*/
+                #features .story .story-header {
+                    margin-bottom: 8px;
+                }
+                    #features .story .headline,
+                    #features .story .subheadline,
+                    #features .story .byline {
+                        line-height: 28px;
+                    }
+                    #features .story .byline {
+                        color: #fff;
+                    }
+                #features .story .pullquote {
+                    color: #fff;
+                    font: bold 48px/48px "Helvetica Neue", Helvetica, Arial;
+                    letter-spacing: -0.25px;
+                    width: 597px;
+                    position: absolute;
+                    left: -621px;
+                    top: 26px;
+                    margin: 0;
+                    padding: 0;
+                }
+                #franchise #features .story p.summary {
+                    color: #fff;
+                }
+            #features .slider li img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+
+            /*#ddf #features .slider li img {
+                width: 628px;
+                height: 330px;
+                border: 10px solid #231F20;
+            }*/
+
+#features .paginator {
+    position: absolute;
+    z-index: 9999;
+    right: 26px;
+    bottom: 0;
+    height: 36px;
+    width: 270px;
+    padding: 0 0 0 16px;
+    margin: 0;
+    font-size: 20px;
+    border-top: 0 none;
+}
+    #features .paginator li {
+        display: inline;
+        float: left;
+    }
+        #features .paginator li a {
+            display: inline-block;
+            padding: 0 3px;
+            color: #bfbfbf;
+            border: 0 none;
+            text-decoration: none;
+        }
+            .ie6 #features .paginator li a,
+            .ie7 #features .paginator li a {
+                display: inline;
+                zoom: 1;
+            }
+            #features .paginator li a:hover,
+            #features .paginator li.current a {
+                color: #fff;
+            }
+        #features .paginator li.next,
+        #features .paginator li.prev {
+            position: relative;
+            top: 2px;
+            left: 0;
+            margin: 0 0 0 6px;
+        }
+        #features .paginator li.prev {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            margin: 0;
+        }
+            #features .paginator li.next a,
+            #features .paginator li.prev a {
+                display: block;
+                text-indent: -9999em;
+                padding: 0;
+                width: 10px;
+                height: 16px;
+                background: url("/sites/all/themes/aw/images/sitewide/features_paginator.png") 0 0;
+            }
+                #features .paginator li.prev a:hover {
+                    background-position: 0 -16px;
+                }
+                #features .paginator li.next a {
+                    background-position: -10px 0;
+                }
+                    #features .paginator li.next a:hover {
+                        background-position: -10px -16px;
+                    }
+
+
+/* the content block areas, updates the exisiting site styles */
+
+#franchise .colsAB {
+    padding-bottom: 30px;
+}
+
+#franchise .inner .mod {
+    margin-bottom: 30px;
+}
+
+#franchise.listing .colA .mod,
+#franchise.listing .colC .mod {
+    margin-bottom: 20px;
+}
+
+#franchise .spanAB .mod {
+    margin-bottom: 0;
+}
+
+#franchise .mod-title {
+}
+
+#franchise .mod-content {
+    border-top:none;
+    border-bottom: 2px solid #000 !important;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#franchise .mod.top-border-only {
+  margin-bottom: 0;
+}
+
+#franchise .mod.bottom-border-only {
+  border-top: none;
+}
+
+#franchise .colC .mod-content {
+    border-bottom: 1px solid #ccc;
+}
+
+#franchise.listing .colA .mod-content {
+    border-bottom: 2px solid #ccc;
+}
+
+#franchise .colC .mod-external .mod-content {
+    border-bottom: 0 none;
+    margin-bottom: 0;
+}
+
+/* some new headings (sprite updated) */
+
+.h-galleries, .h-liveblog, .h-featured {
+    background-image: url("/sites/all/themes/aw/images/sitewide/sprite_headings_franchise.png");
+}
+.h-articles, .h-videos {
+    text-indent: 0;
+    background: none;
+}
+.h-custom-content {
+    background: none;
+    text-indent: 0;
+}
+.h-galleries {
+    background-position: 0 -80px;
+}
+.h-liveblog {
+    background-position: 0 -120px;
+}
+.h-featured {
+    background-position: 0 -160px;
+}
+    #franchise.listing .colC .h-featured {
+        border-bottom: 1px solid #bfbfbf;
+    }
+
+/* the google plus link */
+
+.ruler .share a.icon-googleplus, .socialtools li .icon-googleplus {
+    background: url("/sites/all/themes/aw/images/sitewide/icon-googleplus.png") no-repeat 0 0;
+    display: block;
+    width: 24px;
+    height: 15px;
+    text-indent: -9999em;
+}
+    .ruler .share a.icon-googleplus:hover, .socialtools li .icon-googleplus:hover,
+    .ruler .share a.icon-googleplus:focus, .socialtools li .icon-googleplus:focus,
+    .story-hover a.icon-googleplus, .story-hover li .icon-googleplus {
+        background-position: 0 -15px;
+    }
+
+    .story-hover .ruler .share .tw a, .story-hover .socialtools li .icon-twitter {
+        background-position: -10px -310px !important;
+    }
+
+/* face book icon link overrides */
+.story .ruler .share .fb a, .story .socialtools li .icon-fb {
+    background-image: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png") !important;
+    background-position: -890px -630px !important;
+}
+    .story-hover .ruler .share .fb a, .story-hover .socialtools li .icon-fb {
+        background-position: -10px -230px !important;
+    }
+
+
+/* the "more in" links are new */
+
+#franchise .mod .more {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    margin: 0;
+    text-align: right;
+}
+
+#ddf .mod-content-wrapper .more {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    text-align: right;
+}
+
+/* Franchise Articles */
+    #franchise.listing .story-listing .socialtools {
+        top: 0;
+    }
+    #franchise .story-listing:last-child {
+        margin-bottom: 20px;
+    }
+    #franchise .story-listing:first-child {
+        border-top: 0 none;
+    }
+    #franchise .story-video .subheadline {
+        color: #808080;
+    }
+    #franchise .story-video .byline {
+        color: #808080;
+    }
+
+#franchise .story p.summary, #franchise .story div.summary {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+
+#franchise .story p {
+  margin: 8px 0;
+}
+
+#franchise .story strong {
+  font-weight: bold;
+}
+
+/* franchise videos */
+
+#franchise .story-video {
+    display: inline;
+    float: left;
+    width: 316px;
+    margin: 0 20px 20px 0;
+    padding: 19px 0 0;
+    border-bottom: 0 none;
+    height: 317px;
+    overflow: hidden;
+}
+    #franchise .story-video .story-header {
+        margin-bottom: 19px;
+    }
+    #franchise .story-video .headline,
+    #franchise .story-video .headline a,
+    #franchise .story-video .subheadline {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    #franchise .story-video .headline a {
+        background: none;
+        padding: 0;
+    }
+    #franchise .story-video + .story-video {
+        margin-right: 0;
+    }
+
+    #franchise .story-gallery .socialtools li, #franchise .story-video .socialtools li {
+      float: left !important;
+      width: auto;
+      height: 15px;
+      margin: 0 5px 0 0;
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    #franchise .story-gallery .story-header .socialtools .st_plusone div div,
+    #franchise .story-video .socialtools .st_plusone div div {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    	filter: alpha(opacity=30);
+        opacity: .3;
+    }
+
+    #franchise .story-gallery:hover .story-header .socialtools .st_plusone div div,
+    #franchise .story-video:hover .socialtools .st_plusone div div {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    	filter: alpha(opacity=100);
+        opacity: 1;
+    }
+
+
+#franchise .stories-small,
+#franchise .videos-small {
+    overflow: hidden;
+    clear: both;
+}
+    #franchise .colC .stories-small,
+    #franchise .colC .videos-small {
+        padding-top: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+        #franchise .colC .videos-small {
+            margin-left: -20px;
+            border-bottom: 0 none;
+        }
+    #franchise .stories-small a,
+    #franchise .videos-small a {
+        display: inline;
+        float: left;
+        width: 148px;
+        margin: 0 0 0 20px;
+    }
+        #franchise .stories-small a:last-child,
+        #franchise .videos-small a:last-child {
+            margin-left: 20px;
+        }
+        #franchise .stories-small a:first-child,
+        #franchise .videos-small a:first-child,
+        #franchise .stories-small a:nth-child(4n+1),
+        #franchise .videos-small a:nth-child(4n+1) {
+            margin-left: 0;
+        }
+        #franchise .colC .videos-small a:first-child {
+            margin-left: 20px;
+        }
+
+/* Commenting out because image is missing
+#franchise .media .video {
+    background-image: url("/sites/all/themes/aw/images/sitewide/play-bl.png");
+}
+*/
+
+.icon-play-black {
+    display: block;
+    float: left;
+    position: relative;
+    top: 2px;
+    margin: 0 4px 0 0;
+    background: url("/sites/all/themes/aw/images/sitewide/icon-play-black.png") no-repeat 0 0;
+    width:17px;
+	height:11px;
+}
+
+/* franchise galleries */
+
+#franchise .story-gallery {
+    display: inline;
+    float: left;
+    width: 316px;
+    margin: 0 20px 0 0;
+    padding: 19px 0 0;
+    border-bottom: 0 none;
+    height: 341px;
+    overflow: hidden;
+}
+    #franchise .story-gallery .story-header {
+        margin-bottom: 19px;
+    }
+    #franchise .story-gallery .headline,
+    #franchise .story-gallery .headline a,
+    #franchise .story-gallery .subheadline {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    #franchise .story-gallery ~ .story-thumb {
+        display: inline;
+        float: left;
+        width: 148px;
+        height: 164px;
+        margin: 10px 20px 0 0;
+        padding: 0;
+    }
+        #franchise .story-gallery + .story-thumb {
+            margin-top: 22px;
+        }
+        #franchise .story-gallery + .story-thumb + .story-thumb {
+            margin-right: 0;
+            margin-top: 22px;
+        }
+        #franchise .story-gallery + .story-thumb + .story-thumb + .story-thumb + .story-thumb {
+            margin-right: 0;
+        }
+        #franchise .story-gallery + .story-thumb + .story-thumb + .story-thumb + .story-thumb ~ .story-thumb {
+            margin-top: 16px;
+            padding-bottom: 16px;
+        }
+        #franchise .story-gallery + .story-thumb + .story-thumb + .story-thumb + .story-thumb + .story-thumb + .story-thumb + .story-thumb + .story-thumb {
+            margin-right: 0;
+        }
+
+
+/* franchise live blog */
+
+#franchise .story-liveblog {
+    border-color: #DFDFDF;
+    border-style: dotted;
+    overflow: hidden;
+    padding: 17px 0 15px;
+}
+    #franchise .story-liveblog .timestamp,
+    #franchise .story-liveblog .timestamp a,
+    #franchise .story-liveblog .byline {
+        font-size: 16px;
+    }
+
+     #franchise .colsAB .story-header {
+         margin-bottom: 10px;
+     }
+        #franchise .colsAB .story-liveblog .timestamp,
+        #franchise .colsAB .story-liveblog .timestamp a,
+        #franchise .colsAB .story-liveblog .byline {
+            font-size: 19px;
+            line-height: 19px;
+        }
+            #franchise .colsAB .story-liveblog .timestamp,
+            #franchise .colsAB .story-liveblog .timestamp a {
+                font-weight: bold;
+            }
+
+
+    #franchise .story-liveblog p.summary {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+    }
+        #franchise .colsAB .story-liveblog p.summary {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    #franchise .story-liveblog .media {
+        display: inline;
+        float: left;
+        margin: 5px 20px 7px 0;
+    }
+        #franchise .story-liveblog .media + p.summary {
+            padding-top: 3px;
+        }
+
+
+/* franchise story featured articles in the right rail */
+
+#franchise .story-feature {
+    border-bottom: 0 none;
+    padding: 10px 0 8px;
+}
+    #franchise .story-feature .story-header {
+        margin: 0 0 7px;
+    }
+        #franchise .story-feature .headline,
+        #franchise .story-feature .headline a,
+        #franchise .story-feature .subheadline,
+        #franchise .story-feature .byline {
+            font-size: 23px;
+            line-height: 26px;
+        }
+
+/* featured items on the gallery and video listing pages, ticket #265 */
+
+#franchise .cols-316 .story .headline,
+#franchise .cols-316 .story .headline a,
+#franchise .cols-316 .story .subheadline,
+#franchise .cols-316 .story .byline {
+    font-size: 23px;
+    line-height: 26px;
+}
+
+.twtr-widget {
+    margin: 0 auto 10px auto;
+}
+
+/* SOLR search bug for displays */
+.page-search .node-unpublished {
+    display:none;
+}
+
+.slideable .summary {
+    display: none;
+}

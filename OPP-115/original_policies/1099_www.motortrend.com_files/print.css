@@ -1,0 +1,183 @@
+@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
+
+h2, h3 {
+   page-break-after: avoid;
+}
+
+p {max-width: 100%;}
+
+ul, img {
+   page-break-inside: avoid;
+   z-index: 1 !important;
+    
+}
+
+@page {
+    size: landscape;
+}
+body {
+    writing-mode: tb-rl;
+}
+
+
+a[href]:after {
+    content: none !important;
+  }
+
+.main_menu,#main_menu_tab,.moeimk_menu_trigger,#mk_arrow_button,#mediakit_menu_wrapper ,.moeimk_menu_trigger a,#top_top_container{
+    display:none;                                              
+}
+.moeimk_menu_trigger {
+    padding-top: 0;
+}
+#nav {
+    background: #fff; 
+    position: relative;
+}
+#nav_spacer {
+    display: none;
+}
+
+.moei_section_inverted,.moei_section{
+    height: 400px;
+    background: none;
+    position: relative !important;
+    page-break-inside: avoid;
+}
+
+.moei_section_inverted .cfff, .moei_section_inverted .cffffff, .moei_section .cfff, .moei_section .cffffff {
+    color: #fff !important;
+}
+.b000,.b000000 {
+    background-color:#000 !important;
+}
+.moei_section_inverted.first_block {
+    page-break-inside: auto;
+    max-height: 500px !important;
+}
+
+.moei_section_inverted p,  .moei_brand_section_inverted p{
+    color:#fff !important;
+}
+
+.moei_section_inverted h2, .moei_brand_section_inverted h2 {
+    color: #fff !important;
+}
+
+.moei_section_inverted img {
+    left: 0 !important;
+    height: auto !important;
+    
+}
+
+.backstretch_print.backstretch_no_parallax {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left: 0;
+}
+
+.sub_section_digital_tab {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.appendix_links {
+    float: none;
+}
+
+.appendix_links .borderright {
+    border-right: none;
+}
+.appendix_links > div {
+    text-align: left !important;
+    float: none !important;
+    display: block;
+    width: auto !important;
+    margin-left: 20px !important;
+}
+
+.appendix_links > div.span3 strong, .appendix_links > div.span3 br {
+    display: none !important;
+}
+.appendix_links > div.span3.borderright strong {
+    display: inline !important;
+}
+.appendix_links > div.span3.borderright br {
+    display: block !important;
+}
+
+.printbtn {display: none !important;}
+
+.appendix_links a
+{
+    color:#6F9DB2 !important;
+    display: block;
+    background: none !important;
+}
+a.button span {display: none !important;}
+.appendix_links a:after {
+    margin-left: 10px;
+}
+.appendix_links a:after , .social_icon_center .social_icon_inner a:after, a.button:after{
+   content: attr(href)  !important; 
+   font-size: 11px !important;
+    line-height: 10px !important;
+
+   
+} 
+.social_icon_center .social_icon_inner a:after,a.button:after {
+    color: #fff !important;
+    white-space:nowrap !important;
+}
+.social_icon_center .social_icon_inner {max-width: none;}
+.social_icon_center .social_icon_inner a {width: 100%;display: block;height: auto !important;min-height: 0 !important;}
+.social_icon_center .social_icon_inner a img {display: none !important;}
+#filter_menu {background: #000 !important;}
+#filter_menu ul {display: none;}
+.portfolios_container {height: auto;width: 100%;}
+.portfolios_container .portfolio-item {
+    position: relative !important;
+    float: left;
+    background: #000 !important;
+    left:auto !important;
+    top:auto !important;
+    width: 25%;
+    margin: 0;
+    page-break-inside: avoid;
+}
+.portfolio-item.medium .img-container {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.portfolio-item.medium .img-container img.forprint {
+    display: block !important;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+.mfp-wrap,.mfp-wrap .mfp-container,#popup_modal {
+    position: relative !important;
+    background: #fff !important;
+    height: auto !important;
+    overflow: hidden;
+}
+.wrapper.open {display: none !important;}
+html {overflow: auto !important;}
+
+.mfp-wrap .mfp-container .ptop, 
+.mfp-wrap .mfp-container .pintro {
+    page-break-inside: avoid;
+}
+.mfp-close {
+    display: none !important;
+}

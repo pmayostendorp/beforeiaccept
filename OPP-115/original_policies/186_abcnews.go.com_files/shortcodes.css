@@ -1,0 +1,901 @@
+/* TOC 
+01. COLUMN LAYOUTS ETC.
+02. COLOR VARIATION CLASSES
+03. FANCY BUTTONS & LINKS
+04. FANCY FORMS
+05. FANCY BOXES
+06. FANCY IMAGES & GALLERIES
+07. FANCY TYPOGRAPHY
+08. JQUERY TABS
+09. JQUERY TOGGLES
+10. JQUERY TOOLTIPS
+11. TESTIMONIALS
+12. BLOG & PORTFOLIO SHORTCODES
+13. WIDGETS
+14. JCAROUSEL
+15. MISC SHORTCODES
+16. SQUEEZE
+17. PROGRESSIVE ENHANCEMENTS
+18. RESPONSIVENESS & MOBILE
+*/
+
+/* 
+===============================================================================================================
+01. COLUMN LAYOUTS ETC.
+=============================================================================================================== */
+
+/* Column Layouts 
+-------------------------------------------------------------- */
+.one_half{width:48%;}
+.one_third{width:30.66%;}
+.two_third{width:65.33%;}
+.one_fourth{width:22%;}
+.three_fourth{width:74%;}
+.one_fifth{width:16.8%;}
+.two_fifth{width:37.6%;}
+.three_fifth{width:58.4%;}
+.four_fifth{width:79.2%;}
+.one_sixth{width:13.33%;}
+.five_sixth{width:82.67%;}
+.custom_column{position:relative;margin:0;float:left;}
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{position:relative;margin-right:4%;float:left;min-height:1px;margin-bottom:0;}
+.last{margin-right:0!important;clear:right;}
+
+/* Clear Floats 
+-------------------------------------------------------------- */
+.clearboth,.divider_padding{width:100%;height:0px;line-height:0;font-size:0px;clear:both;display:block;}
+.divider_padding{padding-bottom:40px}
+#intro_inner:after,
+#slider_module:after,
+.jqueryslidemenu ul:after,
+#content_inner:after,
+#sidebar_inner:after,
+#main_inner:after,
+#outro_inner:after,
+#footer_inner:after,
+#sub_footer_inner:after,
+.post_grid:after,
+.post_list_module:after,
+.single_post_module:after,
+.post_nav_module:after,
+.share_this_content:after,
+.about_author_content:after,
+.additional_posts_module:after,
+.widget:after,.page:after,
+.clearfix:after{content:" ";display:block;height:0;font-size:0;clear:both;visibility:hidden;}
+
+/* 
+===============================================================================================================
+02. COLOR VARIATION CLASSES
+=============================================================================================================== */
+
+/* Backgrounds & Borders 
+-------------------------------------------------------------- */
+.red{background-color:#700 !important;border-color:#700 !important;}
+.orange{background-color:#e98813 !important;border-color:#e98813 !important;}
+.yellow{background-color:#f7c808 !important;border-color:#f7c808 !important;}
+.green{background-color:#74941f !important;border-color:#74941f !important;}
+.olive{background-color:#3a491a !important;border-color:#3a491a !important;}
+.teal{background-color:#089 !important;border-color:#089 !important;}
+.blue{background-color:#00437f !important;border-color:#00437f !important;}
+.deepblue{background-color:#092334 !important;border-color:#092334 !important;}
+.purple{background-color:#4b2c5a !important;border-color:#4b2c5a !important;}
+.hotpink{background-color:#bc006e !important;border-color:#bc006e !important;}
+.slategrey{background-color:#3b424a !important;border-color:#3b424a !important;}
+.mauve{background-color:#625b56 !important;border-color:#625b56 !important;}
+.pearl{background-color:#ab998f !important;border-color:#ab998f !important;}
+.steelblue{background-color:#788794 !important;border-color:#788794 !important;}
+.mossgreen{background-color:#717a75 !important;border-color:#717a75 !important;}
+.wheat{background-color:#79745d !important;border-color:#79745d !important;}
+.coffee{background-color:#372e25 !important;border-color:#372e25 !important;}
+.copper{background-color:#6b3c02 !important;border-color:#6b3c02 !important;}
+.silver{background-color:#ddd !important;border-color:#d0d0d0 !important;color:#444!important;}
+.black{background-color:#111 !important;border-color:#111 !important;}
+.white{background-color:#fff !important;border-color:#eee !important;color:#aaa!important;}
+.white .colored_box_title{background:none;border-bottom:1px dashed #eee;color:#999;}
+.titled_box_title.white{background:url(images/shortcodes/th.png) repeat-x 0 0 #F3F3F3;}
+ 
+/* Icon Variations 
+-------------------------------------------------------------- */
+.red_sprite,.red_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_770000.png) !important;}
+.orange_sprite,.orange_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_e98813.png) !important;}
+.yellow_sprite,.yellow_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_f7c808.png) !important;}
+.green_sprite,.green_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_74941f.png) !important;}
+.olive_sprite,.olive_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_3a491a.png) !important;}
+.teal_sprite,.teal_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_008899.png) !important;}
+.blue_sprite,.blue_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_00437f.png) !important;}
+.deepblue_sprite,.deepblue_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_092334.png) !important;}
+.purple_sprite,.purple_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_4b2c5a.png) !important;}
+.hotpink_sprite,.hotpink_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_bc006e.png) !important;}
+.slategrey_sprite,.slategrey_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_3b424a.png) !important;}
+.mauve_sprite,.mauve_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_625b56.png) !important;}
+.pearl_sprite,.pearl_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_ab998f.png) !important;}
+.steelblue_sprite,.steelblue_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_788794.png) !important;}
+.mossgreen_sprite,.mossgreen_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_717a75.png) !important;}
+.wheat_sprite,.wheat_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_79745d.png) !important;}
+.coffee_sprite,.coffee_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_372e25.png) !important;}
+.copper_sprite,.copper_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_6b3c02.png) !important;}
+.silver_sprite,.silver_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_dddddd.png) !important;}
+.black_sprite,.black_numbers li:before{background-image:url(images/shortcodes/sprites/custom_sprite_222222.png) !important;}
+
+/* Text Variations 
+-------------------------------------------------------------- */
+.red_text,.red_sprite a{color:#700 !important;}
+.orange_text,.orange_sprite a{color:#e98813 !important;}
+.yellow_text,.yellow_sprite a{color:#f7c808 !important;}
+.green_text,.green_sprite a{color:#74941f !important;}
+.olive_text,.olive_sprite a{color:#3a491a !important;}
+.teal_text,.teal_sprite a{color:#089 !important;}
+.blue_text,.blue_sprite a{color:#00437f !important;}
+.deepblue_text,.deepblue_sprite a{color:#092334 !important;}
+.purple_text,.purple_sprite a{color:#4b2c5a !important;}
+.hotpink_text,.hotpink_sprite a{color:#bc006e !important;}
+.slategrey_text,.slategrey_sprite a{color:#3b424a !important;}
+.mauve_text,.mauve_sprite a{color:#625b56 !important;}
+.pearl_text,.pearl_sprite a{color:#ab998f !important;}
+.steelblue_text,.steelblue_sprite a{color:#788794 !important;}
+.mossgreen_text,.mossgreen_sprite a{color:#717a75 !important;}
+.wheat_text,.wheat_sprite a{color:#79745d !important;}
+.coffee_text,.coffee_sprite a{color:#372e25 !important;}
+.copper_text,.copper_sprite a{color:#6b3c02 !important;}
+.silver_text,.silver_sprite a{color:#ddd !important;}
+.black_text,.black_sprite a{color:#111 !important;}
+
+/* 
+===============================================================================================================
+03. FANCY BUTTONS & LINKS
+=============================================================================================================== */
+
+/* Fancy Buttons 
+-------------------------------------------------------------- */
+.button_link,.fancy_button,#searchsubmit,#submit{background:url(images/shortcodes/button_overlay.png) repeat-x 0 0 #111;text-transform:uppercase;border:1px solid #111;margin:5px 10px 5px 0;display:inline-block;letter-spacing:1px;padding:10px 30px;line-height:15px;font-size:12px;color:#f8f8f8;}
+.button_link:hover,.fancy_button:hover,#searchsubmit:hover,#submit:hover{text-decoration:none!important;cursor:pointer;color:#fff;}
+.fancy_button::-moz-focus-inner{border:0;padding:0;}
+.small_button{line-height:10px;font-size:10px;padding:8px 15px 7px;}
+.large_button,.call_to_action{font-size:18px;padding:15px 40px;}
+
+/* Fancy Links 
+-------------------------------------------------------------- */
+.email_link{padding-left:22px;margin-right:10px;background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -340px -283px;}
+.twitter_link{padding-left:22px;margin-right:10px;background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -659px -85px;}
+.download_link{padding-left:22px;margin-right:10px;background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -262px -363px;}
+.fancy_link{margin-right:10px;display:inline-block;}
+.fancy_link:hover{text-decoration:underline;}
+.download_link:hover,.email_link:hover,.download_link:hover{text-decoration:underline!important;}
+
+/* Simple Form Styles 
+-------------------------------------------------------------- */
+.textfield,.password,#s{border:1px solid #eee;background:transparent;padding:10px;}
+.textarea,#comment{border:1px solid #eee;background:transparent;padding:10px;width:97%;}
+.textfield_label{display: inline-block;margin-left: 10px;}
+#commentform p{margin-bottom:10px;}
+#footer #s,#footer .textfield,#footer .password,#footer .textarea{background:url(images/shortcodes/dark_opacity_strip.png) repeat-x 0 85%;border-color:rgba(0,0,0,0.15) rgba(0,0,0,0.06) rgba(255,255,255,0.15) rgba(0,0,0,0.06);border-style:solid;border-width:1px;color:inherit;overflow:hidden;}
+#footer .textarea{background-position: 0 90%;} 
+#footer #s:focus,#footer .textfield:focus,#footer .textarea:focus{opacity:.8;}
+
+/* Search Widget 
+-------------------------------------------------------------- */
+#searchsubmit{font-size:11px;margin-right:0;padding: 10px 18px;}
+.screen-reader-text{display:none;}
+
+/* 
+===============================================================================================================
+04. FANCY FORMS SHORTCODE
+=============================================================================================================== */
+
+/* Forms Shortcode
+-------------------------------------------------------------- */
+.mysite_form_row{margin-bottom:10px;}
+.mysite_form_row label:first-child{display:block;}
+.radio_row label:first-child,.checkbox_row label:first-child{display:inline-block;padding-right:10px;}
+.mysite_required,.mysite_name_required,.mysite_email_required,.mysite_zip_required,.mysite_date_required{display:none;}
+.mysite_form .checkbox{float:left;}
+.mysite_form .textfield{width:200px;}
+.mysite_form .textarea{width:80%;}
+.radio_label{padding-right:10px;}
+.mysite_form .checkbox,.mysite_form .radio{width:20px;height:25px;padding:0 5px 0 0;background:url(images/shortcodes/checkbox.png) no-repeat;display:inline-block;vertical-align:middle;line-height:25px;}
+.mysite_form .radio{background:url(images/shortcodes/radio.png) no-repeat;}
+.mysite_form .select{background:url(images/shortcodes/select.png) no-repeat right 0;border:1px solid #E0E0E0;color:#aaa;height:35px;line-height:35px;overflow:hidden;padding:0 10px;position:absolute;width:200px;}
+.mysite_form select.styled{height:35px!important;width:223px!important;}
+
+/* Contact Form Widget 
+-------------------------------------------------------------- */
+.mysite_contact_form_widget .name_row label,.mysite_contact_form_widget .email_row label,.mysite_contact_form_widget .captcha_row label{width:30%;float:right;}
+.mysite_contact_form_widget .textarea_row label:first-child{display:none;}
+.mysite_contact_form_widget .textfield{width:55%;}
+.mysite_contact_form_widget .textarea{width:85%;}
+
+/* Required Error
+-------------------------------------------------------------- */
+.mysite_message.errors{color:#c31b00;padding:15px 20px;margin-bottom:20px;letter-spacing:.3px;background:#ffcccc;border:1px solid #ff9999;}
+.mysite_message.errors ul{list-style:none;margin:0;padding:0;}
+.mysite_message.errors li{background:url(images/shortcodes/error.png) no-repeat 0 2px;padding-left:22px;}
+.required_error{border:1px solid #ff9999!important;}
+
+/*
+=============================================================================================================== 
+05. FANCY BOXES
+=============================================================================================================== */
+
+.colored_box_content,.fancy_box_content,.titled_box_content{position:relative;overflow:hidden;clear:both;padding:20px;}
+.colored_box p:last-child,.fancy_box_content p:last-child,.titled_box_content p:last-child{margin-bottom:10px;}
+
+/* Fancy Boxes 
+-------------------------------------------------------------- */
+.fancy_box{border:1px solid #fff;margin:2px 2px 20px;color:#888;background-color:#f8f8f8;}
+.fancy_box_title{font-size:12px;line-height:30px;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid #fff;margin:0;padding:5px 20px;background:#f3f3f3 url(images/shortcodes/th.png) 0 0 repeat-x;}
+.colored_box{background:url(images/shortcodes/button_overlay.png) repeat-x 0 0 #111;border:1px solid #111;margin-bottom:20px;color:#fff;}
+.colored_box_title{background:url(images/shortcodes/colored_box_title.png) repeat-x bottom right;padding:10px 20px;}
+.titled_box{margin-bottom:20px;color:#888;}
+.titled_box_title{background:url(images/shortcodes/button_overlay.png) repeat-x 0 0 #111;border:1px solid #111;padding:10px 20px;}
+.titled_box_content{padding:20px;border:1px solid #e5e5e5;margin:0;}
+.colored_box_title,.titled_box_title{text-transform:uppercase;letter-spacing:1px;line-height:10px;font-size:11px;color:#fff;margin:0;}
+
+/* Fancy Code & Pre Boxes 
+-------------------------------------------------------------- */
+code,pre{font-family:"Courier New","Consolas",Courier,monospace;white-space:pre;overflow:auto;font-size:11px;margin-bottom:20px;}
+.fancy_code_box,.fancy_pre_box{border:1px solid #eee;margin-bottom:20px;line-height:20px;background:#fff;padding:0 20px;display:block;overflow:auto;}
+.fancy_code_box{background:url(images/shortcodes/code.gif) repeat 0 0;border-top:transparent;}
+
+/* Alert Boxes 
+-------------------------------------------------------------- */
+.download_box,.warning_box,.success_box,.info_box,.note_box{padding:20px 15px 20px 55px;margin-bottom:20px;font-size:14px;letter-spacing:.3px;}
+.download_box a,.warning_box a,.success_box a,.info_box a,.note_box a{text-decoration:underline !important;}
+.info_box{background:#bfe4f9 url(images/shortcodes/icons/info.png) no-repeat 10px 15px;border:1px solid #68a2cf;}
+.note_box{background:#fdebae url(images/shortcodes/icons/notebook.png) no-repeat 10px 15px;border:1px solid #e6c555;}
+.warning_box{background:#ffcccc url(images/shortcodes/icons/stop.png) no-repeat 10px 15px;border:1px solid #ff9999;}
+.download_box{background:#dee3ab url(images/shortcodes/icons/down_alt.png) no-repeat 10px 15px;border:1px solid #a3c159;}
+.info_box,.info_box a{color:#2e6093;}
+.note_box,.note_box a{color:#9e660d;}
+.warning_box,.warning_box a{color:#c31b00;}
+.download_box,.download_box a{color:#5e6f33;}
+
+/* 
+===============================================================================================================
+06. FANCY IMAGES & GALLERIES
+=============================================================================================================== */
+
+/* Framed Images Etc. 
+-------------------------------------------------------------- */
+.wp-caption{margin-bottom:20px;padding-top:12px;text-align:center;}
+.wp-caption-text{margin-bottom:0px;text-align:center;}
+.single_post_image a,.single_post_image a:hover,
+.post_grid_image a,.post_grid_image a:hover,
+.post_list_image a,.post_list_image a:hover,
+.positioning a,.positioning a:hover,
+.fancy_image_load,.fancy_image_load:hover{text-decoration:none!important;}
+
+/* Image Effect
+-------------------------------------------------------------- */
+.shadow_frame{display:inline-block;position:relative;}
+.shadow_frame img{display:block;margin:0 auto;position:relative;}
+.shadow_frame .image_shadow{min-height:8px;}
+.transparent_frame{position:relative;display:inline-block;}
+.transparent_border{position:absolute;top:0;left:0;border:5px solid #000;opacity:.15;width:290px;height:217px;}
+
+/* Fancy Images
+-------------------------------------------------------------- */
+.fancy_images{margin-left:-20px;}
+.fancy_image{float:left;margin-left:20px;margin-bottom:20px;}
+.fancy_images.has_captions .fancy_image_load img{padding-bottom:25px;}
+.fancy_images.has_captions .fancy_image{margin-bottom:45px;}
+.fancy_image_caption{bottom:-17px;color:#aaa;font-size:11px;height:20px;overflow:hidden;position:absolute;text-align:center;text-shadow:1px 1px 0 #fff;width:100%;}
+ 
+/* Nivo Slider Shortcode
+-------------------------------------------------------------- */
+.nivoSlider{position:relative;}
+.nivoSlider img{position:absolute;top:0px;left:0px;}
+.nivoSlider a.nivo-imageLink{position:absolute;top:0px;left:0px;width:100%;height:100%;border:0;padding:0;margin:0;z-index:6;display:none;}
+.nivo-slice{display:block;position:absolute;z-index:5;height:100%;}
+.nivo-box{display:block;position:absolute;z-index:5;}
+.nivo-caption{position:absolute;left:0px;bottom:0px;background:#000;color:#fff;opacity:0.8;width:100%;z-index:8;}
+.nivo-caption p{padding:10px 20px;margin:0;}
+.nivo-caption a{display:inline !important;}
+.nivo-html-caption{display:none;}
+.nivo-controlNav{float:right;padding:10px;}
+.nivo-controlNav a{position:relative;z-index:9;cursor:pointer;display:block;width:22px;height:22px;background:url(images/sliders/nivo_bullets.png) no-repeat;text-indent:-9999px;border:0;margin-right:3px;float:left;}
+.nivo-controlNav a.active{font-weight:bold;background-position:0 -22px;}
+.nivo-directionNav a{position:absolute;top:45%;z-index:9;cursor:pointer;display:block;width:40px;height:40px;background:url(images/sliders/nivo_arrows.png) no-repeat;text-indent:-9999px;border:0;}
+a.nivo-nextNav{background-position:-40px 0;right:15px;}
+a.nivo-prevNav{left:15px;}
+
+/* PNG Preloaders
+-------------------------------------------------------------- */
+.post_list_image,.mysite_form_row,.mysite_nivo_sc{position:relative;}
+.mysite_preloader,.mysite_preloader_large{position:absolute;top:50%;margin-top:-17px;left:50%;margin-left:-17px;}
+.mysite_preloader img,.mysite_preloader_large img,.mysite_contact_feedback img{height:35px;width:35px;padding:0!important;margin:0!important;outline:none!important;border:none!important;background-color:transparent!important;}
+.mysite_contact_feedback{display:none;vertical-align:top;margin-left:0px;margin-top:10px;height:30px;overflow:hidden;}
+.mysite_contact_feedback img{width:16px;height:30px;background-position:bottom left;}
+.mysite_preloader img{width:26px;height:26px;}
+
+/* 
+===============================================================================================================
+07. FANCY TYPOGRAPHY
+=============================================================================================================== */
+
+/* Fancy Lists 
+-------------------------------------------------------------- */
+.fancy_list,.sitemap_list{padding-left:0;}
+.fancy_list li,.sitemap_list li{padding-left:22px;list-style:none;margin-top:5px;background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -303px -320px;}
+.fancy_list .comment_list{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -380px -241px;}
+.fancy_list .bullet_list{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -67px -557px;}
+.fancy_list .check_list{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -461px -161px;}
+.fancy_list .minus_list{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -101px -518px;}
+.fancy_list .plus_list{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -141px -478px;}
+.fancy_list .star_list{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -581px -41px;}
+.fancy_list .arrow_list{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -303px -320px;}
+.fancy_list .circle_arrow{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -619px -2px;}
+.fancy_list .triangle_arrow{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -500px -124px;}
+.sitemap_list .children{padding-left:0;}
+
+/* Icons
+-------------------------------------------------------------- */
+.icon_teaser{margin-bottom:20px;}
+.icon_teaser .icon{float:left;padding-right:10px;padding-top:0;}
+.icon_teaser .icon_text{overflow:hidden;}
+.icon_teaser_link{display:inline-block;}
+.icon_teaser h3{margin-bottom:5px;line-height:25px;}
+.icon_teaser p{margin-bottom:5px;}
+.icon_banner{border:1px solid rgba(0,0,0,.03);background:url(images/shortcodes/icon_banner_bg.png) repeat-x center top;
+-webkit-box-shadow:0 1px 0 #fff inset,-1px 0 0 rgba(255,255,255,0.5) inset,1px 0 0 rgba(255,255,255,0.5) inset,0 1px 1px rgba(0,0,0,0.02);
+-moz-box-shadow:0 1px 0 #fff inset,-1px 0 0 rgba(255,255,255,0.5) inset,1px 0 0 rgba(255,255,255,0.5) inset,0 1px 1px rgba(0,0,0,0.02);
+box-shadow:0 1px 0 #fff inset,-1px 0 0 rgba(255,255,255,0.5) inset,1px 0 0 rgba(255,255,255,0.5) inset,0 1px 1px rgba(0,0,0,0.02);
+display:block;height:128px;text-align:center;margin-bottom:10px;}
+.icon_banner .icon{display:block;padding-top:27px;}
+
+/* Dropcaps 
+-------------------------------------------------------------- */
+.dropcap,.dropcap3,.dropcap4{text-align:center;float:left;color:#fff;}
+.dropcap {background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -7px -343px;margin:0 10px -5px 0;line-height:42px;font-size:25px;height:44px;width:40px;}
+.dropcap4{background:url(images/shortcodes/button_overlay.png) repeat-x 0 0 #111;border:1px solid #111;line-height:35px;margin:0 10px 0 0;font-size:17px;height:35px;width:35px;}
+.dropcap3{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -6px -406px;line-height:35px;margin-right:5px;font-size:15px;height:40px;width:40px;}
+.dropcap2{display:block;float:left;font-size:40px;line-height:40px;margin:0 8px -5px 0;}
+
+/* Pullquotes 
+-------------------------------------------------------------- */
+.pullquote,.pullquote2,.pullquote3,.pullquote4{display:inline-block;float:left;margin-right:4%;margin-top:20px!important;margin-bottom:20px!important;width:40%;}
+.pullquote,.pullquote2,.pullquote3{font-family:"Times New Roman",Georgia,Times,serif;letter-spacing:-.5px;font-size:22px;line-height:30px;}
+.pullquote{border:1px solid #fff;padding:19px;}
+.pullquote2{border-left:3px solid;font-size:16px;line-height:25px;letter-spacing:0;padding:0 0 0 17px;width:36%;}
+.pullquote3{border-top:4px double #e0e0e0;border-bottom:4px double #e0e0e0;padding:22px 0;margin-top:20px !important;}
+.pullquote4{background:url(images/shortcodes/button_overlay.png) repeat-x 0 0 #111;border:1px solid #111;color:#f8f8f8;padding:19px;font-size:14px;}
+.quotes:before{content:'\201C';font-weight:bold;margin-right:5px;font-size:150%;display:inline;vertical-align:middle;}
+.quotes:after{content:'\201D';font-weight:bold;margin-left:5px;font-size:150%;display:inline;vertical-align:middle;}
+.pullquote.aligncenter,.pullquote2.aligncenter,.pullquote3.aligncenter,.pullquote4.aligncenter{float:none;text-align:left;width:auto;display:block;}
+.pullquote.alignleft,.pullquote.aligncenter{margin-left:2px;}
+.pullquote.alignright,.pullquote.aligncenter{margin-right:2px;}
+
+/* Blockquotes 
+-------------------------------------------------------------- */
+blockquote{font-size:14px;margin:20px 0;padding:5px 5px 5px 45px;background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat 0 -619px;}
+blockquote p{margin-bottom:0;}
+cite{font-size:10px;color:#aaa;}
+
+/* Fancy Tables 
+-------------------------------------------------------------- */
+.minimal_table,.fancy_table{border-collapse:separate;margin-bottom:20px;border-spacing:0;width:100%;vertical-align:middle;}
+.minimal_table th{background:#333;color:#fff;font-size:11px;padding:10px 20px;text-transform:uppercase;letter-spacing:1px;font-weight:normal;vertical-align:middle;text-align:left;}
+.minimal_table td{padding:10px 20px;border-bottom:1px solid #e9e9e9;}
+.fancy_table{width:99%;border:1px solid #fff;}
+.fancy_table th{letter-spacing:1px;font-weight:normal;vertical-align:middle;border-bottom:1px solid #fff;background:#f3f3f3 url(images/shortcodes/th.png) 0 0 repeat-x;text-align:center;padding:15px 20px;text-shadow:1px 1px 1px #fff;font-size:14px;}
+.fancy_table td{padding:10px 20px;border-top:1px solid #eee;text-align:center;}
+.fancy_table tr:hover{background:#f3f3f3 url(images/shortcodes/th.png) 0 0 repeat-x;}
+.fancy_table th:first-child,.fancy_table td:first-child{text-align:left;padding-left:30px;}
+
+/* Highlight Styles 
+-------------------------------------------------------------- */
+.highlight{padding:2px 6px;color:#fff;background:#111;}
+.highlight2{padding:1px;border-bottom:1px dashed;font-style:italic;}
+
+/* Fancy Headers 
+-------------------------------------------------------------- */
+.fancy_header{margin-bottom:20px;padding-bottom:0;background-image:none;}
+.fancy_header span{background-color:#888;color:#fff;font-size:11px;letter-spacing:2px;padding:4px 12px;text-transform:uppercase;background-image:none!important;}
+.fancy_header3{background:url(images/shortcodes/stripes.png) repeat 0 0;clear:both;line-height:12px;margin:14px 0;padding-left:0;padding-bottom:0;}
+.fancy_header3 span{background-color:#f9f9f9;color:#888;font-size:12px;letter-spacing:1px;padding-right:5px;text-transform:uppercase;}
+.fancy_header2{margin-bottom:30px;display:block;position:relative;text-align:center;}
+.fancy_header2 span{text-shadow:0 1px 1px #fff;border:4px solid #eee;border:4px solid rgba(0,0,0,0.02);color:#c5c5c5;color:rgba(0,0,0,0.15);background:url(images/shortcodes/fancy_header2.jpg) repeat 0 center;font-family:georgia;font-size:20px;line-height:30px;font-style:italic;display:block;padding:70px 20px;overflow:hidden;}
+.fancy_header2 span:first-line{font-size:60px;line-height:100%;}
+.fancy_header2 span small{font-size:90%;}
+.fancy_header2 span br{margin-bottom:10px;}
+
+/* Fancy Dividers 
+-------------------------------------------------------------- */
+.divider{background:url(images/shortcodes/inset_line.png) left center no-repeat;clear:both;display:block;height:20px;margin:30px 0;text-align:right;width:100%;}
+.top{background-position:right center;}
+.top a{color:#ccc;display:block;font-size:8px;line-height:18px;text-decoration:none;}
+.top a:hover{text-decoration:none;}
+hr{margin-top:20px;margin-bottom:19px;background:#eee;color:#eee;border:none;height:1px;}
+
+/* 
+===============================================================================================================
+08. JQUERY TABS
+=============================================================================================================== */
+
+.featured_tabs li,.tabs li,.tabs_framed li,.tabs_button li,.tabs_vertical li{padding:0;margin:0;list-style-type:none;float:left;}
+.featured_tabs a,.tabs a,.tabs_framed a,.tabs_button a,.tabs_vertical a{display:block;text-decoration:none;position:relative;text-transform:uppercase;letter-spacing:1px;font-size:10px;line-height:10px;}
+
+/* Tabs 
+-------------------------------------------------------------- */
+.tabs{padding:5px 1px;margin:0;list-style-type:none;height:30px;background:url(images/shortcodes/divider_shadow_inset.png) no-repeat right 32px;border-bottom:1px solid #fff;}
+.tabs a{height:25px;margin-right:20px;padding:0 0 10px 1px;}
+.tabs a:hover{text-decoration:none;color:#444;}
+.tabs a.current{cursor:default;color:#333;cursor:default;background:url(images/shortcodes/up-arrow.png) no-repeat center bottom;}
+.tabs_content{display:none;padding:20px 0;}
+.tabs_container{margin-bottom:40px;}
+
+/* Framed Tabs 
+-------------------------------------------------------------- */
+.tabs_framed{padding:0;margin:0;list-style-type:none;clear:left;height:25px;border-bottom:1px solid #E5E5E5;}
+.tabs_framed a{border:1px solid #E5E5E5;background:#fafafa;padding:7px 30px;margin-right:2px;color:#ccc;}
+.tabs_framed a:hover{text-decoration:none;background:#fff;color:#999;}
+.tabs_framed a.current{cursor:default;border-bottom:1px solid #fff;color:#333;background:#fff;}
+.tabs_framed_content{display:none;background-color:#fff;border:1px solid #E5E5E5;border-width:0 1px 1px 1px;padding:15px 30px;}
+.tabs_framed_container{margin-bottom:40px;}
+
+/* Button Tabs 
+-------------------------------------------------------------- */
+.tabs_button{padding:0;margin:0;list-style-type:none;height:30px;}
+.tabs_button a{padding:5px 0;margin-right:20px;}
+.tabs_button a:hover{text-decoration:none;color:#888;}
+.tabs_button a.current{cursor:default;color:#eee;padding:5px 15px;cursor:default;background:url(images/shortcodes/button_overlay.png) repeat-x 0 0 #111;border:1px solid #111;}
+.tabs_button_content{display:none;padding:20px 0;overflow:visible;}
+.tabs_button_container{margin-bottom:20px;}
+
+/* Vertical Tabs 
+-------------------------------------------------------------- */
+.tabs_vertical,.featured_tabs{padding:0;margin:0;list-style-type:none;text-shadow:0px 1px 1px #fff;font-size:16px;}
+.tabs_vertical li,.featured_tabs li{float:none;background:url(images/shortcodes/tab_middle.png) right 0 repeat-y;}
+.tabs_vertical li a,.featured_tabs li a{z-index:20;line-height:20px;padding:10px 0;color:#aaa;margin-right:1px;}
+.tabs_vertical a:hover,.featured_tabs a:hover{text-decoration:none;color:#888;}
+.tabs_vertical_frame,.featured_tabs_frame{float:left;width:240px;margin-bottom:90px;position:relative;}
+.tabs_vertical_frame .bg_top,.featured_tabs_frame .bg_top{height:81px;position:absolute;width:100%;}
+.tabs_vertical_frame .bg_bottom,.featured_tabs_frame .bg_bottom{background:url(images/shortcodes/tab_bottom.png) right top no-repeat;height:90px;position:absolute;width:100%;}
+.tabs_vertical li:first-child,.featured_tabs li:first-child{background:url(images/shortcodes/tab_top.png) right 0 no-repeat;}
+.tabs_vertical_content,.featured_tabs_content{display:block;overflow:hidden;padding-left:4%;padding-top:5px;}
+.tabs_vertical li.current,.featured_tabs li.current_page_item{background:none;}
+.tabs_vertical li.current span,.featured_tabs li.current_page_item span{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat right 1px;display:block;height:26px;margin-top:-13px;position:absolute;right:0;top:50%;width:30px;}
+
+/* 
+===============================================================================================================
+09. JQUERY TOGGLES
+=============================================================================================================== */
+
+/* Minimal Toggles 
+-------------------------------------------------------------- */
+.toggle,.toggle_accordion{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -222px -395px;line-height:30px;margin-bottom:15px;position:relative;padding:0 0 0 30px;clear:both;}
+.toggle a,.toggle_accordion a{color:inherit;display:block;font-size:16px;font-weight:normal;letter-spacing:0.4px;line-height:30px;text-decoration:none;text-transform:none;}
+.toggle a:hover,.toggle_accordion a:hover{text-decoration:none;}
+.active{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -182px -434px;}
+.toggle_content{clear:both;margin:0 0 20px 30px;overflow:hidden;}
+
+/* Framed Toggles 
+-------------------------------------------------------------- */
+.toggle_frame{padding:0 20px;padding-top:15px;margin:15px 2px;border:1px solid #fff;background:#f4f4f4;}
+.toggle_frame .toggle,.toggle_frame .toggle_accordion{background-position:-141px -474px;}
+.toggle_frame .active{background-position:-101px -514px;}
+.toggle_frame .toggle_content{border:0;padding:0px;}
+.toggle_frame .toggle_content .block{padding:0px;}
+
+/* 
+===============================================================================================================
+10. JQUERY TOOLTIPS
+=============================================================================================================== */
+
+/* Shared Styles 
+-------------------------------------------------------------- */
+.ui-cluetip-content{padding:15px 20px;}
+#cluetip-close{position:absolute;top:6px;right:6px;font-size:0px;width:16px;height:15px;background:url(images/shortcodes/close_tooltip.png) no-repeat center center transparent;cursor:pointer;}
+#cluetip-extra,.entry .tooltip_load{display:none;}
+
+/* Default Skin
+-------------------------------------------------------------- */
+.cluetip-default{background:url(images/shortcodes/button_overlay.png) repeat-x 0 0 #111;border:1px solid #111;color:#fff;}
+.cluetip-default .cluetip-arrows{display:none;position:absolute;top:0;left:-10px;height:0px!important;width:0px!important;background:transparent!important;border:10px solid transparent;}
+.clue-right-default .cluetip-arrows{border-right-color:#111;border-left-color:transparent!important;border-top-color:transparent!important;border-bottom-color:transparent!important;margin-left:-10px;}
+.clue-left-default .cluetip-arrows{border-right-color:transparent!important;border-left-color:#111;border-top-color:transparent!important;border-bottom-color:transparent!important;left:100%;margin-right:-10px;}
+.clue-top-default .cluetip-arrows{border-right-color:transparent!important;border-left-color:transparent!important;border-top-color:#111;border-bottom-color:transparent!important;top:100%;left:50%;margin-left:-10px;}
+.clue-bottom-default .cluetip-arrows{border-right-color:transparent!important;border-left-color:transparent!important;border-top-color:transparent!important;border-bottom-color:#111;top:-20px;left:50%;margin-left:-10px;}
+
+/* Minimal Skin
+-------------------------------------------------------------- */
+.cluetip-minimal{background: #222;border:1px solid #222;color:#ddd;}
+.cluetip-minimal .cluetip-arrows{display:none;position:absolute;top:-2px;left:-8px;height:0px!important;width:0px!important;background:transparent!important;border:8px solid transparent;}
+.clue-right-minimal .cluetip-arrows{border-right-color:#222;border-left-color:transparent!important;border-top-color:transparent!important;border-bottom-color:transparent!important;margin-left:-8px;}
+.clue-left-minimal .cluetip-arrows{border-right-color:transparent!important;border-left-color:#222;border-top-color:transparent!important;border-bottom-color:transparent!important;left:100%;margin-right:-8px;}
+.clue-top-minimal .cluetip-arrows{border-right-color:transparent!important;border-left-color:transparent!important;border-top-color:#222;border-bottom-color:transparent!important;top:100%;left:50%;margin-left:-8px;}
+.clue-bottom-minimal .cluetip-arrows{border-right-color:transparent!important;border-left-color:transparent!important;border-top-color:transparent!important;border-bottom-color:#222;top:-20px;left:50%;margin-left:-8px;}
+.cluetip-minimal .ui-cluetip-content{padding:8px 15px;font-size:11px;line-height:17px;}
+
+/* 
+===============================================================================================================
+11. TESTIMONIALS
+=============================================================================================================== */
+.testimonial_grid{overflow:hidden;}
+.testimonial_grid .pullquote,.testimonial_grid .pullquote2,.testimonial_grid .pullquote3,.testimonial_grid .pullquote4{width:auto;}
+.testimonial_grid .testimonial_author{display:block;margin-top:15px;overflow:hidden;}
+.testimonial_image,.testimonial_meta{float:left;}
+.testimonial_image{margin-right:15px;}
+.testimonial_image img{vertical-align:baseline;}
+.testimonial_meta{line-height:15px;padding-top:5px;letter-spacing:.5px;}
+.testimonial_author_name{font-size:11px;}
+.testimonial_author_website{font-size:9px;text-transform:lowercase;}
+.testimonial_meta span{display:block;}
+/* widget */
+.mysite_testimonial_widget{position:relative;}
+.mysite_testimonial_widget .testimonial_image{float:right;margin-left:15px;margin-right:0;}
+.mysite_testimonial_widget .testimonial_meta{text-align:right;float:right;}
+.widget_single_testimonial{padding:20px;}
+.widget_testimonial_author{background:url(images/shortcodes/testimonials_bg.png) no-repeat right top;display:block;overflow:hidden;padding-top:20px;height:40px;}
+.testimonial_nav{bottom:65px;position:absolute;right:12px;}
+.testimonial_next,.testimonial_prev{text-indent:-9999em;width:10px;height:20px;display:inline-block;cursor:pointer;}
+.testimonial_prev{background:url(images/shortcodes/prev_arrow.png) no-repeat center center;}
+.testimonial_next{background:url(images/shortcodes/next_arrow.png) no-repeat center center;}
+
+/* 
+===============================================================================================================
+12. BLOG & PORTFOLIO SHORTCODES
+=============================================================================================================== */
+
+/* Post Grids 
+-------------------------------------------------------------- */
+.post_grid{margin-bottom:20px;}
+.post_grid_module{position:relative;margin-bottom:40px;}
+.post_grid_image{margin-bottom:20px;display:block;}
+.post_grid_content{position:relative;}
+
+/* Post Lists 
+-------------------------------------------------------------- */
+.post_list{margin-bottom:20px;padding-left:0;}
+.post_list_module{position:relative;list-style:none;margin:0;padding:0;margin-bottom:40px;}
+.post_list_image{float:left;margin-right:4%;}
+.post_list_content{overflow:hidden;}
+.small_post_list .post_list_module{margin-bottom:20px;}
+
+/* Shared Styles 
+-------------------------------------------------------------- */
+.post_title a:hover{text-decoration:none!important;}
+.post_meta{margin-bottom:10px;font-size:9px;}
+.post_meta span{margin-right:5px;}
+.post_excerpt{margin-bottom:10px;}
+
+/* Social Media 
+-------------------------------------------------------------- */
+.mysite_sociable{float:left;margin-right:20px;}
+
+/* Pagenavi 
+-------------------------------------------------------------- */
+.wp-pagenavi,.paged-navigation{font-size:9px;letter-spacing:1.6px;text-transform:uppercase;clear:both;padding-top:10px;height:40px;text-align:left;}
+.wp-pagenavi .pagenavi-pages{margin-right:4px;}
+.wp-pagenavi a,.wp-pagenavi .current,.wp-pagenavi .extend,.page-numbers{margin:2px;padding:4px 5px;}
+.pagenavi-page,.page-numbers,.wp-pagenavi .current{border:1px solid transparent;}
+.paged-navigation .next,.paged-navigation .prev{border:0;background:none;}
+.paged-navigation .page-numbers{margin:0;}
+.wp-pagenavi .current,.paged-navigation .current{color:#eee;}
+.wp-pagenavi a:hover,.paged-navigation a:hover{text-decoration:none;}
+
+/* 
+===============================================================================================================
+13. WIDGETS
+=============================================================================================================== */
+
+.widget li{padding-top:5px;padding-bottom:5px;}
+.widget .fancy_list li{padding-top:0;}
+.widget li ul{padding-top:5px;}
+.textwidget{clear:both;}
+.widget_tag_cloud a{padding:4px;}
+
+/* Popular/Related/Recent Posts Widget 
+-------------------------------------------------------------- */
+.small_post_list .post_title{margin-bottom:0;}
+.small_post_list .post_meta{margin-bottom:0;}
+
+/* Twitter Widget 
+-------------------------------------------------------------- */
+.mysite_twitter_widget ul{list-style:none;padding-left:0;}
+.mysite_twitter_widget li{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -538px -76px;padding-left:28px;}
+.mysite_twitter_widget li a{display:block;}
+
+/* Flickr Widget 
+-------------------------------------------------------------- */
+.flickr_wrap{position:relative;margin-left:-2px;margin-right:-6px;}
+.flickr_badge_image{padding:0;float:left;line-height:100%;}
+.flickr_badge_image img{padding:4px;margin:2px;}
+
+/* WP Recent Comments 
+-------------------------------------------------------------- */
+#recentcomments{list-style:none;padding-left:0;}
+.recentcomments{list-style:none;padding-left:25px !important;background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -380px -237px;}
+
+/* Contact Us Widget 
+-------------------------------------------------------------- */
+.contact_widget_name{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -420px -203px;}
+.contact_widget_phone{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -379px -241px;}
+.contact_widget_email{background:url(images/shortcodes/sprites/custom_sprite_dddddd.png) no-repeat -338px -281px;}
+.contact_widget_name,.contact_widget_address,.contact_widget_city,.contact_widget_phone,.contact_widget_email{padding-left:25px;display:inline-block}
+
+/* WP Calendar 
+-------------------------------------------------------------- */
+#wp-calendar{border-collapse:collapse;border-spacing:0;font-size:11px;margin-bottom:20px;text-align:center;vertical-align:middle;width:100%;}
+#wp-calendar caption,#wp-calendar th,#wp-calendar td,#wp-calendar tfoot{padding:5px;}
+tfoot td{border:none!important;}
+#today{font-weight:bold;}
+#next{text-align:right;}
+#prev{text-align:left;}
+
+/* RSS Widget 
+-------------------------------------------------------------- */
+.rss-date{color:#bbb;font-size:9px;text-transform:uppercase;letter-spacing:2px;display:block;margin-bottom:5px;}
+.widget_rss li a{font-size:14px;display:block;margin-bottom:5px;}
+.rssSummary{margin-bottom:5px;}
+
+/*
+===============================================================================================================
+14. JCAROUSEL
+=============================================================================================================== */
+
+/* jCarousel Shared 
+-------------------------------------------------------------- */
+.jcarousel-direction-rtl{direction:rtl;}
+.jcarousel-container-horizontal{width:auto;padding:0px 25px;}
+.jcarousel-clip{overflow:hidden;}
+.jcarousel-clip-horizontal{width:auto;height:auto;}
+.jcarousel-item{width:auto;height:auto;}
+/* Custom Nav */
+.mysite_jcarousel{position:relative;margin-bottom:20px;}
+.mysite_jcarousel_nav{position:absolute;width:100%;overflow:visible;top:50%;}
+.mysite_jcarousel_nav span{position:relative;width:25px;height:25px;z-index:100;}
+.mysite_jcarousel_prev{float:left;background:url(images/shortcodes/jcarousel_prev2.png) center center no-repeat;}
+.mysite_jcarousel_next{float:right;background:url(images/shortcodes/jcarousel_next2.png) center center no-repeat;}
+.mysite_jcarousel_prev:hover,.mysite_jcarousel_next:hover{cursor:pointer;opacity:.7;}
+.jcarousel_prev_disabled,.jcarousel_next_disabled{cursor:default!important;opacity:.4!important;}
+
+/* jCarousel Portfolios & Blogs 
+-------------------------------------------------------------- */
+.mysite_jcarousel_blog,
+.mysite_jcarousel_portfolio{position:relative;}
+.mysite_jcarousel_blog.has_jcarousel_text,
+.mysite_jcarousel_portfolio.has_jcarousel_text{overflow:hidden;}
+.blog_clip,.portfolio_clip{width:100%;overflow:hidden;}
+.mysite_jcarousel_blog .jcarousel-container-horizontal,
+.mysite_jcarousel_portfolio .jcarousel-container-horizontal{padding:0px;}
+.jcarousel-clip-horizontal .blog_sc_img_load,
+.jcarousel-clip-horizontal .portfolio_img_load{background:no-repeat scroll center center transparent;display:block;position:relative;}
+/* With Text */
+.mysite_jcarousel_text{position:relative;float:left;width:22%!important;margin-right:4%!important;}
+.mysite_jcarousel_text+.blog_clip,
+.mysite_jcarousel_text+.portfolio_clip{position:relative;float:left;width:74%!important;margin-right:0%!important;}
+.mysite_jcarousel_text h2,.mysite_jcarousel_text h3,.mysite_jcarousel_text h4{margin-bottom:10px;}
+.mysite_jcarousel_text .mysite_jcarousel_nav{position:relative;top:auto;margin-top:10px;}
+.mysite_jcarousel_text .mysite_jcarousel_nav span{height:20px;width:20px;margin-right:5px;float:left;}
+.mysite_jcarousel_text .mysite_jcarousel_prev{background:url(images/shortcodes/jcarousel_prev.png) center center no-repeat;}
+.mysite_jcarousel_text .mysite_jcarousel_next{background:url(images/shortcodes/jcarousel_next.png) center center no-repeat;}
+/* Without Text */
+.no_jcarousel_text .mysite_jcarousel_prev{left:-25px;}
+.no_jcarousel_text .mysite_jcarousel_next{right:-25px;}
+
+/* 
+===============================================================================================================
+15. MISC
+=============================================================================================================== */
+
+/* Margins & Padding 
+-------------------------------------------------------------- */
+.margin0{margin-bottom:0px!important;}
+.margin10{margin-bottom:10px!important;}
+.margin20{margin-bottom:20px!important;}
+.margin30{margin-bottom:30px!important;}
+.margin40{margin-bottom:40px!important;}
+.margin50{margin-bottom:50px!important;}
+.margin60{margin-bottom:60px!important;}
+.margin70{margin-bottom:70px!important;}
+.margin80{margin-bottom:80px!important;}
+.margin90{margin-bottom:90px!important;}
+.margin100{margin-bottom:100px!important;}
+.margin0,.margin10,.margin20,.margin30,.margin40,.margin50,.margin60,.margin70,.margin80,.margin90,.margin100{clear:both;overflow:hidden;}
+
+/* Video Frames	
+-------------------------------------------------------------- */
+.video_frame{display:inline-block;}
+.video_frame iframe{vertical-align:bottom;}
+
+/* Alignment Shortcodes 
+-------------------------------------------------------------- */
+.aligncenter{display:block;margin:20px auto;text-align:center;clear:both;}
+.alignright{float:right;margin:5px 0 20px 4%;}
+.alignleft{float:left;margin:5px 4% 20px 0;}
+
+/* Misc. Shortcodes 
+-------------------------------------------------------------- */
+.hidden{display:none;visibility:hidden;}
+.fancy_amp{font-family:Baskerville,"Goudy Old Style","Hoefler Text",Palatino,cursive;font-size:130%;font-style:italic;}
+
+/* SyntaxHighlighter
+-------------------------------------------------------------- */
+.syntaxhighlighter.msmw_syntax{background:#f8f8f8!important;border:1px solid #eee!important;width:99%!important;font-size:12px!important;margin:20px 0 30px!important}
+.syntaxhighlighter.msmw_syntax .line{background:#f8f8f8!important;border-bottom:1px solid #eee!important;line-height:20px!important;height:20px!important;color:#222;}
+.syntaxhighlighter.msmw_syntax .line.alt1{background:#fefefe!important;}
+.syntaxhighlighter.msmw_syntax .line.alt2{background:#f8f8f8!important;}
+.syntaxhighlighter.msmw_syntax .gutter .line{border-right:3px solid #eee!important;padding-right:5px!important;padding-left:25px!important;text-align:right!important;color:#afafaf!important;}
+.syntaxhighlighter.msmw_syntax textarea{line-height:21px!important;}
+
+/* 
+===============================================================================================================
+16. SQUEEZE
+=============================================================================================================== */
+
+.squeeze_page #content{font-size:14px;color:#222;line-height:150%;background:#fff!important;}
+.squeeze_page #content p{margin-bottom:30px;}
+.squeeze_page #intro{text-align:center;}
+.squeeze_page #content .page_title{display:none;}
+
+/* Typography
+-------------------------------------------------------------- */
+.squeeze_h1,.squeeze_h2,.squeeze_h3,.squeeze_h4,.squeeze_h5{font-weight:bold;display:block;line-height:150%;text-align:center;color:#000;margin-bottom:50px;margin-top:20px;}
+.squeeze_h1 em,.squeeze_h2 em,.squeeze_h3 em,.squeeze_h4 em,.squeeze_h5 em{color:#c00;}
+.squeeze_h1{font-size:32px;}
+.squeeze_h2{font-size:25px;}
+.squeeze_h3{font-size:20px;}
+.squeeze_h4{font-size:17px;}
+.squeeze_h5{font-size:15px;}
+.highlight3{background:lightyellow;}
+.highlight4{background:yellow;}
+.fancy_strong strong,strong.fancy_strong{font-weight:bold;font-size:108%;color:#000;}
+.fancy_strong2 strong,strong.fancy_strong2{font-weight:bold;font-size:108%;color:#000;background:lightyellow;}
+.fancy_em em,em.fancy_em{color:#c00;font-size:118%;padding-right:2px;}
+
+/* Squeeze Lists
+-------------------------------------------------------------- */
+.squeeze_list{padding-left:10px;margin-bottom:20px;margin-top:20px;}
+.squeeze_list li{background:url(images/icons/squeeze/check.png) no-repeat 0 0;font-size:13px;margin-bottom:25px;list-style:none;padding-left:50px;min-height:35px;}
+.squeeze_list.arrow_list li{background-image:url(images/icons/squeeze/arrow.png);}
+.squeeze_list.alert_list li{background-image:url(images/icons/squeeze/alert.png);}
+.squeeze_list.info_list li{background-image:url(images/icons/squeeze/info.png);}
+.squeeze_list.no_list li{background-image:url(images/icons/squeeze/no.png);}
+.squeeze_list.plus_list li{background-image:url(images/icons/squeeze/plus.png);}
+
+/* Fancy Numbers
+-------------------------------------------------------------- */
+.fancy_numbers{margin:10px;padding:10px;counter-reset:li;list-style:none;font-size:13px;}
+.fancy_numbers li{margin-bottom:25px;padding-left:50px;min-height:30px;list-style:none;position:relative;display:block;}
+.fancy_numbers li:before{background:url(images/shortcodes/sprites/custom_sprite_222222.png) no-repeat -6px -406px;color:#fff;content:counter(li,decimal);counter-increment:li;font-size:15px;height:40px;left:0;line-height:35px;position:absolute;text-align:center;top:-5px;width:40px;}
+
+/* Squeeze Boxes
+-------------------------------------------------------------- */
+.squeeze_box{background:#fff;border:3px dashed #c00;padding:40px;margin:40px;}
+.squeeze_box2{background:#DFF2FC;border:2px dashed #68a2cf;padding:30px;margin:40px;}
+.squeeze_box3{background:#FEF5D7;border:2px dashed #e6c555;padding:30px;margin:40px;}
+.squeeze_box4{background:#FFE6E6;border:2px dashed #ff9999;padding:30px;margin:40px;}
+.squeeze_box5{background:#EFF1D5;border:2px dashed #a3c159;padding:30px;margin:40px;}
+.squeeze_box em{color:#c00!important;}
+.squeeze_box2 em{color:#2e6093!important;}
+.squeeze_box3 em{color:#9e660d!important;}
+.squeeze_box4 em{color:#c31b00!important;}
+.squeeze_box5 em{color:#5e6f33!important;}
+
+/*
+===============================================================================================================
+17. PROGRESSIVE ENHANCEMENTS
+=============================================================================================================== */
+
+.ui-widget-content,.ui-cluetip-outer{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.widget_single_testimonial{-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;}
+
+/* Transitions
+-------------------------------------------------------------- */
+.mysite_jcarousel_next,.mysite_jcarousel_prev,.testimonial_next:hover,.testimonial_prev:hover,
+#searchsubmit,#submit,.hover_fade,.fancy_link,.fancy_button,.button_link,.tabs_framed a,.top a{opacity:1;
+-webkit-transition:all .5s ease;
+-moz-transition:all .5s ease;
+-o-transition:all .5s ease;
+transition:all .5s ease;}
+.testimonial_next,.testimonial_prev,#searchsubmit:hover,
+#submit:hover,.hover_fade:hover,.fancy_link:hover,.fancy_button:hover,.button_link:hover,.top a:hover{opacity:.7;}
+
+/* Gradients
+-------------------------------------------------------------- */
+.fancy_table,.titled_box_content,.fancy_box,.pullquote,.toggle_frame {
+background-color:#f6f6f6;
+background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f6f6f6));
+background:-moz-linear-gradient(top,#fff,#f6f6f6);
+background:-o-linear-gradient(top,#fff,#f6f6f6);
+background:linear-gradient(top,#fff,#f6f6f6);}
+.widget_single_testimonial{
+background:url(styles/_rgba/black20.png);
+background:-webkit-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,.2));
+background:-moz-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,.2));
+background:-o-linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,.2));
+background:linear-gradient(top,rgba(0,0,0,.1),rgba(0,0,0,.2));}
+
+/* Box Shadows
+-------------------------------------------------------------- */
+.ui-cluetip-outer{-webkit-box-shadow:0px 1px 4px rgba(0,0,0,.6);-moz-box-shadow:0px 1px 4px rgba(0,0,0,.6);box-shadow:0px 1px 4px rgba(0,0,0,.6);}
+.fancy_box_title{-webkit-box-shadow:0 1px 0px rgba(0,0,0,.1);-moz-box-shadow:0 1px 0px rgba(0,0,0,.05);box-shadow:0 1px 0px rgba(0,0,0,.1);}
+.fancy_table,.fancy_box,.pullquote,.toggle_frame{-webkit-box-shadow:0 1px 3px rgba(0,0,0,.1);-moz-box-shadow:0 1px 3px rgba(0,0,0,.1);box-shadow:0 1px 3px rgba(0,0,0,.1);}
+.fancy_header2 span{-webkit-box-shadow:0 0 1px rgba(0,0,0,0.4) inset;-moz-box-shadow:0 0 1px rgba(0,0,0,0.2) inset;box-shadow:0 0 1px rgba(0,0,0,0.2) inset;}
+.tabs_vertical li a,.featured_tabs li a{-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.4),0 -1px 0 rgba(0,0,0,0.04) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.4),0 -1px 0 rgba(0,0,0,0.04) inset;box-shadow:0 1px 0 rgba(255,255,255,0.4),0 -1px 0 rgba(0,0,0,0.04) inset;}
+.tabs_vertical li.current a,.featured_tabs li.current_page_item a{-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.04);-moz-box-shadow:0 1px 0 rgba(0,0,0,0.04);box-shadow:0 1px 0 rgba(0,0,0,0.04);}
+.cluetip-minimal .ui-cluetip-outer,.mysite_preloader img,.mysite_preloader_large img,.mysite_contact_feedback img{-webkit-box-shadow:none!important;-moz-box-shadow:none!important;box-shadow:none!important;}
+
+/* 
+===============================================================================================================
+18. RESPONSIVENESS & MOBILE
+=============================================================================================================== */
+
+/* Responsive Slider
+-------------------------------------------------------------- */
+.mysite_responsive .single_responsive_slide img{max-width:100%;height:auto;}
+.mysite_responsive #slider_module{height:auto;}
+.mysite_responsive .flexslider_content{padding-top:20px;padding-bottom:20px;}
+.mysite_responsive .flexslider .slides>li:first-child{display:block;}
+.slider_content_left .flexslider{float:right;margin-left:30px;margin-bottom:20px;}
+.slider_content_right .flexslider{float:left;margin-right:30px;margin-bottom:20px;}
+.mysite_responsive .flex-direction-nav li a{z-index:10;}
+
+/* Responsive Menu
+-------------------------------------------------------------- */
+.mysite_responsive.squeeze_page #responsive_menu,.mysite_responsive #responsive_menu{display:none;}
+.mysite_responsive #responsive_menu .mysite_message{height:35px;line-height:35px;display:block;}
+.mysite_responsive #responsive_menu .mysite_message a{color:inherit;text-decoration:underline;}
+.mysite_responsive #responsive_menu .select{height:35px;line-height:35px;overflow:hidden;position:absolute;width:100%;}
+.mysite_responsive #responsive_menu .select:hover{cursor:pointer;}
+.mysite_responsive #responsive_menu select.styled{height:35px;width:100%!important;border:1px solid transparent;}
+.mysite_responsive .video_frame{display:block;}
+.mysite_responsive .video_frame:after{content:" ";display:block;height:0;font-size:0;clear:both;visibility:hidden;}
+
+/* Media Queries
+-------------------------------------------------------------- */ 
+@media screen and (max-width: 998px){
+.slider_content_left .flexslider,
+.slider_content_right .flexslider{width:50%!important;}
+.mysite_responsive.full_width #main{width:100%;}
+.mysite_responsive.right_sidebar #main,
+.mysite_responsive.left_sidebar #main{width:70%;}
+.mysite_responsive.right_sidebar #sidebar,
+.mysite_responsive.left_sidebar #sidebar{width:30%;}
+.mysite_responsive .tabs_vertical_frame,.mysite_responsive .featured_tabs_frame{max-width:40%;}
+.mysite_responsive #content img{max-width:100%;height:auto!important;vertical-align:bottom;}
+.mysite_responsive .fancy_image img{width:100%!important;}
+.mysite_responsive .transparent_frame,
+.mysite_responsive .shadow_frame{max-width:100%!important;}
+.mysite_responsive .image_shadow{top:auto!important;}
+.mysite_responsive .transparent_frame .transparent_border{display:none!important;}
+.mysite_responsive .fancy_image_caption{display:block!important;position:static!important;}
+.mysite_responsive .single_post_image,
+.mysite_responsive .single_post_image a,
+.mysite_responsive .single_post_image img,
+.mysite_responsive .large_post_list .post_list_image,
+.mysite_responsive .large_post_list .post_list_image a,
+.mysite_responsive .large_post_list .post_list_image img,
+.mysite_responsive .post_grid_image,
+.mysite_responsive .post_grid_image a,
+.mysite_responsive .post_grid_image img{max-width:100%!important;height:auto!important;}
+.mysite_responsive .post_list_image{margin-bottom:20px;}
+.mysite_responsive .post_list_content{overflow:visible;}
+.ie8 .mysite_responsive img{width:inherit!important;max-width:100%!important;height:auto!important;}
+}
+@media screen and (max-width: 768px){
+.mysite_responsive #primary_menu{display:none;}
+.mysite_responsive #responsive_menu{display:block;}
+}
+@media screen and (max-width: 650px){
+.mysite_responsive.left_sidebar #main,
+.mysite_responsive.right_sidebar #main,
+.mysite_responsive.left_sidebar #sidebar,
+.mysite_responsive.right_sidebar #sidebar{width:100%;}
+.mysite_responsive.right_sidebar #main_inner,
+.mysite_responsive.left_sidebar #main_inner{margin:0;margin-bottom:20px;}
+.mysite_responsive .tabs_vertical_frame,.mysite_responsive .featured_tabs_frame{width:40%;}
+.mysite_responsive .large_post_list,
+.mysite_responsive .large_post_list .post_list_content,
+.mysite_responsive .one_half,.mysite_responsive .one_third,.mysite_responsive .two_third,.mysite_responsive .three_fourth,.mysite_responsive .one_fourth,.mysite_responsive .one_fifth,.mysite_responsive .two_fifth,.mysite_responsive .three_fifth,.mysite_responsive .four_fifth,.mysite_responsive .one_sixth,.mysite_responsive .five_sixth{
+display:block;width:100%!important;margin-right:0;margin-bottom:20px;float:none;clear:both;}
+}
+@media screen and (max-width: 480px){
+.slider_content_left .flexslider,
+.slider_content_right .flexslider{float:none;width:100%!important;margin-left:0;margin-right:0;}
+.slider_content_left .flexslider .slides img,
+.slider_content_right .flexslider .slides img{width:100%;}
+.mysite_responsive .alignright,.mysite_responsive .alignleft,.mysite_responsive .aligncenter{width:auto;text-align:center;float:none;display:block;margin:10px 0;}
+.mysite_responsive .pullquote,.mysite_responsive .pullquote2,.mysite_responsive .pullquote3,.mysite_responsive .pullquote4{width:auto;float:none;margin:20px auto;}
+}

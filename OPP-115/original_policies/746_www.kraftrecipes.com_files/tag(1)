@@ -1,0 +1,627 @@
+BrightTag.instance.errors({enabled:false});
+BrightTag.instance.load(
+'//s.btstatic.com/lib/cb3157358f5e542d7f8c90293fd42f8d7258be89.js?v\x3d1',
+'//s.btstatic.com/lib/26c821300d2f77decae870ca8ec64f7e62dffd73.js?v\x3d1',
+'//s.btstatic.com/lib/5261d81a9d1484aaca33d2d9682c114b9323041d.js?v\x3d1',
+'//s.btstatic.com/lib/7c1d04fe02d07c5884fc40d822371ac15bc6019c.js?v\x3d1',
+'//s.btstatic.com/lib/cc3e7ae18ebc7b65f0cb78a6a5d82a3e0ef1f1bb.js?v\x3d1',
+'//libs.coremetrics.com/eluminate.js',
+'//libs.coremetrics.com/eluminate.js',
+'//libs.coremetrics.com/eluminate.js',
+function (page) {
+BrightTag.instance.dbe('encrypted email address', 'bt_cookie(\x27kraftrecipesbrighttag\x27)', {pageId:1073382});
+BrightTag.instance.dbe('meta description', 'bt_meta(\x22description\x22)', {pageId:11693});
+BrightTag.instance.dbe('meta keywords', 'bt_meta(\x22keywords\x22)', {pageId:11693});
+BrightTag.instance.dbe('referring url', 'document.referrer', {pageId:11693});
+BrightTag.instance.dbe('kr: user is logged in', 'jQuery(\x27.signedIn\x27).length \x3e 0', {pageId:1073382});
+BrightTag.instance.dbe('data logix url', 'document.URL.split(\x22.com/\x22)[1]', {pageId:1073382});
+BrightTag.instance.dbe('random number', 'BrightTag.Random.integer(9999999999)', {pageId:11693});
+BrightTag.instance.dbe('turn meta keyword ids', '(function() {\r\n        if (bt_meta(\x22keywords\x22).length \x3e 0) {\r\n            return window.turnMeta \x26\x26 turnMeta(bt_meta(\x22keywords\x22));\r\n        } else if (bt_meta(\x22keywords\x22).length \x3d\x3d\x3d 0) {\r\n            return window.turnMeta \x26\x26 turnMeta(dataLayer.recipeAttributes);\r\n        } else {\r\n            return \x22no_id\x22;\r\n        }\r\n    }\r\n    ());\r\n', {pageId:1291533});
+BrightTag.instance.dbe('turn activity id (page-based)', '\x22no_id\x22', {pageId:11693});
+BrightTag.instance.dbe('turn domain id', '\x2230155,20427\x22', {pageId:1073382});
+BrightTag.instance.dbe('turn platform id', '(function() {\r\n    if (dataLayer.device \x3d\x3d\x3d \x22desktop\x22) {\r\n        return \x225001\x22;\r\n    } else if (dataLayer.device \x3d\x3d\x3d \x22mobile\x22) {\r\n        return \x225002\x22;\r\n    } else {\r\n        return \x22no_id\x22;\r\n    }\r\n}());', {pageId:1291533});
+BrightTag.instance.dbe('turn nonrecipe id', '(function() {\r\n    var pathName \x3d location.pathname;\r\n    var pathArray \x3d pathName.split(\x27/\x27);\r\n    if (pathArray.length \x3c\x3d 4) {\r\n        var pathPath \x3d pathArray.join(\x27\x27);\r\n        pathPath \x3d pathPath.split(\x27-\x27);\r\n        var newPath \x3d pathPath.join(\x27\x27);\r\n        newPath \x3d newPath.replace(\x27_\x27, \x27\x27).replace(\x27.aspx\x27, \x27\x27);\r\n    } else if (pathArray.length \x3e 4) {\r\n        var lastThree \x3d pathArray.slice(Math.max(pathArray.length - 3, 1));\r\n        var pathPath \x3d lastThree.join(\x27\x27);\r\n        pathPath \x3d pathPath.split(\x27-\x27);\r\n        var newPath \x3d pathPath.join(\x27\x27);\r\n        if (document.domain \x3d\x3d\x3d \x27comidakraft.com\x27) {\r\n            newPath \x3d \x27sp\x27 + newPath.replace(\x27_\x27, \x27\x27).replace(\x27.aspx\x27, \x27\x27);\r\n        } else {\r\n            newPath \x3d newPath.replace(\x27_\x27, \x27\x27).replace(\x27.aspx\x27, \x27\x27);\r\n        }\r\n    }\r\n    return newPath;\r\n}());', {pageId:135726});
+BrightTag.instance.dbe('turn traffic source id', 'window.turnTraffic \x26\x26 turnTraffic(document.referrer) || \x22no_id\x22', {pageId:11693});
+BrightTag.instance.dbe('turn recipe id', '(function () {\r\n    if ((typeof (recipe) !\x3d \x22undefined\x22) \x26\x26 (document.URL).indexOf(\x27kraftrecipes.com/recipes\x27) \x3e -1) {\r\n        return recipe;\r\n    }\r\n    if ((typeof (recipe) !\x3d \x22undefined\x22) \x26\x26 (document.URL).indexOf(\x27comidakraft.com/sp/recetas\x27) \x3e -1) {\r\n        return \x22sp\x22 + recipe;\r\n    }\r\n    if ((typeof (strPhotoRecipeID) !\x3d \x22undefined\x22) \x26\x26 (document.URL).indexOf(\x27kraftrecipes.com/recipes\x27) \x3e -1) {\r\n        return strPhotoRecipeID;\r\n    }\r\n    if ((typeof (strPhotoRecipeID) !\x3d \x22undefined\x22) \x26\x26 (document.URL).indexOf(\x27comidakraft.com/sp/recetas\x27) \x3e -1) {\r\n        return \x22sp\x22 + strPhotoRecipeID;\r\n    } else {\r\n        return \x22no_id\x22;\r\n    }\r\n}())', {pageId:11693});
+BrightTag.instance.dbe('brighttag user id', '\x27400034268\x27');
+BrightTag.instance.dbe('recipe id', '(function(){ if(typeof(recipe) !\x3d \x22undefined\x22) { return recipe } else { return \x22\x22; } }())', {pageId:1073382});
+BrightTag.instance.dbe('turn activity id (event-based)', '(function() {\r\n  if (dataLayer.loginStatus.indexOf(\x27logged in\x27) \x3d\x3d\x3d 0) {\r\n    return \x2230024\x22;\r\n  } else {\r\n    return \x22\x22;\r\n  }\r\n}());', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics session id', 'bt_cookie(\x2790222822_clogin\x27).indexOf(\x27l\x3d\x27) \x3e\x3d 0 ? bt_cookie(\x2790222822_clogin\x27).split(\x27l\x3d\x27)[1].split(\x27\x26\x27)[0] : \x27\x27', {pageId:1073382});
+BrightTag.instance.dbe('coremetrics visitor id', 'bt_cookie(\x27CoreID6\x27).split(\x27\x26\x27)[0]', {pageId:11693});
+BrightTag.instance.dbe('page type', '(function(){\nvar prices \x3d [];\njQuery(\x22#breadCrumb li\x22).each(function(){\n    prices.push(jQuery(this).text().trim());\n});\nreturn prices.join(\x22-\x22);\n})();', {pageId:1073382});
+BrightTag.instance.dbe('email visit flag', '\x22false\x22', {pageId:11693});
+BrightTag.instance.dbe('brighttag user id (1st party)', '\x272028303893\x27');
+BrightTag.instance.dbe('coremetrics client id', '(function() {\r\n\tif (typeof dataLayer \x3d\x3d\x3d \x27undefined\x27)\r\n\t\t{return \x2260222822\x22;}\r\n    else if (dataLayer.device \x3d\x3d\x3d \x22desktop\x22) {\r\n        if (document.URL.indexOf(\x22alpha.kraftrecipes.com\x22) \x3e 0)\r\n\t\t\t{return \x2290222822\x22;}\r\n\t\telse if (document.URL.indexOf(\x22beta.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x2260222822\x22;}\r\n\t\telse if (document.URL.indexOf(\x22qa.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x2260222822\x22;} \r\n\t\telse if (document.URL.indexOf(\x22qa2.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x2260222822\x22;}\r\n\t\telse if (document.URL.indexOf(\x22www.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x2290222822\x22;}\r\n\t\t}\r\n\telse if (dataLayer.device \x3d\x3d\x3d \x22mobile\x22) {\r\n\t\tif (document.URL.indexOf(\x22alpha.kraftrecipes.com\x22) \x3e 0)\r\n\t\t\t{return \x2290389645\x22;}\r\n\t\telse if (document.URL.indexOf(\x22beta.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x2260222822\x22;}\r\n\t\telse if (document.URL.indexOf(\x22qa.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x2260222822\x22;} \r\n\t\telse if (document.URL.indexOf(\x22qa2.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x2260222822\x22;}\r\n\t\telse if (document.URL.indexOf(\x22www.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x2290389645\x22;}\r\n\t\t}\r\n\r\n}());', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics data collection domain', '(function() {\r\n\tif (typeof dataLayer \x3d\x3d\x3d \x27undefined\x27)\r\n\t\t{return \x22testdata.coremetrics.com\x22;}\r\n    else if (dataLayer.device \x3d\x3d\x3d \x22desktop\x22) {\r\n        if (document.URL.indexOf(\x22alpha.kraftrecipes.com\x22) \x3e 0)\r\n\t\t\t{return \x22data.coremetrics.com\x22;}\r\n\t\telse if (document.URL.indexOf(\x22beta.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x22testdata.coremetrics.com\x22;}\r\n\t\telse if (document.URL.indexOf(\x22qa.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x22testdata.coremetrics.com\x22;} \r\n\t\telse if (document.URL.indexOf(\x22qa2.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x22testdata.coremetrics.com\x22;}\r\n\t\telse if (document.URL.indexOf(\x22www.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x22data.coremetrics.com\x22;}\r\n\t\t}\r\n\telse if (dataLayer.device \x3d\x3d\x3d \x22mobile\x22) {\r\n\t\tif (document.URL.indexOf(\x22alpha.kraftrecipes.com\x22) \x3e 0)\r\n\t\t\t{return \x22testdata.coremetrics.com\x22;}\r\n\t\telse if (document.URL.indexOf(\x22beta.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x22testdata.coremetrics.com\x22;}\r\n\t\telse if (document.URL.indexOf(\x22qa.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x22testdata.coremetrics.com\x22;} \r\n\t\telse if (document.URL.indexOf(\x22qa2.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x22testdata.coremetrics.com\x22;}\r\n\t\telse if (document.URL.indexOf(\x22www.kraftrecipes.com\x22)\x3e0)\r\n\t\t\t{return \x22data.coremetrics.com\x22;}\r\n\t\t}\r\n\r\n}());', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics page id', 'document.title', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics - find error page', '(function() {\r\nif (dataLayer.pageCategory\x3d\x3d\x22error\x22) {\r\nreturn \x27 - Error\x27;\r\n} else {\r\n}\r\n} ())', {pageId:1291533});
+BrightTag.instance.dbe('kraft recipe id', '(function() {\r\n    if ((kraft.recipeId) \x3e 0) {\r\n        return kraft.recipeId;\r\n    } else if ((kraft.recipeId) \x3c 0) {\r\n        return \x22\x22 ;\r\n    }\r\n}())\r\n', {pageId:1291533});
+BrightTag.instance.dbe('search filter - ready in', '(function() {\r\n    if (document.referrer.indexOf(\x27readyin\x3d\x27) \x3e 0) {\r\n        return document.referrer.split(\x27readyin\x3d\x27)[1].split(/[\x26]/g)[0].replace(/%20/gi,\x22 \x22).replace(/\\//g,\x27\x27).replace(/-/gi,\x22 \x22).replace(/[+]/gi,\x22 \x22);\r\n    } else {\r\n      return \x22\x22;\r\n    }\r\n}());\r\n', {pageId:1409652});
+BrightTag.instance.dbe('search filter - course', '(function() {\r\n    if (document.referrer.indexOf(\x27course\x3d\x27) \x3e 0) {\r\n        return document.referrer.split(\x27course\x3d\x27)[1].split(/[\x26]/g)[0].replace(/%20/gi,\x22 \x22).replace(/\\//g,\x27\x27).replace(/-/gi,\x22 \x22).replace(/[+]/gi,\x22 \x22);\r\n\r\n    } else {\r\n      return \x22\x22;\r\n    }\r\n}());', {pageId:1409652});
+BrightTag.instance.dbe('cm attr: user logged in to the site', '(function() { if (jQuery(\x22[data-username]\x22).text().length \x3e 0) { return \x27logged in\x27; } else { return \x27not logged in\x27; } } ())', {pageId:1291533});
+BrightTag.instance.dbe('cm attr: page category and page template from data layer', 'dataLayer.pageCategory + \x22-\x22 + dataLayer.pageTemplate', {pageId:1291533});
+BrightTag.instance.dbe('cm attr: site determination - mobile or desktop', 'dataLayer.device', {pageId:1291533});
+BrightTag.instance.dbe('search filter - prep time', '(function() {\r\n    if (document.referrer.indexOf(\x27preptime\x27) \x3e 0) {\r\n        return document.referrer.split(\x27preptime\x3d\x27)[1].split(/[\x26]/g)[0].replace(/%20/gi,\x22 \x22).replace(/\\//g,\x27\x27).replace(/-/gi,\x22 \x22);\r\n    } else {\r\n      return \x22\x22;\r\n    }\r\n}());', {pageId:1409652});
+BrightTag.instance.dbe('cm attr: kraft id when logged in', 'dataLayer.userID', {pageId:1291533});
+BrightTag.instance.dbe('search filter - dish type', '(function() {\r\n    if (document.referrer.indexOf(\x27dishtype\x3d\x27) \x3e 0) {\r\n        return document.referrer.split(\x27dishtype\x3d\x27)[1].split(/[\x26]/g)[0].replace(/%20/gi,\x22 \x22).replace(/\\//g,\x27\x27).replace(/-/gi,\x22 \x22).replace(/[+]/gi,\x22 \x22);\r\n\r\n    } else {\r\n      return \x22\x22;\r\n    }\r\n}());', {pageId:1409652});
+BrightTag.instance.dbe('search filter - healthy living', '(function() {\r\n    if (document.referrer.indexOf(\x27healthyliving\x3d\x27) \x3e 0) {\r\n        return document.referrer.split(\x27healthyliving\x3d\x27)[1].split(/[\x26]/g)[0].replace(/%20/gi,\x22 \x22).replace(/\\//g,\x27\x27).replace(/-/gi,\x22 \x22).replace(/[+]/gi,\x22 \x22);\r\n\r\n    } else {\r\n      return \x22\x22;\r\n    }\r\n}());', {pageId:1409652});
+BrightTag.instance.dbe('cm attr: site language id from source (toggle)', 'dataLayer.language', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics category id', '\x22No Category\x22', {pageId:1291533});
+BrightTag.instance.dbe('kr search results', '(function() {\r\n  if (document.referrer.indexOf(\x27searchTerm\x3d\x27) \x3e 0) {\r\n    return document.referrer.split(\x27searchTerm\x3d\x27)[1].split(/[\x26]/g)[0].replace(/%20/gi, \x22 \x22).replace(/\\//g, \x27\x27).replace(\r\n      /-/gi, \x22 \x22);\r\n  } else {\r\n    return \x22\x22;\r\n  }\r\n}());', {pageId:1409652});
+BrightTag.instance.dbe('kr search results count', '$(\x27.show-more-items\x27).attr(\x27data-totalitems\x27)', {pageId:1409652});
+BrightTag.instance.dbe('qa site type', 'if (document.URL.indexOf(\x22alpha.kraftrecipes.com\x22) \x3e 0){ \x22ALPHA\x22 } else if (document.URL.indexOf(\x22beta.kraftrecipes.com\x22)\x3e0){ \x22BETA\x22; } else if (document.URL.indexOf(\x22qa.kraftrecipes.com\x22)\x3e0){ \x22QA\x22; } else if (document.URL.indexOf(\x22qa2.kraftrecipes.com\x22)\x3e0){ \x22QA2\x22; } else { \x22LIVE\x22; }', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics - site promotion - promotion group type', '\x2206-May-15\x22', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics - sp tag start', '\x22?cm_sp\x3d\x22', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics - site promotion - linkname - site name', '\x22KR\x22', {pageId:1291533});
+BrightTag.instance.dbe('coremetrics - sp tag start for query urls', '\x22\x26cm_sp\x3d\x22', {pageId:1291533});
+BrightTag.instance.store([{name:'btpdb.KSNUeWE.YnJpZ2h0dGFnIHVzZXIgaWQgKDFzdCBwYXJ0eSk', value:'MjAyODMwMzg5Mw', expires:1593725769918},{name:'btpdb.KSNUeWE.dGZjLjEwNDAyMDE', value:'VVNFUg', expires:1467408969918}]);
+BrightTag.EventBinding.bind('facebook like', window, 'DIRECT/facebookLike', {pageId:11693}).data('turn activity id (event-based)', '\x2230009\x22');
+BrightTag.EventBinding.bind('email sign up', 'a.ctl00_PlaceHolderMain_g_4d35441a_55d9_4fca_8048_fd65191ba113_ctl06_ctl00_ucGWSNILMessageBox_lnkSignUpByEmail', 'DIRECT/click', {pageId:11693});
+BrightTag.EventBinding.bind('share \x3e social \x3e pinterest', '.pinterest', 'DIRECT/click', {pageId:11693}).data('turn activity id (event-based)', '\x2230003\x22');
+BrightTag.EventBinding.bind('kr global \x3e footer \x3e recipes by email', '.gutter li a[href\x3d\x22http://www.kraftrecipes.com/registration/emailsignup.aspx\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event location', '\x22Footer List - \x22 \r\n+ (function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - event - event type', '\x22KR Email Signup\x22\r\n').data('coremetrics - event - event action', '\x22Recipe by Email Initiated\x22\r\n\r\n');
+BrightTag.EventBinding.bind('kr global \x3e footer \x3e footer nav', '.col-xs-12.col-sm-8 li a', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).text()\r\n').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).text()\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Footer Nav\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Footer Nav\x22\r\n');
+BrightTag.EventBinding.bind('share \x3e social \x3e google plus', '.addthis_button_google_plusone_share', 'DIRECT/click', {pageId:1291533}).data('turn activity id (event-based)', '\x2230006\x22');
+BrightTag.EventBinding.bind('share \x3e social \x3e email', '.addthis_button_email', 'DIRECT/click', {pageId:1291533}).data('turn activity id (event-based)', '\x2230007\x22');
+BrightTag.EventBinding.bind('email sign up', '#recipe-by-email-form .email-submit', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event location', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('turn activity id (event-based)', '\x2230023\x22').data('coremetrics - event - event type', '\x22KR Email Signup\x22').data('coremetrics - event - event action', '\x22Recipe by Email Submit\x22');
+BrightTag.EventBinding.bind('kr global \x3e top nav \x3e kr logo', '.kraft-logo', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - linkname - click detail', '\x22Kraft Logo\x22\r\n').data('coremetrics - site promotion - parameter section 3', '\x22Kraft Logo\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Nav-Top-Kraft-Logo\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Nav Kraft Logo\x22\r\n');
+BrightTag.EventBinding.bind('kr hp \x3e recipe of the day \x3e image click', 'li[id*\x3d\x22main_0_columnframe_0_columnrightrail_1_rptRecipes_RecipeCardCtrl\x22] .card-top', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - linkname - page name', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ()) + \x22 Recipe of the Day-Image\x22').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22-\x22)+\x27x\x27\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22-\x22)\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Recipe of the Day-Image\x22\r\n');
+BrightTag.EventBinding.bind('kr global \x3e search \x3e use whats on hand', 'button.button.primary.submit-ingredients', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event location', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - event - event type', '\x22KR Use Whats on Hand\x22\r\n').data('coremetrics - event - event action', '\x22Submit Search\x22\r\n');
+BrightTag.EventBinding.bind('kr global \x3e top nav subscribe \x3e magazine', '.main.floater-active-sm.floater-active-md.floater-active-lg .wrapper.clearfix .shadowed .nav .dropdown.left a[href*\x3d\x22buysub.com\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event type', '\x22KR Magazine\x22\r\n').data('coremetrics - event - event action', '\x22Subscribe Initiated\x22\r\n').data('coremetrics - event - event location', '\x22Top Nav- \x22 \r\n+(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())');
+BrightTag.EventBinding.bind('kr hp \x3e right panel \x3e featured recipe', '.col-xs-12.col-sm-4.right-rail .row .row .col-xs-12 .card-cta a:not([href*\x3d\x22doubleclick\x22],[href*\x3d\x22buysub.com\x22],[href*\x3d\x22blog.kraftrecipes.com\x22])', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].split(/.jsp/g)[0].split(/\\?cm/gi)[0].replace(/\\/alpha./gi,\x22\x22).replace(/kraftrecipes.com\\//gi,\x22\x22).replace(/\\/w1./g,\x22\x22).replace(/\\//g,\x22%7C\x22)+\x27x\x27\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Feature-Right Panel\x22\r\n').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].split(/.jsp/g)[0].split(/\\?cm/gi)[0].replace(/\\/alpha./gi,\x22\x22).replace(/kraftrecipes.com\\//gi,\x22\x22).replace(/\\/w1./g,\x22\x22).replace(/\\//g,\x22%7C\x22)\r\n\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Feature-Right Panel\x22');
+BrightTag.EventBinding.bind('kr global \x3e top nav \x3e main nav \x3e recipes', '.dropdown.left a[href*\x3d\x22/recipes.aspx\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 2', '\x22Nav-Top\x22').data('coremetrics - site promotion - linkname - page name', '\x22Nav\x22').data('coremetrics - site promotion - parameter section 3', '\x22Recipes\x22').data('coremetrics - site promotion - linkname - click detail', '\x22Recipes\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n');
+BrightTag.EventBinding.bind('kr global \x3e login \x3elogin complete', 'button.button.primary.submit-signin', 'click', {pageId:1291533}).data('coremetrics - event - event action', '\x22Login Submitted\x22\r\n\r\n\r\n').data('coremetrics - event - event type', '\x22KR Login\x22\r\n\r\n').data('kr global \x3e login \x3e name and password present', 'jQuery(\x22#signin-field-name\x22).val().length \x3e 1 \x26\x26 jQuery(\x22#signin-field-password\x22).val().length \x3e 1').data('coremetrics - event - event location', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())');
+BrightTag.EventBinding.bind('kr global \x3e search bar \x3e search submit', '.search-button', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event action', '\x22Search Submit\x22').data('coremetrics - event - event type', '\x22KR Engagement\x22').data('coremetrics - event - event location', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())\r\n');
+BrightTag.EventBinding.bind('kr hp \x3e recipe of the day \x3e change day previous arrow', '.jcarousel-control-prev.view-all-link', 'DIRECT/click', {pageId:1291533}).data('coremetrics - element id -where click occurs', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - element cateory', '\x22Carousel Arrows - Recipe of the Day\x22\r\n').data('coremetrics - element id - detail of click', '\x22Recipe of the Day Previous Arrow\x22');
+BrightTag.EventBinding.bind('kr global \x3e top nav \x3e main nav \x3e tips ideas', '.dropdown.full a[href*\x3d\x22/tips-ideas.aspx\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - linkname - page name', '\x22Nav\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - click detail', '\x22Tips Ideas\x22').data('coremetrics - site promotion - parameter section 3', '\x22Tips Ideas\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Nav-Top\x22\r\n');
+BrightTag.EventBinding.bind('kr hp \x3etop pins \x3e title click', '.card.pin .inner-card .card-details', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22-\x22)+\x27x\x27\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Top Pins-Title\x22\r\n').data('coremetrics - site promotion - linkname - page name', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ()) + \x22 Top Pins-Title\x22').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22-\x22)\r\n');
+BrightTag.EventBinding.bind('kr global \x3e footer \x3e kraft logo', '.logo', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 3', '\x22Kraft Logo\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Footer\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Footer\x22\r\n').data('coremetrics - site promotion - linkname - click detail', '\x22Kraft Logo\x22\r\n');
+BrightTag.EventBinding.bind('facebook like', window, 'DIRECT/facebookLike', {pageId:1291533}).data('turn activity id (event-based)', '\x2230009\x22');
+BrightTag.EventBinding.bind('kr global \x3e utility bar \x3e recipebox', '.recipe-box.auth-link', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - linkname - click detail', '\x22Recipe Box\x22').data('coremetrics - site promotion - parameter section 2', '\x22Global Utility\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Global Utility\x22\r\n').data('coremetrics - site promotion - parameter section 3', '\x22Recipe Box\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e kraft corp facebook', '.gutter li a[href\x3d\x22https://www.facebook.com/Kraft\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event action', '\x22Kraft Corp Facebook\x22\r\n').data('coremetrics - event - event location', '\x22Footer List - \x22 \r\n+\r\n(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n');
+BrightTag.EventBinding.bind('kr hp \x3e what talking about feature \x3e tile sub feature', '.content .title:not([href*\x3d\x22doubleclick\x22])', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 2', '\x22HP-What We are Talking About Bottom Tiles\x22\r\n').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].split(/\\?cm/gi)[0].replace(/.com/gi,\x22\x22).replace(/\\//g,\x22%7C\x22).replace(/www./g,\x22\x22)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22HP-What we Are Talking About Bottom Tiles\x22').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].split(/\\?cm/gi)[0].replace(/.com/gi,\x22\x22).replace(/\\//g,\x22%7C\x22).replace(/www./g,\x22\x22) +\x27x\x27\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n');
+BrightTag.EventBinding.bind('kr global \x3e footer \x3e subscribe to magazine', '.gutter li a[href*\x3d\x22https://w1.buysub.com/pubs/MR/KFF\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event location', '\x22Footer List - \x22 \r\n+ (function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - event - event action', '\x22Subscribe Initiated\x22\r\n').data('coremetrics - event - event type', '\x22KR Magazine\x22\r\n');
+BrightTag.EventBinding.bind('kr global \x3e top nav \x3e main nav \x3e subscribe', '.dropdown.left a[href*\x3d\x22buysub.com\x22],.dropdown.left a[href*\x3d\x22/foodfamilyarchive.aspx\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - click detail', '\x22Subscribe\x22').data('coremetrics - site promotion - linkname - page name', '\x22Nav\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Nav-Top\x22\r\n').data('coremetrics - site promotion - parameter section 3', '\x22Subscribe\x22\r\n');
+BrightTag.EventBinding.bind('kr global \x3e registration success', document, 'DIRECT/ajaxComplete', {pageId:1291533}).data('turn activity id (event-based)', '(function() {\r\n  if ((eventData[1].url).indexOf(\x22/registration-step-2?modal\\x3dtrue\x22) \x3e -1) {\r\n    return \x2230022\x22;\r\n  } else {\r\n    return \x22\x22;\r\n  }\r\n}());').data('ajax url', 'eventData[1].url');
+BrightTag.EventBinding.bind('kr global \x3e top nav \x3e sub-menu \x3e view all click', '.view-all-row.row .view-all-link.forward', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22|\x22)\r\n').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22%7C\x22)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Nav-Subsection-View-All\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Nav-Top-Subsection-View-All\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n');
+BrightTag.EventBinding.bind('kr hp \x3e recipe of the day \x3e title click', 'li[id*\x3d\x22main_0_columnframe_0_columnrightrail_1_rptRecipes_RecipeCardCtrl\x22] .card-details', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 2', '\x22Recipe of the Day-Title\x22\r\n').data('coremetrics - site promotion - linkname - page name', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ()) + \x22 Recipe of the Day-Title\x22').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22-\x22)\r\n').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22-\x22)+\x27x\x27\r\n');
+BrightTag.EventBinding.bind('kr global \x3e login initiated ', document, 'DIRECT/ajaxComplete', {pageId:1291533}).data('event dba - ajax url kr', 'eventData[1].url').data('coremetrics - login initiate - event action kr', '\x22Login Initiated\x22').data('coremetrics - login initiate - event location kr', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - login initiate - event type kr', '\x22KR Login\x22');
+BrightTag.EventBinding.bind('kr global \x3e registration initated', document, 'DIRECT/ajaxComplete', {pageId:1291533}).data('coremetrics - registration initiate - event location kr', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - registration initiate - event type kr', '\x22KR Registration\x22').data('coremetrics - registration initiate - event action kr', '\x22Registration Initiated\x22').data('registration initiate ajax url kr', 'eventData[1].url');
+BrightTag.EventBinding.bind('kr global \x3e breadcrumb nav \x3e kr homepage', '#header_1_rptBreadcrumbs_liItem_0.first a', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 3', '\x22KR-Homepage\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Nav BC\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Nav-BC\x22\r\n').data('coremetrics - site promotion - linkname - click detail', '\x22KR-Homepage\x22\r\n');
+BrightTag.EventBinding.bind('kr global \x3e right panel \x3e magazine', '.col-xs-12.col-sm-4.right-rail .row .row .col-xs-12 .card-cta a[href*\x3d\x22buysub.com\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event location', '\x22Right Panel- \x22 \r\n+ (function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - event - event type', '\x22KR Magazine\x22').data('coremetrics - event - event action', '\x22Subscribe Initiated\x22\r\n');
+BrightTag.EventBinding.bind('kr global \x3e top nav \x3e main nav \x3e coupon', '.nav .5 a[href*\x3d\x22/coupons.aspx\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 2', '\x22Nav-Top\x22\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Nav\x22\r\n\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - parameter section 3', '\x22Coupon\x22\r\n').data('coremetrics - site promotion - linkname - click detail', '\x22Coupon\x22\r\n');
+BrightTag.EventBinding.bind('share \x3e social \x3e twitter', 'a.addthis_button_twitter', 'DIRECT/click', {pageId:1291533}).data('turn activity id (event-based)', '\x2230004\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e google+', 'a[href\x3d\x22https://plus.google.com/+KraftRecipes\x22', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event location', '\x22Footer - \x22 \r\n+\r\n(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - event - event action', '\x22Google Plus\x22\r\n').data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n').data('turn activity id (event-based)', '\x2230038\x22');
+BrightTag.EventBinding.bind('share \x3e social \x3e pinterest', '.addthis_button_pinterest_share,a[data-pin-log\x3d\x22button_pinit\x22]', 'DIRECT/click', {pageId:1291533}).data('turn activity id (event-based)', '\x2230003\x22');
+BrightTag.EventBinding.bind('kr hp \x3e what talking about feature \x3e feature click', '.links a.view-all-link.forward:not([href*\x3d\x22doubleclick\x22],[href*\x3d\x22buysub.com\x22])', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].split(/\\?cm_/g)[0].replace(/\\/www./g,\x22\x22).replace(/.com/g,\x22\x22).replace(/\\//g,\x22%7C\x22)\r\n').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].split(/\\?cm_/g)[0].replace(/\\/www./g,\x22\x22).replace(/.com/g,\x22\x22).replace(/\\//g,\x22%7C\x22) +\x27x\x27\r\n').data('coremetrics - site promotion - parameter section 2', '\x22HP-What We are Talking About Feature\x22').data('coremetrics - site promotion - linkname - page name', '\x22What we Are Talking About Feature\x22').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n');
+BrightTag.EventBinding.bind('kr global \x3e breadcrumb nav \x3e 2nd level plus', '#header_1_rptBreadcrumbs_liItem_1,#header_1_rptBreadcrumbs_liItem_2,#header_1_rptBreadcrumbs_liItem_3,#header_1_rptBreadcrumbs_liItem_4,#header_1_rptBreadcrumbs_liItem_5,#header_1_rptBreadcrumbs_liItem_6', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\/alpha./gi,\x22\x22).replace(/kraftrecipes.com\\//gi,\x22\x22).replace(/\\//g,\x22%7C\x22)').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\/alpha./gi,\x22\x22).replace(/kraftrecipes.com\\//gi,\x22\x22).replace(/\\//g,\x22%7C\x22)').data('coremetrics - site promotion - linkname - page name', '\x22Nav-BC\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Nav-BC\x22\r\n');
+BrightTag.EventBinding.bind('kr global \x3e recipes by email success', document, 'DIRECT/ajaxComplete', {pageId:1291533}).data('coremetrics - email success - event location kr', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('email success - ajax url kr', 'eventData[1].url\r\n').data('cm attr: signup make tonight delicious signup', 'jQuery(\x22#newsletter-1013\x22).prop(\x27checked\x27)').data('cm attr: signup food and family signup', 'jQuery(\x22#newsletter-1001\x22).prop(\x27checked\x27)').data('cm attr: signup zipcode entered', 'jQuery(\x27#zip-code\x27).val()').data('cm attr: signup dob entered', 'jQuery(\x27#main_0_dobyear\x27).val()').data('coremetrics - email success - event action kr', '\x22Email Submitted\x22\r\n').data('coremetrics - email success - event type kr', '\x22KR Recipes by Email\x22\r\n');
+BrightTag.EventBinding.bind('kr global \x3e login submitted', document, 'DIRECT/ajaxComplete', {pageId:1291533}).data('coremetrics - login success - event location kr', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - login success - event type kr', '\x22KR Login\x22\r\n').data('coremetrics - login success - event action kr', '\x22Login Submitted\x22\r\n').data('login success - ajax response text', 'eventData[0].responseText');
+BrightTag.EventBinding.bind('click out \x3e social \x3e tumblr', 'a.social-tumblr', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event action', '\x22Tumblr\x22\r\n').data('coremetrics - event - event location', '\x22Footer - \x22 \r\n+\r\n(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ()) ').data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n').data('turn activity id (event-based)', '\x2230069\x22');
+BrightTag.EventBinding.bind('kr global \x3e footer \x3e gutter list', '.gutter li a', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).text()\r\n').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).text()\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Footer\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Footer\x22\r\n');
+BrightTag.EventBinding.bind('subscribe to magazine', 'a[title\x3d\x22subscribe to magazine\x22]', 'DIRECT/click', {pageId:1291533});
+BrightTag.EventBinding.bind('kr global \x3e registration complete', document, 'DIRECT/ajaxComplete', {pageId:1291533}).data('cm attr: signup make tonight delicious signup', 'jQuery(\x22#newsletter-1013\x22).prop(\x27checked\x27)').data('coremetrics - registration success - event type kr', '\x22KR Registration\x22').data('coremetrics - registration success - event location kr', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('cm attr: signup zipcode entered', 'jQuery(\x27#zip-code\x27).val()').data('cm attr: signup food and family signup', 'jQuery(\x22#newsletter-1001\x22).prop(\x27checked\x27)').data('cm attr: signup dob entered', 'jQuery(\x27#main_0_dobyear\x27).val()').data('coremetrics - registration success - event action kr', '\x22Registration Success\x22').data('registration success - ajax url kr', 'eventData[1].url\r\n');
+BrightTag.EventBinding.bind('kr global \x3e top nav \x3e sub-menu click', '.link-row.row li a', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).closest(\x27a\x27).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22%7C\x22)').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).closest(\x27a\x27).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22|\x22)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Nav-Subsection\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Nav-Top-Subsection\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).closest(\x27a\x27).attr(\x27href\x27)\r\n');
+BrightTag.EventBinding.bind('kr global \x3e utility bar \x3e comida kraft link', '.new-window', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - linkname - page name', '\x22Global Utility\x22\r\n').data('coremetrics - site promotion - linkname - click detail', '\x22Comida Kraft\x22\r\n').data('coremetrics - site promotion - parameter section 3', '\x22Comida Kraft\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Global Utility\x22\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n');
+BrightTag.EventBinding.bind('click out \x3e social \x3e pinterest', 'a.social-pinterest', 'DIRECT/click', {pageId:1291533}).data('turn activity id (event-based)', '\x2230035\x22').data('coremetrics - event - event location', '\x22Footer - \x22 \r\n+\r\n(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n').data('coremetrics - event - event action', '\x22Pinterest\x22\r\n');
+BrightTag.EventBinding.bind('kr hp \x3e recipe of the day \x3e change day forward arrow', '.jcarousel-control-next.view-all-link.forward.enabled', 'DIRECT/click', {pageId:1291533}).data('coremetrics - element id -where click occurs', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - element cateory', '\x22Carousel Arrows - Recipe of the Day\x22\r\n').data('coremetrics - element id - detail of click', '\x22Recipe of the Day Forward Arrow\x22');
+BrightTag.EventBinding.bind('kr hp \x3etop pins \x3e image click', '.card.pin .inner-card .card-top', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - linkname - page name', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ()) + \x22 Top Pins-Image\x22').data('coremetrics - site promotion - parameter section 2', '\x22Top Pins-Image\x22\r\n').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22-\x22)+\x27x\x27\r\n').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27).split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22-\x22)\r\n').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).find(\x22a[href]\x22).attr(\x27href\x27)\r\n');
+BrightTag.EventBinding.bind('kr global \x3e right panel \x3e blog', '.col-xs-12.col-sm-4.right-rail .row .row .col-xs-12 .card-cta a[href*\x3d\x22blog.kraftrecipes.com\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event type', '\x22KR Blog\x22\r\n').data('coremetrics - event - event location', '\x22Right Panel- \x22 \r\n+ (function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - site promotion - parameter section 2', '\x22Blog-Right Panel\x22').data('coremetrics - event - event action', '\x22Check Out Blog\x22\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Blog-Right Panel\x22').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/\\/(.+)?/gi)[1].split(/.aspx/g)[0].split(/\\?cm/gi)[0].replace(/\\/w1./g,\x22\x22).replace(/\\//g,\x22%7C\x22).replace(/.com/gi,\x22\x22)').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/\\/(.+)?/gi)[1].split(/.aspx/g)[0].split(/\\?cm/gi)[0].replace(/\\/w1./g,\x22\x22).replace(/\\//g,\x22%7C\x22).replace(/.com/gi,\x22\x22)+\x27x\x27\r\n');
+BrightTag.EventBinding.bind('kr hp \x3e recipe of the day \x3e review click', 'li[id*\x3d\x22main_0_columnframe_0_columnrightrail_1_rptRecipes_RecipeCardCtrl\x22] .review-num', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - click detail', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22%7C\x22)\r\n').data('coremetrics - site promotion - parameter section 3', 'jQuery(eventObject.currentTarget).attr(\x27href\x27).split(/\\/(.+)?/gi)[1].split(/.aspx/g)[0].replace(/\\//g,\x22%7C\x22)+\x27x\x27\r\n').data('coremetrics - site promotion - linkname - page name', '(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ()) + \x22 Recipe of the Day-Review\x22').data('coremetrics - site promotion - parameter section 2', '\x22Recipe of the Day-Review\x22\r\n');
+BrightTag.EventBinding.bind('kr hp \x3etop pins \x3e follow us pinterest', '.col-xs-12.col-sm-4.right-rail .row .top-pins .sidebar-tile .pinterest-actions a[class*\x3d\x22follow_me_button\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n').data('coremetrics - event - event action', '\x22Follow Us on Pinterest\x22\r\n').data('coremetrics - event - event location', '\x22Right Panel- \x22 + (function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ()) ');
+BrightTag.EventBinding.bind('kr global \x3e top nav \x3e main nav \x3e products', '.dropdown.left a[href*\x3d\x22/products/productmain.aspx\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - site promotion - parameter section 3', '\x22Products\x22').data('coremetrics - site promotion - href', 'jQuery(eventObject.currentTarget).attr(\x27href\x27)\r\n').data('coremetrics - site promotion - linkname - page name', '\x22Nav\x22\r\n').data('coremetrics - site promotion - parameter section 2', '\x22Nav-Top\x22\r\n').data('coremetrics - site promotion - linkname - click detail', '\x22Products\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e twitter', 'a.social-twitter', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n').data('turn activity id (event-based)', '\x2230036\x22').data('coremetrics - event - event action', '\x22Twitter\x22\r\n').data('coremetrics - event - event location', '\x22Footer - \x22 \r\n+\r\n(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())');
+BrightTag.EventBinding.bind('click out \x3e social \x3e kraft linkedin', '.gutter li a[href*\x3d\x22https://www.linkedin.com/company/kraft-foods-group\x22]', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n').data('coremetrics - event - event location', '\x22Footer List - \x22 \r\n+\r\n(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('coremetrics - event - event action', '\x22Kraft LinkedIn\x22\r\n');
+BrightTag.EventBinding.bind('click out \x3e social \x3e youtube', 'a.social-youtube', 'DIRECT/click', {pageId:1291533}).data('turn activity id (event-based)', '\x2230037\x22').data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n').data('coremetrics - event - event action', '\x22YouTube\x22\r\n').data('coremetrics - event - event location', '\x22Footer - \x22 \r\n+\r\n(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())');
+BrightTag.EventBinding.bind('click out \x3e social \x3e facebook', 'a.social-facebook', 'DIRECT/click', {pageId:1291533}).data('coremetrics - event - event action', '\x22Facebook\x22\r\n').data('coremetrics - event - event type', '\x22KR Social Share\x22\r\n').data('coremetrics - event - event location', '\x22Footer - \x22 \r\n+\r\n(function() {\r\nif (document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].length \x3e 0) {\r\nreturn document.URL.split(/kraftrecipes.com\\//gi)[1].split(/\\?.+/gi)[0].split(/.aspx/gi)[0].replace(/.aspx/gi,\x22\x22).replace(/\\//g,\x22-\x22);\r\n} else {\r\nreturn \x27KR-Homepage\x27;\r\n}\r\n} ())').data('turn activity id (event-based)', '\x2230034\x22');
+BrightTag.EventBinding.bind('social \x3e social bar  \x3e facebook', '.social-bar .addthis_button_facebook', 'DIRECT/click', {pageId:1523747}).data('coremetrics - event - event location', ' document.URL.split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\/alpha./gi,\x22\x22).replace(/\\//g,\x22%7C\x22)').data('coremetrics - event - event type', '\x22Social Share\x22\r\n').data('coremetrics - event - event action', '\x22Facebook\x22\r\n');
+BrightTag.EventBinding.bind('social \x3e social bar  \x3e facebook like', window, 'DIRECT/facebookLike', {pageId:1523747}).data('coremetrics - event - event type', '\x22Social Share\x22\r\n').data('coremetrics - event - event action', '\x22Facebook Like\x22\r\n').data('coremetrics - event - event location', ' document.URL.split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\/alpha./gi,\x22\x22).replace(/\\//g,\x22%7C\x22)');
+BrightTag.EventBinding.bind('social \x3e social bar \x3e email', '.social-bar .addthis_button_email', 'DIRECT/click', {pageId:1523747}).data('coremetrics - event - event action', '\x22Email\x22\r\n').data('coremetrics - event - event type', '\x22Social Share\x22\r\n').data('coremetrics - event - event location', 'document.URL.split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\/alpha./gi,\x22\x22).replace(/\\//g,\x22%7C\x22)');
+BrightTag.EventBinding.bind('social \x3e social bar \x3e pinterest', '.social-bar .addthis_button_pinterest_share', 'DIRECT/click', {pageId:1523747}).data('coremetrics - event - event location', 'document.URL.split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\/alpha./gi,\x22\x22).replace(/\\//g,\x22%7C\x22)').data('coremetrics - event - event action', '\x22Pinterest\x22\r\n').data('coremetrics - event - event type', '\x22Social Share\x22\r\n');
+BrightTag.EventBinding.bind('social \x3e social bar \x3e twitter', '.social-bar .addthis_button_twitter', 'DIRECT/click', {pageId:1523747}).data('coremetrics - event - event type', '\x22Social Share\x22\r\n').data('coremetrics - event - event action', '\x22Twitter\x22\r\n').data('coremetrics - event - event location', 'document.URL.split(/kraftrecipes.com\\//gi)[1].split(/.aspx/g)[0].replace(/\\/alpha./gi,\x22\x22).replace(/\\//g,\x22%7C\x22)');
+BrightTag.EventBinding.bind('click out \x3e social \x3e google+', 'a[title\x3d\x22Google Plus\x22], .google', 'DIRECT/click', {pageId:11652}).data('swiftiq click out (event based)', '\x22Click Out Google Plus\x22').data('turn activity id (event-based)', '\x2230038\x22');
+BrightTag.EventBinding.bind('kr:print', '#recipeHVT div:eq(2)', 'DIRECT/click', {pageId:11652});
+BrightTag.EventBinding.bind('kr:add to shopping cart', '#recipeHVT div:eq(0)', 'DIRECT/click', {pageId:11652});
+BrightTag.EventBinding.bind('share \x3e social \x3e email', 'a[title*\x3d\x22Send to a Friend\x22]', 'DIRECT/click', {pageId:11652}).data('swiftiq share id (event based)', '\x22Send to a Friend\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e youtube', 'a[title\x3d\x22youtube\x22], .youtube, img[alt*\x3d\x22YouTube\x22]', 'DIRECT/click', {pageId:11652}).data('swiftiq click out (event based)', '\x22Click Out YouTube\x22').data('turn activity id (event-based)', '\x2230037\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e pinterest', 'a[title\x3d\x22pinterest\x22], img[alt*\x3d\x22Pinterest\x22], .PIN_1403881871187_follow_me_button, a[data-pin-log*\x3d\x22button_pinit\x22]', 'DIRECT/click', {pageId:11652}).data('turn activity id (event-based)', '\x2230035\x22').data('swiftiq click out (event based)', '\x22Click Out Pinterest\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e facebook', 'a[title\x3d\x22facebook\x22], .facebook, img[alt*\x3d\x22Facebook\x22]', 'DIRECT/click', {pageId:11652}).data('swiftiq click out (event based)', '\x22Click Out Facebook\x22').data('turn activity id (event-based)', '\x2230034\x22');
+BrightTag.EventBinding.bind('kr: logged in add to recipe box', 'a#ctl00_SPWebPartManager1_g_e3811a74_ee9d_49d3_96cd_8f74fb23564d_ctl01_ucGWSRecipeTools11_GWSRecipeLinks_ucGWSRecipeBoxActionLinks_lnkRecipeAddedToRecipeBoxModalHref', 'DIRECT/click', {pageId:11652}).data('rocket fuel activity id (event-based)', '\x223\x22');
+BrightTag.EventBinding.bind('add a photo', '.upload a, .upload img', 'DIRECT/click', {pageId:11652}).data('turn activity id (event-based)', '\x2230031\x22').data('swiftiq activity id (event based)', '\x22Add a Photo\x22').data('rocket fuel activity id (event-based)', '\x222\x22');
+BrightTag.EventBinding.bind('subscribe to magazine', 'a[title\x3d\x22subscribe to magazine\x22]', 'DIRECT/click', {pageId:11652}).data('turn activity id (event-based)', '\x2230212\x22');
+BrightTag.EventBinding.bind('kr.com reviews \x26 ratings header', 'div.ratings', 'DIRECT/click', {pageId:11652}).data('rocket fuel activity id (event-based)', '\x226\x22');
+BrightTag.EventBinding.bind('kr:send/share', 'a#lnkSendToFriend', 'DIRECT/click', {pageId:11652});
+BrightTag.EventBinding.bind('print recipe', '#recipeHVT div:eq(2)', 'DIRECT/click', {pageId:11652}).data('turn activity id (event-based)', '\x2230017\x22');
+BrightTag.EventBinding.bind('kr.com rate this recipe', 'a#ctl00_SPWebPartManager1_g_e3811a74_ee9d_49d3_96cd_8f74fb23564d_ctl01_ucGWSRecipeAllRatingsSummary_ucKFUSRecipeRatingSummaryNoComment_ucKFUSRecipeRatingResultsForSummaryNoComment_repRecipeRatingResults_ctl00_ucKFUSRecipeRatingActionLinksforSummaryNoComment_lnkRecipeRatingRateThisRecipeHref', 'DIRECT/click', {pageId:11652}).data('rocket fuel activity id (event-based)', '\x226\x22');
+BrightTag.EventBinding.bind('kr:add to recipe box', '#recipeHVT div:eq(1)', 'DIRECT/click', {pageId:11652});
+BrightTag.EventBinding.bind('click out \x3e social \x3e twitter', 'a[title\x3d\x22twitter\x22], .twitter', 'DIRECT/click', {pageId:11652}).data('swiftiq click out (event based)', '\x22Click Out Twitter\x22').data('turn activity id (event-based)', '\x2230036\x22');
+BrightTag.EventBinding.bind('share \x3e social \x3e pinterest', '.pinterest', 'DIRECT/click', {pageId:11652}).data('swiftiq share id (event based)', '\x22Pin It Pinterest\x22');
+BrightTag.EventBinding.bind('kr: logged in add to shopping list', 'a#ctl00_SPWebPartManager1_g_e3811a74_ee9d_49d3_96cd_8f74fb23564d_ctl01_ucGWSRecipeTools11_GWSRecipeLinks_lnkRecipeShoppingListHref', 'DIRECT/click', {pageId:11652});
+BrightTag.EventBinding.bind('click out \x3e social \x3e tumblr', 'a[title\x3d\x22tumblr\x22], .tumblr, img[alt*\x3d\x22Tumblr\x22]', 'DIRECT/click', {pageId:11652}).data('swiftiq click out (event based)', '\x22Click Out Tumblr\x22').data('turn activity id (event-based)', '\x2230069\x22');
+BrightTag.EventBinding.bind('kr.com rate it now', 'a#ctl00_SPWebPartManager1_g_e3811a74_ee9d_49d3_96cd_8f74fb23564d_ctl01_GWSRecipePhoto1_ucGWSRecipeHeading_ucGWSRecipeRatingSummary_ucGWSRecipeRatingActionLinks_lnkRecipeRatingRateThisRecipeHref', 'DIRECT/click', {pageId:11652}).data('rocket fuel activity id (event-based)', '\x226\x22');
+BrightTag.EventBinding.bind('kr.com rate this recipe', 'a#ctl00_SPWebPartManager1_g_e3811a74_ee9d_49d3_96cd_8f74fb23564d_ctl01_ucGWSRecipeAllRatingsSummary_ucKFUSRecipeRatingSummaryNoComment_ucKFUSRecipeRatingResultsForSummaryNoComment_repRecipeRatingResults_ctl00_ucKFUSRecipeRatingActionLinksforSummaryNoComment_lnkRecipeRatingRateThisRecipeHref', 'DIRECT/click', {pageId:1073382}).data('rocket fuel activity id (event-based)', '\x226\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e twitter', 'a[title\x3d\x22twitter\x22], .twitter', 'DIRECT/click', {pageId:1073382}).data('turn activity id (event-based)', '\x2230036\x22').data('swiftiq click out (event based)', '\x22Click Out Twitter\x22');
+BrightTag.EventBinding.bind('kr: logged in add to recipe box', 'a#ctl00_SPWebPartManager1_g_e3811a74_ee9d_49d3_96cd_8f74fb23564d_ctl01_ucGWSRecipeTools11_GWSRecipeLinks_ucGWSRecipeBoxActionLinks_lnkRecipeAddedToRecipeBoxModalHref', 'DIRECT/click', {pageId:1073382}).data('rocket fuel activity id (event-based)', '\x223\x22');
+BrightTag.EventBinding.bind('kr:add to recipe box', '#recipeHVT div:eq(1)', 'DIRECT/click', {pageId:1073382});
+BrightTag.EventBinding.bind('kr: logged in add to shopping list', 'a#ctl00_SPWebPartManager1_g_e3811a74_ee9d_49d3_96cd_8f74fb23564d_ctl01_ucGWSRecipeTools11_GWSRecipeLinks_lnkRecipeShoppingListHref', 'DIRECT/click', {pageId:1073382});
+BrightTag.EventBinding.bind('click out \x3e social \x3e youtube', 'a[title\x3d\x22youtube\x22], .youtube, img[alt*\x3d\x22YouTube\x22]', 'DIRECT/click', {pageId:1073382}).data('turn activity id (event-based)', '\x2230037\x22').data('swiftiq click out (event based)', '\x22Click Out YouTube\x22');
+BrightTag.EventBinding.bind('add a photo', '.upload a, .upload img', 'DIRECT/click', {pageId:1073382}).data('swiftiq activity id (event based)', '\x22Add a Photo\x22').data('turn activity id (event-based)', '\x2230031\x22').data('rocket fuel activity id (event-based)', '\x222\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e google+', 'a[title\x3d\x22Google Plus\x22], .google', 'DIRECT/click', {pageId:1073382}).data('swiftiq click out (event based)', '\x22Click Out Google Plus\x22').data('turn activity id (event-based)', '\x2230038\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e facebook', 'a[title\x3d\x22facebook\x22], .facebook, img[alt*\x3d\x22Facebook\x22]', 'DIRECT/click', {pageId:1073382}).data('turn activity id (event-based)', '\x2230034\x22').data('swiftiq click out (event based)', '\x22Click Out Facebook\x22');
+BrightTag.EventBinding.bind('share \x3e social \x3e pinterest', '.pinterest', 'DIRECT/click', {pageId:1073382}).data('swiftiq share id (event based)', '\x22Pin It Pinterest\x22');
+BrightTag.EventBinding.bind('kr:print', '#recipeHVT div:eq(2)', 'DIRECT/click', {pageId:1073382});
+BrightTag.EventBinding.bind('kr.com reviews \x26 ratings header', 'div.ratings', 'DIRECT/click', {pageId:1073382}).data('rocket fuel activity id (event-based)', '\x226\x22');
+BrightTag.EventBinding.bind('kr:add to shopping cart', '#recipeHVT div:eq(0)', 'DIRECT/click', {pageId:1073382});
+BrightTag.EventBinding.bind('kr:send/share', 'a#lnkSendToFriend', 'DIRECT/click', {pageId:1073382});
+BrightTag.EventBinding.bind('print recipe', '#recipeHVT div:eq(2)', 'DIRECT/click', {pageId:1073382}).data('turn activity id (event-based)', '\x2230017\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e pinterest', 'a[title\x3d\x22pinterest\x22], img[alt*\x3d\x22Pinterest\x22], .PIN_1403881871187_follow_me_button, a[data-pin-log*\x3d\x22button_pinit\x22]', 'DIRECT/click', {pageId:1073382}).data('turn activity id (event-based)', '\x2230035\x22').data('swiftiq click out (event based)', '\x22Click Out Pinterest\x22');
+BrightTag.EventBinding.bind('subscribe to magazine', 'a[title\x3d\x22subscribe to magazine\x22]', 'DIRECT/click', {pageId:1073382});
+BrightTag.EventBinding.bind('kr.com rate it now', 'a#ctl00_SPWebPartManager1_g_e3811a74_ee9d_49d3_96cd_8f74fb23564d_ctl01_GWSRecipePhoto1_ucGWSRecipeHeading_ucGWSRecipeRatingSummary_ucGWSRecipeRatingActionLinks_lnkRecipeRatingRateThisRecipeHref', 'DIRECT/click', {pageId:1073382}).data('rocket fuel activity id (event-based)', '\x226\x22');
+BrightTag.EventBinding.bind('share \x3e social \x3e email', 'a[title*\x3d\x22Send to a Friend\x22]', 'DIRECT/click', {pageId:1073382}).data('swiftiq share id (event based)', '\x22Send to a Friend\x22');
+BrightTag.EventBinding.bind('click out \x3e social \x3e tumblr', 'a[title\x3d\x22tumblr\x22], .tumblr, img[alt*\x3d\x22Tumblr\x22]', 'DIRECT/click', {pageId:1073382}).data('turn activity id (event-based)', '\x2230069\x22').data('swiftiq click out (event based)', '\x22Click Out Tumblr\x22');
+BrightTag.instance.appendContent('\x3cscript\x3e\nvar currentCookieValue \x3d bt_cookie(\x27BTevent\x27);\nif(currentCookieValue \x3d\x3d \x22Carousel\x22) {\n jQuery(window).trigger(\x22carouselNavigationClick\x22);   \n}\ndocument.cookie \x3d \x22BTevent\x3d;path\x3d/;\x22;\njQuery(\x22#brand-recipes-carousel a\x22).click(function(){\n    document.cookie \x3d \x22BTevent\x3dCarousel; path\x3d/;\x22;\n});\n\x3c/script\x3e',{tagId:27625});
+BrightTag.instance.appendContent('\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22http://amch.questionmarket.com/adsc/d1022506/14/1064227/decide3.php\x22\x3e\x3c/script\x3e',{tagId:53917});
+BrightTag.instance.appendContent('\x3cscript type\x3d\x27text/javascript\x27\x3e\n        window[\x27_ahalogy\x27] \x3d {\n          c: {client:"57468843595-kraftrecipes"},\n          b: undefined,\n          u: \x27//w.ahalogy.com/widget.js\x27\n        };\n      \x3c/script\x3e\n      \x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22//w.ahalogy.com\x22\x3e\x3c/script\x3e',{tagId:211863,group:'ahalogy'});
+BrightTag.instance.appendContent('\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.googleadservices.com/pagead/conversion_async.js\x22\x3e\x3c/script\x3e\n      \x3cscript type\x3d\x22text/javascript\x22\x3e\n        (function () {\n          var google_tag_params \x3d {};\n          BrightTag.each([], function(prop) {\n            var val \x3d prop.value;\n            try { val \x3d JSON.parse(prop.value); } catch (e) {}\n            google_tag_params[prop.key] \x3d val;\n          });\n          window.google_trackConversion({\n              google_conversion_id: parseInt("1070771822"),\n              google_conversion_label: \x27\x27,\n              google_custom_params: google_tag_params,\n              google_remarketing_only: true\n          });\n        })();\n      \x3c/script\x3e',{tagId:1031741,group:'yjss'});
+BrightTag.instance.appendContent('\x3cimg height\x3d\x221\x22 width\x3d\x221\x22 src\x3d\x22//d.turn.com/r/du/id/L21rdC80OTMvbXBpZC8zNzI0NzM5Nw/mpuid/'+bt_data_escaped('brighttag user id')+'\x22\x3e',{tagId:1040201});
+BrightTag.instance.appendContent('\x3cscript type\x3d\x22text/javascript\x22\x3e\n          window._fbq \x3d window._fbq || [];\n\n          if (!window._fbq.loaded) {\n            BrightTag.Content.script(BrightTag.HTTP.URL(\x27//connect.facebook.net/en_US/fbds.js\x27));\n            window._fbq.loaded \x3d true;\n          }\n\n          window._fbq.push([\x27addPixelId\x27, "977337932280575"]);\n          window._fbq.push([\x22track\x22, \x22PixelInitialized\x22, {}]);\n      \x3c/script\x3e',{tagId:1789745});
+BrightTag.instance.appendContent('\x3cscript type\x3d\x22text/javascript\x22\x3e\n        (function() {\n          var _clientID \x3d "false" \x3d\x3d \x27true\x27 ? \x276\x27 + (""+bt_data(\x27coremetrics client id\x27)).slice(1) : (""+bt_data(\x27coremetrics client id\x27)),\n            _dataCollectionDomain \x3d "false" \x3d\x3d \x27true\x27 ? \x27testdata.coremetrics.com\x27 : (""+bt_data(\x27coremetrics data collection domain\x27)),\n            _arguments \x3d [];\n\n          cmSetClientID(_clientID, true, _dataCollectionDomain, \x27\x27);\n\n          BrightTag.each([{key:"Language ID",value:bt_data(\x27cm attr: site language id from source (toggle)\x27)},{key:"Signal ID",value:bt_data(\x27brighttag user id\x27)},{key:"Login",value:bt_data(\x27cm attr: user logged in to the site\x27)},{key:"Kraft ID",value:bt_data(\x27cm attr: kraft id when logged in\x27)},{key:"Mobile or Desktop",value:bt_data(\x27cm attr: site determination - mobile or desktop\x27)},{key:"Turn User ID",value:""},{key:"Member Recipe ",value:bt_data(\x27recipe page - member recipe\x27)},{key:"Recipe ID",value:bt_data(\x27kraft recipe id\x27)},{key:"Search Filter Prep Time",value:bt_data(\x27search filter - prep time\x27)},{key:"Search Filter Ready In",value:bt_data(\x27search filter - ready in\x27)},{key:"Search Filter Course",value:bt_data(\x27search filter - course\x27)},{key:"Search Filter Dish Type",value:bt_data(\x27search filter - dish type\x27)},{key:"Search Filter Healthy Living",value:bt_data(\x27search filter - healthy living\x27)},{key:"Search Filter Product",value:""},{key:"Search Filter Exclude",value:""},{key:"Error 404 Page",value:bt_data(\x27error page not found item \x27)},{key:"Page Category and Template",value:bt_data(\x27cm attr: page category and page template from data layer\x27)}], function (param) {\n            _arguments.push(param.value);\n          });\n\n          cmCreatePageviewTag((""+bt_data(\x27coremetrics page id\x27)+bt_data(\x27coremetrics - find error page\x27)), (""+bt_data(\x27coremetrics category id\x27)), (""+bt_data(\x27kr search results\x27)), (""+bt_data(\x27kr search results count\x27)), _arguments.join(\x22-_-\x22));\n        })();\n      \x3c/script\x3e',{tagId:2151765});
+BrightTag.instance.appendContent('\x3c!-- Begin Onespot script --\x3e \n\x3cscript type\x3d\x27text/javascript\x27 src\x3d\x22https://d3xl0zyjyljwa.cloudfront.net/px/t/os-146-0.js\x22\x3e\x3c/script\x3e \n\x3c!-- End Onespot script --\x3e\n',{tagId:2351476});
+BrightTag.instance.appendContent('\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22http://otr1-demo.metrixclix.com/deviceinsight/cloud/customers/1008/current/javascript/collector.js\x22\x3e\x3c/script\x3e\n\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22http://otr1-demo.metrixclix.com/deviceinsight/cloud/customers/1008/current/javascript/client.js\x22\x3e\x3c/script\x3e\n\x3cscript\x3e\nfortyone.dicloud.submit({\n    requestData: {\n        // Metadata submitted with the request\n        benchmarkId: \x27'+bt_data_escaped('brighttag user id (1st party)')+'\x27,\n        campaignId: \x27KSNUeWE\x27,\n        extra: {\n            // Customer-specific metadata\n            tc: \x27'+bt_data_escaped('brighttag user id')+'\x27\n        }\n    }\n});\n\x3c/script\x3e',{tagId:2571343});
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22FRESH TAKE\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22FRESH TAKE\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to shopping cart').fire(18672);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22FRESH TAKE\x22) \x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22FRESH TAKE\x22) \x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to recipe box').fire(18673);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta description\x27).indexOf(\x22FRESH TAKE\x22) \x3e\x3d0 || bt_data(\x27meta keywords\x27).indexOf(\x22FRESH TAKE\x22) \x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:send/share').fire(18675);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to shopping cart').fire(18684);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to recipe box').fire(18685);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:send/share').fire(18687);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22KRAFT Shredded\x22)\x3e\x3d0 || bt_data(\x27meta keywords\x27).indexOf(\x22cheese\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22KRAFT Shredded\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22cheese\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to shopping cart').fire(18692);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22KRAFT Shredded\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22KRAFT Shredded\x22)\x3e\x3d0 ')) {
+BrightTag.EventBinding.when('kr:add to recipe box').fire(18693);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22KRAFT Shredded\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22KRAFT Shredded\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:send/share').fire(18695);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).toLowerCase().indexOf(\x22philadelphia\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).toLowerCase().indexOf(\x22philadelphia\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to shopping cart').fire(18696);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).toLowerCase().indexOf(\x22philadelphia\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).toLowerCase().indexOf(\x22philadelphia\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to recipe box').fire(18697);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).toLowerCase().indexOf(\x22philadelphia\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).toLowerCase().indexOf(\x22philadelphia\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:send/share').fire(18699);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22KRAFT Singles\x22)\x3e\x3d0 || bt_data(\x27meta keywords\x27).indexOf(\x22Singles\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22KRAFT Singles\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22Singles\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to shopping cart').fire(18702);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).toLowerCase().indexOf(\x22singles\x22)\x3e\x3d0 ||  bt_data(\x27meta description\x27).toLowerCase().indexOf(\x22singles\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:add to recipe box').fire(18704);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22KRAFT Singles\x22)\x3e\x3d0 || bt_data(\x27meta keywords\x27).indexOf(\x22Singles\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22KRAFT Singles\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).indexOf(\x22Singles\x22)\x3e\x3d0')) {
+BrightTag.EventBinding.when('kr:send/share').fire(19495);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27kr: user is logged in\x27)')) {
+BrightTag.EventBinding.when('kr: logged in add to shopping list').fire(20955);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27kr: user is logged in\x27)')) {
+BrightTag.EventBinding.when('kr: logged in add to recipe box').fire(20956);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27kr: user is logged in\x27)')) {
+BrightTag.EventBinding.when('kr.com rate it now').fire(20957);
+}
+} catch(e) { bt_handle_exception(e); }
+BrightTag.EventBinding.when('kr:print').fire(50713);
+BrightTag.EventBinding.when('kr: logged in add to recipe box').fire(50714);
+BrightTag.EventBinding.when('kr:add to recipe box').fire(50714);
+BrightTag.EventBinding.when('kr:add to shopping cart').fire(50715);
+BrightTag.EventBinding.when('kr: logged in add to shopping list').fire(50715);
+BrightTag.EventBinding.when('kr.com rate this recipe').fire(50716);
+BrightTag.EventBinding.when('kr.com reviews \x26 ratings header').fire(50716);
+BrightTag.EventBinding.when('kr.com rate it now').fire(50716);
+BrightTag.EventBinding.when('add a photo').fire(50718);
+BrightTag.EventBinding.when('subscribe to magazine').fire(226542);
+BrightTag.EventBinding.when('add a photo').fire(296691);
+BrightTag.EventBinding.when('kr.com rate recipe').fire(296691);
+BrightTag.EventBinding.when('kr: logged in add to recipe box').fire(296691);
+BrightTag.EventBinding.when('kr.com registration birth year change').fire(296691);
+BrightTag.EventBinding.when('kr.com registration zip code change').fire(296691);
+BrightTag.EventBinding.when('twitter share').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('crystal light mocktails').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('koolaid - get recipe').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e stumbleupon').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('purchase').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('add to recipe box').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('hockeyville - find my rink').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('made right here navigation - episodes').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('koolaid - buy koolaid').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('crystal light energy').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('vote').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('gevalia experience navigation \x3e our process').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('twitter follow').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e facebook').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('navigation \x3e product').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e pinterest').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('product locator').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('promotion').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('send to a friend').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('email sign up').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('game play').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('koolaid - show more recipes').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('hash change').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e delicious').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e tumblr').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('crystal light pure').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('language toggle \x3e english to spanish').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('upload content').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('gevalia experience navigation \x3e enjoy').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e twitter').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('crystal light stay light motto').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('navigation \x3e recipe').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('made right here navigation - home').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e myspace').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('add to shopping list').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('twitter click').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('print recipe').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('add to shopping cart').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e e-mail').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('video \x3e completed').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('made right here navigation - win good stuff').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('leave rating or review').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('made right here navigation - our story').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('crystal light classic').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('social \x3e share \x3e tumblr').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('gevalia experience navigation \x3e our kaffe').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e instagram').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('crystal light amazon buy').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('account registration').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e live').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('facebook like').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e favorites').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e email').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('log in').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('navigation \x3e facebook page').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('made right here navigation - cast your vote').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e youtube').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e pinterest').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e google+').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('submit click button').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e twitter').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e digg').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('kr: logged in add to recipe box').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('language toggle \x3e spanish to english').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('gevalia experience navigation \x3e our story').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e product locator').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('video \x3e start').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e google plus').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e facebook').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('add a photo').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('share \x3e social \x3e more').fire(416580).appendData('turn activity id (event-based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e facebook').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e live').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e twitter').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('rate recipe \x3e 5').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('rate recipe \x3e 2').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('make recipe again').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('add to shopping cart').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e pinterest').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e facebook').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('add a photo').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e delicious').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e pinterest').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('rate recipe \x3e 1').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('rate it now').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e email').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e more').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e google+').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('rate recipe \x3e 4').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e stumbleupon').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('add to recipe box').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e youtube').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('print recipe').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e tumblr').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('click out \x3e social \x3e twitter').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('rate recipe \x3e 3').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e digg').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e myspace').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e favorites').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('share \x3e social \x3e google plus').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('made this recipe').fire(910032).appendData('page type').appendData('swiftiq click out (event based)').appendData('swiftiq share id (event based)').appendData('recipe id').appendData('encrypted email address (cookied)').appendData('search keyword').appendData('brighttag user id').appendData('swiftiq activity id (event based)');
+BrightTag.EventBinding.when('kr hp \x3e hero \x3e forward arrow').fire(2260593);
+BrightTag.EventBinding.when('products \x3e product detail tiles \x3e quick view click').fire(2260593);
+BrightTag.EventBinding.when('rc \x3e hero \x3e previous arrow').fire(2260593);
+BrightTag.EventBinding.when('kr hp \x3e hero \x3e previous arrow').fire(2260593);
+BrightTag.EventBinding.when('kr hp \x3e recipe of the day \x3e change day previous arrow').fire(2260593);
+BrightTag.EventBinding.when('rc \x3e hero \x3e forward arrow').fire(2260593);
+BrightTag.EventBinding.when('kr hp \x3e recipe of the day \x3e change day forward arrow').fire(2260593);
+BrightTag.EventBinding.when('recipe \x3e you may also enjoy \x3e review click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e sub-collection tiles \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('tips-ideas \x3e featured \x3e main title').fire(2260604);
+BrightTag.EventBinding.when('kr coupon \x3e hero \x3e image').fire(2260604);
+BrightTag.EventBinding.when('kr hp \x3e recipe of the day \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e footer \x3e footer nav').fire(2260604);
+BrightTag.EventBinding.when('recipe main \x3e popular recipes \x3e review click').fire(2260604);
+BrightTag.EventBinding.when('prodcuts \x3e large featured tiles \x3e click').fire(2260604);
+BrightTag.EventBinding.when('products \x3e subnav').fire(2260604);
+BrightTag.EventBinding.when('recipe \x3e recently viewed \x3e review click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e main featured recipe \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('products  \x3e top product  \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e featured collections tiles \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e collections \x3e paragraph content clicks').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e top nav \x3e sub-menu click').fire(2260604);
+BrightTag.EventBinding.when('tips-ideas \x3e featured \x3e subsection titles').fire(2260604);
+BrightTag.EventBinding.when('products  \x3e product selector \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e footer \x3e kraft logo').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e main featured recipe \x3e review click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e featured collections tiles \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e featured recipes \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('tips-ideas \x3e featured \x3e image').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e featured tips tiles \x3e view all click').fire(2260604);
+BrightTag.EventBinding.when('recipe \x3e recently viewed \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('recipe main \x3e popular recipes \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e top nav \x3e sub-menu \x3e view all click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e hero \x3e view recipe').fire(2260604);
+BrightTag.EventBinding.when('products \x3e product detail tiles \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e collection menu \x3e right panel').fire(2260604);
+BrightTag.EventBinding.when('recipe main \x3e popular recipes \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('products \x3e sub-products tiles \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('recipe \x3e recently viewed \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e breadcrumb nav \x3e kr homepage').fire(2260604);
+BrightTag.EventBinding.when('recipe \x3e you may also enjoy \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e featured tips tiles \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('kr coupons \x3e sub nav').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e top nav \x3e main nav \x3e tips ideas').fire(2260604);
+BrightTag.EventBinding.when('recipe main \x3e new recipes \x3e review click').fire(2260604);
+BrightTag.EventBinding.when('products \x3e product detail tiles \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('kr coupons \x3e main tiles').fire(2260604);
+BrightTag.EventBinding.when('recipe \x3e you may also enjoy \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e hero \x3e view recipe').fire(2260604);
+BrightTag.EventBinding.when('kr hp \x3e recipe of the day \x3e review click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e hero \x3e title').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e top nav \x3e main nav \x3e coupon').fire(2260604);
+BrightTag.EventBinding.when('recipe main \x3e new recipes \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e featured tips tiles \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e breadcrumb nav \x3e 2nd level plus').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e top nav \x3e kr logo').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e hero \x3e image').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e featured collections tiles \x3e view all click').fire(2260604);
+BrightTag.EventBinding.when('products  \x3e product selector  \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e utility bar \x3e account access').fire(2260604);
+BrightTag.EventBinding.when('products  \x3e top products \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e featured recipes \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e featured recipes \x3e review click').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e featured tips tiles \x3e sub-category click').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e cooking tips \x3e paragraph content clicks').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e footer \x3e gutter list').fire(2260604);
+BrightTag.EventBinding.when('tips \x3e hero \x3e title').fire(2260604);
+BrightTag.EventBinding.when('recipe main \x3e new recipes \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e hero \x3e image').fire(2260604);
+BrightTag.EventBinding.when('kr hp \x3e recipe of the day \x3e image click').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e collection menu \x3e right panel').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e main featured recipe \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e utility bar \x3e recipebox').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e top nav \x3e main nav \x3e recipes').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e top nav \x3e main nav \x3e products').fire(2260604);
+BrightTag.EventBinding.when('kr coupon \x3e hero \x3e title').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e read more \x3e collection click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e top nav \x3e main nav \x3e subscribe').fire(2260604);
+BrightTag.EventBinding.when('products \x3e sub-products tiles \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e utility bar \x3e comida kraft link').fire(2260604);
+BrightTag.EventBinding.when('rc \x3e sub-collection tiles \x3e title click').fire(2260604);
+BrightTag.EventBinding.when('kr global \x3e login \x3elogin complete').fire(2260653);
+BrightTag.EventBinding.when('recipe \x3e ratings reviews \x3e review submitted').fire(2260653);
+BrightTag.EventBinding.when('kr global \x3e top nav subscribe \x3e magazine').fire(2260653);
+BrightTag.EventBinding.when('recipe \x3e buttons \x3e shopping list').fire(2260653);
+BrightTag.EventBinding.when('products \x3e product detail \x3e find product in store').fire(2260653);
+BrightTag.EventBinding.when('recipe \x3e buttons \x3e recipe box').fire(2260653);
+BrightTag.EventBinding.when('kr global \x3e footer \x3e subscribe to magazine').fire(2260653);
+BrightTag.EventBinding.when('recipe \x3e floating bar \x3e recipe box').fire(2260653);
+BrightTag.EventBinding.when('kr global \x3e search \x3e use whats on hand').fire(2260653);
+BrightTag.EventBinding.when('tips \x3e featured tips tiles \x3e subscribe to magazine').fire(2260653);
+BrightTag.EventBinding.when('print recipe').fire(2260653);
+BrightTag.EventBinding.when('email sign up').fire(2260653);
+BrightTag.EventBinding.when('kr global \x3e right panel \x3e magazine').fire(2260653);
+BrightTag.EventBinding.when('rc \x3e featured collections tiles \x3e subscribe to magazine').fire(2260653);
+BrightTag.EventBinding.when('recipe \x3e ratings reviews \x3e rate recipe hearts').fire(2260653);
+BrightTag.EventBinding.when('recipe \x3e floating bar \x3e shopping list').fire(2260653);
+BrightTag.EventBinding.when('products \x3e write a review \x3e submitted').fire(2260653);
+BrightTag.EventBinding.when('products \x3e product locator \x3e update product').fire(2260653);
+BrightTag.EventBinding.when('kr global \x3e search bar \x3e search submit').fire(2260653);
+BrightTag.EventBinding.when('kr global \x3e registration success').evaluate('bt_data(\x27ajax url\x27).indexOf(\x22/account/registration-step-2.aspx?modal\\x3dtrue\\x26_\x22) \x3e -1').fire(2268780);
+BrightTag.EventBinding.when('kr hp \x3e hero \x3e title').fire(2357397);
+BrightTag.EventBinding.when('kr hp \x3e what talking about feature \x3e tile sub feature').fire(2357397);
+BrightTag.EventBinding.when('kr hp \x3e right panel \x3e featured recipe').fire(2357397);
+BrightTag.EventBinding.when('kr hp \x3e what talking about feature \x3e feature click').fire(2357397);
+BrightTag.EventBinding.when('kr hp \x3e hero \x3e bottom relative recipes \x3e title').fire(2357397);
+BrightTag.EventBinding.when('kr hp \x3e hero \x3e image').fire(2357397);
+BrightTag.EventBinding.when('kr hp \x3etop pins \x3e image click').fire(2357397);
+BrightTag.EventBinding.when('recipe \x3e explore \x3e recipe tags').fire(2357397);
+BrightTag.EventBinding.when('kr hp \x3e hero \x3e bottom relative recipes \x3e image').fire(2357397);
+BrightTag.EventBinding.when('kr hp \x3etop pins \x3e title click').fire(2357397);
+BrightTag.EventBinding.when('kr global \x3e right panel \x3e blog').fire(2357397);
+BrightTag.EventBinding.when('kr global \x3e login initiated ').evaluate('bt_data(\x27event dba - ajax url kr\x27).indexOf(\x22/account/sign-in.aspx?modal\\x3dtrue\\x26\x22) \x3e -1').fire(2395485);
+BrightTag.EventBinding.when('kr global \x3e registration initated').evaluate('bt_data(\x27registration initiate ajax url kr\x27).indexOf(\x22/account/registration-step-1.aspx?modal\\x3dtrue\\x26\x22) \x3e -1').fire(2395572);
+BrightTag.EventBinding.when('kr global \x3e registration complete').evaluate('bt_data(\x27registration success - ajax url kr\x27).indexOf(\x22/account/registration-step-2.aspx?modal\\x3dtrue\\x26\x22) \x3e -1').fire(2395674);
+BrightTag.EventBinding.when('kr global \x3e login submitted').evaluate('bt_data(\x27login success - ajax response text\x27).indexOf(\x22success\x22) \x3e -1').fire(2402765);
+BrightTag.EventBinding.when('kr global \x3e recipes by email success').evaluate('bt_data(\x27email success - ajax url kr\x27).indexOf(\x22/email-sign-up/confirmation.aspx\x22) \x3e -1').fire(2403132);
+BrightTag.EventBinding.when('click out \x3e social \x3e google+').fire(2453618);
+BrightTag.EventBinding.when('kr hp \x3e banners \x3e left side').fire(2453618);
+BrightTag.EventBinding.when('social \x3e social bar \x3e google plus').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e tabs \x3e nutrition \x26 kitchen tips').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e rating utility bar \x3e review count initiated').fire(2453618);
+BrightTag.EventBinding.when('social \x3e social bar \x3e twitter').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e buttons \x3e view recipe card').fire(2453618);
+BrightTag.EventBinding.when('kr hp \x3e banners \x3e right side').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e buttons \x3e add a photo initiated').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e buttons \x3e shopping list select all').fire(2453618);
+BrightTag.EventBinding.when('click out \x3e social \x3e pinterest').fire(2453618);
+BrightTag.EventBinding.when('click out \x3e social \x3e facebook').fire(2453618);
+BrightTag.EventBinding.when('click out \x3e social \x3e tumblr').fire(2453618);
+BrightTag.EventBinding.when('click out \x3e social \x3e twitter').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e buttons \x3e shopping list deselect all ').fire(2453618);
+BrightTag.EventBinding.when('social \x3e social bar  \x3e facebook').fire(2453618);
+BrightTag.EventBinding.when('social \x3e social bar  \x3e  more').fire(2453618);
+BrightTag.EventBinding.when('products  \x3e product recall \x3e recall info').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e deals utility \x3e hide deals').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e deals utility \x3e change zip submit').fire(2453618);
+BrightTag.EventBinding.when('kr hp \x3etop pins \x3e pin it').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e explore \x3e recipe tags').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e rating utility bar \x3e heart click initiate').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e mark as inappropriate').fire(2453618);
+BrightTag.EventBinding.when('click out \x3e social \x3e youtube').fire(2453618);
+BrightTag.EventBinding.when('social \x3e social bar \x3e email').fire(2453618);
+BrightTag.EventBinding.when('add a photo').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e deals utility \x3e change zip initiated').fire(2453618);
+BrightTag.EventBinding.when('social \x3e social bar  \x3e facebook like').fire(2453618);
+BrightTag.EventBinding.when('social \x3e social bar \x3e pinterest').fire(2453618);
+BrightTag.EventBinding.when('click out \x3e social \x3e kraft corp facebook').fire(2453618);
+BrightTag.EventBinding.when('kr hp \x3etop pins \x3e follow us pinterest').fire(2453618);
+BrightTag.EventBinding.when('click out \x3e social \x3e kraft linkedin').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e rating utility bar \x3e rate this recipe initiated').fire(2453618);
+BrightTag.EventBinding.when('products \x3e write a review star click \x3e initiated').fire(2453618);
+BrightTag.EventBinding.when('products \x3e write a review \x3e initiated').fire(2453618);
+BrightTag.EventBinding.when('kr global \x3e footer \x3e recipes by email').fire(2453618);
+BrightTag.EventBinding.when('products \x3e write a review in section \x3e initiated').fire(2453618);
+BrightTag.EventBinding.when('kr global \x3e right panel \x3e blog').fire(2453618);
+BrightTag.EventBinding.when('recipe \x3e deals utility \x3e show deals').fire(2453618);
+BrightTag.instance.secondary(function(serverURL) {
+try { if (eval('bt_data(\x27encrypted email address\x27) \x26\x26 (bt_data(\x27encrypted email address\x27) !\x3d bt_data(\x27encrypted email address (cookied)\x27))')) {
+serverURL.cf(1131873).appendData('encrypted email address');
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta description\x27).indexOf(\x22FRESH TAKE\x22) \x3e\x3d0 || bt_data(\x27meta keywords\x27).indexOf(\x22FRESH TAKE\x22) \x3e\x3d0')) {
+serverURL.cf(16985);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0')) {
+serverURL.cf(17000);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).toLowerCase().match(/(shredded|cheese)[^,]*(shredded|cheese)/g)')) {
+serverURL.cf(17001);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).toLowerCase().indexOf(\x22philadelphia\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).toLowerCase().indexOf(\x22philadelphia\x22)\x3e\x3d0')) {
+serverURL.cf(17020);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).toLowerCase().indexOf(\x22singles\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).toLowerCase().indexOf(\x22singles\x22)\x3e\x3d0')) {
+serverURL.cf(17022);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27referring url\x27) \x3d\x3d \x27http://www.kraftrecipes.com/recipes/dessert/jelloforallseasons.aspx\x27 \x26\x26 bt_data(\x27meta keywords\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0')) {
+serverURL.cf(19333);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta description\x27).indexOf(\x22Single Serve\x22) \x3e 0 || bt_data(\x27meta keywords\x27).indexOf(\x22Single Serve\x22) \x3e 0')) {
+serverURL.cf(43870);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('document.referrer.indexOf (\x27google\x27,\x27bing\x27,\x27yahoo\x27,\x27ask\x27) \x3e\x3d0 \x26\x26 document.URL .indexOf(\x27cm_mmc\x27) \x3d\x3d-1')) {
+serverURL.cf(47793);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_parameter(\x27cm_mmc\x27).indexOf (\x27google\x27,\x27bing\x27,\x27yahoo\x27,\x27ask\x27) \x3e\x3d0 ')) {
+serverURL.cf(47800);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('document.referrer \x3d\x3d \x22\x22')) {
+serverURL.cf(47801);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('document.referrer !\x3d \x22\x22 \x26\x26 document.referrer.indexOf (\x27google\x27,\x27bing\x27,\x27yahoo\x27,\x27ask\x27) \x3e\x3d0 \x26\x26 document.URL .indexOf(\x27cm_mmc\x27) \x3d\x3d-1 \x26\x26 bt_parameter(\x27cm_mmc\x27).indexOf (\x27google\x27,\x27bing\x27,\x27yahoo\x27,\x27ask\x27) \x3e\x3d0 ')) {
+serverURL.cf(47803);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_parameter(\x27cm_mmc\x27).indexOf (\x27eml\x27) \x3e\x3d0 ')) {
+serverURL.cf(49197);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_parameter(\x27cm_mmc\x27).indexOf (\x27BrndOLA\x27) \x3e\x3d0 ')) {
+serverURL.cf(49198);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_parameter(\x27cm_mmc\x27).indexOf (\x27social\x27) \x3e\x3d0 ')) {
+serverURL.cf(49199);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_parameter(\x27cm_mmc\x27).indexOf (\x27outbrain\x27) \x3e\x3d0 ')) {
+serverURL.cf(50639);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).toLowerCase().indexOf(\x22shredded\x22)\x3e\x3d0 || bt_data(\x27meta description\x27).toLowerCase().indexOf(\x22shredded\x22)\x3e\x3d0')) {
+serverURL.cf(191383);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27encrypted email address\x27) \x26\x26 (bt_data(\x27encrypted email address\x27) !\x3d bt_data(\x27encrypted email address (cookied)\x27))')) {
+serverURL.cf(317532).appendData('brighttag user id').appendData('encrypted email address');
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0')) {
+serverURL.cf(320730);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27meta keywords\x27).indexOf(\x22JELL-O\x22)\x3e\x3d0')) {
+serverURL.cf(320745);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('!!bt_data(\x27encrypted email address\x27)')) {
+serverURL.cf(506634).appendData('encrypted email address');
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('(bt_data(\x27fuse coremetrics visitor id (kraftrecipes.com)\x27) !\x3d bt_data(\x27coremetrics visitor id\x27)) \x26\x26 (bt_data(\x27fuse coremetrics visitor id (comidakraft.com)\x27) !\x3d bt_data(\x27coremetrics visitor id\x27))')) {
+serverURL.cf(1223175).appendData('fuse encrypted email id').appendData('brighttag user id').appendData('coremetrics visitor id').appendData('coremetrics session id');
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27cm attr: user logged in to the site\x27) \x3d\x3d \x22logged in\x22')) {
+serverURL.cf(2283532).appendData('turn activity id (event-based)');
+}
+} catch(e) { bt_handle_exception(e); }
+serverURL.appendData('turn meta keyword ids');
+serverURL.appendData('turn recipe id');
+serverURL.appendData('turn nonrecipe id');
+serverURL.appendData('turn domain id');
+serverURL.appendData('turn activity id (page-based)');
+serverURL.appendData('turn traffic source id');
+serverURL.appendData('turn platform id');
+serverURL.appendData('turn traffic source id - concatenated');
+serverURL.appendData('coremetrics session id');
+serverURL.appendData('coremetrics visitor id');
+serverURL.appendData('page type');
+serverURL.appendData('recipe id');
+serverURL.appendData('encrypted email address (cookied)');
+serverURL.appendData('email visit flag');
+serverURL.appendData('search keyword');
+serverURL.appendData('brighttag user id');
+serverURL.appendData('swiftiq activity id (page based)');
+serverURL.appendData('brighttag user id (1st party)');
+});
+});

@@ -1,0 +1,194 @@
+/**********************************
+ * ezForm base styles
+ **********************************/
+form.ezForm { font-size:1.1em; color:#333; }
+form.ezForm fieldset {
+	margin-bottom:10px;
+	background:#fdfdfd url(/includes/lib/ezform/cmxform-fieldset.gif) left bottom repeat-x;
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+
+}
+form.ezForm legend {
+	padding:0px 5px 0 5px;
+	font-weight:bold;
+	color:#333;
+	margin-top:-5px;
+	_margin:0 -7px; /* IE Win */
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+form.ezForm label {
+	display:inline-block;
+	line-height:1.3;
+	vertical-align:top;
+	color:#333;
+	cursor:hand;
+	padding-top:2px;
+	font-weight: bold;
+	padding-right: 4px;
+
+}
+
+form.ezForm fieldset div { padding:5px; margin:0; overflow:auto; }
+form.ezForm fieldset fieldset { background:none; margin:3px 0 0; border:none; }
+form.ezForm fieldset div, 
+form.ezForm fieldset fieldset { padding:7px 0; background:url(/includes/lib/ezform/cmxform-divider.gif) left bottom repeat-x; }
+
+form.ezForm fieldset fieldset legend { padding:5px 0 0 200px; }
+form.ezForm fieldset fieldset label { display:block; width:auto; }
+
+form.ezForm label { } /* default width of labels */
+form.ezForm fieldset fieldset label { } /* width of nested labels plus 3 (for spacing) */
+
+form.ezForm label.formError { margin-left:10px; width:300px; }
+form.ezForm input.submit { margin-left:183px; }
+form.ezForm label.formError, 
+label.formError { display:none; color:red; font-style:italic; }
+label.formError { display:none; }
+
+form.ezForm input { border:1px solid #666; }
+form.ezForm select { border:1px solid #666; }
+form.ezForm input:focus { border:1px solid black; }
+form.ezForm input.formError, textarea.formError, select.formError { border:1px dotted red; }
+form.ezForm textarea { width:210px; height:120px; }
+form.ezForm img { border:none; }
+
+
+
+/************************************************
+ * rules for certain types of ezForm elements
+ ************************************************/
+form.ezForm div.normal p {
+	margin-bottom:5px;
+}
+form.ezForm div.normal label { width:210px; text-align:right; }
+form.ezForm div.checkBoxLeft label { position:relative; display:block; padding:2px 0 0 200px; line-height:1.2; }
+form.ezForm div.checkBoxLeft input { position:absolute; left:130px; top:0px; border:none; }
+form.ezForm div.checkBoxLeft label.formError { display:none; padding-left:0; }
+form.ezForm p.fieldHelp { margin-left:135px; font-size:0.9em; line-height:1.3; color:#333333; }
+form.ezForm p.fieldHelp2 { margin-left:215px; font-size:0.9em; line-height:1.3; color:#333333; }
+form.ezForm input.time { width:8em; }
+form.ezForm input.date { width:12em; }
+form.ezForm div.bigtextarea textarea { width:396px; height:150px; }
+form.ezForm div.gianttextarea textarea { width:530px; height:150px; }
+form.ezForm p.gianttextarea textarea { width:530px; height:150px; }
+form.ezForm div.ginormoustextarea textarea { width:530px; height:400px;float:left; }
+form.ezForm div.gianttextarea label { width:210px; text-align:right; }
+ 
+#fieldHelp { margin:0 0 0 500px; font-size:.9em; line-height:1.3; color:#666; }
+
+a.btnContinueHome {
+	display:block;
+	width:252px;
+	height:0;
+	padding-top:34px;
+	overflow:hidden;
+	background:url(/includes/lib/ezform/btn-continue-to-home-page.gif) no-repeat;
+	border-style: none;
+}
+a.btnGoBackChanges {
+	clear:both;
+	margin-top:15px;
+	display:block;
+	width:226px;
+	height:0;
+	padding-top:34px;
+	overflow:hidden;
+	background:url(/includes/lib/ezform/btn-go-back-and-make-changes.gif) no-repeat;
+	border-style: none;
+	border-width: 0px;
+}
+a.btnGoBackCorrection {
+	display:block;
+	width:252px;
+	height:0;
+	padding-top:34px;
+	overflow:hidden;
+	background:url(/includes/lib/ezform/btn-go-back-and-make-corrections.gif) no-repeat;
+	border-style: none;
+	border-width: 0px;
+}
+a.btnGoBackStartOver {
+	display:block;
+	width:198px;
+	height:0;
+	padding-top:34px;
+	overflow:hidden;
+	background:url(/includes/lib/ezform/btn-go-back-and-start-over.gif) no-repeat;
+	border-style: none;
+	border-width: 0px;
+}
+a.btnFillOutAgain {
+	display:block;
+	width:252px;
+	height:0;
+	padding-top:34px;
+	overflow:hidden;
+	background:url(/includes/lib/ezform/btn-fill-out-the-form-again.gif) no-repeat;
+	border-style: none;
+}
+
+/************************************************
+ * rules for date picker elements
+ ************************************************/
+table.jCalendar { border:1px solid #000; background:#aaa; border-collapse:separate; border-spacing:2px; margin:3px 0 0 0; }
+table.jCalendar th { background:#333; color:#fff; font-weight:bold; padding:3px 5px; border-width:0; }
+table.jCalendar td { background:#ccc; color:#000; padding:3px 5px; text-align:center; border-width:0; }
+table.jCalendar td.other-month { background:#ddd; color:#aaa; }
+table.jCalendar td.today { background:#666; color:#fff; }
+table.jCalendar td.selected { background:#f66; color:#fff; }
+table.jCalendar td.selected:hover { background:#f33; color:#fff; }
+table.jCalendar td:hover, 
+table.jCalendar td.dp-hover { background:#fff; color:#000; }
+table.jCalendar td.disabled, 
+table.jCalendar td.disabled:hover { background:#bbb; color:#888; }
+
+/* for unselectable out weekends */
+table.jCalendar td.weekend, table.jCalendar td.weekend:hover { background:#777; color:#555; }
+/* for customization of the "Choose Date" link you can style a.dp-choose-date 
+a.dp-choose-date { width:16px; height:16px; padding:0; margin:5px 3px 0; text-indent:-2000px; display:block; overflow:hidden; background:url(/includes/lib/ezform/calendar.gif) no-repeat; }
+a.dp-choose-date.dp-disabled { background-position:0 -20px; cursor:default; }
+*/
+/* For the popup */
+div.dp-popup { position:relative; background:#ccc; font-size:10px; font-family:arial, sans-serif; padding:2px; width:171px; line-height:1.2em; }
+div#dp-popup { position:absolute; z-index:199; }
+div.dp-popup h2 { font-size:12px; text-align:center; margin:2px 0; padding:0; }
+a#dp-close { font-size:11px; padding:4px 0; text-align:center; display:block; }
+a#dp-close:hover { text-decoration:underline; }
+div.dp-popup a { color:#000; text-decoration:none; padding:3px 2px 0; }
+div.dp-popup div.dp-nav-prev { position:absolute; top:2px; left:4px; width:100px; }
+div.dp-popup div.dp-nav-prev a { float:left; }
+/* Opera needs the rules to be this specific otherwise it doesn't change the cursor back to pointer after you have disabled and re-enabled a link */
+div.dp-popup div.dp-nav-prev a, 
+div.dp-popup div.dp-nav-next a { cursor:pointer; }
+div.dp-popup div.dp-nav-prev a.disabled, 
+div.dp-popup div.dp-nav-next a.disabled { cursor:default; }
+div.dp-popup div.dp-nav-next { position:absolute; top:2px; right:4px; width:100px; }
+div.dp-popup div.dp-nav-next a { float:right; }
+div.dp-popup a.disabled { cursor:default; color:#aaa; }
+div.dp-popup td { cursor:pointer; }
+div.dp-popup td.disabled { cursor:default; }
+
+
+
+
+/************************************************
+ * rules for time picker elements
+ ************************************************/
+div.time-picker { position:absolute; height:200px; width:6em; overflow:auto; background:#fff; border:1px solid #000; z-index:99; }
+div.time-picker-12hours { width:8em; }
+div.time-picker ul { list-style-type:none; margin:0; padding:0; }
+div.time-picker li { padding:1px; cursor:pointer; }
+div.time-picker li.selected { background:#316AC5; color:#fff; }
+
+
+
+/************************************************
+ * rules for ezForm PHP errors
+ ************************************************/
+ p.ezFormError { font-size:1.4em; padding:5px 10px 5px 10px; background-color:#fed8d8; border:1px solid #ffa7a7; } 
+/*p.ezFormError { font-size:1.4em; padding:1em; background-color:#fed8d8; border:1px solid #ffa7a7; } */
+p.ezFormError strong { color:red;  } 
+p.ezFormError2 { font-size:1.1em; padding:1em; background-color:#fdfed8; border:1px solid #ecefa3; }

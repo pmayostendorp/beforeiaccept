@@ -1,0 +1,8 @@
+﻿	/*
+	fix for IE8 ASP.Net Menu control issue
+	http://blogs.msdn.com/giorgio/archive/2009/02/01/asp-net-menu-and-ie8-rendering-white-issue.aspx
+	*/
+    .IE8Menu
+    {
+        z-index:1;
+    }

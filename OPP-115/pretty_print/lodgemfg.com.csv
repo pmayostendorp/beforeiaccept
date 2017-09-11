@@ -1,0 +1,122 @@
+7741,0,96,The text describes a specific data practice that is not covered by our label scheme.
+8755,0,103,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+23720,0,123,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+23721,0,123,The text does not fit into our label scheme.
+7742,1,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8756,1,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+23722,1,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7743,2,96,"The site collects your contact information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable. You can choose not to use the service or feature for the collection of your information."
+7744,2,96,"The site collects your financial information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable. You can choose not to use the service or feature for the collection of your information."
+7745,2,96,"The site collects your unspecified information for a basic service or feature. Collection happens when you explicitly provide information on the website, and your data is identifiable. You can choose not to use the service or feature for the collection of your information."
+8757,2,103,The site collects your contact information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+8758,2,103,The site collects your financial information for an unspecified purpose. Collection happens when you explicitly provide information on the website.
+23723,2,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+23724,2,123,The site collects your contact information for a basic service or feature. Collection happens on the website.
+23725,2,123,The site collects your contact information for a basic service or feature. Collection happens in the mobile app.
+23726,2,123,The site collects your financial information for a basic service or feature. Collection happens on the website.
+23727,2,123,The site collects your financial information for a basic service or feature. Collection happens in the mobile app.
+23728,2,123,The site collects your unspecified information for a basic service or feature. Collection happens on the website.
+23729,2,123,The site collects your unspecified information for a basic service or feature. Collection happens in the mobile app.
+7746,3,96,The site collects your unspecified information for a basic service or feature. Collection happens when you explicitly provide information on the website. You can choose not to use the service or feature for the collection of your information.
+8759,3,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+23730,3,123,The site collects your unspecified information for an unspecified purpose. Collection happens on the website.
+7747,4,96,The site collects your unspecified information for a basic service or feature. Collection happens when you explicitly provide information on the website. You can choose not to use the service or feature for the use of your information.
+7748,4,96,The site collects your unspecified information for a basic service or feature. Collection happens when you implicitly provide information on the website. You can choose not to use the service or feature for the use of your information.
+8760,4,103,The site collects your unspecified information for an additional (non-basic) service or feature. Collection happens on the website.
+23731,4,123,The site collects your unspecified information for a basic service or feature. Collection happens on the website.
+7749,5,96,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+8761,5,103,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+23732,5,123,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+7750,6,96,"Data is stored securely, e.g. in an encrypted format or database."
+7751,6,96,Data is accessible to employees/third parties on a need-to-know basis.
+7752,6,96,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+8762,6,103,Data is accessible to employees/third parties on a need-to-know basis.
+8763,6,103,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+23733,6,123,Data is accessible to employees/third parties on a need-to-know basis.
+23734,6,123,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+23735,6,123,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+7753,7,96,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+8764,7,103,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+23736,7,123,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+7754,8,96,A specific security measure not covered above.
+8765,8,103,"The company/organization has a privacy or security program/organization in place addressing, for example, how to protect data against unauthorized access or privacy training for employees."
+23737,8,123,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+7755,9,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7756,9,96,The site collects your computer information for a basic service or feature. Collection happens when you implicitly provide information on the website. You can configure your privacy with browser settings for the use of your information.
+8766,9,103,The site collects your cookies or tracking elements for analytics or research. Collection happens on the website.
+23738,9,123,"The site collects your cookies or tracking elements for a basic service or feature. Collection happens on the website, and your data is aggregated or anonymized. You can configure your privacy with browser settings for the collection and use of your information."
+23739,9,123,"The site collects your cookies or tracking elements for analytics or research. Collection happens on the website, and your data is aggregated or anonymized. You can configure your privacy with browser settings for the collection and use of your information."
+7757,10,96,The site collects your unspecified information for a basic service or feature. Collection happens when you implicitly provide information in an unspecified way.
+8767,10,103,The site collects your cookies or tracking elements for an additional (non-basic) service or feature. Collection happens in an unspecified way.
+23740,10,123,The site collects your cookies or tracking elements for a basic service or feature. Collection happens in an unspecified way.
+7758,11,96,"You can use privacy configuration settings (in your browser or on your device) to control the use of unspecified information by the site, which uses it for an unspecified purpose."
+8768,11,103,You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by an unspecified party for an unspecified purpose.
+23741,11,123,"You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by the site, which collects it for an unspecified purpose."
+7759,12,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8769,12,103,The text does not fit into our label scheme.
+23742,12,123,You can use privacy configuration settings (in your browser or on your device) to control the use of cookies and tracking elements by an unspecified party for a basic service or feature.
+7760,13,96,An unspecified third party does not do something outside of our label scheme with your unspecified personal information for an unspecified purpose. The data is personally identifiable.
+8770,13,103,An unnamed third party does not receive your unspecified personal information for an unspecified purpose. The data is personally identifiable.
+23743,13,123,An unnamed third party does not receive your unspecified personal information for an unspecified purpose. The data is personally identifiable.
+7761,14,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8771,14,103,An unnamed third party does not do something outside of our label scheme with unspecified information about you for an unspecified purpose.
+23744,14,123,The text does not fit into our label scheme.
+7762,15,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8773,15,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+23745,15,123,The text does not fit into our label scheme.
+7763,16,96,The text does not fit into our label scheme.
+8774,16,103,The site does not collect your unspecified information for advertising. Collection happens by some means outside of our label scheme.
+23754,16,123,The text does not fit into our label scheme.
+7764,17,96,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+8772,17,103,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+23755,17,123,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+7765,18,96,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+8775,18,103,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+23756,18,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7766,19,96,The text does not fit into our label scheme.
+8776,19,103,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+23757,19,123,"The policy makes a statement about how data from Californian users is treated (e.g., California privacy rights)."
+7767,20,96,The text does not fit into our label scheme.
+8777,20,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+23758,20,123,The text does not fit into our label scheme.
+7768,21,96,The text does not fit into our label scheme.
+8778,21,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+23759,21,123,The text does not fit into our label scheme.
+7769,22,96,"When a change is made to the privacy policy that significantly affects data practices, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+8779,22,103,"When a change of a variety outside of our label scheme is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+23760,22,123,"When a minor change is made to the privacy policy that does not significantly affect data practices, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+7770,23,96,"A user can edit their information, within the scope of information explicitly provided by the user."
+8781,23,103,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+8782,23,103,"A user with an account can opt out (by contacting the company) from the use of generic personal information by the site, which collects it for an unspecified purpose."
+23761,23,123,"A user can edit their information, within the scope of unspecified user information."
+23762,23,123,"Users with accounts can edit their information, within the scope of unspecified user information."
+7771,24,96,The website reads and adheres to the user's Do Not Track preference.
+8783,24,103,The website reads and adheres to the user's Do Not Track preference.
+23764,24,123,The website reads and adheres to the user's Do Not Track preference.
+7772,25,96,An unnamed third party does not track on the first party website or app unspecified information about you for an unspecified purpose.
+8784,25,103,An unnamed third party does not track on the first party website or app unspecified information about you for an unspecified purpose.
+23765,25,123,An unnamed third party does not track on the first party website or app unspecified information about you for an unspecified purpose.
+7773,26,96,The policy makes a statement about how data from children is treated.
+8785,26,103,The policy makes a statement about how data from children is treated.
+23766,26,123,The policy makes a statement about how data from children is treated.
+7774,27,96,The policy makes a statement about how data from children is treated.
+8786,27,103,The policy makes a statement about how data from children is treated.
+23767,27,123,The policy makes a statement about how data from children is treated.
+7775,28,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8787,28,103,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+23768,28,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7776,29,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+8788,29,103,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+23769,29,123,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+7777,30,96,The text does not fit into our label scheme.
+8789,30,103,"The company/organization has a privacy or security program/organization in place addressing, for example, how to protect data against unauthorized access or privacy training for employees."
+23770,30,123,A specific security measure not covered above.
+7778,31,96,The text does not fit into our label scheme.
+23771,31,123,A specific security measure not covered above.
+7779,32,96,The text does not fit into our label scheme.
+8790,32,103,"The company/organization has a privacy or security program/organization in place addressing, for example, how to protect data against unauthorized access or privacy training for employees."
+23772,32,123,The text describes a specific data practice that is not covered by our label scheme.
+7780,33,96,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+8791,33,103,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+8792,33,103,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+23773,33,123,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."

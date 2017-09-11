@@ -1,0 +1,1 @@
+var bsResponse = '%7B%22sessionId%22%3A%222839362464585816851%22%2C%22scripts%22%3A%5B%5D%2C%22urls%22%3A%5B%5D%7D';var oneTagObj = new EBGVT.OneTag(); oneTagObj._handleResponse(bsResponse);

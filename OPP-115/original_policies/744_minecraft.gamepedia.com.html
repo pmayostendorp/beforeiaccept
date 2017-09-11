@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Minecraft Wiki:Privacy policy – Minecraft Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcAUlNACQoAXVVbDw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta name="generator" content="MediaWiki 1.23.9" />
+<meta name="og:title" content="Minecraft Wiki:Privacy policy" />
+<meta name="og:type" content="website" />
+<meta name="og:image" content="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bc/Wiki.png" />
+<meta name="og:url" content="http://minecraft.gamepedia.com/Minecraft_Wiki:Privacy_policy" />
+<meta name="og:site_name" content="Minecraft Wiki" />
+<link rel="apple-touch-icon" href="" />
+<link rel="shortcut icon" href="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/6/64/Favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Minecraft Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//minecraft.gamepedia.com/api.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Minecraft Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="//minecraft.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=ext.curse.footer%2Cnetbar%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cz.skins.hydra&amp;only=styles&amp;skin=hydra&amp;*" />
+<link rel="stylesheet" href="http://minecraft.gamepedia.com/extensions/Social/css/social.css" />
+<!--[if lt IE 10]><link rel="stylesheet" href="http://hydra-media.cursecdn.com/hydra/ie.css" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//minecraft.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=hydra&amp;*" />
+<noscript><link rel="stylesheet" href="//minecraft.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=noscript&amp;only=styles&amp;skin=hydra&amp;*" /></noscript>
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: minecraft_gamepedia:resourceloader:filter:minify-css:7:19007284a469d0181d2f8e8659c1893f */</style>
+<script src="//minecraft.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hydra&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"Project","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":4,"wgPageName":"Minecraft_Wiki:Privacy_policy","wgTitle":"Privacy policy","wgCurRevisionId":406285,"wgRevisionId":406285,"wgArticleId":2538,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Minecraft_Wiki:Privacy_policy","wgIsProbablyEditable":false,"wgRestrictionEdit":["directors"],"wgRestrictionMove":["directors"],"wgVectorEnabledModules":{"collapsiblenav":true,"experiments":true},"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":2048},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":true,"previewDialog":false,"publish":true},"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"hydra","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":1,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":false,"visualeditor-enable":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikieditor-preview":1,"wikieditor-publish":1,"profile-pref":1,"hydra-simplesearch":true,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"plain-text","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-user-rights":true,"echo-subscriptions-web-user-rights":true,"echo-subscriptions-email-other":false,"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"visualeditor-enable-experimental":0,"visualeditor-betatempdisable":0,"language":"en","variant-gan":"gan",
+"variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs200":false,"searchNs202":false,"searchNs274":false,"searchNs275":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"echo-subscriptions-web-friendship":1,"echo-subscriptions-email-friendship":1,"echo-subscriptions-web-profile-comment":1,"echo-subscriptions-email-profile-comment":1,"extensionDrafts_enable":true,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: minecraft_gamepedia:resourceloader:filter:minify-js:7:0579813b21001a059ad038a6292adbe1 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.siteGlobals","ext.visualEditor.viewPageTarget.init","skins.vector.js"]);
+}</script>
+<meta itemprop="author" content="Gamepedia" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/hydra/csshover.min.htc")}</style><![endif]--><script>
+var script = document.createElement('script');
+var tstamp = new Date();
+script.id = 'factorem';
+script.src = 'http://cdm.cursecdn.com/js/gamepedia/cdmfactorem_min.js?misc=' + tstamp.getTime();
+script.async = false;
+script.type='text/javascript';
+document.head.appendChild(script);
+</script> </head>
+<body class="mediawiki ltr sitedir-ltr ns-4 ns-subject page-Minecraft_Wiki_Privacy_policy skin-hydra action-view vector-animateLayout show-ads site-minecraft-gamepedia">
+<div id="netbar">
+	<ul class="netbar-left">
+		<li><a class="curse" href="http://www.gamepedia.com">Gamepedia</a></li>
+					<li><a href="http://support.curse.com/">Help</a></li>
+					</ul>
+	<ul class="netbar-right">
+							<li><a href="/index.php?title=Special:UserLogin&returnto=Minecraft+Wiki%3APrivacy+policy" id="login-link">Sign In</a></li>
+							<li><a href="/index.php?title=Special:UserLogin&returnto=Minecraft+Wiki%3APrivacy+policy&type=signup" id="register-link">Register</a></li>
+						</ul>
+</div>
+	<div id="global-wrapper">
+		<div id="mw-navigation">
+			<div id="mw-page-base" class="noprint"></div>
+			<div id="mw-head">
+				<!--<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="/index.php?title=Special:UserLogin&amp;returnto=Minecraft+Wiki%3APrivacy+policy&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Minecraft+Wiki%3APrivacy+policy" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>	</ul>
+</div>-->
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li  id="ca-nstab-project" class="selected"><span><a href="/Minecraft_Wiki:Privacy_policy"  title="View the project page [a]" accesskey="a">Project page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/index.php?title=Minecraft_Wiki_talk:Privacy_policy&amp;action=edit&amp;redlink=1"  title="Talk about the content page [t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-sharing" role="sharing" class="vectorMenu" aria-labelledby="p-sharing-label">
+	<h4>Share</h4>
+	<h3 id="p-sharing-label"><span>Share</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+							<li>
+						<div id="socialIconImages">
+							<a href="https://twitter.com/intent/tweet?text=Check+out+Minecraft+Wiki%3APrivacy+policy+on+Minecraft+Wiki+--&via=CurseGamepedia&url=http%3A%2F%2Fminecraft.gamepedia.com%2FMinecraft_Wiki%3APrivacy_policy" target="_blank"><img src="/extensions/Social/images/square_icons/twitter.png"/></a><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fminecraft.gamepedia.com%2FMinecraft_Wiki%3APrivacy_policy" target="_blank"><img src="/extensions/Social/images/square_icons/facebook.png"/></a><a href="https://plus.google.com/share?url=http%3A%2F%2Fminecraft.gamepedia.com%2FMinecraft_Wiki%3APrivacy_policy" target="_blank"><img src="/extensions/Social/images/square_icons/googleplus.png"/></a><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fminecraft.gamepedia.com%2FMinecraft_Wiki%3APrivacy_policy&title=Check+out+Minecraft+Wiki%3APrivacy+policy+on+Minecraft+Wiki+via+%40CurseGamepedia%3A+http%3A%2F%2Fminecraft.gamepedia.com%2FMinecraft_Wiki%3APrivacy_policy" target="_blank"><img src="/extensions/Social/images/square_icons/reddit.png"/></a><a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fminecraft.gamepedia.com%2FMinecraft_Wiki%3APrivacy_policy&name=Minecraft+Wiki&description=Check+out+Minecraft+Wiki%3APrivacy+policy+on+Minecraft+Wiki+via+%3Ca+href%3D%22https%3A%2F%2Ftwitter.com%2FCurseGamepedia%22+target%3D%22_blank%22%3E%40CurseGamepedia%3C%2Fa%3E%3A+http%3A%2F%2Fminecraft.gamepedia.com%2FMinecraft_Wiki%3APrivacy_policy" target="_blank"><img src="/extensions/Social/images/square_icons/tumblr.png"/></a>
+						</div>
+</li>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/Minecraft_Wiki:Privacy_policy" >View</a></span></li>
+					<li id="ca-viewsource"><span><a href="/index.php?title=Minecraft_Wiki:Privacy_policy&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Minecraft_Wiki:Privacy_policy&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label"><span>Actions</span><a href="#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/index.php" id="searchform">
+					<div id="simpleSearch">
+					<input type="search" name="search" placeholder="Search" title="Search Minecraft Wiki [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="noprint">
+				<div id="p-logo"><a href="/Minecraft_Wiki"  title="Visit the main page"><img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bc/Wiki.png?version=f7d0a27afa6ae010a5a99c80a036a9ee"/></a></div>
+				<!-- <div id="p-portals"> -->
+					<div class="portal" role="navigation" id='p-Minecraft_Wiki' aria-labelledby='p-Minecraft_Wiki-label'>
+	<h3 id='p-Minecraft_Wiki-label'>Minecraft Wiki</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/Minecraft_Wiki" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-portal"><a href="/Minecraft_Wiki:Community_portal" title="About the Minecraft Wiki, what you can do, where to find things">Community portal</a></li>
+			<li id="n-Projects"><a href="/Minecraft_Wiki:Projects" title="View and create projects on the wiki">Projects</a></li>
+			<li id="n-Wiki-rules"><a href="/Minecraft_Wiki:Wiki_rules" title="Rules to follow when editing the wiki">Wiki rules</a></li>
+			<li id="n-Style-guide"><a href="/Minecraft_Wiki:Style_guide" title="Guidelines to format articles, and keep content consistent">Style guide</a></li>
+			<li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-Admin-noticeboard"><a href="/Minecraft_Wiki:Admin_noticeboard" title="Report issues requiring admin attention here">Admin noticeboard</a></li>
+			<li id="n-Directors-page"><a href="/Minecraft_Wiki:Directors" title="Where all admins from all languages come to talk">Directors page</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-Links' aria-labelledby='p-Links-label'>
+	<h3 id='p-Links-label'>Links</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Minecraft-website"><a href="http://www.minecraft.net/" rel="nofollow" target="_self">Minecraft website</a></li>
+			<li id="n-Minecraft-forums"><a href="http://www.minecraftforum.net/" target="_self">Minecraft forums</a></li>
+			<li id="n-Mojang-blog"><a href="http://www.mojang.com/" rel="nofollow" target="_self" title="Mojang's blog">Mojang blog</a></li>
+			<li id="n-Mojang-support"><a href="https://help.mojang.com/" rel="nofollow" target="_self">Mojang support</a></li>
+			<li id="n-Issue-tracker"><a href="https://bugs.mojang.com/" rel="nofollow" target="_self" title="Mojang's issue tracker">Issue tracker</a></li>
+			<li id="n-Twitter-page"><a href="https://twitter.com/Mojang" rel="nofollow" target="_self">Twitter page</a></li>
+			<li id="n-Facebook-page"><a href="http://www.facebook.com/minecraft" rel="nofollow" target="_self" title="Minecraft's Facebook page">Facebook page</a></li>
+			<li id="n-YouTube-channel"><a href="http://www.youtube.com/minecraft" rel="nofollow" target="_self" title="Minecraft's YouTube channel">YouTube channel</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-Useful_pages' aria-labelledby='p-Useful_pages-label'>
+	<h3 id='p-Useful_pages-label'>Useful pages</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Blocks"><a href="/Blocks" title="Detailed information on the various blocks available in Minecraft">Blocks</a></li>
+			<li id="n-Items"><a href="/Items" title="Detailed information on the various items available in Minecraft">Items</a></li>
+			<li id="n-Crafting"><a href="/Crafting" title="Information about crafting">Crafting</a></li>
+			<li id="n-Smelting"><a href="/Smelting">Smelting</a></li>
+			<li id="n-Enchanting"><a href="/Enchanting" title="Information about enchanting">Enchanting</a></li>
+			<li id="n-Brewing"><a href="/Brewing" title="Information about brewing">Brewing</a></li>
+			<li id="n-Mobs"><a href="/Mobs" title="Information about the various friendly and non-friendly creatures found in Minecraft">Mobs</a></li>
+			<li id="n-Trading"><a href="/Trading">Trading</a></li>
+			<li id="n-Redstone-circuit"><a href="/Redstone_circuit" title="Information about Redstone Circuits">Redstone circuit</a></li>
+			<li id="n-Resource-pack"><a href="/Resource_pack" title="Resource packs alter the look and feel of the game">Resource pack</a></li>
+			<li id="n-Mods"><a href="/Mods" title="Various modifications that alter the gameplay">Mods</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-Gamepedia' aria-labelledby='p-Gamepedia-label'>
+	<h3 id='p-Gamepedia-label'>Gamepedia</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Gamepedia-Forums"><a href="http://gamepedia.com/forums" target="_self">Gamepedia Forums</a></li>
+			<li id="n-Help-Wiki"><a href="http://help.gamepedia.com" target="_self">Help Wiki</a></li>
+			<li id="n-Contact-Us"><a href="http://help.gamepedia.com/How_To_Contact_Gamepedia" target="_self">Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+	<h3 id='p-tb-label'>Tools</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Minecraft_Wiki:Privacy_policy" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Minecraft_Wiki:Privacy_policy" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="/index.php?title=Minecraft_Wiki:Privacy_policy&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="/index.php?title=Minecraft_Wiki:Privacy_policy&amp;oldid=406285" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="/index.php?title=Minecraft_Wiki:Privacy_policy&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal" role="navigation" id='p-socialProfiles' aria-labelledby='p-socialProfiles-label'>
+	<h3 id='p-socialProfiles-label'></h3>
+	<div class="body">
+		<div class='socialSidebar'>
+						<script type='text/javascript'>
+							document.getElementById('p-socialProfiles').className = 'portal persistent';
+						</script>
+						<div class='socialLink twitter'><a href="https://twitter.com/CurseGamepedia" target="_blank"><img src="/extensions/Social/images/square_icons/twitter.png" /></a></div><div class='socialLink facebook'><a href="https://www.facebook.com/CurseGamepedia" target="_blank"><img src="/extensions/Social/images/square_icons/facebook.png" /></a></div><div class='socialLink youtube'><a href="https://www.youtube.com/CurseGP" target="_blank"><img src="/extensions/Social/images/square_icons/youtube.png" /></a></div><div class='socialLink googleplus'><a href="https://plus.google.com/115617982346226991528" target="_blank" rel="Publisher"><img src="/extensions/Social/images/square_icons/googleplus.png" /></a></div>
+					</div>	</div>
+</div>
+<div class="portal" role="navigation" id='p-sitePromos' aria-labelledby='p-sitePromos-label'>
+	<h3 id='p-sitePromos-label'></h3>
+	<div class="body">
+		
+						<div class='wikiLinkSidebar'><a href="http://www.gamepedia.com/news/802-celebrate-indie-game-month-2015-at-n4g"><img src="http://media-mercury.cursecdn.com/attachments/4/252/igm-button-gamepedia.png" title="Join N4G.com and Gamepedia in celebrating Indie Developers all month long!"/></a>
+<a href="https://docs.google.com/forms/d/18wneAaRLBVa5zaPMp5quxeHuridiFvtBDxf3AK9uVBg/viewform"><img src="http://media-mercury.cursecdn.com/attachments/4/207/wiki-editor-month-sidebar.png" title="Nominate yourself or another editor to be Gamepedia&#039;s Editor of the Month!"/></a>
+<a href="http://smite.gamepedia.com/"><img src="http://media-mercury.cursecdn.com/attachments/1/702/smite_sidebadge.png" title="SMITE wiki is the #1 source of SMITE information, including Gods, skills, items, and guides."/></a>
+
+						</div>
+							<script type='text/javascript'>
+								document.getElementById('p-sitePromos').className = 'portal persistent';
+							</script>	</div>
+</div>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div id="pageWrapper">
+			<div id="mw-head-base" class="noprint"></div>
+			<!-- content -->
+			<div id="content" itemprop="articleBody" class="mw-body">
+				<a id="top"></a>
+				<div id="mw-js-message" style="display:none;"></div>
+								<!-- sitenotice -->
+				<div id="siteNotice"><div id='notice-ff982dd6db0e9da57ef186db17650ddb' class='globalNotice' data-md5='ff982dd6db0e9da57ef186db17650ddb'><p><br />
+</p>
+<table class="plainlinks" style="margin: auto; border: 1px solid #B38000; border-radius: 5px; -moz-border-radius: 5px; padding: 7px; text-align:center;">
+
+<tr>
+<td> <div class="center"><div class="floatnone"><a href="http://www.gamepedia.com/news/802-celebrate-indie-game-month-2015-at-n4g" target="_blank"><img alt="N4GIndieMonth.png" src="http://hydra-media.cursecdn.com/help.gamepedia.com/d/d5/N4GIndieMonth.png?version=1c1c42d5d8b36b432609c062d334b783" width="530" height="80" /></a></div></div>
+</td></tr></table>
+<p><!-- 
+NewPP limit report
+CPU time usage: 0.044 seconds
+Real time usage: 0.055 seconds
+Preprocessor visited node count: 1/1000000
+Preprocessor generated node count: 4/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+ExtLoops count: 0/100
+-->
+</p><p><!-- Saved in parser cache with key help_gamepedia:pcache:idhash:1409-1!*!*!*!*!2!* and timestamp 20150702160508 and revision id 7372
+</p>
+<pre>-->
+</pre>
+</div>
+</div>
+				<!-- /sitenotice -->
+								<!-- first ads placement -->
+									<div class="atflb">
+						<div id='cdm-zone-01'></div>					</div>
+								<!-- /first ads placement -->
+				<!-- firstHeading -->
+				<h1 id="firstHeading" class="firstHeading">
+					<span itemprop="name" dir="auto">Minecraft Wiki:Privacy policy</span>
+				</h1>
+				<!-- /firstHeading -->
+				<div id="bodyWrapper">
+					<!-- bodyContent -->
+					<div id="bodyContent">
+												<!-- 300x250 Ad block -->
+						<div class="atfmrec">
+							<div id='cdm-zone-02'></div>						</div>
+						<!-- End 300x250 Ad block -->
+												<!-- /sidebar -->
+												<div id="siteSub">From Minecraft Wiki</div>
+												<div id="contentSub"></div>
+																		<div id="jump-to-nav" class="mw-jump">
+							Jump to:							<a href="#mw-navigation">navigation</a>, 							<a href="#p-search">search</a>
+						</div>
+						<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>CURSE, INC. &amp; CURSE, LTD. PRIVACY POLICY</b></p>
+<p><i>Last updated October 2, 2012</i></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Our_Privacy_Commitment"><span class="tocnumber">1</span> <span class="toctext">Our Privacy Commitment</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#What_information_do_we_collect_about_you_and_how_do_we_use_it.3F"><span class="tocnumber">2</span> <span class="toctext">What information do we collect about you and how do we use it?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Types_of_Information_We_Collect"><span class="tocnumber">2.1</span> <span class="toctext">Types of Information We Collect</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#How_We_Use_Your_Personal_Information"><span class="tocnumber">2.2</span> <span class="toctext">How We Use Your Personal Information</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Cookies"><span class="tocnumber">2.3</span> <span class="toctext">Cookies</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Log_Information"><span class="tocnumber">2.4</span> <span class="toctext">Log Information</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Children.E2.80.99s_Privacy"><span class="tocnumber">2.5</span> <span class="toctext">Children’s Privacy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Will_we_share_your_personal_information_with_third_parties.3F"><span class="tocnumber">3</span> <span class="toctext">Will we share your personal information with third parties?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Sharing_of_Information"><span class="tocnumber">3.1</span> <span class="toctext">Sharing of Information</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Additional_Information_You_Should_Know_About_Third_Parties"><span class="tocnumber">3.2</span> <span class="toctext">Additional Information You Should Know About Third Parties</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#What_choices_do_you_have_about_the_collection_and_use_of_your_personal_information.3F"><span class="tocnumber">4</span> <span class="toctext">What choices do you have about the collection and use of your personal information?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Control_of_Your_Information"><span class="tocnumber">4.1</span> <span class="toctext">Control of Your Information</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Opting_Out_of_Receiving_Communications_from_Us"><span class="tocnumber">4.2</span> <span class="toctext">Opting Out of Receiving Communications from Us</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Mediation"><span class="tocnumber">4.3</span> <span class="toctext">Mediation</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Dispute_Resolution_for_Residents_of_the_European_Union"><span class="tocnumber">4.4</span> <span class="toctext">Dispute Resolution for Residents of the European Union</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#What_security_measures_do_we_take_to_safeguard_your_personal_information.3F"><span class="tocnumber">5</span> <span class="toctext">What security measures do we take to safeguard your personal information?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#European_Union_and_Switzerland_Directive_on_Data_Protection_-_Safe_Harbor"><span class="tocnumber">5.1</span> <span class="toctext">European Union and Switzerland Directive on Data Protection - Safe Harbor</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Notification_of_Changes"><span class="tocnumber">5.2</span> <span class="toctext">Notification of Changes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Questions.3F_Contact_Us"><span class="tocnumber">6</span> <span class="toctext">Questions? Contact Us</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Our_Privacy_Commitment">Our Privacy Commitment</span></h2>
+<p>Welcome to Curse! Curse, Inc. &amp; Curse, Ltd. (“Curse,” “we,” “us” or “our”) is committed to respecting the privacy rights and concerns of all users of the Curse www.curse.com websites where this Privacy Policy is posted (the “Site(s)”) (we refer to the Site(s), the services and software made available through the Site(s), collectively, as the “Curse Features”). As such, we have established and implemented this Privacy Policy to inform visitors to the Site(s) and users of the Curse Features how we use and protect the information we collect through the Site(s). By visiting the Site(s) or using any of the Curse Features, you consent to Curse’ collection, use, storage, deletion and disclosure of information relating to you as set forth in this Privacy Policy. This Privacy Policy is effective as of the date set forth above and is only applicable to the Site(s) and not to any other website that you may be able to access from the Site(s) which may have its own data collection and use practices and policies.</p>
+<p><br /></p>
+<h2><span class="mw-headline" id="What_information_do_we_collect_about_you_and_how_do_we_use_it.3F">What information do we collect about you and how do we use it?</span></h2>
+<h3><span class="mw-headline" id="Types_of_Information_We_Collect">Types of Information We Collect</span></h3>
+<p>Personal information means information that can be used to identify and contact you. You do not need to submit personal information to access certain areas of the Site(s), but if you do not want to disclose certain personal information to us, you will not be able to access certain aspects of the Curse Features.</p>
+<p>We collect personal information when you create an account through the Curse Features; subscribe to our newsletter; participate in chat rooms, forums, polls, surveys, and questionnaires; participate in contests, sweepstakes, other promotions, or opt into third party offers and/or newsletters; purchase a product through the Curse Features; register a product that you have purchased; or receive customer or technical support.</p>
+<p>To create an account for the Curse Features, we require you to provide your name, email address and country in which you reside. You will also need to create a screen name. When you are purchasing premium services or products through the Curse Features you may have to submit personal information to our billing partner, PayPal, including your email address, billing address and additional billing information depending on your preferred method of payment through PayPal, such as your credit card number. When you enter a contest or sweepstakes with Curse, in addition to your screen name, name and email address, we will ask for your mailing address in case we have to mail you a prize, and may ask you to opt into receiving a third party’s offers and/or newsletter.</p>
+<p>Additionally, we may also collect other types of information (known as demographic information) such as your gender, hobbies, occupation, platform preferences, and other game ownership information. This demographic information may be associated with your personal information.</p>
+<h3><span class="mw-headline" id="How_We_Use_Your_Personal_Information">How We Use Your Personal Information</span></h3>
+<p>The personal information you provide to us will allow us to fulfill your product or service order; alert you of new products or services, features, or enhancements; handle/route your customer service questions or issues; and/or notify you of upgrade opportunities, contests, promotions, or special events and offers. We also use your e-mail address to send you messages about the Curse Features and other general announcements. We keep track of your interactions with us, including but not limited to your activity within the Curse Features. We may use personal information that you provide to us to send messages to you in response to your request to perform an activity in connection with your use of any of the Curse Features. We may also use your personal information to contact you when necessary.</p>
+<h3><span class="mw-headline" id="Cookies">Cookies</span></h3>
+<p>“Cookies” are small bits of electronic information that a website sends to a visitor’s browser and are stored on the visitor’s hard drive. Like many websites, we employ cookies in certain areas of the Site(s) to allow us to provide information which is targeted to your interests and to make your online experience more convenient. For example, when you return to one of our websites after logging in, cookies provide information to the website so that the website will remember who you are. Should you disable cookies in your browser, you will have to provide your screen name and password each time you log in. Additionally, advertisements that are managed by third parties which may appear on the Site(s) use cookies. Advertisers use cookies to collect non-personal information when you click on or move your cursor over one of their banner advertisements. You may not realize this information is being collected. Advertisers use this information to monitor the performance of their advertisements. In some cases, we may have access to information from cookies used by these advertisers on the Site(s) and this information may permit us to identify other sites that you have visited that are also associated such advertisers.</p>
+<h3><span class="mw-headline" id="Log_Information">Log Information</span></h3>
+<p>Our servers automatically record information that your browser sends whenever you visit the Site(s). Additionally, some of the Curse Features may collect information regarding your computer system. This information includes your Internet Protocol address, your browser type and version, the search engine you used to find the Curse Features, if any, the operating system your computer uses, the type of computer hardware you have (such as the amount of RAM, the type of GPU or type of CPU in your computer) which Curse Features you use and when and how long you use them. We use this information to monitor and analyze how users use the Curse Features, to provide customer service and to maintain and improve the Curse Features.</p>
+<h3><span class="mw-headline" id="Children.E2.80.99s_Privacy">Children’s Privacy</span></h3>
+<p>We do not knowingly collect personal information from children under 13. We take children’s privacy seriously, and encourage parents to play an active role in their children’s online experience at all times.</p>
+<h2><span class="mw-headline" id="Will_we_share_your_personal_information_with_third_parties.3F">Will we share your personal information with third parties?</span></h2>
+<h3><span class="mw-headline" id="Sharing_of_Information">Sharing of Information</span></h3>
+<p>We may use your personal information to provide analyses of our users in the aggregate to prospective partners, advertisers and other third parties. We may also disclose and otherwise use, on an anonymous basis, affiliation, position, interests and other non-personal information about customers.</p>
+<p>In addition, we will share the personal information we collect from you under the following circumstances:</p>
+<ul>
+<li>Protection of rights. We will share personal information if we have a good faith belief that (i) access, use, preservation or disclosure of such information is reasonably necessary to satisfy any applicable law, regulation, legal process, such as a court order or subpoena, or a request by law enforcement or governmental authorities, (ii) such action is appropriate to enforce the Terms of Service for the Curse Features, including any investigation of potential violations thereof, (iii) such action is necessary to detect, prevent, or otherwise address fraud, security or technical issues associated with the Curse Features, or (iv) such action is appropriate to protect the rights, property or safety of Curse, its employees, users of the Curse Features or others.</li>
+<li>Asset transfers. If we become involved in a merger, acquisition or other transaction involving the sale of some or all of Curse’s assets, user information, including personal information collected from you through your use of the Curse Features, could be included in the transferred assets. Should such an event occur, we will use reasonable means to notify you, either through email and/or a prominent notice on the Site(s).</li>
+<li>Service Providers. We may share your personal information with service providers that we engage for the purpose of processing information on our and your behalf. For example, have partnered with other companies to host and manage contests, fulfill product orders and prizes, and process payments. Additionally, we may partner with other companies to process consumer surveys, or to process, analyze, and/or store data. While providing services for us, these companies may access your personal information. To the extent applicable, we require these entities to comply with this Privacy Policy and appropriate confidentiality and security measures.</li>
+<li>Third Party Offers. We may also share your personal information with third party partners when you have opted into receiving third party offers and/or newsletters on our Site(s). We will not disclose your personal information to third parties for marketing purposes when you have not opted into receiving or have opted out of receiving such third party offers and/or newsletters through the Site(s). You may request that we stop sharing your information with a third party or third parties for direct marketing purposes after you have opted into such disclosure through the Site(s) by emailing us at <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="0a797f7a7a65787e4a697f78796f24696567">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script> and informing us of your desire for us to stop providing your information to a specific third party or a list of specific third parties. Curse’s disclosure to third party partners may be made for cross promotional purposes, but Curse will not receive compensation as the primary consideration for such disclosure.</li>
+</ul>
+<h3><span class="mw-headline" id="Additional_Information_You_Should_Know_About_Third_Parties">Additional Information You Should Know About Third Parties</span></h3>
+<p>This Privacy Policy does not cover the information practices of third party websites linked to the Site(s) or third party offer and/or newsletter opt-ins provided through the Site(s). Although we encourage such third parties to adopt and follow their own privacy policies, we are not responsible for their collection and use of your personal information. You should refer to the privacy policies and statements of other websites or contact the respective webmasters of those websites to obtain information regarding their information collection, use and disclosure policies.</p>
+<p>When you have clicked on an advertisement or third party logo displayed on our Site(s) which links you to a different website, our Privacy Policy no longer applies and you must read the privacy policy of the advertiser to see how your personal information will be handled on their website.</p>
+<p>The Curse Features may also have message boards, forums and/or chat areas, where users can exchange ideas and communicate with one another. When you post to a message board, forum or chat area, please be aware that the information you post is made publicly available on-line and you do so at your own risk.</p>
+<h2><span class="mw-headline" id="What_choices_do_you_have_about_the_collection_and_use_of_your_personal_information.3F">What choices do you have about the collection and use of your personal information?</span></h2>
+<h3><span class="mw-headline" id="Control_of_Your_Information">Control of Your Information</span></h3>
+<p>We may use third-party advertising companies, such as Yahoo!, Google, OpenX, Lijit to serve ads when you visit our website. These companies may use information about your interests in order to provide advertisements about goods and services of interest to you. If you would like more information about this practice and to know your choices about not having this information used by these companies, see the Digital Advertising Alliance’s or Network Advertising Initiative’s website.</p>
+<p>You may update or delete your personal information or modify your account preferences for the Curse Features by accessing the “My Account” area of the Curse Features or sending us an email to <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="b1c2c4c1c1dec3c5f1d2c4c3c2d49fd2dedc">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script> requesting us to update or delete your personal information. Please note that when you delete your account, we may retain your account information for a reasonable period of time afterward for the purpose of internal account management and fraud prevention activities.</p>
+<h3><span class="mw-headline" id="Opting_Out_of_Receiving_Communications_from_Us">Opting Out of Receiving Communications from Us</span></h3>
+<p>If you no longer want to receive our newsletter, e-mails or other announcements, you may unsubscribe by selecting “unsubscribe” in your account, writing to us at <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="7a1915140e1b190e3a190f08091f54191517">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script> or replying to the unsubscribe link at the bottom of our e-mails. Please note that you cannot unsubscribe from certain correspondence from us, including messages relating to your account transactions. If you wish to unsubscribe from any newsletters, offers, e-mails or other announcements from our third party advertising partners that you have opted into through the Site(s), you will need to contact such third party advertising partner directly through their independent website(s).</p>
+<h3><span class="mw-headline" id="Mediation">Mediation</span></h3>
+<p>If you are a resident of a country outside of the European Union, you also agree that, in the event any dispute or claim arises out of or relating to this Privacy Policy that you and Curse will attempt in good faith to negotiate a written resolution of the matter directly between the parties. You agree that if the matter remains unresolved for forty-five (45) days after notification (via certified mail or personal delivery) that a dispute exists, all parties shall join in mediation services in San Francisco, California with a mutually agreed mediator in an attempt to resolve the dispute. Should you file any arbitration claims, or any administrative or legal actions without first having attempted to resolve the matter by mediation, then you agree that you will not be entitled to recover attorney’s fees, even if you would otherwise be entitled to them.</p>
+<h3><span class="mw-headline" id="Dispute_Resolution_for_Residents_of_the_European_Union">Dispute Resolution for Residents of the European Union</span></h3>
+<p>If you are a resident of the European Union, in the event that you have any dispute or claim arising out of or relating to this Privacy Policy, you may report your claim to the European Union Data Protection Authorities located in your jurisdiction.</p>
+<h2><span class="mw-headline" id="What_security_measures_do_we_take_to_safeguard_your_personal_information.3F">What security measures do we take to safeguard your personal information?</span></h2>
+<p>The personal information that you provide to us is stored on servers, which are located in secured facilities with restricted access, and protected by protocols and procedures designed to ensure the security of such information. In addition, we restrict access to personal information to Curse employees, independent contractors and agents who need to know this information in order to develop, operate and maintain the Curse Features. All Curse personnel who have access to this information are trained in the maintenance and security of such information. However, no server, computer or communications network or system, or data transmission over the Internet can be guaranteed to be 100% secure. As a result, while we strive to protect user information, we cannot ensure or warrant the security of any information you transmit to us or through the use of any of the Curse Features and you acknowledge and agree that you provide such information and engage in such transmissions at your own risk. Once we receive a transmission from you, we will endeavor to maintain its security on our systems.</p>
+<h3><span class="mw-headline" id="European_Union_and_Switzerland_Directive_on_Data_Protection_-_Safe_Harbor">European Union and Switzerland Directive on Data Protection - Safe Harbor</span></h3>
+<p>Curse complies with the U.S.-EU Safe Harbor Framework and the U.S.-Swiss Safe Harbor Framework as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal information from European Union member countries and Switzerland. Curse has certified that it adheres to the Safe Harbor Privacy Principles of notice, choice, onward transfer, security, data integrity, access, and enforcement. To learn more about the Safe Harbor program, and to view Curse’s certification, please visit <a rel="nofollow" target="_self" class="external free" href="http://www.export.gov/safeharbor/">http://www.export.gov/safeharbor/</a>.</p>
+<h3><span class="mw-headline" id="Notification_of_Changes">Notification of Changes</span></h3>
+<p>This Privacy Policy may change from time to time and we will post all changes on this page.</p>
+<h2><span class="mw-headline" id="Questions.3F_Contact_Us">Questions? Contact Us</span></h2>
+<p>If you have any questions about our privacy practices or this Privacy Policy, please contact us by email at <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="a3c0cccdd7c2c0d7e3c0d6d1d0c68dc0ccce8d">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></p>
+
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.030 seconds
+Real time usage: 0.042 seconds
+Preprocessor visited node count: 75/1000000
+Preprocessor generated node count: 80/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+ExtLoops count: 0/100
+-->
+
+<!-- Saved in parser cache with key minecraft_gamepedia:pcache:idhash:2538-0!*!*!!en!*!* and timestamp 20150702193753 and revision id 406285
+ -->
+</div>												<div class="printfooter">
+						Retrieved from "<a href="http://minecraft.gamepedia.com/index.php?title=Minecraft_Wiki:Privacy_policy&amp;oldid=406285">http://minecraft.gamepedia.com/index.php?title=Minecraft_Wiki:Privacy_policy&amp;oldid=406285</a>"						</div>
+																		<div id='catlinks' class='catlinks catlinks-allhidden'></div>																		<div class="visualClear"></div>
+											</div>
+					<!-- /bodyContent -->
+				</div>
+				<!-- second ad placement -->
+								<div class="btflb">
+					<div id='cdm-zone-04'></div>				</div>
+								<!-- /second ad placement -->
+			</div>
+			<!-- /content -->
+			<div id="footer" role="contentinfo">
+									<ul id="footer-info">
+													<li id="footer-info-lastmod"> This page was last modified on <time itemprop="datePublished" datetime="2012-28-11T02:08">28 November 2012, at 02:08</time>.</li>
+													<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a> unless otherwise noted.  Minecraft content and materials are trademarks and copyrights of Mojang and its licensors.  All rights reserved.<br />
+This site is a part of Curse, Inc. and is not affiliated with Mojang.</li>
+											</ul>
+									<ul id="footer-places">
+													<li id="footer-places-privacy"><a href="/Minecraft_Wiki:Privacy_policy" title="Minecraft Wiki:Privacy policy">Privacy policy</a></li>
+													<li id="footer-places-about"><a href="/Minecraft_Wiki:About" title="Minecraft Wiki:About">About Minecraft Wiki</a></li>
+													<li id="footer-places-disclaimer"><a href="/Minecraft_Wiki:General_disclaimer" title="Minecraft Wiki:General disclaimer">Disclaimers</a></li>
+													<li id="footer-places-mobileview"><a href="//minecraft.gamepedia.com/index.php?title=Minecraft_Wiki:Privacy_policy&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+											</ul>
+													<ul id="footer-icons" class="noprint">
+						<li id="footer-copyrightico">
+							<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" alt="CC BY-NC-SA 3.0" width="88" height="31" /></a>
+						</li>
+						<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+							<a href="http://help.gamepedia.com/What_is_Hydra"><img src="/extensions/Curse/Icons/poweredbyhydra.png" alt="Powered by Hydra" width="88" height="31" /></a>
+						</li>
+					</ul>
+								<div style="clear:both"></div>
+			</div>
+		</div>
+		<div id="footer-push"></div>
+	</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.rsspie","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.Social","ext.Drafts","ext.vector.collapsibleNav","ext.curse.twitter","mw.MwEmbedSupport.style"],null,true);
+}</script>
+<script src="//minecraft.gamepedia.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=hydra&amp;*"></script>
+<footer id="footer" role="complimentary" >
+	<div class="footer-links">
+				<a href="http://www.gamepedia.com" class="curse">Gamepedia powered by Curse</a>
+		<ul class="social">
+			<li><a href="https://www.facebook.com/CurseGamepedia" class="fb">Facebook</a></li>
+			<li><a href="https://twitter.com/CurseGamepedia" class="tw">Twitter</a></li>
+			<li><a href="https://www.youtube.com/CurseGP" class="yt">Youtube</a></li>
+			<li><a href="http://www.curse.com/newsletter" class="nl">Newsletter</a></li>
+		</ul>
+					<ul class="you">
+									<li><a href="/index.php?title=Special:UserLogin&returnto=Minecraft+Wiki%3APrivacy+policy" id="login-link" class="sign-in">Sign In</a></li>
+									<li><a href="/index.php?title=Special:UserLogin&returnto=Minecraft+Wiki%3APrivacy+policy&type=signup" class="register" id="register-link">Register</a></li>
+										<li><a href="http://www.curseinc.com/careers" class="careers">Careers</a></li>
+			<li><a href="http://support.curse.com" class="help">Help</a></li>
+					</ul>
+			<ul class="more">
+					<li><a href="http://www.curseinc.com/" class="about">About Curse</a></li>
+			<li><a href="http://www.curseinc.com/audience" class="advertise">Advertise</a></li>
+			<li><a href="http://www.curse.com/terms" class="tos">Terms of Service</a></li>
+			<li><a href="http://www.curse.com/privacy" class="privacy-policy">Privacy Policy</a></li>
+		</ul>
+		<span class="copyright">Copyright 2005-2015, Curse Inc.</span>
+	</div>
+			<div class="ad-placement ad-main-med-rect-footer">
+			<div id='cdm-zone-03'></div>		</div>
+	</footer>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(
+        ['_setAccount', 'UA-1045810-36'],
+        ['_setDomainName', 'gamepedia.com'],
+        ['_addIgnoredRef', 'gamepedia.com'],
+        ['_trackPageview'],
+        ['b._setAccount', 'UA-1045810-22'],
+        ['b._setDomainName', 'gamepedia.com'],
+        ['b._addIgnoredRef', 'gamepedia.com'],
+        ['b._trackPageview'],
+        ['c._setAccount', 'UA-35871056-4'],
+        ['c._setDomainName', 'gamepedia.com'],
+        ['c._addIgnoredRef', 'gamepedia.com'],
+        ['c._trackPageview']
+);
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- End Google Analytics -->
+<!-- Quantcast -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+(function() {
+   var elem = document.createElement('script');
+   elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+   elem.async = true;
+   elem.type = "text/javascript";
+   var scpt = document.getElementsByTagName('script')[0];
+   scpt.parentNode.insertBefore(elem, scpt);
+})();
+_qevents.push({qacct: "p-d2K9aGgyU-tIA"});
+</script>
+<noscript>
+   <div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-d2K9aGgyU-tIA.gif" border="0" height="1" width="1" alt="Quantcast" /></div>
+</noscript>
+<!-- End Quantcast -->
+
+<!-- Begin comScore -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6035118" });
+(function() {
+   var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+   s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+   el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+   <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035118&amp;cv=2.0&amp;cj=1" />
+</noscript>
+<!-- End comScore -->
+
+<!-- Nielsen Online SiteCensus -->
+<script type="text/javascript">
+(function () {
+   var d = new Image(1, 1);
+   d.onerror = d.onload = function () {
+       d.onerror = d.onload = null;
+   };
+   d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+})();
+</script>
+<noscript>
+   <div><img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div>
+</noscript>
+<!-- End Nielsen Online SiteCensus -->
+<!-- Begin comScore -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6035118" });
+(function() {
+	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035118&amp;cv=2.0&amp;cj=1" />
+</noscript>
+<!-- End comScore -->
+
+<!-- Begin Nielsen -->
+<script type="text/javascript">
+(function () {
+	var d = new Image(1, 1);
+	d.onerror = d.onload = function () {
+		d.onerror = d.onload = null;
+	};
+	d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+})();
+</script>
+<noscript>
+<div><img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div>
+</noscript>
+<!-- End Nielsen -->
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":300});
+}</script>
+		<!-- Lotame -->
+<script src="http://tags.crwdcntrl.net/c/3613/cc.js?ns=_cc3613" id="LOTCC_3613"></script>
+<script>
+_cc3613.bcp();
+</script>
+<img src="http://bcp.crwdcntrl.net/5/c=3613" width="1" height="1"/>
+<!-- End Lotame -->
+
+<!--Adblock Check--> 
+<script type="text/javascript" src="http://media.curse.com/Content/Ads/JS/BSAds3.js"></script> <script type="text/javascript"> jQuery(document).ready(checkAds()); function checkAds(){if (document.getElementById('adsense')!=undefined){document.write("<script>_gaq.push(['_trackEvent', 'Adblock', 'Unblocked', 'false',,true]);</sc" + "ript>");}else{document.write("<script>_gaq.push(['_trackEvent', 'Adblock', 'Blocked', 'true',,true]);</sc" + "ript>");}} </script>
+ <!--End Adblock Check-->
+<!-- Start PubMP -->
+<script type="text/javascript" src="http://ads.pubmatic.com/AdServer/js/showad.js#PIX&ptask=DSP&SPug=1"></script> 
+<!-- End PubMP -->
+
+<div id='cdm-zone-end'></div>			<script src="http://media-titanium.cursecdn.com/shared-assets/current/anchor.js?id=2757821"></script>
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"75f4858b7a","applicationID":"1909498","transactionName":"YlVXbREHWksEUkVdCVsfYEsKSV1WAVRJGhZdQA==","queueTime":0,"applicationTime":347,"ttGuid":"","agentToken":"","atts":"ThJUG1kdSUU=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>

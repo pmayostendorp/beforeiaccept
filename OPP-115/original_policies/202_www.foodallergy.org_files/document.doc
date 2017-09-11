@@ -1,0 +1,605 @@
+/**********************************************
+ Blackbaud Design Custom JavaScript
+***********************************************
+ Site: 		FARE
+ Author: 	Pat Eason
+ Created: 	2.6.13
+ BBNC: 		6.51
+
+*********** CHANGE LOG ************************
+
+**********************************************/
+//Replication of donation form customization for on-load function
+$('document').ready(function(){
+	//Check for hashURL and choose approriate tab, then set counter to prevent that from happening again
+	browserCount = 0;
+	
+    if(window.location.hash) {
+	      hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+	      // hash found
+	  } else {
+	      // No hash found
+	  }
+});
+
+BBI = {
+	Debug: {
+		_version: 1.1,
+		_updated: '02/13/2013',
+		isV5: !! window.Sys,
+		isV4: !! (window.BBProcMsg && !window.Sys),
+		isEditView: !! window.location.href.match('pagedesign'),
+		hasPRM: !this.isV5
+	},
+	FARE: {
+		pageLoad: function() {
+			BBI.FARE.fixPositioning();
+			BBI.FARE.checkEditView();
+			BBI.FARE.showPartTitle();
+			BBI.FARE.megaMenu();
+			BBI.FARE.resizeIframe();
+			BBI.FARE.accordionSidebar();
+			BBI.FARE.selectorListFF();
+			BBI.FARE.iconSlider();
+			BBI.FARE.homeSlideshow();
+			BBI.FARE.supportGroups();
+			BBI.FARE.donationForm();
+			BBI.FARE.membershipForm();
+		},
+		
+		donationForm: function() {
+			if($('#donationTabs').length > 0){
+				jQuery.fn.reverse = [].reverse;
+				//Reset Donation Form and reconstruct it on every postback
+				$('#donationContainer').remove();
+				$('<div id="donationContainer"><div class="gutter"></div></div>').insertAfter('#formSubtitle');
+				
+				//Wrap form portions in divs and app-prepend them to the new container
+				$('.DonationValidationSummary').prependTo('#donationContainer .gutter');
+				$('[id*=_tblAmount]').appendTo('#donationContainer .gutter').wrap('<div id="payAmount" />');
+				$('<p id="amountLabel">Your Gift</p>').prependTo('#payAmount');
+				$('.DonationCaptureFormTable').has('[id*=_lblBilling]').appendTo('#donationContainer .gutter').wrap('<div id="personInfo" />');
+				$('<p id="personLabel">Your Information</p>').prependTo('#personInfo');
+				$('[id*=_tbdyPaymentInfo]').appendTo('#donationContainer .gutter').wrap('<div id="payInfo" />');
+				$('#payInfo tr[id*=_trPaymentOption]').remove();
+				$('<div id="tributeInfo" style="display:none;"><div id="tributeChoice"><div class="tributeCont"><input type="radio" name="tributeChoice" value="honorOf"><p>I would like to make this gift in honor of</p></div><div class="tributeCont"><input type="radio" name="tributeChoice" value="tributeOf"><p>I would like to make this gift in memory of</p></div><div class="tribtueCont"><div class="tributeAddress"><p>First Name: </p><input type="text" name="firstName"></div><div class="tributeAddress"><p>Last Name: </p><input type="text" name="lastName"></div><div class="tributeAddress"><p>Address: </p><input type="text" name="addressStreet"></div><div class="tributeAddress"><p>City: </p><input type="text" name="addressCity"></div><div class="tributeAddress"><p>State: </p><input type="text" name="addressState"></div><div class="tributeAddress"><p>ZIP: </p><input type="text" name="addressZIP"></div></div></div></div>').insertBefore('#payInfo');
+				$('<p id="tributeLabel">Tribute Information</p>').prependTo('#tributeInfo');
+				$('<p id="personLabel">Payment Information</p>').prependTo('#payInfo');
+				$('<div id="paySubmit"></div>').insertAfter('#payInfo');
+				$('.DonationSubmitButton').appendTo('#paySubmit');
+				$('td:empty').remove();
+				$('[id*=_lblSymbol]').text('Other').addClass('otherLabel');
+				$('<span class="otherDollar">$</span>').insertBefore('[id*=_txtAmount]');
+				
+				
+				//Strip cents from dollar values
+				$('#payAmount label').remove();
+				$('#payAmount .vaBottom span').each(function(){
+				    var price = $(this).text();
+				    values=price.split('.');
+				    price = values[0];
+				    $(this).text(price);
+				});
+				
+				//Hide and show the tab-specific prices
+				if($('.oneTab.active').length > 0){
+				    $('#payAmount tr').hide();
+				    //Sort prices in reverse
+				    $('#payAmount > table tr').each(function() {
+					    $(this).prependTo(this.parentNode);
+					});
+				    //One-time gift specific prices
+				    $('#payAmount tr:contains($1,000)').show();
+				    $('#payAmount tr:contains($500)').show();
+				    $('#payAmount tr:contains($100)').show();
+				    $('#payAmount tr:contains($50)').show();
+				    $('#payAmount tr:contains($25)').show();
+				    $('#payAmount [id*=_trOther]').appendTo('[id*=_tblAmount]').show();
+				    $('#payAmount [id*=_trOther] tr').show();
+				    //Change pricing label
+				    $('#amountLabel').text('Your Gift');
+				    $('#tributeInfo').hide();
+				}
+				if($('.recurringTab.active').length > 0){
+				    $('#payAmount tr').hide();
+				    //Sort prices in reverse
+				    $('#payAmount > table tr').each(function() {
+					    $(this).prependTo(this.parentNode);
+					});
+				    //Recurring gift specific prices
+				    $('#payAmount tr:contains($15)').show();
+				    $('#payAmount tr:contains($30)').show();
+				    $('#payAmount tr:contains($50)').show();
+				    $('#payAmount tr:contains($100)').show();
+				    $('#payAmount [id*=_trOther]').appendTo('[id*=_tblAmount]').show();
+				    $('#payAmount [id*=_trOther] tr').show();
+				    //Change pricing label
+				    $('#amountLabel').text('Your Gift Per Month');
+				    $('#tributeInfo').hide();
+				}
+				if($('.tributeTab.active').length > 0){
+				    $('#payAmount tr').hide();
+				    //Sort prices in reverse
+				    $('#payAmount > table tr').each(function() {
+					    $(this).prependTo(this.parentNode);
+					});
+				    //One-time gift specific prices
+				    $('#payAmount tr:contains($1,000)').show();
+				    $('#payAmount tr:contains($500)').show();
+				    $('#payAmount tr:contains($100)').show();
+				    $('#payAmount tr:contains($50)').show();
+				    $('#payAmount tr:contains($25)').show();
+				    $('#payAmount [id*=_trOther]').appendTo('[id*=_tblAmount]').show();
+				    $('#payAmount [id*=_trOther] tr').show();
+				    //Change pricing label
+				    $('#amountLabel').text('Your Gift');
+				    $('#tributeInfo').show();
+				    
+				}
+				
+				//Tab click functions
+				$('.oneTab').click(function(){
+				    $('#donationTabs td').each(function(){
+				        $(this).removeClass('active')
+				    });
+				    $(this).addClass('active');
+				    $('input[value=OneTime]').click();
+				    $('#tributeInfo').hide();
+				});
+				$('.recurringTab').click(function(){
+				    $('#donationTabs td').each(function(){
+				        $(this).removeClass('active')
+				    });
+				    $(this).addClass('active');
+				    $('input[value=Recurring]').click();
+				    $('#tributeInfo').hide();
+				});
+				$('.tributeTab').click(function(){
+				    $('#donationTabs td').each(function(){
+				        $(this).removeClass('active')
+				    });
+				    $(this).addClass('active');
+				    $('input[value=OneTime]').click();
+				    $('#tributeInfo').show();
+				});
+				
+				//Tribute functions to pull input from virtual fields to actual fields
+				$('input[name=tributeChoice]').change(function(){
+				    if($('input[value=honorOf]').is(':checked')){
+				        $('input[value=Honor]').attr('checked','true');
+				        $('input[value="In Memory"]').removeAttr('checked');
+				    }else if($('input[value=tributeOf]').is(':checked')){
+				        $('input[value=Honor]').removeAttr('checked');
+				        $('input[value="In Memory"]').attr('checked','true');
+				    }
+				});
+				
+				//Tribute name information
+				$('.tributeAddress input').change(function(){
+					var fName = $('.tributeAddress input[name="firstName"]').val();
+					var lName = $('.tributeAddress input[name="lastName"]').val();
+					var aStreet = $('.tributeAddress input[name="addressStreet"]').val();
+					var aCity = $('.tributeAddress input[name="addressCity"]').val();
+					var aState = $('.tributeAddress input[name="addressState"]').val();
+					var aZIP = $('.tributeAddress input[name="addressZIP"]').val();
+					
+					$('label:contains(Tribute Name:)').parent().next().children('input').val(fName+' '+lName);
+					
+					$('label:contains(Send to Address:)').parent().next().children('input').val(aStreet+' '+aCity+', '+aState+' '+aZIP);
+				});
+				
+				if(window.location.hash){
+					if(browserCount == 0){
+						$('td.'+hash).click();
+						browserCount = 1;
+					}
+				}
+			}
+						
+		},
+		supportGroups: function() {
+			//Check if supportGroups table exists, and create dropdown if it does
+			if ($('#supportGroups').length > 0) {
+				$('<div id="supportFields"><p>Country: </p><div id="countryWrap" class="selectWrap"><select name="supportCountry" id="supportCountry"></select></div><input type="button" id="supportGO" value="SEARCH"></div>').insertAfter('#supportGroups');
+			}
+			$('#supportGroups tr').each(function() {
+				var country = $(this).children('td:eq(0)').text();
+				var state = $(this).children('td:eq(1)').text();
+				var description = $(this).children('td:eq(2)').html();
+				$('<option>' + country + '</option>').appendTo('#supportCountry');
+			});
+			
+			//Remove duplicates in country dropdown
+			var usedNames = {};
+			$("select[id='supportCountry'] > option").each(function() {
+				if (usedNames[this.text]) {
+					$(this).remove();
+				} else {
+					usedNames[this.text] = this.value;
+				}
+			});
+			
+			//Create initial State dropdown
+			var currentCountry = $("select[id='supportCountry'] > option:selected").text();
+			$('<div id="stateWrap"><p>State: </p><div class="selectWrap"><select name="supportState" id="supportState"></select></div></div>').insertAfter('#countryWrap');
+			$('#supportGroups tr').each(function() {
+					var country = $(this).children('td:eq(0)').text();
+					var state = $(this).children('td:eq(1)').text();
+					var description = $(this).children('td:eq(2)').html();
+					if (country == currentCountry) {
+						if (state.length > 0) {
+							$('<option>' + state + '</option>').appendTo('#supportState');
+						}
+					}
+				});
+				if ($('#supportState option').length < 2) {
+					$('#stateWrap').remove();
+				}
+				
+			//Create state dropdown if states are available when country changes
+			$('#supportCountry').change(function() {
+				var currentCountry = $("select[id='supportCountry'] > option:selected").text();
+				if ($('#supportState').length > 0) {
+					$('#stateWrap').remove();
+				}
+				if ($('#supportDescription').length > 0) {
+					$('#supportDescription').remove();
+				}
+				$('<div id="stateWrap"><p>State: </p><div class="selectWrap"><select name="supportState" id="supportState"></select></div></div>').insertAfter('#countryWrap');
+				$('#supportGroups tr').each(function() {
+					var country = $(this).children('td:eq(0)').text();
+					var state = $(this).children('td:eq(1)').text();
+					var description = $(this).children('td:eq(2)').html();
+					if (country == currentCountry) {
+						if (state.length > 0) {
+							$('<option>' + state + '</option>').appendTo('#supportState');
+						}
+					}
+				});
+				//Remove state dropdown if it is empty
+				if ($('#supportState option').length < 2) {
+					$('#stateWrap').remove();
+				}
+			});
+			//Show state data from table in new div if SEARCH is clicked
+				$('#supportGO').click(function() {
+					if ($('#supportDescription').length > 0) {
+						$('#supportDescription').remove();
+					}
+					if($('#supportState').length > 0){
+						var currentState = $('#supportState option:selected').text();
+						$('#supportGroups tr').each(function() {
+							var state = $(this).children('td:eq(1)').text();
+							var description = $(this).children('td:eq(2)').html();
+							if (state == currentState) {
+								if (description.length > 0) {
+									$('<div id="supportDescription">' + description + '</div>').insertAfter('#supportFields');
+								}
+							}
+						});
+					}else{
+						var currentCountry = $('#supportCountry option:selected').text();
+						$('#supportGroups tr').each(function() {
+							var country = $(this).children('td:eq(0)').text();
+							var description = $(this).children('td:eq(2)').html();
+							if (country == currentCountry) {
+								if (description.length > 0) {
+									$('<div id="supportDescription">' + description + '</div>').insertAfter('#supportFields');
+								}
+							}
+						});
+					}
+				});
+		},
+		homeSlideshow: function() {
+			if ($('#slideshowTable').length > 0) {
+				$('<div class="navi"></div><div class="items"></div>').appendTo('#slideWrapper');
+				$('#slideshowTable tr').each(function() {
+					var image = $(this).children('td:eq(0)').html();
+					var caption = $(this).children('td:eq(1)').html();
+					$('<div><div class="caption"><div class="gutter">' + caption + '</div></div>' + image + '</div>').appendTo('#slideWrapper .items');
+				});
+				$('<div class="next">next</div><div class="prev">prev</div>').appendTo('#slideOverlay');
+				$('#slideshowTable').remove();
+				$("#slideWrapper").scrollable({
+					circular: 'true',
+					next: '.next',
+					prev: '.prev',
+					speed: 400,
+					onBeforeSeek: function() {
+						var currSlide = api.getIndex();
+						$('.items > div').each(function() {
+							$(this).removeClass('active');
+						});
+					},
+					onSeek: function() {
+						var currSlide = api.getIndex();
+						currSlide = currSlide + 1;
+						$('.items > div:eq(' + currSlide + ')').addClass('active');
+					}
+				}).autoscroll(5000).navigator();
+				$('.items > div:eq(1)').addClass('active');
+				var api = $("#slideWrapper").data("scrollable");
+				$('#slideWrapper').hover(function() {
+					api.pause();
+				}, function() {
+					api.play();
+				});
+			};
+		},
+		iconSlider: function() {
+			//Home slider
+			if ($('#homeStories #sliderTable').length > 0) {
+				//Construct the slides
+				jQuery.fn.reverse = [].reverse;
+				$('<div id="slideySlide"></div>').insertAfter('#sliderTable');
+				$('<div id="slideNext"></div><div id="slidePrev"></div>').appendTo('#slideySlide');
+				$('#sliderTable tr').reverse().each(function() {
+					var icon = $(this).children('td:eq(0)').html();
+					var label = $(this).children('td:eq(1)').html();
+					$('<div class="slideCont"><div class="slideIcon">' + icon + '</div><div class="slideLabel">' + label + '</div></div>').appendTo('#slideySlide');
+				});
+				//Construct the slide containers
+				var a = $('div.slideCont');
+				for (var i = 0; i < a.length; i += 5) {
+					a.slice(i, i + 5).wrapAll('<div class="slideBox"></div>');
+				}
+				$('.slideBox').wrapAll('<div id="sliderHorz" />');
+				//Do the electric slide
+				$('#sliderHorz').cycle({
+					fx: 'scrollLeft',
+					speed: '300',
+					timeout: 0,
+					prev: '#slidePrev',
+					next: '#slideNext'
+				});
+				//Not home slider
+			}else if ($('#sliderTable').length > 0) {
+						//Construct the slides
+						jQuery.fn.reverse = [].reverse;
+						$('<div id="slideySlide"></div>').insertAfter('#sliderTable');
+						$('<div id="slideNext"></div><div id="slidePrev"></div>').appendTo('#slideySlide');
+						$('#sliderTable tr').reverse().each(function() {
+							var icon = $(this).children('td:eq(0)').html();
+							var label = $(this).children('td:eq(1)').text();
+							$('<div class="slideCont"><div class="slideIcon">' + icon + '</div><div class="slideLabel">' + label + '</div></div>').appendTo('#slideySlide');
+						});
+						//Construct the slide containers
+						var a = $('div.slideCont');
+						for (var i = 0; i < a.length; i += 5) {
+							a.slice(i, i + 5).wrapAll('<div class="slideBox"></div>');
+						}
+						$('.slideBox').wrapAll('<div id="sliderHorz" />');
+						//Do the electric slide
+						$('#sliderHorz').cycle({
+							fx: 'scrollLeft',
+							speed: '300',
+							timeout: 0,
+							prev: '#slidePrev',
+							next: '#slideNext'
+						});
+					};
+		},
+		membershipForm: function() {
+			//Create a new div so we have control over it
+			$('<div id="membershipCont"><div class="gutter"></div></div>').insertAfter('table#membershipTabs');
+			
+			//Hide tabs if not on selection view
+			if($('.BBMembershipCategoryTable').length == 0){
+				$('#membershipTabs').hide();
+			}
+			
+			//Set classes for show/hide functions on 
+			$('[id*=MemCat_]').each(function(){
+			    var inputID = $(this).attr('id');
+			    var $el = $(this);
+			    var $cont = $(this).parent().parent().parent();
+			    var $label = $(this).next('label');
+			    if(($label).is(':contains("Research Advocate")')){
+			         $cont.addClass('research');
+			    }else if(($label).is(':contains("Individual")')){
+			         $cont.addClass('individual');
+			    }else if(($label).is(':contains("Family")')){
+			         $cont.addClass('family');
+			    }
+			    
+			    if(($label).is(':contains("1 Year")')){
+			         $cont.addClass('oneyear');
+			    }else if(($label).is(':contains("3 Year")')){
+			         $cont.addClass('threeyear');
+			    }else if(($label).is(':contains("5 Year")')){
+			         $cont.addClass('fiveyear');
+			    }else if(($label).is(':contains("Lifetime")')){
+			         $cont.addClass('lifetime');
+			    }
+			});
+			
+			//Only show label and input for membership categories
+			$('.BBMembershipCategoryTable tr').each(function(){
+				$(this).children('td').hide();
+				$(this).children('td:eq(0)').show()
+			});
+			
+			//Click functions for tabs
+			$('#membershipTabs td').click(function(){
+				$('#membershipTabs td').each(function(){
+					$(this).removeClass('active');
+				});
+				$(this).addClass('active');
+				
+				if($('#individualTab.active').length > 0){
+					$('.BBMembershipCategoryTable tr').each(function(){
+						$(this).hide();
+					});
+					$('.BBMembershipCategoryTable tr.individual').show();
+					$('.BBMembershipCategoryTable tr:visible.oneyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.threeyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.fiveyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.lifetime').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible input').first().click();
+				}else if($('#familyTab.active').length > 0){
+					$('.BBMembershipCategoryTable tr').each(function(){
+						$(this).hide();
+					});
+					$('.BBMembershipCategoryTable tr.family').show();
+					$('.BBMembershipCategoryTable tr:visible.oneyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.threeyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.fiveyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.lifetime').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible input').first().click();
+				}else if($('#researchTab.active').length > 0){
+					$('.BBMembershipCategoryTable tr').each(function(){
+						$(this).hide();
+					});
+					$('.BBMembershipCategoryTable tr.research').show();
+					$('.BBMembershipCategoryTable tr:visible.oneyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.threeyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.fiveyear').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible.lifetime').appendTo('.BBMembershipCategoryTable');
+					$('.BBMembershipCategoryTable tr:visible input').first().click();
+				}
+				
+			});
+			
+			//Remove unneccesary <tr> elements
+			$('.BBMembershipCategoryTable tr').each(function (i,n){
+			    if(!$(n).attr('class') && !$(n).attr('id')){
+			        $(this).remove();
+			    }else{
+			        // id or class exists
+			    }
+			});
+			
+			//Break apart summary step
+			$('.BBMembershipFormTitle:contains("Summary Information")').addClass('summaryHead').insertBefore('#membershipCont');
+			$('.BBMembershipSummaryActionCaption').parent().parent().addClass('joinSummary').addClass('joining');
+			$('.BBMembershipSummaryActionCaption').parent().parent().next('tr').addClass('joinSummary');
+			$('.joinSummary').wrapAll('<div id="joinSummary" />');
+			$('.joinSummary .BBMembershipSummaryFieldCaption').remove();
+			$('#MembershipPayTable tr:empty').remove();
+			$('.BBFormButtonRow').wrap('<div id="navbuttons" />');
+			
+			//Hide/show based on selected tab
+			if(window.location.hash){
+				$('td#'+hash+'Tab').click();
+			}else{
+				$('#individualTab').click();
+			}
+			
+			$memCont = $('#membershipCont .gutter');
+			//Move the membership form to the new div
+			$('.BBMembershipCategoryTable').appendTo($memCont);
+			$('#navbuttons').appendTo($memCont);
+			$('#MembershipPayTable').prependTo($memCont);
+			$('.BBMembershipValidationSummary').prependTo($memCont);
+			$('#joinSummary').prependTo($memCont);
+			$('[id*=_pnlFinish]').appendTo($memCont);
+			
+			//Hide leftover parts
+			$('[id*=_pnlMembershipTransaction]').hide();
+		},
+		//Set select list items and URL forwarding
+		selectorListFF: function() {
+			$('#managementTable tr').each(function() {
+				var label = $(this).children('td:eq(0)').text();
+				var link = $(this).children('td:eq(1)').text();
+				$('<option data-url="' + link + '">' + label + '</option>').appendTo('#topicList');
+			});
+			$('#topicList').wrap('<div id="topicWrap" />');
+			$('#topicButton').click(function() {
+				var url = $('#topicList option:selected').attr('data-url');
+				window.open(url, '_self');
+			});
+		},
+		//Set accordion menu for sidebar
+		accordionSidebar: function() {
+			$('#contentSecondary ul.menu ul li.parent').find('ul').hide();
+			$('#contentSecondary ul.menu ul li.parent').append('<a class="menuDrop"></a>');
+			$('.menuDrop').click(function() {
+				$(this).toggleClass('active');
+				$(this).parent().children('ul').slideToggle();
+			});
+			$('#contentSecondary li.selected > .menuDrop').addClass('active');
+			$('#contentSecondary li.parent.selected > ul').show();
+		},
+		//Size iframes to their parent
+		resizeIframe: function() {
+			$('iframe').each(function() {
+				$container = $(this).parent();
+				$(this).data('aspectRatio', this.height / this.width).removeAttr('height').removeAttr('width');
+				var newWidth = $container.width();
+				var $el = $(this);
+				$el.width(newWidth).height(newWidth * $el.data('aspectRatio'));
+			});
+		},
+		//Megamenu functions
+		megaMenu: function() {
+			$('#wrapNav .nccUlMenuSub1').each(function(i) {
+				for (i = 1; i < 4; i++) {
+					$('<div class="mm megamenuWrap_' + i + '"></div>').appendTo(this);
+					$(this).addClass('menuTarget_'+i+'');
+				}
+			});
+			$('#wrapNav .nccUlMenuSub1 > li').each(function() {
+				if ($(this).hasClass('one')) {
+					listClass = 1;
+					$(this).appendTo($(this).parent().children('.megamenuWrap_' + listClass)).wrap('<div class="megamenuList" />');
+				}
+				if ($(this).hasClass('two')) {
+					listClass = 2;
+					$(this).appendTo($(this).parent().children('.megamenuWrap_' + listClass)).wrap('<div class="megamenuList" />');
+				}
+				if ($(this).hasClass('three')) {
+					listClass = 3;
+					$(this).appendTo($(this).parent().children('.megamenuWrap_' + listClass)).wrap('<div class="megamenuList" />');
+				}
+			});
+		},
+		// Gets variables and values from URL
+		getUrlVars: function() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+				vars[key] = unescape(value.replace(/\+/g, " "));
+			});
+			return vars;
+		},
+		// Re-checks isEditView against template design view:
+		checkEditView: function() {
+			if (!BBI.Debug.isEditView) {
+				BBI.Debug.isEditView = window.location.href.match('templatedesigner');
+			}
+		},
+		// Fix positioning:
+		fixPositioning: function() {
+			$('div[id *= "_panelPopup"]').appendTo('body');
+			$('div[id *= "_designPaneCloak"]').css({
+				"top": "0px",
+				"left": "0px"
+			});
+			$('.DesignPane').css("position", "relative");
+		},
+		// Inform the user that Javascript code is present,
+		// Must include "javascript" in the part title:
+		showPartTitle: function() {
+			if (BBI.Debug.isEditView) {
+				if (!$('.jsPartLabel').length) {
+					$('td[id$="tdPartName"]:Contains("javascript")').each(function() {
+						var uniqueID = $(this).attr("id");
+						uniqueID = uniqueID.slice(0, uniqueID.length - 11);
+						var partName = $(this).html();
+						var contentPane = $('div[id*="' + uniqueID + '_pnlPart"]');
+						contentPane.append('<div class="jsPartLabel" style="padding:0 4px 0 24px;background:#000;color:#fff;font-size:11px;">' + partName + '</div>');
+					});
+				}
+			}
+		}
+	}
+};
+// run global functions
+Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(function() {
+	BBI.FARE.pageLoad();
+}); /*--- Plugins --- */
+// Case insensitive version of ':contains()'
+jQuery.expr[':'].Contains = function(a, i, m) {
+	return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+};

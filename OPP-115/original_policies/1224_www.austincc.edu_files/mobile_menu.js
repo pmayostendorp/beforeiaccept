@@ -1,0 +1,14 @@
+jQuery(document).ready(function(){
+	jQuery(".menu-small").click(function(){
+		jQuery(".right-off-canvas-menu").toggleClass('active');
+		jQuery("body").toggleClass("noscroll");
+		jQuery("html").toggleClass("noscroll");		
+		jQuery(".exit-off-canvas").show();
+	});
+	jQuery(".exit-off-canvas").click(function(){
+		jQuery(".right-off-canvas-menu").toggleClass('active');
+		jQuery("body").toggleClass("noscroll");		
+		jQuery("html").toggleClass("noscroll");		
+		jQuery(this).hide();
+	});
+});

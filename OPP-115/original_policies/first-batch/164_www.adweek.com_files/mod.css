@@ -1,0 +1,562 @@
+/*
+	MOD
+*/
+.mod {
+	border-top:4px solid #000;
+	overflow:hidden;
+	text-indent:0;
+}
+
+/* .mod.no-border {
+  border-top: none;
+} */
+
+.colC .mod {
+	margin:0 0 10px;
+}
+.mod-title {
+    display: block;
+    padding:6px 0;
+    font: bold 22px/24px Flama, Arial;
+    color:#000;
+    overflow:hidden;
+    *zoom:1;
+    text-indent:0;
+}
+#ddf .mod-content-wrapper .mod-title {
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid #AEAEAE;
+    border-bottom: none;
+}
+.mod-content {
+    border-top:1px solid #bfbfbf;
+}
+#ddf .mod-content {
+	border:1px solid #aeaeae;
+}
+.mod-footer {
+	text-align:right;
+	border-top:2px solid #000;
+	text-transform:uppercase;
+	color:#666;
+	font-size:20px;
+	line-height:20px;
+	letter-spacing:0.5px;
+	padding:9px 0 0;
+	overflow:hidden;
+	*zoom:1;
+}
+.mod-footer a {
+	color:#ed1d25;
+	display:block;
+	margin:0 0 15px;
+	padding:0 0 9px;
+}
+
+.page-node.node-type-news-gallery .mod-news-gallery-related .mod-footer a {
+  display: none; /* ADW-813 temporarily hide the "See More" on news gallery pages */
+}
+
+#shell.std .colC .mod {
+	margin:0;
+}
+#shell.std .colC .mod-footer a {
+	margin:0;
+}
+#pre-footer .more a:hover, .mod-footer a:hover {
+	text-decoration:none;
+}
+.mod-footer .fR a, .mod-footer a .fR, #pre-footer .more a .fR {
+	display:inline-block;
+	border-bottom: 2px solid #FFF;
+	padding-bottom:1px;
+	text-decoration: none;
+}
+#pre-footer .more a .fR {
+	border-color: #eee;
+}
+.mod-footer .fR a:hover, .mod-footer a:hover .fR, #pre-footer .more a:hover .fR {
+	border-color: #ed1e25;
+	text-decoration: none;
+}
+
+.mod-ruler .mod-content {
+	margin-top: 2px;
+	border-top:1px solid #bfbfbf;
+}
+
+.mod .mod-subscribe {
+    padding: 10px 0; 
+    color: #ed1d25;
+    font-size: 16px; 
+    font-weight: bold; 
+    display: block;
+}
+
+/* Mod variation : mod gallery */
+.mod-gallery .mod-content{
+	padding:20px 0 0;
+}
+
+/* Mod variation with Palatino font */
+.mod-palatino, .mod-palatino .mod-content a {
+	font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+	color:#666;
+}
+.mod-palatino .mod-title {
+	font-weight:normal;
+}
+#contributors .mod-palatino .mod-title {
+	font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+	padding:7px 0 4px;
+}
+
+#contributors .mod-palatino {
+	margin:0 0 10px;
+}
+#contributors .mod-palatino li {
+	padding:8px 0 7px;
+}
+
+#contributors .mod-palatino .kicker {
+	text-transform:capitalize;
+	font-size:11px;
+	line-height:11px;
+	padding:1px 0 0;
+}
+#contributors .mod-palatino .headline {
+	display:block;
+	font-size:14px;
+	line-height:15px;
+	color:#666;
+}
+#contributors .mod-palatino a {
+	color:#ed1d25;
+	font-size:10px;
+	padding:0;
+}
+#contributors .mod-palatino a:hover {
+	text-decoration:underline;
+}
+#contributors #main .story-thumb {
+	position:relative;
+}
+#contributors #main .story-thumb .icon-play-red, .mod-author .icon-play-red {
+	position:absolute;
+	right:0;
+	display:block;
+	border-top:2px solid #FFF;
+	border-left:2px solid #FFF;
+}
+#contributors #main .story-thumb .icon-play-red {
+	top:98px;
+}
+.mod-author .icon-play-red {
+	bottom:0;
+}
+
+.mod-poll {
+    background: #efefef;
+    margin: 0 0 20px;
+    padding: 0 15px 10px;
+}
+    .mod-poll .mod-title {
+        border-bottom: solid 1px #999;
+        margin: 0 -15px 12px;
+        padding: 0 15px;
+        line-height: 37px;
+    }
+	.mod-poll .mod-content {
+		border-top:0 none;
+	}
+    .mod-poll p {
+        margin: 0 0 15px;
+        font-size: 20px !important;
+        font-weight: bold !important;
+        line-height: 26px !important;
+        color: #000 !important;
+    }
+    .mod-poll li {
+        margin: 0 0 14px;
+    }
+        .mod-poll .commit {
+            margin: -16px 0 0;
+            text-align: right;
+        }
+    .mod-poll label {
+        font-family: Georgia, serif;
+        font-size: 16px;
+        color: #333;
+    }
+    .mod-poll input[type=submit] {
+        background: #e5002d;
+        border: none 0;
+        padding: 10px 21px 10px 22px;
+        text-align: center;
+        font: 12px Arial, sans-serif;
+        color: #fff;
+    }
+
+/* Blog */
+#blog .colC .mod-content {
+    padding: 6px 0;
+}
+
+/* Blog - Featured Articles */
+.mod-featured {
+
+}
+    .mod-featured .mod-title {
+        border-bottom: solid 1px #bfbfbf;
+        margin: 0 0 10px;
+    }
+    .mod-featured .mod-content {
+        border: none 0;
+        margin: 0 0 17px;
+        padding: 0 !important;
+    }
+        .mod-featured .mod-content a, .mod-featured .mod-content a:hover,
+        .mod-featured .mod-content a:focus {
+            text-decoration: none;
+        }
+            .mod-featured .mod-content a:hover span {
+                text-decoration:underline;
+            }
+			.mod-featured .mod-content a:hover span.subheadline {
+                text-decoration:none;
+            }
+        .mod-featured .headline,
+        .mod-featured .subheadline {
+            font: 20px/28px "MuseoSlab500", Georgia, serif;
+        }
+        .mod-featured .subheadline {
+            color: #ccc;
+        }
+        .mod-featured img {
+            margin-top: 6px;
+        }
+
+.mod-about {
+    margin: 0 0 30px;
+}
+    #article.columns .mod-about {
+        margin: 0;
+    }
+    .mod-about p {
+        font: 13px/20px Georgia, serif;
+        color: #666;
+    }
+        .mod-about p strong {
+            font-weight: bold;
+            color: #000;
+        }
+    .mod-about .mod-title {
+        border-bottom: solid 1px #bfbfbf;
+        margin: 0 0 7px;
+    }
+        #article.columns .mod-about .mod-title {
+            margin: 0 0 15px;
+        }
+		.sponsored .mod-about .mod-title {
+            margin: 0 0 0 !important;
+        }
+    .mod-about .mod-content {
+        border: none 0;
+        border-bottom: solid 1px #bfbfbf;
+        margin-bottom: 10px;
+        padding: 0 0 10px !important;
+    }
+	.sponsored-listing .mod-about .mod-content {
+		border-bottom:2px solid #000;
+	}
+        #article.columns .mod-about .mod-content {
+            border: none 0;
+            margin: 0;
+            padding: 0;
+        }
+		.sponsored .mod-about .mod-content {
+			position:relative !important;
+			padding: 10px 0 10px 100px !important;
+		}
+		.sponsored .mod-about .mod-content p a {
+			color:#E5002D !important;
+		}
+
+
+    .mod-about .continue {
+        font-size: 10px;
+    }
+
+    .mod a.rss {
+        display: block;
+        background: url("/sites/all/themes/aw/images/sitewide/sprite_v11.png") -890px -589px no-repeat;
+        padding-left: 26px;
+        color: #bebebe !important;
+    }
+
+/* Facebook Like box */
+.mod-fblike {
+    border: none 0;
+    margin: 0 0 15px;
+}
+
+/* Atlantic Wire */
+.mod-external {
+
+}
+    .mod-external .mod-title {
+        border-bottom: solid 1px #ccc;
+        margin-bottom: 2px;
+        padding: 8px 0 4px;
+        font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+        font-weight: normal;
+    }
+        .mod-external .atlanticwire {
+            position: relative;
+            top: -2px;
+        }
+
+/* Blog - Related Posts */
+.mod-related {
+
+}
+#blog .mod-related {
+	margin:20px 0 0;
+	clear: both;
+}
+
+.page-node.node-type-blogs #post {
+  overflow: visible;
+}
+
+.fb_iframe_widget iframe {
+  z-index: 100000;
+}
+    .mod-related .mod-title {
+        border-bottom: solid 1px #ccc;
+    }
+    #blog .mod-related .headline,
+    #blog .mod-related .subheadline {
+        display: inline;
+        font: 13px/15px "MuseoSlab500", Georgia, serif;
+    }
+	#blog .mod-related .headline {
+		color:#00A99D;
+	}
+    #blog .mod-related .subheadline {
+        color: #8c8b8b;
+    }
+	#blog .mod-related a.subheadline:hover {
+		text-decoration:none !important;
+	}
+
+/* Blog - Comments */
+.mod-comments, .mod-comments p {
+    text-align:left !important;
+    padding-bottom: 20px;
+}
+    .mod-comments .mod-title, .article-single .mod-title {
+        border-bottom: solid 1px #ccc;
+    }
+        .mod-comments .mod-title em {
+            font-weight: normal;
+            color: #7f7f7f;
+        }
+    .mod-comments .body p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+/* Twitter - hashtag, etc */
+.mod-social {
+    margin: 0;
+}
+    .mod-social .mod-title {
+        border: none 0;
+        text-transform: none !important;
+    }
+    .mod-social .mod-content {
+        border-top: solid 1px #ccc !important;
+        border-bottom: none 0;
+        padding: 10px 0;
+    }
+        .mod-social .mod-content p {
+            font: 12px/18px Arial, sans-serif !important;
+        }
+        .mod-social a {
+            background: none !important;
+            padding: 0 !important;
+            font-family: Arial, sans-serif;
+            font-size: 12px !important;
+            color: #e5002d !important;
+        }
+
+.mod-gallery .mod-footer {
+  padding: 9px 0 0;
+  border-top: solid 1px #ccc;
+  padding-bottom: 9px;
+}
+
+  .mod-gallery .mod-footer a {
+    text-transform: none;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+
+  .mod-gallery .mod-footer a:hover {
+    text-decoration: underline;
+  }
+
+
+/* Privacy Policy, legals etc */
+#legal .mod .mod-footer {
+    border-top: solid 1px #ccc;
+    padding-bottom: 8px;
+}
+
+.mod-appearances {
+    margin: 0 0 20px !important;
+	border-bottom:1px solid #ccc;
+}
+    .mod-appearances .subheadline, .mod-featured-jobs .subheadline, .mod-featured-jobs .location {
+        font-family: Georgia, serif !important;
+    }
+	.mod-featured-jobs .location {
+		color:#CCC;
+	}
+	.mod-appearances .subheadline {
+		margin-left: 7px;
+	}
+	.mod-appearances li a {
+		padding-left:0;
+		padding-right:0;
+	}
+
+/*#article.columns .colC .mod ol.list {
+    list-style-position: inside;
+    padding: 0;
+}*/
+    #article.columns .colC .mod .list a, #article.columns .colC .mod .list a * {
+        left: auto;
+        font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+        color: #666;
+    }
+	#article.columns .col .mod .list a:hover .headline {
+		color:#ed1e25;
+	}
+
+#jobs .mod-results {
+    position: relative;
+}
+.article-generic .mod .mod-content {
+	padding:20px 0 0;
+}
+.article-generic .colC .mod .mod-content {
+	padding:0;
+}
+.article-generic .mod-rss {
+	margin:14px 0 0;
+}
+.article-generic .mod-rss .mod-content {
+	padding:13px 0 0;
+}
+.article-generic .mod-rss .list-rss {
+	margin-top:14px;
+	margin-bottom:10px;
+}
+
+.mod-related-videos .mod-footer {
+	padding:0;
+	height:20px;
+	border:0 none;
+}
+.mod.mod-gallery.mod-related-videos li {
+    line-height: 13px;
+}
+.right_social_block {
+    margin: 0 0 15px;
+    padding: 0 0 15px 0;
+}
+.right_social_block_facebook {
+    margin: -10px -10px 7px -10px;
+}
+.right_social_block_google {
+    position: relative;
+    margin: 0 0 15px 0;
+    z-index: 10;
+}
+    .right_social_block_google span {
+        display: block;
+        position: absolute;
+        left: 105px;
+        top: 0;
+        z-index: 10;
+        font: 10px/24px Arial;
+    }
+
+.mod.subscribe-block a {
+    display: inline-block;
+    margin: 7px 0 0 0;
+}
+
+.mod.latest-news-popular-now {
+    /*margin: 15px 0 12px 0;*/
+    padding: 4px 0 0 0;
+}
+
+.mod.latest-news-popular-now .latest-news-popular-now-title {
+    margin: 0 0 10px 0;
+    padding: 4px 0;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod.latest-news-popular-now .col {
+    width: 303px;
+    margin: 0 46px 0 0;
+}
+
+.mod.latest-news-popular-now .col.popular-now {
+    margin: 0;
+}
+
+.mod.latest-news-popular-now .latest-news-popular-now-content ul li {
+    list-style-type: disc;
+    margin: 0 0 10px -22px;
+    line-height: 14px;
+}
+
+.mod.latest-news-popular-now .latest-news-popular-now-content ul li a {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    color:#333 !important;
+}
+
+.block-block .mod-title {
+  font: bold 22px/36px Flama, Helvetica, sans-serif;
+  line-height: 36px;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.adweek_blog_network ul li {
+  line-height:74px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.adweek_blog_network ul li:last-of-type {
+  border-bottom: none;
+}
+
+.adweek_blog_network ul li img {
+  vertical-align: middle;
+}

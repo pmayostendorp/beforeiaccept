@@ -1,0 +1,93 @@
+4508,0,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+14472,0,123,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+14473,0,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+4509,1,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7540,1,103,Privacy practices and security measures of the first party or third party are reviewed/audited by internal or external reviewers/auditors.
+14474,1,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+14475,1,123,The text describes a specific data practice that is not covered by our label scheme.
+4510,2,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7541,2,103,The site collects your unspecified information for legal requirements. Collection happens in an unspecified way.
+7542,2,103,"A user's unspecified information is retained for an unspecified duration to meet legal or law enforcement requirements, and then it is deleted.."
+14476,2,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+4511,3,96,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7543,3,103,A specific security measure not covered above.
+14477,3,123,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+4512,4,96,The public does receive your contact information for legal requirements. The data is personally identifiable. You can configure your privacy using a method outside our label scheme for the use of your information.
+4513,4,96,The public does receive your demographic information for legal requirements. The data is personally identifiable. You can configure your privacy using a method outside our label scheme for the use of your information.
+4514,4,96,The public does receive your health information for legal requirements. The data is personally identifiable. You can configure your privacy using a method outside our label scheme for the use of your information.
+7544,4,103,"You can opt out (by contacting the company) from the use of contact information by the site, which uses it for legal requirements."
+7545,4,103,"You can opt out (by contacting the company) from the use of demographic information by the site, which uses it for legal requirements."
+7547,4,103,The public does see your contact information for legal requirements. You can opt out by contacting the company for the use of your information.
+7548,4,103,The public does see your demographic information for legal requirements. You can opt out by contacting the company.
+14479,4,123,The public does receive unspecified information about you for legal requirements. You can opt out by contacting the company for the use of your information.
+14480,4,123,The public does receive your contact information for legal requirements. You can opt out by contacting the company for the use of your information.
+14481,4,123,The public does receive your demographic information for legal requirements. You can opt out by contacting the company for the use of your information.
+14482,4,123,The public does receive something that uniquely identifies you for legal requirements. You can opt out by contacting the company for the use of your information.
+14483,4,123,The site collects your contact information for legal requirements. Collection happens when you implicitly provide information in an unspecified way. You can opt out by contacting the company for the use of your information.
+14484,4,123,The site collects your demographic information for legal requirements. Collection happens when you implicitly provide information in an unspecified way. You can opt out by contacting the company for the use of your information.
+14485,4,123,The site collects something that uniquely identifies you for legal requirements. Collection happens when you implicitly provide information in an unspecified way. You can opt out by contacting the company for the use of your information.
+14486,4,123,"You can opt out (by contacting the company) from the use of contact information by a third party, which collects or receives it for legal requirements."
+14487,4,123,"You can opt out (by contacting the company) from the use of unique personal identifier by a third party, which collects or receives it for legal requirements."
+14488,4,123,"You can opt out (by contacting the company) from the use of demographic information by a third party, which collects or receives it for legal requirements."
+4516,5,96,"You can opt out (by contacting the company) from the use of information of a type not covered by our label scheme by the site, which uses it for an unspecified purpose."
+4517,5,96,"You can use privacy configuration settings (in the website or app) to control the use of information of a type not covered by our label scheme by the site, which uses it for an unspecified purpose."
+7546,5,103,"You can opt out (by contacting the company) from the use of unspecified information by the site, which uses it for an unspecified purpose."
+14489,5,123,"You can opt out (by contacting the company) from the use of contact information by a third party, which collects or receives it for an unspecified purpose."
+14491,5,123,"You can opt out (by contacting the company) from the use of demographic information by a third party, which collects or receives it for an unspecified purpose."
+14492,5,123,"You can opt out (by contacting the company) from the use of unique personal identifier by a third party, which collects or receives it for an unspecified purpose."
+14493,5,123,"You can use privacy configuration settings (in the website or app) to control the use of demographic information by a third party, which collects or receives it for an unspecified purpose."
+14494,5,123,"You can use privacy configuration settings (in the website or app) to control the use of unique personal identifier by a third party, which collects or receives it for an unspecified purpose."
+4519,6,96,An unspecified third party does not receive information about you not covered by our label scheme for an unspecified purpose. The data is personally identifiable. You can opt in for data collection for the use of your information.
+4521,6,96,An unspecified third party does receive information about you not covered by our label scheme for an unspecified purpose. The data is personally identifiable. You can make a choice about the use of your information.
+4522,6,96,An unspecified third party does receive unspecified information about you for an unspecified purpose. You can opt in for data collection for the use of your information.
+4523,6,96,An unspecified third party does receive unspecified information about you for an unspecified purpose. You can make a choice about the use of your information.
+7549,6,103,The site collects your generic personal information for legal requirements. Collection happens in an unspecified way.
+7550,6,103,The site does not collect an information type outside of our label scheme for legal requirements. Collection happens in an unspecified way. You can opt in for data collection for the use of your information.
+14498,6,123,"You can opt in for the use of contact information by a third party, which collects or receives it for an unspecified purpose."
+14499,6,123,"You can opt in for the use of demographic information by a third party, which collects or receives it for an unspecified purpose."
+14500,6,123,"You can opt in for the use of unique personal identifier by a third party, which collects or receives it for an unspecified purpose."
+14501,6,123,"You can make no specified choices about the use of contact information by a third party, which collects or receives it for legal requirements."
+14502,6,123,"You can make no specified choices about the use of demographic information by a third party, which collects or receives it for legal requirements."
+14503,6,123,"You can make no specified choices about the use of unique personal identifier by a third party, which collects or receives it for legal requirements."
+4524,7,96,The site collects your IP address or device IDs for an unspecified purpose. Collection happens on the website.
+7551,7,103,The site collects your IP address or device IDs for an unspecified purpose. Collection happens on the website.
+14504,7,123,The site collects your IP address or device IDs for an unspecified purpose. Collection happens on the website.
+4525,8,96,A named third party does track on the first party website or app unspecified information about you for analytics or research.
+7552,8,103,A named third party does do something unspecified with unspecified information about you for analytics or research.
+14505,8,123,A named third party does collect on the first party website or app unspecified information about you for analytics or research.
+4526,9,96,"You can use third party privacy settings to control the use of unspecified information by a third party, which collects or receives it for an unspecified purpose."
+7553,9,103,"You can use third party privacy settings to control the use of information of a type not covered by our label scheme by a third party, which collects or receives it for an unspecified purpose."
+14506,9,123,"A user can view their information, within the scope of unspecified user information."
+14507,9,123,"You can opt out (via a link) from the use of unspecified information by a third party, which collects or receives it for an unspecified purpose."
+4527,10,96,The site collects your website activities for personalization or customization. Collection happens when you implicitly provide information on the website.
+7554,10,103,The site collects your cookies or tracking elements for personalization or customization. Collection happens in an unspecified way.
+7555,10,103,The site collects your cookies or tracking elements for advertising. Collection happens in an unspecified way.
+14508,10,123,The site collects your cookies or tracking elements for advertising. Collection happens on the website.
+14509,10,123,The site collects your cookies or tracking elements for personalization or customization. Collection happens on the website.
+14510,10,123,The site collects your cookies or tracking elements for analytics or research. Collection happens on the website.
+4528,11,96,"Users with accounts can view their information, within the scope of information explicitly provided by the user."
+4529,11,96,"Users with accounts can view their information, within the scope of transactional data (e.g., online activity, purchases)."
+4530,11,96,"Users with accounts can view their information, within the scope of information the company has learned about the user."
+4531,11,96,"Users with accounts can view their information, within the scope of information the company has learned about the user."
+7556,11,103,"Users with accounts can view their information, within the scope of information explicitly provided by the user."
+7557,11,103,"User authentication, e.g., login to a user account, is encrypted/secured."
+14511,11,123,"Users with accounts can view their information, within the scope of information explicitly provided by the user."
+4532,12,96,"Users with accounts can edit their information, within the scope of information the company has learned about the user."
+4533,12,96,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+7558,12,103,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+14512,12,123,"Users with accounts can edit their information, within the scope of information the company has learned about the user."
+14513,12,123,"Users with accounts can edit their information, within the scope of information explicitly provided by the user."
+4534,13,96,"Users with accounts can view their information, within the scope of information explicitly provided by the user."
+7559,13,103,"A user can access, edit, or delete personal information in a manner not covered by our label scheme, within the scope of information explicitly provided by the user."
+14514,13,123,"Users with accounts can edit their information, within the scope of information the company has learned about the user."
+4535,14,96,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+4536,14,96,"Data is stored securely, e.g. in an encrypted format or database."
+7560,14,103,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+14515,14,123,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+4538,15,96,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+7561,15,103,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+14516,15,123,"Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS."
+14517,15,123,"The company/organization has a privacy or security program/organization in place addressing, for example, how to protect data against unauthorized access or privacy training for employees."
+4539,16,96,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7562,16,103,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+14518,16,123,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."

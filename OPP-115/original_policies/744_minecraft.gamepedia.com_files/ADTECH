@@ -1,0 +1,4 @@
+document.write('<script type="text/javascript" src="http://ads.saymedia.com/ai015390bf490f970b015437341a88970c.js?ord='+ Math.random() + '"></sc'+'ript>');
+
+
+document.write('<img src="http://soundwave.bnmla.com/usersync?sspid=15&r=http://ums.adtechus.com/mapuser?providerid=1029;userid=$UID" width="1" height="1" style="display:none;">');

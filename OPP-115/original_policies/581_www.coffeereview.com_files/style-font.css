@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'franklin_gothic';
+    src: url('./fonts/FranklinGothic-Book-webfont.eot');
+    src: url('./fonts/FranklinGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/FranklinGothic-Book-webfont.woff') format('woff'),
+         url('./fonts/FranklinGothic-Book-webfont.ttf') format('truetype'),
+         url('./fonts/FranklinGothic-Book-webfont.svg#franklin_gothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'franklin_gothic_demi';
+    src: url('./fonts/FranklinGothic-Demi-webfont.eot');
+    src: url('./fonts/FranklinGothic-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/FranklinGothic-Demi-webfont.woff') format('woff'),
+         url('./fonts/FranklinGothic-Demi-webfont.ttf') format('truetype'),
+         url('./fonts/FranklinGothic-Demi-webfont.svg#franklin_gothic_demi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body,
+#sitetitle .title,
+#searchform #submitbutton,
+#searchform #searchfield,
+p.email-form .subbutton,
+p.email-form .sub,
+#commentform input#submit {
+	font-family: 'franklin_gothic',arial,helvetica,sans-serif;
+	}
+.meta {
+	font-size:14px !important;
+	line-height: 1.5em;
+	}
+#topnav {
+	font-family: 'franklin_gothic_demi',arial,helvetica,sans-serif;
+	font-size:11pt;
+	}
+#catnav {
+	font-size:8pt;
+	font-weight:normal;
+	font-weight:bold;
+	}
+h1,h2,h3,h4,h5,h6,h7 {
+	font-family: 'franklin_gothic_demi',arial,helvetica,sans-serif;
+	font-weight:normal;
+}

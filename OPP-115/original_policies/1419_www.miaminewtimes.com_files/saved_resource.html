@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!-- saved from url=(0137)http://www.myvoicenation.com/sso/index/?appId=0abb95fb5c65e9fd090ef2607fa7bd13&xdm_e=http%3A%2F%2Fwww.miaminewtimes.com&xdm_c=mvn&xdm_p=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="easyxdm.min.js"></script>
+        <script type="text/javascript">
+            easyXDM.DomHelper.requiresJSON("http://assets.myvoicenation.com/js/json2.js");
+        </script>
+        <script type="text/javascript">
+                        var doPopup = false;
+                        var timeStart = new Date();
+            var formatTime = function(d){
+                return d.getUTCFullYear()+'-'
+                    +("0" + (d.getUTCMonth() + 1)).slice(-2)+'-'
+                    +("0" + d.getUTCDate()).slice(-2)+'T'
+                    +("0" + d.getUTCHours()).slice(-2)+':'
+                    +("0" + d.getUTCMinutes()).slice(-2)+':'
+                    +("0" + d.getUTCSeconds()).slice(-2)+'Z'
+            }
+            var MVN_Server = {
+                user: false,
+                initObj: {},
+                ajaxDefaults: {
+                    async: false,
+                    cache: false,
+                    timeout: 30000,
+                    type: 'POST',
+                    dataType: 'json'
+                },
+                ready: false,
+                callbacks: [],
+                onReady: function(callback){
+                    var me = this;
+                    if(me.ready){
+                        if(typeof callback == 'function')
+                            callback();
+                    }else{
+                        me.callbacks.push(callback);
+                    }
+                },
+                fireReady: function(){
+                    var me = this;
+                    me.ready = true;
+                    $.each(me.callbacks, function(){
+                       if(typeof this == 'function')
+                           this();
+                    });
+                    me.callbacks = [];
+                },
+                local: {
+                    getUser: function(good, bad){
+                        if(MVN_Server.user){
+                            return good(MVN_Server.user);
+                        }else{
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                url: '/sso/getUser/',
+                                success: function(u){
+                                    if(u.id){
+                                        MVN_Server.user = u;
+                                        return good(MVN_Server.user);
+                                    }else{
+                                        MVN_Server.user = false;
+                                        return bad();
+                                    }
+                                },
+                                error: function(e){
+                                    MVN_Server.user = false;
+                                    return bad(e);
+                                }
+                            }));
+                        }
+                    },
+                    authUser: function(fields, good, bad){
+                        if(fields){
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                async: true,
+                                url: '/sso/authUser/',
+                                data: fields,
+                                success: function(o){
+                                    if(o.user||(o.action&&o.action!='error')){
+                                        if(o.user&&o.user.id)
+                                            MVN_Server.user = o.user;
+                                        return good(o);
+                                    }else{
+                                        MVN_Server.user = false;
+                                        return bad(o);
+                                    }
+                                },
+                                error: function(e){
+                                    MVN_Server.user = false;
+                                    return bad({'error':'Error during request','log':e});
+                                }
+                            }));
+                        }else{
+                            return bad({'error':'Invalid paramaters'});
+                        }
+                    },
+                    settings: function(fields, done){
+                        if(fields){
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                async: true,
+                                url: '/sso/settings/',
+                                data: fields,
+                                success: function(o){ return done(o); },
+                                error: function(e){ return done({'error':'Error during request','log':e}); }
+                            }));
+                        }else{
+                            return done({'error':'Invalid paramaters'});
+                        }
+                    },
+                    activityCounts: function(countTypes,done){
+                        if(countTypes){
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                async: true,
+                                url: '/profile/getActivityCountsAjax/'+countTypes.join(","),
+                                success: function(o){ return done(o); },
+                                error: function(e){ return done({'error':'Error during request','log':e}); }
+                            }));
+                        }else{
+                            return done({'error':'Invalid paramaters'});
+                        }
+                    },
+                    subscribeToNewsletter: function(dataJson,done){
+                        if(dataJson){
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                async: true,
+                                type: 'POST',
+                                dataType: 'jsonp',
+                                data: dataJson,
+                                url: '/village/saveNewsletters/',
+                                success: function(o){ return done({'success':true}); },
+                                error: function(e){ return done({'errorCall':true,'log':e}); }
+                            }));
+                        }else{
+                            return done({'error':'Invalid paramaters'});
+                        }
+                    },
+                    saveSmsAjaxTxtAlerts: function(dataJson,done){
+                        if(dataJson){
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                async: true,
+                                type: 'POST',
+                                dataType: 'json',
+                                data: dataJson,
+                                url: '/sso/saveSmsAjax/',
+                                success: function(o){ return done({'success':true,'response':o}); },
+                                error: function(e){ return done({'errorCall':true,'log':e}); }
+                            }));
+                        }else{
+                            return done({'error':'Invalid paramaters'});
+                        }
+                    },
+                    getUserAlertSubscriptions: function(dataJson,done){
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                dataType:'json',
+                                async: true,
+                                url: '/sso/userAlertSubscriptions/',
+                                data: dataJson,
+                                success: function(o){ return done({'success':true,'response':o}); },
+                                error: function(e){ return done({'errorCall':true,'log':e}); }
+                            }));
+                            console.log(done);
+                    },
+                    cellcheck: function(dataJson,done){
+                    //console.log('cellcheck');
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                dataType:'json',
+                                async: true,
+                                url: '/sso/cellcheck/',
+                                data: dataJson,
+                                success: function(o){ return done({'success':true,'response':o}); },
+                                error: function(e){ return done({'errorCall':true,'log':e}); }
+                            }));
+                    },
+                    validUsername: function(username, done){
+                        if(username){
+                            if(username=='')
+                                return done({'error':'Please provide Username'});
+                            if(username.length < 4 || username.length > 20 )
+                                return done({'error':'Username must be 4 to 20 characters'});
+                            if(!/^[a-z0-9_\.-]+$/i.test(username))
+                                return done({'error':'Username contains invalid characters'});
+                            $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                                url: '/sso/validUsername/'+username+'/',
+                                success: function(o){ return done(o); },
+                                error: function(e){ return done({'error':'Error during request','log':e}); }
+                            }));
+                        }else{
+                            return done({'error':'Invalid paramaters'});
+                        }
+                    },
+                    logout: function(done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            async: true,
+                            url: '/sso/logout/',
+                            success: function(){return done()},
+                            error: function(){return done()}
+                        }));
+                    },
+                    publish: function(obj){
+                        var wait = 25;
+                        if(Math.floor((new Date() - timeStart) / 1000) < wait){
+                            setTimeout(function(){
+                                MVN_Server.local.publish.method(obj);
+                            }, Math.floor(wait - ((new Date() - timeStart) / 1000)) * 1000);
+                        }else{
+                            window.fbAsyncInit = window.fbAsyncInit || function(){
+                                FB.init({
+                                    appId      : '155401447880564',
+                                    channelUrl : '//www.myvoicenation.com/facebook/channel/',
+                                    status     : true,
+                                    cookie     : true,
+                                    xfbml      : true,
+                                    version    : 'v2.0'
+                                });
+                                FB.getLoginStatus(function(r){
+                                    if(r.status == 'connected'){
+                                        if(obj.action == 'article'){
+                                            FB.api('/me/news.reads', function(posts){
+                                                var found = false;
+                                                $.each(posts.data, function(){
+                                                    if(this.data.article.url==obj.url){
+                                                        found = true;
+                                                        return false;
+                                                    }
+                                                });
+                                                if(!found){
+                                                    FB.api('/me/news.reads', 'post', {
+                                                        article : obj.url,
+                                                        start_time : formatTime(timeStart)
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    }
+                                });
+
+                            };
+                            (function(d){
+                                var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+                                if (d.getElementById(id)) {return;}
+                                js = d.createElement('script'); js.id = id; js.async = true;
+                                js.src = "//connect.facebook.net/en_US/sdk.js";
+                                ref.parentNode.insertBefore(js, ref);
+                            }(document));
+                        }
+                    },
+                    disablePublish: function(done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/sso/disablePublish/',
+                            success: function(){return done()},
+                            error: function(){return done()}
+                        }));
+                    },
+                    disableAuth: function(network, done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/sso/disableAuth/',
+                            data: {network:network},
+                            async: true,
+                            success: function(o){return done(o)},
+                            error: function(){return false}
+                        }));
+                    },
+                    getFlash: function(clear){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: (clear||false)?'/sso/getFlash/1/':'/sso/getFlash/',
+                            success: function(o){return (o&&o.flash)?o.flash:false},
+                            error: function(){return false}
+                        }));
+                    },
+                    getLfToken: function(done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/sso/getLf/',
+                            success: function(o){return done(o)},
+                            error: function(){return done()}
+                        }));
+                    },
+                    getFollowing: function(done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/sso/getFollowing/',
+                            success: function(o){return done(o||{})},
+                            error: function(){return done()}
+                        }));
+                    },
+                    toggleFollow: function(userId, follow, done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/sso/toggleFollow/',
+                            data: {userId: userId, follow: follow},
+                            success: function(o){return done(o||false)},
+                            error: function(){return done(false)}
+                        }));
+                    },
+                    addEvent: function(userId, eventId, marketId, done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            async: true,
+                            url: '/sso/addEvent/',
+                            data: {userId: userId, eventId: eventId, marketId: marketId},
+                            success: function(o){return done(o||false)},
+                            error: function(){return done(false)}
+                        }));
+                    },
+                    freeStuffNewsletter:  function(freeStuffId,marketId){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/widget/freestuff/',
+                            data: {freestuffid:freeStuffId,market:marketId },
+                            success: function(o){return done(o||false)},
+                            error: function(o){return done(false)}
+                        }));
+                    },
+                    getUsersForEvent: function(eventId, userId, done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/sso/getUsersForEvent/',
+                            data: {eventId: eventId,userId:userId},
+                            success: function(o){return done(o||false)},
+                            error: function(){return done(false)}
+                        }));
+                    },
+                    like: function(fields, done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/widget/like/',
+                            data: fields,
+                            success: function(o){return done(o)},
+                            error: function(){return false}
+                        }));
+                    },
+                    forgotPass: function(fields, done){
+                        $.ajax($.extend(MVN_Server.ajaxDefaults, {
+                            url: '/profile/mvn2ForgotPassword/',
+                            data: fields,
+                            success: function(o){return done(o)},
+                            error: function(){return false}
+                        }));
+                    },
+                    addEventWithHash: function() {
+                        MVN_Server.client.addEventWithHash();
+                    },
+                },
+                initXD: function(){
+                    if(MVN_Server.client)
+                        MVN_Server.client.destroy();
+                    MVN_Server.client = new easyXDM.Rpc({
+                            local:  '/xd.html',
+                            swf:    '/xd.swf',
+                            onReady: function(){
+                                if(doPopup)
+                                    MVN_Server.initObj.setSid = doPopup;
+                                                                MVN_Server.client.setCookie('MVN[sid]', 'bb6f183acb0b185b40274dd3b15a6a9d', '', '/','');
+                                                                MVN_Server.client.init(MVN_Server.initObj||null);
+                                MVN_Server.fireReady();
+                            }
+                        },{ local: MVN_Server.local,
+                            remote: {
+                                init: {},
+                                setCookie: {},
+                                cookies: {},
+                                action: {},
+                                track: {},
+                                buildAndTrack: {},
+                                updateModal: {},
+                                modalEvent: {},
+                                updateWidget: {},
+                                closeSubscribe: {},
+                                handleResponse: {},
+                                showMessage: {},
+                                hideMessage: {},
+                                addEventWithHash: {},
+                            }
+                        }
+                    );
+                }
+            }
+
+            window.localjQuery = function(win) {
+                return $.extend(function (a,b) {
+                    return jQuery.call(win, a, b||win.document);
+                }, jQuery);
+            };
+
+            MVN_Server.initXD();
+                    </script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+    
+</body></html>

@@ -1,0 +1,206 @@
+/* Shortcode Style */
+.coupon-container {
+    margin: .2em;
+    box-shadow: 0 0 5px #e0e0e0;
+    display: inline-table;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.coupon-container.previews { cursor: inherit }
+.coupon-container.blue { background-color: #e0f7ff }
+.coupon-container.red { background-color: #ffe0e0 }
+.coupon-container.green { background-color: #e0ffe0 }
+.coupon-container.yellow { background-color: #f7f7e0 }
+
+.coupon-container.small {
+    padding: .3em;
+    line-height: 1.2em;
+}
+.coupon-container.medium {
+    padding: .4em;
+    line-height: 1.4em;
+}
+.coupon-container.large {
+    padding: .5em;
+    line-height: 1.6em;
+}
+
+.coupon-content.small { padding: .2em 1.2em }
+.coupon-content.medium { padding: .4em 1.4em }
+.coupon-content.large { padding: .6em 1.6em }
+.coupon-content.dashed { border: 2.3px dashed }
+.coupon-content.dotted { border: 2.3px dotted }
+.coupon-content.groove { border: 2.3px groove }
+.coupon-content.solid { border: 2.3px solid }
+.coupon-content.none { border: 2.3px none }
+.coupon-content.blue { border-color: #c0d7ee }
+.coupon-content.red { border-color: #eec0c0 }
+.coupon-content.green { border-color: #c0eec0 }
+.coupon-content.yellow { border-color: #e0e0c0 }
+.coupon-content .code {
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight:700;
+}
+
+.coupon-content .coupon-expire,
+.coupon-content .discount-info {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+/*Shortcode fields*/
+#coupon-selector #coupon-option label span {
+    display: inline-block;
+    width: 100px;
+}
+#coupon-selector #coupon-option label select {
+    margin-left: -.2em;
+    width: 175px;
+    margin-bottom: 6px;
+}
+div#sc_shortcode_update {
+    float: right;
+    margin-top: -5px;
+}
+form#sc_coupons_attributes { padding: 0 1em 1em }
+div#coupon-selector {
+    padding: 1em 1em 1em 0;
+    float: left;
+    border-right: 1px solid #E6E6E6;
+}
+.coupon-preview {
+    padding: 1em 0 1em 1em;
+    float: left;
+    width: 175px;
+}
+.preview-heading {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#search-panel {
+    margin: 5px 0;
+    overflow-x: hidden;
+    min-height: 80px;
+    max-height: 110px;
+    border: 1px solid #D4D4D4;
+    background-color: #FFF;
+    width: 275px;
+    color: #333;
+}
+#coupon-option #search-panel #search-results span{
+    width: 100%;
+    margin-left: 10px;
+}
+#search-results ul { margin: 5px -2px }
+#search-results ul li {
+    cursor: pointer;
+    border: 1px solid #F2F2F2;
+    margin-bottom: -1px;
+    padding: 3px 15px;
+    font-size: 12px;
+}
+#search-results ul li:hover {
+    background-color: #EAF2FA;
+    color: #000;
+}
+#coupon-option #search-panel #search-results ul li span {
+    width: 0;
+    color: #f00;
+}
+#sc_coupons_attributes .submitbox { clear: both }
+#default-text {
+    text-align: center;
+    font-style: italic;
+    padding: 2px;
+    background-color: #F2F2F2;
+    margin-bottom: -5px;
+}
+
+/*Coupon display on Cart, Checkout and My account*/
+.smart_coupons_style {
+    list-style-type: none;
+    background-color: #91EE91;
+    margin-left: -30px;
+    max-width: 80%;
+    margin-bottom: -1px;
+    cursor: pointer;
+    padding: 8px 25px;
+    color: #000;
+    position: relative;
+    box-shadow: 0 3px 4px hsla(0, 0%, 71%, .8);
+    border: 1px dashed #FFF;
+}
+
+/* Gift Cerificate form */
+input.gift_receiver_email { min-width: 100% }
+p.coupon_amount_label { text-align: center }
+div#gift-certificate-receiver-form thead th { text-align: center }
+input#deliver_on_date { text-align: center }
+
+/* Coupon generation form */
+form#generate_coupons p.form-field input[type=checkbox] {
+    width: 2%;
+}
+form#generate_coupons p.form-field input[type=text] { width: 30% }
+form#generate_coupons p.form-field input[type=number] { width: 15% }
+div.gift-certificate-receiver-detail-form,
+div#gift-certificate-receiver-form-multi { display: none }
+a#single_multi { float: right }
+
+.sc_info_box {
+    position: relative;
+    padding: 1em 2%;
+    margin: 1em 0;
+    font-size: .92em;
+    line-height: 1.5em;
+    background-color: #f7f6f7;
+    border-radius: 5px;
+    float: left;
+    width: 100%;
+}
+
+textarea.gift_receiver_message { width: 97% }
+
+.form_table {
+    width: 97%;
+    padding: 20px 10px;
+    border-top: 2px;
+    border-top-color: #dbdbdb;
+    border-top-style: solid;
+}
+.message_row { width: 100% }
+.sc_message { width: 100% }
+.email_amount { width: 100% }
+.email { width: 80% }
+div.amount {
+    width: 20%;
+    float: right;
+    vertical-align: middle;
+}
+.gift-certificate-show-form p { margin: 0 }
+.gift-certificate-show-form lable { display: inline }
+.gift-certificate-show-form input[type=radio] { margin-left: 1em }
+.show_hide_list { padding-left: 0 }
+.single_multi_list { display: none }
+div.mce-smart-coupon-shortcode {
+    cursor: pointer;
+}
+div.mce-smart-coupon-shortcode i:before {
+    content: "\e600";
+    font-family: 'WooCommerce';
+}
+.smart-coupon-loading:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(../../../woocommerce-smart-coupons/assets/images/ajax-loader.gif) center no-repeat rgba(255,255,255,.65);
+}
+div[aria-describedby="sc_coupons_attributes"] {
+    z-index: 1000;
+}

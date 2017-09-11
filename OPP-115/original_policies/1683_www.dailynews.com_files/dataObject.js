@@ -1,0 +1,1 @@
+define(["core/logger"],function(){function t(t,e){this.data=e,this.signature=t}return t.prototype.getSignature=function(){return this.signature},t.prototype.getDataByKey=function(t){var e=null;return this.data&&(e=this.data[t.toLowerCase()]),e},t});

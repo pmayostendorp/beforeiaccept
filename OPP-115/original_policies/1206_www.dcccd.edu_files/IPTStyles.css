@@ -1,0 +1,1813 @@
+/* FONT UPDATES */
+
+.PageContainer {
+  font-family: Arial, Helvetica, MS Sans Serif, sans-serif;
+}
+
+.PageLocations {
+    font-family: Arial, Helvetica, MS Sans Serif, sans-serif;
+}
+
+.PageContent .Tile .event {
+    font-family: Arial, Helvetica, MS Sans Serif, sans-serif;
+}
+
+/* SIDEBAR FIX */
+
+.PageSidebarContent, .s4-ql ul.root > li > .menu-item, .s4-qlheader, .s4-qlheader:visited {
+    font-size:13px;
+}
+
+.s4-ql ul.root ul {
+  margin: 0px 0px 0px 0px;
+}
+
+.s4-ql a.selected {
+    border:0;
+    background:#f9f9f9;
+}
+
+.s4-ql ul.root > li > .menu-item, .s4-qlheader, .s4-qlheader:visited, .s4-ql ul.root ul > li > a {
+    border:0;
+}
+
+
+/* JDB LINE HEIGHT CHANGES */
+.fontface .PageNavigation .MainNavContainer {
+    min-height:70px
+}
+
+.PageNavigation .MainNavContainer {
+    overflow:hidden;
+    font-size:19px;
+    line-height:2.5em;
+    font-weight:400;
+    background-color:#EBEAE6
+}
+
+.PageMainContent {
+    overflow:hidden;
+    line-height:1.75em
+}
+
+.PageMainContent h2.large-h2 {
+    font-size:1.5em;
+    font-weight:700;
+    line-height:1.25em
+}
+
+.PageMainContent p {
+    margin:0 0 1.5em
+}
+
+
+.PageMainContent h2 {
+    font-size:18px;
+    margin-top:1em;
+    margin-bottom:1em
+}
+
+.PageMainContent h3 {
+    font-size:16px;
+    margin-top:1em;
+    margin-bottom:1em
+}
+
+.PageContent ol,.PageContent ul {
+    margin:0 0 1.75em 10px;
+    padding:0
+}
+
+.PageSidebarContent {
+    width:175px;
+    overflow:hidden;
+    background-color:#ECEAE6;
+    margin:-2px 0 0;
+    color:#2B2721;
+    line-height:1.75em
+}
+
+.accord tr {
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    border-radius:25px;
+    margin:10px;
+    background:#6999D3;
+    vertical-align:top;
+    text-align:center;
+    line-height:28px;
+    line-height:1.75em
+}
+
+.StandardClass {
+    margin:1.75em 0
+}
+
+/* Shadows */
+
+.boxshadow .ShadowBar {
+    box-shadow:3px 1px 5px 0 #bebebe;
+    margin:0 0 3px;
+    padding:0
+}
+
+.boxshadow .WithBackground .PageMainContent {
+    box-shadow:0 2px 5px 1px #bebebe
+}
+
+.boxshadow .TileSet .TileBox {
+    box-shadow:1px 2px 4px 2px #bebebe
+}
+
+/* End Shadows */
+
+/* FRONT PAGE LINE HEIGHT FIXES */
+
+.Tile ul {
+    margin:0 0 0 10px
+}
+
+.PageContent .Tile .event {
+    font-family:Tahoma,Arial Narrow,Helvetica,MS Sans Serif,sans-serif;
+    font-size:14px;
+    line-height:1.25em
+}
+
+/* TOP SITE HOME FIXES */
+.TileSet .TileBox .Tile {
+    height:280px
+}
+
+.Schedules .TileSet .TileBox .Tile {
+    height:325px
+}
+
+.IsTopSiteHome .TileSet .BottomRow .Tile {
+    height:280px
+}
+
+
+/* FRONT PAGE UPDATES */
+
+.IsHome .TileSet .LeftColumn, .IsHome .TileSet .CenterColumn, .IsHome .TileSet .RightColumn {
+  width: 300px;
+}
+
+.IsHome .TileSet .TileGroup {
+  width: 645px;
+}
+
+
+/* Front Page Tiles */
+
+.IsHome .PageContent.top {
+    min-height:50px;
+}
+
+.IsHome .PageContent.top .flat-button {
+    width:85%;
+}
+
+.IsHome .PageContent.top .adsection .col {
+    min-height:175px;
+}
+
+.IsHome .PageContent.top .adsection .tuition, .IsHome  .PageContent.top .adsection .programs, .IsHome .PageContent.top .adsection .students {
+  font-size: 6em;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    .IsHome  .PageContent.top .adsection .tuition, .IsHome .PageContent.top .adsection .programs, .IsHome .PageContent.top .adsection .students {
+      font-size: 3em;
+  }
+}
+
+.IsHome .PageContent.top .adsection .tuition {
+    color:#D64309;
+}
+.IsHome .PageContent.top .adsection .programs {
+    color: #00786c;
+}
+.IsHome .PageContent.top .adsection .students {
+    color: #41424f;
+}
+
+.IsHome .PageContent.top .adsection p {
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.IsHome .TileSet .LeftColumn, .IsHome .TileSet .CenterColumn, .IsHome .TileSet .RightColumn {
+    width:300px;
+}
+
+.IsHome .TileSet .TileBox {
+    margin: 10px;
+}
+
+.IsHome .TileSet .TileGroup {
+    width:645px;
+}
+
+.IsHome .TileSet .TileBox {
+    box-shadow: 0px 0px 0px 0px #bebebe;
+    border-radius: 0;
+    outline: 1px solid #c7c7c7;
+    border-bottom: solid 8px #0038a8;
+}
+
+.IsHome .ShadowBox {
+    border-bottom:solid 8px #0038a8;
+}
+
+
+/* Top Site Home Tiles */
+
+.TileSet .LeftColumn, .TileSet .CenterColumn, .TileSet .RightColumn {
+    width:300px;
+}
+
+.TileSet .TileBox {
+    margin: 10px;
+}
+
+.boxshadow .TileSet .TileBox {
+    box-shadow: 0px 0px 0px 0px #bebebe;
+    border-radius: 0;
+    outline: 1px solid #c7c7c7;
+    border-bottom: solid 8px #0038a8;
+}
+
+.ShadowBox {
+    border-bottom:solid 8px #0038a8;
+}
+
+
+/* SITE HOME FIXES */
+
+.FeaturedSitesTable {
+    width:100%;
+    margin:0 0 20px
+}
+
+.fontface .FeaturedSitesTitles .Item {
+    font-size:30px;
+    font-family:LeagueGothicRegular,Tahoma,Arial Narrow,Helvetica,MS Sans Serif;
+    line-height:1.25em
+}
+
+.FeaturedSitesTitles .HideSelfIfEmpty {
+    line-height:2em
+}
+
+.FeaturedSitesImages img {
+    width:100%;
+    height:auto
+}
+
+.PageContent .FeaturedSitesLinks .Item img {
+    margin-left:10px
+}
+
+/* ---- END JDB LINE HEIGHT ---- */
+
+/* LI INDENTIONS */
+
+.PageContent li {
+    margin: 0 0 3px 25px;
+    padding:0
+}
+
+/* END LI INDENTIONS */
+
+/* LARGE PULL OUT QUOTE (note see accesibility note in Evernote) */
+
+.PageContent .large-pullout {
+    font-size:2em;
+    line-height:1.5em;
+    color:#236d9e;
+    font-family:Helvetica,Arial,Verdana,sans-serif;
+    font-weight:700;
+    font-style:italic;
+    border-top:4px solid #D8D8D8;
+    border-bottom:4px solid #D8D8D8;
+    padding:.25em
+}
+
+.PageContent .large-pullout a {
+    color:#236d9e;
+}
+
+
+.PageContent .large-pullout.center {
+    width:60%;
+    margin:1em auto
+}
+
+.PageContent .large-pullout.left {
+    width:40%;
+    float:left;
+    margin:1em 1em 1em 0
+}
+
+.PageContent .large-pullout.right {
+    width:40%;
+    float:right;
+    margin:1em 0 1em 1em
+}
+
+.PageContent .large-pullout span.sub-pullout {
+    font-size:.75em;
+    font-style:normal;
+    line-height:1.25em;
+}
+
+@media only screen and (max-width: 480px) {
+    .PageContent .large-pullout,.PageContent .large-pullout.center,.PageContent .large-pullout.left,.PageContent .large-pullout.right {
+        width:80%;
+        float:none;
+        margin:1em auto
+    }
+}
+
+/* END LARGE PULL OUT QUOTE */
+
+/* -------------------- */
+/* Pull Out Styles      */
+/* -------------------- */
+
+/* Site Pull Out Style */
+
+.PageContent .pull-out-box {
+    background-color:#F3F2F0;
+    border:1px solid #d8d8d8;
+    border-bottom: 4px solid #9a308b;
+    margin-bottom: 50px;
+    color:#111111;
+}
+
+.PageContent .pull-out-box .pull-out-box {
+    background-color:#ffffff;
+}
+
+.PageContent .accessibility {
+    background-color:#c0e4f6;
+    border:1px solid #CCC
+}
+
+.PageContent .accessibility .title {
+    background:url(/Style%20Library/Images/pull-out-icons.png) 0 0 no-repeat
+}
+
+.PageContent .important {
+    background-color:#FFC;
+    border:1px solid #FC3
+}
+
+.PageContent .important .title {
+    background:url(/Style%20Library/Images/pull-out-icons.png) 0 -40px no-repeat
+}
+
+.PageContent .example {
+    background-color:#efefef;
+    border:1px solid #CCC
+}
+
+.PageContent .example .title {
+    background:url(/Style%20Library/Images/pull-out-icons.png) 0 -80px no-repeat
+}
+
+.PageContent .tip {
+    background-color:#F1F5F7;
+    border:1px solid #CCC
+}
+
+.PageContent .tip .title {
+    background:url(/Style%20Library/Images/pull-out-icons.png) 0 -120px no-repeat
+}
+
+.PageContent .important,.tip,.accessibility,.example,.pull-out-box {
+    padding:4px 1.5em 0;
+    margin:1em auto;
+    width:85%;
+    font-family:Arial,Helvetica,MS Sans Serif,sans-serif
+}
+
+.PageContent .important p,.tip p,.accessibility p,.example p .pull-out-box p {
+    line-height:1.5em;
+    font-size:.9em
+}
+
+.PageContent .important .title,.tip .title,.accessibility .title,.example .title {
+    padding:0 0 0 45px;
+    display:block;
+    height:40px;
+    font-family:Arial,Helvetica,MS Sans Serif,sans-serif;
+    line-height:2.25em;
+}
+
+.PageContent .pull-out-box .title {
+    font-size:1.25em;
+    line-height:2em;
+    margin-bottom:.75em
+}
+
+/* FLAT BUTTONS */
+/* http://cssdeck.com/labs/beautiful-flat-buttons */
+
+.PageContent a.flat-button, input[type=submit].flat-button {
+    display: block;
+    position:relative;
+    vertical-align:middle;
+    width:200px;
+    max-width:100%;
+    padding: 0;
+    margin: 0em auto 1em auto;
+    font-size:1.75em;
+    font-weight:700;
+    line-height: 2em;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 1px 2px rgba(255,255,255,0.15);
+    border:0;
+    cursor:pointer;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    text-decoration:underline;
+}
+
+.PageContent a.flat-button.inline {
+    margin:1em;
+    display:inline-block;
+}
+
+.PageContent a.flat-button.alignright {
+    margin: 1em 0 1em 1em;
+    float:right;
+}
+
+.PageContent a.flat-button.alignleft {
+    margin: 1em 1em 1em 0;
+    float:left;
+}
+
+.PageContent a.flat-button {
+    color:#fff;
+    text-decoration:underline;
+}
+
+.PageContent a.flat-button:hover, .PageContent a.flat-button:focus {
+    top:1px;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    text-decoration:none;
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity: 0.9;
+}   
+
+.PageContent a.Sunflower, .PageContent a.Orange,.PageContent a.Carrot,.PageContent a.Alizarin,.PageContent a.Turquoise,.PageContent a.Green-Sea,.PageContent a.Emerald,.PageContent a.Nephritis,.PageContent a.Silver,.PageContent a.Asbestos,.PageContent a.Clouds {
+    color:#000
+}
+
+.PageContent .Sunflower {
+    background:#f1c40f;
+    border-bottom:2px solid #e2b607;
+    -webkit-box-shadow:inset 0 -2px #e2b607;
+    -moz-box-shadow:inset 0 -2px #e2b607;
+    box-shadow:inset 0 -2px #e2b607
+}
+
+.PageContent .Orange {
+    background:#f39c12;
+    border-bottom:2px solid #e8930c;
+    -webkit-box-shadow:inset 0 -2px #e8930c;
+    -moz-box-shadow:inset 0 -2px #e8930c;
+    box-shadow:inset 0 -2px #e8930c
+}
+
+.PageContent .Carrot {
+    background:#e67e22;
+    border-bottom:2px solid #da751c;
+    -webkit-box-shadow:inset 0 -2px #da751c;
+    -moz-box-shadow:inset 0 -2px #da751c;
+    box-shadow:inset 0 -2px #da751c
+}
+
+.PageContent .Alizarin {
+    background:#e74c3c;
+    border-bottom:2px solid #db4334;
+    -webkit-box-shadow:inset 0 -2px #db4334;
+    -moz-box-shadow:inset 0 -2px #db4334;
+    box-shadow:inset 0 -2px #db4334
+}
+
+.PageContent .Pomegranate {
+    background:#c0392b;
+    border-bottom:2px solid #b53224;
+    -webkit-box-shadow:inset 0 -2px #b53224;
+    -moz-box-shadow:inset 0 -2px #b53224;
+    box-shadow:inset 0 -2px #b53224
+}
+
+.PageContent .Turquoise {
+    background:#1abc9c;
+    border-bottom:2px solid #12ab8d;
+    -webkit-box-shadow:inset 0 -2px #12ab8d;
+    -moz-box-shadow:inset 0 -2px #12ab8d;
+    box-shadow:inset 0 -2px #12ab8d
+}
+
+.PageContent .Green-Sea {
+    background:#16a085;
+    border-bottom:2px solid #14947b;
+    -webkit-box-shadow:inset 0 -2px #14947b;
+    -moz-box-shadow:inset 0 -2px #14947b;
+    box-shadow:inset 0 -2px #14947b
+}
+
+.PageContent .Emerald {
+    background:#2ecc71;
+    border-bottom:2px solid #28be68;
+    -webkit-box-shadow:inset 0 -2px #28be68;
+    -moz-box-shadow:inset 0 -2px #28be68;
+    box-shadow:inset 0 -2px #28be68
+}
+
+.PageContent .Nephritis {
+    background:#27ae60;
+    border-bottom:2px solid #219d55;
+    -webkit-box-shadow:inset 0 -2px #219d55;
+    -moz-box-shadow:inset 0 -2px #219d55;
+    box-shadow:inset 0 -2px #219d55
+}
+
+.PageContent .District-Blue {
+    background:#0038A8;
+    border-bottom:2px solid #012c82;
+    -webkit-box-shadow:inset 0 -2px #012c82;
+    -moz-box-shadow:inset 0 -2px #012c82;
+    box-shadow:inset 0 -2px #012c82
+}
+
+.PageContent .Amethyst {
+    background:#9b59b6;
+    border-bottom:2px solid #8d4ca7;
+    -webkit-box-shadow:inset 0 -2px #8d4ca7;
+    -moz-box-shadow:inset 0 -2px #8d4ca7;
+    box-shadow:inset 0 -2px #8d4ca7
+}
+
+.PageContent .Wisteria {
+    background:#8e44ad;
+    border-bottom:2px solid #80399d;
+    -webkit-box-shadow:inset 0 -2px #80399d;
+    -moz-box-shadow:inset 0 -2px #80399d;
+    box-shadow:inset 0 -2px #80399d
+}
+
+.PageContent .Wet-Asphalt {
+    background:#34495e;
+    border-bottom:2px solid #263849;
+    -webkit-box-shadow:inset 0 -2px #263849;
+    -moz-box-shadow:inset 0 -2px #263849;
+    box-shadow:inset 0 -2px #263849
+}
+
+.PageContent .Midnight-Blue {
+    background:#2c3e50;
+    border-bottom:2px solid #22303f;
+    -webkit-box-shadow:inset 0 -2px #22303f;
+    -moz-box-shadow:inset 0 -2px #22303f;
+    box-shadow:inset 0 -2px #22303f
+}
+
+.PageContent .Clouds {
+    background:#ecf0f1;
+    border-bottom:2px solid #dadedf;
+    -webkit-box-shadow:inset 0 -2px #dadedf;
+    -moz-box-shadow:inset 0 -2px #dadedf;
+    box-shadow:inset 0 -2px #dadedf
+}
+
+.PageContent .Silver {
+    background:#bdc3c7;
+    border-bottom:2px solid #acb2b7;
+    -webkit-box-shadow:inset 0 -2px #acb2b7;
+    -moz-box-shadow:inset 0 -2px #acb2b7;
+    box-shadow:inset 0 -2px #acb2b7
+}
+
+.PageContent .Asbestos {
+    background:#7f8c8d;
+    border-bottom:2px solid #6d7b7c;
+    -webkit-box-shadow:inset 0 -2px #6d7b7c;
+    -moz-box-shadow:inset 0 -2px #6d7b7c;
+    box-shadow:inset 0 -2px #6d7b7c
+}
+
+.PageContent .Graphite {
+    background:#454545;
+    border-bottom:2px solid #2f2e2e;
+    -webkit-box-shadow:inset 0 -2px #2f2e2e;
+    -moz-box-shadow:inset 0 -2px #2f2e2e;
+    box-shadow:inset 0 -2px #2f2e2e
+}
+
+.PageContent .Oranger {
+    background:#D64309;
+    border-bottom:2px solid #7f2705;
+    -webkit-box-shadow:inset 0 -2px #7f2705;
+    -moz-box-shadow:inset 0 -2px #7f2705;
+    box-shadow:inset 0 -2px #7f2705;
+}
+
+.PageContent .Greener {
+    background:#00786c;
+    border-bottom:2px solid #003c35;
+    -webkit-box-shadow:inset 0 -2px #003c35;
+    -moz-box-shadow:inset 0 -2px #003c35;
+    box-shadow:inset 0 -2px #003c35;
+}
+
+.PageContent .Greyer {
+    background:#41424f;
+    border-bottom:2px solid #111111;
+    -webkit-box-shadow:inset 0 -2px #111111;
+    -moz-box-shadow:inset 0 -2px #111111;
+    box-shadow:inset 0 -2px #111111;
+}
+
+
+
+/************************/
+/* DCCCD.edu Front page */
+/************************/
+
+.PageMain {
+    margin:0 10px
+}
+
+.PageMainContent .Tile p {
+    margin:0 0 .5em
+}
+
+/* Header Fonts */
+
+.IsHome .TileSet h2 {
+    font-size:30px;
+    font-weight:400;
+    font-family:LeagueGothicRegular,Tahoma,Arial Narrow,Helvetica,MS Sans Serif,sans-serif
+}
+
+.IsHome .TileSet h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial Narrow,Helvetica,MS Sans Serif,sans-serif;
+    margin-bottom: .25em;
+    margin-top: .25em;
+}
+
+.IsHome .PageContent {
+    padding:10px 20px 7px;
+    background-color:#EBEAE6
+}
+
+.PageMain.IsHome {
+    background-color:#ebeae6
+}
+
+/* Calendar */
+
+.PageContent .Tile .event {
+    font-family:Tahoma,Arial Narrow,Helvetica,MS Sans Serif,sans-serif;
+    font-size:/* line-height:1.25em; */ 14px;
+}
+
+.PageContent .Tile .event-title a:link {
+    color:#000;
+}
+
+.PageContent .Tile .event-title a:visited {
+    color:#9c917d;
+}
+
+.PageContent .Tile .event-title a:hover {
+    color:#5c70b7;
+}
+
+/* News */
+
+.PageContent .Tile .NewsItem {
+    max-width:265px;
+    overflow:hidden;
+    margin:5px 0 1.25em; /* line-height: 1.5em; */
+}
+
+.PageContent .Tile .NewsItemImage {
+    width:40px;
+    float:left;
+    margin:3px 10px 3px 3px}
+
+.NewsList .NewsItem .NewsItemTitle {
+    float:none;
+    width:260px;
+}
+
+/* Blog Box */
+
+.PageContent .Tile .StudentInfoBlog .BlogItem {
+    max-width:265px;
+    overflow:hidden;
+    margin:5px 0 1.25em; /* line-height: 1.5em; */
+}
+
+/************************/
+/* Dr May's Site        */
+/************************/
+
+/* Dr May's Front PagePage */
+.content {
+    max-width:100%;
+    margin:0 auto;
+    width:960px
+}
+
+.center {
+    max-width:100%;
+    padding:0;
+    margin:0;
+    display:inline-block;
+    width:780px
+}
+
+.Page-Sidebar {
+    max-width:100%;
+    vertical-align:top;
+    background:#c7c7c7;
+    padding:0;
+    margin:0;
+    min-height:800px;
+    display:inline-block;
+    width:175px
+}
+
+.DrMayfollow-me {
+    width:100%
+}
+
+.DrMayfollow-me P {
+    display:inline-block
+}
+
+.DrMayfollow-me.social-icons {
+    display:inline-block;
+    width:300px
+}
+
+.DrMayfollow-me.social-icons IMG {
+    vertical-align:middle
+}
+
+.PageContent .Featured-video {
+    margin:0 auto;
+    max-width:100%;
+    text-align:center
+}
+
+.PageContent .Featured-video iframe {
+    max-width:100%
+}
+
+.PageContent .Video iframe,#kaltura_player_1408122742 {
+    margin:0 auto;
+    width:600px;
+    height:400px;
+    max-width:100%
+}
+
+.DrMayTwitter iFrame {
+    height:450px
+}
+
+.DrMayBox {
+    vertical-align:top;
+    display:inline-block;
+    width:45%;
+    margin-bottom:20px;
+    padding:.25em
+}
+
+.DrMayBox.featured-thumbnail {
+    float:left;
+    margin-right:.5em
+}
+
+.DrMayBox.none.featured-thumbnail {
+    display:none
+}
+
+.DrMayBox .thumbnail-img {
+    height:160px;
+    background:#efefef;
+    width:200px
+}
+
+.divider-line {
+    background:red;
+    width:75%;
+    margin:20px auto;
+    height:.5em
+}
+
+.bio-summary {
+    max-width:600px;
+    width:100%;
+    margin:20px auto
+}
+
+.bio-summary IMG {
+    float:left;
+    padding-bottom:1em;
+    padding-top:0;
+    padding-left:0;
+    padding-right:1em
+}
+
+.DrMay-bottom-column {
+    vertical-align:top;
+    display:inline-block;
+    width:32%;
+    margin-bottom:20px
+}
+
+@media (max-width:700px) {
+    .DrMayBox.featured-thumbnail {
+        display:block;
+        float:none
+    }
+}
+
+@media (max-width:500px) {
+    .DrMayBox {
+        display:block;
+        width:100%
+    }
+
+    .DrMay-bottom-column {
+        display:block;
+        width:100%
+    }
+
+    .DrMayfollow-me.social-icons {
+        display:block;
+        width:100%
+    }
+}
+
+/**************************/
+/* Institutional Research */
+/**************************/
+
+
+/* Facts-Brief
+http://wwws.dcccd.edu/Emp/Departments/Public%20and%20Governmental%20Affairs/PGA%20Depts/IR/facts-brief/Pages/default.aspx */
+.PageContent .Inst-Research .year-columns {
+    width:18%;
+    margin:3%;
+    display:inline-block;
+    background:#efefef;
+    border:1px solid #DCDCDD;
+    text-align:center
+}
+
+.PageContent .Inst-Research .year-columns h2 {
+    text-align:center
+}
+
+.PageContent .Inst-Research .year-columns ul,.PageContent .Inst-Research .year-columns ul li {
+    margin:0;
+    padding:0
+}
+
+.PageContent .Inst-Research .year-columns ul.semesters {
+    list-style:none;
+    margin:0 auto 30px;
+    padding:0;
+    width:75%
+}
+
+.PageContent .Inst-Research .year-columns li.semester {
+    border-bottom:1px solid #DCDCDD;
+    padding:10px 0!important;
+    text-align:center
+}
+
+.PageContent .Inst-Research .year-columns li.semester:last-child {
+    border-bottom:0 solid #DCDCDD
+}
+
+@media screen and (max-width:750px) {
+    .PageContent .Inst-Research .year-columns .year-columns {
+        width:42%
+    }
+}
+
+/************************/
+/* Gainful Employment   */
+/************************/
+ul.dfwp-list li.level-bullet {
+    background-image:none
+}
+
+/************************/
+/* Financial Aid        */
+/************************/
+.PageContent .FinAid .notice {
+    background-color:#EEF;
+    font-size:16px;
+    padding:10px 15px;
+    margin:10px;
+    border:1px solid #88F
+}
+
+/************************/
+/* 10kSB                */
+/************************/
+.ShortcutContent .ShortcutImage {
+    float:left;
+    position:relative;
+    left:-325px
+}
+
+@media (max-width:1000px) {
+    .ShortcutContent {
+        width:200px;
+        float:none;
+        margin:0 auto
+    }
+
+    .ShortcutContent .ShortcutImage {
+        float:none;
+        margin:0 auto;
+        display:block;
+        position:static
+    }
+}
+
+img.GS10ksbLogo {
+    float:left;
+    padding:10px 20px 7px 0;
+}
+
+p.shortcut {
+    float:right;
+    margin:5px 20px
+}
+
+h1.GS10kbutton {
+    background-color:#F37D1B;
+    padding:10px 30px;
+    color:#FFF;
+    width:200px;
+    float:left;
+    text-align:center;
+    vertical-align:middle;
+    margin-top:0;
+    margin-right:20px;
+    border:2px solid #383838;
+    -webkit-border-radius:10px 10px 10px 10px;
+    border-radius:10px 10px 10px 10px
+}
+
+.GS10kbutton a {
+    color:#fff;
+    text-decoration:none
+}
+
+.GS10kbutton-link {
+    color:#fff;
+    text-decoration:none
+}
+
+/************************/
+/* Expanding List       */
+/************************/
+
+/* 
+http://www.dcccd.edu/Emp/Departments/Public%20and%20Governmental%20Affairs/PGA%20Depts/IR/Pages/default.aspx
+http://wwws.dcccd.edu/PC/FA/Pages/default.aspx
+*/
+
+.PageContent .ExpandingList .Heading {
+    cursor:pointer;
+    font-family:Arial, Helvetica, MS Sans Serif, sans-serif
+    font-size:1em;
+    font-weight:bold;
+    text-decoration:underline;
+    margin:1em 0 .5em;
+}
+
+.PageContent .ExpandingText .Heading {
+    cursor:pointer;
+    font-family:Arial, Helvetica, MS Sans Serif, sans-serif;
+    font-size:1em;
+    font-weight:bold;
+    text-decoration:underline;
+    margin:1em 0 .5em;
+    line-height:2em;
+}
+
+.PageContent .ExpandingText .Collapse {
+    cursor:pointer;
+    font-family:Arial, Helvetica, MS Sans Serif, sans-serif
+    font-size:1em;
+    font-weight:bold;
+    text-decoration:underline;
+    margin:1em 0 .5em;
+}
+
+.PageContent ul.dropdownMenu {
+    margin:0;
+}
+
+.PageContent li.ExpandingList {
+    margin:1em 0;
+}
+
+.PageContent .ExpandingList {
+    list-style:none;
+    margin:1em 0;
+}
+
+.PageContent .ExpandingList ul {
+    margin:1em 0;
+}
+
+.PageContent .ExpandingList li {
+    margin:.75em 0 0;
+    list-style:none;
+}
+
+.PageContent .arrow-icon {
+    padding-right:.5em;
+    vertical-align:middle;
+}
+
+/***************************/
+/* Advanced Generic Images */
+/***************************/
+
+.ContentBlockRight .ContentImageBlock {
+    float:right;
+    margin:5px 10px 5px 30px
+}
+
+.ContentBlockLeft .ContentImageBlock {
+    float:left;
+    margin:5px 30px 5px 10px
+}
+
+@media only screen and (max-width: 450px) {
+    .ContentBlockLeft .ContentImageBlock,.ContentBlockRight .ContentImageBlock {
+        float:none;
+        margin:1em auto;
+        width:100%
+    }
+}
+
+/***************************/
+/* Hero Images             */
+/***************************/
+.DCCCD-hero {
+    width:100%;
+    position:relative
+}
+
+.DCCCD-hero h2 {
+    width:100%;
+    position:relative;
+    top:-75px;
+    text-align:center;
+    color:#fff;
+    font-size:2em;
+    line-height:1.5em;
+    padding:0;
+    margin:0;
+    background-color:#000;
+    background-color:rgba(0,0,0,0.6)
+}
+
+.DCCCD-hero img {
+    width:100%
+}
+
+@media only screen and (max-width:480px) {
+    .DCCCD-hero h2 {
+        position:relative;
+        top:0;
+        line-height:1.25em;
+        background:#fff;
+        color:#111;
+    }
+}
+
+/***************************/
+/* Legislative Update      */
+/***************************/
+/* http://wwws.dcccd.edu/AU/GovAffairs/Priorities2015/Pages/default.aspx */
+.LegUpdate .SiteIndexContainer .SiteIndexItem {
+    line-height:1.75em;
+    margin:1.5em
+}
+
+.LegUpdate .SiteIndexContainer .SiteIndexItem:nth-child(1) a::before {
+    content:"1";
+    margin:10px;
+    background:#d8d8d8;
+    color:#111;
+    padding:10px;
+    text-decoration:none
+}
+
+.LegUpdate .SiteIndexContainer .SiteIndexItem:nth-child(2) a::before {
+    content:"2";
+    margin:10px;
+    background:#d8d8d8;
+    color:#111;
+    padding:10px;
+    text-decoration:none
+}
+
+.LegUpdate .SiteIndexContainer .SiteIndexItem:nth-child(3) a::before {
+    content:"3";
+    margin:10px;
+    background:#d8d8d8;
+    color:#111;
+    padding:10px;
+    text-decoration:none
+}
+
+.LegUpdate .SiteIndexContainer .SiteIndexItem:nth-child(4) a::before {
+    content:"4";
+    margin:10px;
+    background:#d8d8d8;
+    color:#111;
+    padding:10px;
+    text-decoration:none
+}
+
+.LegUpdate .SiteIndexContainer .SiteIndexItem:nth-child(5) a::before {
+    content:"5";
+    margin:10px;
+    background:#d8d8d8;
+    color:#111;
+    padding:10px;
+    text-decoration:none
+}
+
+ol.LegUpdate {
+    margin-left:0;
+    padding-right:0;
+    list-style-type:none
+}
+
+ol.LegUpdate li {
+    counter-increment:step-counter;
+    margin-bottom:1.5em
+}
+
+.LegUpdate li::before {
+    content:counter(step-counter);
+    margin-right:5px;
+    font-size:80%;
+    background-color:#d8d8d8;
+    color:#000;
+    font-weight:700;
+    padding:3px 8px;
+    border-radius:3px
+}
+
+/***************************/
+/* Worforce Solutions      */
+/***************************/
+/* http://wwws.dcccd.edu/BC/CorpTraining/WFSol */
+
+.PageContent .pull-out-box.workforce {
+    min-height:280px;
+    overflow:hidden
+}
+
+.PageContent .pull-out-box.workforce .partner-image {
+    float:left;
+    margin:0 20px 40px 0;
+    width:160px;
+    height:200px
+}
+
+.PageContent .pull-out-box.workforce .partner-name {
+    text-align:right;
+    font-weight:800
+}
+
+.PageContent .WorkforceHero {
+    text-align:left;
+    font-size:12px;
+    width:400px;
+    /* height:225px; */
+    margin-left:30px;
+    margin-bottom:20px;
+    float: right/* overflow: hidden; */
+}
+
+@media (max-width: 850px) {
+    .PageContent .pull-out-box.workforce .partner-image,.PageContent .WorkforceHero {
+        float:none;
+        margin:.5em auto;
+        max-width:100%
+    }
+}
+
+/***************************/
+/* Ad Section              */
+/***************************/
+.adsection {
+    clear:both;
+    padding:0;
+    margin:0;
+    width:100%
+}
+
+.adsection .col {
+    margin:0 0 10px 1.2%;
+    /* display:block */
+    float:left;
+    height:145px
+}
+
+.adsection .calendar.col {
+    /* Calendar fix */
+    margin:0 0 10px 1.2%
+}
+
+.adsection .col:first-child {
+    margin-left:0
+}
+
+/* 3 Column */
+.adsection .col.span_3_of_3 {
+    width:100%
+}
+
+.adsection .col.span_2_of_3 {
+    width:66.1%
+}
+
+.adsection .col.span_1_of_3 {
+    width:32.4%
+}
+
+/* 4 Column */
+.adsection .col.span_4_of_4 {
+    width:100%
+}
+
+.adsection .col.span_3_of_4 {
+    width:74.5%
+}
+
+.adsection .col.span_2_of_4 {
+    width:49.1%
+}
+
+.adsection .col.span_1_of_4 {
+    width:24%
+}
+
+@media only screen and (max-width: 600px) {
+    .adsection .col.span_1_of_4,.adsection .col.span_1_of_3,.adsection .col.span_2_of_3,.adsection .col.span_2_of_4,.adsection .col.span_3_of_3,.adsection .col.span_3_of_4,.adsection .col.span_4_of_4 {
+        display:block;
+        width:100%;
+        margin-left:0;
+        text-align:center
+    }
+}
+
+/***************************/
+/* Alternating Table Rows  */
+/***************************/
+.PageContent table.StandardTable {
+    margin:0 auto 2em auto;
+}
+.PageContent table.StandardTable th {
+    background:#eaeaea;
+}
+
+.PageContent table.StandardTable td {
+    background:none
+}
+
+.PageContent table.StandardTable.Alternate tr:nth-child(odd) {
+    background:#fff
+}
+
+.PageContent table.StandardTable.Alternate tr:nth-child(even) {
+    background:#f7f7f7
+}
+
+/***************************/
+/* Calendar Layout Test    */
+/***************************/
+.calendar-testing .event {
+    height:100px
+}
+
+.calendar-testing .event-date {
+    float:left;
+    width:70px;
+    height:70px;
+    margin:0 10px 10px 0;
+    padding:5px;
+    border:2px solid #0033a8;
+    text-align:center;
+    line-height:1.25em;
+    font-size:.9em;
+    vertical-align:middle;
+    display:table
+}
+
+.calendar-testing .event-date span {
+    vertical-align:middle;
+    display:table-cell
+}
+
+/********************************************************************/
+/* Student Profile Page                                             */
+/* http://www.dcccd.edu/CD/DCC/Pages/Student-Success-Stories.aspx   */
+/********************************************************************/
+
+.ExpandingList .Heading {
+    cursor:pointer;
+    font-family:Tahoma,Arial Narrow,Helvetica,MS Sans Serif,sans-serif;
+    font-size:1em;
+    font-weight:800;
+    text-decoration:underline;
+    margin:1em 0 .5em
+}
+
+ul.dropdownMenu {
+    margin:0
+}
+
+li.ExpandingList {
+    margin:1em 0
+}
+
+.ExpandingList {
+    list-style:none;
+    margin:1em 0
+}
+
+.ExpandingList ul {
+    margin:1em 0
+}
+
+.ExpandingList li {
+    margin:.75em 0 0;
+    list-style:none
+}
+
+.arrow-icon {
+    padding-right:.5em;
+    vertical-align:middle;
+}
+
+.featured-profiles {
+    width:100%;
+    max-width:780px;
+    background:#efefef;
+    vertical-align:top
+}
+
+.featured-single {
+    width:160px;
+    max-width:100%;
+    display:inline-block;
+    margin:10px;
+    vertical-align:top
+}
+
+.featured-image {
+    width:160px;
+    max-width:100%;
+    overflow:hidden;
+    margin:0
+}
+
+.featured-caption {
+    width:140px;
+    max-width:100%;
+    min-height:90px;
+    vertical-align:top;
+    background:#006491;
+    color:#fff;
+    font-size:1.1em;
+    padding:10px
+}
+
+.featured-caption a,.featured-caption a:visited {
+    color:#fff
+}
+
+li.ExpandingList {
+    list-style:none;
+    width:100%
+}
+
+/********************************************************************/
+/* Academic Advising Step by Step                                   */
+/* http://wwws.dcccd.edu/Why/Apply/Advising/Pages/default.aspx      */
+/********************************************************************/
+
+.step-by-step-4 .FeaturedSitesTable {
+    width: 780px;
+    position: relative;
+    top: 40px;
+}
+
+.step-by-step-4 .step-navigation /* moves step 4 arrows above FeaturedSitesTable boxes */{
+    position: relative;
+    top: -300px;
+}
+
+ul.step-navigation {
+    font-size: 18px;
+    font-family: Tahoma, Arial Narrow, Helvetica, MS Sans Serif;
+    margin:0;
+}
+
+.step-navigation li {
+    display:inline-block;
+    list-style:none;
+    margin:0;
+}
+.step-navigation li a:link {
+    color: #ffffff !important;
+    background: url(http://www.dcccd.edu/Why/Apply/PublishingImages/arrow-sprite.gif) no-repeat;
+    background-position: 0px 0px; 
+    padding: 10px 10px 10px 30px;
+    display:inline-block;
+    list-style:none;
+    margin:5px 0 5px 5px;
+    width:80px;
+}
+
+.step-navigation li a:visited {
+    color: #fad0d0;
+    background: url(http://www.dcccd.edu/Why/Apply/PublishingImages/arrow-sprite.gif) no-repeat;
+    background-position: 0px -48px;  
+    padding: 10px 10px 10px 30px;
+    text-decoration:none;
+    margin:5px 0 5px 5px;
+    width:80px;
+}
+
+.step-navigation li a:hover {
+    color: #efefef;
+    background: url(http://www.dcccd.edu/Why/Apply/PublishingImages/arrow-sprite.gif) no-repeat;
+    background-position: 0px -97px;  
+    padding: 10px 10px 10px 30px;
+    margin:5px 0 5px 5px;
+    width:80px;
+}       
+
+.step-navigation li a:active, .step-navigation li .active a {
+    color: #c7c7c7;
+    background: url(http://www.dcccd.edu/Why/Apply/PublishingImages/arrow-sprite.gif) no-repeat;
+    background-position: 0px -48px;  
+    padding: 10px 10px 10px 30px;
+    text-decoration:none;
+    margin:5px 0 5px 5px;
+    width:80px;
+}
+
+@media screen and (max-width: 945px) {
+    .FeaturedSitesTable {
+        position:static;
+    }
+    .step-navigation {
+        position:static;
+    }
+}
+
+/********************************************************************/
+/* Bill Priest Video                                                */
+/* http://www.dcccd.edu/AU/WhoWeAre/History/Pages/Bill-Priest.aspx  */
+/********************************************************************/
+
+span.time {
+    width:40%;
+    float:left;
+}
+span.speaker {
+    width:40%
+    float:right;
+}
+
+@media only screen and (max-width: 400px) {
+    span.time {
+        width:100%;
+    }
+}
+
+/********************/
+/* iFrame Fix       */
+/********************/
+
+iframe {max-width:100%;}
+
+
+
+/********************************************************************/
+/* BMET                                                             */
+/* http://www.dcccd.edu/CD/CESP/BMET/Pages/default.aspx             */
+/* custom class: .BMET                                              */
+/********************************************************************/
+
+
+.BMET .PageContent .large-pullout.right {
+    margin:.25em 0 1em 1em;
+}
+
+.BMET-bar {
+    width:100%;
+    height:5em;
+}
+
+.BMET-dark-blue {
+    background:#679cc8;
+    width:100%;
+    height:2.5em;
+    padding:0;
+    margin:0;
+}
+.BMET-medium-blue {
+    background:#76b6f9;
+    width:100%;
+    height:2em;
+    padding:0;
+    margin:0;
+}
+.BMET-light-blue {
+    background:#a9ddfe;
+    width:100%;
+    height:.5em;
+    padding:0;
+    margin:0;
+}
+
+.BMET-triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 2.5em solid transparent;
+    border-right: 3em solid #f27a22;
+    border-bottom: 2.5em solid transparent;
+    float:right;
+}
+
+
+
+/********************************************************************/
+/* AT&T Pathways                                                    */
+/* http://wwws.dcccd.edu/CD/CESP/att/Pages/default.aspx             */
+/* custom class: .att-pathway                                       */
+/********************************************************************/
+
+.att-pathway .DCCCD-hero h2 {
+    top:-115px;
+}
+
+.att-pathway .step-navigation {
+    color: #ffffff !important;
+    background: url(http://www.dcccd.edu/Why/Apply/PublishingImages/arrow-sprite.gif) no-repeat;
+    background-position: 0px 0px; 
+    padding: 10px 10px 10px 30px;
+    display:inline-block;
+    list-style:none;
+    margin:5px 0 5px 5px;
+    width:80px;
+}
+
+.att-pathway .PageContent .ExpandingText .Heading {
+  cursor: pointer;
+  font-family: Arial, Helvetica, MS Sans Serif, sans-serif;
+  font-size:1em;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 1em 0 1em;
+  line-height: 2em;
+}
+
+.att-pathway .section {
+    padding:20px; 
+    margin-top:50px;
+    position:relative;
+}
+
+.att-pathway .section.featured {
+    background: #9a308b url('/CD/CESP/att/PublishingImages/dallas-bg.png') center fixed no-repeat; 
+    background-size: cover; 
+    padding:30px 20px 30px 20px; 
+    margin:50px 0 0; 
+    color:#ffffff; 
+    border-top: 6px solid #fbb12d; border-bottom: 6px solid #fbb12d;
+}
+
+.att-pathway .section.featured .overlay {
+    background:#9a308b;
+    padding:10px
+}
+
+.att-pathway .section.featured a, .att-pathway .section.featured a:visited {
+    color:#ffffff;
+}
+
+.att-pathway .section.quotes {
+    background: url('/CD/CESP/att/PublishingImages/graduate-930-799.jpg') no-repeat right; 
+    background-size:cover; 
+    padding:20px; 
+    margin:50px 0 0 0; 
+    color:#ffffff; 
+    border-top: 6px solid #fbb12d; 
+    border-bottom: 6px solid #fbb12d;
+}
+
+.att-pathway .section.dark {
+    background:#fd7522; 
+    color:#ffffff; 
+    margin-top:0;
+}
+
+.att-pathway .section img {
+    display:block; 
+    margin: 0 auto 0 auto;
+}
+
+.att-pathway .quote {
+    max-width:300px; 
+    width:100%; 
+    background:#ffffff; 
+    border-left:12px solid #fbb12d; 
+    color:#111111; 
+    padding:20px; 
+    margin-right:30px; 
+    margin-bottom:50px;
+}
+
+.att-pathway .att-advisor {
+    width:30%;
+    margin-left:2em;
+    float:right;
+}
+
+.att-pathway .att-footer {
+    height:5em;
+    background:#9a308b;
+}
+
+.att-footer .left-bar {
+    height:5em;
+    width:70%;
+    float:left;
+}
+
+.att-footer .right-bar {
+    height:5em;
+    background:#73ba30;
+    width:30%;
+    float:right;
+}
+
+.att-footer .right-bar img {
+    width:50px;
+    margin:20px auto 20px auto;
+    display:block;
+}
+
+.att-pathway .pull-out-box {
+    border-bottom: 4px solid #9a308b;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width:800px) {
+    .att-pathway .DCCCD-hero h2 {
+        position:relative;
+        top:0;
+        line-height:1.25em;
+        background:#fff;
+        color:#111;
+    }
+}
+
+@media print {
+    .ReaderMap { display: none; }
+    .PageAccessibility { display: none; }
+    .PageRibbon { display: none; }
+    .PageStatus { display: none; }
+    .PageLocations { display: none; }
+    .SearchContent { display: none; }
+    .QuickLinks { display:none;}
+    .PageSlider { display: none; }
+    .PageSidebar { background-image: none; }
+    .PageFooterNav { display: none; }
+    .MobileFooter { display: none; }
+    .NavContent {display:none;}
+    .PageSidebar {display:none}
+
+    .PageContainer {font-family:Georgia, Times New Roman, serif; font-size:1.75em }
+
+    .BottomFormatting { display: none; }
+
+    .no-boxshadow .WithSidebar .PageMainContent { background-image: none; }
+    .PageMain {background:none}
+    .PageMainContent, .ShadowBar {box-shadow: 0px 0px 0px 0px !important; background:#ffffff}
+
+    .att-pathway .pull-out-box {display:block !important}
+    .att-pathway .flat-button {display:none}
+    .att-pathway #print-button {display:none}
+}
+
+
+
+/********************************************************************/
+/* Front Page Test                                                  */
+/* http://wwws.dcccd.edu/Test/Pages/Front-Page.aspx                 */
+/* custom class: .front-page-test                                   */
+/********************************************************************/
+
+.front-page-test .PageContent.top {
+    min-height:50px;
+}
+
+.front-page-test .PageContent.top .flat-button {
+    width:85%;
+}
+
+.front-page-test .PageContent.top .adsection .col {
+    min-height:175px;
+}
+
+.front-page-test .PageContent.top .adsection .tuition, .front-page-test .PageContent.top .adsection .programs, .front-page-test .PageContent.top .adsection .students {
+  font-size: 6em;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    .front-page-test .PageContent.top .adsection .tuition, .front-page-test .PageContent.top .adsection .programs, .front-page-test .PageContent.top .adsection .students {
+      font-size: 3em;
+  }
+}
+
+.front-page-test .PageContent.top .adsection .tuition {
+    color:#D64309;
+}
+.front-page-test .PageContent.top .adsection .programs {
+    color: #00786c;
+}
+.front-page-test .PageContent.top .adsection .students {
+    color: #41424f;
+}
+
+.front-page-test .PageContent.top .adsection p {
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.IsHome.front-page-test .TileSet .LeftColumn, .IsHome.front-page-test  .TileSet .CenterColumn, .IsHome.front-page-test .TileSet .RightColumn {
+    width:300px;
+}
+
+.front-page-test .TileSet .TileBox {
+    margin: 10px;
+}
+
+.IsHome.front-page-test .TileSet .TileGroup {
+    width:645px;
+}
+
+.front-page-test .TileSet .TileBox {
+    box-shadow: 0px 0px 0px 0px #bebebe;
+    border-radius: 0;
+    outline: 1px solid #c7c7c7;
+    border-bottom: solid 8px #0038a8;
+}
+
+.front-page-test .ShadowBox {
+    border-bottom:solid 8px #0038a8;
+}

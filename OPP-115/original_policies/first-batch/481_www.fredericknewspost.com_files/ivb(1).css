@@ -1,0 +1,125 @@
+/*DATABASE WILL OVERRIDE THIS
+only use database image and color if one market in a parent group needs to be unique*/
+
+.dmcWidget .ivb {
+	background-color:#5c2e91;
+	background-image:url(); /*IF SINGLE DEFAULT IMAGE IS USED THROUGHOUT THE PARENT*/
+	background-repeat:no-repeat;
+}
+
+/*BOOT STRAP OVERRIDES*/
+
+/*view all button*/
+.btn-success {
+  color: #eee;
+  background-color: #92A732;
+  background-image: -moz-linear-gradient(top, #92A732, #92A732);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#92A732), to(#92A732));
+  background-image: -webkit-linear-gradient(top, #92A732, #92A732);
+  background-image: -o-linear-gradient(top, #92A732, #92A732);
+  background-image: linear-gradient(to bottom, #92A732, #92A732);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff92A732', endColorstr='#ff92A732', GradientType=0);
+  border-color: #92A732 #92A732 #92A732;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #92A732;
+   Darken IE7 buttons by default so they stand out more given they won't have borders 
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #fff;
+  background-color: #92A732;
+  *background-color: #92A732;
+}
+.btn-success:active,
+.btn-success.active {
+  background-color: #92A732 \9;
+}
+/*apply here button*/
+.btn-warning {
+  color: #eee;
+/*  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
+  background-color: #fb5808;
+  *background-color: #fb5808;
+  background-image: -moz-linear-gradient(top, #fb5808, #fb5808);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fb5808), to(#fb5808));
+  background-image: -webkit-linear-gradient(top,  #fb5808, #fb5808);
+  background-image: -o-linear-gradient(top, #fb5808, #fb5808);
+  background-image: linear-gradient(to bottom, #fb5808, #fb5808);
+  background-repeat: repeat-x;
+  border-color: #fb5808 #fb5808 #fb5808;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffb5808', endColorstr='#fffb5808', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  color: #ffffff;
+  background-color: #fb5808;
+  *background-color: #fb5808;
+}
+
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #fb5808 \9;
+}
+
+
+input, button, select, textarea {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/*CHOSEN OVERRIDES*/
+
+/* @group Base */
+.chzn-container {
+  font-size: 13px; /* controls all text in chosen */
+}
+.chzn-container .chzn-drop {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-top: 0;
+  color:#555;
+}
+/* @end */
+
+/* @group Single Chosen */
+.chzn-container-single .chzn-single {
+  color: #555; /* main text color after it has been selected */
+}
+.chzn-container-single .chzn-default {
+  color: #999; /* main text color */
+}
+
+.chzn-container-single .chzn-search input {
+color: #555; /* main text color in search */
+}
+/* @end */
+
+/* @group Results */
+
+.chzn-container .chzn-results .active-result {
+  cursor: pointer;
+  display: list-item;
+}
+.chzn-container .chzn-results .highlighted {
+  background-color: #673694;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#673694', endColorstr='#4d2671', GradientType=0 );  
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(20%, #673694), color-stop(90%, #4d2671));
+  background-image: -webkit-linear-gradient(top, #673694 20%, #4d2671 90%);
+  background-image: -moz-linear-gradient(top, #673694 20%, #4d2671 90%);
+  background-image: -o-linear-gradient(top, #673694 20%, #4d2671 90%);
+  background-image: linear-gradient(#673694 20%, #4d2671 90%);
+  color: #fff;
+}
+/* @end */

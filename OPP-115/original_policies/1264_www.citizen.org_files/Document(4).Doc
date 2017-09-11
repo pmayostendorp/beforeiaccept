@@ -1,0 +1,310 @@
+// Google Mini Search Appliance Results
+// Author:	Chris Wolf
+// BBNC: 	
+// Created:	4/29/2010
+
+(function($){
+ $.fn.GoogleSearchEmbed = function(options) {
+	 
+  var defaults = {
+	  site: 'http://www.google.com'
+	 ,client: 'Blackbaud'
+  };
+  var options = $.extend(defaults, options);
+
+  var site = options.site;
+  var client = options.client;
+  	
+  return this.each(function() {
+
+  var _googleSearchSite = site;
+  var _googleSearchWrapper = $(this);
+  var _client = client;
+
+ // detect query from URL
+  if ($.parseQuery()['q']) 
+  {
+   var _googleSearchQuery = $.parseQuery()['q'];
+  } else {
+   var _googleSearchQuery = '';
+  }
+
+ // detect start from URL
+  if ($.parseQuery()['start']) 
+  {
+   var _start = $.parseQuery()['start'];
+  } else {
+   var _start = '0';
+  }
+
+ // detect results per page from URL
+  if ($.parseQuery()['num']) 
+  {
+   var _num = $.parseQuery()['num'];
+  } else {
+   var _num = '10';
+  }
+
+ // detect current page ID from URL
+  if ($.parseQuery()['pid']) 
+  {
+   var _currentPage = $.parseQuery()['pid'];
+  } else {
+   var _currentPage = '';
+  }
+  
+ // add query wrapper to container
+ if ($('#googleSearchInlineQueryWrapper').length == 0)
+ {
+	 
+  // create wrapper with search textbox
+  var _wrap = $('<div id="googleSearchInlineQueryWrapper"/>')
+  				.appendTo(_googleSearchWrapper);
+				
+  $('<label class="BBFieldCaption" id="googleSearchInlineQueryLabel" for="googleSearchQueryBox" />')
+  				.text('Search for:')
+				.appendTo(_wrap);
+				
+  $('<input class="BBFormTextbox" id="googleSearchInlineQueryBox" type="text" />')
+  				.val(_googleSearchQuery)
+				.appendTo(_wrap);
+
+  // create button and execute search when button is clicked
+  $('<input class="BBFormSubmitButton" id="googleSearchInlineQueryButton" type="button" value="Search" />')
+	.appendTo(_wrap);
+
+ } else {
+  // load URL query text in search textbox if it exists
+  $('#googleInlineSearchQueryBox').val(_googleSearchQuery);
+ }
+
+
+  // create results summary
+  if ($('#googleSearchResults').length == 0) 
+  { $('<div id="googleSearchResults"/>').appendTo(_googleSearchWrapper); }
+
+  // create page legend
+  if ($('#googleSearchPages').length == 0) 
+  { $('<div id="googleSearchPages"/>').appendTo(_googleSearchWrapper); }
+
+  // create results listing
+  if ($('#googlePageLinks').length == 0)
+  { $('<ul id="googlePageLinks"/>').appendTo(_googleSearchWrapper); }
+
+  // create results navigation
+  if ($('#googleSearchNav').length == 0) 
+  { $('<div id="googleSearchNav"/>').appendTo(_googleSearchWrapper); }
+
+  document.write('<style>.disable{color:#999 !important;text-decoration:none;cursor:text;}#googleSearchNav a{outline:none;}</style>');
+
+  _googleSearchWrapper.show();
+
+
+var _xmlSrc = _googleSearchSite+'/Custom/GSAProxy/NetCommunityAjaxProxy.ashx?client='+_client+'&site='+_client;
+
+function displaySummary() {
+	
+$.ajax({
+ type: "GET",
+ url: _xmlSrc+'&q='+_googleSearchQuery+'&start=0&num=1000',
+ dataType: "xml",
+ success: function(xml) {
+
+  
+  // empty result containers if they have content
+  $('#googleSearchResults').empty();
+  $('#googleSearchNav').empty();
+  
+if (_googleSearchQuery.length > 0) { 
+
+if($('#prev').length == 0) {
+ $('#googleSearchNav').prepend('<a href="#" id="prev" class="disable">Prev</a> ');
+};
+
+$('#prev').click(function(){
+  _start = parseInt(_start)-10;
+  var newURL = _googleSearchSite+'/Page.aspx?pid='+_currentPage+'&q='+_googleSearchQuery+'&start='+_start+'&num='+_num;
+  window.location = newURL;
+  return false;
+});
+
+$('#googleSearchNav').append('<span id="pages" />');
+
+if($('#next').length == 0) {
+ $('#googleSearchNav').append('<a href="#" id="next">Next</a> ');
+};
+
+$('#next').click(function(){
+ _start = parseInt(_start)+10;
+  var newURL = _googleSearchSite+'/Page.aspx?pid='+_currentPage+'&q='+_googleSearchQuery+'&start='+_start+'&num='+_num;
+  window.location = newURL;
+  return false;
+});
+
+  $('.disable').click(function(){
+	return false;
+  });
+
+var total = $(xml).find('R').length;
+if (total < 100) {
+ var totalRes = total;
+} else if (total == 0) {
+ var totalRes = 'no';
+} else {
+ var totalRes = total+' or more';
+}
+
+var pages = Math.round(total/10);
+
+  // return no results message if search returned no results
+  //var results = $(xml).find('RES');
+   $('<p/>').html('A search for <em>'+_googleSearchQuery+'</em> returned '+totalRes+' results.')
+   			.appendTo('#googleSearchResults');
+
+for(i=0;i<pages;i++)
+{
+ pg = i+1;
+ $('#pages').append('<a href="#">'+pg+'</a> ');	   
+}
+
+$('#pages a').each(function(){
+ $(this).click(function(){
+  int = parseInt($(this).text());
+  _start = (int*10)-10;
+  var newURL = _googleSearchSite+'/Page.aspx?pid='+_currentPage+'&q='+_googleSearchQuery+'&start='+_start+'&num='+_num;
+  window.location = newURL;
+  return false;
+ });
+});
+
+};
+
+ }
+}); // end summary details 
+};
+
+function displayListing() {
+$.ajax({
+ type: "GET",
+ url: _xmlSrc+'&q='+_googleSearchQuery+'&start='+_start+'&num='+_num,
+ dataType: "xml",
+ success: function(xml) {
+
+  $('#googlePageLinks').empty();
+  $('#googleSearchPages').empty();
+  
+  $(xml).find('R').each(function(i){
+   i = i+1;
+								 
+   var id = $(this).attr('N');
+   var url = $(this).find('U').text();
+   var title = $(this).find('T').text();
+   var text = $(this).find('S').text();
+   
+   var result = $('<li />')
+    .attr('class','SearchResult item-'+i)
+	.attr('id',id)
+    .html('<h3 class="SearchTitle"><a href="'+url+'">'+title+'</a></h3><p class="SearchDesc">'+text+'<br><span class="SearchURL">'+url+'</span></p>')
+	.appendTo('#googlePageLinks');
+	
+   if ($(this).attr('L') == 2) {
+	   var resultHTML = result.html();
+	   result.html('<blockquote>'+resultHTML+'</blockquote>');
+   }
+	
+  });
+
+  var total = $('.SearchResult').length - 1;
+  var first = $('.SearchResult').eq(0).attr('id');
+  var last = $('.SearchResult').eq(total).attr('id');
+   
+  $('#googleSearchPages').html('Displaying results '+first+' - '+last+'.');
+
+  if (first == '1') {
+   $('#prev').addClass('disable');
+  } else {
+   $('#prev').removeClass('disable');
+  }
+  
+  var finalRes = _start+10;
+  var lastInt = parseInt(last);
+  
+  if (finalRes > lastInt) {
+   $('#next').addClass('disable');
+  } else {
+   $('#next').removeClass('disable');
+  }  
+    
+ }
+}); // end results listing
+};
+
+//}; // end GoogleSearch();
+
+
+// execute on page load if query is in URL
+if ($.parseQuery()['q']) 
+{
+ displaySummary();
+ displayListing();
+}
+
+
+function inlineGoogleSearch()
+{
+ _start = 0;
+ _googleSearchQuery = $('#googleSearchInlineQueryBox').val();
+ var newURL = _googleSearchSite+'/Page.aspx?pid='+_currentPage+'&q='+_googleSearchQuery+'&start='+_start+'&num='+_num;
+ window.location = newURL;
+}
+
+  // execute search when enter is pressed	
+  $('#googleSearchInlineQueryBox').keypress(function(e) {
+   if(e.keyCode==13){
+    inlineGoogleSearch();
+    $(this).blur();
+    return false;
+   }
+  });
+
+  // execute search on change	
+  $('#googleSearchInlineQueryBox').change(function(){
+   inlineGoogleSearch();
+   $(this).blur();
+   return false;
+  });
+  
+  // create button and execute search when button is clicked
+  $('#googleSearchInlineQueryButton').click(function(){
+   inlineGoogleSearch();
+   return false;
+  })
+
+  });
+ }; // end function
+})(jQuery); // end plugin
+
+
+// get query text from URL
+jQuery.parseQuery = function()
+{
+	var _r = {};
+	var _q = location.search.substring(location.search.indexOf('?') + 1);
+
+	_q = _q.replace(/\&$/, '');
+
+	jQuery.each(_q.split('&'), function()
+	{
+		var _s = this.split('=');
+		
+		var _k = _s[0];
+		var _v = _s[1];
+
+		if (/^[0-9.]+$/.test(_v)) _v = parseFloat(_v);
+		if (typeof _v == 'number' || _v.length > 0) _r[_k] = _v;
+	});
+
+	return _r;
+
+}; 
+

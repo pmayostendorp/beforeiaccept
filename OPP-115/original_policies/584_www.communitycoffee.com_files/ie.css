@@ -1,0 +1,146 @@
+.lt-ie9 input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    border: 0;
+    background-color: transparent;
+}
+
+    .lt-ie9 input[type="checkbox"], input[type="radio"], .lt-ie9 input[type="checkbox"] + label, .lt-ie9 input[type="radio"] + label {
+        display: inline-block;
+    }
+
+        .lt-ie9 input[type="checkbox"] + label span, .lt-ie9 input[type="radio"] + label span {
+            display: none;
+        }
+
+.lt-ie9 .note {
+    display: block;
+}
+
+.lt-ie9 #nav .block > ul > li:first-child + li {
+    margin-right: 20%;
+}
+
+.lt-ie9 .logo {
+    background: url(../Images/CCC-Logo-SVG.png) no-repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/CCC-Logo-SVG.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(\a   src='/CCC-Logo-SVG.png',\a   sizingMethod='scale')";
+}
+
+    .lt-ie9 .logo.for-business {
+        background: url(../Images/gradient_logo2.png) no-repeat;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/gradient_logo2.png', sizingMethod='scale');
+        -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(\a   src='/gradient_logo2.png',\a   sizingMethod='scale')";
+    }
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .lt-ie9 .logo {
+        background: url(../Images/CCC-Logo-SVG120.png) no-repeat;
+    }
+
+        .lt-ie9 .logo.for-business {
+            background: url(../Images/gradient_logo2Tablet.png) no-repeat;
+        }
+}
+
+@media (max-width: 767px) {
+    .lt-ie9 .logo {
+        background: url(../Images/CCC-Logo-SVG80.png) no-repeat;
+    }
+
+        .lt-ie9 .logo.for-business {
+            background: url(../Images/gradient_logo2Phone.png) no-repeat;
+        }
+
+    .lt-ie9 #nav {
+        display: none;
+    }
+}
+
+.lt-ie9 .ha-header-show .logo {
+    height: 128px;
+}
+
+.lt-ie9 .cart {
+    background-image: url(../images/cart.png);
+}
+
+.lt-ie9 #coffee-tab .tab-icon {
+    background-image: url(../images/tab_coffee.png);
+}
+
+.lt-ie9 #single-tab .tab-icon {
+    background-image: url(../images/tab_single.png);
+}
+
+.lt-ie9 #more-tab .tab-icon {
+    background-image: url(../images/tab_more.png);
+}
+
+.lt-ie9 #business-tab .tab-icon {
+    background-image: url(../images/tab_business.png);
+}
+
+.lt-ie9 #twitter-tab .tab-icon {
+    background-image: url(../images/tab_twitter.png);
+}
+
+.lt-ie9 #facebook-tab .tab-icon {
+    background-image: url(../images/tab_facebook.png);
+}
+
+.lt-ie9 #youtube-tab .tab-icon {
+    background-image: url(../images/tab_youtube.png);
+}
+
+.lt-ie9 .tab#twitter-tab.active .tab-icon {
+    background-image: url(../images/tab_twitter_active.png);
+}
+
+.lt-ie9 .tab#facebook-tab.active .tab-icon {
+    background-image: url(../images/tab_facebook_active.png);
+}
+
+.lt-ie9 .tab#youtube-tab.active .tab-icon {
+    background-image: url(../images/tab_youtube_active.png);
+}
+
+.lt-ie9 .footer-social .twitter::before {
+    background-image: url(../images/tab_twitter.png);
+}
+
+.lt-ie9 .footer-social .facebook::before {
+    background-image: url(../images/tab_facebook.png);
+}
+
+.lt-ie9 .footer-social .youtube::before {
+    background-image: url(../images/tab_youtube.png);
+}
+
+.lt-ie9 .stars2 a, .stars2 span {
+    background-image: url(../images/star_sprite_on.png);
+}
+
+.lt-ie9 .stars2 .off {
+    background-image: url(../images/star_sprite_off.png);
+}
+
+.lt-ie9 .jcarousel-control-prev {
+    background-image: url(../images/arrow_dark_prev.png);
+}
+
+.lt-ie9 .jcarousel-control-next {
+    background-image: url(../images/arrow_dark_next.png);
+}
+
+.lt-ie9 .product-details .recurring-check {
+    background: url(../images/check_recurring.png) no-repeat;
+}
+
+/*.lt-ie9 .newsletter {
+    padding: 50px 0 0 0;
+}*/
+
+.lt-ie9 .footer-nav .nav-col {
+    margin-right: 10% !important;
+}

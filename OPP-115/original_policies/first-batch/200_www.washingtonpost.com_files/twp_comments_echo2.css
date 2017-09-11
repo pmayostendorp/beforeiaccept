@@ -1,0 +1,2569 @@
+/*** SPRITE **************************************************************/
+.echo-streamserver-controls-facepile-suffixText,
+.echo-close,
+.module.quick-comments .comment-number {
+    background-image: url("https://img.washingtonpost.com/pb/resources/img/echo2/twp_comments_assets_1.png?t=b20140206150100");
+}
+
+.echo-canvas-container {
+    margin-bottom: 10px;
+}
+
+
+.echo-close {
+    background-color:transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+}
+.echo-canvas-container .echo-close {
+    height: 16px;
+    display: inline;
+}
+
+.echo_container {
+    padding-top: 15px;
+}
+
+
+ .echo-sdk-ui .echo-streamserver-controls-carduiauth-userAnonymous a {
+    font-weight: bold;
+}
+
+.echo-sdk-ui .echo-streamserver-controls-carduiauth-userAnonymous a:hover {
+    text-decoration: none;
+}
+
+.echo-streamserver-controls-stream-item-container-root:empty {
+    padding: 0;
+}
+
+/*** GLOBAL OVERRIDES ****************************************************/
+
+.echo_container.unprocessed {
+    display:none;
+}   
+.echo-streamserver-controls-stream-item-plugin-CardUIShim-seeMore,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-expandChildren .echo-streamserver-controls-stream-item-expandChildrenLabel,
+.echo-streamserver-controls-stream-item-content .view-replies  {
+    font-size: 14px;
+}
+
+.echo-sdk-ui .icon-chevron-down,
+.echo-sdk-ui .icon-chevron-up {
+    background-image: none;
+}
+.echo-stream-container ul li, .echo-stream-container ol ul li {
+    list-style: none;
+    background: none;
+}
+.echo_container,
+.echo-apps-conversations-container .echo-primaryFont,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-body .echo-streamserver-controls-stream-item-text, 
+.echo-apps-conversations-container .echo-secondaryFont, 
+.echo-streamserver-controls-stream-item-authorName,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttons,
+.echo-apps-conversations-streamingStateContainer,
+.echo-canvas-container .echo-topcommenter-form .echo-close,
+.echo-topcommenter-form input[type="text"], .echo-topcommenter-form textarea,
+.echo-topcommenter-form, .echo-topcommenter-form p {
+    font-family: FranklinITCProLight, Helvetica-light,Helvetica,Arial,sans-serif;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.echo-streamserver-controls-stream-item-date a, 
+.echo-canvas-container .echo-feature-notification,
+.echo-canvas-container .echo-feature-notification p,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttonCaption,
+.echo-streamserver-controls-stream-item-content .view-replies,
+.echo-apps-conversations-container li > a,
+.echo-streamserver-controls-submit-controls .echo-streamserver-controls-submit-plugin-TextCounter-counterLabel {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttons {
+    float:right;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttons.echo-streamserver-controls-stream-item-ignore_user {
+    float: left;
+}
+
+.echo-stream-container {
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.echo-streamserver-controls-submit-plugin-Edit-cancelButton.echo-primaryFont.echo-clickable.echo-linkColor {
+    line-height: 22px !important;
+}
+.echo-streamserver-controls-submit-plugin-Edit-cancelButtonContainer {
+    margin-top: 5px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttons .echo-linkColor {
+    font-size: 11px !important;
+}
+.echo-clear {
+    height: 0px !important;
+}
+  
+.echo-primaryColor a,
+.echo-sdk-ui a {
+    text-decoration: none;
+}
+.echo-primaryColor a:hover,
+.echo-sdk-ui a:hover, 
+.echo-sdk-ui a:focus {
+    text-decoration: none;
+}
+.echo-streamserver-controls-submit-plugin-CardUIShim .echo-streamserver-controls-submit-header {
+    margin-top: 15px;
+}
+
+.echo-streamserver-controls-submit-plugin-CardUIShim .echo-streamserver-controls-submit-container {
+    padding: 0px;
+    border: none;
+}
+
+.echo-streamserver-controls-carduiauth-avatar div,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-avatar div,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-1 .echo-streamserver-controls-stream-item-avatar div,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-2 .echo-streamserver-controls-stream-item-avatar div {
+    height: 40px;
+    width: 40px;
+    background-size: 40px 40px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.echo-streamserver-controls-carduiauth-userLogged .echo-streamserver-controls-carduiauth-avatar div,
+.echo-streamserver-controls-carduiauth-avatar {
+        height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}    
+
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-avatar {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+    display: inline;
+}
+
+.echo-streamserver-controls-stream-item-wrapper {
+    float: left;
+    display: inline;
+}
+
+
+
+.echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item-subwrapper {
+    margin-left: 51px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-subwrapper {
+    margin-left: 56px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-0,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-1,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-2,
+.echo-streamserver-controls-stream-body .echo-streamserver-controls-stream-messageText {
+    padding: 10px 0px 10px 0px;
+    margin-right: 0px;
+
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-0,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-1,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-2,
+.echo-streamserver-controls-stream-item {
+    position: relative;
+    z-index: auto;
+}
+
+
+.echo-streamserver-controls-stream-plugin-CardUIShim .echo-streamserver-controls-stream-body .echo-control-message {
+    margin-top: 15px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-body {
+    margin-bottom: 0px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-data {
+    padding-top: 5px;
+    margin-top: 0px;
+}   
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-plugin-ReplyCardUI-replyForm.echo-streamserver-controls-stream-item-depth-1,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-plugin-ReplyCardUI-replyForm.echo-streamserver-controls-stream-item-depth-2  {
+    padding: 0px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-ReplyCardUI-submitForm.echo-streamserver-controls-submit {
+    border-top: 1px solid #bebebe;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item-avatar-wrapper {
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.echo-streamserver-controls-facepile-plugin-LikeCardUI .echo-streamserver-controls-facepile-more {
+    float: left;
+    font-size: 13px;
+    line-height: 13px;
+}
+.echo-streamserver-controls-facepile-more:after {
+    content: ' \00B7 ';
+    font-size: 18px;
+    line-height: 8px;
+}
+.echo-apps-conversations-streamSorter > ul > li > a {
+    background: none;
+    padding-right: 5px;
+}
+
+ .echo-sdk-ui .nav .dropdown-toggle .caret {
+    margin-left: 5px;
+ }
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-plugin-CardUIShim-wrapper {
+    border: none;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-footer {
+    padding-bottom:0px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-LikeCardUI-likesArea {
+    margin-top: 5px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-footer {
+    padding-top: 0px;
+}
+
+.echo-apps-conversations-itemsWaiting {
+    font-size: 12px;
+    line-height: 20px;
+    background-image: none;
+}
+
+.echo-apps-conversations-streamingState{
+    font-size: 15px;
+    line-height: normal;
+    background-image: none;
+}
+.echo-apps-conversations-streamingState span.fa{
+    font-size: 12px;
+    padding-left: 6px;
+    line-height: 15px;
+}   
+
+.echo-apps-conversations-container .fa-info-circle,
+.echo-apps-conversations-container .icon-info {
+    font-size: 22px;
+    margin-top: 2px;
+    margin-right: 7px;
+}
+
+.echo-apps-conversations-allPostsContainer .echo-apps-conversations-streamingStateContainer {
+    float: right;
+    display: inline;
+}
+
+.echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-submit.echo-streamserver-controls-submit-plugin-Edit,
+.echo-streamserver-controls-stream-item-depth-1 .echo-streamserver-controls-submit.echo-streamserver-controls-submit-plugin-Edit,
+.echo-streamserver-controls-stream-item-depth-2 .echo-streamserver-controls-submit.echo-streamserver-controls-submit-plugin-Edit {
+    margin-left: 0px;
+}
+
+.echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-submit-plugin-Edit .echo-streamserver-controls-submit-plugin-Edit-header,
+.echo-streamserver-controls-stream-item-depth-1 .echo-streamserver-controls-submit-plugin-Edit .echo-streamserver-controls-submit-plugin-Edit-header,
+.echo-streamserver-controls-stream-item-depth-2 .echo-streamserver-controls-submit-plugin-Edit .echo-streamserver-controls-submit-plugin-Edit-header {
+    line-height: 38px;
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+.echo-apps-conversations-streamHeader.lockfixed + .echo-streamserver-controls-stream .echo-streamserver-controls-submit-plugin-Edit {
+  margin-top: 150px;
+}
+
+.echo-streamserver-controls-stream-more {
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 15px;    
+}
+
+/*************COLORS ********************/
+/*** Light Theme (Default) ***/
+.echo-sdk-ui .echo-streamserver-controls-carduiauth-userAnonymous a {
+    color: #057ec2;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim-seeMore,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-expandChildren .echo-streamserver-controls-stream-item-expandChildrenLabel,
+.echo-streamserver-controls-stream-item-content .view-replies  {
+    color:  #2E6D9D;
+}
+
+.echo_container,
+.echo-apps-conversations-container li > a, 
+.echo-apps-conversations-container .echo-primaryFont,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-body .echo-streamserver-controls-stream-item-text, 
+.echo-apps-conversations-container .echo-secondaryFont, 
+.echo-streamserver-controls-stream-item-authorName,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttons,
+.echo-apps-conversations-streamingStateContainer,
+.btn.btn-primary.echo-streamserver-controls-submit-plugin-CardUIShim-button,
+.btn.echo-primaryFont.echo-streamserver-controls-submit-postButton,
+    .echo-streamserver-controls-stream-more,
+.echo-sdk-ui .echo-apps-conversations-streamSorter .nav .dropdown .dropdown-toggle,
+.echo-apps-conversations-streamingState,
+.echo-canvas-container .echo-topcommenter-form  .echo-close,
+.echo-topcommenter-form, .echo-topcommenter-form p  {
+    color: #2a2a2a;
+}
+    
+.echo-streamserver-controls-submit-plugin-Edit-cancelButton.echo-primaryFont.echo-clickable.echo-linkColor {
+    color: #999999;
+}
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-body .echo-streamserver-controls-stream-item-text a{
+    color: #2E6D9D
+}   
+.echo-primaryColor a,
+.echo-sdk-ui a {
+    color: #1D1D1D;
+}
+
+
+.echo-streamserver-controls-facepile-plugin-LikeCardUI .echo-streamserver-controls-facepile-more,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttonCaption,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-date,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-date a,
+.echo-streamserver-controls-submit-controls .echo-streamserver-controls-submit-plugin-TextCounter-counterLabel,
+.echo-topcommenter-form input[type="text"], .echo-topcommenter-form textarea {
+    color: #b2b2b2;
+}
+
+.echo-apps-conversations-container .fa-info-circle,
+.echo-apps-conversations-container .icon-info {
+    color: #666;
+}
+
+.echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-submit-plugin-Edit .echo-streamserver-controls-submit-plugin-Edit-header,
+.echo-streamserver-controls-stream-item-depth-1 .echo-streamserver-controls-submit-plugin-Edit .echo-streamserver-controls-submit-plugin-Edit-header,
+.echo-streamserver-controls-stream-item-depth-2 .echo-streamserver-controls-submit-plugin-Edit .echo-streamserver-controls-submit-plugin-Edit-header {
+    color: #666;
+}
+
+.echo-sdk-ui .nav .dropdown-toggle .caret {
+    border-top-color: #666 !important;
+    border-bottom-color: #666 !important;
+}    
+.echo-sdk-ui .nav .dropdown-toggle:hover .caret, .echo-sdk-ui .nav .dropdown-toggle:focus .caret,
+.echo-sdk-ui .nav li.dropdown.open .caret, 
+.echo-sdk-ui .nav li.dropdown.open.active .caret, 
+.echo-sdk-ui .nav li.dropdown.open a:hover .caret, 
+.echo-sdk-ui .nav li.dropdown.open a:focus .caret {
+    border-top-color: #2E6D9D !important;
+    border-bottom-color: #2E6D9D !important;
+}
+
+.echo-streamserver-controls-stream-item-content, 
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-trinaryBackgroundColor, 
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content {
+    background: #fff;
+}
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-container:hover  .echo-streamserver-controls-stream-item-buttonCaption,
+.echo-streamserver-controls-stream-item-container:hover .echo-streamserver-controls-stream-item-buttons a.echo-streamserver-controls-stream-item-button {
+    color: #555;
+}
+
+.echo-streamserver-controls-stream-item-content:hover .replyto-link .replyto-text,
+.echo-streamserver-controls-stream-item:hover .reply-conversation-close,
+.echo-streamserver-controls-stream-item-container:hover .echo-streamserver-controls-stream-item-ignore_user,
+#article .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-date a:hover, 
+.echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-date a:hover, 
+.echo-streamserver-controls-stream-item-content:hover .echo-streamserver-controls-stream-item-date a,
+.echo-clickable a.echo-streamserver-controls-stream-state-message:hover,
+.echo-streamserver-controls-stream-item-buttons a.echo-streamserver-controls-stream-item-button:hover,
+.echo-streamserver-controls-stream-item-buttons a.echo-streamserver-controls-stream-item-button:hover span,
+.echo_container .echo-header-container .discussion-policy a:hover,
+.echo_container .echo-header-container .about-comments a:hover,
+.echo_container .echo-header-container .faq-policy a:hover,
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest a:hover span,
+.echo-primaryColor a:hover,
+.echo-sdk-ui .nav > li > a.dropdown-toggle:hover, 
+.echo-sdk-ui .nav li a.dropdown-toggle:hover, 
+.echo-sdk-ui .nav > li > a.dropdown-toggle:focus,
+.echo-apps-conversations-streamSorter ul.nav > li > a:hover, 
+.echo-apps-conversations-streamSorter ul.nav > li > a:focus,
+.echo-apps-conversations-streamingState:hover,
+.echo-streamserver-controls-stream-item-content .replyto-link .replyto-text  {
+     color: #2E6D9D !important; 
+}
+
+
+.echo-streamserver-controls-carduiauth .echo-streamserver-controls-carduiauth-userAnonymous,
+.echo-streamserver-controls-submit-postContainer,
+.echo-streamserver-controls-stream-more,
+.echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-0,
+.echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-1,
+.echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-2,
+.echo-stream-container .echo-apps-conversations-allPostsContainer .echo-apps-conversations-streamHeader,
+.echo_container .echo-header-container,
+.echo-streamserver-controls-submit-content,
+.echo-canvas-container .echo-topcommenter-form .echo-close,
+.echo-topcommenter-form input[type="text"], .echo-topcommenter-form textarea,
+.echo-stream-container .echo-apps-conversations-topPostsHeader,
+.echo-stream-container li.echo-primaryFont.echo-apps-conversations-streamTitle,
+.echo-apps-conversations-topPosts.echo-streamserver-controls-stream,
+   .echo-streamserver-controls-stream-item-content.collapsible.collapsed,
+.echo-streamserver-controls-stream-item-likesIndicator + .echo-streamserver-controls-stream-item-controls,
+.echo-streamserver-controls-stream-item-childrenIndicator + .echo-streamserver-controls-stream-item-likesIndicator,
+.echo-streamserver-controls-stream-item-childrenIndicator + .echo-streamserver-controls-stream-item-controls{
+    border-color: #D5D5D5 !important;
+}
+
+.echo-streamserver-controls-submit-postContainer:hover {
+    border-color: #2a2a2a;
+    background-color: #2a2a2a;
+}
+.btn.btn-primary.echo-streamserver-controls-submit-plugin-CardUIShim-button:hover,
+ .btn.echo-primaryFont.echo-streamserver-controls-submit-postButton:hover,
+.echo-streamserver-controls-submit-postContainer:hover .btn.btn-primary.echo-streamserver-controls-submit-plugin-CardUIShim-button {
+    color: #fff;
+}   
+
+.echo-streamserver-controls-submit-content textarea.echo-streamserver-controls-submit-textArea.echo-secondaryColor,
+.echo-streamserver-controls-submit-content {
+    color: #b2b2b2;
+}
+.echo-topcommenter-form input[type="text"], .echo-topcommenter-form textarea
+ .echo-streamserver-controls-submit-content {
+    color: #b2b2b2;
+}
+.echo-topcommenter-form input[type="text"]:focus, .echo-topcommenter-form textarea:focus {
+    color: #2a2a2a
+}   
+
+.echo_container .echo-header-container .discussion-policy a,
+.echo_container .echo-header-container .about-comments a,
+.echo_container .echo-header-container .faq-policy a,
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest span, 
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest a,
+.echo-topcommenter-form, .echo-topcommenter-form  .agreetopolicy  p {
+    color: #6b6b6b;
+}
+.echo-canvas-container .echo-feature-notification {
+    background-color: #D9EDF7;
+    border-color:#BCE8F1;
+}
+
+.echo-streamserver-controls-stream-item-content .replyto-text,
+.echo-sdk-ui a.replyto {
+    color: #bebebe ;
+}
+
+
+/*** END COLORS ***/
+    
+/*************CONVERSATIONS *************/
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-1 {
+    margin-left: 55px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-2 {
+    margin-left: 110px;
+}
+
+.echo-streamserver-controls-stream-plugin-CardUIShim .echo-streamserver-controls-stream-item {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: transparent;
+}
+
+.echo-streamserver-controls-stream-item-indicator {
+    transition: none !important;
+    border-left: none !important;
+    background-color: transparent !important;
+}
+
+.echo-streamserver-controls-stream-item-sourceIcon {
+    display: none !important;
+    margin: 0px;
+}
+
+.echo-stream-container .echo-apps-conversations-topPostsHeader, 
+.echo-stream-container .echo-apps-conversations-allPostsContainer .echo-apps-conversations-streamHeader {
+    padding-bottom: 10px;
+}
+.echo-stream-container .echo-apps-conversations-topPostsHeader {
+    border-bottom: 1px solid; 
+}
+.echo-stream-container .echo-apps-conversations-allPostsContainer .echo-apps-conversations-streamHeader {
+    padding-bottom: 10px;
+    background-color: #fff;
+    padding-top: 20px;
+    Qborder-top: 1px solid;
+    Qborder-bottom: 1px solid;
+}
+.echo-stream-container .echo-apps-conversations-allPostsContainer .echo-apps-conversations-streamHeader.lockfixed {
+    box-shadow: 0px 7px 4px -4px rgba(0,0,0,0.1);
+}    
+/*************TOP POSTS  ****************/
+.echo-apps-conversations-topPostsContainer {
+    background-color: transparent;
+    Qpadding: 20px;
+}
+
+/********************************************************************************
+*
+*             SUBMIT BOX
+*
+*********************************************************************************/
+/*** Submit box wrapper ***/
+.submit-controls-outer-wrapper {
+    width: auto;
+    margin-top: 0px;
+    margin-left: 73px;
+    padding-top: 20px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-ReplyCardUI-submitForm .submit-controls-outer-wrapper.active {
+  padding-top: 30px;
+}
+
+/*** Submit Box Header **********************************************************/
+.quick-comments>.heading.heading4 {
+    display: none;
+}
+
+.comment-count-label, 
+.content p.comment-count-label {
+    color: #333;
+    display: inline;
+    float: left;
+}
+
+.echo_container .closed {
+    text-align: center;
+    color: #666;
+}
+
+.echo_container .echo-header-container {
+    overflow: hidden;
+    border-bottom: 2px solid;
+}
+
+.echo_container .dropdown, 
+.echo_container .dropdown a:hover {
+    border: none;
+    margin: 0px;
+}
+
+.echo_container .echo-header-container #comment-info-links {
+    float:right;
+    display:inline;
+    padding-top: 3px;
+}
+
+.echo-header-container .quick-comments {border: none; width: 200px;}
+.echo-header-container .quick-comments .margin-right-10 {margin-right: 10px;}
+.echo_container .comment-header {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 1px;
+}
+.echo_container .echo-header-container .discussion-policy a,
+.echo_container .echo-header-container .about-comments a,
+.echo_container .echo-header-container .faq-policy a,
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest span, 
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest a{
+    height: auto;
+    font-size: 12px;
+    width: auto;
+    margin: 0 4px 0 4px;
+    padding: 0;
+    text-decoration: none;
+    line-height: normal;
+    font-family: Helvetica Neueu, Helvetica, Arial, sans-serif;
+}
+.echo_container .echo-header-container .about-comments a { margin-right: 0;}
+.echo_container .comment-header ul.header-primary{
+    height:25px;
+    font:bold .9em georgia, serif;
+    color:#fff;
+    overflow:visible;
+    display: inline-block;}
+    
+.echo-container .echo_container .echo-header-container .module.quick-comments .comment-number.echo-counter{ 
+    display:inline-block;
+    height:38px !important;
+    padding:0 3px 0 3px;
+    margin:0 0px 0 0;
+    font:normal 24px/32px arial, sans-serif !important;
+    color:#fff;
+    position:relative;
+    width:74px;
+    text-align:center; 
+    -webkit-border-radius: none !important;
+    -moz-border-radius: none !important;
+    border-radius: none !important;
+}
+
+.ie7 .echo-counter {
+    padding-right: 5px;
+}
+.echo_container  .closed {
+    font-size:14px;
+    display: block; 
+    margin-top: 3px;}
+
+.echo-streamserver-controls-stream-item-plugin-TWP_My_Comments-childrenIndicator .closed {
+    font-size: 11px;
+}
+
+.echo-streamserver-controls-carduiauth .echo-streamserver-controls-carduiauth-userAnonymous {
+    border: 1px solid;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+}
+/*** Preferred Commenter  ****************************************************/
+
+.verified-commenters .echo-apps-conversations-topPosts.echo-streamserver-controls-stream{
+    border: 1px solid;
+}
+
+.verified-commenters .echo-streamserver-controls-stream-item-content.has-reply-conversation .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-0 {
+    border-bottom: none;
+}
+
+
+
+.verified-commenters .echo-apps-conversations-topPostsContainer .echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content {
+    padding: 0 10px 10px 10px;
+}
+.verified-commenters .reply-conversation.expanded .echo-streamserver-controls-stream-item-content {
+    padding-left: 0px;
+}
+
+.echo-topcommenter-form, .echo-topcommenter-form p b {
+    font-family: FranklinITCProBold, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.echo-sdk-ui .echo-apps-conversations-postComposer.echo-streamserver-controls-submit.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter input[type=checkbox] {
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.echo-apps-conversations-container .echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest .fa-info-circle,
+.echo-apps-conversations-container .echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest .icon-info {
+    font-size: 14px;
+    margin: 2px 0 0 3px;
+}
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest {
+    text-align: right;
+    margin-top: -10px;
+    padding: 0px 6px 5px 10px;
+    float: none;
+}
+
+.echo-streamserver-controls-submit-plugin-CardUIShim-forcedLogin .echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest a {
+    font-weight: bold;
+}
+
+.ie .echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest a {
+    height: 14px;
+    color: #1D1D1D !important;
+    text-decoration: none !important;
+}
+
+.echo-canvas-container  .echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest .echo-close {
+    display:none;
+}
+
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest span,
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest a {
+    font-size: 12px;
+}
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest a {
+    text-decoration: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest a:hover {
+    color: #2E6D9D !important;
+    text-decoration: none;
+}
+
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest .caret {
+    vertical-align: middle;
+}
+
+.echo-canvas-container .echo-topcommenter-form .echo-close {
+    border: 1px solid;
+    border-radius: 50px;
+    background-image: none;
+    height: 30px !Important;
+    width: 30px !important;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 26px;
+}
+
+.echo-topcommenter-form .submit-controls-outer-wrapper {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.original-submit .echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest {
+    border: none;
+}
+
+
+.echo-topcommenter-form.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter .echo-streamserver-controls-submit-content {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-topCommenterForm {
+    padding: 15px 15px 0px 15px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+}
+
+.echo-topcommenter-form .submit-controls-outer-wrapper .echo-streamserver-controls-submit-controls {
+    visibility: visible;
+    height: auto;
+}
+
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-topCommenterForm input[type=text],
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-topCommenterForm textarea {
+    margin: 0 20px 15px 0px;
+    vertical-align: top;
+    height: 40px;
+    width: 40%;
+}
+
+.echo-topcommenter-form input[type="checkbox"] {
+    margin-right: 3px !important;
+}
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest input[type="checkbox"],
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-topCommenterForm input[type="checkbox"] {
+    margin-bottom: 20px;
+    float: left;
+    margin-top: 3px;
+    display: inline;
+}
+
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-verifiedCommenterRequest .verification-status {
+    font-size: 12px;
+    color: #999;
+    float: right;
+}
+.echo-topcommenter-form a,
+.echo-topcommenter-form a:hover {
+    color: #057EC2;
+    text-decoration: none;
+}
+
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-topCommenterForm .description{
+    padding-bottom: 10px;
+}
+.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-topCommenterForm .description p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+.echo-topcommenter-form.echo-streamserver-controls-submit-plugin-CardUIShim.echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter .echo-streamserver-controls-submit-controls {
+    border-top: none;
+    background-color: #f9f9f9;
+    background-image: none;
+}
+
+.echo-topcommenter-form .agreetopolicy {
+    padding: 5px;
+}
+.echo-topcommenter-form .agreetopolicy p{
+    margin-top: -4px;
+    margin-left: 10px;
+    line-height: 18px;
+}
+
+
+.echo-streamserver-controls-stream-item-content.collapsible.collapsed .echo-streamserver-controls-stream-item-children,
+.echo-streamserver-controls-stream-item-content.collapsible.collapsed .echo-streamserver-controls-stream-item-expandChildren {
+    display:none !important;
+}
+
+.echo-streamserver-controls-stream-item-content.collapsible.expanded .echo-streamserver-controls-stream-item-children {
+    display:block;
+}
+
+.echo-streamserver-controls-stream-item-content.collapsible .view-replies {
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+
+.echo-streamserver-controls-stream-item-content.collapsible .echo-streamserver-controls-stream-item-container:hover  .view-replies {
+    color: #2E6D9D; 
+}
+
+.echo-streamserver-controls-stream-item-content.collapsible.collapsed .view-replies.expanded,
+.echo-streamserver-controls-stream-item-content.collapsible.expanded .view-replies.collapsed {
+    display:none;
+}
+
+/*** Reply Conversation *******************************************************/
+
+.echo-streamserver-controls-stream-item-content.has-reply-conversation,
+.echo-streamserver-controls-stream-item .reply-conversation.expanded {
+    border-bottom: 3px solid #D5D5D5;
+    border-radius: 0;
+}
+
+.echo-streamserver-controls-stream-item .reply-conversation.expanded {
+    border-left: 5px solid #d9edf7;
+}
+
+.echo-streamserver-controls-stream-item .reply-conversation-buffer {
+    Qpadding: 20px 0 0 0;
+    Qborder-top: 1px solid #bebebe;
+    border-left: 5px solid white;
+    margin-left: -5px;
+    margin-top: 15px;
+}
+.echo-streamserver-controls-stream-item .reply-conversation-container .echo-streamserver-controls-stream-item-plugin-Like-likedBy.echo-streamserver-controls-facepile {
+    display: none !important;
+}
+.echo-streamserver-controls-stream-item .reply-conversation-container a.replyto,
+.echo-streamserver-controls-stream-item .reply-conversation-container .echo-streamserver-controls-stream-item-re {
+    display: none !important;
+}
+
+.reply-conversation-container .echo-streamserver-controls-stream-item-plugin-CardUIShim-wrapper.current-comment {
+    border-left: 10px solid #d9edf7 !important;
+    margin-top: -3px;
+}
+
+.echo-streamserver-controls-stream-item .reply-conversation-close {
+    margin: 10px 0 10px 10px;
+}
+
+.reply-conversation-container .echo-streamserver-controls-stream-item-plugin-CardUIShim-wrapper.current-comment .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-0,
+.reply-conversation-container .echo-streamserver-controls-stream-item-plugin-CardUIShim-wrapper.current-comment .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-1,
+.reply-conversation-container .echo-streamserver-controls-stream-item-plugin-CardUIShim-wrapper.current-comment .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-2 {
+    border-bottom: none;
+}   
+.reply-conversation-container .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-0,
+.reply-conversation-container .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-1,
+.reply-conversation-container .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-2 {
+    border-top: none;
+    border-bottom: 1px solid #bebebe;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*** Comment box **************************************************************/
+
+.echo-streamserver-controls-submit-content {
+    margin-bottom: 0px;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) inset;
+    font-size: 16px;
+    line-height: 24px;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 0px !important;    
+    -moz-border-top-left-radius: 0px !important;
+    -moz-border-top-right-radius: 0px !important;
+}
+
+.echo-streamserver-controls-submit-plugin-CardUIShim .echo-streamserver-controls-submit-content textarea.echo-streamserver-controls-submit-textArea,
+.echo-topcommenter-form input[type="text"], .echo-topcommenter-form textarea,
+ .echo-streamserver-controls-submit-content {
+    background-color: #f0f0f0;
+}
+
+.echo-streamserver-controls-submit-content.echo-streamserver-controls-submit-mandatory,
+.echo-streamserver-controls-submit-content .echo-streamserver-controls-submit-mandatory  {
+    border: 1px solid red !important;
+}
+
+/*Submit box Controls */
+.echo-streamserver-controls-stream-item-depth-1 .echo-streamserver-controls-submit {
+    margin-left: 64px;
+}
+
+.echo-streamserver-controls-submit-plugin-CardUIShim .echo-streamserver-controls-submit-controls,
+.echo-streamserver-controls-submit-controls {
+    background-color: transparent;
+    background: transparent;
+    background-repeat: repeat-x;
+    border-bottom-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    -webkit-border-bottom-left-radius: 4px !important;
+    -webkit-border-bottom-right-radius: 4px !important; 
+    -moz-border-bottom-left-radius: 4px !important;
+    -moz-border-bottom-right-radius: 4px !important;
+    line-height: normal;
+    border: none;
+    padding: 0 ;
+}
+
+.echo-streamserver-controls-submit-controls > div {
+    height: auto;
+}
+
+.submit-controls-outer-wrapper .echo-streamserver-controls-submit-controls {
+    transition: all .1s linear;
+    visibility: hidden;
+    height: 0px;
+}
+
+.submit-controls-outer-wrapper.active  .echo-streamserver-controls-submit-controls {
+    display: block;
+    visibility: visible;
+    height: auto;
+}
+    
+.echo-streamserver-controls-submit-postContainer {
+    height: 100%;
+    border: 1px solid;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -ms-border-radius: 0 0 3px 3px;
+    -o-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    border-top: none;
+    margin-top: -1px;
+}
+
+.echo-streamserver-controls-submit-postContainer .echo-label {
+    padding: 4px 0;
+}
+.echo-streamserver-controls-submit-postContainer:hover {
+    border: 1px solid;
+    border-top: none;
+}
+.controls-divider {
+    float: left;
+    border-right: 2px solid #fafafa;
+    position: relative;
+    padding-left: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+.echo-streamserver-controls-submit-controls, 
+.echo-streamserver-controls-submit-controls p,
+.echo-streamserver-controls-submit-controls .echo-streamserver-controls-submit-plugin-TextCounter-counterLabel {
+    font-size: 13px;
+    margin-top: 0px;
+    padding: 5px 5px;
+    float: right;
+}
+
+.echo-streamserver-controls-submit-postButton {
+    display: inline;
+}
+
+.echo-streamserver-controls-submit-plugin-CardUIShim .btn.echo-streamserver-controls-submit-plugin-CardUIShim-button,
+.btn.echo-primaryFont.echo-streamserver-controls-submit-postButton {
+    margin-top: 10px;
+}
+
+.btn.btn-primary.echo-streamserver-controls-submit-plugin-CardUIShim-button,
+.btn.echo-primaryFont.echo-streamserver-controls-submit-postButton {
+    text-shadow: none;
+    background: none;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    margin-top: -1px;
+    transition: all 0.2s linear;
+}
+
+/*Submit Box Share Buttons*/
+.echo-submit-controls .echo_submit-share-wrapper  { float: right; display: inline; line-height: 28px; }
+.echo-streamserver-controls-submit-postContainer .echo_share-text,
+.echo-streamserver-controls-submit-postContainer .echo_share-text p {
+    display: inline-block;
+    font-family: Helvetica-light, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 0.15mm;
+    float: left;
+    margin-bottom: 0px;
+    line-height: 50px;
+}
+
+.ie7 .echo-submit-controls .echo_submit-share-wrapper .echo_share-text {
+    position: relative;
+    top: -7px;
+    height: 28px;
+}
+.echo-streamserver-controls-submit-postContainer .echo_share-fb-button {
+    display: inline-block;
+    margin-left: 10px;
+    !padding-top: 2px;
+    vertical-align: middle;
+    font-family: FontAwesome;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.echo-streamserver-controls-submit-postContainer .echo_share-fb-button .share-click-div {
+    border-left: 1px solid #999;
+    line-height: 20px;
+}
+
+.echo-streamserver-controls-submit-postContainer .echo_share-fb-button .fa-facebook {
+    padding-left: 10px;
+    margin-top: 5px;
+    line-height: 12px;
+    padding-top: 5px;
+}
+
+.ie7 .echo-streamserver-controls-submit-postContainer .echo_share-fb-button {
+    line-height: normal;
+    display: inline;
+}
+.echo-streamserver-controls-submit-postContainer .echo_share-fb-button:hover {
+    color: #2E6D9D;
+    
+}
+.echo-streamserver-controls-submit-postContainer .echo_share-fb-button.active {
+
+        color: #2E6D9D;
+}
+.echo-submit-controls .echo_submit-share-wrapper .echo_share-twitter-button {
+    background:transparent url("https://img.washingtonpost.com/pb/resources/img/echo2/twp_comments_echo2_social_share.png?t=b20140206150100") no-repeat 0 -120px;
+    display: inline-block;
+    height: 28px;
+    width: 30px;
+    text-indent: -1000px;
+}
+.echo-submit-controls .echo_submit-share-wrapper .echo_share-twitter-button:hover {
+    background-position: 0 -160px;
+}
+.echo-submit-controls .echo_submit-share-wrapper .echo_share-twitter-button.active {
+    background-position: 0 -200px;
+}
+.echo-submit-controls .echo_submit-share-wrapper .echo_share-fb-button .share-click-div,
+.echo-submit-controls .echo_submit-share-wrapper .echo_share-twitter-button .share-click-div { 
+    display: inline-block;
+    height: 28px;
+    width: 30px;
+}
+.echo-submit-controls .echo_submit-share-wrapper .echo-submit-post-container {
+    display: inline-block;
+    width: 110px;
+    height: 28px;
+}
+
+.echo-submit-controls .echo_submit-share-wrapper .echo-submit-post-container .ui-state-disabled .ui-button-text {
+    height: 28px;
+}
+.ie7 .echo-submit-controls .echo-submit-post-container,
+.ie7 .echo-submit-controls .echo_submit-share-wrapper .echo-submit-post-container,
+.ie7 .echo-item-replyForm .echo-submit-controls .echo-submit-post-container {
+    display: inline;
+    float: none;
+    position: relative;
+    top: -1px;
+    width: 110px;
+}
+
+.echo_container .echo-streamserver-controls-carduiauth-name {
+    margin: -6px 0px 0px 10px;
+}
+.echo_container .echo-streamserver-controls-carduiauth-name a.dropdown-toggle {
+    font-size: 13px !important;
+    font-weight: bold;
+    height: 16px;
+}
+
+.echo_container .nav .dropdown a.dropdown-toggle {
+    Qline-height: 24px;
+}
+
+.echo_container  a.dropdown-toggle:hover {
+    color: #2E6D9D !important;
+}
+
+.ie .echo-streamserver-controls-carduiauth-name ul.nav .dropdown .dropdown-toggle {
+    font-size: 14px;
+}
+.echo-streamserver-controls-carduiauth-name .echo-streamserver-controls-carduiauth-dropdown {
+    background: none;
+    padding-right: 0px;
+}
+
+.echo-sdk-ui .nav > li > a.dropdown-toggle:hover,
+.echo-sdk-ui .nav li a.dropdown-toggle:hover, 
+.echo-sdk-ui .nav > li > a.dropdown-toggle:focus {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.echo-streamserver-controls-carduiauth-name a.dropdown-toggle:before {
+    content: "Posting as ";
+    font-weight: normal;
+    font-size: 13px !important;
+}
+
+.echo_container .weigh-in {
+    display: none;
+}
+
+.echo-sdk-ui .dropdown-menu {
+    right: 0px;
+    left: 0px;  
+}
+
+/*Feature Notification*/
+.echo-canvas-container .echo-feature-notification {
+    border: 1px solid;
+    -webkit-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    border-radius: 4px ;
+    color: #3A87AD;
+    padding: 11px 15px;
+    margin: 20px 0 0px 0;
+    position: relative;
+    font-size: 14px;
+}
+
+.echo-canvas-container .echo-feature-notification p {
+    font-size: 13px;
+    line-height:  normal;
+}
+.echo-canvas-container .echo-feature-notification a {
+    font-weight: bold;
+}
+.echo-canvas-container .echo-close {
+    background-position: 0px -324px !important;
+    height: 15px;
+    width: 11px;
+    display: inline;
+    float: right;
+    margin: 0px 0px 0px 0;
+    cursor: pointer;
+    top: 4px;
+    right: 4px;
+    position: absolute;
+}
+.echo-canvas-container .echo-close:hover {
+    background-position: 0px -338px !important;
+}
+.echo-canvas-container .echo-feature-notification.suspended {
+    background-color: #faf1f5;
+    border: 1px solid #b03436;
+    color: #5a5a5a;
+    padding: 20px 15px;
+}
+
+.echo-canvas-container .echo-feature-notification.suspended i {
+    font-size: 30px;
+    color: #b03436;
+    height: 50px;
+    float: left;
+    margin: 1px 0px 0px 10px;
+}
+
+.echo-canvas-container .echo-feature-notification.suspended .notification-text {
+    padding-left: 41px;
+}   
+/*Counter*/
+.echo-streamserver-controls-submit-plugin-TextCounter-counterLabel {
+    display: inline !important;
+    float: left;
+    padding-left: 5px;
+    padding-top:0px;
+    margin-right: 0px;
+}
+
+.echo-sdk-ui .tooltip {
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+.echo_container .alert {
+    min-height: 0px;
+}
+
+
+/**************************************************************************
+*       ECHO STREAM
+
+***************************************************************************/
+
+/*** StreamTitle *********************************************************/
+
+.echo-apps-conversations-streamTitle .echo-apps-conversations-streamCaption, 
+.echo-apps-conversations-streamTitle .echo-streamserver-controls-counter-count,
+.echo-header-container .comment-count-label, 
+.echo-header-container .content p.comment-count-label {
+    font-family: FranklinITCProBold, Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    padding-bottom: 0px;
+    line-height: normal;
+    padding-right: 10px;
+}
+
+        
+.echo-apps-conversations-allPostsContainer {
+    margin-top: 15px;
+}
+
+.echo-apps-conversations-allPostsContainer li.echo-primaryFont.echo-apps-conversations-streamTitle {
+    margin-bottom: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+}
+
+/*** STREAM SORTS ********************************************************/
+
+
+.echo-apps-conversations-streamSorter ul.nav > li > a {
+    font-size: 15px;    
+    font-family: FranklinITCProLight, Helvetica-light, Helvetica, Arial, sans-serif;
+    Qpadding-top: 3px;
+}
+
+/**Live/Paused State *****************************************************/
+.echo-streamserver-controls-stream-state {
+    padding: 2px 5px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: .9em;
+}
+
+
+.echo-streamserver-controls-stream-state a.echo-streamserver-controls-stream-state-message  { 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: black ; 
+}
+
+
+/**USER INFO**************************************************************/
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-authorName {
+    float: none;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-plugin-CardUIShim-header-box,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-1 .echo-streamserver-controls-stream-item-plugin-CardUIShim-header-box,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-2 .echo-streamserver-controls-stream-item-plugin-CardUIShim-header-box {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-plugin-CardUIShim-header-box:before {
+    content: none;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-authorName,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-1 .echo-streamserver-controls-stream-item-authorName,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-2 .echo-streamserver-controls-stream-item-authorName,
+.echo-streamserver-controls-submit-plugin-Edit-author {
+    font: 16px FranklinITCProBold !important;
+    line-height: 22px;
+    color: #2a2a2a;
+}
+.echo-streamserver-controls-stream-item-authorName:after {
+    font-weight: normal;
+    color: #666 !important;
+    font-family: Helvetica-light,Helvetica,Arial,sans-serif;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-authorName span {
+    padding-right: 0px;
+}
+.echo-streamserver-controls-stream-item-avatar-wrapper {
+    padding: 0px 15px 0 0;
+    margin-right: 0px;
+}
+
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-authorName {
+    margin-left: 0px;
+}
+
+/*** BADGE MARKERS******************************************************************/
+.echo_container .marker {position:relative; width:auto;float:right;}
+.echo_container .marker.echo-item-user-top_commenter,
+.echo_container .marker.echo-item-user-top_sports,
+.echo_container .marker.echo-item-user-top_local,
+.echo_container .marker.echo-item-user-fact_checker,
+.echo_container .marker.echo-item-user-staff,
+.echo_container .marker.echo-item-user-world_watcher,
+.echo_container .marker.echo-item-user-culture_connoisseur,
+.echo_container .marker.echo-item-user-weather_watcher,
+.echo_container .marker.echo-item-marker-post_recommended,
+.echo_container .marker.echo-item-user-post_contributor,
+Q.echo_container .verified-commenters .marker.echo-item-user-verified_preferred {
+    background:transparent url("https://img.washingtonpost.com/pb/resources/img/echo2/twp_comments_echo2_badges.png?t=b20140206150100") no-repeat 0 0;
+    height: 25px;
+    width: 25px;
+    margin: 0px 8px 0px 0px;
+    text-indent: -10000px;
+    float: left;
+}
+
+.echo_container .echo-item-container-child .echo-badge-info .marker {
+    margin-top: 0px;
+}
+.ie7 .echo_container .marker {top: 0px; }
+.echo-stream-container .echo-stream-body .echo-item-content .marker .echo-badge-info .marker { top: 0px;}
+/** User Markers **/
+
+.echo_container .marker.echo-item-user-top_commenter {
+    background-position: -11px -25px;
+}
+.echo_container .marker.echo-item-user-staff  {
+    background-position: -10px 0px;
+    width: 33px;
+}
+.echo_container .echo-streamserver-controls-stream-item-container.echo-item-user-marker-staff,
+.echo_container .echo-streamserver-controls-stream-item-container.echo-item-user-marker-post_contributor {
+    background-color: #f4f6f9;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.echo_container .echo-streamserver-controls-stream-item-container.echo-item-user-marker-verified_preferred {
+    Qbackground-color: #f9f9f9;
+}
+
+.echo-item-user-marker-staff .echo-streamserver-controls-stream-item-date:before {
+    content: 'Staff';
+    background: #aaa;
+    color: #fff;
+    padding: 2px 5px;
+    margin: 0 3px 0 0;
+    text-transform: uppercase;
+}
+
+.echo-item-user-marker-verified_preferred .echo-streamserver-controls-stream-item-date:before {
+    content: '\2713   Mentioned in this story';
+    background: #aaa;
+    color: #fff;
+    padding: 2px 5px;
+    margin: 0 3px 0 0;
+    text-transform: uppercase;
+}
+
+.echo_container .marker.echo-item-user-top_sports  {
+    background-position: -11px -75px;
+}
+.echo_container .marker.echo-item-user-top_local  {
+    background-position: -11px -50px;
+}
+.echo_container .marker.echo-item-user-fact_checker  {
+    background-position: -11px -100px;
+}
+.echo_container .marker.echo-item-marker-post_recommended  {
+    background-position: -11px -125px;
+}
+.echo_container .marker.echo-item-user-world_watcher  {
+    background-position: -11px -150px;
+}
+.echo_container .marker.echo-item-user-culture_connoisseur  {
+    background-position: -11px -175px;
+}
+.echo_container .marker.echo-item-user-weather_watcher  {
+    background-position: -11px -200px;
+}
+.echo_container .marker.echo-item-user-post_contributor {
+    background-position: 0px -250px;
+    width: 48px;
+}
+
+.echo_container .marker.echo-item-user-verified_preferred {
+    background: none;
+    width: 0px;
+}
+
+.echo_container .verified-commenters .marker.echo-item-user-verified_preferred {
+    background-position: 0px -276px;
+    width: 41px;
+}
+
+
+/*badge info overlay */
+.modal-body .echo-badge-info {
+    color: black;
+}
+.modal-body .echo-badge-info a {
+    text-decoration:underline;
+}
+
+.modal-body .echo-badge-info p{
+    margin: 10px 10px 0 5px;
+}
+
+.modal-body .echo-badge-info p.title{
+    border-bottom: 2px solid #1E1E1E;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* badge info tooltip */
+.echo-stream-body .echo-item-container .echo-badge-info p {
+    margin-bottom: 10px;
+}
+.echo-badge-info p.echo-badge-info-link {
+    color: #999;
+    margin-bottom: 0 !important;
+}
+.echo-badge-info p.title {
+    padding: 3px 0 0 32px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/** ITEM DISPLAY  *************************************************************/
+
+.echo-streamserver-controls-stream-item .fa.fa-chevron-down {
+    padding-left: 4px;
+}
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-data {
+    Qpadding: 7px 0px 0px 54px;
+}
+
+.echo-trinaryBackgroundColor,
+.echo-streamserver-controls-stream-item-childrenMarker {
+    background-color: transparent;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttonCaption {
+    font-size: 13px;
+    line-height: normal;
+    padding-right: 5px;
+    vertical-align:bottom;
+}
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-button {
+    margin-right: 8px;
+    position: relative;
+    vertical-align: bottom;
+}
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-plugin-CardUIShim-dropdownButton > .dropdown {
+    vertical-align: bottom;
+}
+
+.echo-sdk-ui .echo-streamserver-controls-stream-item-plugin-CardUIShim-buttonIcon[class*=" icon-"] {
+    display: none;
+}
+
+.echo-streamserver-controls-facepile-suffixText {
+    background-position: 0 -67px;
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.echo-streamserver-controls-stream-item-button-Flag {
+    position: relative;
+}
+
+.echo-streamserver-controls-stream-item.echo-streamserver-controls-stream-item-plugin-TWP_Stream_Item {
+    border-bottom: none !important;
+}
+
+.echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-0,
+.echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-1,
+.echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-2 {
+    border-bottom: 1px solid;
+}
+
+
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-0,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-1,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-3 {
+    -webkit-border-radius: 0px; 
+    -moz-border-radius: 0px;    
+    -ms-border-radius: 0px; 
+    -o-border-radius: 0px;  
+    border-radius: 0px; 
+}   
+
+.echo-streamserver-controls-stream-item:first-child .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-depth-0 {
+    margin-top: 15px;
+}
+
+.echo-streamserver-controls-stream-item-container.ignored-comment {
+    border: none !important;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-0.ignored-comment,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-1.ignored-comment,
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-2.ignored-comment {
+    border: none !important;
+    padding: 0px;
+    margin: 0px;
+}
+.echo-streamserver-controls-stream-item-textToggleTruncated.echo-linkColor.echo-clickable {
+    color: #2E6D9D;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+/* New COmment */
+.echo-streamserver-controls-stream-item.newComment,
+.echo-streamserver-controls-stream-item-content.newComment,
+.echo-streamserver-controls-stream-plugin-CardUIShim .echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item.newComment { 
+    border-left: 4px solid #F6DE9A;
+    padding-left: 3px;
+ }
+
+/* Date Display */
+.echo-streamserver-controls-stream-item-date {
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: none;
+}
+ .echo-streamserver-controls-stream-item-date a {
+    line-height: 22px;
+}
+
+.echo-streamserver-controls-stream-item-date span.edited {
+    font-size: 12px;
+}
+.echo-streamserver-controls-stream-item-depth-0  .echo-streamserver-controls-stream-item-date,
+.echo-streamserver-controls-stream-item-depth-1  .echo-streamserver-controls-stream-item-date,
+.echo-streamserver-controls-stream-item-depth-2  .echo-streamserver-controls-stream-item-date{
+    margin-left: 0px;
+}
+
+
+.echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-date {
+    line-height: 16px;
+}
+  
+#article .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-date a:hover, 
+.echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-date a:hover, 
+.echo-streamserver-controls-stream-item-content:hover .echo-streamserver-controls-stream-item-date a,
+.echo-clickable a.echo-streamserver-controls-stream-state-message:hover,
+.echo-streamserver-controls-stream-item-buttons a.echo-streamserver-controls-stream-item-button:hover,
+.echo-streamserver-controls-stream-item-buttons a.echo-streamserver-controls-stream-item-button:hover span {
+     text-decoration: none;
+}
+
+/* Replyto      */
+.echo-apps-conversations-allPosts .echo-streamserver-controls-stream-item-content a.replyto {
+    display: none;  
+}   
+
+.echo-streamserver-controls-stream-item-content .replyto-text {
+    display:inline;
+    font-size: 14px;
+    Qmargin-left: 5px;
+}
+
+.echo-streamserver-controls-stream-item-content:hover .replyto-link .replyto-text,
+.echo-streamserver-controls-stream-item:hover .reply-conversation-close {
+    cursor: pointer;
+}
+
+   
+.echo-streamserver-controls-stream-item-content .replyto-link .replyto-text {
+    Qmargin-left: 10px;
+}
+
+.echo-streamserver-controls-stream-item-content .replyto-link {
+    margin: 0 0 10px 0;
+}
+
+/* Ignore User */
+
+.echo-streamserver-controls-stream-item-ignore_user {
+    opacity:0.0;
+    cursor: pointer;
+}
+
+.echo-streamserver-controls-stream-item-subcontainer:hover .echo-streamserver-controls-stream-item-ignore_user {
+    opacity: 1.0;
+}
+
+.echo-streamserver-controls-stream-item .ignored-comment {
+    font-style: italic;
+    color: #ccc !important;
+    margin-left: -3px;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+}
+/**************************************************************************
+*   PROFILE - MY COMMENTS, ARTICLE LIST
+*
+**************************************************************************/
+.module.comments-my-comments .echo_container {
+    padding-top: 0px;
+}
+
+.module.comments-my-comments .echo_container .echo-streamserver-controls-stream-item-container {
+    border-bottom: 1px solid #bebebe;
+}
+
+.module.comments-my-comments .echo_container .echo-streamserver-controls-stream-item-expandChildren {
+    padding: 0px;
+    margin: 0px;
+}
+
+.module.comments-my-comments .echo_container .echo-streamserver-controls-stream-item-authorName {
+    font-size: 12px;
+}
+.module.comments-my-comments .echo-streamserver-controls-stream-item-buttons,
+.module.comments-my-comments .echo-flag-container,
+.module.comments-my-comments .echo-flag-container a {
+    float: right;
+    color: #555;
+    text-align: right;
+}
+
+.module.comments-my-comments .echo-streamserver-controls-stream-item-plugin-TWP_My_Comments-childrenIndicator{
+    display: inline !important; 
+    font-size: 13px;
+}   
+.module.comments-my-comments .echo-streamserver-controls-stream-item-plugin-TWP_My_Comments-likesIndicator,
+.module.comments-my-comments .echo-streamserver-controls-stream-item-plugin-TWP_My_Comments-childrenIndicator a{
+    border-left: 1px solid #DDD;
+    display: inline !important; 
+    padding-left: 5px;
+    margin-left: 5px;
+    padding-top: 4px;
+    font-size: 13px;
+    line-height: 22px;
+}
+.module.comments-my-comments .echo-streamserver-controls-stream-item-button-delim {
+    display: none;
+}
+
+.module.comments-my-comments .comments,
+.module.comments-my-comments .comment-header,
+.module.comments-my-comments .echo-stream-body .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item-content,
+.module.comments-my-comments .comments .echo-stream-body .echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item-container:last-child {
+    border: none;
+}
+
+.module.comments-my-comments .echo-stream-container .echo-streamserver-controls-stream-item-wrapper {
+    width: 98%;
+}
+.module.comments-my-comments .echo-streamserver-controls-stream-item-subwrapper {
+    margin-left: 10px;
+}
+.module.comments-my-comments .echo_container .comments,
+.module.comments-my-comments .echo_container .echo-header-container {
+    display: none;
+}
+
+.module.comments-my-comments .echo-stream-container .echo-stream-body {
+    margin-top: 5px;
+}
+
+.module.comments-my-comments .echo-stream-container .echo-streamserver-controls-stream-item-data {
+    padding: 0px 0px 0px 0px;
+}
+.module.comments-my-comments .echo-stream-container .echo-streamserver-controls-stream-item-re {
+    font-weight: normal;
+}
+
+.module.comments-my-comments .echo-stream-container .echo-streamserver-controls-stream-item-re a {
+    font-weight: bold;
+}
+.module.comments-my-comments a:hover {
+    text-decoration: none;
+    color: #2E6D9D;
+}
+
+.module.comments-my-comments .echo-stream-body .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-controls a.echo-streamserver-controls-stream-item-control.echo-item-control-Share {
+    display: inline;
+    right: 24px;
+    padding-left: 0;
+    padding-right: 6px;
+}
+    
+.module.comments-my-comments .echo-streamserver-controls-stream-item-container.zebra,
+.module.comments-my-articles .zebra {
+    background-color: #f1f1f1;
+    
+}
+.module.comments-my-comments .echo-streamserver-controls-stream-item-subcontainer {
+    padding: 11px 0 14px 0;
+}
+
+.module.comments-my-comments .echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item-subcontainer {
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.module.comments-my-comments .echo-streamserver-controls-stream-item-re{
+    display: inline !important;
+    margin: 0 0 0 0px;
+    line-height: 13px;
+    font-weight: normal;
+    color: #6e6e6e;
+    font-size: 11px;
+}
+
+.module.comments-my-comments .echo-streamserver-controls-stream-item-re-container {
+    font-weight: bold;
+    color: black;
+    display: inline !important;
+}
+.module.comments-my-comments .echo-streamserver-controls-stream-item-re
+.module.comments-my-comments .echo-streamserver-controls-stream-item-childrenIndicator, 
+.module.comments-my-comments .echo-streamserver-controls-stream-item-likesIndicator {
+    float: right;
+    margin: 0px 0 0px 0;
+    cursor: pointer;
+    color: black;
+    padding-left: 6px;
+    line-height: 18px;
+    display: inline;
+    padding-right: 6px; 
+}
+
+.module.comments-my-comments .echo-flag-container {
+    width: auto;    
+}   
+     
+.module.comments-my-comments .echo-streamserver-controls-stream-item-buttons #newsharebar {
+    top: 21px;
+}    
+.module.comments-my-comments .echo-streamserver-controls-stream-item-childrenIndicator:hover {
+    text-decoration: none;
+    color: #2E6D9D;
+}   
+        
+.module.comments-my-comments span.children-arrow,
+.module.comments-my-articles span.children-arrow {
+    font-size: 8px;
+}
+
+.module.comments-my-comments .comments .echo-stream-body .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-controls {
+    width: auto;
+    float: right;
+    margin-bottom: 0px; 
+    margin-top: 0px;
+}   
+   
+   .echo-streamserver-controls-stream-item-content.collapsible.collapsed 
+.echo-streamserver-controls-stream-item-likesIndicator + .echo-streamserver-controls-stream-item-controls,
+.echo-streamserver-controls-stream-item-childrenIndicator + .echo-streamserver-controls-stream-item-likesIndicator,
+.echo-streamserver-controls-stream-item-childrenIndicator + .echo-streamserver-controls-stream-item-controls {
+    border-right: 1px solid ;
+}
+
+.module.comments-my-comments .comments .echo-stream-body .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-data,
+   .module.comments-my-comments .comments .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-date, 
+   .module.comments-my-comments .echo-stream-container .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-container .echo-streamserver-controls-stream-item-wrapper-root .echo-streamserver-controls-stream-item-subwrapper {
+    margin-top: 0px;
+}
+
+.module.comments-my-comments .echo-streamserver-controls-stream-item-children {
+    margin-left: 50px;
+}
+.module.comments-my-comments .echo-streamserver-controls-stream-item-footer .echo-streamserver-controls-stream-item-authorname {
+    display: inline;
+    float: left;
+    content: ' responds on';
+    font-weight: bold;
+    color: black;
+    padding-right: 3px;
+}
+
+.module.comments-my-comments .comments .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-date {
+    display: inline;
+    float: none;
+    line-height: 18px;
+    width: auto;
+}
+
+.module.comments-my-comments .echo-streamserver-controls-stream-item-data {
+    width: 100%;
+    float: left;
+    margin-bottom: .5em;    
+}
+
+.module.comments-my-comments .photo-caption {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.module.comments-my-comments .echo-item-control-delim {
+    display:none !important;    
+}
+
+.my-article-list {
+    margin-right: 10px;
+}
+
+.my-article-list .echo_container {
+    padding-left: 15px;
+    background-color: white;
+    margin-right: 0px;
+}
+.my-article-list .article-row {
+    width: 100%;
+    padding: 7px 0px 7px 0px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.my-article-list .col1, .my-article-list .col2 {
+    display: inline;
+}
+
+.my-article-list .col2 {
+    float: right;
+    padding-right: 13px;
+    font: normal 11px arial;
+}
+
+.my-article-list  .col1 a {
+    font: bold 12px arial;
+    padding-left: 10px;
+}
+
+.my-article-list .comments, .my-article-list .echo-stream-container,
+.my-article-list .echo_stream_container,
+.my-article-list .comments .comment-header {
+    border: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.my-article-list .comment-count {
+    cursor: pointer;
+}
+
+/**************************************************************************
+*       POPUPS
+
+***************************************************************************/
+/*************Flag     ****************************************************/
+
+#comment-flag-container {
+    position: absolute;
+    top:15px;
+    left:0;
+    z-index: 999999;
+    zoom: 1;
+}
+
+.ie7 #comment-flag-container {
+    bottom:0px;
+    top: auto;
+    height: auto;
+}
+
+#newsharebar li .arrow-one, 
+#comment-flag-list .arrow-one {
+    top: 7px;
+    border-bottom: 8px solid #DDD;
+}
+#newsharebar li .arrow-one, 
+#newsharebar li .arrow-two,
+#comment-flag-list .arrow-one,
+#comment-flag-list .arrow-two {
+    width: 0;
+    height: 0;
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-top: 0;
+    position: absolute;
+    z-index: 9999;
+    left: 219px;
+}
+
+#newsharebar li .arrow-two,
+#comment-flag-list .arrow-two {
+    top: 9px;
+    border-bottom: 8px solid #FFF;
+}
+
+#comment-flag-list .arrow-one,
+#comment-flag-list .arrow-two {
+    left: 35px;
+}
+
+#comment-flag-list .arrow-one {
+    top: -2px;
+}
+#comment-flag-list .arrow-two {
+    top: -0px;
+}
+
+#comment-flag-list {
+    position: relative;
+    background-color: transparent;
+    padding: 5px 0px 10px 0px;
+    text-align: left;
+    color: black;
+    right: 20px;
+    top: -3px;
+    font-size: 12px;
+    z-index: auto;
+    margin-top: 5px;
+}
+
+.ie7 #comment-flag-list .flag-list {
+        height: 80px;   
+        top: 1px;
+}
+
+#comment-flag-list .flag-list {
+    background-color: white;
+    border: solid #DDD 1px;
+    box-shadow: 2px 3px 4px #EEE;
+    margin-top: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    z-index: auto;
+    position: relative;
+}
+
+#comment-flag-list ul {
+    margin: 0px;
+}
+#comment-flag-list li {
+    padding: 0 25px 0 10px; 
+    width: auto;
+    list-style: none;
+    height: 20px;
+}   
+#comment-flag-list li:hover {
+    color: white;
+    cursor: pointer;    
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+    background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+
+/* FOR SHAREBAR-SMALL MODULE */
+
+.echo-streamserver-controls-stream-item-button-share {
+    position: relative;
+    }
+.echo-streamserver-controls-stream-item-buttons #newsharebar { 
+    position: absolute; 
+    top: 16px; 
+    left: 0px;
+    z-index: 990;
+}
+
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar {
+    top: auto; 
+    bottom: 0px;
+}
+.echo-streamserver-controls-stream-item-buttons #newsharebar .newshare {
+    font-size:11px;
+    width:140px;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar .newshare ul li {
+    border:none;
+    padding:0;
+    height:16px;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar .newshare ul li a{
+    padding:0;
+    margin:0;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar .newshare a,
+.echo-streamserver-controls-stream-item-buttons #newsharebar .newshare a:hover{
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar .share li{
+    display:inline;
+    margin-right:5px;
+    float:left;
+    display:block;
+    }
+    
+.echo-streamserver-controls-stream-item-buttons #newsharebar .share-text {
+    color:#999;
+    font-weight:normal;
+    }
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .more { 
+    margin: -7px 0 0 0;
+    right: 0;
+    padding: 7px;
+    position: absolute;
+    width:220px;
+    display:none;
+    z-index:992 !important; 
+}
+
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar li .more {
+    bottom: 15px;
+}
+
+.ie7 .morebottom {
+    height: 90px;
+}
+
+.ie7 .arrow-one, .ie7 .arrow-two {
+    display: none;
+}
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom {   
+    border:solid #ddd 1px;
+    padding:15px;
+    width:100%;
+    margin-top:-2px;
+    font-size:12px;
+    box-shadow: 2px 3px 4px #eee;
+    background-color:#fff;
+    z-index: 999
+}
+
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom .left,
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom .right {    
+    float:left;
+    width:100px;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom .left { 
+    border-right:solid #eee 1px;
+    padding-right:0;
+    margin-right:15px;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom .right {    
+    
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom ul,
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom ul li { 
+    margin:0;
+    padding:0;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom ul li {
+    text-align:left;
+    height:28px;
+    line-height:25px;
+    display: block;
+    width: 100%;
+
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom ul li a,
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom ul li a:hover {
+    font-weight:normal;
+}
+
+/* For arrow above popup */
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .arrow-one,
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .arrow-two {
+    width:0; 
+    height:0; 
+    border-left: 5px solid transparent; 
+    border-right: 5px solid transparent;
+    border-top: 0;
+    position:absolute;
+    left:104px;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .arrow-one {
+    top:-3px;
+    border-bottom: 8px solid #ddd;
+}
+
+.echo-streamserver-controls-stream-item-buttons #newsharebar li .arrow-two {
+    top:-2px;
+    border-bottom: 8px solid #fff;
+}
+
+
+/* ie7 sharebar.  sigh.  */
+
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar { 
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+    z-index: auto;
+    visibility: visible;
+}
+
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar .more {
+    z-index: auto;
+}
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom {  
+    position:relative;
+    top:10px;
+    background-color: #fff !important;
+    z-index: auto;
+}
+
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom .left,
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar li .morebottom .right {   
+    z-index:1000;
+    height:110px;
+}
+
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar li .arrow-one,
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar li .arrow-two {
+    position:absolute;
+    z-index:999;
+    left:229px;
+}
+
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar li .arrow-one {
+    top:9px;
+}
+
+.ie7 .echo-streamserver-controls-stream-item-buttons #newsharebar li .arrow-two {
+    top:11px;
+}
+
+/* Icons */
+#newsharebar .shareitems {
+    display:block;
+    height:16px;
+    width:16px;
+    background:url("https://img.washingtonpost.com/pb/resources/img/echo2/icon-sprite-share.png") no-repeat !important;
+}
+
+#newsharebar .morebottom a {
+    background:none;
+}
+
+#newsharebar .shareitems.facebook {
+    background-position:0px -19px !important;
+}
+
+#newsharebar .shareitems.twitter {
+    background-position:0px -38px !important;
+}
+
+#newsharebar .shareitems.digg {
+    background-position:0px -57px !important;
+}
+
+#newsharebar .shareitems.delicious {
+    background-position:0px -76px !important;
+}
+
+#newsharebar .shareitems.stumbleupon {
+    background-position:0px -95px !important;
+}
+
+#newsharebar .shareitems.b {
+    background-position:0px -114px !important;
+}
+
+#newsharebar .shareitems.myspace {
+    background-position:0px -133px !important;
+}
+
+#newsharebar .shareitems.linkedin {
+    background-position:0px -152px !important;
+}
+
+#newsharebar .shareitems.email {
+    background-position:0px -171px !important;
+}
+
+#newsharebar .shareitems.rss {
+    background-position:0px -190px !important;
+}
+
+#newsharebar .shareitems.mobile {
+    background-position:0px -209px !important;
+}
+
+#newsharebar .shareitems.tumblr {
+    background-position:0px -228px !important;
+}
+
+#newsharebar .shareitems.reddit {
+    background-position:0px -247px !important;
+}
+
+#newsharebar .morebutton {
+    background:none;
+}
+
+.morebottom .shareitems {
+    float:left;
+    margin:4px 6px 0 0;
+}
+
+.newshare li.sharetop {
+    height:16px;
+    line-height:16px;
+}
+/* END SHAREBAR-SMALL MODULE STYLING */
+/*************Share Bar****************************************************/
+
+.crowdsourced_topic_discussion .echo-streamserver-controls-stream-item-button-share #newsharebar { right: 218px; }
+
+/****************************************************************************/
+
+/************* Permalink **************************************************/
+div.comment-permalink-back {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0 10px 0;
+}
+
+div.comment-permalink-back p.comment-permalink-back-link, 
+div.comment-permalink-back-bottom p.comment-permalink-back-link {
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.module.comment-permalink-back p.comment-permalink-back-link a {
+    font-weight: bold;
+    text-decoration: none;
+}
+div.comment-permalink-back p.comment-permalink-back-link a {
+    color: #000;
+}
+
+.permalink .nav.nav-tabs.echo-apps-conversations-tabs.echo-apps-conversations-streamHeader {
+    display: none;
+}
+
+/************************************************************************
+*
+*   Off Topic Display
+*
+*************************************************************************/
+.echo_container .control-flag-offtopic {
+    margin: 0px 4px 0px 15px;
+    float: right;
+    font-size: 12px;
+    display: inline;
+    line-height: 14px;
+}
+.echo_container .comment-offtopic-action:hover,
+.echo_container .comment-offtopic-state:hover {
+    opacity: 1.0;
+    color: #057ec2;
+}
+
+
+.echo_container .comment-offtopic-action {
+    cursor: pointer;
+    color: #555;
+}
+
+.echo_container .comment-offtopic-state {
+    color: #BEBEBE;
+    cursor: pointer;
+}
+
+
+
+.echo-streamserver-controls-stream.offtopic-hidden .echo-streamserver-controls-stream-item-container.offtopic {
+    padding: 0px;
+}
+.echo-streamserver-controls-stream.offtopic-hidden .offtopic.echo-streamserver-controls-stream-item-container.echo-item-user-marker-staff {
+    border: none !important;
+}
+
+.echo-streamserver-controls-stream.offtopic-hidden .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-container-root.offtopic,
+.echo-streamserver-controls-stream.offtopic-hidden .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-container-child.offtopic,
+.echo-streamserver-controls-stream.offtopic-hidden .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-container-root-thread.offtopic > *, 
+.echo-streamserver-controls-stream.offtopic-hidden .echo-streamserver-controls-stream-item-container.echo-streamserver-controls-stream-item-container-child-thread.offtopic > *,
+.echo-streamserver-controls-stream.offtopic-hidden .echo-streamserver-controls-stream-item-content.offtopic
+ {
+    display: none;
+    padding: 2px;
+    margin-top: 0px;
+}
+
+.echo-streamserver-controls-stream .offtopic.comment-item-hidden {
+    display: inline-block;
+    margin: 5px 0px 5px 10px;
+    line-height: normal;
+    float: left;
+}
+
+.echo_container .echo-streamserver-controls-submit-plugin-TWP_Submit-userMarkOfftopic {
+    float: left;
+    padding: 0px 0 0 0px;
+    vertical-align: bottom;
+    line-height: 50px;
+}
+
+.echo_container .echo-sdk-ui .echo-streamserver-controls-submit-plugin-TWP_Submit-userMarkOfftopic input[type="checkbox"] { 
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+/***************Echo Lite*****************************/
+
+Q.ECHO_LITE STARTS HERE {
+    
+}
+.echo_container_lite .echo_container {
+    IEONLYwidth: 200px;
+    font-size: 12px;
+}
+
+.echo_container_lite .weigh-in {
+    display:none;
+}
+
+.echo_container_lite .echo_stream_container {
+    border-top: 1px solid #CCCCCC;
+}
+.module.quick-comments .comment-number{
+vertical-align: top;
+background-color: #000;
+background-repeat: no-repeat;
+background-position: 0 0!important;
+}
+.inline {
+    display: inline;
+}
+
+.padding-right-9 {
+    padding-right: 9px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+    
+/*echo core css overrides */
+.echo_container_lite .echo-linkColor, .echo-linkColor a {
+    color: black;
+}
+
+.echo_container .echo-stream-body .echo-item-content .echo-item-authorName:after,
+.echo_container .echo-stream.echo-streamserver-controls-stream-item--item-replyForm .echo-auth-name:after {
+    content:' wrote:';
+    color:#333;
+    font-weight:normal;
+    }
+
+
+
+
+.echo-stream-container .echo-stream-body {
+    clear: both;
+}
+.echo-stream-container .echo-item-content .echo-item-container .echo-item-wrapper-root .echo-item-subwrapper {
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+}
+.echo-stream-container .echo-item-content .echo-item-container .echo-item-wrapper-child .echo-item-subwrapper {
+    padding-left: 5px;
+}
+.echo-stream-container .echo-item-content .echo-item-container .echo-item-avatar-wrapper {
+    margin: 0 10px 5px 0;
+}
+.echo-stream-container .echo-item-content .echo-item-container .echo-item-subwrapper .echo-item-authorName {
+    float: none;
+}
+
+#article .article_body .comment-count-primary { padding-bottom: 20px; }
+.module.quick-comments .comment-number {
+    display:inline-block;
+    height:38px !important;
+    padding:0 3px 0 3px;
+    margin:0 0px 0 0;
+    font:normal 24px/32px arial, sans-serif !important;
+    color:#fff;
+    position:relative;
+    width:74px;
+    text-align:center; 
+    border-radius: none !important;
+    }
+    
+.echo_container .echo-stream-body .echo-item-content .echo-primaryColor{color:#1D1D1D;}
+.echo-stream-body .echo-item-content .echo-item-text { color: #333;}
+
+.echo_container .echo-stream-body .echo-item-container-child, .echo-stream-body .echo-item-container.echo-item-container-child{margin-right:0; padding-left: 0px; padding-top: 20px;}
+.echo-stream-body .echo-item-depth-1{background-color:transparent;margin: 0 0 0 58px;}
+.echo-badge-info p.echo-badge-info-link {
+    color: #999;
+    margin-bottom: 0 !important;
+}
+.echo-badge-info p.title {
+    padding: 3px 0 0 32px;
+    font-size: 13px;
+    font-weight: bold;
+}   
+
+/*"via" formats */
+.echo_container .echo-item-content .echo-item-date,.echo_container .echo-item-content .echo-item-from {
+    font:normal 10px arial, sans-serif;
+    color: #999;
+    margin-top: 10px;
+}
+
+.echo-item-content .echo-item-wrapper-child .echo-item-date,
+.echo-item-content .echo-item-wrapper-child .echo-item-from {
+    margin-top: 3px;
+}
+
+.hidden {
+    display:none;
+}
+.comments-wrapper-ie78 .echo-primaryFont { font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 16px; }
+.comments-wrapper-ie78 .echo-ui { text-align: left; }
+.comments-wrapper-ie78 .echo-item-avatar { width: 48px; height: 48px; }
+.comments-wrapper-ie78 .echo-item-avatar-wrapper { float: left; position: relative; }
+.comments-wrapper-ie78 .echo-item-subcontainer { clear: both; }
+.comments-wrapper-ie78 .echo-item-depth-0 { margin-left: 0px; }
+.comments-wrapper-ie78 .echo-item-container-root-thread { padding: 10px 0 0 0; }
+.comments-wrapper-ie78 .echo-item-content { word-wrap: break-word; clear: both; }
+.comments-wrapper-ie78 .echo-ui, .comments-wrapper-ie78 .echo-ui .ui-widget :active { outline: none; }
+.comments-wrapper-ie78 .echo-item-date, .comments-wrapper-ie78 .echo-item-from, .comments-wrapper-ie78 .echo-item-via { float: left; }
+.comments-wrapper-ie78 .echo-item-body { padding-top: 4px; }
+.comments-wrapper-ie78 .echo-item-container-root { padding: 10px 0; }
+.comments-wrapper-ie78 .echo-item-wrapper { padding-bottom: 10px; }
+.blog_entry .echo_container-wrapper-ie78 .echo-item-wrapper { padding-bottom: 0px; }
+.comments-wrapper-ie78 .echo-item-wrapper .echo-item-text div div:first-child { display: none; }
+.comments-wrapper-ie78 .echo-item-wrapper .echo-item-body span.echo-item-text div div img { max-width: 95%; }
+.comments-full-wrapper-ie78.no-comments-spacer { margin-bottom: 51px; }
+.comments-full-wrapper-ie78 .echo-stream-container,
+.comments-full-wrapper-ie78 .echo-stream-container .echo-stream-body { border-bottom: none; }
+.comments-full-wrapper-ie78 .comment-count-label { margin-bottom: 0; }
+.comments-full-wrapper-ie78 #comment-info-links a { text-decoration: none; }
+.comments-full-wrapper-ie78 #comment-info-links .about-comments a { margin-right: 4px; }
+.comments-full-wrapper-ie78 #comment-info-links .about-badges { font: normal 11px/18px arial, sans-serif; color: #666; }
+.comments-full-wrapper-ie78 #comment-info-links .about-badges a { text-decoration: none; font-weight: normal; color:#666; margin: 0 0 0 4px; padding: 0; height: 18px; }
+.comments-full-wrapper-ie78 #comment-info-links .about-badges a:hover {text-decoration:none;color:#2E6D9D;}
+.comments-full-wrapper-ie78 .echo-stream-container.comments-wrapper-ie78 .echo-stream-body .echo-item-container.echo-item-container-child { padding-bottom: 10px; padding-top: 10px; }
+.echo-application-message { 
+    padding: 15px 0px; 
+    text-align: center; 
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #e4e4e4; 
+}
+#view-all-comments-ie78 { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 15px 0; clear: both; }
+Q#view-all-comments-message-ie78 { background: #4083b6 url('https://img.washingtonpost.com/rw/rw/sites/twpweb/img/echo2/css/ie78-view-all-comments-bkgd.png?t=b20140206150100') repeat-x left bottom; border: 1px solid #2e6c9b; text-align: center; padding:0 15px; font-family: Georgia, serif;}
+.comments-full-wrapper-ie78 #comment-info-links { float: right; }
+.comments-full-wrapper-ie78 .module.quick-comments.padding-top { padding-top: 0; }
+.blog_entry #view-all-comments-message-ie78 { height: auto; }
+#view-all-comments-message-ie78 p.view-comments-link-ie78 { padding: 10px 0;}
+#view-all-comments-message-ie78 p.view-comments-link-ie78 a, #view-all-comments-message-ie78 p.view-comments-link-ie78 a:link, #view-all-comments-message-ie78 p.view-comments-link-ie78 a:hover, #view-all-comments-message-ie78 p.view-comments-link-ie78 a:visited { color: #fff; font-size: 18px; font-weight: bold; text-decoration: none; }
+#view-all-comments-message-ie78 p.comment-controls-ie78 { padding-bottom: 8px; }
+#view-all-comments-message-ie78 p.comment-controls-ie78 a, #view-all-comments-message-ie78 p.comment-controls-ie78 a:link, #view-all-comments-message-ie78 p.comment-controls-ie78 a:hover, #view-all-comments-message-ie78 p.comment-controls-ie78 a:visited { color: #000; font-size: 12px; font-weight: normal; text-decoration: none; }
+.blog_entry #view-all-comments-message-ie78 p.comment-controls-ie78 a, .blog_entry #view-all-comments-message-ie78 p.comment-controls-ie78 a:link, .blog_entry #view-all-comments-message-ie78 p.comment-controls-ie78 a:hover, .blog_entry #view-all-comments-message-ie78 p.comment-controls-ie78 a:visited { margin-bottom: 0px; }
+#article .blog_entry p.comment-controls-ie78 { margin-bottom: 10px; }
+.blog_entry .echo-header-container .module.quick-comments, .blog_entry .echo-header-container p.comment-count-label { width: 120px; }
+#article .blog_entry .echo-header-container p { margin-bottom: 4px; }
+#article .blog_entry .echo-header-container .module, #article .blog_entry p.view-comments-link-ie78 { margin-bottom: 0px; }
+.blog_entry .content p.view-comments-link-ie78 { font-family: Georgia, serif; }
+    
+
+/***************END Echo Lite************************/
+
+/************** MOBILE *******************************/
+
+@media only screen and (max-width: 480px) {
+    /*************CONVERSATIONS *************/
+    .echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttonCaption,
+    .echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-buttons .echo-linkColor {
+        font-size: 12px !important;
+        padding-right: 3px;
+        margin-right: 0px;
+    }
+           
+   
+    .echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item-subwrapper {
+        margin-left: -4px;
+    }
+    .echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-1 {
+        margin-left: 20px;
+    }
+    
+    .echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-content .echo-streamserver-controls-stream-item-depth-2 {
+        margin-left: 40px;
+    }
+    
+    .echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-topCommenterForm input[type=text], .echo-streamserver-controls-submit-plugin-TWP_Submit_VerifiedCommenter-topCommenterForm textarea {
+        width: 100%;
+    }
+    
+    .echo-topcommenter-form .agreetopolicy p {
+        margin-top: -7px;
+        line-height: 20px;
+    }   
+    
+    .submit-controls-outer-wrapper {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    /************ITEM DISPLAY ******************/
+    .echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item-subwrapper, 
+    .echo-streamserver-controls-stream-item-childrenByCurrentActorLive .echo-streamserver-controls-stream-item-subwrapper,
+    .echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-children .echo-streamserver-controls-stream-item-frame,
+    .echo-streamserver-controls-stream-item-plugin-CardUIShim .echo-streamserver-controls-stream-item-depth-0 .echo-streamserver-controls-stream-item-subwrapper  {
+        margin-left: 0px;
+    }
+}

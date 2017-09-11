@@ -1,0 +1,330 @@
+5419,0,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+6419,0,88,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7118,0,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+5420,1,84,The text does not fit into our label scheme.
+6421,1,88,A specific security measure not covered above.
+7119,1,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7120,1,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+5421,2,84,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+6420,2,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7121,2,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+5422,3,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+6422,3,88,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+7122,3,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+5423,4,84,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way. You can opt in for data collection for the use of your information.
+5424,4,84,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way. You can opt out by contacting the company for the use of your information.
+5427,4,84,An unspecified third party does receive your health information for an unspecified purpose. You can opt in for data collection.
+5428,4,84,An unspecified third party does receive your health information for an unspecified purpose. You can opt out by contacting the company.
+6423,4,88,"You can opt out (by contacting the company) from the use of health information by the site, which uses it for an unspecified purpose."
+6424,4,88,"You can opt out (by contacting the company) from the use of health information by a third party, which collects or receives it for an unspecified purpose."
+6425,4,88,"You can opt in for the use of health information by the site, which uses it for an unspecified purpose."
+6426,4,88,"You can opt in for the use of health information by a third party, which collects or receives it for an unspecified purpose."
+7124,4,82,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way. You can opt in for data collection.
+7125,4,82,An unspecified third party does receive your health information for an unspecified purpose. You can opt in for data collection.
+5425,5,84,"You can opt in for the use of health information by the site, which uses it for an unspecified purpose."
+5426,5,84,An unnamed third party does receive your health information for an unspecified purpose. You can opt in for data collection.
+6427,5,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+6428,5,88,"You can opt out (by contacting the company) from the use of health information by the site, which uses it for an unspecified purpose."
+6429,5,88,"You can opt out (by contacting the company) from the use of health information by a third party, which collects or receives it for an unspecified purpose."
+7123,5,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7127,5,82,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way. You can opt in for data collection.
+7128,5,82,An unnamed third party does receive your health information for an unspecified purpose. You can opt in for data collection.
+5429,6,84,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way.
+5430,6,84,An unnamed third party does receive your health information for an unspecified purpose.
+6430,6,88,An unnamed third party does receive your health information for a basic service or feature. The data is personally identifiable.
+7143,6,82,An unnamed third party does receive your health information for a basic service or feature.
+7144,6,82,The site collects your health information for a basic service or feature. Collection happens in an unspecified way.
+5431,7,84,"You can opt out (by contacting the company) from the use of health information by the site, which uses it for an unspecified purpose."
+5432,7,84,"You can opt out (by contacting the company) from the use of health information by a third party, which collects or receives it for an unspecified purpose."
+6431,7,88,"You can opt in for the use of generic personal information by the site, which uses it for an additional (non-basic) service or feature."
+6432,7,88,"You can opt in for the use of health information by the site, which uses it for a basic service or feature."
+7145,7,82,A third party outside of our label scheme does receive your health information for an unspecified purpose.
+7146,7,82,An unspecified third party does not receive your health information for an unspecified purpose.
+7147,7,82,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way.
+5433,8,84,A named third party does receive your health information for a purpose outside of our label scheme.
+6433,8,88,A named third party does receive your health information for service operations or security.
+7148,8,82,An unspecified third party does receive your health information for a purpose outside of our label scheme.
+7149,8,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+5434,9,84,An unspecified third party does receive your health information for an unspecified purpose. The data is aggregated or anonymized.
+5435,9,84,An unspecified third party does receive your health information for an unspecified purpose. The identifiability of the data is not covered by our label scheme.
+5436,9,84,"The site collects your health information for an unspecified purpose. Collection happens in an unspecified way, and your data is aggregated or anonymized."
+5437,9,84,"The site collects your health information for an unspecified purpose. Collection happens in an unspecified way, and your data's identifiability is not covered by our label scheme."
+6434,9,88,An unnamed third party does receive your health information for an unspecified purpose. The data is aggregated or anonymized.
+7152,9,82,"The site collects your health information for an unspecified purpose. Collection happens in an unspecified way, and your data's identifiability is not covered by our label scheme."
+7153,9,82,An unspecified third party does receive your health information for an unspecified purpose. The identifiability of the data is not covered by our label scheme.
+7154,9,82,"The site collects your health information for an unspecified purpose. Collection happens in an unspecified way, and your data's identifiability is not covered by our label scheme. You can opt in for data collection."
+7155,9,82,An unspecified third party does receive your health information for an unspecified purpose. The identifiability of the data is not covered by our label scheme. You can opt in for data collection.
+5438,10,84,An unspecified third party does receive your health information for an unspecified purpose. You can opt in for data collection.
+5439,10,84,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way. You can opt in for data collection.
+6435,10,88,"You can opt in for the use of health information by the site, which uses it for an unspecified purpose."
+6436,10,88,"You can opt in for the use of health information by a third party, which collects or receives it for an unspecified purpose."
+7137,10,82,An unspecified third party does receive your health information for marketing purposes. You can opt in for data collection.
+7138,10,82,The site collects your health information for an unspecified purpose. Collection happens by some means outside of our label scheme.
+5440,11,84,The policy makes a statement about data from a demographic outside of our label scheme.
+5441,11,84,The policy makes a statement about how data from children is treated.
+6437,11,88,The text does not fit into our label scheme.
+7136,11,82,The text describes a specific data practice that is not covered by our label scheme.
+5442,12,84,The text does not fit into our label scheme.
+6438,12,88,The text describes a specific data practice that is not covered by our label scheme.
+7129,12,82,The text describes a specific data practice that is not covered by our label scheme.
+5443,13,84,The text does not fit into our label scheme.
+5444,13,84,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+6439,13,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7130,13,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7131,13,82,The text describes a specific data practice that is not covered by our label scheme.
+7156,13,82,"A user can access, edit, or delete personal information in a manner not covered by our label scheme, within the scope of unspecified user information."
+5445,14,84,"When a change of an unspecified nature is made to the privacy policy, users are notified in a manner outside of our label scheme. Users' choices regarding policy changes are not mentioned or are unclear."
+6440,14,88,"When a change of an unspecified nature is made to the privacy policy, users are notified in a manner outside of our label scheme. Users' choices regarding policy changes are not mentioned or are unclear."
+6441,14,88,"When a change of an unspecified nature is made to the privacy policy, users are notified when visiting the website. Users' choices regarding policy changes are not mentioned or are unclear."
+7132,14,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7133,14,82,"When a change of an unspecified nature is made to the privacy policy, the policy date is updated or information about the change is posted as part of the policy. Users' choices regarding policy changes are not mentioned or are unclear."
+7134,14,82,"When a change of an unspecified nature is made to the privacy policy, users are notified in a manner outside of our label scheme. Users' choices regarding policy changes are not mentioned or are unclear."
+5446,15,84,The text does not fit into our label scheme.
+6442,15,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+6443,15,88,The text does not fit into our label scheme.
+7135,15,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+5447,16,84,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way.
+5448,16,84,The site collects your demographic information for an unspecified purpose. Collection happens in an unspecified way.
+5449,16,84,The site collects something that uniquely identifies you for an unspecified purpose. Collection happens in an unspecified way.
+5450,16,84,The site collects your generic personal information for an unspecified purpose. Collection happens in an unspecified way.
+6444,16,88,"The site collects your health information for a basic service or feature. Collection happens by some means outside of our label scheme, and your data is identifiable."
+6445,16,88,"The site collects your demographic information for a basic service or feature. Collection happens by some means outside of our label scheme, and your data is identifiable."
+6446,16,88,"The site collects your contact information for a basic service or feature. Collection happens by some means outside of our label scheme, and your data is identifiable."
+6447,16,88,"The site collects something that uniquely identifies you for a basic service or feature. Collection happens by some means outside of our label scheme, and your data is identifiable."
+7157,16,82,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way.
+7158,16,82,The site collects your demographic information for an unspecified purpose. Collection happens in an unspecified way.
+7159,16,82,The site collects your contact information for an unspecified purpose. Collection happens in an unspecified way.
+7160,16,82,The site collects something that uniquely identifies you for an unspecified purpose. Collection happens in an unspecified way.
+5451,17,84,An unnamed third party does receive your health information for a basic service or feature. You can opt in for data collection.
+5452,17,84,An unnamed third party does receive your health information for service operations or security. You can opt in for data collection.
+5453,17,84,The site collects your health information for a basic service or feature. Collection happens in an unspecified way.
+5454,17,84,The site collects your health information for service operations or security. Collection happens in an unspecified way.
+6448,17,88,An unnamed third party does receive your health information for a basic service or feature. The data is personally identifiable. You can opt in for data collection for the use of your information.
+7161,17,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+7162,17,82,A third party outside of our label scheme does receive your health information for a purpose outside of our label scheme.
+7163,17,82,A third party outside of our label scheme does receive your health information for a basic service or feature.
+5473,18,84,A named third party does receive your health information for a basic service or feature.
+6449,18,88,Another part of the company or institution does receive your health information for a basic service or feature. The data is personally identifiable. You can opt in for data collection.
+7165,18,82,A third party outside of our label scheme does receive your health information for a purpose outside of our label scheme.
+5474,19,84,A named third party does receive your health information for a basic service or feature.
+5475,19,84,The site collects your health information for a basic service or feature. Collection happens in an unspecified way.
+6450,19,88,A named third party does receive your health information for a basic service or feature. The data is personally identifiable.
+7166,19,82,The site collects your health information for a basic service or feature. Collection happens in an unspecified way.
+7167,19,82,A third party outside of our label scheme does receive your health information for a purpose outside of our label scheme.
+5476,20,84,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way.
+5477,20,84,The site collects your health information for analytics or research. Collection happens in an unspecified way.
+5478,20,84,The site collects your health information for personalization or customization. Collection happens in an unspecified way.
+5479,20,84,An unnamed third party does receive your health information for an unspecified purpose.
+5480,20,84,An unnamed third party does receive your health information for analytics or research.
+5481,20,84,An unnamed third party does receive your health information for personalization or customization.
+5482,20,84,A named third party does receive your health information for legal requirements.
+6451,20,88,"The site collects your health information for service operations or security. Collection happens by some means outside of our label scheme, and your data is identifiable."
+6452,20,88,An unnamed third party does receive your health information for service operations or security. The data is personally identifiable.
+7168,20,82,The site collects your health information for a basic service or feature. Collection happens in an unspecified way.
+7169,20,82,The site collects your health information for analytics or research. Collection happens in an unspecified way.
+7170,20,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+7171,20,82,An unspecified third party does receive your health information for a purpose outside of our label scheme.
+5483,21,84,The site collects your health information for a basic service or feature. Collection happens in an unspecified way.
+5484,21,84,The site collects your health information for marketing purposes. Collection happens in an unspecified way.
+6453,21,88,"The site collects your health information for marketing purposes. Collection happens by some means outside of our label scheme, and your data is identifiable."
+7172,21,82,The site collects your health information for an additional (non-basic) service or feature. Collection happens in an unspecified way.
+7173,21,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+7174,21,82,The site collects your health information for a basic service or feature. Collection happens in an unspecified way.
+5485,22,84,The site collects your demographic information for marketing purposes. Collection happens in an unspecified way.
+5486,22,84,The site collects your location information for marketing purposes. Collection happens in an unspecified way.
+5487,22,84,The site collects your health information for marketing purposes. Collection happens in an unspecified way.
+5488,22,84,"You can make no specified choices about the use of unspecified information by the site, which uses it for marketing purposes."
+6454,22,88,"The site collects your demographic information for a purpose outside of our label scheme. Collection happens by some means outside of our label scheme, and your data is identifiable. You can opt out using the provided link."
+6455,22,88,Another part of the company or institution does receive your demographic information for a purpose outside of our label scheme. The data is personally identifiable. You can opt out using the provided link.
+7175,22,82,The site collects your demographic information for service operations or security. Collection happens in an unspecified way.
+7176,22,82,Another part of the company or institution does receive your health information for a purpose outside of our label scheme.
+5489,23,84,An unnamed third party does receive your health information for a basic service or feature.
+6456,23,88,An unnamed third party does receive your health information for service operations or security. The data is personally identifiable.
+7178,23,82,An unnamed third party does receive your health information for a basic service or feature.
+7179,23,82,An unnamed third party does receive your health information for analytics or research.
+7180,23,82,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+5490,24,84,"You can opt in for the use of health information by the site, which collects it for an unspecified purpose."
+5491,24,84,"You can opt in for the use of health information by the site, which uses it for an unspecified purpose."
+5492,24,84,"You can opt in for the use of health information by a third party, which collects or receives it for an unspecified purpose."
+6457,24,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+6458,24,88,"You can opt in for the use of health information by the site, which uses it for an unspecified purpose."
+6459,24,88,"You can opt in for the use of health information by a third party, which collects or receives it for an unspecified purpose."
+7181,24,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7182,24,82,A named third party does receive your health information for a purpose outside of our label scheme.
+7183,24,82,The text describes a specific data practice that is not covered by our label scheme.
+5494,25,84,A named third party does receive your health information for an unspecified purpose. You can opt out by contacting the company for the use of your information.
+5495,25,84,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way. You can opt out by contacting the company for the use of your information.
+6460,25,88,A named third party does receive your health information for an unspecified purpose. The data is personally identifiable. You can opt out by contacting the company.
+7184,25,82,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way.
+7185,25,82,A third party outside of our label scheme does receive your health information for an unspecified purpose.
+5496,26,84,The site collects your contact information for an unspecified purpose. Collection happens in an unspecified way. You can opt out by contacting the company.
+5497,26,84,The site collects your location information for an unspecified purpose. Collection happens in an unspecified way. You can opt out by contacting the company.
+5498,26,84,The site collects your health information for an unspecified purpose. Collection happens in an unspecified way. You can opt out by contacting the company.
+5499,26,84,The site collects an information type outside of our label scheme for an unspecified purpose. Collection happens in an unspecified way. You can opt out by contacting the company.
+5500,26,84,A named third party does receive your health information for an unspecified purpose. You can opt out by contacting the company for the collection or sharing of your information.
+5501,26,84,A named third party does receive information about you not covered by our label scheme for an unspecified purpose. You can opt out by contacting the company for the collection or sharing of your information.
+5502,26,84,A named third party does receive your location information for an unspecified purpose. You can opt out by contacting the company for the collection or sharing of your information.
+5503,26,84,A named third party does receive your contact information for an unspecified purpose. You can opt out by contacting the company for the collection or sharing of your information.
+6461,26,88,"The site collects your health information for a basic service or feature. Collection happens by some means outside of our label scheme, and your data is identifiable. You can opt out by contacting the company for the use of your information."
+6462,26,88,"The site collects an information type outside of our label scheme for a basic service or feature. Collection happens by some means outside of our label scheme, and your data is identifiable. You can opt out by contacting the company for the use of your information."
+6463,26,88,An unnamed third party does receive your health information for an unspecified purpose. The data is personally identifiable.
+7186,26,82,A third party outside of our label scheme does receive your contact information for a purpose outside of our label scheme.
+5504,27,84,A named third party does receive your health information for an unspecified purpose. You can opt out by contacting the company for the use of your information.
+6464,27,88,A third party outside of our label scheme does receive your health information for a basic service or feature. The data is personally identifiable. You can opt out by contacting the company.
+7187,27,82,A third party outside of our label scheme does receive your health information for a purpose outside of our label scheme.
+7188,27,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5505,28,84,"You can opt out (by contacting the company) from the use of health information by the site, which uses it for an unspecified purpose."
+6465,28,88,"You can opt out (by contacting the company) from the use of health information by a third party, which collects or receives it for a basic service or feature."
+7189,28,82,The text describes a specific data practice that is not covered by our label scheme.
+5506,29,84,The site collects your health information for a basic service or feature. Collection happens in an unspecified way.
+5507,29,84,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+5508,29,84,A named third party does receive your health information for a basic service or feature.
+5509,29,84,A named third party does receive your health information for a purpose outside of our label scheme.
+6466,29,88,An unnamed third party does receive your health information for service operations or security. The data is personally identifiable.
+7190,29,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+7191,29,82,A third party outside of our label scheme does receive your health information for a purpose outside of our label scheme.
+5511,30,84,"You can choose not to use a service or feature to avoid the use of health information by the site, which uses it for a basic service or feature."
+5512,30,84,"You can choose not to use a service or feature to avoid the use of health information by the site, which uses it for a purpose outside of our label scheme."
+5513,30,84,"You can choose not to use a service or feature to avoid the use of health information by a third party, which collects or receives it for a purpose outside of our label scheme."
+5514,30,84,"You can choose not to use a service or feature to avoid the use of health information by a third party, which collects or receives it for a basic service or feature."
+5515,30,84,The policy makes a statement about data from a demographic outside of our label scheme.
+6467,30,88,"You can opt in for the use of health information by the site, which uses it for legal requirements."
+6468,30,88,"You can opt in for the use of health information by a third party, which collects or receives it for legal requirements."
+6469,30,88,"You can opt out (by contacting the company) from the use of health information by a third party, which collects or receives it for legal requirements."
+6470,30,88,"You can opt out (by contacting the company) from the use of health information by the site, which collects it for legal requirements."
+7192,30,82,The text describes a specific data practice that is not covered by our label scheme.
+5516,31,84,The site collects your health information for a basic service or feature. Collection happens in an unspecified way. You can configure your privacy using a method outside our label scheme.
+5517,31,84,An unspecified third party does collect on the first party website or app your health information for a basic service or feature. You can configure your privacy using a method outside our label scheme.
+7193,31,82,An unspecified third party does receive your health information for a purpose outside of our label scheme.
+7194,31,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+5518,32,84,"You can make a choice about your privacy not described by our label scheme the use of health information by the site, which uses it for a basic service or feature."
+5519,32,84,"You can make a choice about your privacy not described by our label scheme the use of health information by a third party, which collects or receives it for a basic service or feature."
+6471,32,88,An unnamed third party does receive your health information for an unspecified purpose. The data is personally identifiable. You can configure your privacy using a method outside our label scheme.
+7195,32,82,An unspecified third party does receive your health information for a purpose outside of our label scheme.
+7196,32,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+5520,33,84,The site collects your health information for legal requirements. Collection happens in an unspecified way.
+5521,33,84,An unspecified third party does receive your health information for legal requirements.
+6472,33,88,An unnamed third party does receive your health information for legal requirements. The data is personally identifiable.
+7197,33,82,An unspecified third party does receive your health information for legal requirements.
+7198,33,82,The site collects your health information for legal requirements. Collection happens in an unspecified way.
+5522,34,84,A named third party does receive your health information for a purpose outside of our label scheme.
+5523,34,84,A named third party does receive your health information for legal requirements.
+6473,34,88,A named third party does receive your health information for a basic service or feature. The data is personally identifiable.
+7218,34,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5524,35,84,A named third party does receive your health information for an unspecified purpose. You can opt in for data collection for the use of your information.
+5525,35,84,A named third party does receive your health information for an unspecified purpose.
+6474,35,88,A named third party does receive your health information for a basic service or feature. The data is personally identifiable. You can configure your privacy using a method outside our label scheme.
+7219,35,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5526,36,84,A named third party does receive your health information for legal requirements.
+6475,36,88,A named third party does receive your health information for service operations or security. The data is personally identifiable.
+7220,36,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5527,37,84,A named third party does receive your health information for legal requirements.
+5528,37,84,A named third party does receive your health information for analytics or research.
+6476,37,88,An unnamed third party does receive your health information for service operations or security. The data is personally identifiable.
+7221,37,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5529,38,84,An unspecified third party does receive your health information for legal requirements.
+6477,38,88,An unnamed third party does receive your health information for legal requirements. The data is personally identifiable.
+7222,38,82,An unspecified third party does receive your health information for legal requirements.
+5530,39,84,A named third party does receive your health information for legal requirements.
+6478,39,88,An unnamed third party does receive your health information for legal requirements. The data is personally identifiable.
+7223,39,82,An unnamed third party does receive your health information for legal requirements.
+7224,39,82,An unnamed third party does receive your health information for service operations or security.
+5531,40,84,A named third party does receive your health information for a purpose outside of our label scheme.
+5532,40,84,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+6479,40,88,An unnamed third party does receive your health information for service operations or security. The data is personally identifiable.
+6480,40,88,"The site collects your health information for service operations or security. Collection happens by some means outside of our label scheme, and your data is identifiable."
+7225,40,82,An unnamed third party does receive your health information for a purpose outside of our label scheme.
+7226,40,82,An unnamed third party does receive your health information for service operations or security.
+7227,40,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+7228,40,82,The site collects your health information for service operations or security. Collection happens in an unspecified way.
+5533,41,84,A named third party does receive your health information for legal requirements.
+6481,41,88,A named third party does receive your health information for service operations or security. The data is personally identifiable.
+7229,41,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5534,42,84,A named third party does receive your health information for a purpose outside of our label scheme.
+6482,42,88,"The policy makes specific provisions for international audiences, non-US citizens, or non-European citizens (e.g., about international data transfer)."
+6483,42,88,A named third party does receive your health information for a purpose outside of our label scheme. The data is personally identifiable.
+7230,42,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5535,43,84,A named third party does receive your health information for a basic service or feature.
+5536,43,84,A named third party does receive your health information for a purpose outside of our label scheme.
+6484,43,88,A named third party does receive your health information for a purpose outside of our label scheme. The data is personally identifiable.
+7231,43,82,A named third party does receive your health information for service operations or security.
+7232,43,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5537,44,84,An unspecified third party does receive your health information for a purpose outside of our label scheme.
+6495,44,88,An unnamed third party does receive your health information for a purpose outside of our label scheme. The data is personally identifiable.
+7233,44,82,An unspecified third party does receive your health information for a purpose outside of our label scheme.
+5538,45,84,A named third party does receive your health information for a purpose outside of our label scheme.
+6496,45,88,A named third party does receive your health information for a basic service or feature. The data is personally identifiable.
+7234,45,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5539,46,84,A named third party does receive your health information for an unspecified purpose.
+6497,46,88,An unnamed third party does receive your health information for a basic service or feature. The data is personally identifiable.
+7235,46,82,A named third party does receive your health information for a purpose outside of our label scheme.
+5540,47,84,The site collects your health information for analytics or research. Collection happens in an unspecified way. You can opt in for data collection for the use of your information.
+5541,47,84,The site collects your health information for analytics or research. Collection happens in an unspecified way. You can choose not to use the service or feature for the use of your information.
+5542,47,84,An unnamed third party does receive your health information for analytics or research. You can opt in for data collection for the use of your information.
+5543,47,84,An unnamed third party does receive your health information for analytics or research. You can choose not to use the service or feature for the use of your information.
+6498,47,88,"You can opt in for the use of health information by the site, which uses it for analytics or research."
+6499,47,88,"You can make a choice about your privacy not described by our label scheme the use of health information by a third party, which collects or receives it for analytics or research."
+7236,47,82,A third party outside of our label scheme does receive your health information for a purpose outside of our label scheme.
+7237,47,82,A third party outside of our label scheme does receive your health information for analytics or research.
+7238,47,82,The site collects your health information for a purpose outside of our label scheme. Collection happens in an unspecified way.
+7239,47,82,The site collects your health information for analytics or research. Collection happens in an unspecified way.
+5544,48,84,An unspecified third party does receive your health information for an unspecified purpose. The data is aggregated or anonymized.
+5545,48,84,An unspecified third party does receive your health information for an unspecified purpose. The identifiability of the data is not covered by our label scheme.
+5546,48,84,"The site collects your health information for an unspecified purpose. Collection happens in an unspecified way, and your data is aggregated or anonymized."
+5547,48,84,"The site collects your health information for an unspecified purpose. Collection happens in an unspecified way, and your data's identifiability is not covered by our label scheme."
+6500,48,88,An unnamed third party does receive your health information for an unspecified purpose. The data is aggregated or anonymized.
+7216,48,82,"The site collects your health information for an unspecified purpose. Collection happens in an unspecified way, and your data's identifiability is not covered by our label scheme."
+7217,48,82,An unspecified third party does receive your health information for an unspecified purpose. The identifiability of the data is not covered by our label scheme.
+5548,49,84,The text does not fit into our label scheme.
+7214,49,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+5549,50,84,A specific security measure not covered above.
+6501,50,88,A specific security measure not covered above.
+7199,50,82,"The policy makes generic security statements, e.g., ""we protect your data"" or ""we use technology/encryption to protect your data""."
+5550,51,84,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+6502,51,88,"A user can view their information, within the scope of information the company has learned about the user."
+7200,51,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+5551,52,84,"A user can view their information, within the scope of user information outside of our label scheme."
+6503,52,88,"A user can view their information, within the scope of information the company has learned about the user."
+7201,52,82,"A user can view their information, within the scope of unspecified user information."
+5552,53,84,The text does not fit into our label scheme.
+6486,53,88,"A user can view their information, within the scope of information the company has learned about the user."
+7202,53,82,"The text introduces the policy, a section, or a group of practices, but it does not mention a specific practice."
+5553,54,84,The text does not fit into our label scheme.
+7203,54,82,The text describes a specific data practice that is not covered by our label scheme.
+5554,55,84,"A user can edit their information, within the scope of user information outside of our label scheme."
+6487,55,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+6488,55,88,"A user can edit their information, within the scope of information the company has learned about the user."
+7204,55,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7205,55,82,"A user can edit their information, within the scope of unspecified user information."
+5555,56,84,The text does not fit into our label scheme.
+7206,56,82,The text describes a specific data practice that is not covered by our label scheme.
+5556,57,84,The text describes a specific data practice that is not covered by our label scheme.
+6504,57,88,"A user can view their information, within the scope of user information outside of our label scheme."
+7207,57,82,The text describes a specific data practice that is not covered by our label scheme.
+7213,57,82,An unnamed third party does receive your health information for an unspecified purpose.
+5557,58,84,The text describes a specific data practice that is not covered by our label scheme.
+6505,58,88,"A user can view their information, within the scope of user information outside of our label scheme."
+7212,58,82,The text describes a specific data practice that is not covered by our label scheme.
+5558,59,84,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+6489,59,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7208,59,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+5559,60,84,The text describes a specific data practice that is not covered by our label scheme.
+6506,60,88,"A user can view their information, within the scope of user information outside of our label scheme."
+7209,60,82,The text describes a specific data practice that is not covered by our label scheme.
+5560,61,84,The text describes a specific data practice that is not covered by our label scheme.
+6507,61,88,"A user can view their information, within the scope of user information outside of our label scheme."
+7210,61,82,The text describes a specific data practice that is not covered by our label scheme.
+5561,62,84,The text describes a specific data practice that is not covered by our label scheme.
+6491,62,88,"You can opt out (by contacting the company) from the use of health information by the site, which uses it for a basic service or feature."
+6492,62,88,"You can opt out (by contacting the company) from the use of health information by a third party, which collects or receives it for a basic service or feature."
+7142,62,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7211,62,82,"A user can access, edit, or delete personal information in a manner not covered by our label scheme, within the scope of unspecified user information."
+5562,63,84,The text describes a specific data practice that is not covered by our label scheme.
+7141,63,82,The text describes a specific data practice that is not covered by our label scheme.
+5563,64,84,The text describes a specific data practice that is not covered by our label scheme.
+6494,64,88,You can make a choice about your privacy not described by our label scheme the use of unspecified information by an unspecified party for a basic service or feature.
+7140,64,82,The text describes a specific data practice that is not covered by our label scheme.
+5564,65,84,The text describes a specific data practice that is not covered by our label scheme.
+5565,65,84,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+6493,65,88,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."
+7139,65,82,"The text describes how to contact the company with questions, concerns, or complaints about the privacy policy."

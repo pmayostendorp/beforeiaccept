@@ -1,0 +1,112 @@
+/**********************************************
+ Blackbaud Design Custom JavaScript
+***********************************************
+ Site:			Public Citizen
+ Author: 		Chris Wolf
+ Created:		5/28/10
+ BBNC Version:	6.10
+ 
+*********** CHANGE LOG ************************
+
+
+
+**********************************************/
+
+/************* global definitions ************/
+var bbpage = Sys.WebForms.PageRequestManager.getInstance(); //BBNC
+var isEditView = window.location.href.match('edit=');
+
+/************* run page load functions ************/
+bbpage.add_pageLoaded(function(){
+  bbGlobal();
+  siteGlobal();
+});
+
+
+
+
+
+/********** define plugins and functions **********/
+
+// core design global functions
+function bbGlobal()
+{
+
+ // replace copyright with current year
+ function currentYear()
+ {
+  $("#currentYear").text((new Date).getFullYear());
+ };
+	
+ function fixPositioning()
+ {
+  $('div[id$=_panelPopup]').appendTo('body');
+  $('div[id$=_panelPopup_DropShadow]').appendTo('body');
+ };
+	
+ function hideMenuItem(menuClass)
+ {
+  $('.'+menuClass+' a[title=hide]').each(function(){						  
+   var ul = $(this).parent().parent();
+   var li = $(this).parent();
+   var parent = $(this).parent().parent().parent();
+   var a = ul.prev();		
+   
+   if ($(this).hasClass('selected')) {
+    $(this).removeClass('selected');
+    a.addClass('selected');
+   }
+
+   if (li.next().length > 0) {
+    li.remove();
+   } else {
+    ul.remove();
+    parent.removeClass('parent');
+   }
+  });
+  
+  $('ul.menu').css('visibility','visible');
+ };	
+ 
+ // execute functions
+ // remove or comment out unused functions
+ fixPositioning();
+ currentYear();
+ //hideMenuItem('menu');
+
+};
+
+
+// site specific global functions
+function siteGlobal()
+{
+ $('.QuickSearchTextbox').TextboxDefault({
+	 searchtext: 'SEARCH',	// default search text
+	 offcolor: '#054477',	// text color when not selected
+	 oncolor: '#054477'		// text color when selected
+ });
+
+ $('.QuickSearchFormTable').QuickSearchOverride({
+	 URLa: 'http://www.citizen.org/Page.aspx?pid=3306&',
+	 URLb: '',
+	 QueryVar: 'q'
+ });
+
+
+};
+
+
+// page specific functions
+
+
+
+// embedded plugins (paste plugin code here or link to separately in layout)
+
+// Textbox Default Text Plugin // Author: Chris Wolf // BBNC: 6.10 // Created: 5/13/2010 //
+(function($){$.fn.TextboxDefault=function(options){var defaults={searchtext:'Search',offcolor:'#666666',oncolor:'#000000'};var options=$.extend(defaults,options);var searchtext=options.searchtext;var offcolor=options.offcolor;var oncolor=options.oncolor;return this.each(function(){$(this).val(searchtext).css('color',offcolor).click(function(){if($(this).val()==searchtext){$(this).val('').css('color',oncolor);}}).blur(function(){if($(this).val()==''){$(this).val(searchtext).css('color',offcolor);}});});};})(jQuery);
+
+// QuickSearchOverridePlugin // Author: ChrisWolf // BBNC: 6.10 // Created: 5/25/2010 //
+(function($){$.fn.QuickSearchOverride=function(options){var defaults={URLa:'http://www.google.com/search?rls=en-us&',URLb:'&ie=UTF-8&oe=UTF-8',QueryVar:'q',SubmitButton:'.QuickSearchButton',SearchBox:'.QuickSearchTextbox'};var options=$.extend(defaults,options);var URLa=options.URLa;var URLb=options.URLb;var QueryVar=options.QueryVar;var SubmitButton=options.SubmitButton;var SearchBox=options.SearchBox;return this.each(function(){function GoToResults(){var q=$(SearchBox).val();var results=URLa+QueryVar+'='+q+URLb;window.location=results;};$(SearchBox).keypress(function(e){if(e.keyCode==13){GoToResults(); return false;}});$(SubmitButton).click(function(){GoToResults(); return false;});});};})(jQuery);
+
+// import Google Search Results plugin
+document.write('<script src="Document.Doc?id=24"></script>');

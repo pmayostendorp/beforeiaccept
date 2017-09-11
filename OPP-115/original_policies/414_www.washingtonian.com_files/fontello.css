@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?80727898');
+  src: url('../font/fontello.eot?80727898#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?80727898') format('woff'),
+       url('../font/fontello.ttf?80727898') format('truetype'),
+       url('../font/fontello.svg?80727898#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?80727898#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-at:before { content: '\e825'; } /* '' */
+.icon-opentable:before { content: '\e817'; } /* '' */
+.icon-info-1:before { content: '\e80d'; } /* '' */
+.icon-left-fat:before { content: '\e823'; } /* '' */
+.icon-right-fat:before { content: '\e824'; } /* '' */
+.icon-home:before { content: '\e81c'; } /* '' */
+.icon-clock:before { content: '\e828'; } /* '' */
+.icon-star:before { content: '\2605'; } /* '★' */
+.icon-th-list:before { content: '\e811'; } /* '' */
+.icon-heart:before { content: '\2665'; } /* '♥' */
+.icon-note:before { content: '\e81f'; } /* '' */
+.icon-music:before { content: '\e81b'; } /* '' */
+.icon-attention:before { content: '\e820'; } /* '' */
+.icon-key:before { content: '\e816'; } /* '' */
+.icon-mail:before { content: '\e808'; } /* '' */
+.icon-check:before { content: '\2713'; } /* '✓' */
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-cancel-circled:before { content: '\2716'; } /* '✖' */
+.icon-plus-circled:before { content: '\e805'; } /* '' */
+.icon-accessibility:before { content: '\e819'; } /* '' */
+.icon-reddit:before { content: '\e81a'; } /* '' */
+.icon-quote-circled:before { content: '\e82e'; } /* '' */
+.icon-quote:before { content: '\e82d'; } /* '' */
+.icon-attach:before { content: '\e82c'; } /* '' */
+.icon-location-1:before { content: '\e82f'; } /* '' */
+.icon-info:before { content: '\e803'; } /* '' */
+.icon-right-hand:before { content: '\e834'; } /* '' */
+.icon-left-hand:before { content: '\e835'; } /* '' */
+.icon-down-hand:before { content: '\e836'; } /* '' */
+.icon-videocam-2:before { content: '\e82a'; } /* '' */
+.icon-comment:before { content: '\e802'; } /* '' */
+.icon-up:before { content: '\e832'; } /* '' */
+.icon-right:before { content: '\e830'; } /* '' */
+.icon-up-hand:before { content: '\e837'; } /* '' */
+.icon-left:before { content: '\e831'; } /* '' */
+.icon-down:before { content: '\e833'; } /* '' */
+.icon-video-alt:before { content: '\e82b'; } /* '' */
+.icon-cancel-1:before { content: '\e804'; } /* '' */
+.icon-help-circled:before { content: '\e704'; } /* '' */
+.icon-info-circled:before { content: '\e705'; } /* '' */
+.icon-comment-alt:before { content: '\e807'; } /* '' */
+.icon-location:before { content: '\e80c'; } /* '' */
+.icon-popup:before { content: '\e83a'; } /* '' */
+.icon-arrow-combo:before { content: '\e80e'; } /* '' */
+.icon-zoom-in:before { content: '\e814'; } /* '' */
+.icon-left-circled:before { content: '\e821'; } /* '' */
+.icon-right-circled:before { content: '\e822'; } /* '' */
+.icon-down-open-big:before { content: '\e764'; } /* '' */
+.icon-left-open-big:before { content: '\e765'; } /* '' */
+.icon-right-open-big:before { content: '\e766'; } /* '' */
+.icon-up-open-big:before { content: '\e767'; } /* '' */
+.icon-dot-3:before { content: '\e78d'; } /* '' */
+.icon-cinema:before { content: '\e829'; } /* '' */
+.icon-globe-inv:before { content: '\e806'; } /* '' */
+.icon-videocam-1:before { content: '\e826'; } /* '' */
+.icon-chat:before { content: '\e80b'; } /* '' */
+.icon-linkedin:before { content: '\f05c'; } /* '' */
+.icon-instagram:before { content: '\f05d'; } /* '' */
+.icon-certificate:before { content: '\e800'; } /* '' */
+.icon-resize-full-alt:before { content: '\f0b2'; } /* '' */
+.icon-menu:before { content: '\e812'; } /* '' */
+.icon-chat-empty:before { content: '\e813'; } /* '' */
+.icon-stethoscope:before { content: '\e815'; } /* '' */
+.icon-twitter:before { content: '\f309'; } /* '' */
+.icon-facebook:before { content: '\f30c'; } /* '' */
+.icon-tumblr-1:before { content: '\e818'; } /* '' */
+.icon-pinterest-circled:before { content: '\f313'; } /* '' */
+.icon-tumblr:before { content: '\f315'; } /* '' */
+.icon-comment-1:before { content: '\e827'; } /* '' */
+.icon-picture-1:before { content: '\e80f'; } /* '' */
+.icon-picture:before { content: '\e80a'; } /* '' */
+.icon-videocam:before { content: '\e81d'; } /* '' */
+.icon-video:before { content: '\e839'; } /* '' */
+.icon-target:before { content: '\e83b'; } /* '' */
+.icon-monitor:before { content: '💻'; } /* '\1f4bb' */
+.icon-cd:before { content: '\e801'; } /* '' */
+.icon-chart-bar:before { content: '\e81e'; } /* '' */
+.icon-attach-1:before { content: '\e838'; } /* '' */
+.icon-mobile:before { content: '📱'; } /* '\1f4f1' */
+.icon-camera:before { content: '\e809'; } /* '' */
+.icon-camera-1:before { content: '\e810'; } /* '' */
+.icon-search:before { content: '🔍'; } /* '\1f50d' */

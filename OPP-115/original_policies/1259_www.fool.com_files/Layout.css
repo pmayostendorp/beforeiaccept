@@ -1,0 +1,721 @@
+/*******************************************************************************
+This file contains styling newer Fool pages, post Homepage relaunch
+
+NOTE: See =IE for Internet Explorer hacks
+
+=RESETS
+=BRIDGEOVERRULE
+=ELEMENTS
+=LAYOUT
+=CORNERSTYLES
+=TOPSTORY
+=TOPARTICLES
+=UGCLIST
+=UGCLIST -- FORMAT2
+=HAPPENINGONFOOL
+=NEWSLETTERS
+=ARTICLESBYCATEGORY
+=LEADLISTBOX
+=XMLDEBUG
+
+*******************************************************************************/
+
+/*******************************************************************************
+=RESETS
+*******************************************************************************/
+h1, h2, h3, h4, h5, dl{
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+div.box ul,
+td.txtC.brokerInfo p,
+#brokerCompare ul{
+	margin:0;
+}
+
+a {
+	color: #09549e;
+}
+
+a:hover {
+	color: #06a;
+}
+
+a:visited {
+	color: #393; /* #6b8fb3;*/
+}
+
+.unvisit a:visited, a.unvisit:visited {
+	color: #09549e;
+}
+
+/*******************************************************************************
+=BRIDGEOVERRULE
+*******************************************************************************/
+table.unstyled td {
+	border: none;
+}
+#primary {
+	color: #222;
+}
+
+
+/*******************************************************************************
+=ELEMENTS
+*******************************************************************************/
+#mid ul {
+	color: #ccc;
+	padding-left: 15px;
+	font-size: 12px;
+}
+#mid h3 {
+	margin-bottom: 5px;
+}
+
+#mid ul li {
+	line-height: 1.8em;
+	margin-bottom: 0px;
+}
+
+#mid ul li span.desc {
+	font-weight: bold;
+	color: #222; /* TODO: change me later if we go to 333 */
+}
+a.external {
+	padding-right: 16px;
+	background: right center url(//g.foolcdn.com/img/panic/externalLink.gif) no-repeat transparent;
+	white-space: nowrap;
+}
+
+div.box {
+	margin-bottom: 20px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+div.layout div.onethird {
+	width: 300px;
+}
+
+/*******************************************************************************
+=LAYOUT
+*******************************************************************************/
+div.layout {
+	background-color: #fff;
+	padding-left: 20px;
+	*padding-bottom: 20px; /* IE 7 doesn't speak CSS */
+}
+div.layout div.column {
+	float: left;
+	padding: 20px 20px 20px 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+div.layout div.last {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/*******************************************************************************
+=CORNERSTYLES
+*******************************************************************************/
+#mainStory div.commentWrap div.comment span.corner {
+	background-image: url('//g.foolcdn.com/img/corners/mainPageCommentWrap.gif');
+}
+
+#mainStory div.commentWrap div.comment span.ne {
+	top:-1px;
+	right:-1px;
+} #mainStory div.commentWrap div.comment span.nw {
+	left:-1px;
+	top:-1px;
+} #mainStory div.commentWrap div.comment span.se {
+	bottom:-1px;
+	right:-1px;
+} #mainStory div.commentWrap div.comment span.sw {
+	bottom:-1px;
+	left:-1px;
+}
+
+#mainStory div.wrap span.corner {
+	background-image: url('//g.foolcdn.com/img/corners/mainPageMainStory.gif');
+}
+
+div.layout .whiteOnWhite span.ne, #mainStory div.wrap span.ne, div.layout #newsletters div.round span.ne {
+	top:-1px;
+	right:-1px;
+} div.layout .whiteOnWhite span.nw, #mainStory div.wrap span.nw, div.layout #newsletters div.round span.nw {
+	left:-1px;
+	top:-1px;
+} div.layout .whiteOnWhite span.se, #mainStory div.wrap span.se, div.layout #newsletters div.round span.se {
+	bottom:-1px;
+	right:-1px;
+} div.layout .whiteOnWhite span.sw, #mainStory div.wrap span.sw, div.layout #newsletters div.round span.sw {
+	bottom:-1px;
+	left:-1px;
+}
+
+div.layout #articlesByCategory div.whiteOnWhite span.corner {
+	background-image: url('//g.foolcdn.com/img/corners/whiteOnWhiteD8.gif');
+}
+
+div.layout #newsletters.greenVariant div.round span.corner {
+	background-image: url('//g.foolcdn.com/img/corners/stockAdvisorBoxHPCorners.gif');
+}
+
+div.layout #newsletters div.round span.corner {
+  display: none !important;
+}
+
+/*******************************************************************************
+=TOPSTORY
+*******************************************************************************/
+#mainStory {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#mainStory h2 {
+	font-size: 24px;
+	line-height: 1.1em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin: 7px 10px 2px;
+}
+
+#mainStory div.wrap {
+	position: relative;
+	border: solid 1px #d8d8d8;
+	width: 282px;
+	background: transparent url(//g.foolcdn.com/img/Main/mainStoryBg.png) repeat-x left bottom;
+}
+
+#mainStory div.wrap img.mainImage {
+	margin: 1px 1px 0 1px;
+	width: 280px;
+}
+
+#mainStory p {
+	padding: 7px 10px;
+}
+
+#mainStory div.commentWrap {
+	padding: 7px 10px;
+}
+
+#mainStory div.comment {
+	background: #fff;
+	margin: 0;
+	padding: 5px !important;
+	border: 1px solid #ccc;
+}
+
+#mainStory div.commentWrap p {
+	margin-left: 45px;
+	padding: 0 5px;
+	font-size: 11px;
+	background: #fff;
+}
+
+#mainStory div.commentWrap p span {
+	color: #666;
+	display: block;
+}
+
+#mainStory div.commentWrap p span a {
+	font-weight: bold;
+}
+
+/*******************************************************************************
+=TOPARTICLES
+*******************************************************************************/
+#topArticles {
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+#topArticles div.preamble {
+	font-size: 11px;
+	text-align: right;
+	border-bottom: 1px dotted #ccc;
+	padding: 0px 0 5px 0;
+	margin-bottom: 15px;
+	color: #036;
+}
+
+#topArticles div.preamble a {
+	margin: 0 5px;
+}
+
+#topArticles div.preamble img {
+	vertical-align: text-bottom;
+}
+
+/*******************************************************************************
+=UGCLIST
+*******************************************************************************/
+.ugcList h1, .ugcList h2, .ugcList h3, .ugcList h4, .ugcList h5, 
+.ugcList p, .ugcList dl, .ugcList dt, .ugcList ul, .ugcList li {
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+.ugcList {
+	list-style-type: none;
+	padding: 0 !important;
+	overflow: hidden;
+}
+.ugcList li {
+	position: relative;
+	margin: 10px 0;
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 10px;
+}
+
+.ugcList img {
+	float: left;
+	clear: none;
+}
+
+.ugcList li.last {
+	border-bottom: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.ugcList h5 {
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.ugcList p {
+	font-size: 11px;
+	color: #666;
+}
+
+.ugcList p.desc {
+	font-size: 12px;
+	margin-bottom: 5px;
+	color: #333;
+}
+.ugcList cite {
+	font-style: normal;
+	display:block;
+	text-align: right;
+}
+.ugcList p.ugcInfo,
+.ugcList cite {
+	font-size: 11px;
+	color: #888;
+	font-style: normal;
+}
+
+.ugcList p.ugcInfo a,
+.ugcList cite a{
+	color: #888;
+}
+
+.ugcList p.ugcInfo a,
+.ugcList p.ugcInfo a:link,
+.ugcList p.ugcInfo a:visited,
+.ugcList cite a,
+.ugcList cite a:link,
+.ugcList cite a:visited {
+	color: #888;
+	text-decoration: none;
+}
+
+.ugcList p.ugcInfo a:active,
+.ugcList p.ugcInfo a:hover,
+.ugcList cite a:active,
+.ugcList cite a:hover {
+	color: #444;
+	text-decoration: underline;
+}
+.ugcList span.capsScore {
+	color: #666;
+}
+
+.ugcList span.ago {
+	display: block;
+	color: #c60;
+	line-height:11px;
+	font-size: 11px;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+#mid .ugcList a.userLink {
+	font-weight: bold;
+}
+
+img.userAvatar {
+	float: left;
+	clear: none;
+	padding: 2px;
+	border: 1px solid #ddd;
+	margin-right: 5px;
+	height: 25px;
+	width: 25px;
+	background: #fff;
+}
+
+
+/*******************************************************************************
+=HAPPENINGONFOOL
+*******************************************************************************/
+div.component a.moreLink {
+	text-align: right;
+	display: block;
+	font-size: 12px;
+	padding-top: 6px;
+}
+#secondary div.component ul{
+	line-height: 1.2em;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+#happeningOnFool ul.ugcList  div {
+	margin-left: 38px;
+}
+
+
+/*******************************************************************************
+=NEWSLETTERS
+*******************************************************************************/
+/* GREEN VARIANT */
+#newsletters.greenVariant div.round {
+	border: 1px solid #d8d8d8;
+}
+
+#newsletters.greenVariant h4 {
+	background-color: #4a0;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+} 
+
+#newsletters.greenVariant h4 a {
+	color: #fff;
+}
+
+#newsletters.greenVariant div.stockAdvisorInfo {
+	background: #fff url(//g.foolcdn.com/img/Main/newsletterAdvisors2.jpg) no-repeat bottom right;
+	padding-top: 10px;
+	margin-left: 10px;
+	position: relative;
+	height: 140px;
+}
+
+#newsletters.greenVariant div.stockAdvisorInfo p {
+	position: relative;
+	z-index: 10;
+	color: #4a0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#newsletters.greenVariant div.stockAdvisorInfo img.advisorPic {
+	display: none;
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+
+#newsletters.greenVariant div.stockAdvisorInfo p.perf {
+	font-size: 36px;
+}
+
+#newsletters.greenVariant div.stockAdvisorInfo p.callToAction {
+	margin-top: 10px;
+}
+
+#newsletters.greenVariant div.stockAdvisorInfo p.callToAction a {
+	font-size: 13px;
+	float: left;
+	clear: left;
+}
+
+#newsletters.greenVariant div.stockAdvisorInfo p.callToAction a:visited, #newsletters.greenVariant div.compareAll a:visited {
+	color: #06a;
+}
+
+#newsletters.greenVariant div.stockAdvisorInfo p.callToAction a.buyNow {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+#newsletters.greenVariant div.compareAll {
+	border-top: 1px dotted #d8d8d8;
+	padding: 10px 10px;
+	background-color: #f3f3f3;
+	font-size: 12px;
+	text-align: right;
+}
+
+#newsletters.greenVariant div.accessInstructions {
+	position: relative;
+	margin-top: -15px;
+	height: 28px;
+	background: #fff url(//g.foolcdn.com/img/Main/newslettersOwnerBG.gif) repeat-x top left;
+	border-top: 1px dotted #d8d8d8;
+	padding: 5px;
+	font-size: 13px;
+}
+
+/* YELLOW VARIANT */
+#newsletters.yellowVariant {
+  border: 1px solid #d8d8d8;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+}
+
+#newsletters.yellowVariant div.round {
+	background: transparent !important;
+}
+
+#newsletters.yellowVariant h4 {
+  background: #fc3;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+#newsletters.yellowVariant h3 {
+  padding: 10px 10px 5px 10px;
+}
+
+#newsletters.yellowVariant p {
+  padding: 5px 10px 20px 10px;
+}
+
+/* TEXT VARIANT */
+
+#newsletters.textLinks div {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #d8d8d8;
+  background-color: #f6f6f6;
+  padding: 10px;
+}
+
+#newsletters.textLinks div h4, #newsletters.textLinks div p, #newsletters.textLinks div ul {
+  padding-bottom: 10px;
+}
+
+#newsletters.textLinks div h4 {
+  font-weight: bold;
+}
+
+/* BARCHART VARIANT */
+#newsletters.barChartVariant div.round {
+	border: 1px solid #d8d8d8;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #fff url(//g.foolcdn.com/img/main/newslettersGraph.jpg) no-repeat 50% 10px !important;
+/*	width: 285px;*/
+	height: 250px !important;
+}
+
+#newsletters.barChartVariant h4 {
+	color: #d19a07;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#newsletters.barChartVariant h5 {
+	color: #999;
+	text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+#newsletters.barChartVariant a {
+	position: absolute;
+	bottom: 25px;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	width: 100%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#newsletters.barChartVariant span {
+	color: #999;
+	font-size: 10px;
+	position: absolute;
+	bottom: 2px;
+	right: 5px;
+}
+
+/*******************************************************************************
+=ARTICLESBYCATEGORY
+*******************************************************************************/
+#articlesByCategory div.round {
+	position: relative;
+	border: 1px solid #D8D8D8;
+	background: #fff;
+}
+
+#articlesByCategory table {
+	width: 590px;
+}
+
+#articlesByCategory table tr td {
+	padding: 20px 0;
+}
+#articlesByCategory table tr.middle td {
+	border: 1px dotted #ccc;
+	border-width: 1px 0;
+}
+
+#articlesByCategory h4 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 25px;
+	margin-bottom: 5px;
+}
+
+#articlesByCategory ul {
+	margin: 0 20px;
+}
+
+/*******************************************************************************
+=LEADLISTBOX
+*******************************************************************************/
+
+div.leadListBox {
+	border: 1px solid #d8d8d8;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+}
+div.leadListBox h5 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+div.leadListBox ul {
+	padding-left: 0 !important;
+}
+
+div.leadListBox ul li {
+	margin-left: 15px;
+}
+div.leadListBox ul.nobullets li {
+	margin-left: 0px;
+}
+
+div.leadListBox ul li.promoText {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+div.leadListBox ul li h5 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+div.leadListBox ul li p {
+	font-size: 13px;
+	color: #222;
+	/*margin-bottom: 10px; */
+}
+
+
+div.leadListBox ul.compact h5 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+div.leadListBox ul.compact p {
+	font-size: 13px;
+	color: #222;
+	margin-bottom:5px;
+	/*margin-bottom: 10px; */
+}
+
+
+
+div.leadListBox a.moreLink {
+	margin-top: 10px;
+	border-top: 1px dotted #ccc;
+	display: block;
+	font-size: 12px;
+	padding-top: 6px;
+	text-align: right;
+}
+
+div.leftline {
+	border-left: 1px solid #d8d8d8;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+div.rightline {
+	border-right: 1px solid #d8d8d8;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+}
+div.noborders {
+	border: none !important;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/*******************************************************************************
+=XMLDEBUG
+*******************************************************************************/
+dl.xmlcontentDebugBlock {
+	background: #FFB94F;
+	border: 1px solid #000;
+	color: #000;
+	padding: 10px;
+}
+
+dl.xmlcontentDebugBlock dt {
+	font-weight: bold;
+}
+
+dl.xmlcontentDebugBlock dt, dl.xmlcontentDebugBlock dd {
+	font-size: 10px;
+	color: #000;
+	line-height: 1.2em !important;
+	font-family: courier;
+}
+
+
+/************EVERGREEN CONVERSION CSS*******************************************
+**********TO BE PULLED OUT INTO ITS OWN DOCUMENT EVERGREEN.CSS*****************/
+
+#evergreen ul{
+	margin:0 0 22px 16px;
+	color:#222;
+	font-size:14px;
+}
+#evergreen.history ul{
+	padding:0;
+	margin:0 0 22px 0;
+}
+#evergreen table.specs{
+	margin-bottom:22px;
+}
+#evergreen h2.moreSpace{
+	margin-bottom:22px;
+}
+#evergreen td ul.compact{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+/*****************************************************************************/

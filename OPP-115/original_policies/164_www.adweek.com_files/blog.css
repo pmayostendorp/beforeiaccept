@@ -1,0 +1,495 @@
+/**
+ *   see _get_inline_color_override_css function in template.php
+ *   you shouldn't have to add hard-coded rules for each new blog!
+ */
+
+#adfreakad {
+  margin: 0 0 20px;
+  padding: 0 !important;
+  background: none !important;
+}
+
+.page-node.node-type-blog-post #main .colC .mod-featured .headline {
+  color: #00a99d;
+  font: 25px/25px "Helvetica Neue", Helvetica, Arial;
+  font-weight: bold;
+  letter-spacing: -0.25px;
+}
+
+.page-node.node-type-blog-post #main .colC .mod-featured .subheadline {
+  font: 25px/25px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+  letter-spacing: -0.25px;
+}
+
+#post {
+  margin-top: -7px;
+  overflow: auto;
+  *overflow: hidden; /* for now */
+  zoom: 1;
+}
+
+#post .col {
+  display: inline;
+  /*width: 484px;*/
+  width: 652px;
+  margin-right: -86px;
+  *margin: 0;
+}
+#post .col-first {
+  width: 149px;
+  margin-right: 19px;
+}
+.post {
+  /*margin: 0 0 14px;*/
+  /*padding-right: 86px;*/
+}
+.post .ruler {
+  position: relative;
+  width: 541px;
+  height: auto;
+  margin: 0 0 30px;
+  padding: 0 96px 0 15px;
+  line-height: 30px;
+}
+  .node-type-blog-post .post .ruler {
+    margin: 0;
+  }
+  .node-type-blog-post#blog .post .first {
+    margin-top: 30px;
+  }
+#post .meta {
+  width: 652px;
+  padding: 0 !important;
+}
+#post .ruler {
+  margin-top: 10px;
+}
+.post .ruler p, .post .ruler a {
+  color: #aaa;
+}
+.post .ruler p {
+  margin: 0 !important;
+  font: 12px/30px Arial, sans-serif;
+}
+.post .ruler .share {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  right: 10px;
+  border-left: solid 1px #d7d7d7;
+  padding-left: 4px;
+  overflow: hidden;
+  zoom: 1;
+}
+#post .meta .share {
+  position: static;
+  top: auto;
+  right: auto;
+  border: none 0;
+  padding: 0;
+}
+#post .meta .share li {
+  border-right: solid 1px #d7d7d7;
+  padding-left: 5px !important;
+  padding: 0 10px !important;
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:11px;
+  line-height: 29px;
+  display: inline;
+  float: left;
+  vertical-align: baseline;
+}
+#post .meta .share .tweet, #post .meta .share .fblike, #post .meta .share .share, #post .meta .share .comments {
+  border: none 0;
+}
+#post .meta .share .comments {
+  float: right;
+}
+#post .meta .share .comments ~
+li {
+  float: right;
+}
+#post .meta .share a {
+  font-size: 12px;
+  background-image: none;
+  color: #999;
+}
+
+#post .meta .share li.sharebar {
+  /*width: 380px;*/
+  border-right: 0 none;
+  padding: 0 5px !important;
+}
+
+.post .headline {
+  font: bold 25px/25px "Helvetica Neue", Helvetica, Arial;
+  letter-spacing: -0.25px;
+  line-height: 1.12;
+}
+
+.post .subheadline {
+  font: 25px/25px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+  letter-spacing: -0.25px;
+}
+
+.post .byline {
+  font: 25px/25px "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+  letter-spacing: -0.25px;
+}
+#post .headline, #post .subheadline, #post .byline {
+  font-size: 48px;
+  line-height: 50px;
+}
+#blog .post .headline {
+  position: relative;
+}
+  /*
+  .node-type-blogs .post .headline {
+    display: block;
+    padding-top: 30px;
+  }
+    .node-type-blogs .posts .post:first-child .headline {
+      padding-top: 0;
+    }
+    */
+
+#blog .post .headline a, #blog .post .headline a:hover, #blog .post .headline a:focus {
+  text-decoration: none;
+}
+#blog .post .headline a:hover span {
+  text-decoration: underline;
+}
+#blog .post .headline a:hover span.subheadline {
+  text-decoration: none;
+}
+/*                #blog .post .headline a:hover .subheadline,
+ #blog .post .headline a:focus .subheadline {
+ color: #fff ;
+ }*/
+#blog .post .subheadline {
+  color: #808080;
+}
+#blog .post .byline, #blog .post .byline a {
+  color: #ccc;
+}
+
+#blog .post h1 .byline a {
+  color: #ccc !important;
+}
+#blog .post h1 .byline a:hover {
+  text-decoration: underline;
+}
+
+.post.short-cuts {
+  background-color: #efefef;
+}
+
+.post.short-cuts {
+  padding: 0;
+}
+
+.post.short-cuts .short-cuts-body {
+  padding: 25px;
+}
+
+.post.short-cuts .short-cuts-body .media {
+  margin: 0 0 0 10px !important;
+}
+
+.post.short-cuts .short-cuts-body .headline {
+  font: bold 14px/18px "Helvetica Neue", Helvetica, Arial;
+}
+
+.post.short-cuts .short-cuts-body p {
+  font: normal 12px/16px Georgia, serif;
+}
+
+.post .media {
+  /*width: 484px;*/
+  overflow: hidden;
+  margin: 9px 0 15px;
+}
+
+.post.short-cuts .media {
+  float: right;
+}
+.post .media .media-title, .article .media .media-title {
+  position: relative;
+  display: block;
+  margin: 22px 0;
+  font-size: 22px;
+  color: #333;
+  padding: 0 0 0 53px;
+}
+.post .media .media-title {
+  font-family: "MuseoSlab500", Georgia, serif;
+}
+.article .media .media-title {
+  font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+}
+.post .media-title .item, #article .article .media-title .item {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: block;
+  background: url("/sites/all/themes/aw/images/sitewide/numberbg.gif") 0 0 no-repeat;
+  width: 46px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+.post .media .details {
+  border-bottom: solid 1px #ccc;
+  margin: 10px 0 0;
+  padding: 0 0 14px;
+}
+.post .media .details .facts {
+  margin: 0 0 6px;
+}
+.post .media .details p, #article .article .media p {
+  font: 16px/23px Georgia, serif !important;
+  color: #333 !important;
+  text-align: left !important;
+}
+.post .media .details .facts p {
+  margin: 0 0 1px !important;
+}
+.post .media .details strong {
+  color: #808080;
+}
+
+.article.article-single .content .media {
+  border-bottom: 1px solid #CCCCCC;
+  margin: 0 0 20px;
+  padding-bottom: 17px;
+}
+
+#article .article .media p.caption {
+  margin: 10px 0 -10px !important;
+  text-align: right !important;
+}
+
+.article.article-single .content .media .caption span.meta-credit {
+  color: #333333 !important;
+  font: bold 11px Georgia, serif !important;
+  text-align: right;
+}
+
+#post.post .media .details p:first-letter {
+  padding-left: 0;
+}
+
+div.media a {
+  display: block;
+  position: relative;
+}
+
+div.media .details a {
+  display: inline;
+}
+
+/*Video Landing Page Large Thumbs */
+/* 3 across top rows (16x9 aspect ratio) */
+#videos .media > a > img {
+  width:316px;
+  height:178px;
+}
+/* 50x50 Play button for larger video images. */
+#videos .media .video {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: -18px 0 0 -25px;
+  background: url("/sites/all/themes/aw/images/sitewide/play.png") 0 0 no-repeat;
+  width: 150px;
+  height: 50px;
+}
+
+/* Video Landing Page Small Thumbs */
+/* 4 across bottom rows (16x9 aspect ratio) */
+#videos .video-item-img > a > img {
+  width:148px;
+  height:84px;
+}
+/* Play button for Smaller video images. */
+ #videos .video-item-img:after {
+  content: '';
+  color:transparent;
+  text-decoration: none;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  margin: 28px 0 0 -85px;
+  background: url("/sites/all/themes/aw/images/sitewide/play_30x30.png") no-repeat;
+  background-size: 30px 30px;
+}
+
+/* quick */
+.media.gallery-img {
+  width: 652px;
+  height: 367px;
+  overflow: hidden;
+  margin: 0 0 15px !important;
+}
+.post .media p {
+  margin-top: 3px;
+}
+
+.post p {
+  margin: 0 0 15px;
+  font: 14px/21px Georgia, serif;
+  color: #414141;
+}
+#blog .post .media, #blog .post p, #blog .post .BrightcoveExperience, #blog .post object {
+  margin: 10px 0 0;
+  text-indent: 0;
+}
+
+#blog .post p .BrightcoveExperience, #blog .post p object {
+  margin: 0;
+}
+#blog .post .media {
+  margin: 20px 0;
+}
+#blog .post .first {
+  margin: 0 0 20px;
+}
+#post p {
+  font-size: 16px;
+  line-height: 24px;
+}
+#post.post p {
+  /*margin:0;*/
+}
+
+#post.post p {
+  text-indent: 35px;
+}
+#post.post p:first-of-type {
+  /*text-indent:0;*/
+}
+#post.post p.noindent, #post.post p.media {
+  text-indent: 0;
+}
+.post p.continue, #post p.continue {
+  font-size: 11px;
+}
+#blog #post.post p {
+  text-indent: 0;
+}
+
+#post table {
+  width: 100% !important;
+  margin: 20px 0;
+}
+#post table tr {
+  border-bottom: 1px #ccc solid;
+  font-family: Georgia, serif;
+  font-size: 16px;
+}
+#post table tr:first-child {
+  font-weight: bold;
+  background-color: #efefef;
+  font-family: Helvetica, Arial, sans-serif;
+}
+#post table td {
+  padding: 10px;
+  border-right: 1px #ccc solid;
+}
+#post table td:last-child {
+  border-right: none;
+}
+
+#post table td em {
+  font-style: italic;
+}
+
+#post table td strong {
+  font-weight: bold;
+}
+
+#post table td strike {
+  text-decoration: line-through;
+}
+
+#post table td u {
+  text-decoration: underline;
+}
+
+#post table td ol, #post table td ul {
+  margin: 10px 0 10px 10px;
+  padding: 0 0 0 25px;
+  list-style-position: outside;
+  font: normal 16px/23px Georgia;
+  color: #0C0808;
+}
+
+#post table td ul {
+  padding: 0 0 0 20px;
+}
+
+#post table td ul li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.post .col-first ul, .cols .post ul, .post .col-first ol, .cols .post ol {
+  margin: 1.5em;
+}
+
+ul.share {
+  margin:0 !important;
+}
+
+ul.share li {
+  margin:0 !important;
+  padding:0 !important;
+  float:left !important;
+}
+
+.post .col-first ul li, .cols .post ul li {
+  font: 16px/24px Georgia, serif;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 1em;
+}
+
+.post .col-first ol li, .cols .post ol li {
+  margin: 10px 0 10px 20px;
+  padding: 0;
+  list-style:decimal;
+  list-style-position: outside;
+  font: normal 16px/18px Georgia;
+}
+
+.tumblr_post img {
+  max-width: 316px;
+}
+
+.tumblr_post .media {
+  width: 316px;
+}
+
+.wide-topictags .topicstags {
+  display: block;
+  float: none;
+  width: 100%;
+  border: none;
+  margin: 8px 0 8px 0;
+}
+
+.wide-topictags .topicstags span {
+  display: inline;
+  font-weight: bold !important;
+}
+
+/* Fix for Popular / Latest lists */
+.node-type-blog-post .mod.latest-news-popular-now .latest-news-popular-now-content ul li {
+  margin: 0 0 10px 16px;
+}
+
+.node-type-blog-post .mod.latest-news-popular-now .latest-news-popular-now-content ul {
+  margin-bottom: 15px;
+}

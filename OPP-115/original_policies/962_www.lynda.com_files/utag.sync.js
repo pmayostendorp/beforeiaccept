@@ -1,0 +1,3 @@
+//tealium universal tag - utag.sync ut4.0.201506181809, Copyright 2015 Tealium.com Inc. All Rights Reserved.
+var utagSrc=getCookie("utag_env_lynda_main")||"";var optimizely_project_id;if(utagSrc.indexOf('dev/utag.js')>-1||utagSrc.indexOf('qa/utag.js')>-1){optimizely_project_id='2871100995';}else{optimizely_project_id='2095380433';}
+document.write('<script src="//cdn.optimizely.com/js/'+optimizely_project_id+'.js"></script>');function getCookie(name){var value="; "+document.cookie;var parts=value.split("; "+name+"=");if(parts.length==2)return parts.pop().split(";").shift();}

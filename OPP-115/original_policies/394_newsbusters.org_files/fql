@@ -1,0 +1,15 @@
+/**/ _ate.cbs.rcb_httpnewsbustersorgpr0({
+   "data": [
+      {
+         "url": "http://newsbusters.org/privacy-policy",
+         "normalized_url": "http://www.newsbusters.org/privacy-policy",
+         "share_count": 0,
+         "like_count": 0,
+         "comment_count": 0,
+         "total_count": 0,
+         "commentsbox_count": 0,
+         "comments_fbid": "677825142250926",
+         "click_count": 0
+      }
+   ]
+});

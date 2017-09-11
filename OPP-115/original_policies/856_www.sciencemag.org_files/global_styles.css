@@ -1,0 +1,1296 @@
+/* ************************************************************ */
+/* Science Generated
+/* ************************************************************ */
+
+/* ************************************************************ */
+/** Layout
+/* ************************************************************ */
+
+/*Reset for Science*/
+#sci-bd form, #sci-bd fieldset, #sci-bd fieldset input, #sci-bd fieldset select {margin: 0; padding: 0;}
+#sci-bd fieldset input.btn {border: solid 1px black; background: #b42025; color: white; font-family: georgia, times roman, serif; font-weight: bold; padding: 0 4px; font-size: 10px; margin-right: 12px; cursor: pointer;}
+#sci-bd fieldset input.btn {_width: 0; *overflow: visible;} /*IE67*/
+#sci-bd ul {list-style: none; margin: 0; padding: 0;}
+#sci-bd li {list-style: none; margin: 0; padding: 0;}
+#sci-bd p {line-height: 1.4em; margin-bottom: 1.3em;}
+
+/*Master page*/
+#sci-bd  {width: 830px; float: left; padding-bottom: 24px; margin: 0 0 0 8px; clear: both; *display: inline; }
+#sci-bd  h2  {margin: 0 0 8px 0;}
+#sci-bd.sci-content-body {width: 655px;}
+
+/*Grid System*/
+#sci-bd  .sci-cn-1  {width:50px;  float: left;}
+#sci-bd  .sci-cn-2  {width:110px; float: left;}
+#sci-bd  .sci-cn-3  {width:170px; float: left;}
+#sci-bd  .sci-cn-4  {width:230px; float: left;}
+#sci-bd  .sci-cn-5  {width:290px; float: left;}
+#sci-bd  .sci-cn-6  {width:350px; float: left;}
+#sci-bd  .sci-cn-7  {width:410px; float: left;}
+#sci-bd  .sci-cn-8  {width:470px; float: left;}
+#sci-bd  .sci-cn-9  {width:530px; float: left;}
+#sci-bd  .sci-cn-10  {width:590px; float: left;}
+#sci-bd  .sci-cn-11  {width:650px; float: left;}
+#sci-bd  .sci-cn-12  {width:710px; float: left;}
+#sci-bd  .sci-cn-13  {width:770px; float: left;}
+#sci-bd  .sci-cn-14  {width:830px; float: left;}
+#sci-bd  .sci-gutter  {width:10px;  float: left;}
+
+/*Containers*/
+/*#sci-bd .sci-container, .sci-container {overflow: hidden; *height: 1%;}*/
+#sci-bd  .sci-container, .sci-container {overflow: hidden;}
+#sci-bd.sci-inner {width: 660px;}
+#proxied-contents #MainColumn #sci-bd {margin:0px;}
+
+
+/* *****************************************************************************************/
+/*MODULES - Containers for content*/
+/* *****************************************************************************************/
+
+#sci-bd .sci-mod {margin-bottom: 16px; overflow: hidden; *height: 1%;}
+#sci-bd .sci-mod-inner {}
+#sci-bd .sci-mod-hd {background-color: #51829a; padding: 4px 6px; position: relative;}
+#sci-bd .sci-mod-hd a{color: white;}
+#sci-bd .sci-mod-info {display: block; position: absolute; right: 8px; top: 4px;}
+ /*FF/WebKit*/
+#sci-bd .sci-mod-hd {-moz-border-radius: 4px; -webkit-border-radius: 4px}
+#sci-bd .sci-mod-hd h2 {padding-bottom:0 !important;}
+
+#sci-bd .sci-mod-bd {padding-top: 5px; }
+#sci-bd .sci-mod-ft {}
+
+#sci-bd .sci-section {margin-bottom: 12px; padding-bottom: 12px; border-bottom: dotted 1px #ccc; position: relative; font-size: 12px; clear:both;}
+#sci-bd .sci-hardsection {margin-top: 28px; border-top: solid 6px #474e51; padding-top: 20px }
+
+#sci-bd .index-img{margin-bottom:10px;}
+
+#sci-bd ul.mini-tab {height: 20px; margin-bottom: 8px !important; border-bottom: solid 1px #AE0909;}
+#sci-bd ul.mini-tab li {text-transform: uppercase; font-size: 10px; float: left; font-weight: bold; border-right:1px solid #CCCCCC;}
+#sci-bd ul.mini-tab li a{display:block; float: left; text-decoration:none !important; font-size: 11px;  height: 20px; line-height: 20px; padding: 0 6px; outline: none;}
+#sci-bd ul.mini-tab li a:hover{text-decoration: none; color: black !important;}
+#sci-bd ul.mini-tab li a.current{color: white !important; background: #ae0909;}
+#sci-bd ul.mini-tab li a.current:hover{color: white !important;}
+
+#sci-bd .simple ul.mini-tab {border-bottom: 1px solid #dadada; height:25px; margin-bottom:8px !important; font-weight: normall; padding-left:12px;}
+#sci-bd .simple ul.mini-tab li {display:block; float:left; font-size:11px; margin-right:8px; border:none;}
+#sci-bd .simple ul.mini-tab li a{border:1px solid #dadada; display:block; float:left; letter-spacing:1px; padding:2px 10px; text-decoration:none; text-transform:uppercase;}
+#sci-bd .simple ul.mini-tab li a.current {background:none repeat scroll 0 0 white; border-bottom:1px solid white; color:#333 !important;}
+
+/*we should change any instance of .simple ul.mini-tab-list to just .simple ul.mini-tab, they are the same thing. */
+#sci-bd .simple ul.mini-tab-list {border-bottom: 1px solid #dadada; height:25px; margin-bottom:8px !important; font-weight: normall; padding-left:12px;}
+#sci-bd .simple ul.mini-tab-list li {display:block; float:left; font-size:11px; margin-right:8px; border:none;}
+#sci-bd .simple ul.mini-tab-list li a{border:1px solid #dadada; display:block; float:left; letter-spacing:1px; padding:2px 10px; text-decoration:none; text-transform:uppercase;}
+#sci-bd .simple ul.mini-tab-list li a.current {background:none repeat scroll 0 0 white; border-bottom:1px solid white; color:#333 !important;}
+
+ul.mini-tab-list {border-bottom: 1px solid #DADADA; height:21px; margin-bottom:8px !important; font-weight: normal; padding-left:8px !important;}
+ul.mini-tab-list li {display: block;float: left;font-size: 11px;margin-right: 8px !important;border: none;font-weight: bold;}
+
+ul.mini-tab-list li a{border:1px solid #DADADA; display:block; float:left; padding: 0px 6px; text-decoration: none !important;text-transform: uppercase; font-size: 11px; height: 20px; line-height: 20px; outline: medium none; text-decoration: none;}
+ul.mini-tab-list li a.current {border-bottom:1px solid white; color:#333333 !important;}
+
+.panes {clear: left}
+
+/*boxed version of tabs to encapsulate the content*/
+ul.tab-boxed {margin-bottom: 0px !important}
+ul.tab-boxed .current {background: #efefef; border-bottom: solid 1px #efefef !important;}
+div.tab-boxed-content {border: solid 1px #dfdfdf; border-top: none; padding: 12px}
+div.tab-boxed-content {margin-bottom: 2em; padding: 12px; background: #efefef}
+div.tab-boxed-content .abstract-figure { background-color: #fff; padding: 16px; margin-bottom: 2em; overflow:hidden; _height: 1%;}
+div.tab-boxed-content .abstract-graphic { float: left;margin-right: 12px !important}
+div.tab-boxed-content .abstract-caption { padding: 8px !important}
+
+/*override for abstracts shown inside a boxed tab view*/
+div#pageid-content.hw-pub-id-article.sci #content-block .fulltext-view div.tab-boxed-content .abstract, 
+div#pageid-content.hw-pub-id-article.sci #content-block .abstract-view div.tab-boxed-content .abstract 
+{
+    border: none;
+    padding: 0;
+}
+
+.gradient{background:url("http://www.sciencemag.org/site/icons_shared/icons_shared/callout_back.gif") !important}
+.hidden {display: none;}
+.center {text-align: center;}
+
+#footer {clear:both;}
+
+#sci-bd .sci-head {font-size: 12px !important; color: white !important; text-transform: uppercase !important; letter-spacing !important: 1px; margin: 0 !important; border-bottom:none !important;}
+
+#sci-bd  .sci-block {margin-bottom: 16px; overflow: hidden; *height: 1%;} 
+#sci-bd  .sci-block  h2 {font-size: 12px; color: white; font-weight: bold; margin-bottom: 12px !important; background-color: #51829A; padding: 0 8px; height: 20px; line-height: 20px; position: relative; text-transform: uppercase; letter-spacing: 1px}
+#sci-bd  .sci-block  h2 {-moz-border-radius: 4px; -webkit-border-radius: 4px} /*FF/WebKit*/
+#sci-bd  .sci-block  h2 span{display: block; position: absolute; right: 8px; top: 4px;}
+#sci-bd  .sci-block  h2 a{color: white;}
+#sci-bd  .sci-block-cn {margin-left: 120px;}
+#sci-bd  .sci-block-sub {width: 110px; float: left;}
+
+#sci-bd  .sci-alert {background-color: #e2e8ec; padding: 6px 12px; border: solid 1px #ced9df; margin: 0 0 14px 0;}
+#sci-bd  .sci-alert {-moz-border-radius: 8px; -webkit-border-radius: 8px} /*FF/WebKit*/
+#sci-bd  .sci-alert ul {overflow: hidden; height: 1%;}
+#sci-bd  .sci-alert li {float: left; padding: 0 12px 0 14px; background: url(/site/icons_shared/bullets.png) no-repeat 0 -279px; height: 1.3em; line-height: 1.3em;}
+#sci-bd  .sci-alert a {font-size: 11px; font-weight: bold;}
+#sci-bd  .sci-alert a:hover {color: black;}
+
+#sci-bd  .sci-i-feature {background-color: #e2e8ec; padding: 8px; border: solid 3px #ced9df; margin: 0 0 16px 0; overflow: hidden; *height: 1%;}
+#sci-bd  .sci-i-feature {-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;} /*FF/WebKit*/
+#sci-bd  .sci-i-feature img {margin-bottom: 8px;}
+
+#sci-bd  .sci-roller  h2 {letter-spacing: 1px; font-size: 12px; color: white; font-weight: bold; text-transform: uppercase; padding-bottom: 4px !important; background: none; color: #333; padding: 0 0 0 0; border-bottom: dotted 1px #ccc; margin-bottom: 24px !important; -moz-border-radius: 0;}
+#sci-bd  .sci-roller ul{margin: 20px 0;overflow: hidden;  _height:1%; }
+#sci-bd  .sci-roller ul li {float: left; margin-right: 20px; padding: 4px 8px; border: solid 1px #CED9DF; }
+#sci-bd  .sci-roller ul li.last {margin-right: 0;}
+#sci-bd  .sci-roller span{display: none;}
+
+/* ************************************************************ */
+/* GENERAL PRESENTATION CLASSES
+/* ************************************************************ */
+
+/*icons*/
+#sci-bd .sci-caption {background-color: white; border: solid 1px #ced9df; padding: 4px; font-size: 11px; *display: inline-block;}
+#sci-bd .sci-icon-rss {height: 12px; width: 12px; display: block; background: url(/site/icons_shared/hd-nav.png) no-repeat -2px -91px; outline: none; overflow: hidden; text-indent: 9998em;}
+.sci-aaas   {background: url(/site/icons_shared/sci-assets.png) no-repeat -124px -159px; min-height: 91px; padding-left: 160px !important;} 
+.sci-globe   {background: url(/site/icons_shared/sci-assets.png) no-repeat 180px -250px;  min-height: 91px;}
+.sci-help {background: url(/site/icons_shared/sci-assets.png) no-repeat -60px -277px;  min-height: 91px;} .video {background: white url(/site/icons_shared/sci-assets.png) no-repeat -477px -170px; padding-left: 30px !important;} 
+#sci-bd #sci-webinar { padding:0 10px 4px;}
+.sci-icon-spreadsheet-s,
+.sci-icon-video-s {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.sci-icon-pdf {background: url(/site/icons_shared/icn-pdf.png) no-repeat; padding-left: 32px !important; min-height: 24px; _height: 24px}
+.sci-icon-text {background: url(/site/icons_shared/icn-doc.png) no-repeat; padding-left: 32px !important; min-height: 24px; _height: 24px}
+.sci-icon-spreadsheet {background: url(/site/icons_shared/icn-xls.png) no-repeat; padding-left: 32px !important; min-height: 24px; _height: 24px}
+.sci-icon-video {background: url(/site/icons_shared/icn-vid.png) no-repeat; padding-left: 32px !important; min-height: 24px; _height: 24px}
+.sci-icon-audio {background: url(/site/icons_shared/icn-aud.png) no-repeat; padding-left: 32px !important; min-height: 24px; _height: 24px}
+.sci-icon-zip {background: url(/site/icons_shared/icn-zip.png) no-repeat; padding-left: 32px !important; min-height: 24px; _height: 24px}
+
+.sci-icon-pdf-s {background: url(/site/icons_shared/icn-pdf.png) no-repeat -776px 0; padding-left: 30px !important;}
+.sci-icon-text-s {background: url(/site/icons_shared/icn-doc.png) no-repeat -776px 0; padding-left: 30px !important;}
+.sci-icon-spreadsheet-s {background: url(/site/icons_shared/icn-xls.png) no-repeat -776px 0; padding-left: 30px !important;}
+.sci-icon-video-s {background: url(/site/icons_shared/icn-vid.png) no-repeat -776px 0; padding-left: 30px !important;}
+.sci-icon-audio-s {background: url(/site/icons_shared/icn-aud.png) no-repeat -776px 0; padding-left: 30px !important;}
+.sci-icon-zip-s {background: url(/site/icons_shared/icn-zip.png) no-repeat -776px 0; padding-left: 30px !important;}
+
+.sci-overlay {position: relative;}
+.sci-overlay-mask{position: absolute; top: 0; left: 0; height: 100%; width: 100%; cursor: pointer; background-position: center center;  background-repeat: no-repeat; opacity: 0.7}
+.sci-overlay-mask:hover{background-color: rgba(33,33,33); background-color: rgba(33,33,33, 0.5);}
+.sci-overlay-slideshow {background-image: url(/site/icons_shared/overlay-slideshow.png); }
+.sci-overlay-plus {background-image: url(/site/icons_shared/overlay-plus.png); }
+
+.sci-custom {display: none;}
+
+.overline, #proxied-contents .overline{font-size: 10px; font-weight: bold; text-transform: uppercase; color: #9da7af; letter-spacing: 1px; margin-bottom:2px; display: block;}
+.glare, #proxied-contents .glare {color: #428bcf; font-weight: bold;}
+.loud, #proxied-contents .loud {color: #a71111;}
+.quiet, #proxied-contents .quiet {color: #999;}
+
+#sci-bd .hidden {display: none;}
+
+#sci-bd .byline {font-style: italic; font-size: 11px; color: #666; margin-bottom: 4px;}
+#sci-bd .deck, #sci-bd  .dek {font-size: 11px;}
+#sci-bd .titler {border-bottom: solid 1px #ccc; padding-bottom: 2px; margin-bottom: 12px; display: block;}
+#sci-bd .tiny {font-size: 10px; line-height: 1.3em;}
+#sci-bd .small {font-size: 11px; line-height: 1.3em;}
+#sci-bd .large {font-size: 16px; }
+#sci-bd .center{text-align: center;}
+#sci-bd .chopped{margin-top: 0 !important; margin-bottom: 0 !important; border: none !important}
+#sci-bd .b-pad {margin-bottom: 1em;}
+#sci-bd .t-pad {margin-top: 1em;}
+
+/* Content Labels and Access*/
+.sci-label {display: inline-block; padding: 2px 4px; background-color: #ccc; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: border-radius: 4px; letter-spacing: 1px; text-transform: uppercase; font-size: 8px; font-weight: normal; color: black; margin-bottom: 2px; line-height: 1.3em}
+.sci-free {color: white; background-color: #3aa547;}
+.sci-freereg {color: white; background-color: #2B94DA;}
+.sci-member {color: white; background-color: #a00000; }
+
+/*Frames*/
+#sci-bd .callout {background: #e2e8ec; padding: 10px; margin-bottom: 1em;}
+#sci-bd .border {border: solid 6px #ced9df; margin-bottom: 1em;}
+#sci-bd .frame {border: solid 1px #ced9df; padding: 12px; overflow: hidden;}
+#sci-bd .frame h2 {font-size: 14px; line-height: 1em ;}
+
+#sci-bd .sci-button-japan-portal { background:url(/site/icons_shared/sci-assets.png) no-repeat 0 -185px; display: block; height: 18px; width: 110px;}
+
+/*Lists*/
+#sci-bd div.ref-list ol.cit-list li {list-style: decimal outside;}
+
+#sci-bd ul.ref-list {list-style: none; margin-bottom: 12px;}
+#sci-bd ul.ref-list li {background: url(/site/icons_shared/bullets_overflowfix.png) no-repeat 0 -158px; padding: 0 0 4px 12px; font-size: 11px; line-height: 13px; margin-bottom:0px;}
+#sci-bd ul.ref-list li.attn {background-position: 0 -70px; padding-bottom: 6px; border-bottom: solid 1px #ccc; margin-bottom: 8px; text-transform: uppercase;}
+#sci-bd ul.ref-list li a{font-weight: bold; color: #666 !important;}
+#sci-bd ul.ref-list li.attn a{color: #a71111 !important;}
+#sci-bd ul.ref-list li.divider {border-top: dotted 1px #ccc; margin-top: 8px; padding-top: 10px; background-position: 0 -148px; }
+#sci-bd ul.ref-list li.plain {padding-left: 0; background: none}
+
+#sci-bd ul.item-list {margin-bottom: 12px;}
+#sci-bd ul.item-list li {margin: 0 0 8px 0; padding: 0;}
+#sci-bd ul.item-list li a{font-size: 12px;}
+#sci-bd ul.item-list li.special{border: solid 1px #a7b9c2; padding: 4px;}
+#sci-bd ul.item-list li.special a{text-decoration: none; color: #333 !important; font-size: 16px; font-weight: bold; padding: 0 5px; display: block;}
+
+#sci-bd ul.stack-list {margin-bottom: 12px;}
+#sci-bd ul.stack-list li {padding: 4px 0; margin: 0 0 4px 0; border-bottom: solid 1px #ccc;}
+#sci-bd ul.stack-list li.first {border-top: solid 1px #ccc;}
+#sci-bd ul.stack-list li a {font-weight: bold; font-size: 11px;}
+
+#sci-bd ul.plain-list{}
+#sci-bd ul.plain-list li{padding: 0 0 4px 0;}
+
+#sci-bd .tab-list-loud ul.mini-tab-list {height: 20px; margin-bottom: 8px !important; border-bottom: solid 1px #AE0909; padding:0px !important}
+#sci-bd .tab-list-loud ul.mini-tab-list li {margin-right:0px !important; display:inline; text-transform: uppercase; font-size: 10px; float: left; font-weight: bold; border-right:1px solid #CCCCCC;}
+#sci-bd .tab-list-loud ul.mini-tab-list li a{letter-spacing:0px; display:block; float: left; text-decoration:none !important; font-size: 11px;  height: 20px; line-height: 20px; padding: 0 6px; outline: none; border:none;}
+#sci-bd .tab-list-loud ul.mini-tab-list li a:hover{text-decoration: none; color: black !important;}
+#sci-bd .tab-list-loud ul.mini-tab-list li a.current{color: white !important; background: #ae0909; border:none;}
+#sci-bd .tab-list-loud ul.mini-tab-list li a.current:hover{color: white !important;}
+
+#sci-bd dl.article-list dt .item-title {font-size: 18px; display: block; font-weight: bold; margin: 4px 0 6px 0; line-height: 1.2em; letter-spacing:-1px}
+#sci-bd dl.article-list dt a{color: #333 !important;}
+#sci-bd dl.article-list dd {margin: 0; font-size: 11px; margin-bottom: 16px; line-height: 1.3em;}
+
+#sci-bd dl.thumb dt {padding-left: 80px; margin: 0; position: relative;}
+#sci-bd dl.thumb dt img{position: absolute; left: 0; border: solid 1px #ccc; padding: 4px;}
+#sci-bd dl.thumb dt img{_left: -80px;} /*IE6*/
+#sci-bd dl.thumb dd {padding-left: 80px; min-height: 2em; _height: 2em;}
+
+.hw-pub-id-magazine_home #sci-bd dl.thumb dt {padding-left: 130px; margin: 0; position: relative;}
+.hw-pub-id-magazine_home #sci-bd dl.thumb dt img{position: absolute; left: 0; border: solid 1px #ccc; padding: 4px;}
+.hw-pub-id-magazine_home #sci-bd dl.thumb dt img{_left: -130px;} /*IE6*/
+.hw-pub-id-magazine_home #sci-bd dl.thumb dd {padding-left: 130px; min-height: 2em; _height: 2em;}
+
+#sci-bd dl.def-list dt span {display: block; font-weight: bold;}
+#sci-bd dl.def-list dd {margin-bottom: 12px;}
+#sci-bd dl.def-list dd span {display: block;}
+
+#sci-bd dl.inset-list {margin-bottom: 30px;}
+#sci-bd dl.inset-list dd {margin-left: 32px; margin-bottom: 16px; color: #333;}
+
+#sci-bd .previous-issues li{width:70px; float:left; display:block; margin:6px} 
+#sci-bd .previous-issues li.all-previous-issues {clear:both; width:100%}
+
+#sci-bd .container{width:410px; overflow: hidden;}
+#sci-bd .mag-previous-issues {width: 900px;}
+#sci-bd .mag-previous-issues li{float:left; display:block; width:80px; margin:0px 10px;}
+#sci-bd .mag-previous-issues li img{width:80px;}
+
+.scrollable { overflow: hidden; width: 99%; float:left; width: 400px}
+.items {width: 2000em}
+
+.seo-hide {display:block; text-indent: -9998em;}
+
+/*
+===========================================================================
+*/
+
+/* Add CSS style definitions after this comment */
+
+dl.thumb dd {padding-left: 80px; min-height: 2em; _height: 2em;}
+
+/* Test additions to proxied file */
+
+#proxied-contents  h3 {padding-bottom: 0.25em; border-bottom: solid 1px #e5e5e5; font-size:12px;text-transform:uppercase; margin-bottom:12px;
+margin-top:12px;}
+#proxied-contents  dt {font-weight:bold;}
+#proxied-contents .LinkTop {text-align:right}
+#proxied-contents .Simple {list-style-type:none}
+
+/* Left nav expanded highlighting -- move to higher stylesheet? */
+
+#col-2 div.sidebar li.ActiveExpanded span {
+background:#F0F0F0 url(/publisher/icons/icon.arrow.666666.sm.dn.gif) no-repeat scroll 3px 0.5em;
+display:block;
+padding:2px 0 4px 12px;
+}
+
+/* Temporary styles for handling special-issue index pages; may be superseded by collections styles, if they work */
+#content-block #proxied-contents #SpecialCollectionBody DIV.JumpBox {float:right !important;border:1px solid #CCC !important; padding:5px; margin-left:10px;}
+#content-block #proxied-contents #SpecialCollectionBody DIV.JumpBox P {width:110px; font-size:x-small;margin-top:0}
+#content-block #proxied-contents #SpecialCollectionBody .JumpBox UL.PoundDownNav LI {font-size:x-small}
+#content-block #proxied-contents #SpecialCollectionBody .JumpBox UL.PoundDownNav LI A {text-decoration:underline}
+#content-block #proxied-contents #SpecialCollectionBody H3 {margin-top:30px; clear:right; text-transform:uppercase}
+#content-block #proxied-contents #SpecialCollectionBody H3.First {margin-top:0;}
+#content-block #proxied-contents #SpecialCollectionBody P A {text-decoration:underline;}
+#content-block #proxied-contents #SpecialCollectionBody IMG.MainImage {float:left;padding-right:5px}
+#content-block #proxied-contents #SpecialCollectionBody SPAN.CareersSection {font-variant:small-caps;font-weight:700}
+#content-block #proxied-contents #SpecialCollectionBody SPAN.Teaser {font-size:90%}
+#content-block #proxied-contents #SpecialCollectionBody SPAN.OnlineTeaser {color:#300}
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD.LeftCell {padding-right:15px; border-right:1px solid #CCC }
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD.RightCell {padding-left:15px;padding-right:10px }
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD H4 {color:#000;}
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD DL DT {font-weight:700;font-size:90%;}
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD DL DT IMG {border:0;padding:0;margin:0}
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD IMG.Icon {border:0;}
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD DIV.Also {border:0;background-color:#FFFFDF;margin:0 10px 10px 10px;padding:10px;font-size:90%}
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD DIV.Also H3 {margin-top:0;border:0;text-transform:none}
+#content-block #proxied-contents #SpecialCollectionBody .LayoutTable TD DIV.Also H4 {font-size:90%; color:#AD1416;}
+
+/*
+The ref-list and sci-alert need to replace those in hw-publisher-global.css. icons_shared/bullets.png also needs to be replaced with bullets_overflowfix.png.
+*/
+
+/**
+* ===== Include files styling ===== 
+**/ 
+/* ===== sci_issue_highlights ===== */
+.all-previous-issues {
+background-color:#AE0909;
+padding: 3px 6px !important;
+margin:4px !important;
+}
+.all-previous-issues a {
+color:white !important;
+font-size:11px;
+font-weight:bold;
+}
+.previous-issues {
+border:thin solid rgb(204,204,204);
+font-size:10px;
+}
+.previous-issues td {
+padding:9px 8px 14px;
+text-align:center;
+}
+/* ==== careers_highlights ==== */
+input#kwrd  width: 100px;}
+
+.LayoutTable { border:medium none; border-collapse:collapse; border-spacing:0; clear:both; width:100%;}
+.Area {border-top:1px solid #E5E5E5; padding:12px 0 12px 12px;}
+
+#sci-bd  .sci-alert li {float: left; padding: 0 12px 0 14px; background: url(/site/icons_shared/bullets_overflowfix.png) no-repeat 0 -375px; height: 1.3em; line-height: 1.3em;}
+
+/* ===== Social Icons ===== */
+.sci-icon-email {height: 16px; width: 16px; display: block; background: url(/site/icons_shared/hd-nav.png) no-repeat -120px -91px; outline: none; overflow: hidden; text-indent: 9998em; margin-left:5px; float:left;}
+.sci-icon-facebook {height: 16px; width: 16px; display: block; background: url(/site/icons_shared/hd-nav.png) no-repeat -100px -91px; outline: none; overflow: hidden; text-indent: 9998em; margin-left:5px; float:left;}
+.sci-icon-twitter {height: 16px; width: 16px; display: block; background: url(/site/icons_shared/hd-nav.png) no-repeat -100px -109px; outline: none; overflow: hidden; text-indent: 9998em; margin-left:5px; float:left;}
+.sci-icon-netvibes {background:url("/site/icons_shared/hd-nav.png") no-repeat scroll -121px -109px transparent; display:block; float:left; height:16px; margin-left:5px; outline:medium none; overflow:hidden; text-indent:9998em; width:16px;}
+.sci-icon-rss-large {height: 16px; width: 16px; display: block; background: url(/site/icons_shared/hd-nav.png) no-repeat -140px -91px; outline: none; overflow: hidden; text-indent: 9998em; margin-left:5px; float:left;}
+.mm_podcast{background: url(http://www.sciencemag.org/site/multimedia/images/podcast-hd-8.jpg) no-repeat; padding: 56px 8px 4px 8px; margin-bottom: 12px;  border-bottom: dotted 1px #ccc;}
+
+/*  ===== Typography =====  */
+.byline {font-style:italic;}
+.byline em {font-style:normal;}
+.sci-callout {background:none repeat scroll 0 0 #E2E8EC;margin-bottom:1em; padding:12px;}
+#proxied-contents h2 {border-bottom:1px solid #CCCCCC; color:#666666; font-size:16px; padding-bottom:0.25em;}
+.tiny {font-size:10px !important;}
+
+/*  ===== Images =====  */
+.Photo {border:1px solid #666666 !important; float:left; height:50px; margin:0 1em 1em 0; width:70px;}
+img.thumb {border:1px solid #CCCCCC; padding:4px;}
+
+/* ==== Articles ==== */
+/* restore underlines to A tags */
+div.hw-pub-id-article div.article a { 
+text-decoration: underline; 
+}
+/* make the figures stand out */
+div.hw-pub-id-article a.xref-fig {
+    font-weight: bold;
+}
+
+/* clear none on most article section breaks to handle floating elements */
+
+div.hw-pub-id-article .article div.section {
+    clear: none;
+}
+
+div.hw-pub-id-article .article div.section.ref-list {
+    clear: both;
+}
+
+
+/* ==== Gonzo Scientist ==== */
+
+div.hw-pub-section-thegonzoscientist .article div.section {
+    clear: both;
+}
+
+.hw-pub-section-thegonzoscientist div#content-block h2 {
+color: #666;
+}
+
+div.article div.nonresearch-content.type-GonzoLogo.fig {
+    min-width:120px;
+}
+
+.hw-pub-section-thegonzoscientist .nonresearch-content dl dt {
+    font-weight:700;
+    padding-top:10px;
+}
+
+
+/* For the next two rules, the first selector is for newer version, 
+ *        the second version is to work around the absence of an obvious
+ *        semantic description of the appendix materials, and so it should
+ *        apply to the first div.notes following the last article paragraph  */
+div.hw-pub-id-article div#content-block div.app, div.hw-pub-id-article div#content-block .article div.notes {
+    border-top: solid thin #c9c9c9;
+    padding-top: 5px;
+}
+
+div.hw-pub-id-article div#content-block div.app p, div.hw-pub-id-article div#content-block .article div.notes p {
+    margin: 0 0 0 2em;
+    padding-bottom: 5px;
+}
+
+
+/* Format the Received / Accepted section */
+div.hw-pub-id-article div#content-block ul.history-list {
+    border-top: thin solid #c8c8c8;
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
+div.hw-pub-id-article div#content-block li.received, div.hw-pub-id-article div#content-block li.accepted {
+    padding-top: 5px;
+}
+/* add top borders to content groups */
+div.hw-pub-id-article div#content-block div.ref-list {
+    border-top: thin solid #c8c8c8;
+    padding-top: 5px;
+}
+div.hw-pub-id-article div.fn-group ul {
+    border-top: thin solid #c8c8c8;
+    width: 100%;
+    margin-top: 5px;
+}
+/* comment out for now
+div.hw-pub-id-article div.contributors li#corresp-1.corresp {
+    border-top: thin solid #c8c8c8;
+    padding-top: 5px;
+}
+div.hw-pub-id-article div.contributors ul.arthw-misc {
+    border-bottom: thin solid #c8c8c8;
+}
+*/
+div.hw-pub-id-article .fn-group ul li {
+    border: none;
+    padding: 0;
+}
+/* ==== Products ==== */
+
+/* eliminate the margins that caused the images to be indented */
+div.hw-pub-section-productsmaterials div.article .fig {
+    margin: 0px;
+    padding: 0px;
+}
+div.hw-pub-section-productsmaterials div#content-block div.product-information div.pos-anchor div.fig-inline {
+    width: auto;
+    border: 0px;
+    padding: 0 10px;
+    margin: 0px;
+}
+div.hw-pub-section-productsmaterials div#content-block div.article .product-information h2 {
+    font-size: 18px;
+    padding-top: 20px;
+    border-bottom: thin solid #c8c8c8;
+}
+div.hw-pub-section-productsmaterials div#content-block div.fn-group ul li.fn-product-submission-instructions:first-child {
+    border-top: none;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+div.hw-pub-section-productsmaterials div#content-block ul.company-information {
+    margin-left: 1em;
+    list-style: none;
+}
+div.hw-pub-section-productsmaterials div.article .fig {
+    margin: 0px;
+    padding: 0px;
+}
+div.hw-pub-section-productsmaterials div#content-block ul.company-information li p {
+    margin: 0px;
+}
+
+/* ==== Editorials ==== */
+/* make author affiliation more clear */
+div.hw-pub-section-editorial div.nonresearch-content li.aff address { 
+    font-size: .90em;
+}
+
+div.hw-pub-section-editorial div.nonresearch-content li.aff address:before {
+    display: block;
+    float: left;
+    content: "\00bb \0020";
+    padding: 2px 4px 0 0;
+}
+
+
+/* ==== Citation Manager Sidebar ==== */
+#col-2 .sidebar ul.citmgr-formats li {
+    margin: 0;
+} 
+.FeaturedItem {
+border:1px solid #CCCCCC;
+float:right;
+margin-left:15px;
+padding:12px;
+width:320px;
+}
+
+
+/* New general Article font heading styling */
+div.hw-pub-id-article div#content-block .article h1 {
+font-size: 18px;
+}
+div.hw-pub-id-article div#content-block .article h2 {
+font-size: 16px;
+}
+
+.hw-pub-section-associationaffairs div.article div.nonresearch-content {
+  margin:1em;
+}
+div.hw-pub-section-associationaffairs div#content-block dl dt {
+font-size: 100%;
+font-weight: bold;
+padding: 10px 0 4px;
+}
+div.hw-pub-section-associationaffairs div#content-block dl dd {
+padding: 3px 0;
+}
+div.hw-pub-id-twis div#content-block a, div.hw-pub-id-twil div#content-block a { 
+text-decoration: underline; 
+}
+/* === Research Article Abstract 2010-11-05 cac === */
+
+
+div#pageid-content.hw-pub-id-article.sci #content-block .fulltext-view div.contributors,
+div#pageid-content.hw-pub-id-article.sci #content-block .fulltext-view div.contributors p,
+div#pageid-content.hw-pub-id-article.sci #content-block .abstract-view div.contributors,
+div#pageid-content.hw-pub-id-article.sci #content-block .abstract-view div.contributors p,
+div#pageid-content.hw-pub-id-article.sci #content-block .summary-view div.contributors,
+div#pageid-content.hw-pub-id-article.sci #content-block .summary-view div.contributors p{
+   line-height: 1.3;
+   margin: 1em 0;
+   color: #333;
+   font-size: 12px;
+}
+div#pageid-content.hw-pub-id-article.sci #content-block .fulltext-view .abstract,  
+div#pageid-content.hw-pub-id-article.sci #content-block .abstract-view .abstract  {
+   margin: 16px 0 22px 0;
+   padding: 14px;
+   border: solid 1px #dfdfdf;
+   font-size: 12px;
+   color: #333;
+   background: #eee;
+   font-weight: bold;
+}
+div#pageid-content.hw-pub-id-article.sci #content-block .fulltext-view .abstract h2,
+div#pageid-content.hw-pub-id-article.sci #content-block .abstract-view .abstract h2{
+   display:block;
+   font-size: 10px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #999;
+   border-bottom: dotted 1px #ccc;
+   margin: 0 0 12px;
+}
+div#pageid-content.hw-pub-id-article.sci #content-block .fulltext-view  .fig,
+div#pageid-content.hw-pub-id-article.sci #content-block .abstract-view  .fig {
+   border: solid 1px #dfdfdf;
+}
+div#pageid-content.hw-pub-id-article.sci #content-block .fulltext-view  .fig-caption,
+div#pageid-content.hw-pub-id-article.sci #content-block .abstract-view  .fig-caption 
+ {
+   border: none;
+}
+div#pageid-content.hw-pub-id-article.sci #content-block .fulltext-view.nonresearch-content .fig,
+div#pageid-content.hw-pub-id-article.sci #content-block .summary-view.nonresearch-content .fig,
+div#pageid-content.hw-pub-id-article.hw-pub-section-productsmaterials.sci #content-block .fulltext-view .fig {
+   border: none;
+}
+
+/* ========== Mag Homepage, can probably be removed if we can get fragments to include css */
+.hw-pub-id-magazine_home #sci-bd .scrollable {position:relative;  overflow:hidden; width: 410px; height:140px}
+.hw-pub-id-magazine_home #sci-bd .scrollable .items {width:20000em; position:absolute; clear:both;}
+.hw-pub-id-magazine_home #sci-bd .items div {float:left;}
+.hw-pub-id-magazine_home #sci-bd .scrollable li{float:left; width: 101px}
+.hw-pub-id-magazine_home #sci-bd .scrollable li span {font-size:10px;  text-align:center; display:block; padding:1px 1px 0px 8px;}
+.hw-pub-id-magazine_home #sci-bd .scrollable img {margin:10px 1px 0px 20px; background-color:#fff; padding:2px; border:1px solid #ccc; width:60px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+.hw-pub-id-magazine_home #sci-bd .scrollable .all-previous-issues {display: block, margin:10px 1px 0px 20px; padding:2px; border:1px solid #ccc; width:60px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+.hw-pub-id-magazine_home #sci-bd .scrollable .active {border:2px solid #000; position:relative; cursor:default;}
+
+.hw-pub-id-magazine_home #sci-bd .arrow {background-color:#9DA7AF; border:1px solid #CED9DF; bottom:1px; color:#FFFFFF; cursor:pointer; display:block; font:11px/14px tahoma,sans-serif; height:14px; letter-spacing:1px; padding:2px; float:left; text-align:center; text-transform:uppercase; width:69px;}
+.hw-pub-id-magazine_home #sci-bd  .all-previous-issues {background-color:#fff;  border:1px solid #CED9DF;  padding:1px !important; text-align:center; margin: 0px !important;}
+.hw-pub-id-magazine_home #sci-bd  .all-previous-issues a {color: #2E6D8F !important;} 
+
+/* ========= Previous Issue Fixes ========== */
+#sci-bd .previous-issues div {clear:both;}
+#sci-bd .previous-issues li span {font-size:10px;  text-align:center; display:block;}
+#sci-bd .previous-issues li {width: 75px}
+
+/* ========= SE Home Page Fix ==============*/
+.hw-pub-id-express table tbody tr td {vertical-align: top;} 
+
+/* ==== Access Rights UL Fix ==== */
+.hw-pub-id-my_account_access_rights div#access-rights ul {
+margin-left: 2em;
+}
+
+/* Added by SW 11/10 to increase letter/response clarity in TOC author lists in old content */
+
+#pageid-toc form li.toc-cit .cit-metadata ol.cit-response-list {
+    margin-bottom:7px;
+}
+
+#pageid-toc form li.toc-cit .cit-metadata ol.cit-response-list li {
+    padding-top:7px;
+}
+
+/* Added by SW 01/13 to style related-content callouts on TOC */
+
+#pageid-toc form li.toc-cit .cit-blurb .precis span.related-content {
+  color: #A71111;
+  display:block;
+  font-style:italic;
+  font-size:90%;
+  padding:3px 10px;
+}
+
+#pageid-toc form li.toc-cit .cit-blurb .precis span.related-content em{
+    font-style:normal
+}
+
+
+/* Hovering Abstract improvements: cac-2010-11-10 */
+div#hovering-abs {
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+box-shadow: 1px 1px 5px #999;
+-moz-box-shadow: 1px 1px 5px #999;
+-webkit-box-shadow: 1px 1px 5px #999;
+line-spacing: 1.6em;
+}
+div#hovering-abs p {
+line-spacing: 1.6em;
+font-size: 11px;
+font-weight: bold;
+padding-top: 0px;
+}
+div#hovering-abs h1 {
+font-size: 13px;
+}
+div#hovering-abs h2 {
+margin-left: 12px;
+text-transform: uppercase;
+font-size: 10px;
+letter-spacing: 1px;
+color: #666;
+border-bottom: dotted thin #999;
+}
+div#hovering-abs-close a {
+margin-left: 11px;
+}
+div#hovering-abs-close a span {
+font-size: 9px;
+}
+
+
+/* SW; 2010-11-11: Minimize problems with in-page
+figure expansion in news-type articles */
+
+div.article div.nonresearch-content.fig {
+max-width:650px;
+}
+
+div.nonresearch-content .fig-caption {
+max-width:440px;
+}
+
+/*remove left/right margins from article figures */
+div.article .fig, div.article .table {
+    clear: both;
+    margin: 1em 0px;
+}
+
+/*MG; utility classes for figure display */
+#content-block .type-fig-flow {
+    clear: none;
+}
+#content-block .type-fig-block {
+    clear: none;
+    float: none;
+    margin:  18px 0 0 0;
+}
+#content-block .type-fig-left {
+    clear: both;
+    float: left;
+    margin: 18px 12px 18px 0;
+}
+#content-block .sec-break {
+    clear:both;
+    padding-bottom: 4em;
+}
+
+
+/* SW; 2010-11-11: Books et al. should show
+author affiliations by default (no drop-down);
+this should be added back into relevant HWP CSS */
+
+
+.hw-pub-section-booksetal ol.hideaffil {
+left:0;
+margin-top:1em;
+position:relative;
+width:auto;
+}
+
+.hw-pub-section-booksetal p.affiliation-list-reveal {
+display:none;
+}
+
+/* style correction link to be red/bold */
+.hw-pub-id-article #col-2 .content-box .cb-contents .cb-section .cb-versions .correction-link {
+color:red;
+font-weight:700;
+}
+
+
+.sponsor {text-align:center;}
+
+
+/* Separate multiple items in old Technical Comment/Responses */
+
+.hw-pub-section-technicalcomments .article.fulltext-view .response {
+border-top:5px solid #ccc;
+margin-top:25px;
+}
+
+
+/* Credit Caption Alterations */
+div.nonresearch-content .fig-caption q.attrib,
+.sci .fig-caption q.attrib
+{
+  font-size: 85%;
+  color: #888;
+}  
+
+/* Fix styling for in-article BulletSummary class */
+
+div.hw-pub-id-article .BulletSummary {width:250px;float:right;padding:12px;border:3px solid #ccc;margin:0 8px 16px 16px}
+div.hw-pub-id-article .BulletSummary dl dt, .BulletSummary dl dd {font-size:85%}
+
+
+/* Handling for new News of the Week elements */
+
+.hw-pub-section-newsoftheweek .article.fulltext-view div.story_index DL {font-size:90%}
+.hw-pub-section-newsoftheweek .article.fulltext-view div.story_index DT {font-weight:700;padding-top:5px}
+
+.hw-pub-section-newsoftheweek .article.fulltext-view .story_container, .hw-pub-section-multimedia .article.fulltext-view .story_container {clear:both;margin-top:15px !important;padding-top:15px !important;border-top:1px solid #ccc !important}
+.hw-pub-section-newsoftheweek .article.fulltext-view .story_container H2, .hw-pub-section-multimedia .article.fulltext-view .story_container H2 {font-size:small !important;text-transform:uppercase !important}
+.hw-pub-section-newsoftheweek .article.fulltext-view .story H3, .hw-pub-section-newsoftheweek .article.fulltext-view .story_container .subsection H3, .hw-pub-section-multimedia .article.fulltext-view .story H3, .hw-pub-section-multimedia .article.fulltext-view .story_container .subsection H3  {color:#000 !important;font-size:medium !important; text-transform:none !important}
+
+
+/* E-Letters Guideline */
+
+#page-eletters-submit #BodyWrapper SPAN.el-guildline {display:block; padding-top:5px; padding-bottom:5px; font-weight:700}
+#pageid-eletters-submit #BodyWrapper {font-size:120%}
+#pageid-eletters-submit #BodyWrapper .sidebar P {padding:0 5px;font-size:95%}
+#pageid-eletters-submit #BodyWrapper FORM FIELDSET {margin-top:20px}
+
+
+/* Updates for Research Article Display */
+
+.hw-pub-id-article #content-block .article h3{
+  text-transform: none;
+  font-size: 1.1em;
+}
+
+/* Timeline */
+
+div.article div.timeline {
+    border:1px solid #cfcfcf; 
+    padding:10px; 
+}    
+div.article div.timeline h3 {
+    position: relative;
+    display: block;
+    background-color: #CED9DF;
+    padding: 2px 8px;
+    border-radius: 4px; 
+      -moz-border-radius: 4px; 
+      -webkit-border-radius: 4px; 
+}
+div.article div.timeline div.subsection {
+    /* background-color: #ebe6dc; */
+    position: relative;
+    overflow: hidden;
+}
+div.timeline div.subsection {
+    border-bottom:1px solid #cfcfcf; 
+    overflow: auto; 
+    margin-bottom: 26px; 
+}
+div.article div.timeline div.subsection p {
+    padding: 0 0 8px 8px;
+}    
+div.article div.timeline .subsection div.nonresearch-content.fig { 
+    min-width: 0px; 
+}
+div.article div.timeline .subsection div.nonresearch-content.fig img { 
+    max-height: 160px; 
+    max-width: 240px;  
+}
+
+div.article div.timeline div.subsection div.fig div {
+     /* background-color: #EBE6DC; */
+}
+
+div.article div.timeline div.subsection div.fig q {
+    font-size: 85%;
+  word-wrap: break-word;
+}
+
+div#pageid-content.hw-gen-page div#BodyWrapper div.article div.timeline div.subsection div.fig {
+     border: none;
+     /* background-color: #EBE6DC; */
+     padding: 3px 8px 0 0; 
+}
+
+
+/* News teaser formatting on special-issue news -- add to /publisher/css/hw-publisher-page-content.css sheet */
+.hw-pub-section-news .fulltext-view .precis {
+font-weight:bold;
+color:#666666;
+margin-bottom:1.5em;
+}
+
+/* Allow expandable ads in the leaderboard spot */
+div.leaderboard-ads {overflow: visible;}
+
+/*============== special sections and hot topics ===============*/
+div#sci-bd .section-list dt { margin-bottom: 0px !important; clear: both; border: none; margin: 0;}
+div#sci-bd .section-list dt a {color: #333; font-size: 14px; text-decoration: underline;}
+div#sci-bd .section-list dt  {border-bottom: none; font-size: 14px; color:#000; margin-bottom: 0px; margin-top: 0px; padding-bottom: 0.25em; text-transform: none;}
+div#sci-bd .sci-style-aside .section-list dt, div#sci-bd .sci-style-aside .section-list dt a { font-size:12px;}
+
+/*Grid Reset*/
+#extended #sci-bd {width: 810px; margin-left: 18px;}
+#extended #sci-bd .sci-cn-3{width: 170px;}
+#extended #sci-bd .sci-cn-5{width: 260px;}
+#extended #sci-bd .sci-cn-6{width: 330px;}
+#extended #sci-bd .sci-cn-11{width: 620px;}
+#extended #sci-bd .sci-item {padding-bottom: 24px;}
+#extended #sci-bd .sci-gutter {width: 20px;}
+
+#extended #sci-bd #sci-bd blockquote {margin: 0;}
+#extended #sci-bd #sci-bd h3 {border: none !important; margin: 0; padding: 0; text-transform: none;}
+#extended #sci-bd #sci-bd a {text-decoration: underline;}
+
+#extended #sci-bd .sci-hardsection h2 {border-bottom: none !important; margin-bottom:0px !important}
+#extended #sci-bd h2.sci-group-title {border-bottom: 1px solid #B9B9B9; font: 24px normal georgia, times new-roman, serif; margin-bottom: 20px; padding-bottom: 4px;}
+#extended #sci-bd .sci-section {border-bottom:none;}
+
+#extended #sci-bd .sci-style-aside {background-color: #f3f3ed; padding:12px; border: solid 1px #cbcbb6;}
+#extended #sci-bd .sci-style-aside .sci-mod-hd {padding: 0; background-color: inherit; }
+#extended #sci-bd .sci-style-aside .caption {background: white; padding: 8px; border: solid 1px #ece2b8;}
+#extended #sci-bd .sci-style-aside .callout {background: #e7e7dd;}
+
+#extended #sci-bd .teaser {font-size: 12px;}
+#extended #sci-bd .thumb-img {float: left;}
+#extended #sci-bd .thumb-cn {margin-left: 70px}
+#extended #sci-bd .thumb-cn-wide {margin-left: 150px}
+
+#extended #sci-bd .sci-style-dark .sci-mod-hd {background: #1b1f21 url(/site/icons_shared/dark-vgrad.gif) repeat-x; padding: 14px;}
+#extended #sci-bd .sci-style-dark .sci-sectionlist .sci-item:hover {background-color: #5e6c70;}
+#extended #sci-bd .sci-style-dark {background-color: #566367; color: #ccc;}
+#extended #sci-bd .sci-style-dark a {color: white;}
+#extended #sci-bd .sci-style-dark .loud {color: yellow;}
+#extended #sci-bd .sci-style-dark .glare {color: #8ce0fc}
+#extended #sci-bd .sci-style-dark .assert {color: #b3d1db;}
+
+#extended #sci-bd h1, #extended #sci-bd .h1 {font-size: 20px}
+#extended #sci-bd h2, #extended #sci-bd .h2 {border-bottom: 1px solid #B9B9B9; display: block; margin-bottom: 20px; padding-bottom: 10px; width: 100%; }
+#extended #sci-bd h3, #extended #sci-bd .h3 {font-size: 14px; color: black;}
+#extended #sci-bd h4, #extended #sci-bd .h4 {font-size: 12px}
+#extended #sci-bd h5, #extended #sci-bd .h5 {font-size: 12px}
+#extended #sci-bd h6, #extended #sci-bd .h6 {font-size: 11px}
+
+#extended #sci-bd .sci-hardsection h2 {border-bottom: none !important; margin-bottom:0px !important}
+#extended #sci-bd h2.sci-group-title {border-bottom: 1px solid #B9B9B9; font: 24px normal georgia, times new-roman, serif; margin-bottom: 20px; padding-bottom: 4px;}
+
+/*Content Style*/
+#extended #sci-bd blockquote.sci-pullquote {font-family: georgia , serif; font-size: 16px; background-color: #edf0f0; padding: 16px; margin-bottom: 12px; color: #16587b;}
+#extended #sci-bd blockquote.sci-pullquote img {float: left;}
+
+/*Layout Utility*/
+#extended #sci-bd .fleft {float: left; margin-right: 12px;}
+#extended #sci-bd .fright {float: right; margin-left: 12px;}
+
+/*Related-Links*/
+#extended #sci-bd dt {margin: 12px 0;}
+#extended #sci-bd dd {margin-bottom: 18px;}
+#extended #sci-bd dd ul{margin-top: 18px;}
+#extended #sci-bd dd li {margin-bottom: 4px; padding:0 0 8px 20px;}
+
+/*Tab style - move to Global*/
+#extended #sci-bd .simple ul.mini-tab-list {border-bottom: 1px solid #dadada; height:25px; margin-bottom:8px !important; font-weight: normall; padding-left:12px;}
+#extended #sci-bd .simple ul.mini-tab-list li {display:block; float:left; font-size:11px; margin-right:8px; border:none;}
+#extended #sci-bd .simple ul.mini-tab-list li a{border:1px solid #dadada; display:block; float:left; letter-spacing:1px; padding:2px 10px; text-decoration:none; text-transform:uppercase;}
+#extended #sci-bd .simple ul.mini-tab-list li a.current {background:none repeat scroll 0 0 white; border-bottom:1px solid white; color:#333 !important;}
+
+/*Section style - move to Global*/
+#extended #sci-bd .sci-hardsection {margin-top: 28px; border-top: solid 6px #474e51; padding-top: 20px; overflow:visible; }
+
+#extended #sci-bd .index-img{margin-bottom:10px;}
+
+#extended #sci-bd ul.mini-tab {height: 20px; margin-bottom: 8px !important; border-bottom: solid 1px #AE0909;}
+#extended #sci-bd ul.mini-tab li {text-transform: uppercase; font-size: 10px; float: left; font-weight: bold; border-right:1px solid #CCCCCC;}
+#extended #sci-bd ul.mini-tab li a{display:block; float: left; text-decoration:none !important; font-size: 11px;  height: 20px; line-height: 20px; padding: 0 6px; outline: none;}
+#extended #sci-bd ul.mini-tab li a:hover{text-decoration: none; color: black !important;}
+#extended #sci-bd ul.mini-tab li a.current{color: white !important; background: #ae0909;}
+#extended #sci-bd ul.mini-tab li a.current:hover{color: white !important;}
+
+#extended #sci-bd .simple ul.mini-tab {border-bottom: 1px solid #dadada; height:25px; margin-bottom:8px !important; font-weight: normall; padding-left:12px;}
+#extended #sci-bd .simple ul.mini-tab li {display:block; float:left; font-size:11px; margin-right:8px; border:none;}
+#extended #sci-bd .simple ul.mini-tab li a{border:1px solid #dadada; display:block; float:left; letter-spacing:1px; padding:2px 10px; text-decoration:none; text-transform:uppercase;}
+#extended #sci-bd .simple ul.mini-tab li a.current {background:none repeat scroll 0 0 white; border-bottom:1px solid white; color:#333 !important;}
+
+#extended .gradient{background:url("http://www.sciencemag.org/site/icons_shared/icons_shared/callout_back.gif") !important}
+
+#extended #footer {clear:both;}
+#extended #maincontent h3 a:link{color: #2E6D8F; }
+#extended #maincontent h3.sci-header { width: 100%; background-color: #e0e0e0; margin:0; padding: 3px 0 3px; }
+#extended #maincontent h3+br { display:none; }
+#extended #maincontent h2  {color: #ffffff!important; background: #CED9DF!important; background: -moz-linear-gradient(top, #CED9DF 1%,  #435d6b 100%)!important; background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #CED9DF), color-stop(100%,#435d6b))!important;/* webkit */  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#CED9DF, endColorstr=#435d6b, GradientType=0 )!important; /* ie */  cursor: pointer;  font-size: 1.1em; font-weight: normal; margin: 1px 0 0;  padding: 0.3em; font-family:Arial, Helvetica, sans-serif !important;}
+#extended #maincontent .sci-item { background: url("img/article-gradient.png") repeat-x scroll 0 0 transparent; border-bottom: 1px solid #FFFFFF; border-top: 1px solid #CCCCCC; margin: 0 !important; padding: 12px 0;}
+#extended #maincontent .sci-section {padding:12px 0;}
+#extended #maincontent .Right {padding: 12px 0;}
+#extended #maincontent .overline{font-weight:bold; font-size:12px;}
+#extended #maincontent .sci-style-aside {background-color:#fff !important; padding:0px; border:0px !important}
+#extended #maincontent #content-block{width:auto !important;} 
+#extended #maincontent .index-img img{width:100%; border:none; margin-bottom:12px;}
+#extended #maincontent .byline {font-style:italic;}
+#extended #maincontent .mini-tab-list{display:none;}
+#extended #maincontent .mhidden {display:none;}
+
+.seealso {background: url(/site/icons_shared/bullets_overflowfix.png) no-repeat 0 -376px; padding: 0 0 4px 12px; font-size: 11px; line-height: 13px; margin-bottom:0px;}
+
+
+/* Mini-toc base styles*/
+ul.accordion, ul.accordion li {  margin: 0;  list-style: none;}
+
+.mini-toc-wrapper {margin-left: 20px; margin-bottom: 20px; float: right;}
+.mini-toc {width: 220px;}
+.mini-toc-inner {padding: 12px; color: #747474; border: solid 1px #dfdfdf;}
+
+div.hw-pub-id-article div#content-block .mini-toc h2 {
+  border-bottom: dotted 1px #ddd;
+  color: #a00000;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+.mini-toc-inner li.cit {padding: 0; margin-bottom: 1.6em;}
+.mini-toc-inner .cit .cit-overline {font-size: 10px}
+.mini-toc-inner .cit .cit-title {font-size: 1.1em}
+.mini-toc-inner .cit .cit-auth {font-size: 0.9em; font-style: italic;}
+.mini-toc-inner .cit cite {font-size: 0.8em; margin-bottom: 0.7em; color:#999;}
+.mini-toc-inner .cit .cit-auth-list li span {white-space: normal;}
+
+ul.hl-list, ul.hl-list li{  margin: 0; padding: 0;  list-style: none; margin-bottom: 16px;}
+ul.hl-list li {font-size: 13px; letter-spacing: -1px; margin-bottom: 6px; margin-left: 4px; padding-left: 8px;}
+ul.hl-list li:hover {border-left: #a3aeb5 solid 4px; margin-left: 0;}
+ul.hl-list li.on, ul.hl-list li.on:hover {border-left: #9c191d solid 4px; margin-left: 0;}
+div.hw-pub-id-article ul.hl-list li a {text-decoration: none;}
+
+
+.article-innernav {
+  border-top: solid 1px #666;
+  margin: 3em 0;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.article-innernav a.left {
+  display: block;
+  position: absolute;
+  padding: 8px;
+  text-decoration: none !important;
+  width: 302px;
+}
+
+.article-innernav a.right {
+  text-align: right;
+  float: right;
+  padding: 8px;
+  text-decoration: none !important;
+  width: 298px;
+}
+
+.article-innernav a{ 
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.article-innernav a:hover {
+  background-color: #efefef;
+}
+
+
+/*Handling for comments links */
+#content-block .sci-comment-link a .bubble {content: ""; width: 18px; height: 18px; float: left;  background: url(/site/icons_shared/hd-nav.png) no-repeat -980px -106px; margin-right:5px; display:block;}
+#content-block .sci-comment-link a { margin-top:5px; }
+#content-block .article-nav .sci-comment-link a{float:right;}
+.article-nav .sci-comment-link a {border-top: none !important; width: 200px !important;}
+.article-nav .sci-comment-link .sci-comments-full-link { width:auto !important;}
+.article-nav .sci-comment-link {}
+#content-block .sci-comment-link a{padding-top: 5px; display:block;clear: both; float: right;}
+#col-2 div.cb-section li div.sci-comment-link {display: inline; margin: 0px; padding: 0px;}
+#comment-link-container { margin-top:20px;}
+
+/* Slidebox div css */
+#slidebox { width:400px; right: -373px; background-color:#fff; border:1px solid #dedede; border-top: none; position:fixed; bottom:200px; }
+#slidebox-tab { display:block; content:""; width:28px; height: 85px; float: left; background:transparent url(/site/icons_shared/slider-switch.png) no-repeat; cursor: pointer; background-position:  -28px 0px; }
+#slidebox-bottle{ display:block; content:""; width:130px; height: 76px; float: left; background:transparent url(/site/icons_shared/waste-slider-handle.png) no-repeat; cursor: pointer; position: relative; margin-left: -130px; }
+ #slidebox-tab.hover { background-position: 0 0; }
+
+#slidebox a.close{background:transparent url(/site/icons_shared/slider_close.gif) no-repeat top left; width:13px; height:13px; position:absolute; top:10px; right:10px;  cursor: pointer;}
+#slidebox a.close:hover {background-position:0px -13px;}
+
+#slidebox .sci-slider-inner {padding: 7px 10px; position: relative;overflow: hidden; border-top: solid 3px #a00000;}
+#slidebox .sci-slider-head {height: 14px;}
+#slidebox .sci-slider-head .quiet {text-transform: lowercase; padding-left: 6px}
+#slidebox .sci-slider-main a {color: #333; white-space: nowrap; font-weight: bold; width: 100%; margin: 4px 0 12px 0; overflow: hidden; text-overflow: ellipsis; display: block; font-size: 19px; line-height: 23px;}
+#slidebox .sci-slider-foot {font-size: 12px; line-height: 1.4em; color: #888}
+#slidebox .sci-slider-foot a {color: #888 !important; }
+#slidebox .sci-slider-foot a:hover {color: #333 !important; text-decoration: underline; }#slidebox .sci-slider-left {width: 70%; white-space: nowrap;overflow: hidden; text-overflow: ellipsis; display: block;  float: left;}
+#slidebox .sci-slider-right {width: 30%; text-align: right; display: block; float: right;overflow: hidden;}
+
+
+/* Fix reference callouts in table expansions */
+
+.table-expansion table tr td span.xref-bibr {font-size:100% !important;vertical-align:baseline !important}
+
+/* Force left float in editorial headshots */
+
+.hw-pub-section-multimedia div.fig.pos-anchor.odd, 
+.hw-pub-section-editorial div.fig.pos-anchor.odd {float:left}
+
+/* Force left float in icons */
+
+div.fig.pos-anchor.type-icon.nonresearch-content {float:left}
+
+/* Formatting for Multimedia Article Types */
+.hw-pub-section-multimedia div.fig.pos-anchor.odd{min-width:120px; margin: 0 16px 0 0; border: solid 1px #dfdfdf !important; padding: 8px}
+.hw-pub-section-multimedia #content-block #boxed-text-1  p {margin: 0 0 8px;}
+
+/* Popup Abstract Formatting on TOCs */
+#hovering-abs div.structured,
+#hovering-abs div.editor-summary{
+  display:none;
+}
+
+/* Strike-through formatting applied to "strike" class */
+.strike {text-decoration: line-through;}
+
+/* 2012-11-30 styles for new podcast templates */
+span.podcast-duration { display: none; }
+
+/* 2013-01-28 styles for adding bullets to podcast show page */
+.hw-pub-section-podcasts #content-block ul#list-1 li {
+    margin: 0 0 0 30px;
+    list-style-type: disc;
+    padding: 0 0 0 0;
+}
+.hw-pub-section-podcasts #content-block ul#list-2 li:last-child {
+    margin-bottom: 24px;
+}
+
+
+/* 2012-12-10 styles for glossary and overlay */
+.glossary-term {
+  display: inline-block;
+}
+
+.glossary-term-on {
+  background-color: #D6D6D6;
+  border-radius: 3px;
+   -moz-border-radius:3px;
+   -webkit-border-radius: 3px;
+  cursor: help;
+  padding: 0 2px;
+  line-height: 1.3;
+}
+
+.glossary-term-on:hover {
+  background-color: #666;
+  color: white;
+}
+
+div.hw-pub-id-article div#content-block div.glossary {border-top: thin solid #c8c8c8;padding-top: 5px;}
+div.hw-pub-id-article div#content-block div.glossary dl {margin-bottom: 2em;}
+div.hw-pub-id-article div#content-block div.glossary dt {font-weight: bold;}
+div.hw-pub-id-article div#content-block div.glossary dd {margin-bottom: 1em; color:#777}
+
+div.ovr {
+  background: rgba(255, 255, 255, 0.6); /* Old browsers */
+  border: solid 1px #efefef;
+  border-radius:4px;
+   -moz-border-radius:4px;
+   -webkit-border-radius: 4px;
+  color: #333333;
+  display:none;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: none;
+  position: relative;
+  padding: 8px;
+  width: 340px;
+}
+
+div.ovr > div {
+  background-color: #FAF9EC;
+  border: solid 2px #999;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.ovr-cn {
+  max-height: 380px;
+  overflow: auto;
+}
+.ovr h2 {
+  border-bottom: dotted 1px #DBDBDB;
+  cursor: move;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  padding: 6px 0;
+}
+.ovr p {
+  font-size: 11px;
+  line-height: 1.4em;
+}
+.ovr .close {
+  background-image:url('/site/icons_shared/15x15_close_button.png');
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 15px;
+}
+.ovr .credit {
+  display: inline-block;
+  margin-top: 12px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #999;
+}
+
+/* ask poll question CSS */
+#pollask {
+  position: fixed;
+  background-color: #e0e0e0;
+  top: 50%;
+  left: 50%;
+  width: 240px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px outset;
+}
+#pollask .title {
+  display: block;
+  color: #fff;
+  width: inherit;
+  font-size: 14px;
+  padding: 4px 8px;
+  background-color: #4682b4;
+}
+#pollask .pollquestion {
+  display: block;
+  margin: 4px 8px;
+  font-size: 12px;
+  padding-top: 4px;
+  line-height: 1.5em;
+}
+#pollask div.pollanswers {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px 0;
+}
+#pollask .pollanswers span {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 12px;
+  font-size: 12px;
+  border: 2px outset;
+  cursor: pointer;
+}
+#pollask .pollanswers span:first-child {
+  margin-left: 0;
+}
+#pollask .pollanswers span:hover {
+  border: 2px inset;
+  background-color: #ccc;
+}
+#pollask span.nopolls {
+  display: block;
+  padding: 5px 0;
+  color: #00f;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+
+.inline_feature {
+  float: left;
+  padding-right: 10px;
+}
+
+#fancybox-left, #fancybox-right {
+position: absolute;
+bottom: 0px;
+height: 50%;
+width: 35%;
+margin-bottom: 25%;
+cursor: pointer;
+outline: none;
+background: transparent url('/shared/img/fancybox/blank.gif');
+z-index: 1102;
+display: none;
+}
+
+/*Privacy Callout in Footer*/
+#footer {
+min-width: 1014px;
+}
+
+#footer .footer-terms {
+background-color: #921A1A;
+border: solid 1px #D68686;
+padding: 10px 16px !important;
+position: absolute;
+right: 20px;
+top: 24px;
+}
+
+
+/*Nasty Glossary Abstract Page Hack*/
+.hw-pub-section-review #glossary-1 {display: none;}
+
+/*Formatting fix on figure numbering  */
+.fig-label:after {content: '. ';}
+
+/*  */
+.author-list li.-etal {font-weight: bold; color: #2E6D8F; cursor: pointer; padding: 0px 2px; border-radius: 4px; background: #efefef; border: solid 1px #ccc;}
+.author-list li.-etal:hover {background-color:#2E6D8F; color: white; border: solid 1px #2E6D8F}
+
+/* Temporary Cluge */
+.hw-pub-section-letters .fulltext-view .tab-boxed,
+.hw-pub-section-letters .fulltext-view .tab-boxed-content
+{display:none;}
+
+
+/* related singl  item */
+#sci-bd ul.item-list li a.related-item {display: block; font-size: 11px !important; text-transform: uppercase; letter-spacing: 0; color: #2e6d9b !important; background: url(/site/icons_shared/bullets_overflowfix.png) no-repeat 0 -397px; padding-left: 8px;}
+
+

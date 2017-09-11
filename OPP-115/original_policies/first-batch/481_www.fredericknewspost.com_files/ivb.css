@@ -1,0 +1,248 @@
+.dmcWidget {
+  position: relative;
+}
+.dmcWidget .ivb {
+  margin: 0 auto;
+  width: 296px;
+  height: 246px;
+  padding: 2px;
+  overflow: hidden;
+  background-size: 300px 199px;
+}
+.dmcWidget .ivb.videoInView {
+  background: #111;
+}
+.dmcWidget .ivb .branding {
+  min-width: 1px;
+  max-height: 45px;
+  float: right;
+}
+.dmcWidget .ivb select {
+  clear: both;
+  width: 296px;
+}
+.dmcWidget .ivb .chzn-container {
+  position: absolute;
+  top: 37px;
+}
+.dmcWidget .ivb .chzn-container .chzn-results {
+  max-height: 122px;
+}
+.dmcWidget .ivb .listingTicker {
+  clear: both;
+  position: absolute;
+  top: 64px;
+  width: 296px;
+  height: 159px;
+  overflow: hidden;
+}
+.dmcWidget .ivb .listingTicker ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.dmcWidget .ivb .listingTicker .listing {
+  background: #eee;
+  height: 48px;
+  overflow: hidden;
+  border-bottom: 1px solid #CCC;
+  padding: 2px;
+  position: relative;
+}
+.dmcWidget .ivb .listingTicker .listing:hover {
+  background: #d5d5d5;
+  cursor: pointer;
+}
+.dmcWidget .ivb .listingTicker .listing .thumbPlayBtn {
+  margin-top: 18px;
+  margin-left: -27px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/html5/itemplaybutton_small.png);
+}
+.dmcWidget .ivb .listingTicker .listing .thumb {
+  margin-top: 3px;
+  padding: 6px;
+  background: #FFF;
+  width: 75px;
+  height: 30px;
+  overflow: hidden;
+  float: left;
+}
+.dmcWidget .ivb .listingTicker .listing .listingInfo {
+  margin-left: 3px;
+  float: left;
+  width: 198px;
+}
+.dmcWidget .ivb .listingTicker .listing .listingInfo p {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  text-overflow: ellipsis;
+}
+.dmcWidget .ivb .listingTicker .listing .listingInfo p.headline {
+  font-weight: bold;
+  margin-top: 3px;
+  font-size: 14px;
+}
+.dmcWidget .ivb .listingTicker .listing .listingInfo p.tagline {
+  margin-top: 2px;
+  font-size: 10px;
+}
+.dmcWidget .ivb .videoPlayerContainer {
+  display: none;
+  position: absolute;
+  top: 2px;
+  z-index: 100;
+  background: #111;
+  width: 296px;
+  height: 222px;
+}
+.dmcWidget .ivb .qr {
+  display: none;
+  position: absolute;
+  top: 2px;
+  z-index: 100;
+  background: #FFF;
+  width: 296px;
+  height: 222px;
+}
+.dmcWidget .ivb .qr img {
+  width: 220px;
+  margin-left: 38px;
+}
+.dmcWidget .ivb .endSlate {
+  display: none;
+  position: absolute;
+  width: 296px;
+  height: 222px;
+  overflow: hidden;
+  background: #FFF;
+  top: 2px;
+  z-index: 200;
+}
+.dmcWidget .ivb .endSlate img {
+  width: 250px;
+  height: 100px;
+  margin: 3px 24px;
+}
+.dmcWidget .ivb .endSlate p {
+  text-align: center;
+  line-height: 1.2em;
+  padding: 0 6px;
+  font-size: 12px;
+}
+.dmcWidget .ivb .endSlate p.headline {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+.dmcWidget .ivb .endSlate p.tagline {
+  font-style: italic;
+}
+.dmcWidget .ivb .endSlate p.return-to-videos {
+  text-transform: lowercase;
+  font-style: italic;
+  margin-top: 14px;
+}
+.dmcWidget .ivb .share {
+  display: none;
+  position: absolute;
+  top: 2px;
+  z-index: 300;
+  background: #FFF;
+  width: 296px;
+  height: 222px;
+}
+.dmcWidget .ivb .share h1 {
+  padding: 0;
+  margin: 0;
+  margin-top: 9px;
+  font-size: 13px;
+  padding-left: 4px;
+  font-weight: bold;
+  width: 90px;
+  float: left;
+  line-height: 1.6em;
+}
+.dmcWidget .ivb .share h1.shareThis {
+  width: 200px;
+  float: none;
+  clear: both;
+}
+.dmcWidget .ivb .share button {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  float: left;
+}
+.dmcWidget .ivb .share textarea {
+  font-size: 10px;
+  width: 282px;
+  background: #EEE;
+  margin-left: 3px;
+  padding: 2px;
+  overflow: hidden;
+  resize: none;
+}
+.dmcWidget .ivb .share img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  float: left;
+  overflow: hidden;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 4px;
+}
+.dmcWidget .ivb .footer {
+  font-size: 10px;
+  color: #EEE;
+  height: 23px;
+  position: absolute;
+  top: 226px;
+  width: 296px;
+}
+.dmcWidget .ivb .footer .footerActions {
+  display: none;
+  float: left;
+  width: 120px;
+  margin-left: 2px;
+  height: 23px;
+  overflow: hidden;
+}
+.dmcWidget .ivb .footer .footerActions i {
+  margin-right: 3px;
+  cursor: pointer;
+}
+.dmcWidget .ivb .footer p.poweredBy {
+  cursor: pointer;
+  overflow: hidden;
+  width: 120px;
+  float: left;
+  font-style: italic;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+.dmcWidget .ivb .footer button {
+  float: right;
+}
+.dmcWidget .ivb .footer button.applyHere {
+  display: none;
+  margin-right: 5px;
+}
+/* SVP ONLY */
+.dmcWidget .ivb .svp-branding {
+  background-color:#749f84;
+  color: #EEE;
+  font-size: 10px;
+  line-height:20px;
+  width: 296px;
+  max-width:296px;
+  position: absolute;
+  margin:auto;
+  text-align:center;
+  overflow:hidden;
+  text-wrap:none;
+  z-index: 500;
+}

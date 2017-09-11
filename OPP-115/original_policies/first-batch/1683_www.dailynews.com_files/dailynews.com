@@ -1,0 +1,1 @@
+PARSELY.pInit({"apikey":"dailynews.com","settings":{"debug":false,"widget":false,"tracker":true},"customizations":null,"track_ip_addresses":true,"bundle":"/code/ptrack-v0.4.2.js","track_third_party_cookies":true,"uuid":"90dd4ff9-d604-4636-8d90-0561de488bbf","network_uuid":"df482264-38d5-43bc-88e5-8ed080569cca","apikey_uuid":"90dd4ff9-d604-4636-8d90-0561de488bbf"});

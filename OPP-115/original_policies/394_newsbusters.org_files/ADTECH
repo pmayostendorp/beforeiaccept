@@ -1,0 +1,88 @@
+__ADTECH_CODE__ = "";
+__theDocument = document;
+__theWindow = window;
+__bCodeFlushed = false;
+
+function __flushCode() {
+	if (!__bCodeFlushed) {
+		var span = parent.document.createElement("SPAN");
+		span.innerHTML = __ADTECH_CODE__;
+		window.frameElement.parentNode.appendChild(span);
+		__bCodeFlushed = true;
+	}
+}
+
+if (typeof inFIF != "undefined") {
+	document.write = function(str) {
+		__ADTECH_CODE__ += str;
+	};
+	document.writeln = function(str) {
+		document.write(str + "\n");
+	};
+	__theDocument = parent.document;
+	__theWindow = parent;
+}
+rp_account   = '6005';
+rp_site      = '10653';
+rp_zonesize  = '197716-2';
+rp_adtype    = 'js';
+rp_smartfile = '[SMART FILE URL]';
+
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"http://ads.rubiconproject.com/ad/6005.js\">\n");
+document.write("</scr"+"ipt>\n");
+function cleanUp() {
+ if (typeof __parent.swappedRefs3195489 == "undefined") {
+   __parent.swappedRefs3195489 = new Array();
+ }
+   
+ while (__parent.swappedRefs3195489.length > 0) {
+   var ref = __parent.swappedRefs3195489.pop();
+   if (ref != "swappedRefs3195489") {
+     __parent[ref] = null;
+   }
+ }
+}
+
+if (typeof inFIF != "undefined" && inFIF == true) {
+ __parent = window.parent;
+ window.onunload = cleanUp;
+ cleanUp();
+
+ for (var ref in window) {
+   if ((typeof __parent[ref] == "undefined" || __parent[ref] == null) 
+         && ref != "frameElement" && ref != "event" && ref != "swappedRefs3195489" && ref != "onunload") {
+     try {__parent[ref] = window[ref]; __parent.swappedRefs3195489.push(ref);} catch (e) {}
+  } 
+ }  
+}
+
+
+if (typeof inFIF != "undefined" && inFIF) {
+	__flushCode();
+}
+
+if (typeof inFIF != "undefined" && inFIF == true) {
+try {parent.write = write;
+} catch (e) {}try {parent.writeln = writeln;
+} catch (e) {}try {parent.__flushCode = __flushCode;
+} catch (e) {}}
+
+
+
+window.adtech_placement = 3195489;
+window.adtech_adid = 6069755;
+window.adtech_bannerid = 23924139;
+window.adtech_countryid = 1;
+window.adtech_areaid = 412;
+window.adtech_cityid = 1046835;
+window.adtech_zipid = 15965;
+window.adtech_countrytext = "USA";
+window.adtech_areatext = "412";
+window.adtech_citytext = "Pittsburgh-PA";
+window.adtech_statetext = "pennsylvania";
+window.adtech_ziptext = "15219";
+window.adtech_alias = "nbresponsivetop_display";
+window.adtech_keyword = "";
+window.adtech_keyvalue = "browser=chrome;category=null;imkar=null;referrer=newsbusters.org;height=661;pageview=4;width=1136;portfolio=imk;tags=news";
+window.adtech_sub = "sub2=1131674;";
+window.adtech_tld = "NET";

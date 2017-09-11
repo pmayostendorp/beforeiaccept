@@ -1,0 +1,7 @@
+.shsTimezone {display: none}
+.shsCTZone {display: inline}
+
+#shsMultisportScoreboard {border: 1px solid #999; margin-left: 5px; margin-bottom: 5px}
+#shsMultisportScoreboard .shsMiniRowSpacer td {line-height: 1px}
+#shsMultisportScoreboard td {padding: 0 5px; font-size: 11px !important}
+#shsMultisportScoreboard .shsTableTtlRow td {font-size: 12px !important}

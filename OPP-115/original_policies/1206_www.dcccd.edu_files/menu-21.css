@@ -1,0 +1,108 @@
+/* _lcid="1033" _version="14.0.7006"
+_LocalBinding */
+.menu ul
+{
+list-style:none;
+}
+.menu ul,.menu li
+{
+margin:0;
+padding:0;
+}
+.menu a.menu-item span.additional-background,.menu a.menu-item span.menu-item-text
+{
+cursor:pointer;
+}
+.menu .menu-item,
+.menu .menu-item .additional-background,
+.menu .menu-item .additional-background .menu-item-text
+{
+display:block;
+}
+.menu-vertical li,.menu-vertical .menu-item,ul.dynamic .menu-item,
+.menu-vertical .menu-item .additional-background,ul.dynamic .menu-item .additional-background
+.menu-vertical .menu-item .menu-item-text,ul.dynamic .menu-item .menu-item-text
+{
+zoom:1;
+}
+.menu li.hover,.menu li.hover-off
+{
+position:relative;
+z-index:100;
+}
+.menu-horizontal .menu-item-text
+{
+white-space:nowrap;
+}
+.menu-vertical .menu-item-text
+{
+word-wrap:break-word;
+overflow:hidden;
+}
+.menu-horizontal ul.static
+{
+display:inline;
+}
+.menu-horizontal li.static,
+.menu-horizontal a.static,
+.menu-horizontal span.static
+{
+float:left;
+}
+.menu-horizontal
+{
+display:table;
+zoom:1;
+}
+.menu-horizontal a.dynamic-children span.additional-background,
+.menu-horizontal span.dynamic-children span.additional-background
+{
+padding-right:10px;
+background-image:url('/_layouts/images/menu-down.gif');
+background-repeat:no-repeat;
+background-position:right center;
+}
+.menu-horizontal ul.dynamic a.dynamic-children span.additional-background,
+.menu-horizontal ul.dynamic span.dynamic-children span.additional-background
+{
+background-image:url('/_layouts/images/menu-right.gif');
+}
+.menu-vertical a.dynamic-children span.additional-background,
+.menu-vertical span.dynamic-children span.additional-background
+{
+padding-right:10px;
+background-image:url('/_layouts/images/menu-right.gif');
+background-repeat:no-repeat;
+background-position:right center;
+}
+.menu ul.dynamic
+{
+position:absolute;
+left:-999em;
+}
+.menu-popup
+{
+position:relative;
+}
+.menu span.dynamic,
+.menu a.dynamic
+{
+min-width:150px;
+}
+*:first-child + html[dir="rtl"] .menu-horizontal
+{
+direction:ltr;
+}
+*:first-child + html[dir="rtl"] .menu-horizontal .menu-item
+{
+direction:rtl;
+}
+*:first-child + html[dir="rtl"] .menu-horizontal li.static
+{
+float:none;
+display:inline;
+}
+*:first-child + html[dir="rtl"] .menu-horizontal li.static .additional-background
+{
+zoom:1;
+}

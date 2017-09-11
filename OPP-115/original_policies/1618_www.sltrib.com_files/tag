@@ -1,0 +1,318 @@
+BrightTag.instance.errors({enabled:false});
+BrightTag.instance.dbe('url', 'location.href', {pageId:303432});
+BrightTag.instance.appendContent('\x3cimg height\x3d\x221\x22 width\x3d\x221\x22 style\x3d\x22border-style:none;\x22 alt\x3d\x22\x22 src\x3d\x22//insight.adsrvr.org/track/evnt/?adv\x3d93hf6lv\x26ct\x3d0:eak75nzy\x26fmt\x3d3\x22/\x3e',{tagId:578438});
+BrightTag.instance.appendContent('\x3cscript type\x3d\x22text/javascript\x22\x3e\n        function createPixel(subdomain) {\n          var src \x3d \x27//\x27 + subdomain + \x27.adnxs.com/seg?add\x3d1586546\x27;\n          if ("1" \x3d\x3d \x221\x22) {\n            src +\x3d \x27\x26t\x3d1\x27;\n            var script \x3d document.createElement(\x27SCRIPT\x27);\n            script.setAttribute(\x27type\x27,\x27text/javascript\x27);\n            script.setAttribute(\x27src\x27, src);\n            document.body.appendChild(script);\n          } else {\n            src +\x3d \x27\x26t\x3d2\x27;\n            new Image().src \x3d src;\n          }\n        }\n      \x3c/script\x3e\n      \x3cscript type\x3d\x22text/javascript\x22\x3e\n        createPixel(\x27ib\x27);\n      \x3c/script\x3e\n      \x3cimg src\x3d\x22//ib.adnxs.com/getuid?http%3A%2F%2Fs.thebrighttag.com%2Fcs?btt\x3dFvMQ8R0kiNWTbkqks-LhfyyJZ76Gc-cr44qlU1yu9Cs\x26tp\x3dan\x26uid\x3d$UID\x22 width\x3d\x221\x22 height\x3d\x221\x22 /\x3e',{tagId:623285});
+BrightTag.instance.secondary(function(serverURL) {
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Sports\x22) \x3e -1')) {
+serverURL.cf(578445);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Money\x22) \x3e -1')) {
+serverURL.cf(578463);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/lifestyle\x22) \x3e -1')) {
+serverURL.cf(578487);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/entertainment\x22) \x3e -1')) {
+serverURL.cf(578517);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22jobs.sltrib.com\x22) \x3e -1')) {
+serverURL.cf(578523);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22cars.sltrib.com\x22) \x3e -1')) {
+serverURL.cf(578544);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('(bt_data(\x27url\x27).indexOf(\x22realestate.sltrib.com\x22) \x3e -1 || bt_data(\x27url\x27).indexOf(\x22trib.utahrealestate.com\x22) \x3e -1)')) {
+serverURL.cf(578559);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Money\x22) \x3e -1')) {
+serverURL.cf(578580);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/lifestyle\x22) \x3e -1')) {
+serverURL.cf(578586);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/entertainment\x22) \x3e -1')) {
+serverURL.cf(578598);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22jobs.sltrib.com\x22) \x3e -1')) {
+serverURL.cf(578600);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22cars.sltrib.com\x22) \x3e -1')) {
+serverURL.cf(578609);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27) \x3d\x3d \x22http://www.sltrib.com/\x22')) {
+serverURL.cf(609740);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/News\x22) \x3e -1')) {
+serverURL.cf(609789);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/politics\x22) \x3e -1')) {
+serverURL.cf(609866);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/cat/justice\x22) \x3e -1')) {
+serverURL.cf(609888);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/LDS/\x22) \x3e -1')) {
+serverURL.cf(609900);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/education\x22) \x3e -1')) {
+serverURL.cf(609924);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/weather\x22) \x3e -1')) {
+serverURL.cf(609936);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Cougars\x22) \x3e -1')) {
+serverURL.cf(614321);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Utes\x22) \x3e -1')) {
+serverURL.cf(614328);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/USUAggies\x22) \x3e -1')) {
+serverURL.cf(614343);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/jazz\x22) \x3e -1')) {
+serverURL.cf(614348);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/RSL\x22) \x3e -1')) {
+serverURL.cf(614357);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/blaze\x22) \x3e -1')) {
+serverURL.cf(614366);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Grizzlies\x22) \x3e -1')) {
+serverURL.cf(614375);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/bees\x22) \x3e -1')) {
+serverURL.cf(614382);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/wintersports\x22) \x3e -1')) {
+serverURL.cf(616173);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/PersonalFinance\x22) \x3e -1')) {
+serverURL.cf(616182);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/cat/RealEstate\x22) \x3e -1')) {
+serverURL.cf(616188);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Money/homePrices.csp\x22) \x3e -1')) {
+serverURL.cf(616206);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/cat/Technology\x22) \x3e -1')) {
+serverURL.cf(616211);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/cat/Tourism\x22) \x3e -1')) {
+serverURL.cf(616218);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/cat/Retail\x22) \x3e -1')) {
+serverURL.cf(616220);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22http://www.sltrib.com/Faith\x22) \x3e -1')) {
+serverURL.cf(616238);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/cat/Food\x22) \x3e -1')) {
+serverURL.cf(619764);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Health\x22) \x3e -1')) {
+serverURL.cf(619773);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/HomeAndFamily\x22) \x3e -1')) {
+serverURL.cf(619797);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Travel\x22) \x3e -1')) {
+serverURL.cf(619811);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/sundance\x22) \x3e -1')) {
+serverURL.cf(619820);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Outdoors\x22) \x3e -1')) {
+serverURL.cf(619892);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Television\x22) \x3e -1')) {
+serverURL.cf(619937);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/employment/employer.php\x22) \x3e -1')) {
+serverURL.cf(619973);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('(bt_data(\x27url\x27) \x3d\x3d \x22http://rentals.sltrib.com\x22 || bt_data(\x27url\x27).indexOf(\x22trib.propertypond.com\x22) \x3e -1)')) {
+serverURL.cf(620000);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27) \x3d\x3d \x22http://www.sltrib.com/\x22')) {
+serverURL.cf(623292);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/News\x22) \x3e -1')) {
+serverURL.cf(623294);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/politics\x22) \x3e -1')) {
+serverURL.cf(623307);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/justice\x22) \x3e -1')) {
+serverURL.cf(623312);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22LDS/\x22) \x3e -1')) {
+serverURL.cf(623319);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/education\x22) \x3e -1')) {
+serverURL.cf(623321);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/weather\x22) \x3e -1')) {
+serverURL.cf(623337);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Sports\x22) \x3e -1')) {
+serverURL.cf(623343);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Cougars\x22) \x3e -1')) {
+serverURL.cf(623346);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Utes\x22) \x3e -1')) {
+serverURL.cf(623355);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/USUAggies\x22) \x3e -1')) {
+serverURL.cf(623361);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/jazz\x22) \x3e -1')) {
+serverURL.cf(623366);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/RSL\x22) \x3e -1')) {
+serverURL.cf(623384);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/UtahBlaze\x22) \x3e -1')) {
+serverURL.cf(623393);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Grizzlies\x22) \x3e -1')) {
+serverURL.cf(623409);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Bees\x22) \x3e -1')) {
+serverURL.cf(623411);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/wintersports\x22) \x3e -1')) {
+serverURL.cf(623415);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/PersonalFinance\x22) \x3e -1')) {
+serverURL.cf(623427);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/cat/RealEstate\x22) \x3e -1')) {
+serverURL.cf(623454);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Money/homePrices.csp\x22) \x3e -1')) {
+serverURL.cf(623472);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Technology\x22) \x3e -1')) {
+serverURL.cf(623481);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Tourism\x22) \x3e -1')) {
+serverURL.cf(623492);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Retail\x22) \x3e -1')) {
+serverURL.cf(623499);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22http://www.sltrib.com/Faith\x22) \x3e -1')) {
+serverURL.cf(623510);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Food\x22) \x3e -1')) {
+serverURL.cf(623517);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Health\x22) \x3e -1')) {
+serverURL.cf(623519);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/HomeAndFamily\x22) \x3e -1')) {
+serverURL.cf(623532);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Outdoors\x22) \x3e -1')) {
+serverURL.cf(623535);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Travel\x22) \x3e -1')) {
+serverURL.cf(623537);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/sundance\x22) \x3e -1')) {
+serverURL.cf(623550);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/Television\x22) \x3e -1')) {
+serverURL.cf(623559);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('bt_data(\x27url\x27).indexOf(\x22/employment/employer.php\x22) \x3e -1')) {
+serverURL.cf(623577);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('(bt_data(\x27url\x27).indexOf(\x22realestate.sltrib.com\x22) \x3e -1 || bt_data(\x27url\x27).indexOf(\x22trib.utahrealestate.com\x22) \x3e -1)')) {
+serverURL.cf(623600);
+}
+} catch(e) { bt_handle_exception(e); }
+try { if (eval('(bt_data(\x27url\x27).indexOf(\x22rentals.sltrib.com\x22) \x3e -1 || bt_data(\x27url\x27).indexOf(\x22trib.propertypond.com\x22) \x3e -1)')) {
+serverURL.cf(623627);
+}
+} catch(e) { bt_handle_exception(e); }
+});

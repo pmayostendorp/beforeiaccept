@@ -1,0 +1,229 @@
+body {background: #E2E1DE; margin: 0; padding: 0; font-family: 'Lucida Grande', arial, helvetica, sans-serif; color: #333;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;	 border-bottom:0}
+cite {font-style:normal;}
+hr {	 display: none;}
+
+div.hw-gen-page {margin: 0 0 10px 0;	 font-family: 'Lucida Grande', arial, helvetica, sans-serif; color: #333;}
+div.hw-gen-page {width: 780px; padding: 0; background: #FFF; padding-top: 7px; margin-top: 7px;}
+div.hw-gen-page {width: 100%; max-width: 1014px; min-width: 780px; visibility: visible; margin: 0px auto;position: relative;}
+div.hw-gen-page {font-size:100%;}
+div.hw-gen-page a:hover {border-bottom:0px solid;	text-decoration:underline;}
+
+a, div.hw-gen-page a,div.hw-gen-page a:active, div.hw-gen-page a:link,div.hw-gen-page a:hover,  div.hw-gen-page a:visited {
+	color: #2E6D8F;}
+
+div.hw-gen-page input, select, .Icon, .Button {
+	vertical-align:middle;}
+
+/* -- body setup -- */
+#BodyWrapper {width:1014px;}
+#col-2 {	margin-bottom:20px;	margin-right:10px;	width:147px; position:absolute; left:6px; border-right:0px;	background-color:white;}
+#col-3 {float:right; margin-bottom:10px; margin-left:5px; width:168px; background-color:white; padding:0; margin-right:5px;}
+#content-block {	left:170px;	position:relative;	padding:0 20px 20px 0px;	width:650px;	font-size:80%;	clear: both;}
+
+/* overrides for ui.css */
+h1, h2, h3, h4, h5, h6 {margin: 0 0 8px 0; padding: 0; font-family:'Lucida Grande',arial,helvetica,sans-serif;}
+h1 {font-size: 120%;}
+h2 {font-size: 110%;}
+h3 {font-size: 100%;}
+h4 {font-size: 90%;}
+h5 {font-size: 75%;}
+h6 {font-size: 75%;}
+#content-block h1, #content-block h2, #content-block h3, #content-block h4, #content-block h5, #content-block h6 {font-family:'Lucida Grande',arial,helvetica,sans-serif;}
+#content-block h1 {margin-bottom: 2px; margin-left: 4px; }
+
+p, pre, label, ul, ol, dl, fieldset, address {margin:0px;} 
+li, dd {margin-left:0;}
+ol.list-romanlower li {margin-left:5%;}
+
+.Invisible { display: none; }
+.Separator { text-align: center; margin: 10px 0; }
+.HorizList { margin: 0;	padding: 0;}
+.HorizList li {float: left; list-style-type: none; display: block;}
+.HorizList li a {display: block;}
+
+div.leaderboard-ads {position: absolute; top: 0px; left: 0px; height: 100px; background-color: #fff; white-space: nowrap; width: 1004px; overflow: hidden; margin: 0; padding: 5px 0 0 10px; border-bottom: 5px solid #E2E1DE;}
+div.leaderboard-ads a:hover {border: none;}
+
+#site-breadcrumbs {color: #52819B; font-size: 70%; padding: .65em 0;}
+#site-breadcrumbs li {display: inline;}
+#site-breadcrumbs li a {color: #52819B;text-decoration: underline;}
+#site-breadcrumbs li.lastcrumb strong {font-weight: normal;}
+
+#FooterWrapper{background:#AD0016 url(/publisher/icons/bg.footer.gif) bottom left repeat-x;color:#FFF;position:relative;margin:0 7px;padding:10px 0;}
+#FooterWrapper div.footer-links{font-size:70%;text-align:left;margin:0 0 .5em 210px;}
+#FooterWrapper a{color:#FFF;text-decoration:none;}
+#FooterWrapper a:hover{text-decoration:underline;color:white;border-bottom:0 solid;}
+#FooterWrapper #copyright{font-size:70%;line-height:1.3;text-align:left;margin:0 0 0.5em 210px;}
+#FooterWrapper #copyright,#FooterWrapper #copyright a{color:#E97F82;}
+#FooterWrapper #copyright a{text-decoration:underline;}
+#FooterWrapper #logo_aaas{position:absolute;left:127px;top:12px;}
+#FooterWrapper #logo_hwp{position:absolute;left:65px;top:34px;}
+
+#ISSNLine{margin-right:7px;}
+#ISSNLine p{font-size:70%;text-align:left;margin:0;padding:3px 0 3px 210px;}
+
+#content-block #page-nav{color:#999999;font-weight:700;margin-right:4px;font-size:85%;}
+#content-block #page-nav ul.prev-next{list-style:none;}
+#content-block #page-nav a.prev-link{background:transparent url(/publisher/icons/icon.arrow.999999.lg.l.gif) no-repeat scroll 0 3px;padding-left:10px;}
+#content-block #page-nav a.next-link{background:transparent url(/publisher/icons/icon.arrow.999999.lg.r.gif) no-repeat scroll 100% 3px;padding-right:10px;padding-left:0;}
+#content-block .NoBullet li{list-style-type:none;background-image:none !important;padding-left:0;}
+#content-block ul.Inputs li{list-style-type:none;text-indent:-20px;margin:0 0 .3em;padding:0 0 0 20px;}
+#content-block ul.PoundDownNav{margin:.5em 0 1em;padding:0;}
+#content-block ul.PoundDownNav li{list-style-type:none;background:url(/publisher/icons/icon.arrow.797979.sm.dn.gif) .25em .3em no-repeat;margin:0 0 .3em;padding:0 0 0 17px;}
+
+ul.LinkList li, #content-block ul.LinkList li {
+list-style-type:none;
+margin:0 0 0.5em;
+padding:0 0 0 10px;
+}
+
+ul.LinkList,
+#content-block ul.LinkList,
+#content-block .NoBullet {
+ margin: 0 0 1em 0; padding: 0; 
+}
+
+ul.LinkList li,
+#content-block ul.LinkList li {
+ margin: 0 0 .5em 0; padding: 0 0 0 10px; list-style-type: none; 
+}
+
+access-util {position: absolute; left: -9998px;}
+cite abbr {font-style:italic;}
+
+div.section-break {clear:both;}
+span.sc {text-transform:uppercase;font-size:.8em;}
+
+.cit-overline {color:#666666;font-size:90%;margin-bottom:0;text-transform:uppercase;}
+.cit .cit-views li a {background-image:url(/shared/img/misc/rightchevron.gif);background-position:0 center;background-repeat:no-repeat;padding-left:9px;}
+.article-overline {margin-bottom:0;text-transform:uppercase;font-weight:bold;}
+.compilation-overline {margin-bottom:.3em;text-transform:uppercase;font-weight:bold;}
+.compilation div.fn-group ul li {border-bottom:none;}
+
+#pageid-multimedia.hw-pub-id-multimedia_home  #content-block {left:0;margin:0;padding:0;position:relative;width:838px;}
+
+.Left {float:left;margin:0 10px 10px 0;}
+.Right {float:right;margin:0 0 10px 10px;}
+
+.EditorialPromo {background:#FFFFDD none repeat scroll 0 0;border:1px solid #CCCCCC;margin-bottom:15px;margin-left:5px;margin-right:5px;padding:5px;width:175px;float:right;}
+
+/*
+===========================================================================
+Generated  by Science
+ver 1.3 (11-11-09)
+===========================================================================
+*/
+
+/* ****************************************** */
+/* HEADER
+/* ****************************************** */
+#hd {width: 1000px; padding-top: 112px; margin: 0 0 8px 8px;}
+#hd-main{background: url(/site/icons_shared/hd-bg.gif) repeat-x top left; position: relative; font: bold 10px arial, verdana, helvetica, sans-serif; z-index: 100;}
+#hd-main #hd-logo a {display:block; width: 158px; height: 90px;	background: url(/site/icons_shared/hd-nav.png) no-repeat; text-indent: -9998em;}
+
+#hd-search {position: absolute; top: 2px; right: 10px; text-align: right;}
+#hd-search a {text-transform: uppercase; padding-left: 0;}
+#hd-search form, #search form fieldset {display: inline;}
+#hd-search input {font-size: 11px !important; font-weight: bold; color: #ccc; border: solid 1px #d9d9d9; vertical-align: middle; padding: 3px;margin-right:4px;}
+#hd-search input.search-submit{width: 66px; height: 21px; background: url(/site/icons_shared/hd-nav.png) no-repeat -853px -85px; display: inline-block; text-indent: -9998em; outline: none; padding: 0; border: none;}
+#hd-search select{color: #666; padding: 1px 0;margin-right:4px;}
+#hd-search fieldset {padding:0;}
+#hd-subscribe {display:block; position: absolute; width: 128px; height: 21px; top: 58px; right: 10px; text-indent:-9998em; outline: none; background: url(/site/icons_shared/hd-nav.png) no-repeat -866px -8px;}
+#hd-subscribe:hover {background-position: -866px -52px;}
+
+#hd-breadcrumb {font-size: 11px; clear: both; overflow: hidden; height: 16px; margin-top: 2px;}
+#hd-breadcrumb ul{margin: 0; padding:0;}
+#hd-breadcrumb ul li{float: left; padding-right: 8px; line-height: 16px;}
+
+#hd-partner {position: absolute; top: 0; right: 35px; width: 149px; height: 44px; background: url(/site/icons_shared/hd-ptnr-bg.png) no-repeat;}
+#hd-partner a{padding: 5px 0 0 28px; display: block;}
+
+#nav-util, #authstring {position: absolute; text-transform: uppercase;}
+#nav-util li, #authstring li {display: inline; padding: 0 8px 0 6px;}
+#nav-util li {border-left: solid 1px #ccc;}
+#authstring li {border-left: solid 1px #333;}
+#nav-util li:first-child, #authstring li:first-child,#authstring .no-left-border  {border-left: none;}
+#nav-util {top: 14px;left: 162px;}
+#nav-util a, form a {color: #666; text-decoration: none;}
+#nav-util a:hover, form a:hover {color: #333; text-decoration: underline;}
+
+#authstring a {color: #ccc; text-decoration: none;}
+#authstring a:hover {color: #fff; text-decoration: underline;}
+#authstring {top: 34px;	right: 4px; text-align:right;}
+
+#nav-main {position: absolute; top: 50px; left: 160px;}
+#nav-main li.item {float: left; display: block; position: relative;}
+#nav-main li.item div.item-cn {width: 202px; position: absolute; top: 36px; border: solid 2px #840f0f; padding: 16px 12px 12px 12px; display: none; background: url(/site/icons_shared/decorations.png) no-repeat 104px 0; font-size: 12px;}
+#nav-main li.hovering div.item-cn { display: block;}
+
+#nav-main-news, 
+#nav-main-journals, 
+#nav-main-careers, 
+#nav-main-communities, 
+#nav-main-multimedia, 
+#nav-main-topics  {
+	display:block; background: url(/site/icons_shared/hd-nav.png) no-repeat; height: 40px; text-indent: -9998em; outline: none;
+}
+
+#nav-main-news					{width: 60px;	background-position: -172px 0px;}
+#nav-main-journals				{width: 150px;	background-position: -232px 0px;}
+#nav-main-careers				{width: 78px;	background-position: -382px 0px;}
+#nav-main-communities			{width: 176px;	background-position: -460px 0px;}
+#nav-main-multimedia			{width: 102px;	background-position: -636px 0px;}
+#nav-main-topics				{width: 107px;	background-position: -738px 0px;}
+
+#nav-main-news:hover			{background-position: -172px -42px;}
+#nav-main-journals:hover		{background-position: -232px -42px;}
+#nav-main-careers:hover			{background-position: -382px -42px;}
+#nav-main-communities:hover		{background-position: -460px -42px;}
+#nav-main-multimedia:hover		{background-position: -636px -42px;}
+#nav-main-topics:hover			{background-position: -738px -42px;}
+
+.Active	a#nav-main-news			{background-position: -172px -84px !important;}
+.Active a#nav-main-careers		{background-position: -382px -84px !important;}
+.Active a#nav-main-communities	{background-position: -460px -84px !important;}
+.Active a#nav-main-multimedia	{background-position: -636px -84px !important;}
+.Active a#nav-main-topics		{background-position: -738px -84px !important;}
+.Active a#nav-main-journals		{background-position: -232px -84px !important;}
+
+.sci #hd-sub 					{background-position: 0 -126px; padding-top: 40px}
+.sigtrans #hd-sub 				{background-position: 0 -167px; padding-top: 40px}
+.scitransmed #hd-sub 			{background-position: 0 -209px; padding-top: 40px}
+
+#hd-sub {position:relative; background: url(/site/icons_shared/hd-nav.png) no-repeat; width: 1000px; z-index: 20;}
+.hw-pub-id-collections_page_online #hd #hd-sub,
+.hw-pub-id-multimedia_home  #hd #hd-sub,
+.hw-pub-id-multimedia  #hd #hd-sub,
+#pageid-custom-help  #hd #hd-sub,
+.hw-pub-id-collections_home #hd #hd-sub,
+.pagetype-nonjournal #hd #hd-sub,
+#pageid-collections #hd #hd-sub,
+#pageid-journals #hd #hd-sub 
+{background: none; padding-top: 0}
+
+#nav-sub {background: #ced9df url(/site/icons_shared/hd-bg.gif) repeat-x bottom left; padding: 0 0 1px 10px; border-bottom: solid 2px white; display:block;}
+
+ul.tab-list {height: 27px;}
+ul.tab-list li  {float: left; display: block; font-size: 11px !important; height: 27px;}
+ul.tab-list li  a {display: block; padding:5px 10px; text-decoration: none; float: left;}
+ul.tab-list li  a span {display: block; padding-top: 7px; font-weight: bold; float: left; cursor: pointer;}
+ul.tab-list li.Active {background: url(/site/icons_shared/tab-bg.gif) no-repeat top left;}
+ul.tab-list li.Active a {background: url(/site/icons_shared/tab-bg.gif) no-repeat top right; margin-left: 4px; padding-left: 6px; padding-top: 8px;}
+
+#pageid-eletters-index  #content-block,
+#pageid-eletters #content-block{
+left:0;
+margin-bottom:12px;
+padding:2px 2px 2px 20px;
+width:809px;
+}
+
+#pageid-eletters #content-block .cit .cit-metadata .cit-auth-list {
+margin-left:3em;
+display:block;
+}
+
+.hw-ac-aaas-inst-logo {position: absolute; right: 10px; text-align: center;    top: 20px; width: 260px;}
+.hw-ac-aaas-inst-logo  .hw-ac-aaas-inst-logo-text {display:none;}

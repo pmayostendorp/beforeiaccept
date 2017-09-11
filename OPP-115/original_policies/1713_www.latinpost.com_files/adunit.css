@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* adunit */
+.adunit_rectangle {width:100%; float:left; text-align:center; clear:both; overflow:hidden; margin-bottom:20px;}
+.adunit_leaderboard {width:100%; float:left; text-align:center; clear:both; overflow:hidden; padding:20px 0;}
+.adunit_leaderboard > div {width:1000px; margin:0 auto; text-align:center;}
+
+#adunit_video {width:100%; overflow:hidden; margin:20px auto 20px;}
+
+/* rectangle */
+#adunit_main_right_top_computer {margin-bottom:20px;}
+#adunit_main_right_middle1_computer {margin-bottom:20px;}
+#adunit_main_right_middle2_computer {margin-bottom:20px;}
+#adunit_article_right_top_computer {margin-bottom:20px;}
+#adunit_article_right_middle1_computer {margin-bottom:20px;}
+#adunit_article_center_middle1_computer {width:300px!important; margin-right:20px; margin-bottom:20px;}
+
+#adunit_article_center_middle2_computer {width:50%!important; clear:none;}
+#adunit_article_center_middle3_computer {width:50%!important; clear:none;}
+
+#adunit_section_right_top_computer { margin-bottom:20px;}
+#adunit_section_right_middle1_computer { margin-bottom:20px;}
+#adunit_section_right_middle2_computer {margin-bottom:20px;}
+
+/* leaderboard */
+#adunit_main_center_bottom_computer {}
+#adunit_article_center_top_computer {}
+#adunit_article_center_bottom_computer {}
+#adunit_section_center_top_computer {}
+#adunit_section_center_bottom_computer {}
+
+/* mobile ad */
+.adunit_rectangle_phone {width:100%; text-align:center; clear:both; display:block; overflow:hidden; margin:0 auto; padding-top:20px;}
+#adunit_article_center_top_phone {}
+#adunit_article_center_middle1_phone {}
+#adunit_article_center_middle2_phone {}
+#adunit_article_center_middle3_phone {}
+#adunit_article_center_middle4_phone {}
+#adunit_article_center_middle5_phone {}
+
+#adunit_article_center_middle6_phone {width:90%; float:left; text-align:center; clear:both; display:block; overflow:hidden; margin:20px 5%;}
+#adunit_article_center_middle7_phone {width:100%; float:left; text-align:center; clear:both; display:block; overflow:hidden; margin:0 auto; padding:10px 0;}
+#adunit_article_center_bottom_phone {width:100%; position:fixed; bottom:-5px; text-align:center; clear:both; display:block; overflow:hidden; margin:0 auto;}
+
+
+#adunit_section_center_middle1_phone{width:100%; margin:0 auto;padding:10px 0; }
+
+@media screen and (max-width:1000px) {
+.adunit_leaderboard > div {width:100%;}
+}

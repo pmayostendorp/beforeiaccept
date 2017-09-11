@@ -1,0 +1,154 @@
+/* 
+ * Mediaplex Flash template, flash_new
+ * Maintained By: Christopher D. Robison (cdr@cdr2.com) and 
+ * Heath Matthew Kornblum (heathkornblum@gmail.com) 
+ * Last Modified: 7/1/2014 10:55 am
+ *
+*/
+(function(){
+	function mojoProtocol() {
+		 var regexx = /\d+-\d+-\d+-\d+/;
+		 var theMpck = "adfarm.mediaplex.com/ad/ck/10445-61388-2042-10?mpt=6824016302&mpcr=58912269&mpcrset=root";
+		 var myplid = regexx.test(theMpck) ? theMpck.match(/\d+-\d+-\d+-\d+/) : null;
+		 var myURL = "";
+		 try{
+			if (myplid != null) {
+				var tags = window.document.getElementsByTagName("script");
+				for (var i=0; i < tags.length; i++) {
+					if (tags.item(i).src){
+					  if (tags.item(i).src.match(myplid)) {
+						myURL = tags.item(i).src;  
+					  }
+					}
+				}
+				window.mojoProto = myURL.substring(0,6);
+			} else {
+			  window.mojoProto = "http:";	
+			}
+			
+		 } catch (e) {
+			 window.mojoProto = "http:";
+		 }		
+                 if (window.mojoProto == "" || window.mojoProto == null) window.mojoProto = window.location.protocol;
+
+
+	}
+	mojoProtocol();
+	var mojopro = window.mojoProto;
+	if (mojopro == "https:") {
+		mojopro = "https://secure.img-cdn.mediaplex.com/0/";
+	}	else  {
+		mojopro = "http://img-cdn.mediaplex.com/0/";
+  	};  
+	var mpvce = '<mpvce/>';
+	mpenhanced = "",
+	mpenhancedurl = "" || "http://www.conversantmedia.com/ad-choices";
+	if (mpvce == 1) {
+		mpvclick = encodeURIComponent("http://r1.ace.advertising.com/click/site=932013/mnum=1820852/cstr=25010123=_559596f5_6824016302_932013*1820852*1183*0_1_/xsxdata=$XSXDATA/bnum=25010123/optn=64?trg=");
+		mpvc = mpvclick;
+	}
+	else if (mpvce == 2) {
+		mpvclick2 = encodeURIComponent("http://r1.ace.advertising.com/click/site=932013/mnum=1820852/cstr=25010123=_559596f5_6824016302_932013*1820852*1183*0_1_/xsxdata=$XSXDATA/bnum=25010123/optn=64?trg=");
+		mpvc = encodeURIComponent(mpvclick2);
+	}
+	else
+  	{
+		mpvc = ("http://r1.ace.advertising.com/click/site=932013/mnum=1820852/cstr=25010123=_559596f5_6824016302_932013*1820852*1183*0_1_/xsxdata=$XSXDATA/bnum=25010123/optn=64?trg=");
+  	}
+	var mpcke = '<mpcke/>';
+	if (mpcke == 1) {
+		mpcclick = encodeURIComponent("adfarm.mediaplex.com%2Fad%2Fck%2F10445-61388-2042-10%3Fmpt%3D6824016302%26mpcr%3D58912269%26mpcrset%3Droot");
+		mpck = "http://" + mpcclick;
+	}
+	else if (mpcke == 2) {
+		mpcclick2 = encodeURIComponent("adfarm.mediaplex.com%2Fad%2Fck%2F10445-61388-2042-10%3Fmpt%3D6824016302%26mpcr%3D58912269%26mpcrset%3Droot");
+		mpck = "http://" + encodeURIComponent(mpcclick2);
+	}
+	else if (mpcke == -1) { 
+		mpcclick = "adfarm.mediaplex.com/ad/ck/10445-61388-2042-10?mpt=6824016302&mpcr=58912269&mpcrset=root"; 
+		mpck = "http://" + mpcclick; 
+	} 
+	else
+  	{
+		mpck = ("http://adfarm.mediaplex.com%2Fad%2Fck%2F10445-61388-2042-10%3Fmpt%3D6824016302%26mpcr%3D58912269%26mpcrset%3Droot");
+  	}
+	var mp_swver = 0, mp_html = "", mp_crpv = 6 * 1;
+	mp_html += "<div id='mp_wrapper10' style='position:relative;display:inline-block;width:160px;height:600px;'>";
+	if( navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin ) {
+  		if( navigator.plugins && navigator.plugins["Shockwave Flash"] ) {
+    		mp_swver = (navigator.plugins["Shockwave Flash"].description.split( " " ))[2];
+  		}
+	} else if ( navigator.userAgent && navigator.userAgent.indexOf("MSIE") >= 0 && ( navigator.userAgent.indexOf("Windows") >= 0 ) ) {
+		var mp_axo,e;
+  		for( var mp_i = 11; mp_i > 6; mp_i-- ) {
+			try {
+				mp_axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash." + mp_i );
+				mp_swver = mp_i;
+				break;
+			} catch (e) {}
+		}
+	}
+	if( mp_swver >= mp_crpv ) {
+  		mp_html +=  '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" ';
+  		mp_html += ' codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" id="10" name="movie10" width="160" height="600">';
+  		if( mp_swver > 5 ) {
+			mp_html += '<param name="FlashVars" value="clickTAG=' + mpvc + mpck +'&clickTag=' + mpvc + mpck + '&clickTag1=' + mpvc + mpck + '">';
+			mp_html += '<param name="movie" value="' + mojopro + '10445/TOY_15_032_4July_Camry_160x600.swf">';
+			mp_html += '<param name="wmode" value="opaque">';
+			mp_html += '<param name="allowscriptaccess" value="always">';
+  		} 
+  		else {
+			mp_html += '<param name="movie" value="' + mojopro + '10445/TOY_15_032_4July_Camry_160x600.swf?clickTAG=' + mpvc + mpck +'&clickTag=' + mpvc + mpck + '&clickTag1=' + mpvc + mpck + '">';
+			mp_html += '<param name="wmode" value="opaque">';
+			mp_html += '<param name="allowscriptaccess" value="always">';
+  		}
+  		if( mp_swver > 5 ) {
+			mp_html += '<embed wmode="opaque" allowscriptaccess="always" name="10445/TOY_15_032_4July_Camry_160x600." src="' + mojopro + '10445/TOY_15_032_4July_Camry_160x600.swf" FlashVars="clickTAG=' + mpvc + mpck  +'&clickTag=' + mpvc + mpck  +'&clickTag1=' + mpvc + mpck  + '"';
+		}
+ 		else {
+    		mp_html += '<embed wmode="opaque" allowscriptaccess="always" NAME="10445/TOY_15_032_4July_Camry_160x600." src="' + mojopro + '10445/TOY_15_032_4July_Camry_160x600.swf?clickTAG=' + mpvc + mpck  +'&clickTag=' + mpvc + mpck  +'&clickTag1=' + mpvc + mpck  + '"';
+		}
+ 		mp_html += ' swLiveConnect="false" width="160" height="600" type="application/x-shockwave-flash" pluginspage="">';
+  		mp_html += '</embed>';
+  		mp_html += '</object>';
+  		mp_html += (mpenhanced) ? "<div style='position:absolute;z-index:10500;top:0px;right:1px;width:17px;height15px;z-index:999999;overflow:hidden;' onmouseover='this.style.width = \"75px\";document.getElementById(\"en_sm_10\").style.display=\"none\";document.getElementById(\"en_lg_10\").style.display=\"inline\";' onmouseout='this.style.width = \"17px\";document.getElementById(\"en_sm_10\").style.display=\"inline\";document.getElementById(\"en_lg_10\").style.display=\"none\";'><a href='" + mpenhancedurl + "' target='_blank'><img src='" + mojopro + "16179/109012/IconOnlyCollisionMarker.png' border='0'  id='en_sm_10'  style='display:inline'/><img src='" + mojopro + "16179/109012/CollisionAdMarker.png' border='0' id='en_lg_10'  style='display:none' /></a></div>" : "";
+	
+  		mp_html += '</div>';
+    		document.write( mp_html );
+	} else if( !( navigator.appName && navigator.appName.indexOf("Netscape") >= 0 && navigator.appVersion.indexOf("2.") >= 0 ) ) {
+
+  		document.write('<a href="http://r1.ace.advertising.com/click/site=932013/mnum=1820852/cstr=25010123=_559596f5_6824016302_932013*1820852*1183*0_1_/xsxdata=$XSXDATA/bnum=25010123/optn=64?trg=http://adfarm.mediaplex.com/ad/ck/10445-61388-2042-10?mpt=6824016302&mpcr=58912269&mpcrset=root" target="_blank"><img src="' + mojopro + '10445/TOY_15_032_4July_Camry_160x600.jpg" width="160" height="600" border="0" alt=""></a>');
+	} else {
+  		document.write('<a href="http://r1.ace.advertising.com/click/site=932013/mnum=1820852/cstr=25010123=_559596f5_6824016302_932013*1820852*1183*0_1_/xsxdata=$XSXDATA/bnum=25010123/optn=64?trg=http://adfarm.mediaplex.com/ad/ck/10445-61388-2042-10?mpt=6824016302&mpcr=58912269&mpcrset=root" target="_blank"><img src="' + mojopro + '10445/TOY_15_032_4July_Camry_160x600.jpg" width="160" height="600" border="0" alt=""></a>');
+        }
+        document.close();
+})();
+
+   function mojo_clickthru() {
+	     var OOBImg = new Image();
+         if (typeof (mpOOBClickTrack) !== 'undefined') {
+            try {
+				OOBImg.src = mpOOBClickTrack;
+			} catch (e) {
+			  if (window.console && window.console.error) {
+				   window.console.error(e.message);
+			  }
+			}
+         }
+   }
+
+//-->
+
+var mpjs = String("<mpjsp/>");
+if (mpjs && typeof mpjs === "string" && mpjs.length > 0 && mpjs!="<mp"+"jsp/>") {
+  var mpscr, head = document.getElementsByTagName("head")[0] || document.documentElement;
+  mpjs = mpjs.split( " " );
+  for( var i = 0; i < mpjs.length; i++ ) {
+    mpscr = document.createElement("script");
+    mpscr.type = "text/javascript";
+                mpscr.async = true;
+    mpscr.src = mpjs[i];
+    head.insertBefore(mpscr, head.firstChild);
+  }
+}
+

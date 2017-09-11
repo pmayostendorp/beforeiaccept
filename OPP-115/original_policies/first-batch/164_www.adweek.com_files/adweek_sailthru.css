@@ -1,0 +1,226 @@
+#center > #squeeze th span {
+    font-weight:400;
+    font-size:80%;
+    color:#777;
+}
+
+#center > #squeeze td {
+    vertical-align:top;
+}
+
+#center > #squeeze img.info {
+    cursor:pointer;
+    width:17px;
+    height:16px;
+    top:3px;
+    position:relative;
+}
+
+#center > #squeeze div.signup {
+    margin-top:20px;
+    background-color:#eee;
+    border:1px solid #aaa;
+    display:block;
+    float:left;
+    padding:20px;
+}
+
+#center > #squeeze tr:hover td {
+    background-color:#def;
+}
+
+#center > #squeeze .success {
+    color:green;
+}
+
+.popup_form_overlay {
+    background: url("/sites/all/modules/adweek/adweek_fancyzoom/fancybox/fancybox_overlay.png") repeat scroll 0 0 transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999998;
+}
+
+.popup_form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    min-height: 150px;
+    margin: -105px 0 0 -230px;
+    z-index: 999999;
+
+    background: #fff;
+    border: 2px solid #777;
+    padding: 30px;
+}
+
+.popup_form .popup-form-close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    background: #aaa;
+    color: #fff;
+    border-radius: 9px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.popup_form .popup-form-close:hover {
+    background: #777;
+}
+
+#adweek-sailthru-newsletter-settings-form .form-text,
+#adweek-sailthru-newsletter-settings-form .form-select {
+    width: 400px;
+}
+
+#adweek-sailthru-user-add-form .form-item {
+    clear: both;
+}
+#adweek-sailthru-user-add-form .fancybox {
+    display: none;
+}
+
+.popup_form #adweek-sailthru-email-form {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.popup_form #adweek-sailthru-email-form .form-item {
+    text-align: left;
+}
+
+.popup_form #adweek-sailthru-email-form label {
+    font-weight: normal;
+}
+
+.popup_form #adweek-sailthru-email-form .form-text {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #999;
+    width: 388px;
+    margin: 10px 0;
+}
+
+.popup_form #adweek-sailthru-email-form .submit-button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 18px !important;
+    line-height: 20px !important;
+}
+
+
+.popup_form #adweek-sailthru-email-change-form {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* todo: check if this affects the date module (cannot reference #adweek... because it's above the form) */
+.popup_form h2 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.popup_form #adweek-sailthru-email-change-form .form-item {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 5px 0;
+}
+
+.popup_form #adweek-sailthru-email-change-form label {
+    font-weight: normal;
+	width: 135px;
+	padding: 12px 10px 0 0;
+	float: left;
+	text-align: right;
+}
+
+.popup_form #adweek-sailthru-email-change-form  #edit-confirm-new-email-wrapper {
+	margin-bottom: 20px;
+}
+
+.popup_form #adweek-sailthru-email-change-form .form-text {
+    font-size: 16px;
+    padding: 2px;
+    border: 1px solid #999;
+    width: 200px;
+    margin: 5px 0;
+}
+
+.popup_form #adweek-sailthru-email-change-form .submit-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-left: 175px !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
+}
+
+.newsletters-confirmation {
+    font-size: 16px;
+    line-height: 22px;
+    width: 660px;
+}
+.newsletters-confirmation h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+}
+.newsletters-confirmation .item-list {
+    margin: 20px 0;
+}
+.newsletters-confirmation p {
+    margin: 15px 0;
+}
+.newsletters-confirmation .buttons span {
+    display: inline-block;
+    margin: auto 15px;
+}
+
+
+.ui-datepicker {
+    z-index: 1007;
+}
+
+/* The following two blocks style the calendar pop-up in scheduling options for articles.
+NOTE: This should be under the control of jquery.UI but SailThru overrides that stylesheet */
+#ui-datepicker-div {
+    padding:10px;
+    background-color: #fff;
+    border: 3px solid #ED1D25;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#adweek-sailthru-newsletter-settings-test-mode-form .container-inline-date {
+    display: none;
+}
+
+#adweek-sailthru-newsletter-send-settings-form .container-inline-date,
+#adweek-sailthru-newsletter-send-settings-form #edit-timezone-wrapper {
+    border-color: #CCCCCC #DDDDDD #EEEEEE;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+#adweek-sailthru-newsletter-send-settings-form .form-submit {
+    margin-top: 0;
+}
+
+#adweek_sailthru_preview_form {
+    text-align: center;
+}

@@ -1,0 +1,216 @@
+/*
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles in this file instead of style.css so it
+is easier to update the theme. Simply copy an existing style
+from style.css to this file, and modify it to your liking. */
+
+
+/* GLOBAL STYLES
+----------------
+Add styles beneath this line that you want to be applied across your entire site */
+
+
+
+/* BKGD */
+
+body {
+    padding: 0;
+    background-color: #000000;
+    background-image: url("http://disinfo.wpengine.com/wp-content/images/bkgd.jpg");
+    background-position: center top;
+    background-repeat: repeat-y;
+}
+
+
+
+/* RSS BUTTON IN NAV */
+
+#navigation ul.rss li a {
+    color: #FF0000;
+}
+#navigation ul.rss li a:hover {
+    color: #FFFFFF;
+}
+
+
+
+
+/* SHARE BUTTONS IN NAV */
+
+.nav li.menu-item-type-social a {
+    background-image: url("images/ico-subscribe-social.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 28px;
+    width: 30px;
+}
+
+.nav li.menu-item-type-social a {
+    -moz-transition: all 0.2s ease-in-out 0s;
+    opacity: 0.8;
+    
+}
+
+.nav li.menu-item-type-social a { opacity: 0.8; filter: alpha(opacity=80); -webkit-transition: all ease-in-out 0.2s; -moz-transition: all ease-in-out 0.2s; -ms-transition: all ease-in-out 0.2s; -o-transition: all ease-in-out 0.2s; transition: all ease-in-out 0.2s; padding: 0px !important;
+
+}
+
+.nav li.menu-item-type-social a:hover { opacity: 1; filter: alpha(opacity=100); background-color: transparent; }
+.nav li.menu-item-type-social a { display: inline-block; height: 28px; width: 30px; background-image: url(images/ico-subscribe-social.png) !important; background-repeat: no-repeat; }
+.nav li.menu-item-type-social a.subscribe { background-position: 0px 0 !important; }
+.nav li.menu-item-type-social a.twitter { background-position: -30px 0 !important; }
+.nav li.menu-item-type-social a.facebook { background-position: -60px 0 !important; }
+.nav li.menu-item-type-social a.youtube { background-position: -90px 0 !important; }
+.nav li.menu-item-type-social a.flickr { background-position: -120px 0 !important; }
+.nav li.menu-item-type-social a.linkedin { background-position: -150px 0 !important; }
+.nav li.menu-item-type-social a.delicious { background-position: -180px 0 !important; }
+.nav li.menu-item-type-social a.googleplus { background-position: -210px 0 !important; }
+
+#navigation ul.nav > li.menu-item-type-social {
+margin: 7px 0px 0px 3px;
+    border-right: 0px solid #E6E6E6;
+}
+
+
+#navigation ul.nav > li a:hover,
+#navigation ul.nav > li:hover, #navigation ul.nav li ul {
+    background-color: #111111 !important;
+}
+
+
+
+/* NO SPACE AT BOTTOM */
+
+#wrapper {margin-bottom: 0;}
+
+
+/* FOOTER LINKS */
+div#footer-container p a {color:#ffffff; text-decoration:underline;}
+div#footer-container p a:hover {color:#ff0000;}
+
+
+/* GENERAL */
+
+
+.entry blockquote p {font-style: normal;}
+
+#main-nav {text-transform: uppercase;}
+
+#footer-widgets {border-top: 0 solid #E6E6E6;}
+
+
+.post-entries {display: none;}
+
+
+
+
+/* ARCHIVE PAGE */
+
+html body.page div#wrapper div#content.col-full div#main-sidebar-container div#sidebar div#archives-3.widget h3 {
+display: none;
+}
+
+html.js body.page div#wrapper div#inner-wrapper div#content.col-full div#main-sidebar-container section#main div#widgets-container div#recent-posts-2.widget_recent_entries h3 {
+    border-bottom: 1px solid #222222;
+    margin: 0 0 0.8em;
+    padding: 0 0 0.8em;
+}
+
+
+/* REMOVE THUMBNAIL */
+
+.woo-image {
+display:none;
+}
+
+/* MOBILE NAV */
+
+#navigation h3 {
+    display: none;
+}
+
+ul.nav li a:hover {
+color:#FF0000;
+}
+
+ul.nav li.current_page_item a, ul.nav li.current_page_parent a, ul.nav li.current-menu-ancestor a, ul.nav li.current-cat a, ul.nav li.current-menu-item a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #CC0000;
+}
+
+/* PRODUCT SEARCH */
+
+.searchform, #searchform {
+    border-width: 0;
+}
+
+.searchform input.s, #searchform input#s {
+    color: #777777;
+    padding: 8px;
+    border-color: #CCCCCC #EFEFEF #EFEFEF #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 6px;
+}
+
+.searchform button.submit {
+    right: 35px;
+}
+
+
+/* GENERAL */
+
+.entry blockquote p {font-style: normal;}
+
+.entry blockquote:before {
+content: ""
+}
+.post-meta .post-comments {
+    display: none;
+}
+#content {
+    padding-bottom: 0;
+}
+html.js body.archive div#wrapper div#inner-wrapper div#content.col-full div#main-sidebar-container section#main.col-left div.term-description p {
+display:none;
+}
+.page-template-template-contact-php .location-twitter {
+    border-bottom: 0 solid #E6E6E6;
+}
+
+#navigation .cart-contents:before {
+    line-height: 0;
+}
+
+.header-widget {
+    width: 728px;
+}
+
+
+
+
+/* DESKTOP STYLES
+-----------------
+Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
+@media only screen and (min-width: 768px) {
+	/* Desktop styles go below this line */
+
+
+	
+}
+
+/* Start styles for LockerDome interest buttons */
+.post .post-meta {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.ld-interest-widget-cntnr {
+    display: inline-block;
+}
+/* End styles for LockerDome interest buttons */

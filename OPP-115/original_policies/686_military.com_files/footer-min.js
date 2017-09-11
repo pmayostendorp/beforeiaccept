@@ -1,0 +1,4 @@
+function clickViewMobileSite(){var cookieName="ShowOther";var hosts={"www.military.com":"m.military.com","m.military.com":"www.military.com"};if(GetCookie(cookieName)===null){SetCookie(cookieName,"true",null,"/",".military.com");
+}else{document.cookie=cookieName+"=; Path=/;domain=.military.com; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";}var currentUrlParser=document.createElement("a");
+currentUrlParser.href=document.URL;if(hosts[currentUrlParser.host]){currentUrlParser.host=hosts[currentUrlParser.host];}window.location=currentUrlParser.href;
+}jQuery(document).ready(function(){try{$(".view-other-site").click(clickViewMobileSite);}catch(e){}});

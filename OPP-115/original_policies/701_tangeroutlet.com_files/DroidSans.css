@@ -1,0 +1,38 @@
+﻿/* Added the blank style to remove the effect of the special character while caching in Foxy cart. Do not delete.   */
+@font-face
+{
+}
+
+@font-face
+{
+    font-family:'DroidSans';
+    src:url('/css/fonts/DroidSans/DroidSans-webfont.eot');
+    src:url('/css/fonts/DroidSans/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),url('/css/fonts/DroidSans/DroidSans-webfont.woff') format('woff'),url('/css/fonts/DroidSans/DroidSans-webfont.ttf') format('truetype'),url('/css/fonts/DroidSans/DroidSans-webfont.svg#DroidSans') format('svg');
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+@font-face
+{
+    font-family:'DroidSans-Bold';
+    src:url('/css/fonts/DroidSans/DroidSans-Bold-webfont.eot');src:url('/css/fonts/DroidSans/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),url('/css/fonts/DroidSans/DroidSans-Bold-webfont.woff') format('woff'),url('/css/fonts/DroidSans/DroidSans-Bold-webfont.ttf') format('truetype'),url('/css/fonts/DroidSans/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+@font-face
+{
+    font-family:'DroidSans-Mono';
+    src:url('/css/fonts/DroidSans/DroidSansMono-webfont.eot');
+    src:url('/css/fonts/DroidSans/DroidSansMono-webfont.eot?#iefix') format('embedded-opentype'),url('/css/fonts/DroidSans/DroidSansMono-webfont.woff') format('woff'),url('/css/fonts/DroidSans/DroidSansMono-webfont.ttf') format('truetype'),url('/css/fonts/DroidSans/DroidSansMono-webfont.svg#DroidSans-Mono') format('svg');
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+.DroidSans{font-family:DroidSans;}
+
+.DroidSans-Bold{font-family:DroidSans-Bold;}
+.DroidSans-Mono{font-family:DroidSans-Mono;}

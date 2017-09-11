@@ -1,0 +1,11 @@
+jQuery(document).ready(function(){if(jQuery.browser.msie&&jQuery.browser.version<7){jQuery(".hover").hover(function(){jQuery(this).addClass("hovering");
+jQuery(this).hasClass("selected")?jQuery(this).addClass("selectedhovering"):"";},function(){jQuery(this).removeClass("hovering");
+jQuery(this).hasClass("selectedhovering")?jQuery(this).removeClass("selectedhovering"):"";});jQuery("#nav li:first-child").addClass("firstchild");
+}jQuery("#nav0_search>li").click(function(){jQuery("#nav0_search .active").removeClass("active");jQuery(this).addClass("active");
+});jQuery(".searchkeyword, .searchzip, .searchfirstname, .searchlastname").focus(function(){if(jQuery(this).val()=="First Name"||jQuery(this).val()=="Last Name"||jQuery(this).val()=="Keywords"||jQuery(this).val()=="Zip Code"){jQuery(this).val("");
+}});jQuery(".searchkeyword, .searchzip, .searchfirstname, .searchlastname").blur(function(){if(jQuery(this).attr("class")==="searchkeyword"&&jQuery(this).val()===""){jQuery(this).val("Keywords");
+}if(jQuery(this).attr("class")==="searchzip"&&jQuery(this).val()===""){jQuery(this).val("Zip Code");}if(jQuery(this).attr("class")==="searchfirstname"&&jQuery(this).val()===""){jQuery(this).val("First Name");
+}if(jQuery(this).attr("class")==="searchlastname"&&jQuery(this).val()===""){jQuery(this).val("Last Name");
+}});jQuery(".searchsubmit").click(function(){jQuery(this).siblings().each(function(){a={searchfirstname:"First Name",searchlastname:"Last Name",searchkeyword:"Keywords",searchzip:"Zip Code"};
+if(jQuery(this).attr("class") in a&&a[jQuery(this).attr("class")]==jQuery(this).val()){jQuery(this).val("");
+}});});});

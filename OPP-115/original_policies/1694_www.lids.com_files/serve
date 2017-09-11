@@ -1,0 +1,10 @@
+(function(){	try {		var tagContainer = document.createElement('div');		tagContainer.innerHTML = '';		document.body.appendChild(tagContainer);		var tempScripts = tagContainer.getElementsByTagName('script');		for (var i = 0; i < tempScripts.length; i++) {
+			var newScript = document.createElement('script');
+			var s = tempScripts[i];
+			if (typeof s.src != "undefined" && s.src.length > 0) {
+				newScript.src = s.src
+			} else { 
+	    	    newScript.innerHTML = s.innerHTML;
+			}			document.body.appendChild(newScript);
+		}
+		document.body.appendChild(tagContainer);	} catch (e) {		/* don't blow anything up */	}})();

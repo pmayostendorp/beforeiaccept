@@ -1,0 +1,4 @@
+BrightTag.instance.dbe('data logix url', 'document.URL.split(\x22.com/\x22)[1]', {pageId:1073382});
+BrightTag.instance.dbe('random number', 'BrightTag.Random.integer(9999999999)', {pageId:11693});
+BrightTag.instance.store([{name:'btpdb.KSNUeWE.dGZjLjExMzIzMjM', value:'VVNFUg', expires:1467408970781}]);
+BrightTag.instance.appendContent('\x3cimg src\x3d\x27http://h.nexac.com/e/a-345/s-3117/c-277/g-830.xgi?pkey\x3dak930d7lx38dp\x26chpcm\x3ddirect\x26chpsg\x3d'+bt_data_escaped('data logix url')+'\x26chpcr\x3d\x26chpck\x3d\x26rand\x3d'+bt_data_escaped('random number')+'\x26chpth\x3d\x27 style\x3d\x22display:none\x22 width\x3d\x271\x27 height\x3d\x271\x27 border\x3d\x270\x27\x3e',{tagId:47801});

@@ -1,0 +1,59 @@
+div.col-100, div.col-50, div.col-33 {float: left;}
+div.col-100 {width: 100%;}
+div.col-50 {width: 50%;}
+div.col-33 {width: 33.3%;}
+div.clear-right {clear: both;}
+span.title1, span.title2, span.title3 {font-family: 'Francois One', sans-serif; font-weight: normal;}
+.width100strict {overflow-x: hidden;}
+.race-container {box-shadow: 1px 1px 5px #888888; margin-right: 5px; border: 1px solid #ddd; margin-bottom: 10px; background-color: #eee; border-radius: 5px; font-family: 'Francois One', sans-serif;}
+.race-container > div {padding: 5px;}
+table.race-details {width: 100%;}
+td.logo {max-width: 100px; max-height: 100px; border-radius: 5px; background-repeat: no-repeat;}
+td.logo.rep {background-image: url('http://tulsaworld.com/content/tncms/live/global/resources/images/_elections/republican.png'); background-repeat: no-repeat;}
+td.logo.dem {background-image: url('http://tulsaworld.com/content/tncms/live/global/resources/images/_elections/democrat.png'); background-repeat: no-repeat;}
+td.logo.ind {background-image: url('http://tulsaworld.com/content/tncms/live/global/resources/images/_elections/independent.png'); background-repeat: no-repeat;}
+td.logo.yes {background-image: url('http://tulsaworld.com/content/tncms/live/global/resources/images/_elections/yes.png'); background-repeat: no-repeat;}
+td.logo.no {background-image: url('http://tulsaworld.com/content/tncms/live/global/resources/images/_elections/no.png'); background-repeat: no-repeat;}
+td.logo.none {width: 1px !important; height: 50px !important;}
+tr.votebar > td > div {min-height: 10px; width: 0; background-color: #0072CE !important;}
+.candidate {position: relative; padding-left: 10px;}
+.candidate > table {width: 100%; position: absolute; top: 0; left: 0;}
+.nameplate {width: 60%;}
+.votetotal, .votepct {width: 20%; text-align: right;}
+table.race-details > tbody > tr > td {padding-top: 5px;}
+table.race-details td.candidate > table {padding-bottom: 10px;}
+.race-details span.title1, .race-details span.title2, .race-details span.title3 {margin: 0;}
+table.race-details td.candidate > table > tbody > tr> td {padding: 0 0 0 10px;}
+table.race-details > tbody > tr > td > span.title1 {font-size: 25px; margin-bottom: 10px;}
+table.race-details > tbody > tr > td > span.title2 {font-size: 18px; margin-bottom: 5px;}
+table.race-details > tbody > tr > td > span.title3 {font-size: 14px; margin-bottom: 5px; margin-bottom: 10px;}
+table.race-details td > span.pct {font-size: 14px; text-align: left; float: left;}
+table.race-details td > a.precinct {padding: 2px 10px; border-radius: 5px; text-decoration: none; font-size: 14px; color: #fff; float: right; background: #0d1244; background: -moz-linear-gradient(top, #0d1244 0%, #2989d8 50%, #207cca 51%, #485287 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0d1244), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#485287)); background: -webkit-linear-gradient(top, #0d1244 0%,#2989d8 50%,#207cca 51%,#485287 100%); background: -o-linear-gradient(top, #0d1244 0%,#2989d8 50%,#207cca 51%,#485287 100%); background: -ms-linear-gradient(top, #0d1244 0%,#2989d8 50%,#207cca 51%,#485287 100%); background: linear-gradient(to bottom, #0d1244 0%,#2989d8 50%,#207cca 51%,#485287 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1244', endColorstr='#485287',GradientType=0 );}
+
+.election-widget div.blox-title {border-bottom: 0px !important; margin-bottom: 0px !important;}
+.election-widget div.blox-title > h3 {font-family: 'Francois One', sans-serif !important; font-size: 16pt; color: #c00; text-transform: uppercase;}
+.election-widget .election-more-link {padding-right: 5px; margin-top: -5px !important;}
+.election-widget .election-more-link > a {display: block !important; padding: 2px 0; border-radius: 5px; width: 100%; text-align: center; background-color: #333; color: #fff; font-family: 'Francois One', sans-serif !important; font-size: 10pt; text-decoration: none;}
+
+div.col-100 td.logo {height: 100px; width: 100px; max-width: 100px; max-height: 100px; background-size: 100px;}
+div.col-100 table.race-details td > span.title1 {margin-top: 5px;}
+div.col-100 table.race-details td.candidate > table > tbody > tr > td {font-size: 18px;}
+div.col-100 tr.votebar > td > div {min-height: 15px; margin-top: 5px; background-color: #0072CE !important;}
+
+div.col-50 td.logo {height: 50px; width: 50px; max-width: 50px; max-height: 50px; background-size: 50px;}
+div.col-50 td.logo.none {height: 25px !important;}
+div.col-50 table.race-details td > span.title1 {font-size: 20px; margin-bottom: 5px;}
+div.col-50 table.race-details td > span.title2 {font-size: 14px; margin-bottom: 0px;}
+div.col-50 table.race-details td > span.title3 {font-size: 10px; margin-bottom: 0px;}
+div.col-50 table.race-details td.candidate > table > tbody > tr > td {font-size: 14px;}
+div.col-50 table.race-details a.precinct, div.col-50 table.race-details span.pct {font-size: 11px !important;}
+
+
+div.col-33 td.logo {height: 30px; width: 30px; max-width: 30px; max-height: 30px; background-size: 30px;}
+div.col-33 table.race-details td > span.title1 {font-size: 16px; margin-bottom: 5px;}
+div.col-33 table.race-details td > span.title2 {font-size: 14px; margin-bottom: 0px;}
+div.col-33 table.race-details td > span.title3 {font-size: 10px; margin-bottom: 0px;}
+div.col-33 table.race-details td.candidate > table > tbody > tr > td {font-size: 12px;}
+div.col-33 table.race-details a.precinct, div.col-33 table.race-details span.pct {font-size: 11px !important; float: none !important; margin-top: 5px;}
+div.col-33 table.race-details span.pct {float: left !important; text-align: left !important; width: 100% !important;}
+table.race-details > tbody > tr:nth-child(4) > td {padding-top: 10px;}

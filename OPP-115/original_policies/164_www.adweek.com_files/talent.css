@@ -1,0 +1,24 @@
+#talent #header {
+    background: #d13334;
+}
+#talent #header-login a {
+	color:#FFF;
+	color: rgba(255,255,255, 0.75);
+	text-decoration:underline;
+}
+#talent #header-login li {
+	border-left: 0 none;
+}
+#talent #header-login li:last-child {
+	border-left: solid 1px #aad5e7;
+	border-color: rgba(255, 255, 255, .2);
+}
+#talent .user-welcome {
+	line-height:28px;
+	display:block;
+	background:none;
+	border:0 none;
+	font-size:11px;
+	padding:0 10px;
+	color:#FFF;
+}

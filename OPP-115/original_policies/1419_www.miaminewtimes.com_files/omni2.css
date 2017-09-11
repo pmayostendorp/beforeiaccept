@@ -1,0 +1,561 @@
+/* New VVM Modal */
+.vvmModal iframe,
+.vvmModal-light iframe { height: 100%; width: 100%; }
+.vvmModal span.modal_loading,
+.vvmModal span.modal_alert ,
+.vvmModal span.modal_message {
+    display: block;
+    font-size: 12px;
+}
+.vvmModal span.modal_loading{
+    padding: 15px 5px 15px 30px;
+    background: url("/img/modal_spin_black.gif") no-repeat left center;
+}
+.vvmModal span.message > p{
+    padding: 15px;
+    margin: 0;
+    line-height: 25px;
+}
+.vvmModal span.modal_loading.message > p {
+    padding: 0;
+}
+.vvmModal span.modal_loading > p,
+.vvmModal span.modal_alert > p {
+    text-align: left;
+}
+.vvmModal span.modal_message > p {
+    text-align: center;
+}
+.vvmModal .view-profile {
+    text-decoration: underline !important;
+}
+.vvmModal span.modal_alert > p{
+    text-align: center;
+}
+.vvmModal #modal-welcome,
+.vvmModal #modal-cookies{
+    font-size: 14px;
+    text-align: center;
+}
+.vvmModal #modal-welcome > p,
+.vvmModal #modal-welcome > p > br,
+.vvmModal #modal-cookies > p{
+    margin: 10px auto;
+}
+.vvmModal #modal-welcome > p > img,
+.vvmModal #modal-cookies > p > img {
+    display: block;
+    margin: 20px auto 10px;
+    cursor: pointer;
+}
+
+/* vvmModal Style */
+.vvmModalScreen, .vvmModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 6500010;
+}
+.vvmModalScreen{
+    background-color: #000;
+    background-color: transparent\9;
+}
+:root .vvmModalScreen{
+    background-color: #000\9;
+}
+.vvmModalScreen {
+    height: 100%;
+    width: 100%;
+}
+.vvmModal {
+    background-color: white;
+    min-width: 80px;
+    color: black;
+    -moz-box-shadow: 0 0 50px 0 #343434;
+    -webkit-box-shadow: 0 0 50px 0 #343434;
+    box-shadow: 0 0 50px 0 #343434;
+    border: 5px solid black;
+    font: normal 12px/15px Helvetica Neue, Arial, Verdana, sans-serif;
+}
+.vvmModal .omni-icon-close {
+    cursor: pointer;
+    text-indent: -99em;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+
+/* MVN Like Default Style */
+.mvnLikeWidget .mvnLikeWidgetCount {
+    font-weight: bold;
+    vertical-align: middle;
+}
+.mvnLikeWidget.small .mvnLikeWidgetCount {
+    font-size: 20px;
+    margin: 2px 0 2px 5px;
+}
+.mvnLikeWidget.large .mvnLikeWidgetCount {
+    font-size: 30px;
+    margin: 2px 0 2px 5px;
+}
+.mvnLikeWidget .mvnLikeWidgetButton {
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+}
+.mvnLikeWidget.small .mvnLikeWidgetButton {
+    background: url("http://assets.myvoicenation.com/img/likebutton-small.png") no-repeat;
+    height: 20px;
+    width: 45px;
+    margin: 2px 5px;
+}
+.mvnLikeWidget.small .mvnLikeWidgetButton:hover {
+    background-image: url("http://assets.myvoicenation.com/img/likebutton-hover-small.png")
+}
+.mvnLikeWidget.small .mvnLikeWidgetButton.active {
+    background-image: url("http://assets.myvoicenation.com/img/likebutton-active-small.png")
+}
+.mvnLikeWidget.small .mvnLikeWidgetButton.active:hover {
+    background-image: url("http://assets.myvoicenation.com/img/likebutton-active-hover-small.png")
+}
+.mvnLikeWidget.large .mvnLikeWidgetButton {
+    background: url("http://assets.myvoicenation.com/img/likebutton-large.png") no-repeat;
+    height: 27px;
+    width: 54px;
+    margin: 2px 5px;
+}
+.mvnLikeWidget.large .mvnLikeWidgetButton:hover {
+    background-image: url("http://assets.myvoicenation.com/img/likebutton-hover-large.png")
+}
+.mvnLikeWidget.large .mvnLikeWidgetButton.active {
+    background-image: url("http://assets.myvoicenation.com/img/likebutton-active-large.png")
+}
+.mvnLikeWidget.large .mvnLikeWidgetButton.active:hover {
+    background-image: url("http://assets.myvoicenation.com/img/likebutton-active-hover-large.png")
+}
+
+/* MVN Signup (rail widget) */
+.mvnSignupWidget{
+    text-align: center;
+}
+.mvnSignupWidget p{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 5px;
+}
+.mvnSignupWidget p + img{
+    cursor: pointer;
+}
+
+/* MVN Subscribe Widget */
+button.mvnElement_subscribe {
+    background-color: #F16F2B;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+button.mvnElement_subscribe.disabled {
+    filter: alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+button.mvnElement_subscribe.subscribed {
+    background-color: #EEE;
+    color: #333;
+}
+
+/* Cross Browser Transparency */
+.trans-75{
+    zoom: 1;
+    width: 100%;
+    filter: alpha(opacity=75);
+	background-image: url('http://assets.myvoicenation.com/img/trans-75.png')\9;
+    -moz-opacity:0.75;
+    -khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+.trans-50{
+    zoom: 1;
+    width: 100%;
+    filter: alpha(opacity=50);
+	background-image: url('http://assets.myvoicenation.com/img/trans-50.png')\9;
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.trans-25{
+    zoom: 1;
+    width: 100%;
+    filter: alpha(opacity=25);
+	background-image: url('http://assets.myvoicenation.com/img/trans-25.png')\9;
+    -moz-opacity:0.25;
+    -khtml-opacity: 0.25;
+	opacity: 0.25;
+}
+
+/* New Modal Trans */
+div.vvmModalScreen-light.trans-75{
+    background-image: url('http://assets.myvoicenation.com/img/trans-light-75.png')\9;
+}
+div.vvmModalScreen-light.trans-50{
+    background-image: url('http://assets.myvoicenation.com/img/trans-light-50.png')\9;
+}
+div.vvmModalScreen-light.trans-25{
+    background-image: url('http://assets.myvoicenation.com/img/trans-light-25.png')\9;
+}
+
+/* LFv3 Blog fixes */
+.lfBox.v3 #livefyre{
+    width: 550px;
+}
+.lfBox.v3 #livefyre .fyre-help{
+    display: none;
+}
+.lfBox.v3 span.links{
+    z-index: 1;
+    top:10px;
+}
+#livefyreLiveBlog{
+    position:relative;
+    margin:5px;
+}
+#livefyreLiveBlog span.links{
+    z-index: 1;
+    top:0px;
+    right:0px;
+    position:absolute;
+}
+#livefyreLiveBlog .fyre-help{
+    display: none;
+}
+
+.lfBox.v3 span.anon_username{
+    color: #256995;
+    font-weight: bold;
+    cursor: default;
+}
+.lfBox.v3 #livefyre .lfreg{
+    font: normal normal bold 16px/normal 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    cursor: pointer;
+}
+.lfBox.v3 #livefyre .lfreg:hover{
+    color: #3390CC;
+}
+.lfBox.v3 #livefyre .fyre-login-bar a.fyre-user-loggedout{
+    margin: 0 5px 0 0;
+}
+.lfBox.v3 #livefyre .fyre-notifier-container{
+   background: none repeat scroll 0 0 #888888;
+}
+
+/* vvmUserMenu */
+.vvmUserMenu {
+    width: 225px;
+    height: 115px;
+    display: none;
+    position: absolute;
+    z-index: 7000000;
+}
+.vvmUserMenu span {
+    /*height: 80px;*/
+    display: block;
+	background: #343434;
+    margin-bottom: 15px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 8px;
+    color: #FFF;
+    -moz-box-shadow: 0 0 50px 0 #343434;
+    -webkit-box-shadow: 0 0 50px 0 #343434;
+    box-shadow: 0 0 25px -5px #343434;
+    color: #FFFFFF;
+    font: 12px/15px Helvetica Neue,Arial,Verdana,sans-serif;
+    overflow:hidden;
+}
+.vvmUserMenu span img{
+    float: left;
+    height: 50px;
+    margin: 0 5px 5px 0;
+    width: 50px;
+}
+.vvmUserMenu span h4{
+    display: inline-block;
+    font-size: 18px;
+    height: 20px;
+    text-align: left;
+    width: 150px;
+}
+.vvmUserMenu span a.button,
+.vvmUserMenu span button{
+    background: #FC8C02;
+    border: none;
+    display: block;
+    margin: 2px 0;
+    text-align: center;
+    line-height: 25px !important;
+    width: 100px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px 2px;
+}
+.vvmUserMenu span a.button{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+    clear: both;
+}
+.vvmUserMenu span a.button.long{
+    width: 205px;
+}
+.vvmUserMenu span a.button:hover{
+    background-color: #F16F2B;
+}
+.vvmUserMenu span button{
+    float: right;
+}
+.vvmUserMenu.bottom span{
+    margin-top: 15px;
+}
+.vvmUserMenu span:after{
+	top: 100px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.vvmUserMenu span:after {
+	border-color: rgba(52, 52, 52, 0);
+	border-top-color: #343434;
+	border-width: 15px;
+	left: 50%;
+	margin-left: -15px;
+}
+.vvmUserMenu.bottom span:after {
+    top: auto;
+	bottom: 100px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.vvmUserMenu.bottom span:after {
+	border-color: rgba(52, 52, 52, 0);
+	border-bottom-color: #343434;
+    border-top-color: none;
+	border-width: 15px;
+	left: 50%;
+	margin-left: -15px;
+}
+.vvmUserMenu span.left:after{
+    left: 25%;
+}
+.vvmUserMenu span.right:after{
+    left: 75%;
+}
+
+/* vvmEventMenu */
+.vvmEventMenu{
+    width: 225px;
+    min-height: 40px;
+    display: none;
+    position: absolute;
+    z-index: 7000000;
+
+}
+.vvmEventMenu span{
+    height: 90px;
+    display: block;
+    background: #ffffff;
+    margin-bottom: 15px;
+    border:2px #999999 solid;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 2px 2px 2px 2px;
+    padding: 8px;
+    color: #FFF;
+    -moz-box-shadow: 0 0 50px 0 #343434;
+    -webkit-box-shadow: 0 0 50px 0 #343434;
+    box-shadow: 0 0 25px -5px #343434;
+    font: 12px/15px Helvetica Neue,Arial,Verdana,sans-serif;
+    overflow:hidden;
+    z-index: 1000000;
+}
+.vvmEventMenu .whosgoing {
+    width: 100%;
+    height: 20px;
+    margin-top: 38px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.vvmEventMenu .count{
+    font-weight: bold;
+    color: #000000;
+}
+.vvmEventMenu span img{
+    float: left;
+    height: 50px;
+    margin: 0 5px 5px 0;
+    width: 50px;
+}
+.vvmEventMenu span h4{
+    display: inline-block;
+    font-size: 18px;
+    height: 20px;
+    text-align: left;
+    width: 150px;
+}
+.vvmEventMenu span a.button,
+.vvmEventMenu span button{
+    background: #cc0000 url('/img/diagonals.png');
+    cursor:pointer;
+    border: none;
+    display: block;
+    margin: 2px 0;
+    text-align: center;
+    line-height: 25px !important;
+    width: 100%;
+    padding: 3px 2px;
+}
+.vvmEventMenu span a.button{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+    clear: both;
+}
+.vvmEventMenu span a.button.long{
+    width: 205px;
+}
+.vvmEventMenu span a.button:hover{
+    background: #cc0000 url('/img/diagonals.png');
+    color: #ffffff;
+}
+.vvmEventMenu span button{
+    float: right;
+    clear: both;
+    color: #ffffff;
+    font: bold 17px Helvetica Neue,Arial,Verdana,sans-serif;
+
+}
+.vvmEventMenu.bottom span{
+    margin-top: 15px;
+}
+.vvmEventMenu .triangle {
+    left: 75%;
+    position: absolute;
+    margin-left: -15px;
+    z-index: 100000;
+    height: 1px;
+    width: 1px;
+
+}
+.vvmEventMenu .bottomtri {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #ffffff;
+}
+.vvmEventMenu .toptri {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #ffffff;
+}
+
+/* Follow Button */
+.mvnFollowButton{
+    cursor: pointer;
+}
+.mvnFollowButton.small{
+    background: #FC8C02;
+    text-align: center;
+    color: #FFF;
+    font: bold 12px/15px Helvetica Neue,Arial,Verdana,sans-serif;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+.mvnFollowButton.small:hover{
+    background-color: #F16F2B;
+}
+.mvnFollowButton.small.following{
+    background-color: #CCC;
+}
+.mvnFollowButton.small.following:hover{
+    background-color: #999;
+}
+.mvnFollowButton.loading{
+    cursor: wait;
+}
+.mvnFollowButton.small.loading{
+    background: url("http://assets.myvoicenation.com/img/modal_spin_black.gif") 50% 50% no-repeat no-repeat #FC8C02;
+}
+.mvnFollowButton.large{
+    width: 95px;
+    height: 27px;
+    background: url('http://assets.myvoicenation.com/img/buttons-follow-lg.png') 0 0 no-repeat;
+    border: none;
+}
+.mvnFollowButton.large.following{
+    background: url('http://assets.myvoicenation.com/img/buttons-follow-lg.png') 0 -27px no-repeat;
+}
+.mvnFollowButton.large:hover{
+    background: url('http://assets.myvoicenation.com/img/buttons-follow-lg.png') -95px 0 no-repeat;
+}
+.mvnFollowButton.large.following:hover{
+    background: url('http://assets.myvoicenation.com/img/buttons-follow-lg.png') -95px -27px no-repeat;
+}
+
+/**
+ * Livefyre Badges
+ */
+.fyre-comment-wrapper .mvn-badge {
+    background: url(http://assets.myvoicenation.com/img/livefyre-badges.png) no-repeat 0px 0px;
+    position: relative;
+    top: 3px;
+    display: none;
+    height: 16px;
+    width: 64px;
+    margin: 0 0 0 4px;
+}
+.fyre-comment-wrapper .mvn-badge.communitymanager{
+    display: inline-block;
+    width: 150px;
+    background-position: 0px -24px;
+}
+.fyre-comment-wrapper .mvn-badge.topcommenter {
+    display: inline-block;
+    background-position: 0px -64px;
+    width: 120px;
+}
+.fyre-comment-wrapper .mvn-badge.vocalizer {
+    display: inline-block;
+    background-position: 0px -84px;
+    width: 120px;
+}
+.fyre-comment-wrapper .mvn-badge.writer {
+    display: inline-block;
+    background-position: 0px -3px;
+}
+.fyre-comment-wrapper .mvn-badge.editor {
+    display: inline-block;
+    background-position: 0px -44px;
+}

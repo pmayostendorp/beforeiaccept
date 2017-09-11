@@ -1,0 +1,524 @@
+body {
+	background-repeat: repeat-y;
+}
+
+div#WNHeader{background-color:#fff !important}
+
+/* Columns */
+.wnColConfig4 .wnColConfig23 #WNCol2 {
+	width: 335px;
+}
+.wnColConfig23 #WNCol3 {
+	width: 300px;
+}
+
+/* Branding Header */
+#WNHeader {
+	position: relative;
+}
+
+/* Leaderboard Ad */
+#WNAd41, #WNAd46 {
+	height: 90px;
+	position: absolute;
+	right: 5px;
+	bottom: 1px;
+	z-index: 1;
+	background: url('http://ftpcontent.worldnow.com/meredith/custom/2012/images/bg_advertisement_vertical.gif') no-repeat #ffffff left center;
+	padding-left: 13px;
+	border: none;
+}
+#WNAd101 {
+	position: relative;
+	*position: static;
+	width: 728px;
+	height: 90px;
+	background: url('http://ftpcontent.worldnow.com/meredith/custom/2012/images/bg_advertisement_vertical.gif') no-repeat #ffffff left center;
+	padding-left: 13px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	overflow: hidden;
+}
+#WNAd41 iframe, #WNAd46 iframe, #WNAd101 iframe {
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+/* Column Min-Height Hack */
+#WNCol23, #WNCol4 {
+	min-height: 0 !important;
+}
+#WNCol23.ie10 {
+	height: auto !important;
+}
+
+/* Member Center and Search */
+#WNHeader .wnSearchBox label {
+	margin-top: 4px;
+}
+.wnSearchBox .wnSubmit {
+	background-color: #F0F0F0;
+}
+
+/* Main Menu */
+.wnMainMenu .wnHorizontal .wnMenuTypeText A {
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 26px;
+	text-align: center;
+}
+.wnMainMenu .wnHorizontal .wnMenuTypeText A.normal {
+	text-transform: none;
+}
+.wnMainMenu .wnHorizontal .wnMenuTypeText ul ul A {
+	text-transform: none;
+	text-align: left;
+	line-height: auto;
+	line-height: 16px;
+}
+
+/* Branding Feature - Hide */
+#WNDS70 {
+	display: none;
+}
+
+/* Overall Display Size */
+.wnBlock.displaySize {
+	margin-bottom: 0;
+}
+
+/* Content Group */
+#WNColsAll .wnDSContainer-standard, .wnBlock.displaySize .contentGroup {
+	border: none;
+}
+
+/* Content Group - Border Exclusion */
+/*
+ #WNColsAll #WNTSWContent .wnDS-20.wnDSContainer-standard,
+ #WNColsAll .wnDS-18.wnDSContainer-standard,
+ #WNColsAll .wnDS48.wnDSContainer-standard,
+ #WNColsAll .wnDS40.wnDSContainer-standard,
+ #WNColsAll .wnDS37.wnDSContainer-standard {
+ border: none;
+ }
+ */
+
+/* Global Header */
+#WNColsAll .wnDSContainer-standard .wnDSHeader, .wnBlock.displaySize .header {
+	overflow: hidden;
+	background: #ffffff;
+	border-bottom: 1px solid #c3c3c3;
+}
+#WNColsAll .wnDSContainer-standard .wnDSHeader {
+	padding: 5px;
+}
+#WNColsAll .wnDSContainer-standard .wnDSHeader h3 {
+	padding: 0;
+}
+#WNColsAll .wnDSContainer-standard .wnDSHeader h3, .wnBlock.displaySize .header h3 {
+	margin: 0;
+}
+#WNColsAll .wnDSContainer-standard .wnDSHeader h3 {
+	font-size: 16px;
+	line-height: 1;
+}
+.wnBlock.displaySize .header h3 .text {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+/* Global Header - IE7 Hack */
+.wnBlock.displaySize .header h3 .text {
+	*float: left;
+}
+#WNColsAll .wnDSContainer-standard .wnDSHeader h3, .wnBlock.displaySize .header h3 .text {
+	*line-height: normal;
+}
+.wnBlock.displaySize .header h3 .more .text {
+	line-height: 16px;
+	*font-size: 12px;
+	*font-weight: bold;
+	*color: #005796;
+	*text-decoration: none;
+}
+.wnBlock.displaySize .header .wnClear {
+	*clear: none;
+}
+
+/* Breaking News */
+#DisplaySizeId-30.wnBlock.displaySize .contentGroup {
+	border: 1px solid #ab1100;
+	margin-bottom: 1.5em;
+}
+#DisplaySizeId-30.wnBlock.displaySize .header {
+	display: block !important;
+	overflow: hidden;
+	background: #a11000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #940d00 0%, #a11000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#940d00), color-stop(100%,#a11000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #940d00 0%,#a11000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #940d00 0%,#a11000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #940d00 0%,#a11000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #940d00 0%,#a11000 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#940d00', endColorstr='#a11000',GradientType=0 ); /* IE6-9 */
+}
+#DisplaySizeId-30.wnBlock.displaySize .header h3 .text {
+	text-transform: uppercase;
+}
+#DisplaySizeId-30.wnBlock.displaySize .header h3 .text:first-child {
+	display: inline !important;
+}
+#DisplaySizeId-30.wnBlock.displaySize .header h3 .more .text {
+	*color: #ffffff;
+}
+#DisplaySizeId-30.wnBlock.displaySize .sectionTitle, #DisplaySizeId-30.wnBlock.displaySize .summaryImage {
+	display: none;
+}
+
+/* Summary Item Timestamps */
+.displaySize .timestamps {
+	font-size: 10px;
+	color: #7f7f7f;
+}
+
+/* Video Included Icon */
+.displaySize .wn-icon.wn-icon-clip, .displaySize .wn-icon.wn-icon-video-included {
+	width: 16px;
+	height: 7px;
+}
+.displaySize .wn-icon.wn-icon-video-included {
+	display: none;
+}
+
+/* List Items */
+.wnDSItems-standard .wnDSItemsList li.wnDVHeadline, .wnBlock.displaySize.displaySizeId-1 .headline, .wnBlock.displaySize.displaySizeId-10 .headline, .wnBlock.displaySize.displaySizeId3 .headline, .wnBlock.displaySize.displaySizeId14 .headline,
+/* Inside Content Group */
+.wnBlock.displaySize .displaySizeId-1 .headline, .wnBlock.displaySize .displaySizeId-10 .headline, .wnBlock.displaySize .displaySizeId3 .headline, .wnBlock.displaySize .displaySizeId14 .headline {
+	padding-left: 0;
+	background-image: none;
+	/*background-position: 0 6px;*/
+}
+.wnDSItems-standard .wnDSItemsList li.wnDVHeadlineVideo {
+	background-position: 0 3px;
+}
+/*
+ .wnDSItems-standard .wnDSItemsList li.wnDVHeadline a,
+ .wnDSItems-standard .wnDSItemsList li.wnDVHeadlineVideo a,
+ .wnBlock.displaySize.displaySizeId-1 .headline a,
+ .wnBlock.displaySize.displaySizeId-10 .headline a,
+ .wnBlock.displaySize.displaySizeId3 .headline a,
+ .wnBlock.displaySize.displaySizeId14 .headline a,
+ */
+/* Inside Content Group */
+/*
+ .wnBlock.displaySize .displaySizeId-1 .headline a,
+ .wnBlock.displaySize .displaySizeId-10 .headline a,
+ .wnBlock.displaySize .displaySizeId3 .headline a,
+ .wnBlock.displaySize .displaySizeId14 .headline a {
+ font-weight: normal;
+ color: #3c3c3c;
+ }
+ .wnDSItems-standard .wnDSItemsList li.wnDVHeadline a:hover,
+ .wnDSItems-standard .wnDSItemsList li.wnDVHeadlineVideo a:hover,
+ .wnBlock.displaySize.displaySizeId-1 .headline a:hover,
+ .wnBlock.displaySize.displaySizeId-10 .headline a:hover,
+ .wnBlock.displaySize.displaySizeId3 .headline a:hover,
+ .wnBlock.displaySize.displaySizeId14 .headline a:hover,
+ */
+/* Inside Content Group */
+/*
+ .wnBlock.displaySize .displaySizeId-1 .headline a:hover,
+ .wnBlock.displaySize .displaySizeId-10 .headline a:hover,
+ .wnBlock.displaySize .displaySizeId3 .headline a:hover,
+ .wnBlock.displaySize .displaySizeId14 .headline a:hover {
+ text-decoration: underline;
+ }
+ */
+.wnBlock.displaySize .displaySizeId-18 .headline {
+	padding-left: 0;
+	background-image: none;
+}
+/*
+ .wnDSItems-standard .wnDSItemsList li.wnDVHeadline {
+ background-image: url("http://ftpcontent.worldnow.com/meredith/custom/2012/images/blt_headline.gif");
+ }
+ */
+/* Inside Content Group */
+.wnBlock.displaySize .displaySizeId-1, .wnBlock.displaySize .displaySizeId-10, .wnBlock.displaySize .displaySizeId3, .wnBlock.displaySize .displaySizeId14 {
+	padding: 0.5em 1em 0;
+}
+.wnBlock.displaySize .displaySizeId-1.last, .wnBlock.displaySize .displaySizeId-10.last, .wnBlock.displaySize .displaySizeId3.last, .wnBlock.displaySize .displaySizeId14.last {
+	padding-bottom: 0.5em;
+}
+.wnBlock.displaySize .displaySizeId-1 .headline, .wnBlock.displaySize .displaySizeId-10 .headline, .wnBlock.displaySize .displaySizeId3 .headline, .wnBlock.displaySize .displaySizeId14 .headline {
+	background-image: none;
+}
+
+/* Global Override */
+.displaySize .feature {
+	/*padding: 5px 1em 10px !important;*/
+}
+
+/* Col.2 Stackable Headline Box */
+#WNCol2 .wnBlock.displaySize.headlineBox .contentGroup.odd, #WNCol2 .wnBlock.displaySize.headlineBox .contentGroup.even {
+	float: none;
+	width: auto;
+}
+
+/* Column Ads */
+/* Top Story Wrap Bottom Banner */
+#wnsz_TSW_BotAd,
+/* Col. 2/3 Full Banner */ #WNAd1,
+/* Col. 2 Medium Rectange B */ #WNAd52,
+/* Col. 3 Additional Medium Rectange */ #WNAd100,
+/* Col. 4 Medium Rectange A */ #WNAd43,
+/* Col. 4 300x600 */ #WNAd63, #WNAd20, #WNAd22, #WNAd22New {
+	padding-top: 13px;
+	background-image: url("http://ftpcontent.worldnow.com/meredith/custom/2012/images/bg_advertisement_horizontal.gif");
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#WNAd100 {
+	margin-left: auto;
+	margin-right: auto;
+}
+#WNAd100 .responsive {
+	display: none;
+}
+
+#WNAd49, #WNAd49 iframe, #wnTextAd, #wnTextAd iframe {
+	width: 645px;
+}
+#wnTextAd {
+	clear: both;
+}
+
+/* RSS block */
+.wnBlock.displaySize.rss .wnItem.feature {
+	padding: 5px 5px 3px;
+	margin: 0;
+}
+
+/* Ticker white bullet */
+#WNCols234-5 #WNDS40 .wnDSItemsList h4 {
+	background-image: url('http://ftpcontent.worldnow.com/meredith/custom/2012/images/ds40_bullet.png');
+}
+
+/* CUSTOM FOOTER */
+#WNFooter, #WNFooter #WNCopyrightAlignment, #WNFooter #WNCopyrightAlignment #WNCopyright, #WNFooter #WNCopyrightAlignment #WNCopyright .wnCopyrightText {
+	display: block;
+	float: none;
+	width: auto;
+	max-width: none;
+	padding: 0;
+	margin: 0;
+	border: 0 !important;
+}
+#WNFooter #WNCopyrightAlignment #WNCopyright img {
+	float: none;
+	padding: 0;
+}
+#WNFooter #WNCopyright table {
+	width: 100%;
+}
+#WNFooter #WNCopyright table td:first-child {
+	display: none;
+}
+#WNFooter #csFooter {
+	overflow: hidden;
+	padding: 14px 8px 10px;
+	height: 127px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #e6edf3 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6edf3), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #e6edf3 0%,#ffffff 100%);
+	background: -o-linear-gradient(top, #e6edf3 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #e6edf3 0%,#ffffff 100%);
+	background: linear-gradient(to bottom, #e6edf3 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6edf3', endColorstr='#ffffff',GradientType=0 );
+}
+#WNFooter #csFooter .csFooterCol {
+	float: left;
+	padding: 4px 3px 0 17px;
+	width: 155px;
+	height: 86px;
+	border-left: 1px solid #d1e4f4;
+	border-right: 1px solid #fff;
+}
+#WNFooter #csFooter .csFooterCol.csFirst {
+	width: 198px;
+	border-left: 0;
+}
+#WNFooter #csFooter .csFooterCol.csLast {
+	border-right: 0;
+}
+#WNFooter #csFooter .csFooterCol.csFirst img {
+	margin: 8px 2px 0;
+	border: 0;
+}
+#WNFooter #csFooter .csFooterCol h3 {
+	margin: 0 0 8px;
+	padding: 0;
+}
+#WNFooter #csFooter .csFooterCol h3, #WNFooter #csFooter .csFooterCol h3 a {
+	color: #005795;
+	font: bold 12px Arial, Helvetica, sans-serif !important;
+	text-decoration: none !important;
+	text-transform: uppercase;
+}
+#WNFooter #csFooter .csFooterCol ul, #csFooter .csFooterCol li {
+	display: block;
+	margin: 0 0 3px;
+	padding: 0;
+	list-style: none;
+}
+#WNFooter #csFooter .csFooterCol ul {
+}
+#WNFooter #csFooter .csFooterCol li, #WNFooter #csFooter .csFooterCol li a {
+	color: #005795;
+	font: normal 10px Arial, Helvetica, sans-serif !important;
+	text-decoration: none !important;
+}
+#WNFooter #csFooter .csFooterCol li a:hover, #WNFooter #csFooter .csFooterCol li a:active {
+	text-decoration: underline !important;
+}
+#WNFooter #csFooter #csFooterBottom {
+	clear: both;
+	padding-top: 9px;
+	text-align: center;
+}
+#WNFooter #csFooter #csFooterBottom img {
+	float: none;
+	vertical-align: top;
+}
+#WNFooter #csFooter #csFooterBottom a.csLogoWN img {
+	margin: -5px 8px 0 0;
+}
+#WNFooter #csFooter #csFooterBottom a.csLogoCNN img {
+	margin: 4px 138px 0 0;
+}
+#WNFooter #csFooter #csFooterBottomText {
+	display: inline-block;
+	color: #000;
+	font: normal 10px Arial, Helvetica, sans-serif;
+	/* IE7 HACK BELOW */
+	*display: inline;
+	zoom: 1;
+}
+#WNFooter #csFooter #csFooterBottomText a {
+	color: #005795 !important;
+	font: normal 10px Arial, Helvetica, sans-serif !important;
+	text-decoration: underline !important;
+}
+#WNFooter #csFooter #csFooterBottomText span {
+	color: #005795;
+}
+
+/* Code Provided by client 7/25/2012 */
+#CNNHighlights {
+	width: 166px;
+	float: left;
+	clear: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	/* fallback */
+	background-color: #cccccc;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cccccc), to(#dddddd));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #cccccc, #dddddd);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #cccccc, #dddddd);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #cccccc, #dddddd);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #cccccc, #dddddd);
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #000000;
+	color: #333333;
+	padding: 5px;
+}
+#CNNHighlights h3.storyHighlights {
+	margin-top: 0px;
+	color: #aa0907;
+	text-align: center;
+	padding: 3px;
+	border-bottom: 1px solid #000000;
+}
+div.CNNByline {
+	margin: 5px auto 10px 0px;
+	width: 630px;
+}
+p.CNNcontributor {
+	font-style: italic;
+	color: #999999;
+}
+div.CNNCopyright {
+	width: 620px;
+	margin: 5px auto 5px 0px;
+	clear: both;
+}
+div.cnnEditorsNote {
+	color: #999999;
+}
+div.cnnEditorsNote em {
+	color: #000000;
+}
+
+/* TABOOLA CLEAR FIX */
+#taboola-grid-4x2 {
+	clear: both;
+}
+
+/* ABOVE BRANDING */
+#WNContainerMemberSearch-headertop #csSocial, #WNContainerMemberSearch-headertop #csSocial a, #WNContainerMemberSearch-headertop #csSocial span {
+	float: left;
+}
+#WNContainerMemberSearch-headertop #csSocial {
+	padding-top: 2px;
+	position: relative;
+	left: 50px;
+	width: 200px;
+}
+#WNContainerMemberSearch-headertop #csSocial a {
+	background: url("http://ftpcontent.worldnow.com/wncustom/custom/meredith/2012/images/social_icons.png");
+	height: 22px;
+	width: 22px;
+	margin-left: 6px;
+}
+#WNContainerMemberSearch-headertop #csSocial a#twitter {
+	background-position: -22px 0;
+}
+#WNContainerMemberSearch-headertop #csSocial a#google {
+	background-position: -44px 0;
+}
+#WNContainerMemberSearch-headertop #csSocial a#mobile {
+	background-position: -66px 0;
+}
+
+#WNContainerMemberSearch-headertop #csSocial span {
+	color: #818181;
+	padding-top: 6px;
+	text-transform: uppercase;
+}
+
+#csBottomLeaderboard {
+	float: left;
+}
+/*#WNStoryUtils {
+	padding: 0;
+	float: right;
+	margin: 5px 0 10px;
+	max-height: 20px;
+	overflow: hidden;
+} */
+#WNAd1{
+	background-color: white !important;
+}

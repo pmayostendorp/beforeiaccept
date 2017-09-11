@@ -1,0 +1,558 @@
+/* CSS Document */
+.gigya-screen *, div.gigya-screen, .gigya-screen span, .gigya-screen a:hover, .gigya-screen a:visited, .gigya-screen a:link, .gigya-screen a:active {
+		border: none;
+		padding: 0px;
+		margin: 0px;
+		color: inherit;
+		text-decoration: none;
+		width: auto;
+		float: none;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		font-family: arial;
+		font-size: 12px;
+		color: #333333;
+		background: none;
+		text-align: left;
+		font-family: arial;
+	}
+	.gigya-screen a, .gigya-screen a:visited, .gigya-screen a:link, .gigya-screen a:active {
+		color: #0098ca;
+		text-decoration: underline;
+	}
+	.gigya-screen-set .gigya-screen {
+		margin: 0 auto;
+	}
+	.gigya-screen h2 {
+		font-size:16px;
+		color:#333;
+		font-weight: normal;
+	}
+	.gigya-screen a:hover {
+		text-decoration: none;
+	}
+	.gigya-screen h1 {
+		border-bottom: 1px solid #dbdbdb;
+		font-size: 16px;
+		font-family: Arial;
+		font-weight: bold;
+		color: #333;
+		padding-bottom: 5px;
+		margin-bottom: 45px;
+	}
+	.gigya-screen .gigya-layout-row {
+		width:100%;
+		zoom:1;
+		float:left;
+		display:block;
+	}
+	.gigya-screen .gigya-layout-cell {
+		float: left;
+		width: 50%;
+		margin-top: 1px;
+	}
+	.gigya-screen .gigya-layout-cell-right {
+		float: right;
+		width: 50%;
+	}
+	.gigya-screen select {
+		margin: 5px 0px;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: #FFFFFF;
+		border: 1px solid #CCCCCC;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	.gigya-screen option {
+		padding: 5px;
+	}
+	.gigya-screen option:hover {
+		background-color: #3593C1;
+	}
+	.gigya-screen .gigya-label {
+		display: block;
+		font-weight: bold;
+		font-size: 12px;
+	}
+	.gigya-screen .gigya-required {
+		color: red;
+		font-size: 12px;
+		font-weight: bold;
+		margin-left: 5px;
+	}
+	.gigya-input-text, .gigya-input-password, .gigya-textarea {
+		
+  display: block;
+  width: 93%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+
+	}
+	.gigya-textarea {
+		padding: 5px;
+	}
+	.gigya-input-text, .gigya-input-password, .gigya-screen select, .gigya-input-submit, .gigya-input-button {
+		height: 28px;
+	}
+	.gigya-input-text:focus, .gigya-input-password:focus, .gigya-textarea:focus, .gigya-screen select:focus {
+		border: 1px solid #87B9EA;
+		outline: none;
+	}
+	.gigya-input-text:focus, .gigya-input-password:focus, .gigya-textarea:focus {
+		box-shadow: 0 0 3px #50BADE, inset 0 1px 3px rgba(0, 0, 0, .05);
+		-webkit-box-shadow: 0 0 3px #50BADE, inset 0 1px 3px rgba(0, 0, 0, .05);
+		-moz-box-shadow: 0 0 3px #50BADE, inset 0 1px 3px rgba(0, 0, 0, .05);
+	}
+	.gigya-input-submit, .gigya-input-button {
+		text-align:center;
+		border: 1px solid #CECECE;
+		cursor: pointer;
+		padding: 0 12px;
+		color: #333333;
+		font-weight: bold;
+		border-radius: 4px;
+		line-height: 26px;
+		background: #F2F2F2;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#F2F2F2");
+		background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F2F2F2));
+		background: -moz-linear-gradient(top, #FFFFFF, #F2F2F2);
+	}
+	.gigya-input-submit:hover, .gigya-input-button:hover {
+		background: #FFFFFF;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F2F2F2", endColorstr="#FFFFFF");
+		background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#FFFFFF));
+		background: -moz-linear-gradient(top, #F2F2F2, #FFFFFF);
+	}
+	.gigya-input-radio, .gigya-input-checkbox {
+		margin-right: 5px;
+		vertical-align: bottom;
+		height: 14px;
+		width: 14px;
+	}
+	input.gigya-input-text, input.gigya-input-password {
+		display: block;
+	}
+	.gigya-screen .gigya-composite-control {
+		padding: 5px 13px 5px 10px;
+	}
+	.gigya-screen .gigya-composite-control-submit, .gigya-screen .gigya-composite-control-button, .gigya-screen .gigya-composite-control-form-error {
+		padding-bottom:5px;
+		padding-right:13px;
+	}
+	.gigya-composite-control-multi-choice .gigya-multi-choice-item, .gigya-composite-control-checkboxes .gigya-checkboxes-item {
+		padding-top:5px;
+	}
+	.gigya-composite-control-form-error {
+		padding-bottom:5px;
+		padding-right:5px;
+	}
+	.gigya-screen .gigya-composite-control-submit {
+		text-align: right;
+	}
+	.gigya-screen .gigya-composite-control-label {
+		display:block;
+	}
+	.gigya-clear {
+		clear: both;
+		overflow: hidden;
+		font-size:0px;
+	}
+	.gigya-composite-control-radio label {
+		font-weight: normal;
+	}
+	.gigya-composite-control-checkbox label {
+		font-weight: normal;
+	}
+	.gigya-screen .gigya-composite-control-checkbox {
+		padding: 5px 10px;
+	}
+	.gigya-screen .gigya-composite-control-checkbox label {
+		display: inline;
+		text-indent: 10px;
+		margin-left: 0px;
+	}
+	.gigya-screen .gigya-message {
+		font-size:14px;
+		color:#333;
+		display: block;
+		text-align: center;
+	}
+	.gigya-screen .gigya-error-display {
+		display:block;
+		visibility:hidden;
+	}
+	.gigya-screen .gigya-error-display-active {
+		display:block;
+		visibility:visible;
+	}
+	.gigya-screen .gigya-error-msg {
+		line-height: 14px;
+		color: #dd4b39;
+		font-size: 11px;
+		display:block;
+		font-weight:normal;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.gigya-screen .gigya-form-error-msg {
+		_height:26px;
+		min-height: 26px;
+		line-height: 14px;
+		color: #dd4b39;
+		font-size: 11px;
+		text-align: center;
+		margin-top: 1px;
+		border: 1px solid #FFDCCE;
+		display: block;
+		background: #FFE7E1;
+		font-weight:normal;
+		padding:5px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.gigya-screen a.gigya-composite-control-link {
+		display:block;
+		padding-left:13px;
+	}
+	.gigya-screen .gigya-composite-control a.gigya-composite-control-link {
+		display:inline;
+		padding:0px;
+	}
+	.gigya-screen .gigya-composite-control-checkbox .gigya-label, .gigya-screen .gigya-composite-control-radio .gigya-label {
+		font-weight:normal;
+	}
+	.gigya-layout-footer {
+		text-align:right;
+		clear:both;
+	}
+	#gigya-login-screen .gigya-composite-control-social-login, #gigya-register-screen .gigya-composite-control-social-login {
+		border-right: 1px solid #CCC;
+		height: 125px;
+		width:285px;
+		padding: 13px 38px 0 0px;
+	}
+	#gigya-register-screen .gigya-composite-control-social-login {
+		height: 240px;
+	}
+	.gigya-required-display {
+		color:red;
+	}
+	
+	
+	
+/****** FALLBACK STYLES *******/
+
+.fallback-login-wrap .fancybox-skin{
+	border:8px solid #CCC;
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 4px;
+   	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+.fallback-login-wrap .gigya-composite-control-header{
+	background-color: #f3f3f3;
+	font-size:16px;
+	font-weight:bold;
+	line-height:33px;
+}
+
+
+.fallback-login-wrap .fancybox-close{
+	background-image:url('http://cdn.gigya.com/gs/i/accounts/close_dialog.png');
+	width:20px;
+	height:20px;
+	top:5px;
+	right:5px;
+}
+
+#fallback-login{
+	background-color:#fff;
+}
+
+/******  END FALLBACK STYLES ******/
+	
+	
+@media (max-width: 600px) {
+		
+  .gigya-screen *, div.gigya-screen, .gigya-screen span, .gigya-screen a:hover, .gigya-screen a:visited, .gigya-screen a:link, .gigya-screen a:active {
+    padding: 0px;
+    margin: 0px;
+    color: inherit;
+    text-decoration: none;
+    width: auto;
+    float: none;
+    font-family: arial;
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    font-family: arial;
+    -webkit-text-size-adjust:none;
+  }
+  .gigya-screen a, .gigya-screen a:visited, .gigya-screen a:link, .gigya-screen a:active {
+    color: #0098ca;
+    text-decoration: underline;
+  }
+  .gigya-screen-set .gigya-screen {
+    margin: 0 auto;
+  }
+  .gigya-screen h2 {
+    font-size:18px;
+    color:#333;
+    font-weight: normal;
+  }
+  .gigya-screen h1 {
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 5px;
+    margin-bottom: 45px;
+  }
+  .gigya-screen .gigya-layout-row {
+    width:100%;
+    zoom:1;
+    float:left;
+    display:block;
+  }
+  .gigya-screen .gigya-layout-cell {
+    float: none;
+    width: 100%;
+    margin-top: 1px;
+  }
+  .gigya-screen .gigya-layout-cell-right {
+    float: right;
+    width: 50%;
+  }
+  .gigya-screen select {
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .gigya-screen option {
+    padding: 5px;
+  }
+  .gigya-screen .gigya-label {
+    display: block;
+    font-weight: bold;
+    line-height:16px;
+  }
+  .gigya-screen .gigya-required {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  .gigya-input-text, .gigya-input-password, .gigya-textarea {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    margin: 5px 0px;
+    padding: 0 5px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #555555;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+  }
+  .gigya-textarea {
+    padding: 5px;
+  }
+  .gigya-input-text, .gigya-input-password, .gigya-screen select, .gigya-input-submit, .gigya-input-button {
+    height: 40px;
+  }
+  .gigya-input-text:focus, .gigya-input-password:focus, .gigya-textarea:focus, .gigya-screen select:focus {
+    border: 1px solid #87B9EA;
+    outline: none;
+  }
+  .gigya-input-text:focus, .gigya-input-password:focus, .gigya-textarea:focus {
+    box-shadow: 0 0 3px #50BADE, inset 0 1px 3px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: 0 0 3px #50BADE, inset 0 1px 3px rgba(0, 0, 0, .05);
+    -moz-box-shadow: 0 0 3px #50BADE, inset 0 1px 3px rgba(0, 0, 0, .05);
+  }
+  .gigya-input-submit, .gigya-input-button {
+    border: 1px solid #CECECE;
+    cursor: pointer;
+    padding: 0 12px;
+    color: #333333;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: 26px;
+    background: #F2F2F2;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#F2F2F2");
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F2F2F2));
+    background: -moz-linear-gradient(top, #FFFFFF, #F2F2F2);
+    font-size: 16px;
+  }
+  .gigya-input-radio, .gigya-input-checkbox {
+    width:16px;
+    height:16px;
+    margin-right: 2px;
+    vertical-align: bottom;
+  }
+  input.gigya-input-text, input.gigya-input-password {
+    display: block;
+  }
+  .gigya-screen .gigya-composite-control {
+    padding: 5px 10px 5px 10px;
+  }
+  .gigya-screen .gigya-composite-control-submit, .gigya-screen .gigya-composite-control-button, .gigya-screen .gigya-composite-control-form-error {
+    padding-bottom:5px;
+    padding-right:10px;
+  }
+  .gigya-composite-control-multi-choice .gigya-multi-choice-item, .gigya-composite-control-checkboxes .gigya-checkboxes-item {
+    padding-top:5px;
+  }
+  .gigya-composite-control-form-error {
+    padding-bottom:5px;
+    padding-right:5px;
+  }
+  .gigya-screen .gigya-composite-control-submit {
+    text-align: right;
+  }
+  .gigya-screen .gigya-composite-control-label {
+    display:block;
+  }
+  .gigya-clear {
+    clear: both;
+    overflow: hidden;
+    font-size:0px;
+  }
+  .gigya-composite-control-radio label {
+    font-weight: normal;
+  }
+  .gigya-composite-control-checkbox label {
+    font-weight: normal;
+  }
+  .gigya-screen .gigya-composite-control-checkbox {
+    padding: 5px 10px;
+  }
+  .gigya-screen .gigya-composite-control-checkbox label {
+    display: inline;
+    text-indent: 10px;
+    margin-left: 0px;
+  }
+  .gigya-screen .gigya-message {
+    font-size:14px;
+    color:#333;
+    display: block;
+    text-align: center;
+  }
+  .gigya-screen .gigya-error-display {
+    display:block;
+    visibility:hidden;
+  }
+  .gigya-screen .gigya-error-display-active {
+    display:block;
+    visibility:visible;
+  }
+  .gigya-screen .gigya-error-msg {
+    line-height: 14px;
+    color: #dd4b39;
+    font-size: 14px;
+    display:block;
+    font-weight:normal;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .gigya-screen .gigya-form-error-msg {
+    _height:26px;
+    min-height: 26px;
+    line-height: 14px;
+    color: #dd4b39;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1px;
+    border: 1px solid #FFDCCE;
+    display: block;
+    background: #FFE7E1;
+    font-weight:normal;
+    padding:5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .gigya-screen a.gigya-composite-control-link {
+    display:block;
+    padding-left:13px;
+  }
+  .gigya-screen .gigya-composite-control a.gigya-composite-control-link {
+    display:inline;
+    padding:0px;
+  }
+  .gigya-screen .gigya-composite-control-checkbox .gigya-label, .gigya-screen .gigya-composite-control-radio .gigya-label {
+    font-weight:normal;
+  }
+  .gigya-layout-footer {
+    text-align:right;
+    clear:both;
+  }
+  #gigya-login-screen .gigya-composite-control-social-login, #gigya-register-screen .gigya-composite-control-social-login {
+    height:auto;
+    width:100%;
+	border:0px;
+  }
+  h1.gigya-screen-caption {
+    font-family:arial;
+    font-size: 21px;
+    margin: 5px 13px 5px 10px;
+  }
+  .gigya-screen h2.gigya-composite-control-header {
+    padding-top:15px;
+  }
+  .gigya-required-display {
+    color:red;
+  }
+  
+  .gigya-screen{
+	  background-color:#fff;
+  }		
+		
+		
+		
+  .gigya-captcha{
+	  border:10px solid #000;
+  }
+		
+		
+  .gigya-screen-dialog-mobile{
+	  max-height:100%;
+	  overflow-y:scroll;
+	  padding-bottom:50px;
+  }/**/
+		
+		
+		
+}

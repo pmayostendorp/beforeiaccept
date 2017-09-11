@@ -1,0 +1,202 @@
+/*
+	HEADINGS
+*/
+.subheader {
+	position:relative;
+	z-index:50;
+}
+.subheader .headings {
+	font-size:48px;
+	line-height:48px;
+	font-weight:bold;
+	position:relative;
+	margin: 0 0 10px; /* should be -3px for margin top here */
+	color:#000;
+	letter-spacing:-2px;
+}
+#article .subheader .headings {
+	line-height:53px;
+}
+#article .left-article .subheader .headings {
+	font-size:40px;
+	line-height:42px;
+}
+#article.columns-detail #main .subheader .headings .headline,
+#article.columns-detail #main .subheader .headings .subheadline {
+	font-size:47px;
+	line-height:47px;
+}
+
+
+/*.subheader .headings * {
+	display:inline;
+}*/
+.subheader .headings h1, .subheader .headings h2, .subheader .headings .headline, .subheader .headings .subheadline, .subheader .headings .byline, .subheader .headings .icon, .subheader .headings .sponsoredby  {
+	display:inline;
+}
+
+#article.appearance .subheader .headings h1 {
+	color:#333;
+}
+.sponsored .subheader .headings h1, .article-generic .subheader .headings h1 {
+	font-size:60px;
+	line-height:60px;
+
+}
+.sponsored .subheader .headings {
+	margin-top:-7px;
+}
+.mac.gecko .sponsored .subheader .headings {
+	margin-top:-3px;
+	margin-bottom:6px;
+}
+.article-generic .subheader .headings h1 {
+	line-height:60px;
+	display:block;
+	margin:-7px 0 0;
+}
+.mac.gecko .article-generic .subheader .headings h1 {
+	line-height:53px;
+	margin:0;
+}
+
+.subheader .timestamp {
+	color:#b8b8b8;
+	font-size:13px;
+	line-height:15px;
+	position:absolute;
+	right:0;
+	bottom:10px;
+	font-weight:normal;
+	text-align:right;
+	letter-spacing: 0;
+}
+.subheader .timestamp b {
+	display:block;
+	font-weight:bold;
+}
+.subheader .sponsoredby {
+	position:absolute;
+	bottom:-2px;
+	right:0px;
+}
+#topic.listing .subheader .sponsoredby {
+	bottom:11px;
+}
+.subheader .sponsoredby .slug {
+	font:normal 10px Arial;
+	color:#b8b8b8;
+	letter-spacing:0;
+	position:absolute;
+	left:-72px;
+	bottom:-2px;
+}
+.subheader .sponsoredby * {
+	/*display:block;*/
+}
+
+/* Category listing specific */
+#category.listing .subheader .headings, .single .subheader .headings {
+	font-size:59px;
+	line-height:59px;
+	margin:-3px 0 7px;
+}
+#category .headings h1 {
+	font-family:"Helvetica Neue", Helvetica, Arial;
+	font-weight:bold;
+}
+#category.listing .subheader .headings {
+	margin:-9px 0 13px;
+}
+#category.archives .subheader .headings {
+	margin:-7px 0 6px;
+}
+#category.listing .subheader .headings, #topic.listing .subheader .headings {
+	padding:0 220px 0 0;
+}
+
+/* Topic specific */
+#topic.listing .subheader .headings h1 {
+	font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+	color:#808080;
+	font-weight:normal;
+}
+
+/* Featured */
+#featured .mod-title {
+	color:#FFF;
+	border-bottom:0 none;
+	padding:16px 0 6px;
+}
+
+/* Article detail headings */
+#brandshare .headings .subheadline,
+#webinar .headings .subheadline,
+#article .headings .subheadline, 
+.node-type-news-gallery .headings .subheadline {
+    color: #808080;
+}
+
+#brandshare .headings .byline, 
+#brandshare .headings .byline a,
+#webinar .headings .byline,
+#webinar .headings .byline a,
+#article .headings .byline, 
+#article .headings .byline a, 
+.node-type-news-gallery .headings .byline, 
+.node-type-news-gallery .headings .byline a {
+    color: #ccc;
+}
+
+
+#brandshare .headings .subheadline, 
+#brandshare .headings .byline,
+#webinar .heading .subheadline,
+#webinar .headings .byline,
+#article .headings .subheadline, 
+#article .headings .byline, 
+.node-type-news-gallery .headings .byline {
+	letter-spacing:-1px;
+	font-size:54px;
+}
+#article .left-article .headings .subheadline, #article .left-article .headings .byline {
+	font-size:42px;
+}
+#article.sponsored #main .subheader .headings .headline {
+	color:#333;
+}
+#article.sponsored #main .subheader .headings .headline,
+#article.sponsored #main .subheader .headings .byline {
+	font: bold 48px/48px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#article.sponsored #main .subheader .headings {
+	margin-top:-6px;
+}
+.mac.webkit #article.sponsored #main .subheader .headings {
+	margin-top:-7px;
+}
+#article.sponsored #main .subheader .headings .subheadline,
+#article.sponsored #main .subheader .headings .byline {
+	font-weight:normal;
+	font-family: "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+#contributors .headings h1 {
+	font-family: "Palatino Linotype", Palatino LT Std, Book Antiqua, Palatino, Georgia, serif;
+	font-weight:normal;
+}
+
+#videos.listing .subheader .headings h1 {
+    font-weight: bold;
+	font-size:59px;
+}
+
+.node-headerimage img {
+  margin-bottom: 10px;
+}
+
+.mobile-only-banner {
+  display:none;
+  width:0;
+  height:0;
+}

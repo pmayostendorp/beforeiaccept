@@ -1,0 +1,918 @@
+/*---------------------------------*/
+/* All Mobile   5/12/15            */
+/*---------------------------------*/
+.MobileShow { display: none  !important; }
+.MobileHide { display: block !important; }
+/* Jonathan's style */
+.NoDesktop { display: none !important; }
+
+.PhoneShow { display: none  !important; }
+.PhoneHide { display: block !important; }
+
+@media screen and (max-width:999px) {
+	/* -------------------- */
+	/* Common               */
+	/* -------------------- */
+	.MobileShow { display: block !important; }
+	.MobileHide { display: none  !important; }
+
+	/* Jonathan's style */
+	.NoDesktop { display: block !important; }
+	body
+	{
+		font-family: tahoma,verdana,arial,helvetica,sans-serif;
+		font-size: 1.0em;
+	}
+	h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a
+	{ font-family: Tahoma, 'Arial Narrow', Helvetica, 'MS Sans Serif', sans-serif; }
+	img
+	{
+		border: 0;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.box-shadow, .ShadowBar {box-shadow: none !important; margin:0;}
+
+	/* -------------------- */
+	/* Page Setup           */
+	/* -------------------- */
+
+	div.PageCanvas 
+	{
+		max-width: 98%; 
+		margin: 1em auto 1em auto; 
+		font-family: Tahoma, 'Arial Narrow', Helvetica, 'MS Sans Serif', sans-serif; 
+		font-size: 1.0em;
+	}
+	div.PageHeader div.LogoContent
+	{
+		max-width :100%;
+		width:350px;
+		float: none; 
+		padding: 1em 0 1em 0.5em;
+		display:block;
+		margin:0 auto;	
+	}
+	div.PageHeader div.LogoContent img
+	{
+		max-width: 100%;
+		float: none;
+		margin:0 auto;	
+	}
+
+	div.PageMainContent { max-width: 100%; }
+	div.PageContainer { max-width: 100%; }
+	div.PageLocations 
+	{
+		max-width: 100%; 
+		box-shadow: none; 
+		font-size: 1.0em;
+	}
+	div.PageNavigation .MainNavList { padding: 0px; }
+	.PageHeader .QuickLinks
+	{
+		width: 275px !important;
+		max-width: 100%;
+		float: none !important;
+		display:block;
+		margin:.5em auto .5em auto;
+	}
+	div.PageHeader div.SearchContent
+	{
+		width: 225px;
+		float: none;
+		padding: 0px 0px 30px 0px;
+		margin: 0 auto 0 auto;
+	}
+	div.PageNavigation div.SubNavContainer { display: none; }
+
+
+	/* -------------------- */
+	/* Title Content        */
+	/* -------------------- */
+
+	div.TitleContent { padding: 0; }
+
+
+	/* -------------------- */
+	/* Main Content         */
+	/* -------------------- */
+
+	div.MainContent
+	{
+		max-width:100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.ms-WPBody
+	{
+		font-family: Tahoma, 'Arial Narrow', Helvetica, 'MS Sans Serif', sans-serif;
+		font-size: 1.2em;
+	}
+
+	/* -------------------- */
+	/* Center Content       */
+	/* -------------------- */
+
+	.PageMain {
+		margin:0;
+	}
+	.boxshadow .WithBackground .PageMainContent {
+		margin:0;
+		box-shadow: none;
+	}
+	div.PageCenter
+	{
+		max-width: 100%;
+		/* overflow: visible; */
+		padding: .5em;
+		background: #FFF;
+	}
+
+	/* -------------------- */
+	/* Front Page Tiles     */
+	/* -------------------- */
+
+	.IsHome .PageContent { padding: 10px 10px 7px 10px !important; }
+
+	.ShadowBox.TileBox.TopRow.LeftColumn
+	{
+		width:90%;
+		display:block;
+	}
+	.ShadowBox.TileBox.TopRow.CenterColumn
+	{
+		max-width: 45%;
+		display: inline-block;
+		margin: 1em;
+		vertical-align: top;
+		min-height: 425px;
+	}
+
+	.ShadowBox.TileBox.TopRow.RightColumn
+	{
+		max-width: 45%;
+		display: inline-block;
+		margin: 1em;
+		vertical-align: top;
+		min-height: 425px;
+	}
+
+	.ShadowBox.TileBox.RowSpanned.LeftColumn
+	{
+		width: 100%;
+		display: block;
+	}
+
+	.ShadowBox.TileBox.CenterRow.CenterColumn
+	{
+		max-width: 45%;
+		display: inline-block;
+		margin: 1em;
+		vertical-align: top;
+		min-height: 410px;
+	}
+
+	.ShadowBox.TileBox.CenterRow.RightColumn
+	{
+		max-width: 45%;
+		display: inline-block;
+		margin: 1em;
+		vertical-align: top;
+		min-height: 410px;
+	}
+
+	.ShadowBox.TileBox.BottomRow.CenterColumn
+	{
+		max-width: 45%;
+		display: inline-block;
+		margin: 1em;
+		vertical-align: top;
+		min-height: 275px;
+	}
+	.ShadowBox.TileBox.BottomRow.RightColumn
+	{
+		max-width: 45%;
+		display: inline-block;
+		margin: 1em;
+		vertical-align: top;
+		min-height: 275px;
+	}
+
+	.boxshadow .TileSet .TileBox
+	{
+		border: 1px solid #c7c7c7;
+		box-shadow: none;
+		border-radius: 5px;
+	}
+
+	.IsTopSiteHome .TileSet .TopRow { display: none !important; }
+
+ /* End Screen width 999px */
+
+	@media screen and (max-width:675px) {
+
+		table.accord tbody tr {
+			background: none repeat scroll 0% 0% #5A71B5;
+			width: 150%;
+		}
+		.ShadowBox.TileBox.TopRow.CenterColumn, 
+		.ShadowBox.TileBox.TopRow.RightColumn, 
+		.ShadowBox.TileBox.CenterRow.CenterColumn, 
+		.ShadowBox.TileBox.CenterRow.RightColumn, 
+		.ShadowBox.TileBox.BottomRow.CenterColumn, 
+		.ShadowBox.TileBox.BottomRow.RightColumn
+		{
+			max-width: 100%;
+			display: block;
+			margin: 1em 0 1em 0;
+		}
+	}
+
+	/* -------------------- */
+	/* TileSet Display      */
+	/* -------------------- */
+
+	div.TileSet div.TileGroup 
+	{
+		width: 100% !important;
+		margin: 0.5em 0 0.5em 0;
+		overflow: visible;
+	}
+
+	div.TileSet div.TileRow
+	{
+		width: 100% !important; 
+		margin: 0.5em 0 0.5em 0; 
+		overflow: visible;
+	}
+	div.TileSet div.TileBox
+	{
+		width: 100% !important; 
+		margin: 0.5em 0 0.5em 0; 
+		overflow: visible;
+	}
+	div.Tile 
+	{
+		max-width: 100% !important; 
+		height: auto !important;
+	}
+
+	div.TileSet div.Tile h1,
+	div.TileSet div.Tile h1 a
+	{ font-size: 1.4em; }
+
+	div.TileSet div.Tile h2,
+	div.TileSet div.Tile h2 a
+	{ font-size: 1.2em; }
+
+	div.TileSet div.TileBox:empty { display: none; }
+	div.ShadowBox div.TileBox div.BottomRow:empty { display: none; }
+	div.TileSet div.Tile div.TileIcon { margin-left: 1em; margin-bottom: 1em; }
+	div.TileIcon { display: none; }
+
+
+	/* -------------------- */
+	/* Sidebar              */
+	/* -------------------- */	
+
+	div.WithSidebar { margin: 0; }
+	div.PageSidebar .leftNav3,
+	div.PageSidebar .leftNav4,
+	div.PageSidebar .leftNav5
+	{ display: none; }
+
+	div.WithSidebar div.PageSidebarExtender { background: none; }
+	div.WithSidebar div.PageSidebarExtender { background-color: #ECEAE6; }
+	div.PageSidebar div.SidebarContent { display: none; }
+	div.WithSidebar div.BottomFormating div.BottomSidebar { display: none; }
+
+
+	/* -------------------- */
+	/* Footer Nav           */
+	/* -------------------- */
+
+	div.PageFooterNav { padding: 3px; }
+	.fontface .PageFooterNav .SubNavHeader {font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 1.5em;}
+	div.PageFooterNav div.NavColumn { padding: 2em; display: inline-block; }
+	div.PageFooterNav div.NavGroup { padding: 0px; }
+	div.PageFooterNav ul, div.PageFooterNav ol { display: none; }
+	div.PageFooterNav { max-width: 100%; padding: 0.5em;  }
+
+	.WithSidebar .BottomFormatting .BottomSidebar
+	{
+		background-image: none;
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+
+	/* -------------------- */
+	/* Mobile Footer Image  */
+	/* -------------------- */
+
+	.MobileFooter
+	{ 
+		height: 75px;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 100;
+		background-color: rgb(73, 66, 56);
+		overflow: hidden;
+		display: block;
+	}
+	.MobileFooter img {	display: block; margin-left: auto; margin-right: auto; }
+	.MobileFooter a { display: block; height: 75px; }
+	.MobileFooterSpacer { display: block; height: 75px; }
+}
+
+/*---------------------------------*/
+/* Tablets                         */
+/*---------------------------------*/
+
+.TabletShow { display: none  !important; }
+.TabletHide { display: block !important; }
+
+@media screen and (min-width:641px) and (max-width:999px) {
+	.TabletShow { display: block !important; }
+	.TabletHide { display: none  !important; }
+
+	/* Jonathan's style */
+	.NoTablet { display: none !important; }
+
+	/* -------------------- */
+	/* Header               */
+	/* -------------------- */
+	div.PageLocations li.DCO, 
+	div.PageLocations li.BHC, 
+	div.PageLocations li.CVC, 
+	div.PageLocations li.EFC, 
+	div.PageLocations li.ECC, 
+	div.PageLocations li.MVC, 
+	div.PageLocations li.NLC, 
+	div.PageLocations li.RLC 
+	{ border: none; width: 12.5%; font-size: 0.8em; line-height: 1.2em; padding: 0.5em 0 0.5em 0; }
+
+	/* -------------------- */
+	/* Navigation           */
+	/* -------------------- */
+
+.fontface .PageNavigation .MainNavContainer li.NavItem {
+	font-family:Arial Narrow, Helvetica, sans-serif;
+	font-weight:600;
+	font-size:1.2em;
+	height: 100%; 
+}
+
+	.PageContainer .PageNavigation .MainNavContainer
+	{
+		background-color: #ECEAE6; 
+		max-width: 100%; 
+		height: 100%; 
+		padding: 0; 
+	}	
+	div.PageNavigation div.MainNavContainer li.NavItem
+	{
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 1.4em;
+	}	
+	.PageNavigation .MainNavContainer li.NavItem 
+	{
+		width: 32.2%; 
+		padding: 0.1em !important; 
+		/* font-family: Arial Narrow, Helvetica, sans-serif !important; */ 
+		font-weight: 600;
+		font-size: 1.4em;	
+		text-align: center;
+}
+
+	/* -------------------- */
+	/* Splash               */
+	/* -------------------- */
+	div.PageSplash { display: none; }
+	div.SplashContent img { display: none; }
+
+	/* -------------------- */
+	/* TileSet Display      */
+	/* -------------------- */
+	div.TileSet div.TileGroup { width:100%; overflow: visible; }
+	img.RegisterNow, img.BlogRSSIcon, img.SocialMediaIcons { display: none; }
+
+	/* ---------------------- */
+	/* OVERRIDE FeaturedSites */
+	/* ---------------------- */
+	.MainContent .FeaturedSitesTable { width: 100% !important; }
+	.MainContent .FeaturedSitesTable .Item
+	{
+		width: 30% !important;
+		font-family: Tahoma, 'Arial Narrow', Helvetica, 'MS Sans Serif', sans-serif !important; 
+	}
+	.MainContent .FeaturedSitesTable .FeaturedSitesTitles .Item { font-size: 1.2em; }
+	.MainContent .FeaturedSitesTable .FeaturedSitesText   .Item { font-size: 0.8em; }
+	.MainContent .FeaturedSitesTable .FeaturedSitesLinks  .Item { font-size: 0.6em;}
+}
+
+
+
+@media screen and (max-width:640px) {
+
+	.NoMobile { display: none !important; }
+
+	/* -------------------- */
+	/* YOUSIF: MODIFICATIONS MOBILE */
+	/* -------------------- */
+
+	#MainNavList{
+		height:35px;
+		vertical-align:middle;
+	}
+
+	#NavContentContainer{
+		height:45px;
+	}
+
+	.PageNavigation .MainNavContainer li.NavItem{display:none;}
+
+	.PageNavigation .MainNavContainer li.MobiNavItem{display:block; text-align:center; text-decoration: none; color: #000000; margin: 0; padding: 0;}
+
+	.PageNavigation .MainNavContainer li.MobiNavItem{background-color: #ECEAE6; padding: 10px 18px 14px 14px;}
+
+	.fontface .PageNavigation .MainNavContainer li.MobiNavItem
+	{
+		font-family: LeagueGothicRegular,Tahoma,Arial Narrow,Helvetica,MS Sans Serif,sans-serif;
+		font-weight: normal;
+		font-size: 33px;
+	}
+
+	.fontface .PageNavigation .MainNavContainer li.NavItem { padding: 10px 13px 14px 13px; }
+
+	/* BEGIN MOBILE NAV*/
+	.PageNavigation {
+		display:none;
+	}
+	.MobileNavContainer{
+		display:block;
+		width: 100%;
+		overflow: hidden;
+		font-size: 17px;
+		background-color: #ECEAE6;
+		font-family: LeagueGothicRegular,Tahoma,Arial Narrow,Helvetica,MS Sans Serif,sans-serif;
+		text-align:center;
+		font-size: 30px;
+		margin-top:5px;
+		margin-bottom:5px;
+		top:0;
+	}
+	.MobileNavContainer .sub-sub-heading {
+		background-color:#dedede;
+	}
+
+	.Mobile_Button{
+		cursor:pointer;
+	}
+	.Mobile_Menu a:link{
+		text-decoration:none;
+	}
+	.Mobile_Menu ul {
+		text-deocration:none; 
+		font-size: 15px;  
+		font-family: Arial,Helvetica,sans-serif; 
+		line-height: 2.25em; 
+		text-decoration:none; 
+		padding:0; list-style:none; 
+		border-top:none; 
+		border-bottom:none; 
+	}
+	.Mobile_Menu li { 
+		border-bottom: 1px solid #7487ff;
+	}
+	.Mobile_Menu li a {
+		-webkit-tap-highlight-color: rgba(0,0,0,0); 
+		display:block; 
+		color:#314496; 
+		text-decoration:none; 
+	}
+	.Mobile_Menu li:hover {
+		background:#EFEFEF;
+	}
+	#menu{
+		display:block
+	}
+	#main-nav-check{
+		display:block
+	}
+	#menubutton{
+		background-color: #ECEAE6;
+		padding: 10px 18px 14px 14px;
+		display:block;
+	}
+	#mobile-header{
+		display:block;
+	}
+	#menu label 
+	{
+		padding:0 0.25em; 
+		font:3.125em/1.375em Arial 
+	}
+
+	#menu .sub-nav label 
+	{
+		padding:0 0.3125em; 
+		font:2em/2em Arial; 
+		top:0
+	}
+	#header label:hover, #menu label:hover {
+		color:#ccc
+	}
+	#main-nav-check, #menu .sub-nav-check 
+	{
+		position:absolute; 
+		top:-9999px; 
+		left:-9999px 
+	}
+	.toggle 
+	{
+		border-bottom:none;
+		position:absolute; 
+		right:0.15em; 
+		cursor:pointer; 
+		color:#000; 
+	}
+	.container 
+	{ 
+		background:#fff; 
+		min-height:100%; 
+		padding:0; 
+		margin:0 
+	}
+	#menu, #menu .sub-nav {
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		position:absolute;
+		top:0; 
+		bottom:-100%; 
+		width:100%; 
+		background:#FAF9F8; 
+		z-index:9999; 
+		left:-100%
+	}
+	.container, #menu, #menu .sub-nav {   
+		-webkit-transform:translate(0,0);
+		-ms-transform:translate(0,0);
+		transform:translate(0,0);
+		-webkit-transition:-webkit-transform .25s ease;
+		transition:transform .25s ease;
+	}
+	#menu ul {
+		background:#FAF9F8;
+		line-height:2.25em;
+		text-decoration:none;
+		padding:0;
+		list-style:none;
+		margin-top:4.0625em;
+		border-top:none;
+		border-bottom:none; 
+	}
+	#menu li {
+		border-bottom:1px solid #314496
+	}
+	#menu li a {
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		display:block; 
+		font-size:1.00em; 
+		padding-left:1.1em; 
+		color:#314496; 
+		text-decoration:none
+	}
+	#menu li:hover, #menu .toggle-sub:hover {
+		background:#EFEFEF
+	}
+	#menu .sub-nav {
+		margin-top:-1px 
+	}
+	#menu .sub-heading {
+		margin-top:4.0625em; 
+		padding-left:1.3125em;
+		color:#000;
+		background-color:#EFEFEF;
+		font-weight:bold;
+		border-style:none;
+	}
+	#menu .sub-sub-heading {
+		padding-left:1.3125em; 
+		color:#000; 
+		background-color:#EFEFEF; 
+		font-weight:bold; 
+		border-style:none
+	}
+	#menu .sub-heading:before {
+		content:""; 
+		display:block; 
+		height:1px; 
+		width:100%; 
+		margin-left:-1.3125em;
+		background:#444;
+	}
+	#menu .toggle-sub { 
+		font:bold 1em/2.25em Arial !important; 
+		color:#314496; 
+		background:#FAF9F8; 
+		float:right; 
+		top:auto;
+		margin-top:-2.25em; 
+		width:2.0em; 
+		border-left:1px solid #314496; 
+		cursor:pointer; 
+		text-align:center 
+	}
+	.container, #menu, #menu .sub-nav { 
+		-webkit-transform:translate3d(0,0,0);
+	} 
+	/* http://davidwalsh.name/translate3d */
+	/* #### - define ids of animated container, menu and sub-menus here - #### */
+
+	#main-nav-check:checked ~ .container,
+	#main-nav-check:checked ~ #menu,
+	#menu .sub-nav-check:checked ~ #why-sub,
+	#menu .sub-nav-check:checked ~ #why-what-sub,  
+	#menu .sub-nav-check:checked ~ #why-apply-sub,
+	#menu .sub-nav-check:checked ~ #why-reg-sub,
+	#menu .sub-nav-check:checked ~ #au-sub,  
+	#menu .sub-nav-check:checked ~ #au-trust-sub,
+	#menu .sub-nav-check:checked ~ #au-chan-sub,
+	#menu .sub-nav-check:checked ~ #au-who-sub,
+	#menu .sub-nav-check:checked ~ #cd-sub,
+	#menu .sub-nav-check:checked ~ #cd-cred-sub,
+	#menu .sub-nav-check:checked ~ #cd-ce-sub,
+	#menu .sub-nav-check:checked ~ #cd-rec-sub,
+	#menu .sub-nav-check:checked ~ #pay-sub,
+	#menu .sub-nav-check:checked ~ #pay-cst-sub,
+	#menu .sub-nav-check:checked ~ #pay-fa-sub,
+	#menu .sub-nav-check:checked ~ #pay-sa-sub,
+	#menu .sub-nav-check:checked ~ #pay-wwp-sub,
+	#menu .sub-nav-check:checked ~ #sch-sub,
+	#menu .sub-nav-check:checked ~ #sch-cc-sub,
+	#menu .sub-nav-check:checked ~ #sch-ce-sub,
+	#menu .sub-nav-check:checked ~ #ss-sub,
+	#menu .sub-nav-check:checked ~ #ss-a-sub,
+	#menu .sub-nav-check:checked ~ #ss-os-sub,
+	#menu .sub-nav-check:checked ~ #ss-cs-sub,
+	#menu .sub-nav-check:checked ~ #ss-sl-sub,
+	#menu .sub-nav-check:checked ~ #sch-rc-sub,
+	#menu .sub-nav-check:checked ~ #fof-sub, 
+	#menu .sub-nav-check:checked ~ #fof-portfolio-sub, 
+	#menu .sub-nav-check:checked ~ #fof-portfolio-graphics-sub,
+	#menu .sub-nav-check:checked ~ #fof-portfolio-graphics-art-sub,
+	#menu .sub-nav-check:checked ~ #fof-portfolio-graphics-art-paintings-sub,
+	#menu .sub-nav-check:checked ~ #fof-services-sub, 
+	#menu .sub-nav-check:checked ~ #fof-services-seo-sub,
+	#menu .sub-nav-check:checked ~ #fast-apps-sub 
+	{ 
+		-webkit-transform:translate(100%,0); 
+		-ms-transform:translate(100%,0); 
+		transform:translate(100%,0);
+	}
+
+	#menu .s4-ql li.static {padding-left:0; border-bottom: :1px solid #314496}
+
+	#menu .s4-ql a.static.menu-item {border-bottom :1px solid #314496; }
+	#menu .s4-ql ul.static { margin-top:0px;  margin-bottom:0px; text-indent:25px; border-bottom: :1px solid #314496 }
+	#menu .s4-ql ul.root.static { margin-top:0px;  text-indent:0px;margin-bottom:0px; border-bottom: :1px solid #314496 }
+
+	#menu .s4-ql ul.root ul { margin-top:0px; border-bottom: :1px solid #314496}
+	#menu .s4-ql ul.root li {border-bottom:none; border-bottom: :1px solid #314496}
+	#menu .s4-ql a.static.selected.menu-item{border-top:none; border-right:none; background-color:#FAF9F8; text-decoration:underline;}
+	#menu .s4-ql ul.static.selected.menu-item{margin-left:2em; font-weight:bold}
+
+
+
+	/* END MOBILE NAV*/
+
+
+	.PhoneShow { display: block !important; }
+	.PhoneHide { display: none  !important; }	
+
+	/* -------------------- */
+	/* Page Setup           */
+	/* -------------------- */
+	div.PageLocations ul, 
+	div.PageLocations ol
+	{ padding: 0.3em; }
+
+	div.LocationNavContent { max-width: 100%; }
+	div.PageLocations li.DCO, 
+	div.PageLocations li.BHC, 
+	div.PageLocations li.CVC, 
+	div.PageLocations li.EFC, 
+	div.PageLocations li.ECC, 
+	div.PageLocations li.MVC, 
+	div.PageLocations li.NLC, 
+	div.PageLocations li.RLC 
+	{
+		border: none;
+		width: 25%;
+		font-size: 0.8em;
+		line-height: 1.2em;
+		padding: 0.5em 0 0.5em 0;
+	}
+
+	/* -------------------- */
+	/* Header               */
+	/* -------------------- */
+
+	div.PageHeader { max-width: 100%; }
+	div.HeaderContent { max-width: 100%; }
+	div.PageHeader div.LogoContent { padding: 1.5em 0.5em 1.5em 0.5em; }
+
+	img.DCCCD-College-Maps
+	{
+		max-width: 100%;
+		height: auto;
+	}
+
+	div.PageHeader div.LogoContent img
+	{
+		max-width: 95%;
+		height: auto;
+		float: left;
+	}
+
+	/* -------------------- */
+	/* Navigation           */
+	/* -------------------- */
+	.PageContainer .PageNavigation .MainNavContainer
+	{
+		background-color: #999999; 
+		max-width: 100%; 
+		height: 100%; 
+		padding: 0; 
+		font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 1.4em;
+	}
+	div.PageNavigation div.MainNavContainer li.NavItem 
+	{
+		font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 1.2em;
+	}
+	li.NavItem 
+	{
+		width: 100%; 
+		padding: 0.1em !important; 
+		font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 1.2em;
+	}
+
+	/* -------------------- */
+	/* Splash               */
+	/* -------------------- */
+	div.PageSplash, 
+	div.SplashContent 
+	{ display: none; }	
+
+	/* -------------------- */
+	/* TileSet Display      */
+	/* -------------------- */
+	div.TileSet div.TileGroup 
+	{
+		width: 100%; 
+		margin: 0.5em 0 0.5em 0; 
+		overflow: visible;
+	}
+
+	.RegisterNow, 
+	.BlogRSSIcon, 
+	.SocialMediaIcons 
+	{ display: none; }
+
+	/* -------------------- */
+	/* Breadcrumbs          */
+	/* -------------------- */
+
+	div.BreadcrumbContent { padding: 0.5em; }
+	div.Breadcrumb { max-width: 100%; }
+	div.PageMain
+	{
+		background-color: #ffffff;
+		overflow: visible;
+	}
+
+	/* -------------------- */
+	/* Title Content        */
+	/* -------------------- */
+
+	div.MainContent div.ContentBlock div.ContentImageBlock { margin: 0; }
+	div.MainContent div.ContentImageBlock
+	{
+		max-width: 95%;
+		display: block;
+	}
+	div.MainContent div.ContentImageBlock img
+	{
+		margin: 0.5em auto 0.5em auto;
+		display: block;
+	}
+	div.MainContent div.MainContent { overflow: visible; }
+	div.MainContent div.MainContent ul li, 
+	div.MainContent ol li 
+	{
+		padding-left: 0.2em;
+		max-width: 100%;
+	}
+
+	/* -------------------- */
+	/* Generic Styles       */
+	/* -------------------- */
+	div.ShadowBar
+	{
+		max-width: 100%;
+		box-shadow: none;
+	}
+
+	/* -------------------- */
+	/* Sidebar              */
+	/* -------------------- */
+	div.WithSidebar div.PageMainContent 
+	{
+		max-width: 100%; 
+		margin: 0; 
+		box-shadow: none;
+	}
+	div.WithSidebar div.PageSidebar { max-width: 100%; }	
+	div.PageSidebar { display:none; }
+
+	/* -------------------- */
+	/* Center Content       */
+	/* -------------------- */
+
+	div.PageCenter
+	{
+		max-width: 100%;
+		overflow: visible;
+	}
+
+	/* ----------------------- */
+	/* Override Featured Sites */
+	/* ----------------------- */
+
+	.PageContent .MobileFeaturedSites { margin: 20px auto 20px auto; }
+	.PageContent .MobileFeaturedSites .Item
+	{
+		width: 230px;
+		padding: 10px;
+		margin: 20px auto 20px auto;
+		/*	background: #EFEFEF; */
+	}
+
+	/* Image */
+	.PageContent .MobileFeaturedSites img
+	{
+		height: 160px;
+		width: 200px;
+		margin-left: 13px;
+	}
+
+	.ContentBlock .ContentImageBlock
+	{
+		float: none;
+		margin: 10px auto 10px auto;	
+		max-width: 200px;
+	}
+
+	/* Title */
+
+	.PageContent .MobileFeaturedSites .FeaturedSitesTitle
+	{
+		font-size: 1.2em;
+		text-align: center;
+		padding: 5px;
+		text-transform: uppercase;
+	}
+
+	/* Text */
+	.PageContent .MobileFeaturedSites .FeaturedSitesText { font-size: .75em; }
+
+	/* Link */
+	.PageContent .MobileFeaturedSites .FeaturedSitesLink
+	{
+		text-align: right;
+		font-size: 0.8em;
+	}
+
+
+	.PageContent  .MobileFeaturedSites .FeaturedSitesLink img
+	{
+		width:19px;
+		height:23px;
+	}
+
+	/* Background Color */
+	.PageContent  .MobileFeaturedSites .FeaturedSitesText,
+	.PageContent  .MobileFeaturedSites .FeaturedSitesLink
+	{
+		background-color: #ECEAE6;
+		padding: 10px;
+	}
+
+
+} /* End Screen width 640 px */

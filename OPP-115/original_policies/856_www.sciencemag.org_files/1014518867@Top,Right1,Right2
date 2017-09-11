@@ -1,0 +1,27 @@
+function OAS_RICH(position) {
+if (position == 'Right1') {
+document.write ('<div class="ad"><div STYLE="color: #52819B; font-size: 10px; text-align: center;" >ADVERTISEMENT</div><br />\n');
+document.write ('<a href="http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/site/help/about/privacy.xhtml/L18/720638984/Right1/AAAS/CAR-PostAndGo-MarketingHouseAd-Right1-120606/Job-Post-Button-160x150.html/784647493246576450783841436b414b?720638984" target="_blank"><img src="http://imagec17.247realmedia.com/RealMedia/ads/Creatives/AAAS/CAR-PostAndGo-MarketingHouseAd-Right1-120606/Job-Post-Button-160x150.jpg" BORDER=0 WIDTH=160 HEIGHT=150 alt="Advertisement"></a></div>\n');
+}
+if (position == 'Right2') {
+document.write ('<div class="ad"><div STYLE="color: #52819B; font-size: 10px; text-align: center;" >ADVERTISEMENT</div><br />\n');
+document.write ('<div align="center">\n');
+document.write ('\n');
+document.write ('<script type="text/javascript"><!--\n');
+document.write ('google_ad_client = "ca-pub-2288234982592986";\n');
+document.write ('google_ad_width = 160;\n');
+document.write ('google_ad_height = 600;\n');
+document.write ('//-->\n');
+document.write ('</script>\n');
+document.write ('<script type="text/javascript"\n');
+document.write ('src="//pagead2.googlesyndication.com/pagead/show_ads.js">\n');
+document.write ('</script>\n');
+document.write ('</div></div>\n');
+}
+if (position == 'Top') {
+document.write ('<script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=28&pli=13684878&PluID=0&w=728&h=90&ord=749221274&ncu=$$http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/site/help/about/privacy.xhtml/L28/749221274/Top/AAAS/SOL-Initiative-W-005314@13684878/13684878_150625.html/784647493246576450783841436b414b?$$&ucm=true&ncu=$$http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/site/help/about/privacy.xhtml/L28/749221274/Top/AAAS/SOL-Initiative-W-005314@13684878/13684878_150625.html/784647493246576450783841436b414b?$$"></script> \n');
+document.write ('<noscript> \n');
+document.write ('<a href="http://oascentral.sciencemag.org/RealMedia/ads/click_lx.ads/www.sciencemag.org/site/help/about/privacy.xhtml/L28/749221274/Top/AAAS/SOL-Initiative-W-005314@13684878/13684878_150625.html/784647493246576450783841436b414b?http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=brd&FlightID=13684878&Page=&PluID=0&Pos=839624699" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=bsr&FlightID=13684878&Page=&PluID=0&Pos=839624699" border=0 width=728 height=90></a> \n');
+document.write ('</noscript>');
+}
+}

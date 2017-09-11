@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)http://assets.adobedtm.com/bbc5bbf56a4c9cda1271b6b9cb3e94744124c05b/scripts/satellite-541b0572cff604030900003f.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+    <script>
+      (function(){
+        function escapeForHtml(str){
+          if (!str) return str
+          return str
+            .replace(/\&/g, '&amp;')
+            .replace(/\</g, '&lt;')
+            .replace(/\>/g, '&gt;')
+            .replace(/\"/g, '&quot;')
+            .replace(/\'/g, '&#x27;')
+            .replace(/\//g, '&#x2F;')
+        }
+        function parseQueryString(){
+          var ret = {}, parts = location.search.substring(1).split('&');
+          for (var i = parts.length; i--;) {
+            var vardef = parts[i].split('='), varname = vardef[0], value = vardef[1];
+            ret[varname] = value;
+          }
+          return ret;
+        }
+        var queryParams = parseQueryString();
+
+        var markup = "<script class=\"kxct\" data-id=\"JU5vLBbl\" data-timing=\"async\" data-version=\"1.9\" type=\"text/javascript\">\n\n  \n</scr"+"ipt>";
+
+        for (var name in queryParams){
+          var regex = new RegExp('%' + name.replace('.', '\.') + '%', 'ig');
+          markup = markup.replace(regex, 
+            escapeForHtml(queryParams[name]));
+        }
+
+        document.write(markup)
+      })();
+    </script><script class="kxct" data-id="JU5vLBbl" data-timing="async" data-version="1.9" type="text/javascript">
+
+  
+</script>
+  
+
+</body></html>
