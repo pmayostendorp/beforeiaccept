@@ -1,0 +1,235 @@
+@media only screen and (min-width: 1131px ){
+}
+
+@media only screen and ( max-width: 1030px ){
+#sharebox {display:none} 
+.ad-12{display:none;} 
+.social { margin: 0px 0px 0px 0px;
+padding: 0px 15px 0px 0px;
+}
+}
+
+
+@media only screen and ( max-width: 960px ) {
+img, video, object { max-width: 100%;}
+#sharebox {display:none} 
+.footer-menu, #bottomfooter{width:auto}
+}
+
+
+@media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
+.container, #nav ul  {width: 748px;}
+
+
+/*Header*/
+
+.logo-holder .carousel .mask {height: 65px;}
+.top-panel nav {display: none;}
+.trending {display: none;}
+.topic-list  {display: none;}
+.topic-panel {display: none;}
+#menu-trending {display: none;}
+.logo-holder .carousel { float: none; margin: 0 auto; border:#DDDDDD;}
+.topsearch-wrapper{ float: none; margin: 10px auto;}
+
+.logo-wrapper {float: none;width: auto;}
+.logo { width: auto;}
+
+
+#nav ul li {font-size: 10px;}
+#nav ul a{padding:5px 5px;}
+
+/*Content*/
+#main .block .galleryhome { margin: 0 20px; float: none;}
+.news-block {display:none;}
+
+#main .block.posts {background: none;}
+#main .block .post { margin: 0 40px;float: none;}
+.list-posts {width: 657px; float: none; margin:0 auto }
+.list-posts li {width: 316px; float: left; margin-left: 10px;}
+
+.political-info .info {width: 490px; }
+.political-info .article .holder img {float: none; margin: 5px 10px;}
+.political-info .article .holder p { margin-bottom: 5px;}
+.political-info .article {padding: 0 0 20px;}
+.political-info .article h3 {font-size: 22px;  line-height: 24px;}
+.list-articles { width: 720px;}
+.list-articles li {margin: 0 0px 20px 0;}
+
+
+
+/*Sidebar*/
+#sidebar {float: none;margin: 0 auto; }
+#sidebar .widget{ float: none;width: 300px;margin-right: 15px;}
+
+/*Footer*/
+.site-footer {float:none;text-align: center; width: auto; }
+#footerwrapper1 { margin: 0 auto; width: 511px;display: block;}
+#footer .box-hold .box{display: inline-block;float: none;}
+.footer2-area, .footer3-area{width: 748px;}
+
+.footer .logo {float: none; margin: 2px auto}
+.footer .nav, .footer .nav ul {width: auto;}
+
+/*Single*/
+.single-wrapper {padding-left: 0; margin: 0 10px; width: 714px;}
+.single-right { width: 595px;}
+#comments-content {width: auto;}
+
+/*Tags-Archives*/
+.bottom-recentpost-wrapper-cat {width: auto;}
+.post-content-holder {width: 490px;}
+
+}
+
+
+@media only screen and ( max-width: 767px ) { 
+.ad-1{display:none} 
+.responsivemenu{ display: block; margin: 0 auto; width: 400px; padding: 10px;}
+.responsivemenu select {display:inline-block; width: 400px;}
+img, video, object {height: auto;}
+ 
+
+.container, #nav ul { width: 460px; }
+
+
+/*Header*/
+.logo-holder .carousel .mask {height: 65px;}
+.top-panel nav {display: none;}
+.trending {width: auto;}
+.topic-list  {float: none;}
+.topic-panel {height: auto;}
+#menu-trending {margin: 0;}
+.logo-holder .carousel { float: none; margin: 0 auto; border:#DDDDDD;}
+.topsearch-wrapper{ float: none; margin: 10px auto;}
+#menu-22 {display: none;}
+
+
+/*Slider*/
+#main .block .galleryhome {width: 460px; height: 265px; float: none;}
+.galleryhome .slideset .info {width: auto;}
+.galleryhome .slideset h2 {font-size: 22px; line-height: 26px;}
+.slider-thumbs { display: none;}
+.news-block {display:none;}
+
+
+/*Content*/
+#main .block .post {width: 430px;float: none;}
+#main .block .post h2 {font-size: 22px; line-height: 26px;}
+.list-posts { float: none; width:  auto; margin-left: -10px;}
+.list-posts li {float: left; width: 210px; margin-left: 10px;  min-height: 180px;}
+
+.political-info .info {width: 434px; float: none;}
+.political-info .article .holder img {float: none; margin: 5px 0px;}
+.political-info .article .holder p { margin-bottom: 5px;}
+.list-articles { margin: 0; width: 435px;}
+.list-articles li { margin: 0 10px 20px 0; width: 420px;}
+.political-info .more-political { float: none; margin: 7px auto 0; }
+
+/*Sidebar*/
+#sidebar {float: none;margin: 0 auto;}
+#sidebar .widget{ float: left;width: 300px;margin-right: 15px;}
+
+/*Footer*/
+.site-footer {text-align: center;width: 460px;}
+#footerwrapper1{ margin: 0 auto; width: 234px;display: block;}
+#footer .box-hold .box{display: inline-block;float: none;}
+.footer2-area, .footer3-area { width: 460px; }
+
+.footer .logo {float: none; margin: 2px auto}
+.footer .nav, .footer .nav ul {width: auto;}
+
+
+/*Single*/
+.single-wrapper {float: none; width: auto;}
+.single-right { width: 325px;} 
+#respond {width: auto !important;}
+#respond-content{width: auto !important;}
+.single-entry-title {font-size: 22px;line-height: 26px;}
+.single-pagi {float: none;margin-top: 5px;}
+#comments-content{width: auto;}
+#submitcomment { width: 200px}
+
+/*Tags-Archives*/
+
+.related-post-wrapper-block {float:none; width: auto;}
+.recentpost-wrapper {float:left; width: auto;}
+.recentpost {float:left; width: auto;}
+.recentpost-cont-holder {float:left; width: auto;}
+
+.bottom-recentpost-wrapper-cat {width: auto;}
+.post-content-holder {width: 217px;}
+
+#thearchivelist {width: auto;float:none; text-align:center;}
+.zc {width: auto;float:left;margin-left:10px;text-align:center;}
+.zc ul {width: auto;float:left;margin-left:10px;text-align:left;}
+
+
+.alignleft {width: 125px;}
+.author-info {width: 300px;}
+}
+ 
+ 
+
+
+
+
+@media only screen and ( max-width: 479px ) { 
+img, video, object { max-width: 300px;}
+.ad-1{display:none} 
+.responsivemenu { width: 240px; } 
+.responsivemenu select { width: 240px; } 
+
+.container, #nav ul { width: 300px; }
+
+/* Header */
+#trending-menu .menu {width: 300px;} 
+.logo-wrapper {float: none;width: auto;}
+.logo { width: auto;}
+
+/*Slider*/
+#main .block .galleryhome {width: 300px;height: 170px;}
+.galleryhome .slideset .info { width: 280px; padding: 10px;}
+.galleryhome .slideset .info .holder {width: 270px;}
+.galleryhome .slideset h2 {font-size: 14px; line-height: 18px; margin-bottom: 10px;}
+
+.news-block {display:none;}
+#scrollbar1  {display:none;}
+#scrollbar1 .viewport, #scrollbar1 .overview {display:none;}
+.list-news .news {display:none;}
+
+
+/* Content */
+#main .block .post {width: 270px;}
+#main .block .post .image .title {font-size: 16px; line-height: 18px;}
+#main .block .post {font-size: 14px;}
+.list-posts li { width: 270px;}
+
+.political-info .info {width: 275px;}
+.political-info .article h3 { font-size: 18px; line-height: 24px;}
+.list-articles, .list-articles li {  width: 275px;}
+
+/*Single*/
+#comment {width: 260px;}
+.single-left {display: none;}
+.single-right {float: none;width: auto;}
+
+
+.site-footer {float: none;text-align: center;width: 300px; }
+.footer-logo {float: none;text-align: center;margin-top: 10px;}
+.footer2-area, .footer3-area{ width: 300px;}
+.footer .logo {width: auto;}
+
+
+.related-post-wrapper-block {float:none; width: auto;}
+.recentpost-wrapper {float:left; width: auto;}
+.recentpost {float:left; width: 275px;}
+.recentpost-cont-holder {float:left; width: 275px;}
+
+#thearchivelist {width: auto;float:none; text-align:center;}
+.zc {width: 260px;float:left;margin-left:10px;text-align:center;}
+.zc ul {width: 260px;float:left;margin-left:10px;text-align:left;}
+
+.post-content-holder {float: none;width: auto;}
+.author-info {margin-top: 10px;	width: 275px;}
+}

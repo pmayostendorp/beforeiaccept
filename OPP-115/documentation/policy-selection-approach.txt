@@ -1,0 +1,40 @@
+1. Diverse policy set based on Google Trends
+- Policy selection is based on Google Trends in order to obtain privacy policies from a more diverse set of websites.
+- For this purpose, Pradeep implemented a tool that for a specific month looks at each category on Google Trends (here: May 2015)
+- For each Trend we selected the top 5 search queries, searched for them on Google and for the first 10 result pages retrieve the first 5 websites listed on a result page. By sampling from the first 10 result pages we obtain a diverse sample including popular and less popular websites.
+- We determine the “popularity” of a website by recording for how many search queries it showed up in the first 10 pages.
+- The overall dataset for May 2015 consists of 1799 websites (not all of them have privacy policies).
+ 
+
+2. Category-based sampling
+- We organize the dataset according to Alexa’s/DMOZ’s/ODP's main categories (excl. the “World” category as we only want to collect policies from US websites; with similar reasoning we limited the “Regional” category to Regional > North America > US; note that the "Adult" category was not explicitly excluded but the search results did not contain any websites in that category) to obtain a dataset that will allow us to make relative comparisons between websites from the same category. DMOZ/ODP has the advantage that most websites are already categorized.
+- Our dataset covers the following top categories from DMOZ/Alexa (see https://www.dmoz.org/):
+	Arts
+	Games
+	Kids and Teens
+	Reference
+	Shopping
+	Business
+	Health
+	News
+	Regional (limited to Regional > North America > US)
+	Society
+	Computers
+	Home
+	Recreation
+	Science
+	Sports
+- Based on the popularity score (see above) we split each category into quartiles
+- From each quartile we randomly selected 2 websites to obtain 8 per category
+
+3. Quality assurance
+- For each website, we check manually that it:
+— has a privacy policy
+— is in English
+— is a US-based website (to ensure consistency in jurisdiction, based on contacts page, WHOIS entry and similar cues)
+If a website does not meet the criteria, it will be replaced with a random pick from the same category and quartile
+ 
+4. Policy retrieval and segmentation
+- Policies are largely retrieved automatically by the crawler, for websites where the heuristics fail we downloaded them manually
+- Policies are segmented with Pradeep and Sebastian's segmentation tool
+- Segmented policies were manually inspected to identify and manually correct bad segment breaks.

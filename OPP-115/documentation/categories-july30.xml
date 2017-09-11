@@ -1,0 +1,1319 @@
+<?xml version="1.0"?>
+<categories xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="annotation.xsd">
+	<version>20151115-01</version>
+	<category>
+		<name>First Party Collection/Use</name>
+		<description> Privacy practice describing data collection or data use by the company/organization owning the website or mobile app.</description>
+		<attributes>
+			<attribute optional="true" default="Does" color="#999999">
+				<name>Does/Does Not</name>
+				<description>Use this optional attribute to denote if the policy explicitly states that something is NOT done. Defaults to Does.</description>
+				<values>
+					<value>
+						<name>Does</name>
+						<description>The first party does engage in the described practice.</description>
+					</value>
+                    <value>
+                        <name>Does Not</name>
+                        <description>The first party does not engage in the described practice.</description>
+                    </value>
+				</values>
+			</attribute>
+			<attribute optional="true" default="not-selected" color="#CCCCCC">
+				<name>Collection Mode</name>
+				<description>Use this optional attribute to denote if the data collection performed by the first party is implicit (e.g., company collects information without user's explicit awareness) or explicit (e.g., user provides information). Defaults to “not selected.”</description>
+				<values>
+                    <value>
+                        <name>Explicit</name>
+                        <description>The company/organization collects or uses information that the user explicitly provides, e.g., the user enters information in a web form.</description>
+                    </value>
+					<value>
+						<name>Implicit</name>
+						<description>The company/organization collects or uses information that the user does not explicitly provide, e.g., data is collected or transferred automatically in the background. The user may or may not have given consent to such implicit collection/use.</description>
+					</value>
+					<value>
+						<name>Unspecified</name>
+						<description>It is not specified or unclear whether the information is collected explicitly or implicitly.</description>
+					</value>
+				</values>
+			</attribute>
+			<attribute optional="false" color="#CC9900">
+                <name>Action First-Party</name>
+				<description>How does the first party collect, track, or obtain user information?</description>
+				<values>
+					<value>
+						<name>Collect on website</name>
+						<description>The company/organization collects user information directly on the website.</description>
+					</value>
+                    <value>
+                        <name>Collect in mobile app</name>
+                        <description>The company/organization has a mobile app and it collects user information through that platform.</description>
+                    </value>
+                    <value>
+                        <name>Collect on mobile website</name>
+                        <description>The company/organization has a mobile version of its website through which it collects user information. This value is only needed if the policy explicitly distinguishes between its normal and mobile websites.</description>
+                    </value>
+                    <value>
+                        <name>Track user on other websites</name>
+                        <description>The company/organization tracks its users’ activities when they visit other websites, typically without the user being aware of it.</description>
+                    </value>
+                    <value>
+                        <name>Collect from user on other websites</name>
+                        <description>This company/organization (the first party) has a widget or element on other websites, in which the user can explicitly provide data to the first party while being on the other website. For example, Facebook users can comment on news or other content on different websites and Facebook collects that data.</description>
+                    </value>
+                    <value>
+                        <name>Receive from other parts of company/affiliates</name>
+                        <description>The company/organization is part of a family of companies/organizations or has subsidiaries (e.g., physical store, other websites that belong to same company). It receives user information from those other units.</description>
+                    </value>
+                    <value>
+                        <name>Receive from other service/third-party (unnamed)</name>
+                        <description>The company/organization receives user information from an unnamed third-party (e.g., the policy just speaks of “data brokers” or "partners" in the abstract).</description>
+                    </value>
+                    <value>
+                        <name>Receive from other service/third-party (named)</name>
+                        <description>The company/organization acquires user information from a third party that is explicitly named (e.g., Facebook when the user signs in using Facebook account; or a specific "partner").</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>The specified type of collection is not covered by the options above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The type of collection is not specified or unclear, e.g., “We collect your personal information” without further specification whether the collection occurs on a website, an app, offline, etc.</description>
+                    </value>
+				</values>
+			</attribute>
+			<attribute optional="true" default="not-selected" color="#9999FF">
+				<name>Identifiability</name>
+				<description>Use this optional attribute if it is explicitly stated whether the information or data practice is linked to the user's identity or if it is anonymous. Defaults to "not selected."</description>
+				<values>
+                    <value>
+						<name>Identifiable</name>
+                        <description>It is explicitly stated that the information/data practice is linked to the user's identity.</description>
+                    </value>
+                    <value>
+                        <name>Aggregated or anonymized</name>
+                        <description>The collected data is anonymized (e.g., link to user's identity is removed) or aggregated (e.g., merged with other users' information so that it is not possible to uniquely identify a single user).</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>The practice makes an explicit statement about identifiability that is not covered by the options above.</description>
+                    </value>
+					<value>
+						<name>Unspecified</name>
+                        <description>It’s not explicitly stated or unclear if the information/data practice is linked to the user's identity.</description>
+                    </value>
+				</values>
+			</attribute>
+			<attribute optional="false" color="#0000FF">
+				<name>Personal Information Type</name>
+				<description> What category of information is collected or tracked by the company/organization?</description>
+				<values>
+                    <value>
+                        <name>Financial</name>
+                        <description>Financial information, such as credit/debit card data, other payment information, credit scores, etc.</description>
+                    </value>
+                    <value>
+                        <name>Health</name>
+                        <description>Health Information, such as information about health conditions, prescriptions, medication, as well as health monitoring data, e.g., heart rate, step count, activity level, etc.</description>
+                    </value>
+                    <value>
+                        <name>Contact</name>
+                        <description>Contact Information, such as name, email address, phone number, street address, etc.</description>
+                    </value>
+                    <value>
+                        <name>Location</name>
+                        <description>Geo-location information (e.g., user's current location) regardless of granularity, i.e., could be exact location, ZIP code, city-level.</description>
+                    </value>
+                    <value>
+                        <name>Demographic</name>
+                        <description>Demographic Information, e.g., gender, age, occupation, education, etc.</description>
+                    </value>
+                    <value>
+                        <name>Personal identifier</name>
+                        <description>Identifiers that uniquely identify a person,e.g., SSN, driver's license number, etc.</description>
+                    </value>
+                    <value>
+                        <name>User online activities</name>
+                        <description>The user's online activities on the first party website/app or other websites/apps, e.g., pages visited, time spent on pages, general user behavior online, etc.</description>
+                    </value>
+                    <value>	
+                        <name>User profile</name>
+                        <description>The user’s profile on the first-party website/app and its contents, e.g., data in user profile, data that user uploaded to website, user comments, user profile preferences, etc. This is common for websites/apps where users can create an account or profile, e.g., on twitter, youtube, Facebook, Amazon, etc.</description>
+                    </value>
+                    <value>
+                        <name>Social media data</name>
+                        <description>User profile and data from a social media website/app or other third party service to which the user gave the first party access, e.g., by connecting with Facebook, twitter, or other services. Exchanged data may include user profile, photos, comments, friends, etc.</description>
+                    </value>
+                    <value>
+                        <name>IP address and device IDs</name>
+                        <description>Permanent (e.g., device IDs, MAC address) or temporary (e.g., IP address) identifiers needed to establish a connection for the current browsing session.</description>
+                    </value>
+                    <value>
+                        <name>Cookies and tracking elements</name>
+                        <description>Identifiers locally stored on user's device by the company/organization or third-parties including cookies, beacons, or similar that are commonly used to uniquely identify users, but that are not essential to establish a connection with the user’s device or to provide a service.</description>
+                    </value>											
+                    <value>
+                        <name>Computer information</name>
+                        <description>The type of operating system (OS) or web browser that the user uses, or similar computer or device information.</description>
+                    </value>
+                    <value>
+                        <name>Survey data</name>
+                        <description>Any data that is collected through surveys</description>
+                    </value>
+                    <value>
+                        <name>Generic personal information</name>
+                        <description>No specific type of information is mentioned, but the policy talks about “personal information” or “personal identifiable information” in general.</description>
+                    </value>						
+                    <value>
+                        <name>Other</name>
+                        <description>A specific type of information not covered by the above categories.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The type of information is not explicitly stated or unclear (e.g., refers to "information" very generically).</description>
+                    </value>
+				</values>
+			</attribute>
+			<attribute optional="false" color="#336633">
+				<name>Purpose</name>
+				<description>What is the purpose of collecting or using user information?</description>
+				<values>
+                    <value>
+                        <name>Basic service/feature</name>
+                        <description>Provide a service that the user explicitly requests and that is part of the website/app's basic service or functionality. Examples are watching a video, reading an article, making a purchase, creating an account, contacting the company, etc.</description>
+                    </value>
+                    <value>
+                        <name>Additional service/feature</name>
+                        <description>Provide a service that the user explicitly requests but that is not a necessary part of the website/app's basic service. Additional services/features may enhance user experience or add convenience but require additional data, e.g., social media integration, comments, blog participation, a store finder that needs location information, etc.</description>
+                    </value>
+                    <value>
+                        <name>Advertising</name>
+                        <description>To show ads that are either targeted to the specific user or not targeted.</description>
+                    </value>
+                    <value>
+                        <name>Marketing</name>
+                        <description>To contact the user to offer products,services, or other promotions (e.g., send marketing emails, calling or texting user with marketing messages). Marketing typically requires the use of contact information.</description>
+                    </value>
+                    <value>
+                        <name>Analytics/Research</name>
+                        <description>For understanding the website/app’s audience, improving the website/app, inform company strategy, or general research.</description>
+                    </value>
+                    <value>
+                        <name>Personalization/Customization</name>
+                        <description>For providing user with a personalized experience, e.g., by allowing to arrange how the website/app looks, based on the user’s preferences or language, etc.</description>
+                    </value>
+                    <value>
+                        <name>Service Operation and Security</name>
+                        <description>For website/app operation and security, enforcement of terms of service, fraud prevention, protecting users and property, etc.</description>
+                    </value>
+                    <value>
+                        <name>Legal requirement</name>
+                        <description>For compliance with legal obligations, e.g., regulations, government data requests, government retention requests, law enforcement requests in general, etc.</description>
+                    </value>
+                    <value>
+                        <name>Merger/Acquisition</name>
+                        <description>If company/organization merges or is acquired it transfers users' information to another company/organization.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>Other specific purpose not covered above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The purpose is not explicitly stated or is unclear.</description>
+                    </value>
+				</values>
+			</attribute>
+			<attribute optional="true" default="not-selected" color="#FF00FF">
+				<name>User Type</name>
+				<description>Use this optional attribute if this practice applies specifically to users with an account or users without an account.</description>
+				<values>
+                    <value>
+                        <name>User without account</name>
+                        <description>This data practice specifically applies to users that do not have an account or are not registered with the website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>User with account</name>
+                        <description>This data practice specifically applies to users with an account or who are registered with the website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>This data practice applies to a specific user type not covered by the options above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>It is not specified whether this practice applies to users with or without account.</description>
+                    </value>
+				</values>
+			</attribute>			
+			<attribute optional="true" default="not-selected" color="#993333">
+				<name>Choice Type</name>
+				<description>Use this optional attribute if user choices are explicitly offered for this practice. Defaults to “not selected.”</description>
+				<values>
+                    <value>
+                        <name>Dont use service/feature</name>
+                        <description>Only option is not to use the feature or service. Only select this if explicitly stated in policy (i.e., don't interpret silence as "Don't use website or feature").</description>
+                    </value>
+                    <value>
+                        <name>Opt-in</name>
+                        <description>User must consent before data can be collected or used by first party.</description>
+                    </value>
+                    <value>
+                        <name>Opt-out link</name>
+                        <description>Link provided in privacy policy, on website, in mobile app, or in email, etc.</description>
+                    </value>
+                    <value>
+                        <name>Opt-out via contacting company</name>
+                        <description>Must contact company via email, phone, or postal mail to opt-out.</description>
+                    </value>
+                    <value>
+                        <name>First-party privacy controls</name>
+                        <description>Website/app provides user settings for privacy configuration.</description>
+                    </value>
+                    <value>
+                        <name>Third-party privacy controls</name>
+                        <description>Choices provided by a third party (e.g., privacy settings on social media site) or industry (e.g., AdChoices Opt-out).</description>
+                    </value>
+                    <value>
+                        <name>Browser/device privacy controls</name>
+                        <description>Policy suggests the use of browser or mobile device’s privacy settings, e.g., to block trackers or cookies, activate Do-Not-Track, disable location sharing, clear history, etc.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>Other specific user choice or control option not captured above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>No user choices mentioned for this practice.</description>
+                    </value>
+				</values>
+			</attribute>
+			<attribute optional="true" default="not-selected" color="#CC4444">
+				<name>Choice Scope</name>
+				<description>Use this optional attribute to indicate the scope of user choices. In some cases, even if user choices are not clear or specific, this attribute can be selected. Defaults to “not selected.”</description>
+				<values>
+                    <value>
+                        <name>Collection</name>
+                        <description>Choices apply to collection only.</description>
+                    </value>
+                    <value>
+                        <name>Use</name>
+                        <description>Choices apply to use only.</description>
+                    </value>
+                    <value>
+                        <name>Both</name>
+                        <description>Choices apply to both collection and use.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>No specific scope of choices is mentioned.</description>
+                    </value>
+				</values>
+			</attribute>
+		</attributes>
+	</category>
+    <category>
+        <name>Third Party Sharing/Collection</name>
+        <description>Privacy practice describing data sharing with third parties or data collection by third parties. A third party is a company/organization other than the first party  company/organization that owns the website or mobile app.</description>
+        <attributes>
+            <attribute optional="false" color="#336699">
+                <name>Third Party Entity</name>
+                <description>The third-party involved in the data practice.</description>
+                <values>
+                    <value>
+                        <name>Unnamed third party</name>
+                        <description>The third party is not explicitly named, i.e., it is just generically referred to as "third-party," "partner," or similar.</description>
+                    </value>
+                    <value>
+                        <name>Named third party</name>
+                        <description>The third party is explicitly named (e.g. Facebook) or at least characterized (e.g., “advertising partner” or “data broker”).</description>
+                    </value>
+                    <value>
+                        <name>Other part of company/affiliate</name>
+                        <description>Data is made available to other parts of the company/organization, e.g., it is shared with other services, apps, or websites operated by the company, could also be data exchange between online and offline company units (e.g. physical stores).</description>
+                    </value>
+                    <value>
+                        <name>Other users</name>
+                        <description>The third-party involved are other users of the first party website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>Public</name>
+                        <description>User information is made public or can be obtained from public sources.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>Other specific third-party entity not covered above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The third-party entity is not specified. This is uncommon, "unnamed third-party" will likely be the right value instead.</description>
+                    </value>
+                </values>
+            </attribute>
+			<attribute optional="true" default="Does" color="#999999">
+				<name>Does/Does Not</name>
+				<description>Use this optional attribute to denote if the policy explicitly states that something is NOT done. Defaults to Does.</description>
+				<values>
+					<value>
+						<name>Does</name>
+						<description>The third party does engage in the described practice.</description>
+					</value>
+                    <value>
+                        <name>Does Not</name>
+                        <description>The third party does not engage in the described practice.</description>
+                    </value>
+				</values>
+			</attribute>
+            <attribute optional="false" color="#CC9900">
+                <name>Action Third Party</name>
+                <description>How does the third-party receive, collect, track, or see user information.</description>
+                <values>
+                    <value>
+                        <name>Receive/Shared with</name>
+                        <description>The third party receives information from the first party. (i.e., the first party explicitly shares data with third-party)</description>
+                    </value>
+                    <value>
+                        <name>Collect on first party website/app</name>
+                        <description>The third party explicitly collects data from users on the first party website/app, e.g., by functionality on the website/app that allows users to directly provide information to the third party, such as social media sharing buttons or commenting forms.</description>
+                    </value>
+                    <value>
+                        <name>Track on first party website/app</name>
+                        <description>The third party implicitly collects data about users directly on the first party website/app, typically without the user being aware of it, e.g., by tracking users with cookies, beacons, third party ad libraries, or other functionality.</description>
+                    </value>
+                    <value>
+                        <name>See</name>
+                        <description>Third-party can see user information that is publicly available either on the website/app or somewhere else. Remember, a third-party can be another user of the website/app. The difference to “receive” is that the information is available but not explicitly given to a specific third party.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>How the third party collects or receives user information is specified in the policy but it is not covered by the options above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The type of collection is not specified or unclear, e.g., “Our outside partners collect your personal information” without further specification whether the collection occurs on a website, app, offline, etc.</description>
+                    </value>
+                </values>
+            </attribute>
+            <attribute optional="true" default="not-selected" color="#9999FF">
+                <name>Identifiability</name>
+                <description>Use this optional attribute if if it is explicitly stated whether the information or data practice is linked to the user's identity or if it is anonymous. Defaults to "not selected."</description>
+                <values>
+                    <value>
+                        <name>Identifiable</name>
+                        <description>It is explicitly stated that the information/data practice is linked to the user's identity.</description>
+                    </value>
+                    <value>
+                        <name>Aggregated or anonymized</name>
+                        <description>The collected data is anonymized (e.g., link to user's identity is removed) or aggregated (e.g., merged with other users' information so that it is not possible to uniquely identify a single user).</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>The policy makes an explicit statement about identifiability that is not covered by the options above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>It is not explicitly stated or unclear if the information/data practice is linked to the user's identity.</description>
+                    </value>
+                </values>
+            </attribute>
+            <attribute optional="false" color="#0000FF">
+                <name>Personal Information Type</name>
+                <description>What category of information is shared with, collected by or otherwise obtained by the third-party.</description>
+                <values>
+                    <value>
+                        <name>Financial</name>
+                        <description>Financial information, e.g., credit/debit card data, other payment information, credit scores, etc.</description>
+                    </value>
+                    <value>
+                        <name>Health</name>
+                        <description>Health Information, such as information about health conditions, prescriptions, medication, as well as health monitoring data, e.g., heart rate, step count, activity level, etc.</description>
+                    </value>
+                    <value>
+                        <name>Contact</name>
+                        <description>Contact Information, e.g., name, email address, phone number, street address, etc.</description>
+                    </value>
+                    <value>
+                        <name>Location</name>
+                        <description>Geo-location information (e.g., user's current location) regardless of granularity, i.e., could be exact location, ZIP code, city-level.</description>
+                    </value>
+                    <value>
+                        <name>Demographic</name>
+                        <description>Demographic Information, e.g., gender, age, occupation, education, etc.</description>
+                    </value>
+                    <value>
+                        <name>Personal identifier</name>
+                        <description>Identifiers that uniquely identify a person,e.g., SSN, driver's license number, etc.</description>
+                    </value>
+                    <value>
+                        <name>User online activities</name>
+                        <description>The user’s online activities on the first party website/app or other websites/apps, e.g., pages visited, time spent on pages, general user behavior online, etc.</description>
+                    </value>
+                    <value>
+                        <name>User Profile</name>
+                        <description>The user’s profile on the first-party website/app and its contents, e.g., data in user profile, data that user uploaded to website/app, user comments, user profile preferences, etc. This is common for websites/apps where users can create an account or profile, e.g., on twitter, youtube, Facebook, Amazon, etc.</description>
+                    </value>
+                    <value>
+                        <name>IP address and device IDs</name>
+                        <description>Permanent (e.g., device IDs, MAC address) or temporary (e.g., IP address) identifiers of the user device (e.g., computer, mobile device, etc.) needed to establish a connection for the current browsing session.</description>
+                    </value>
+                    <value>
+                        <name>Cookies and tracking elements</name>
+                        <description>Identifiers locally stored on user's device by company/organization or third-parties including cookies, beacons, or similar that are commonly used to uniquely identify users, but that are not essential to establish a connection with the user’s device or to provide a service.</description>
+                    </value>
+                    <value>
+                        <name>Computer information</name>
+                        <description>The type of operating system (OS) or web browser that the user uses, or similar computer or device information.</description>
+                    </value> 
+                    <value>
+                        <name>Survey data</name>
+                        <description>Any data that is collected through surveys.</description>
+                    </value>
+                    <value>
+                        <name>Generic personal information</name>
+                        <description>No specific type of information is mentioned, but the policy talks about “personal information” or “personal identifiable information” in general.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>A specific type of information not covered by the above categories.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The type of information is not explicitly stated or unclear (e.g., refers to "information" very generically).</description>
+                    </value>
+                </values>
+            </attribute>
+            <attribute optional="false" color="#336633">
+                <name>Purpose</name>
+                <description>What is the purpose of a third party receiving or collecting user information?</description>
+                <values>
+                    <value>
+                        <name>Basic service/feature</name>
+                        <description>Provide a service that user explicitly requests and that is part of website/app's basic service or functionality. Examples are watching a video, reading an article, making a purchase, creating an account, contacting the company, etc.</description>
+                    </value>
+                    <value>
+                        <name>Additional service/feature</name>
+                        <description>Provide a service that the user explicitly requests but that is not a necessary part of the website/app's basic service. Additional services/features may enhance user experience or add convenience but require additional data or sharing with third parties, e.g., social media integration, comments, blog participation, a store finder that needs location information, etc.</description>
+                    </value>
+                    <value>
+                        <name>Advertising</name>
+                        <description>To show ads that are either targeted to the specific user or not targeted.</description>
+                    </value>
+                    <value>
+                        <name>Marketing</name>
+                        <description>To contact the user to offer products, services, or other promotions (e.g., send marketing emails, calling or texting user with marketing messages). Marketing typically requires the use of contact information.</description>
+                    </value>
+                    <value>
+                        <name>Analytics/Research</name>
+                        <description>For understanding the website/app’s audience, improving the website/app, inform company strategy, or general research.</description>
+                    </value>
+                    <value>
+                        <name>Personalization/Customization</name>
+                        <description>For providing user with a personalized experience, e.g., by allowing to arrange how the website/app looks, based on the user’s preferences or language, etc.</description>
+                    </value>
+                    <value>
+                        <name>Service operation and security</name>
+                        <description>For website/app operation and security, enforcement of terms of service, fraud prevention, protecting users and property, etc.</description>
+                    </value>
+                    <value>
+                        <name>Legal requirement</name>
+                        <description>For compliance with legal obligations, e.g., regulations, government data requests, government retention requests, law enforcement requests in general, etc.</description>
+                    </value>
+                    <value>
+                        <name>Merger/Acquisition</name>
+                        <description>If company/organization merges or is acquired it transfers users' information to another company/organization.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>Other specific purpose not covered above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The purpose is not explicitly stated or is unclear.</description>
+                    </value>
+                </values>
+            </attribute>
+			<attribute optional="true" default="not-selected" color="#FF00FF">
+				<name>User Type</name>
+				<description>Use this optional attribute if this practice applies specifically to users with an account or users without an account.</description>
+				<values>
+                    <value>
+                        <name>User without account</name>
+                        <description>This data practice specifically applies to users that do not have an account or are not registered with the website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>User with account</name>
+                        <description>This data practice specifically applies to users with an account or who are registered with the website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>This data practice applies to a specific user type not covered by the options above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>It is not specified whether this practice applies to users with or without account.</description>
+                    </value>
+				</values>
+			</attribute>
+            <attribute optional="true" default="not-selected" color="#993333">
+                <name>Choice Type</name>
+                <description>Use this optional attribute if user choices are explicitly offered for this practice. Defaults to “not selected.”
+</description>
+                <values>
+                    <value>
+                        <name>Dont use service/feature</name>
+                        <description>Only option is not to use the feature or service. Only select this if explicitly stated in policy (i.e., don't interpret silence as "Don't use website or feature").</description>
+                    </value>
+                    <value>
+                        <name>Opt-in</name>
+                        <description>User must consent before data can be shared with or collected/used by third party.</description>
+                    </value>
+                    <value>
+                        <name>Opt-out link</name>
+                        <description>Link provided in privacy policy, on website, in mobile app, or in email, etc.</description>
+                    </value>
+                    <value>
+                        <name>Opt-out via contacting company</name>
+                        <description>Must contact company/organization via email, phone, postal mail to opt-out.</description>
+                    </value>
+                    <value>
+                        <name>First-party privacy controls</name>
+                        <description>Website/app provides user settings for privacy configuration.</description>
+                    </value>
+                    <value>
+                        <name>Third-party privacy controls</name>
+                        <description>Choices provided by a third party (e.g., privacy settings on social media site) or industry (e.g., AdChoices Opt-out).</description>
+                    </value>
+                    <value>
+                        <name>Browser/device privacy controls</name>
+                        <description>Policy suggests the use of browser’s or mobile device’s privacy settings, e.g., to block trackers or cookies, activate Do-Not-Track, disable location sharing, clear history, etc.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>Other specific user choice or control option not captured above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>No user choices mentioned for this practice.</description>
+                    </value>
+                </values>
+            </attribute>
+            <attribute optional="true" default="not-selected" color="#CC4444">
+                <name>Choice Scope</name>
+                <description>Use this optional attribute to indicate the scope of user choices. In some cases, even if user choices are not clear or specific, this attribute can be selected. Defaults to “not selected.”</description>
+                <values>
+                    <value>
+                        <name>Collection</name>
+                        <description>Choices apply to collection by or sharing with third party only.</description>
+                    </value>
+                    <value>
+                        <name>Use</name>
+                        <description>Choices apply to use by third party only.</description>
+                    </value>
+                    <value>
+                        <name>Both</name>
+                        <description>Choices apply to both collection/sharing and use.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>No specific scope of choices is mentioned.</description>
+                    </value>
+                </values>
+            </attribute>
+        </attributes>
+    </category>
+	<category>
+		<name>User Choice/Control</name>
+		<description>Practice that describes general choices and control options available to users.</description>
+		<attributes>
+			<attribute optional="false" color="#993333">
+				<name>Choice Type</name>
+                <description>The type of user choice or privacy control options available to users.</description>
+                <values>
+                    <value>
+                        <name>Dont use service/feature</name>
+                        <description>Only option is not to use the feature or service. Only select this if explicitly stated in policy (i.e., don't interpret silence as "Don't use website or feature").</description>
+                    </value>
+                    <value>
+                        <name>Opt-in</name>
+                        <description>User must consent before data can be shared with or collected/used by third party.</description>
+                    </value>
+                    <value>
+                        <name>Opt-out link</name>
+                        <description>Link provided in privacy policy, on website, in mobile app, or in email, etc.</description>
+                    </value>
+                    <value>
+                        <name>Opt-out via contacting company</name>
+                        <description>Must contact company/organization via email, phone, postal mail to opt-out.</description>
+                    </value>
+                    <value>
+                        <name>First-party privacy controls</name>
+                        <description>Website/app provides user settings for privacy configuration.</description>
+                    </value>
+                    <value>
+                        <name>Third-party privacy controls</name>
+                        <description>Choices provided by a third party (e.g., privacy settings on social media site) or industry (e.g., AdChoices Opt-out).</description>
+                    </value>
+                    <value>
+                        <name>Browser/device privacy controls</name>
+                        <description>Policy suggests the use of browser’s or mobile device’s privacy settings, e.g., to block trackers or cookies, activate Do-Not-Track, disable location sharing, clear history, etc.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>Other specific user choice or control option not captured above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>No user choices mentioned for this practice.</description>
+                    </value>
+                </values>
+			</attribute>
+			<attribute optional="false" color="#CC4444">
+				<name>Choice Scope</name>
+				<description>What scope does the user choice or control apply to, i.e., first party collection/use or third party collection/use. Note that sometimes use of information can be limited, but the information is still collected from users.</description>
+                <values>
+                    <value>
+                        <name>First party collection</name>
+                        <description>Choices apply to data collection by first party.</description>
+                    </value>
+                    <value>
+                        <name>First party use</name>
+                        <description>Choices apply to the use of information by first party.</description>
+                    </value>
+                    <value>
+                        <name>Third party sharing/collection</name>
+                        <description>Choices apply to data sharing with / collection by third party.</description>
+                    </value>
+                    <value>
+                        <name>Third party use</name>
+                        <description>Choices apply to the use of information by third party.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>No specific scope of choices is mentioned.</description>
+                    </value>
+                </values>
+			</attribute>
+			<attribute optional="false" color="#0000FF">
+				<name>Personal Information Type</name>
+				<description>What category of information does the user choice apply to?</description>
+				<values>
+                    <value>
+                        <name>Financial</name>
+                        <description>Financial information, such as credit/debit card data, other payment information, credit scores, etc.</description>
+                    </value>
+                    <value>
+                        <name>Health</name>
+                        <description>Health Information, such as information about health conditions, prescriptions, medication, as well as health monitoring data, e.g., heart rate, step count, activity level, etc.</description>
+                    </value>
+                    <value>
+                        <name>Contact</name>
+                        <description>Contact Information, such as name, email address, phone number, street address, etc.</description>
+                    </value>
+                    <value>
+                        <name>Location</name>
+                        <description>Geo-location information (e.g., user's current location) regardless of granularity, i.e., could be exact location, ZIP code, city-level.</description>
+                    </value>
+                    <value>
+                        <name>Demographic</name>
+                        <description>Demographic Information, e.g., gender, age, occupation, education, etc.</description>
+                    </value>
+                    <value>
+                        <name>Personal identifier</name>
+                        <description>Identifiers that uniquely identify a person,e.g., SSN, driver's license number, etc.</description>
+                    </value>
+                    <value>
+                        <name>User online activities</name>
+                        <description>The user's online activities on the first party website/app or other websites/apps, e.g., pages visited, time spent on pages, general user behavior online, etc.</description>
+                    </value>
+                    <value>	
+                        <name>User profile</name>
+                        <description>The user’s profile on the first-party website/app and its contents, e.g., data in user profile, data that user uploaded to website, user comments, user profile preferences, etc. This is common for websites/apps where users can create an account or profile, e.g., on twitter, youtube, Facebook, Amazon, etc.</description>
+                    </value>
+                    <value>
+                        <name>Social media data</name>
+                        <description>User profile and data from a social media website/app or other third party service to which the user gave the first party access, e.g., by connecting with Facebook, twitter, or other services. Exchanged data may include user profile, photos, comments, friends, etc.</description>
+                    </value>
+                    <value>
+                        <name>IP address and device IDs</name>
+                        <description>Permanent (e.g., device IDs, MAC address) or temporary (e.g., IP address) identifiers needed to establish a connection for the current browsing session.</description>
+                    </value>
+                    <value>
+                        <name>Cookies and tracking elements</name>
+                        <description>Identifiers locally stored on user's device by company/organization or third-parties including cookies, beacons, or similar that are commonly used to uniquely identify users, but that are not essential to establish a connection with the user’s device or to provide a service.</description>
+                    </value>											
+                    <value>
+                        <name>Computer information</name>
+                        <description>The type of operating system (OS) or web browser that the user uses, or similar computer or device information.</description>
+                    </value>
+                    <value>
+                        <name>Survey data</name>
+                        <description>Any data that is collected through surveys</description>
+                    </value>
+                    <value>
+                        <name>Generic personal information</name>
+                        <description>No specific type of information is mentioned, but the policy talks about “personal information” or “personal identifiable information” in general.</description>
+                    </value>						
+                    <value>
+                        <name>Other</name>
+                        <description>A specific type of information not covered by the above categories.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The type of information is not explicitly stated or unclear (e.g., refers to "information" very generically).</description>
+                    </value>
+				</values>
+			</attribute>
+			<attribute optional="false" color="#336633">
+				<name>Purpose</name>
+				<description>What purpose/use of information does the user choice apply to?</description>
+				<values>
+                    <value>
+                        <name>Basic service/feature</name>
+                        <description>Provide a service that the user explicitly requests and that is part of the website/app's basic service or functionality. Examples are watching a video, reading an article, making a purchase, creating an account, contacting the company/organization, etc.</description>
+                    </value>
+                    <value>
+                        <name>Additional service/feature</name>
+                        <description>Provide a service that the user explicitly requests but that is not a necessary part of the website/app's basic service. Additional services/features may enhance user experience or add convenience but require additional data, e.g., social media integration, comments, blog participation, a store finder that needs location information, etc.</description>
+                    </value>
+                    <value>
+                        <name>Advertising</name>
+                        <description>To show ads that are either targeted to the specific user or not targeted.</description>
+                    </value>
+                    <value>
+                        <name>Marketing</name>
+                        <description>To contact the user to offer products,services, or other promotions (e.g., send marketing emails, calling or texting user with marketing messages). Marketing typically requires the use of contact information.</description>
+                    </value>
+                    <value>
+                        <name>Analytics/Research</name>
+                        <description>For understanding the website/app’s audience, improving the website/app, inform company strategy, or general research.</description>
+                    </value>
+                    <value>
+                        <name>Personalization/Customization</name>
+                        <description>For providing user with a personalized experience, e.g., by allowing to arrange how the website/app looks, based on the user’s preferences or language, etc.</description>
+                    </value>
+                    <value>
+                        <name>Service Operation and Security</name>
+                        <description>For website/app operation and security, enforcement of terms of service, fraud prevention, protecting users and property, etc.</description>
+                    </value>
+                    <value>
+                        <name>Legal requirement</name>
+                        <description>For compliance with legal obligations, e.g., regulations, government data requests, government retention requests, law enforcement requests in general, etc.</description>
+                    </value>
+                    <value>
+                        <name>Merger/Acquisition</name>
+                        <description>If company/organization merges or is acquired it transfers users' information to another company/organization.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>Other specific purpose not covered above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The purpose is not explicitly stated or is unclear.</description>
+                    </value>
+				</values>
+			</attribute>
+			<attribute optional="true" default="not-selected" color="#FF00FF">
+				<name>User Type</name>
+				<description>Use this optional attribute if this practice applies specifically to users with or without an account.</description>
+				<values>
+                    <value>
+                        <name>User without account</name>
+                        <description>This data practice specifically applies to users that do not have an account or are not registered with the website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>User with account</name>
+                        <description>This data practice specifically applies to users with an account or who are registered with the website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>This data practice applies to a specific user type not covered by the options above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>It is not specified whether this practice applies to users with or without account.</description>
+                    </value>
+				</values>
+			</attribute>
+		 </attributes>
+	</category>
+	<category>
+		<name>User Access, Edit and Deletion</name>
+		<description>Privacy practice that allows users to access, edit or delete the data that the company/organization has about them.</description>
+		<attributes>
+			<attribute optional="false" color="#663333">
+				<name>Access Type</name>
+                <description>Options offered for users to access, edit, delete information that the company/organization has about them.</description>
+				<values>
+					<value>
+						<name>None</name>
+						<description>Users cannot access, edit, or delete data. Only select this if explicitly stated that users don't have access, otherwise select "Unspecified."</description>
+					</value>
+					<value>
+						<name>View</name>
+						<description>Users can access their information, but not edit or delete it</description>
+					</value>
+					<value>
+						<name>Export</name>
+						<description>Users can export their information to other services or download it to own computer.</description>
+					</value>
+					<value>
+						<name>Edit information</name>
+						<description>User can modify or delete specific information</description>
+					</value>
+					<value>
+						<name>Deactivate account</name>
+						<description>User can deactivate account so that the user’s information is not visible to other users anymore, but the company/organization keeps all the data.</description>
+					</value>
+					<value>
+						<name>Delete account (partial)</name>
+						<description>User can delete account, but the company/organization may continue to keep some of the user’s data.</description>
+					</value>
+					<value>
+						<name>Delete account (full)</name>
+						<description>User can delete account and all of the user’s information is removed from company/organization’s servers/databases.</description>
+					</value>
+					<value>
+						<name>Other</name>
+						<description>An access, edit, or delete option not covered above.</description>
+					</value>
+					<value>
+						<name>Unspecified</name>
+						<description>Access options are not mentioned or unclear.</description>
+					</value>
+				</values>
+			</attribute>
+			<attribute optional="false" color="#996666">
+				<name>Access Scope</name>
+				<description>If access is offered, what data does it apply to.</description>
+				<values>
+					<value>
+						<name>User account data</name>
+						<description>Information explicitly provided by the user, such as contact,  demographic, and any other explicitly provided information that is part of the user’s profile/account. This includes user preferences and settings.</description>
+					</value>
+					<value>
+						<name>Transactional data</name>
+						<description>Purchases made, online activity, products watched, comments or questions submitted.</description>
+					</value>
+                    <value>
+                        <name>Profile data</name>
+                        <description>Information that the company has learned about user, even if the user did not explicitly provided it</description>
+                    </value>
+					<value>
+						<name>Other data about user</name>
+						<description>Other information that the company/organization has learned about the user, e.g., inferred preferences, data from other third parties, etc.</description>
+					</value>
+                    <value>
+                        <name>Other</name>
+                        <description>A specific access scope is described that is not covered above.</description>
+                    </value>
+                    <value>
+						<name>Unspecified</name>
+						<description>Access scope is not mentioned or unclear.</description>
+					</value>
+				</values>
+			</attribute>
+			<attribute optional="true" default="not-selected" color="#FF00FF">
+				<name>User Type</name>
+				<description>Use this optional attribute if this practice applies specifically to users with or without an account.</description>
+				<values>
+                    <value>
+                        <name>User without account</name>
+                        <description>This data practice specifically applies to users that do not have an account or are not registered with the website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>User with account</name>
+                        <description>This data practice specifically applies to users with an account or who are registered with the website or mobile app.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>This data practice applies to a specific user type not covered by the options above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>It is not specified whether this practice applies to users with or without account.</description>
+                    </value>
+				</values>
+			</attribute>
+		 </attributes>
+	</category>
+    <category>
+        <name>Data Retention</name>
+        <description>Privacy practice specifying the retention period for collected user information.</description>
+        <attributes>
+            <attribute optional="false" color="#006666">
+                <name>Retention Period</name>
+                <description>Description of the retention period, i.e., how long data is stored.</description>
+                <values>
+                    <value>
+                        <name>Indefinitely</name>
+                        <description>Collected user information is retained indefinitely.</description>
+                    </value>
+                    <value>
+                        <name>Limited</name>
+                        <description>Data is deleted, anonymized, or aggregated at some point, but no specific retention period is stated, e.g., “only stored as long as needed to perform requested service” or “as required by legal obligations.”</description>
+                    </value>
+                    <value>
+                        <name>Stated Period</name>
+                        <description>Collected user information is deleted, anonymized or aggregated after a specific time period, e.g., “activity data is anonymized after 30 days.”</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>A specific retention type not covered above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>Retention period is not stated or unclear.</description>
+                    </value>
+                </values>
+            </attribute>
+            <attribute optional="false" color="#336633">
+                <name>Retention Purpose</name>
+                <description>The purpose to which the retention practice applies (may be “unspecified”).</description>
+                <values>
+                    <value>
+                        <name>Perform service</name>
+                        <description>Collected user information is only stored as long as it is needed to perform the requested service.</description>
+                    </value>
+                    <value>
+                        <name>Legal requirement</name>
+                        <description>Collected data is only stored as long as required for legal or law enforcement purposes.</description>
+                    </value>
+                    <value>
+                        <name>Analytics/Research</name>
+                        <description>For understanding the website/app’s audience, improving the website/app, inform company strategy, or general research.</description>
+                    </value>
+                    <value>
+                        <name>Service operation and security</name>
+                        <description>For website/app operation and security, enforcement of terms of service, fraud prevention, protecting users and property, etc.</description>
+                    </value>
+                    <value>
+                        <name>Advertising</name>
+                        <description>To show ads that are either targeted to the specific user or not targeted.</description>
+                    </value>
+                    <value>
+                        <name>Marketing</name>
+                        <description>To contact the user to offer products, services, or other promotions (e.g., send marketing emails, calling or texting user with marketing messages). Marketing typically requires the use of contact information.</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>Other specific retention purpose not covered above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The retention purpose is not explicitly stated or is unclear.</description>
+                    </value>
+                </values>
+            </attribute>
+            <attribute optional="false" color="#0000FF">
+                <name>Personal Information Type</name>
+                <description>The information type for which the retention period is specified (may be “unspecified”).</description>
+				<values>
+                    <value>
+                        <name>Financial</name>
+                        <description>Financial information, such as credit/debit card data, other payment information, credit scores, etc.</description>
+                    </value>
+                    <value>
+                        <name>Health</name>
+                        <description>Health Information, such as information about health conditions, prescriptions, medication, as well as health monitoring data, e.g., heart rate, step count, activity level, etc.</description>
+                    </value>
+                    <value>
+                        <name>Contact</name>
+                        <description>Contact Information, such as name, email address, phone number, street address, etc.</description>
+                    </value>
+                    <value>
+                        <name>Location</name>
+                        <description>Geo-location information (e.g., user's current location) regardless of granularity, i.e., could be exact location, ZIP code, city-level.</description>
+                    </value>
+                    <value>
+                        <name>Demographic</name>
+                        <description>Demographic Information, e.g., gender, age, occupation, education, etc.</description>
+                    </value>
+                    <value>
+                        <name>Personal identifier</name>
+                        <description>Identifiers that uniquely identify a person,e.g., SSN, driver's license number, etc.</description>
+                    </value>
+                    <value>
+                        <name>User online activities</name>
+                        <description>The user's online activities on the first party website/app or other websites/apps, e.g., pages visited, time spent on pages, general user behavior online, etc.</description>
+                    </value>
+                    <value>	
+                        <name>User profile</name>
+                        <description>The user’s profile on the first-party website/app and its contents, e.g., data in user profile, data that user uploaded to website, user comments, user profile preferences, etc. This is common for websites/apps where users can create an account or profile, e.g., on twitter, youtube, Facebook, Amazon, etc.</description>
+                    </value>
+                    <value>
+                        <name>Social media data</name>
+                        <description>User profile and data from a social media website/app or other third party service to which the user gave the first party access, e.g., by connecting with Facebook, twitter, or other services. Exchanged data may include user profile, photos, comments, friends, etc.</description>
+                    </value>
+                    <value>
+                        <name>IP address and device IDs</name>
+                        <description>Permanent (e.g., device IDs, MAC address) or temporary (e.g., IP address) identifiers needed to establish a connection for the current browsing session.</description>
+                    </value>
+                    <value>
+                        <name>Cookies and tracking elements</name>
+                        <description>Identifiers locally stored on user's device by website or third-parties including cookies, beacons, or similar that are commonly used to uniquely identify users, but that are not essential to establish a connection with the user’s device or to provide a service.</description>
+                    </value>											
+                    <value>
+                        <name>Computer information</name>
+                        <description>The type of operating system (OS) or web browser that the user uses, or similar computer or device information.</description>
+                    </value>
+                    <value>
+                        <name>Survey data</name>
+                        <description>Any data that is collected through surveys</description>
+                    </value>
+                    <value>
+                        <name>Generic personal information</name>
+                        <description>No specific type of information is mentioned, but the policy talks about “personal information” or “personal identifiable information” in general.</description>
+                    </value>						
+                    <value>
+                        <name>Other</name>
+                        <description>A specific type of information not covered by the above categories.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>The type of information is not explicitly stated or unclear (e.g., refers to "information" very generically).</description>
+                    </value>
+				</values>
+            </attribute>
+        </attributes>
+    </category>
+    <category>
+        <name>Data Security</name>
+        <description>Practice that describes how users’ information is secured and protected, e.g., from confidentiality, integrity, or availability breaches. Common practices include the encryption of stored data and online communications.</description>
+        <attributes>
+            <attribute optional="false" color="#FF0000">
+                <name>Security Measure</name>
+                <description>Policy statements that describe the type of security that the website/app implements to protect users’ information.</description>
+                <values>
+                    <value>
+                        <name>Secure data transfer</name>
+                        <description>Data transfer between user and website/app is encrypted, e.g., SSL, TLS, HTTPS.</description>
+                    </value>
+                    <value>
+                        <name>Secure user authentication</name>
+                        <description>User authentication, e.g., login to a user account, is encrypted/secured.</description>
+                    </value>
+                    <value>
+                        <name>Secure data storage</name>
+                        <description>Data is stored securely, e.g. in an encrypted format or database.</description>
+                    </value>
+                    <value>
+                        <name>Data access limitation</name>
+                        <description>Data is accessible to employees/third parties on a need-to-know basis.</description>
+                    </value>
+                    <value>
+                        <name>Privacy training</name>
+                        <description>The company/organization trains its employees/third parties in applicable privacy and security practices to protect user data.</description>
+                    </value>
+                    <value>
+                        <name>Privacy review/audit</name>
+                        <description>Privacy practices and security measures of the first party or third party are reviewed/audited by internal or external reviewers/auditors.</description>
+                    </value>
+                    <value>
+                        <name>Privacy/Security program</name>
+                        <description>The company/organization has a privacy or security program/organization in place addressing, for example, how to protect data against unauthorized access or privacy training for employees.</description>
+                    </value>
+                    <value>
+                        <name>Generic</name>
+                        <description>The policy makes generic security statements, e.g., “we protect your data” or “we use technology/encryption to protect your data.”</description>
+                    </value>
+                    <value>
+                        <name>Other</name>
+                        <description>A specific security measure not covered above.</description>
+                    </value>
+                    <value>
+                        <name>Unspecified</name>
+                        <description>Security measures are not mentioned or unclear.</description>
+                    </value>
+                </values>
+            </attribute>
+        </attributes>
+    </category>
+    <category>
+		<name>Policy Change</name>
+		<description>The company/organization’s practices concerning if and how users will be informed of changes to its privacy policy, including any choices offered to users.</description>
+		<attributes>
+			<attribute optional="false" color="#996633">
+				<name>Change Type</name>
+				<description>For what type of changes to the website/app’s policy are users notified.</description>
+				<values>
+					<value>
+						<name>Non-privacy relevant change</name>
+						<description>Minor change to the privacy policy that does not significantly affect data practices.</description>
+					</value>
+					<value>
+						<name>Privacy relevant change</name>
+						<description>A change to the privacy policy significantly impacting current data practices, e.g., use, collection, sharing, retention, etc.</description>
+					</value>
+					<value>
+						<name>In case of merger or acquisition</name>
+						<description>Users are notified if the policy changes as the result of a merger or acquisition.</description>
+					</value>
+					<value>
+						<name>Other</name>
+						<description>Other specific policy change type not covered above.</description>
+					</value>
+					<value>
+						<name>Unspecified</name>
+						<description>It is not mentioned or unclear for what kind of policy changes users are notified.</description>
+					</value>
+				</values>
+			</attribute>
+			<attribute optional="false" color="#CC6633">
+				<name>Notification Type</name>
+				<description>How is the user notified when the privacy policy changes.</description>
+				<values>
+					<value>
+						<name>No notification</name>
+						<description>User is not notified of changes to the privacy policy.</description>
+					</value>
+					<value>
+						<name>General notice in privacy policy</name>
+						<description>The policy date is updated or information about the change is posted as part of the privacy policy site.</description>
+					</value>
+					<value>
+						<name>General notice on website</name>
+						<description>Users will be notified when visiting the main website, i.e., not only when looking at the privacy policy.</description>
+					</value>
+					<value>
+						<name>Personal notice</name>
+						<description>Users will be personally informed about a privacy policy change, e.g., via email, text message or when logging into their account.</description>
+					</value>
+					<value>
+						<name>Other</name>
+						<description>Users are notified in another specific way not covered above.</description>
+					</value>
+					<value>
+						<name>Unspecified</name>
+						<description>How users are notified about policy changes is not mentioned or unclear.</description>
+					</value>
+				</values>
+			</attribute>
+			<attribute optional="false" color="#CC9966">
+				<name>User Choice</name>
+				<description>What choices/options are offered to the user when the policy changes.</description>
+				<values>
+					<value>
+						<name>None</name>
+						<description>The user has no options when the policy changes.</description>
+					</value>
+					<value>
+						<name>Opt-out</name>
+						<description>Users can decline the new policy within a certain time period (e.g., 30 days), e.g., by canceling their account, opting-out of new practices, etc.</description>
+					</value>
+					<value>
+						<name>Opt-in</name>
+						<description>User must agree before their data is collected/used/shared according to the new privacy policy.</description>
+					</value>
+					<value>
+						<name>User participation</name>
+						<description>Users can decide or influence policy change (e.g., the company/organization proposes a change and asks for users' opinions).</description>
+					</value>
+					<value>
+						<name>Other</name>
+                        <description>Other specific user choice not covered above.</description>
+					</value>
+					<value>
+						<name>Unspecified</name>
+						<description>Choices regarding policy changes are not mentioned or unclear.</description>
+					</value>
+				</values>
+			</attribute>
+		 </attributes>
+	</category>
+	<category>
+		<name>Do Not Track</name>
+		<description>Practices that explain if and how Do Not Track signals (DNT) for online tracking and advertising are honored.</description>
+		<attributes>
+			<attribute optional="false" color="#6633FF">
+				<name>Do Not Track policy</name>
+				<description>If and how Do-Not-Track signals (DNT) are honored.</description>
+				<values>
+					<value>
+						<name>Not mentioned</name>
+						<description>There is no statement concerning Do Not Track</description>
+					</value>
+					<value>
+						<name>Honored</name>
+						<description>The website/app reads and adheres to the user's DNT preference</description>
+					</value>
+					<value>
+						<name>Not honored</name>
+						<description>The website/app ignores DNT headers and the user’s DNT preference.</description>
+					</value>
+					<value>
+						<name>Mentioned, but unclear if honored</name>
+						<description>DNT headers are mentioned but it is unclear if the company/organization adheres to the user's DNT preference.</description>
+					</value>
+					<value>
+						<name>Other</name>
+						<description>The website/app handles DNT headers in a different way not covered above.</description>
+					</value>
+				</values>
+			</attribute>
+		 </attributes>
+	</category>
+	<category>
+		<name>International and Specific Audiences</name>
+		<description>Specific audiences mentioned in the company/organization’s privacy policy, such as children or international users, for which the company/organization may provide special provisions.</description>
+		<attributes>
+			<attribute optional="false" color="#FFFF33">
+				<name>Audience Type</name>
+				<description>Select which audience the policy segment refers to</description>
+				<values>
+					<value>
+						<name>Californians</name>
+						<description>How data from Californian users is treated, e.g., California privacy rights.</description>
+					</value>
+					<value>
+						<name>Europeans</name>
+						<description>How data from European users is treated, e.g., Safe Harbor provisions.</description>
+					</value>
+					<value>
+						<name>Citizens from other countries</name>
+						<description>Specific provisions for international audiences or citizens from countries other than US or Europe, e.g., international data transfer.</description>
+					</value>
+					<value>
+						<name>Children</name>
+						<description>How data from children is treated.</description>
+					</value>
+					<value>
+						<name>Other</name>
+						<description>Other specific audience group not mentioned above.</description>
+					</value>				
+				</values>
+			</attribute>
+		 </attributes>
+	</category>
+	<category>
+		<name>Other</name>
+		<description>Another aspect not covered in the other categories is discussed in the text segment.</description>
+		<attributes>
+			<attribute optional="false" color="#FF6699">
+				<name>Other Type</name>
+				<description>What other aspect not covered in the other categories is discussed in the text segment?</description>
+				<values>
+					<value>
+						<name>Introductory/Generic</name>
+						<description>It's a paragraph that introduces the policy, a section, or a group of practices, but does not mention a specific privacy/data practice. The paragraph makes generic statements, but does not describe specific privacy/data practices</description>
+					</value>
+					<value>
+						<name>Practice not covered</name>
+						<description>The paragraph describes a specific data practice, which is not covered by any of the other data practice categories.</description>
+					</value>
+					<value>
+						<name>Privacy contact information</name>
+						<description>The paragraph describes how to contact the company with questions, concerns, or complaints about the privacy policy.</description>
+					</value>
+					<value>
+						<name>Other</name>
+						<description>The paragraph does not fit any of the values above.</description>
+					</value>
+				</values>
+			</attribute>
+		 </attributes>
+	</category>
+</categories>
