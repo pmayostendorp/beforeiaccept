@@ -1,0 +1,3 @@
+Note some BeforeIAgree modifications: 
+- all .txt files have been manually added based on original .html privacy policies
+- the policy id for mohegan sun files has been changed from '955' to '995' to match indices used in other tables
