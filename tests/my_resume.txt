@@ -1,0 +1,33 @@
+Peter May-Ostendorp
+Durango, Colorado \\ 970.426.8827 \\ peter.mayostendorp@gmail.com
+linkedin.com/in/peter-may-ostendorp \\ github.com/pmayostendorp 
+Skills
+Programming		Data Science Frameworks		Leadership and Communication
+Proficient: R, Python, MATLAB, MySQL/postgreSQL.
+Familiarity: Java, AWS, Google Cloud.		Modeling: pandas, numpy, scipy, sklearn, nltk, scrapy, matplotlib, seaborn, plotly, tidyverse		Team and project management.
+Communication and visualization of complex technical concepts for non-technical audiences.
+Experience
+Fellow, Insight Data Science	September 2017 – present
+Created BeforeIAccept, a novel web application to digest and summarize web privacy policies and provide transparency to busy users who lack the time or legal expertise to interpret such documents.
+[More details, I promise, when I can speak to actual implementation and results!]
+Principal and Founder, Xergy Consulting, Durango, CO	March 2012 – present
+Assembled and grew team of energy experts to provide environmental NGOs, government agencies, electric utilities, and clean tech companies with energy modeling, research, and data science services. Clients include Pacific Gas and Electric Company, Aclara, and Tendril Networks.
+Cultivated team competencies in R data science frameworks, cloud-based data warehousing (Google Cloud Platform SQL), and web scraping (Scrapy) to accelerate delivery of analysis and differentiate against competitors.
+Provided Pacific Gas and Electric company with foundational technical and economic analysis to support the development of the nation’s first mandatory energy efficiency standard for computers, estimated to save Californians $370M per year.
+Advisor, Yonomi, Boulder, CO	October 2013 – present
+Provided technical and strategic guidance to Yonomi, an IoT app and platform for orchestrating routines between smart devices.
+Co-founder and Technical Advisor, QCoefficient, Chicago, IL	January 2013 – June 2014
+Co-led the engineering and development of a patent-pending commercial building model-predictive control SaaS platform, focusing on MATLAB- and MySQL-based backend.
+Developed distributed particle swarm optimizer, speeding optimization execution 3- to 5-fold.
+Doctoral Candidate, University of Colorado, Boulder, CO	November 2008 – March 2012
+Investigated model predictive strategies for mixed mode and naturally ventilated buildings.
+Created related ML-based control rule extraction technique for generating supervisory, near-optimal control rules, resulting in 5 publications receiving over 150 citations to date.
+Research Consultant, Tendril Networks, Boulder, CO	June 2010 – December 2010
+Identified and pursued public RD&D funding opportunities to expand Tendril research capabilities.
+Assisted in technical due diligence for acquisition of Grounded Power, Inc.
+Manager of Research and Policy, Ecos, Durango, CO	June 2004 – July 2008
+Established and managed electronics energy research lab and developed datasets and analysis driving efficiency policy on consumer goods including incandescent light bulbs, televisions, and AC-DC power supplies. 
+Education
+Ph.D. Civil Engineering, University of Colorado, Boulder, CO	April 2012
+B.E. Mechanical Engineering, Dartmouth College, Hanover, NH	June 2004
+B.A. Engineering Sciences, Dartmouth College, Hanover, NH	June 2003
