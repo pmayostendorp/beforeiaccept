@@ -42,12 +42,10 @@ db = create_engine('postgres://%s%s/%s'%(user,host,dbname))
 con = None
 con = psycopg2.connect(database = dbname, user = user)
 
-@app.route('/')
-@app.route('/index')
-def index():
-    return render_template("index.html",
-       title = 'Home', user = { 'nickname': 'Miguel' },
-       )
+# def index():
+#     return render_template("index.html",
+#        title = 'Home', user = { 'nickname': 'Miguel' },
+#        )
 
 # @app.route('/db')
 # def birth_page():
@@ -72,6 +70,8 @@ def index():
 #         births.append(dict(index=query_results.iloc[i]['index'], attendant=query_results.iloc[i]['attendant'], birth_month=query_results.iloc[i]['birth_month']))
 #     return render_template('caesarian.html',births=births)
 
+@app.route('/')
+@app.route('/index')
 @app.route('/input')
 def text_input():
     return render_template("input.html")
