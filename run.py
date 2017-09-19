@@ -1,3 +1,3 @@
 #!/Users/peterostendorp/anaconda/bin/python
-from flaskexample import app
+from flaskapp import app
 app.run(debug = True)
