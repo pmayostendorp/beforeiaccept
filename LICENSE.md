@@ -1,6 +1,5 @@
-## beforeIAgree
-Copyright 2017 Peter May-Ostendorp
-
+## BeforeIAccept
+(C) Copyright 2017 Peter May-Ostendorp
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
