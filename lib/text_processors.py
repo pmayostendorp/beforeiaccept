@@ -39,3 +39,12 @@ def text_process_policy(doc):
     lst = [sn.stem(word) for word in lst]
     lst = [word for word in lst if word.replace('|||','')]
     return ' '.join(lst)
+
+def text_paragraph_segmenter(doc):
+    """
+    input: doc as string
+    output: list of paragraphs with blank lines removed
+    """
+    
+    lines = doc.split('\n')
+    return [line for line in lines if line != '']
