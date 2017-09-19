@@ -53,32 +53,62 @@
       </div>
     </nav>
 
-<br><br>
+<br><br><br>
       
-<div class="container">
-    <div class="starter-template">
-        <h2>BeforeIAccept</h2>
-        <strong>Privacy policies for humans.</strong>
-        <p>Paste the text of your web service's privacy policy below:</p>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h1>BeforeIAccept <small>Privacy policies for humans.</small></h2>
     </div>
-
-    <div class = "container">
-
-      <form  action="/output" method="GET">
-        <div class="form-group">
-          <label for="policy_text"> </label>
-          <input type="text" id="policy_text" name="policy_text" placeholder="Copy and paste your site's terms here..." width="400px" height="400px">
-        </div>
-        <div>
-          <br>
-          <button type="submit" class="btn btn-default btn-lg">Analyze</button>
-        </div>
-      </form>
+    <div class="col-md-1"></div>
+</div>
+<hr>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+        <p class="lead"><strong>1.</strong> Paste a link to your service's privacy policy URL below:</p>
+      </div>
+      <div class="col-md-2">
+      <h2 class="text-center">OR</h2>
+      </div>
+      <div class="col-md-4">
+        <p class="lead"><strong>2.</strong> Paste the full text of your service's privacy policy:</p>
+      </div>
+      <div class="col-md-1"></div>
     </div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
-
-  </div> <!-- /.container-->
+    
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <form action="/output" method="GET">
+      <div class="row">
+        <div class="col-md-5">
+            <label for="url_text"> </label>
+            <input class="form-control" id="url_text" name="url_text" placeholder="Your service's URL here...">
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+            <label for="policy_text"> </label>
+            <textarea class="form-control" id="policy_text" name="policy_text" placeholder="Your service's policy text here..."></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-2">
+            <div class="text-center">
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg">Analyze </button>
+        </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      
+    </form>
+  </div>
+  <div class="col-md-1"></div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+</div> <!-- /.container-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
