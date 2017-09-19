@@ -4,7 +4,6 @@ from flaskexample import app
 from sqlalchemy import create_engine
 from sqlalchemy_utils import database_exists, create_database
 import psycopg2
-from flaskexample.a_Model import ModelIt
 from lib.text_processors import text_process_policy
 import pandas as pd
 import numpy as np
