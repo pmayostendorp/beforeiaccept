@@ -4,7 +4,8 @@ from flaskapp import app
 from sqlalchemy import create_engine
 from sqlalchemy_utils import database_exists, create_database
 import psycopg2
-from lib.text_processors import text_process_policy, text_paragraph_segmenter
+from lib.textprocessors import text_process_policy, text_paragraph_segmenter
+from lib.segmenters import url_input_segmenter
 import pandas as pd
 import numpy as np
 import nltk
@@ -63,9 +64,7 @@ model_thresholds = {
     'third_party_sharing':0.16,
     'user_access':0.05,
     'policy_change':0.05}
-    
 
-    
 #A helper function to predict classes from models stored in a dict
 def predict_all_models(model_dict,segment_list):
     """
