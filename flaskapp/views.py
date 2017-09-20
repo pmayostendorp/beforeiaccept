@@ -44,18 +44,35 @@ with open('pickles/user_access_NB_segment.pkl', 'rb') as file:
 with open('pickles/policy_change_NB_segment.pkl', 'rb') as file:
     policy_change_model = pickle.load(file)
 
+#TODO: LOAD MODEL THRESHOLDS HERE.
     
-#A helper function to run a bunch of models stored in a dict
+#A helper function to predict classes from models stored in a dict
 def predict_all_models(model_dict,segment_list):
     """
     This takes a dict of BeforeIAccept style models as input and provides
     a dict output with result keys corresponding to the input model keys,
-    evaluated on a list of input policy segments.
+    evaluated on a list of input policy segments. Returns the predicted class
+    based on the model's default threshold.
     """
     names = model_dict.keys()
     result = {}
     for name in names:
         result[name] = model_dict[name].predict(segment_list)
+    
+    return result
+
+#A helper function to predict probabilities from models stored in a dict
+def predict_proba_all_models(model_dict,segment_list):
+    """
+    This takes a dict of BeforeIAccept style models as input and provides
+    a dict output with result keys corresponding to the input model keys,
+    evaluated on a list of input policy segments. Returns the probability
+    of the 1 class.
+    """
+    names = model_dict.keys()
+    result = {}
+    for name in names:
+        result[name] = model_dict[name].predict_proba(segment_list)[:,1]
     
     return result
 
@@ -87,10 +104,13 @@ def text_output():
         'policy_change':policy_change_model}
     
     #Store results for each model category as dataframe, then sum up occurrences found.
-    results = pd.DataFrame(predict_all_models(model_dict,segments_processed))
+    results = pd.DataFrame(predict_proba_all_models(model_dict,segments_processed))
     #DEBUGGING PURPOSES
     for col in list(results.columns):
         print(results[col])
+    
+    #Apply thresholds for classification
+    results['data_encryption'] = results['data_encryption'].apply(lambda x: 1 if x >= 0.05 else 0)
     results = results.sum()
     
     #TO DO
