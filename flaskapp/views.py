@@ -128,6 +128,9 @@ def text_output():
     else:
         return render_template("input.html")  # send 'em back home
 
+    # Store the segments in a dataframe so we can serve them up later
+    orig_segments = pd.DataFrame({'segments':segment_list})
+
     print('Total segments: ' + str(len(segment_list)))
 
     print('Raw segments:')
@@ -147,12 +150,22 @@ def text_output():
     for col in list(tagged_segments.columns):
         print(tagged_segments[col])
 
-    # Now sum up the results so we track occurences.
+    # Now sum up the results so we track occurrences.
     results = tagged_segments.sum()
     print('Results:')
     print(results)
 
-    # TO DO
+    # Join the original segments with the tagged segments so we can export them.
+    tagged_segments = pd.concat([tagged_segments, orig_segments], axis=1)
+    segments_data_encryption = list(tagged_segments[tagged_segments['data_encryption'] == 1]['segments'])
+    segments_data_retention = list(tagged_segments[tagged_segments['data_retention'] == 1]['segments'])
+    segments_do_not_track = list(tagged_segments[tagged_segments['do_not_track'] == 1]['segments'])
+    segments_first_party_collection = list(tagged_segments[tagged_segments['first_party_collection'] == 1]['segments'])
+    segments_third_party_sharing = list(tagged_segments[tagged_segments['third_party_sharing'] == 1]['segments'])
+    segments_user_access = list(tagged_segments[tagged_segments['user_access'] == 1]['segments'])
+    segments_policy_change = list(tagged_segments[tagged_segments['policy_change'] == 1]['segments'])
+
+    # TODO
     # Post-process results to achieve good document-level classification.
     result_data_encryption = 'DOES' if results['data_encryption'] >= 1 else "DOESN'T"
     result_data_retention = 'MAY' if results['data_retention'] >= 1 else 'MAY NOT'
@@ -162,8 +175,18 @@ def text_output():
     result_user_access = 'DOES' if results['user_access'] >= 1 else "DOESN'T"
     result_policy_change = 'DOES' if results['policy_change'] >= 1 else "DOESN'T"
 
-    return render_template("output.html", policy_text=policy_text, result_data_encryption=result_data_encryption,
-                           result_data_retention=result_data_retention, result_do_not_track=result_do_not_track,
+    return render_template("output.html", policy_text=policy_text,
+                           segments_data_encryption=segments_data_encryption,
+                           segments_data_retention=segments_data_retention,
+                           segments_do_not_track=segments_do_not_track,
+                           segments_first_party_collection=segments_first_party_collection,
+                           segments_third_party_sharing=segments_third_party_sharing,
+                           segments_user_access=segments_user_access,
+                           segments_policy_change=segments_policy_change,
+                           result_data_encryption=result_data_encryption,
+                           result_data_retention=result_data_retention,
+                           result_do_not_track=result_do_not_track,
                            result_first_party_collection=result_first_party_collection,
-                           result_third_party_sharing=result_third_party_sharing, result_user_access=result_user_access,
+                           result_third_party_sharing=result_third_party_sharing,
+                           result_user_access=result_user_access,
                            result_policy_change=result_policy_change)
