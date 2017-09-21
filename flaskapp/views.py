@@ -133,6 +133,7 @@ def text_output():
     print('Raw segments:')
     print(segment_list)
     segments_processed = [text_process_policy(segment) for segment in segment_list]
+    segments_processed = [segment for segment in segments_processed if segment.strip() != '']   # Remove blank lines
 
     # DEBUGGING PURPOSES
     print('Processed segments:')

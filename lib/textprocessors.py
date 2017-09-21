@@ -23,23 +23,21 @@ def text_process_old(doc):
 
 def text_process_policy(doc):
     """
+    Takes in doc as string and returns a processed string
+    by performing the following steps:
     1. remove HTML tags
     2. remove punctuation
     3. remove stopwords
     4. stemming
-    5. remove '|||' inserted into corpus documents only
-    
-    Returns a string of the processed doc.
+    5. remove any blank lines
     """
     sn = SnowballStemmer(language='english')
 
-    lst = [word for word in doc.split() if re.search(r'\<.*\>', word) is None]
-    lst = ' '.join(lst)
-    lst = [char for char in lst if char not in string.punctuation]
+    s = re.sub(r'\<.*\>','',doc)
+    lst = [char for char in s if char not in string.punctuation]
     lst = ''.join(lst)
     lst = [word.lower() for word in lst.split() if word.lower() not in stopwords.words('english')]
     lst = [sn.stem(word) for word in lst]
-    lst = [word for word in lst if word.replace('|||', '')]
     return ' '.join(lst)
 
 
