@@ -4,7 +4,7 @@ from flaskapp import app
 # from sqlalchemy import create_engine
 # from sqlalchemy_utils import database_exists, create_database
 # import psycopg2
-from lib.textprocessors import text_process_policy, text_paragraph_segmenter
+from lib.textprocessors import text_process_policy, text_paragraph_segmenter, post_process_segments
 from lib.urlparser import url_input_parser
 import pandas as pd
 import numpy as np
@@ -124,12 +124,16 @@ def text_output():
     url = request.args.get('url_text')
     print('URL: ' + url)
 
+    # some input checking on the URL
+
+
     # pull policy text from the input field and store it
     policy_text = request.args.get('policy_text')
     print('Policy text: ' + policy_text)
 
     # user input checks
     if url.strip() != '':
+        # TODO put some try-catch magic around this
         text, domain = url_input_parser(url)
         segment_list = text_paragraph_segmenter(text)
     elif policy_text.strip() != '':
@@ -167,12 +171,25 @@ def text_output():
     # Join the original segments with the tagged segments so we can export them.
     tagged_segments = pd.concat([tagged_segments, orig_segments], axis=1)
     segments_data_encryption = list(tagged_segments[tagged_segments['data_encryption'] == 1]['segments'])
+    segments_data_encryption = post_process_segments(segments_data_encryption)
+
     segments_data_retention = list(tagged_segments[tagged_segments['data_retention'] == 1]['segments'])
+    segments_data_retention = post_process_segments(segments_data_retention)
+
     segments_do_not_track = list(tagged_segments[tagged_segments['do_not_track'] == 1]['segments'])
+    segments_do_not_track = post_process_segments(segments_do_not_track)
+
     segments_first_party_collection = list(tagged_segments[tagged_segments['first_party_collection'] == 1]['segments'])
+    segments_first_party_collection = post_process_segments(segments_first_party_collection)
+
     segments_third_party_sharing = list(tagged_segments[tagged_segments['third_party_sharing'] == 1]['segments'])
+    segments_third_party_sharing = post_process_segments(segments_third_party_sharing)
+
     segments_user_access = list(tagged_segments[tagged_segments['user_access'] == 1]['segments'])
+    segments_user_access = post_process_segments(segments_user_access)
+
     segments_policy_change = list(tagged_segments[tagged_segments['policy_change'] == 1]['segments'])
+    segments_policy_change = post_process_segments(segments_policy_change)
 
     # TODO
     # Post-process results to achieve good document-level classification.
@@ -186,14 +203,6 @@ def text_output():
     bool_user_access = results['user_access'] >= policy_thresholds['user_access']
     bool_policy_change = results['policy_change'] >= policy_thresholds['policy_change']
 
-    result_data_encryption = 'DOES' if bool_data_encryption else "DOESN'T"
-    result_data_retention = 'MAY' if bool_data_retention else 'MAY NOT'
-    result_do_not_track = 'DOES' if bool_do_not_track else "DOESN'T"
-    result_first_party_collection = 'DOES' if bool_first_party_collection else "DOESN'T"
-    result_third_party_sharing = 'DOES' if bool_third_party_sharing else "DOESN'T"
-    result_user_access = 'DOES' if bool_user_access else "DOESN'T"
-    result_policy_change = 'DOES' if bool_policy_change else "DOESN'T"
-
     return render_template("output.html", policy_text=policy_text,
                            segments_data_encryption=segments_data_encryption,
                            segments_data_retention=segments_data_retention,
@@ -202,13 +211,6 @@ def text_output():
                            segments_third_party_sharing=segments_third_party_sharing,
                            segments_user_access=segments_user_access,
                            segments_policy_change=segments_policy_change,
-                           result_data_encryption=result_data_encryption,
-                           result_data_retention=result_data_retention,
-                           result_do_not_track=result_do_not_track,
-                           result_first_party_collection=result_first_party_collection,
-                           result_third_party_sharing=result_third_party_sharing,
-                           result_user_access=result_user_access,
-                           result_policy_change=result_policy_change,
                            bool_data_encryption=bool_data_encryption,
                            bool_data_retention=bool_data_retention,
                            bool_do_not_track=bool_do_not_track,

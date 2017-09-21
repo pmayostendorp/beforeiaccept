@@ -49,3 +49,20 @@ def text_paragraph_segmenter(doc):
 
     lines = doc.split('\n')
     return [line for line in lines if line.strip() != '']
+
+
+def post_process_segments(segment_list):
+    """
+    :param segment_list: list of strings containing segments of document text
+    :return: lst: a list of segments with URL tags and blanks removed
+
+    Steps:
+    1. remove HTML tags
+    2. remove blank lines
+    3. remove lines that are really short (1 word or less)
+    """
+
+    lst = [re.sub(r'\<.*\>', '', segment) for segment in segment_list]
+    lst = [segment for segment in lst if segment.strip() != '']
+    lst = [segment for segment in lst if len(segment.split()) > 1]
+    return lst
