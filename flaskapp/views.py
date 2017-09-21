@@ -57,14 +57,16 @@ model_thresholds = {
     'user_access': 0.05,
     'policy_change': 0.05}
 
+# How many individual segment counts do we need to exceed to raise a flag?
+# Must exceed counts > policy_threshold
 policy_thresholds = {
     'data_encryption': 1,
     'data_retention': 1,
     'do_not_track': 1,
-    'first_party_collection': 1,
-    'third_party_sharing': 1,
-    'user_access': 1,
-    'policy_change': 1}
+    'first_party_collection': 5,
+    'third_party_sharing': 5,
+    'user_access': 0,
+    'policy_change': 0}
 
 
 @app.route('/')
@@ -147,7 +149,7 @@ def text_output():
         segments[cat] = post_process_segments(segments[cat])
 
         # Generate boolean flags
-        bools[cat] = results[cat] >= policy_thresholds[cat]
+        bools[cat] = results[cat] > policy_thresholds[cat]
 
     # segments_data_encryption = list(tagged_segments.nlargest(10, 'data_encryption')['segments'])
     # segments_data_encryption = post_process_segments(segments_data_encryption)
