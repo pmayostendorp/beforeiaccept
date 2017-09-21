@@ -70,23 +70,57 @@
         $('[data-toggle="tooltip"]').tooltip(); 
         });
     </script>
+    
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
-        <h2>Your privacy policy summary</h2>
+        <h3>Your privacy policy summary</h3>
       </div>
       <div class="col-md-3"></div>
     </div><!-- /.container -->
     <br>
-    <div class="row equal"><!-- DATA ENCRYPTION  -->
+
+    <div class="row"><!-- DATA COLLECTION  -->
       <div class="col-md-3"></div>
       <div class="col-md-6">
         <div class="panel panel-primary">
             <div class="panel-heading">
-            <h3>Data Security</h3></div>
-            <div class="panel-body"><p class="lead">
+            <h3 class="panel-title"><a href="#collapse1" data-toggle="collapse" class="text_center">Data Collection <span class="glyphicon glyphicon-plus-sign"></span></a></h3></div>
+            <div class="panel-body"><p>
+            <span class="glyphicon {% if bool_first_party_collection%}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_first_party_collection %}COLLECTS{% else %}DOESN'T COLLECT{% endif %}</b> personal information from users.</p>
+            <div id="collapse1" class="panel-collapse collapse">
+              <p><h5>Language that might indicate data collection practices:</h5></p>
+              <ul class="list-group">
+                {% for paragraph in segments_first_party_collection %}
+                <li class="list-group-item">{{paragraph}}</li>
+                {% endfor %}      
+              </ul>
+            </div>
+            </div>
+        </div>          
+      </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+
+    
+    <div class="row"><!-- DATA ENCRYPTION  -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+            <h3 class="panel-title"><a href="#collapse2" data-toggle="collapse" class="text_center">Data Security <span class="glyphicon glyphicon-plus-sign"></span></a></h3></div>
+            <div class="panel-body"><p>
             <span class="glyphicon {% if bool_data_encryption%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span>
-            This service <b>{% if bool_data_encryption %}PROVIDES{% else %}DOESN'T PROVIDE{% endif %}</b> security and encryption to protect your data.</p></div>
+            This service <b>{% if bool_data_encryption %}PROVIDES{% else %}DOESN'T PROVIDE{% endif %}</b> security and encryption to protect your data.</p>
+            <div id="collapse2" class="panel-collapse collapse">
+              <p><h5>Language that might indicate data security practices:</h5></p>
+              <ul class="list-group">
+                {% for paragraph in segments_data_encryption %}
+                <li class="list-group-item">{{paragraph}}</li>
+                {% endfor %}      
+              </ul>
+            </div>
+            </div>
         </div>          
       </div>
       <div class="col-md-3"></div>
@@ -94,66 +128,106 @@
 
     <div class="row"><!-- DATA RETENTION  -->
       <div class="col-md-3"></div>
-        <div class="col-md-6">
-        <div class="panel panel-primary">
-            <div class="panel-heading"><h3>Data Retention</h3></div>
-            <div class="panel-body"><p class="lead">
-            <span class="glyphicon {% if bool_data_retention%}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_data_retention %}RETAINS{% else %}DOESN'T RETAIN{% endif %}</b> your data after you stop using the service.</p></div>
-        </div>          
-      </div>      
-      <div class="col-md-3"></div>
-    </div><!-- /.container -->
-
-    <div class="row"><!-- DO NOT TRACK -->
-      <div class="col-md-3"></div>
       <div class="col-md-6">
         <div class="panel panel-primary">
-            <div class="panel-heading"><h3>Do Not Track</h3></div>
-            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_do_not_track%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span> This service <b>{% if bool_do_not_track %}HONORS{% else %}DOESN'T HONOR{% endif %}</b> "Do Not Track" preferences.</p></div>
-        </div>          
-      </div>
-      <div class="col-md-3"></div>
-    </div><!-- /.container -->
-
-    <div class="row"><!-- FIRST PARTY COLLECTION -->
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <div class="panel panel-primary">
-            <div class="panel-heading"><h3>Collection of Personal Information</h3></div>
-            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_first_party_collection %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_first_party_collection %}COLLECTS{% else %}DOESN'T COLLECT{% endif %}</b> and store your personal data.</p></div>
+            <div class="panel-heading">
+            <h3 class="panel-title"><a href="#collapse3" data-toggle="collapse" class="text_center">Data Retention <span class="glyphicon glyphicon-plus-sign"></span></a></h3></div>
+            <div class="panel-body"><p>
+            <span class="glyphicon {% if bool_data_retention%}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_data_retention %}RETAINS{% else %}DOESN'T RETAIN{% endif %}</b> your data after you stop using the service.</p>
+            <div id="collapse3" class="panel-collapse collapse">
+              <p><h5>Language that might indicate data retention practices:</h5></p>
+              <ul class="list-group">
+                {% for paragraph in segments_data_retention %}
+                <li class="list-group-item">{{paragraph}}</li>
+                {% endfor %}      
+              </ul>
+            </div>
+            </div>
         </div>          
       </div>
       <div class="col-md-3"></div>
     </div><!-- /.container -->
 
-    <div class="row"><!-- THIRD PARTY DATA SHARING -->
+    <div class="row"><!-- DO NOT TRACK  -->
       <div class="col-md-3"></div>
       <div class="col-md-6">
         <div class="panel panel-primary">
-            <div class="panel-heading"><h3>Third Party Data Sharing</h3></div>
-            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_third_party_sharing %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_third_party_sharing %}SHARES{% else %}DOESN'T SHARE{% endif %}</b> your data with third parties.</p></div>
+            <div class="panel-heading">
+            <h3 class="panel-title"><a href="#collapse4" data-toggle="collapse" class="text_center">Do Not Track <span class="glyphicon glyphicon-plus-sign"></span></a></h3></div>
+            <div class="panel-body"><p>
+            <span class="glyphicon {% if bool_do_not_track %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_do_not_track %}DOESN'T HONOR{% else %}HONORS{% endif %}</b> "Do Not Track" preferences.</p>
+            <div id="collapse4" class="panel-collapse collapse">
+              <p><h5>Language that might indicate Do Not Track policies:</h5></p>
+              <ul class="list-group">
+                {% for paragraph in segments_do_not_track %}
+                <li class="list-group-item">{{paragraph}}</li>
+                {% endfor %}      
+              </ul>
+            </div>
+            </div>
         </div>          
       </div>
       <div class="col-md-3"></div>
     </div><!-- /.container -->
 
-    <div class="row"><!-- USER ACCESS AND DELETION -->     
-    <div class="col-md-3"></div>
+    <div class="row"><!-- THIRD PARTY DATA SHARING  -->
+      <div class="col-md-3"></div>
       <div class="col-md-6">
         <div class="panel panel-primary">
-            <div class="panel-heading"><h3>User Access and Data Deletion</h3></div>
-            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_user_access%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span> This service <b>{% if bool_user_access %}ALLOWS{% else %}DOESN'T ALLOW{% endif %}</b> users to access and permanently delete their personal information.</p></div>
+            <div class="panel-heading">
+            <h3 class="panel-title"><a href="#collapse5" data-toggle="collapse" class="text_center">Third Party Data Sharing <span class="glyphicon glyphicon-plus-sign"></span></a></h3></div>
+            <div class="panel-body"><p><span class="glyphicon {% if bool_third_party_sharing %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_third_party_sharing %}SHARES{% else %}DOESN'T SHARE{% endif %}</b> your data with third parties.</p>
+            <div id="collapse5" class="panel-collapse collapse">
+              <p><h5>Language that might indicate third party data sharing practices:</h5></p>
+              <ul class="list-group">
+                {% for paragraph in segments_third_party_sharing %}
+                <li class="list-group-item">{{paragraph}}</li>
+                {% endfor %}      
+              </ul>
+            </div>
+            </div>
         </div>          
       </div>
       <div class="col-md-3"></div>
     </div><!-- /.container -->
 
-    <div class="row"><!-- POLICY CHANGES -->
+    <div class="row"><!-- USER ACCESS AND DELETION  -->
       <div class="col-md-3"></div>
       <div class="col-md-6">
         <div class="panel panel-primary">
-            <div class="panel-heading"><h3>Policy Changes</h3></div>
-            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_policy_change%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span> This service <b>{% if bool_policy_change %}INFORMS{% else %}DOESN'T INFORM{% endif %}</b> users when changes to this policy occur.</p></div>
+            <div class="panel-heading">
+            <h3 class="panel-title"><a href="#collapse6" data-toggle="collapse" class="text_center">Right to Access and Delete Personal Information <span class="glyphicon glyphicon-plus-sign"></span></a></h3></div>
+            <div class="panel-body"><p><span class="glyphicon {% if bool_user_access%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span> This service <b>{% if bool_user_access %}ALLOWS{% else %}DOESN'T ALLOW{% endif %}</b> users to access and permanently delete their personal information.</p>
+            <div id="collapse6" class="panel-collapse collapse">
+              <p><h5>Language that might indicate users' rights to access and delete personal data:</h5></p>
+              <ul class="list-group">
+                {% for paragraph in segments_user_access %}
+                <li class="list-group-item">{{paragraph}}</li>
+                {% endfor %}      
+              </ul>
+            </div>
+            </div>
+        </div>          
+      </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+
+    <div class="row"><!-- POLICY CHANGES  -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+            <h3 class="panel-title"><a href="#collapse7" data-toggle="collapse" class="text_center">Policy Changes <span class="glyphicon glyphicon-plus-sign"></span></a></h3></div>
+            <div class="panel-body"><p><span class="glyphicon {% if bool_policy_change%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span> This service <b>{% if bool_policy_change %}INFORMS{% else %}DOESN'T INFORM{% endif %}</b> users when changes to this policy occur.</p>
+            <div id="collapse7" class="panel-collapse collapse">
+              <p><h5>Language that might indicate whether and how users will be informed of policy changes:</h5></p>
+              <ul class="list-group">
+                {% for paragraph in segments_policy_change %}
+                <li class="list-group-item">{{paragraph}}</li>
+                {% endfor %}      
+              </ul>
+            </div>
+            </div>
         </div>          
       </div>
       <div class="col-md-3"></div>
