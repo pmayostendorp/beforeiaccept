@@ -1,22 +1,13 @@
 from flask import render_template
 from flask import request
 from flaskapp import app
-# from sqlalchemy import create_engine
-# from sqlalchemy_utils import database_exists, create_database
-# import psycopg2
 from lib.textprocessors import text_process_policy, text_paragraph_segmenter, post_process_segments
 from lib.urlparser import url_input_parser
+from lib.modelpredictors import predict_proba_all_models
 import pandas as pd
-import numpy as np
-import nltk
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.ensemble import AdaBoostClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.pipeline import Pipeline
 import pickle
 
-##Import our pickled models
+# Import our pickled models
 # Data encryption: MultinomialNB
 with open('pickles/data_encryption_NB_segment.pkl', 'rb') as file:
     data_encryption_model = pickle.load(file)
@@ -73,42 +64,6 @@ policy_thresholds = {
     'third_party_sharing': 1,
     'user_access': 1,
     'policy_change': 1}
-
-
-# A helper function to predict classes from models stored in a dict
-def predict_all_models(model_dict, segment_list):
-    """
-    This takes a dict of BeforeIAccept style models as input and provides
-    a dict output with result keys corresponding to the input model keys,
-    evaluated on a list of input policy segments. Returns the predicted class
-    based on the model's native .predict method.
-    """
-    names = model_dict.keys()
-    result = {}
-    for name in names:
-        result[name] = model_dict[name].predict(segment_list)
-
-    return result
-
-
-# A helper function to predict probabilities from models stored in a dict
-def predict_proba_all_models(model_dict, segment_list, thresholds):
-    """
-    This takes a dict of BeforeIAccept style models as input and provides
-    a dict output with result keys corresponding to the input model keys,
-    evaluated on a list of input policy segments. Returns the classification
-    results as evaluated against thresholds, a dict of thresholds corresponding
-    to the models in model_dict.
-    """
-    names = model_dict.keys()
-    result = {}
-    for name in names:
-        tmp = model_dict[name].predict_proba(segment_list)[:, 1]
-        tmp[tmp >= thresholds[name]] = 1
-        tmp[tmp < thresholds[name]] = 0
-        result[name] = tmp
-
-    return result
 
 
 @app.route('/')
