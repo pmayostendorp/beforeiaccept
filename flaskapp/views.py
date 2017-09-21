@@ -6,6 +6,7 @@ from lib.urlparser import url_input_parser
 from lib.modelpredictors import predict_proba_all_models
 import pandas as pd
 import pickle
+import requests
 
 # Import our pickled models
 # Data encryption: MultinomialNB
@@ -79,17 +80,21 @@ def text_output():
     url = request.args.get('url_text')
     print('URL: ' + url)
 
-    # some input checking on the URL
-
-
     # pull policy text from the input field and store it
     policy_text = request.args.get('policy_text')
     print('Policy text: ' + policy_text)
 
     # user input checks
+    domain = ''     #Initialize
     if url.strip() != '':
         # TODO put some try-catch magic around this
-        text, domain = url_input_parser(url)
+        try:
+            text, domain = url_input_parser(url)
+        except requests.exceptions.RequestException as e:
+            print(e)
+            message = '<p>There was a problem.</p><p>Check your URL and try again.</p>'
+            return render_template("input.html", message=message)
+
         segment_list = text_paragraph_segmenter(text)
     elif policy_text.strip() != '':
         segment_list = text_paragraph_segmenter(policy_text)
@@ -172,4 +177,6 @@ def text_output():
                            bool_first_party_collection=bool_first_party_collection,
                            bool_third_party_sharing=bool_third_party_sharing,
                            bool_user_access=bool_user_access,
-                           bool_policy_change=bool_policy_change)
+                           bool_policy_change=bool_policy_change,
+                           domain=domain,
+                           url=url)

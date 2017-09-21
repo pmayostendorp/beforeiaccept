@@ -102,6 +102,19 @@
         </div>
         <div class="col-md-5"></div>
       </div>
+      
+      {% if message is defined %}
+      <br>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 alert alert-warning">
+            <div class="text-center">
+            {{message|safe}}
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      {% endif %}
        <!-- input validation script for form 
       <script>
         bootstrap_alert = function() {}
