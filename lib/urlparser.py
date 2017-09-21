@@ -12,7 +12,8 @@ def url_input_parser(url):
     
     # Request URL
     page = requests.get(url)
-    
+
+
     # TODO
     # Check that we got a good response and throw an error if not
     

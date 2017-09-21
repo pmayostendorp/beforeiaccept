@@ -28,16 +28,18 @@ def predict_proba_all_models(model_dict, segment_list, thresholds):
     """
     This takes a dict of BeforeIAccept style models as input and provides
     a dict output with result keys corresponding to the input model keys,
-    evaluated on a list of input policy segments. Returns the classification
-    results as evaluated against thresholds, a dict of thresholds corresponding
+    evaluated on a list of input policy segments. Returns the probabilities (prob) and
+    classification results (cls) as evaluated against thresholds, a dict of thresholds corresponding
     to the models in model_dict.
     """
     names = model_dict.keys()
-    result = {}
+    prob = {}
+    cls = {}
     for name in names:
-        tmp = model_dict[name].predict_proba(segment_list)[:, 1]
+        prob[name] = model_dict[name].predict_proba(segment_list)[:, 1]
+        tmp = prob[name]
         tmp[tmp >= thresholds[name]] = 1
         tmp[tmp < thresholds[name]] = 0
-        result[name] = tmp
+        cls[name] = tmp
 
-    return result
+    return prob, cls
