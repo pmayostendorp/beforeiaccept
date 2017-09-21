@@ -65,6 +65,15 @@ model_thresholds = {
     'user_access': 0.05,
     'policy_change': 0.05}
 
+policy_thresholds = {
+    'data_encryption': 1,
+    'data_retention': 1,
+    'do_not_track': 1,
+    'first_party_collection': 1,
+    'third_party_sharing': 1,
+    'user_access': 1,
+    'policy_change': 1}
+
 
 # A helper function to predict classes from models stored in a dict
 def predict_all_models(model_dict, segment_list):
@@ -167,13 +176,23 @@ def text_output():
 
     # TODO
     # Post-process results to achieve good document-level classification.
-    result_data_encryption = 'DOES' if results['data_encryption'] >= 1 else "DOESN'T"
-    result_data_retention = 'MAY' if results['data_retention'] >= 1 else 'MAY NOT'
-    result_do_not_track = 'DOES' if results['do_not_track'] >= 1 else "DOESN'T"
-    result_first_party_collection = 'DOES' if results['first_party_collection'] >= 1 else "DOESN'T"
-    result_third_party_sharing = 'DOES' if results['third_party_sharing'] >= 1 else "DOESN'T"
-    result_user_access = 'DOES' if results['user_access'] >= 1 else "DOESN'T"
-    result_policy_change = 'DOES' if results['policy_change'] >= 1 else "DOESN'T"
+
+    # Boolean flags
+    bool_data_encryption = results['data_encryption'] >= policy_thresholds['data_encryption']
+    bool_data_retention = results['data_retention'] >= policy_thresholds['data_retention']
+    bool_do_not_track = results['do_not_track'] >= policy_thresholds['do_not_track']
+    bool_first_party_collection = results['first_party_collection'] >= policy_thresholds['first_party_collection']
+    bool_third_party_sharing = results['third_party_sharing'] >= policy_thresholds['third_party_sharing']
+    bool_user_access = results['user_access'] >= policy_thresholds['user_access']
+    bool_policy_change = results['policy_change'] >= policy_thresholds['policy_change']
+
+    result_data_encryption = 'DOES' if bool_data_encryption else "DOESN'T"
+    result_data_retention = 'MAY' if bool_data_retention else 'MAY NOT'
+    result_do_not_track = 'DOES' if bool_do_not_track else "DOESN'T"
+    result_first_party_collection = 'DOES' if bool_first_party_collection else "DOESN'T"
+    result_third_party_sharing = 'DOES' if bool_third_party_sharing else "DOESN'T"
+    result_user_access = 'DOES' if bool_user_access else "DOESN'T"
+    result_policy_change = 'DOES' if bool_policy_change else "DOESN'T"
 
     return render_template("output.html", policy_text=policy_text,
                            segments_data_encryption=segments_data_encryption,
@@ -189,4 +208,11 @@ def text_output():
                            result_first_party_collection=result_first_party_collection,
                            result_third_party_sharing=result_third_party_sharing,
                            result_user_access=result_user_access,
-                           result_policy_change=result_policy_change)
+                           result_policy_change=result_policy_change,
+                           bool_data_encryption=bool_data_encryption,
+                           bool_data_retention=bool_data_retention,
+                           bool_do_not_track=bool_do_not_track,
+                           bool_first_party_collection=bool_first_party_collection,
+                           bool_third_party_sharing=bool_third_party_sharing,
+                           bool_user_access=bool_user_access,
+                           bool_policy_change=bool_policy_change)

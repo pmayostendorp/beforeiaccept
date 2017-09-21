@@ -63,59 +63,102 @@
     <div class="col-md-1"></div>
 </div>
 <hr>
-    <div class = "container">
-
-      <form  action="/output" method="GET">
-        <div class="form-group">
-          <label for="policy_text"> </label>
-          <input type="text" id="policy_text" name='policy_text' placeholder="e.g. ">
-        </div>
-        <div>
-          <button type="submit" class="btn btn-default btn-lg">Analyze</button>
-        </div>
-      </form>
-    </div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
-
-  </div> <!-- /.container-->
-
-    <div class="container">
-      <div class="starter-template">
-        <br>
-        <h3>Your policy summary:</h3>
-        <p class="lead">Explore the implications of your privacy policy below.</p>
+    
+    <!-- Globally enable tool tips -->
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h2>Your privacy policy summary</h2>
       </div>
-
-     </div><!-- /.container -->
-
-    <div class="container">
-      <div class="starter-template">
-        <h4>Data Security</h4>
-        <p class="lead">This service <b>{{result_data_encryption}}</b> provide security and encryption to protect your data.</p>
-        <br>
-        <h4>Retention of Personal Data</h4>
-        <p class="lead">This service <b>{{result_data_retention}}</b> retain your data for an unspecified period of time.</p>
-        <br>
-        <h4>Do Not Track</h4>
-        <p class="lead">This service <b>{{result_do_not_track}}</b> honor "Do Not Track" preferences.</p>
-        <br>
-        <h4>Data Collection by the Service</h4>
-        <p class="lead">This service <b>{{result_first_party_collection}}</b> collect your personal data.</p>
-        <br>
-        <h4>Third Party Sharing</h4>
-        <p class="lead">This service <b>{{result_third_party_sharing}}</b> share your data with third parties.</p>
-        <br>
-        <h4>User Access and Data Deletion</h4>
-        <p class="lead">This service <b>{{result_user_access}}</b> allow you to access and permanently delete your personal information.</p>
-        <br>
-        <h4>Policy Changes</h4>
-        <p class="lead">This service <b>{{result_policy_change}}</b> provide a mechanism to notify users if privacy policies change.</p>
-        <br>
-        
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+    <br>
+    <div class="row equal"><!-- DATA ENCRYPTION  -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+            <h3>Data Security</h3></div>
+            <div class="panel-body"><p class="lead">
+            <span class="glyphicon {% if bool_data_encryption%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span>
+            This service <b>{% if bool_data_encryption %}PROVIDES{% else %}DOESN'T PROVIDE{% endif %}</b> security and encryption to protect your data.</p></div>
+        </div>          
       </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
 
+    <div class="row"><!-- DATA RETENTION  -->
+      <div class="col-md-3"></div>
+        <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>Data Retention</h3></div>
+            <div class="panel-body"><p class="lead">
+            <span class="glyphicon {% if bool_data_retention%}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_data_retention %}RETAINS{% else %}DOESN'T RETAIN{% endif %}</b> your data after you stop using the service.</p></div>
+        </div>          
+      </div>      
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
 
+    <div class="row"><!-- DO NOT TRACK -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>Do Not Track</h3></div>
+            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_do_not_track%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span> This service <b>{% if bool_do_not_track %}HONORS{% else %}DOESN'T HONOR{% endif %}</b> "Do Not Track" preferences.</p></div>
+        </div>          
+      </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+
+    <div class="row"><!-- FIRST PARTY COLLECTION -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>Collection of Personal Information</h3></div>
+            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_first_party_collection %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_first_party_collection %}COLLECTS{% else %}DOESN'T COLLECT{% endif %}</b> and store your personal data.</p></div>
+        </div>          
+      </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+
+    <div class="row"><!-- THIRD PARTY DATA SHARING -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>Third Party Data Sharing</h3></div>
+            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_third_party_sharing %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_third_party_sharing %}SHARES{% else %}DOESN'T SHARE{% endif %}</b> your data with third parties.</p></div>
+        </div>          
+      </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+
+    <div class="row"><!-- USER ACCESS AND DELETION -->     
+    <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>User Access and Data Deletion</h3></div>
+            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_user_access%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span> This service <b>{% if bool_user_access %}ALLOWS{% else %}DOESN'T ALLOW{% endif %}</b> users to access and permanently delete their personal information.</p></div>
+        </div>          
+      </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+
+    <div class="row"><!-- POLICY CHANGES -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>Policy Changes</h3></div>
+            <div class="panel-body"><p class="lead"><span class="glyphicon {% if bool_policy_change%}glyphicon-ok-sign text-success{% else %}glyphicon-minus-sign text-danger{% endif %}"></span> This service <b>{% if bool_policy_change %}INFORMS{% else %}DOESN'T INFORM{% endif %}</b> users when changes to this policy occur.</p></div>
+        </div>          
+      </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+    
       <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
       <script src="../static/js/bootstrap.min.js"></script>
 
