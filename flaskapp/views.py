@@ -97,7 +97,11 @@ def text_output():
 
         segment_list = text_paragraph_segmenter(text)
     elif policy_text.strip() != '':
+
         segment_list = text_paragraph_segmenter(policy_text)
+        if len(' '.join(segment_list)) <= 500:
+            message = '<p>That policy was a bit short.</p><p>We do better with longer documents.</p>'
+            return render_template("input.html", message=message)
     else:
         return render_template("input.html")  # send 'em back home
 
