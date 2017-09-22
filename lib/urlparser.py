@@ -13,6 +13,10 @@ def url_input_parser(url):
     # Request URL
     page = requests.get(url)
 
+    # Check we got a good response, otherwise complain
+    if str(page.status_code)[0] != '2':
+        e = requests.exceptions.ConnectionError('The server returned status code ' + str(page.status_code))
+        raise e
 
     # TODO
     # Check that we got a good response and throw an error if not
