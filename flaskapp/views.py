@@ -6,7 +6,7 @@ from lib.urlparser import url_input_parser
 from lib.modelpredictors import predict_proba_all_models
 import pandas as pd
 import pickle
-import requests
+import urllib
 
 # Import our pickled models
 # Data encryption: MultinomialNB
@@ -89,26 +89,35 @@ def text_output():
     # user input checks
     domain = ''     #Initialize
     if url.strip() != '':
-        # TODO put some try-catch magic around this
+
+        # Try to read the site
         try:
             text, domain = url_input_parser(url)
-        except requests.exceptions.RequestException as e:
+
+        except urllib.error.URLError as e:
             print(e)
             message = '<p>There was a problem.</p><p>Check your URL and try again.</p>'
             return render_template("input.html", message=message)
 
         segment_list = text_paragraph_segmenter(text)
-    elif policy_text.strip() != '':
 
+        # Exit out of this if we didn't get any text back from the site.
+        if len(segment_list) == 0:
+            message = '<p>We have trouble getting data back from some sites.</p><p>Maybe try pasting the content instead.</p>'
+            return render_template("input.html", message=message)
+
+    elif policy_text.strip() != '':
         segment_list = text_paragraph_segmenter(policy_text)
+
         if len(' '.join(segment_list)) <= 500:
             message = '<p>That policy was a bit short.</p><p>We do better with longer documents.</p>'
             return render_template("input.html", message=message)
+
     else:
         return render_template("input.html")  # send 'em back home
 
     # Store the segments in a dataframe so we can serve them up later
-    orig_segments = pd.DataFrame({'segments':segment_list})
+    orig_segments = pd.DataFrame({'segments': segment_list})
 
     print('Total segments: ' + str(len(segment_list)))
 
