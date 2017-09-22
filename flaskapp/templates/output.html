@@ -126,6 +126,27 @@
       <div class="col-md-3"></div>
     </div><!-- /.container -->
 
+    <div class="row"><!-- THIRD PARTY DATA SHARING  -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+            <h3 class="panel-title">{% if segments_third_party_sharing|length == 0 and not bool_third_party_sharing %}Third Party Data Sharing{% else %}<a href="#collapse5" data-toggle="collapse" class="text_center">Third Party Data Sharing <span class="glyphicon glyphicon-plus-sign"></span></a>{% endif %}</h3></div>
+            <div class="panel-body"><p><span class="glyphicon {% if bool_third_party_sharing %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_third_party_sharing %}EXCHANGES{% else %}DOESN'T EXCHANGE{% endif %}</b> your data with third parties.</p>
+            <div id="collapse5" class="panel-collapse collapse">
+              <p><h5>Language that might indicate third party data sharing practices:</h5></p>
+              <ul class="list-group">
+                {% for paragraph in segments_third_party_sharing %}
+                <li class="list-group-item">{{paragraph}}</li>
+                {% endfor %}      
+              </ul>
+            </div>
+            </div>
+        </div>          
+      </div>
+      <div class="col-md-3"></div>
+    </div><!-- /.container -->
+
     <div class="row"><!-- DATA RETENTION  -->
       <div class="col-md-3"></div>
       <div class="col-md-6">
@@ -160,27 +181,6 @@
               <p><h5>Language that might indicate Do Not Track policies:</h5></p>
               <ul class="list-group">
                 {% for paragraph in segments_do_not_track %}
-                <li class="list-group-item">{{paragraph}}</li>
-                {% endfor %}      
-              </ul>
-            </div>
-            </div>
-        </div>          
-      </div>
-      <div class="col-md-3"></div>
-    </div><!-- /.container -->
-
-    <div class="row"><!-- THIRD PARTY DATA SHARING  -->
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-            <h3 class="panel-title">{% if segments_third_party_sharing|length == 0 and not bool_third_party_sharing %}Third Party Data Sharing{% else %}<a href="#collapse5" data-toggle="collapse" class="text_center">Third Party Data Sharing <span class="glyphicon glyphicon-plus-sign"></span></a>{% endif %}</h3></div>
-            <div class="panel-body"><p><span class="glyphicon {% if bool_third_party_sharing %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_third_party_sharing %}SHARES{% else %}DOESN'T SHARE{% endif %}</b> your data with third parties.</p>
-            <div id="collapse5" class="panel-collapse collapse">
-              <p><h5>Language that might indicate third party data sharing practices:</h5></p>
-              <ul class="list-group">
-                {% for paragraph in segments_third_party_sharing %}
                 <li class="list-group-item">{{paragraph}}</li>
                 {% endfor %}      
               </ul>
