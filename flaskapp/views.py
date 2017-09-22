@@ -94,7 +94,7 @@ def text_output():
         try:
             text, domain = url_input_parser(url)
 
-        except urllib.error.URLError as e:
+        except Exception as e:
             print(e)
             message = '<p>There was a problem.</p><p>Check your URL and try again.</p>'
             return render_template("input.html", message=message)
@@ -132,9 +132,8 @@ def text_output():
         print(segment)
 
     # Store results for each model category as dataframe, then sum up occurrences found.
-    prob, tagged_segments = predict_proba_all_models(model_dict, segments_processed, model_thresholds)
+    _, tagged_segments = predict_proba_all_models(model_dict, segments_processed, model_thresholds)
     tagged_segments = pd.DataFrame(tagged_segments)
-    prob = pd.DataFrame(prob)
 
     # DEBUGGING PURPOSES
     print('Tagged segments:')
