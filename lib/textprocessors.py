@@ -41,6 +41,28 @@ def text_process_policy(doc):
     return ' '.join(lst)
 
 
+def reverse_paragraph_segmenter(doc):
+    """
+    input: doc as string
+    output: list of paragraphs with blank lines removed, concatenated
+    in reverse to that topic headings are concatenated with the
+    paragraphs below them.
+    """
+
+    lines = doc.split('\n')
+    segs = list()
+    segs.append(lines[-1])
+    c = -1
+    for line in lines[::-1]:
+        if len(line) < 75:  # Less than 75 chars wide in line join to prev line
+            segs[c] = ' '.join([line, segs[c]])
+        else:
+            segs.insert(0, line)
+            c -= 1
+
+    return [line for line in segs if line.strip() != '']
+
+
 def text_paragraph_segmenter(doc):
     """
     input: doc as string

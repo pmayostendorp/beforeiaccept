@@ -1,7 +1,7 @@
 from flask import render_template
 from flask import request
 from flaskapp import app
-from lib.textprocessors import text_process_policy, text_paragraph_segmenter, post_process_segments
+from lib.textprocessors import text_process_policy, reverse_paragraph_segmenter, post_process_segments
 from lib.urlparser import url_input_parser
 from lib.modelpredictors import predict_proba_all_models
 import pandas as pd
@@ -99,7 +99,7 @@ def text_output():
             message = '<p>There was a problem.</p><p>Check your URL and try again.</p>'
             return render_template("input.html", message=message)
 
-        segment_list = text_paragraph_segmenter(text)
+        segment_list = reverse_paragraph_segmenter(text)
 
         # Exit out of this if we didn't get any text back from the site.
         if len(segment_list) == 0:
@@ -107,7 +107,7 @@ def text_output():
             return render_template("input.html", message=message)
 
     elif policy_text.strip() != '':
-        segment_list = text_paragraph_segmenter(policy_text)
+        segment_list = reverse_paragraph_segmenter(policy_text)
 
         if len(' '.join(segment_list)) <= 500:
             message = '<p>That policy was a bit short.</p><p>We do better with longer documents.</p>'
