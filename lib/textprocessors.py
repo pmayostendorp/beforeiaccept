@@ -48,7 +48,17 @@ def text_paragraph_segmenter(doc):
     """
 
     lines = doc.split('\n')
-    return [line for line in lines if line.strip() != '']
+    segs = list()
+    segs.append(lines[0])
+    c = 0
+    for i in range(1, len(lines)):
+        if len(lines[i]) < 75:  # Less than 75 chars wide in line join to prev line
+            segs[c] = ' '.join([segs[c], lines[i]])
+        else:
+            segs.append(lines[i])
+            c += 1
+
+    return [line for line in segs if line.strip() != '']
 
 
 def post_process_segments(segment_list):
