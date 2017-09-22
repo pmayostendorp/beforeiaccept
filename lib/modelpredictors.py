@@ -1,4 +1,4 @@
-# import numpy as np
+import numpy as np
 # import nltk
 # from sklearn.feature_extraction.text import CountVectorizer
 # from sklearn.feature_extraction.text import TfidfTransformer
@@ -36,7 +36,8 @@ def predict_proba_all_models(model_dict, segment_list, thresholds):
     prob = {}
     cls = {}
     for name in names:
-        prob[name] = model_dict[name].predict_proba(segment_list)[:, 1]
+        prob[name] = np.array(model_dict[name].predict_proba(segment_list))
+        prob[name] = prob[name][:, 1]
         tmp = prob[name]
         tmp[tmp >= thresholds[name]] = 1
         tmp[tmp < thresholds[name]] = 0
