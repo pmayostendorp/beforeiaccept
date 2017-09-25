@@ -75,6 +75,9 @@ policy_thresholds = {
 def text_input():
     return render_template("input.html")
 
+@app.route('/about')
+def about():
+    return render_template("about.html")
 
 @app.route('/output')
 def text_output():
