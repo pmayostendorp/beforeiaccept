@@ -47,6 +47,7 @@
     </nav>
 
 <br><br><br>
+
       
 <div class="row">
     <div class="col-md-1"></div>
@@ -59,14 +60,7 @@
     </div>
 </div>
 <hr>
-    
-    <!-- Globally enable tool tips -->
-    <script>
-        $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip(); 
-        });
-    </script>
-    
+        
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-4">
@@ -76,7 +70,7 @@
       <h2 class="text-center">OR</h2>
       </div>
       <div class="col-md-4">
-        <p class="lead"><strong>2.</strong> Paste the full text of your service's privacy policy:</p>
+        <p class="lead"><strong>2.</strong> Paste the full text of your service's privacy policy: <a href="#" data-toggle="tooltip" title="For really long policies, use the URL input or the browser plugin.">*</a></p>
       </div>
       <div class="col-md-1"></div>
     </div>
@@ -144,9 +138,13 @@
   </div>
   <div class="col-md-1"></div>  
 </div> <!-- /.container-->
-
+        
       <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
       <script src="../static/js/bootstrap.min.js"></script>
+      <!-- Global tooltips -->
+      <script type="text/javascript">
+        $('[data-toggle="tooltip"]').tooltip({'placement': 'right'});
+      </script>
 
      </div><!-- /.container -->
 
@@ -162,7 +160,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../static/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../static/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../static/js/ie10-viewport-bug-workaround.js"></script>
             
