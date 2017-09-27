@@ -67,7 +67,7 @@
         <a href="#third_party_sharing">Third Party Data Sharing</a> | 
         <a href="#data_retention">Data Retention</a>
         <br> 
-        <a href="#do_not_track">Do Not Track</a> | 
+        <!-- <a href="#do_not_track">Do Not Track</a> | -->
         <a href="#user_access">User Access and Deletion</a> | 
         <a href="#policy_change">Policy Changes</a>
       </div>
@@ -162,28 +162,6 @@
         </div>          
       </div>
       <div class="col-md-3" id="do_not_track"></div>
-    </div><!-- /.container -->
-
-    <div class="row"><!-- DO NOT TRACK  -->
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-            <h3 class="panel-title">{% if segments_do_not_track|length == 0 or not bool_do_not_track %}Do Not Track{% else %}<a href="#collapse4" data-toggle="collapse" class="text_center">Do Not Track <span class="glyphicon glyphicon-plus-sign"></span></a>{% endif %} <small><a href="#" data-toggle="tooltip" title="Certain web browsers allow users to enable Do Not Track settings to signal privacy preferences to websites. This section identifies whether the website/service expressly disobeys those settings.">[?]</a></small></h3></div>
-            <div class="panel-body"><p>
-            <span class="glyphicon {% if bool_do_not_track %}glyphicon-minus-sign text-danger{% else %}glyphicon-ok-sign text-success{% endif %}"></span> This service <b>{% if bool_do_not_track %}DOESN'T HONOR{% else %}HONORS{% endif %}</b> "Do Not Track" preferences.</p>
-            <div id="collapse4" class="panel-collapse collapse">
-              <p><h5>Language that might indicate Do Not Track policies:</h5></p>
-              <ul class="list-group">
-                {% for paragraph in segments_do_not_track %}
-                <li class="list-group-item">{{paragraph}}</li>
-                {% endfor %}      
-              </ul>
-            </div>
-            </div>
-        </div>          
-      </div>
-      <div class="col-md-3" id="user_access"></div>
     </div><!-- /.container -->
 
     <div class="row"><!-- USER ACCESS AND DELETION  -->
