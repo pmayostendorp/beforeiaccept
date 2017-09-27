@@ -40,7 +40,6 @@ def text_process_policy(doc):
     lst = [sn.stem(word) for word in lst]
     return ' '.join(lst)
 
-
 def reverse_paragraph_segmenter(doc):
     """
     input: doc as string
