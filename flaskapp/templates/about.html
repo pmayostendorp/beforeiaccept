@@ -68,7 +68,7 @@
     <div class="col-md-3"></div>
     <div class="col-md-6">
     <h2>Intro</h2>
-    <p>Consumers sign billions of pages of legal contracts every year with a few simple clicks without reading or understanding the contents of those contracts. Website and web service privacy policies are generally opaque to users. BeforeIAccept uses natural language processing and machine learning to digest privacy policies for consumers. It answers seven basic privacy-related questions about websites and serivces:</p>
+    <p>Consumers sign billions of pages of legal contracts every year with a few simple clicks without reading or understanding the contents of those contracts. Website and web service privacy policies are generally opaque to users. BeforeIAccept uses natural language processing and machine learning to digest privacy policies for consumers. It answers six basic privacy-related questions about websites and serivces:</p>
     <ol>
     <li>Does it collect my personal information?</li>
     <li>Does it employ security to transer and store my information?</li>
@@ -88,7 +88,7 @@
 
 <img class="img-responsive" src="../static/howitworks.png" alt="Data pipeline for BeforeIAccept.">
 <br>
-    <p>Once in this form, the vectorized text segment is processed using a series of seven binary classifiers, one for each of the seven policy practices listed above. Most models are in the form of naive Bayes classifiers. Data retention, third party sharing, and user access/deletion assessments are made using random forest classifiers due to improved accuracy.</p>
+    <p>Once in this form, the vectorized text segment is processed using a series of six binary classifiers, one for each of the six policy practices listed above. Most models are in the form of naive Bayes classifiers. Data retention, third party sharing, and user access/deletion assessments are made using random forest classifiers due to improved accuracy.</p>
 
     <p>Finally, results are presented to the user on a simple dashboard. Users are allowed to drill down and view specific segments that were tagged in a certain category.</p>
 
