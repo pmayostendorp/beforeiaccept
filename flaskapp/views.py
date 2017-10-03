@@ -65,8 +65,8 @@ policy_thresholds = {
     'do_not_track': 1,
     'first_party_collection': 5,
     'third_party_sharing': 5,
-    'user_access': 0,
-    'policy_change': 0}
+    'user_access': 1,
+    'policy_change': 1}
 
 
 @app.route('/')
@@ -154,46 +154,11 @@ def text_output():
     segments = {}
     bools = {}
     for cat in categories:
-        # Find the 10 most relevant segments based on probability predictions
-        # segments[cat] = list(tagged_segments.nlargest(10, cat)['segments'])
         segments[cat] = list(tagged_segments[tagged_segments[cat] == 1]['segments'])
         segments[cat] = post_process_segments(segments[cat])
 
         # Generate boolean flags
-        bools[cat] = results[cat] > policy_thresholds[cat]
-
-    # segments_data_encryption = list(tagged_segments.nlargest(10, 'data_encryption')['segments'])
-    # segments_data_encryption = post_process_segments(segments_data_encryption)
-    #
-    # segments_data_retention = list(tagged_segments.nlargest(10, 'data_retention')['segments'])
-    # segments_data_retention = post_process_segments(segments_data_retention)
-    #
-    # segments_do_not_track = list(tagged_segments.nlargest(10, 'do_not_track')['segments'])
-    # segments_do_not_track = post_process_segments(segments_do_not_track)
-    #
-    # segments_first_party_collection = list(tagged_segments.nlargest(10, 'first_party_collection')['segments'])
-    # segments_first_party_collection = post_process_segments(segments_first_party_collection)
-    #
-    # segments_third_party_sharing = list(tagged_segments.nlargest(10, 'third_party_sharing')['segments'])
-    # segments_third_party_sharing = post_process_segments(segments_third_party_sharing)
-    #
-    # segments_user_access = list(tagged_segments.nlargest(10, 'data_encryption')['segments']['segments'])
-    # segments_user_access = post_process_segments(segments_user_access)
-    #
-    # segments_policy_change = list(tagged_segments[tagged_segments['policy_change'] == 1]['segments'])
-    # segments_policy_change = post_process_segments(segments_policy_change)
-
-    # TODO
-    # Post-process results to achieve good document-level classification.
-
-    # Boolean flags
-    # bool_data_encryption = results['data_encryption'] >= policy_thresholds['data_encryption']
-    # bool_data_retention = results['data_retention'] >= policy_thresholds['data_retention']
-    # bool_do_not_track = results['do_not_track'] >= policy_thresholds['do_not_track']
-    # bool_first_party_collection = results['first_party_collection'] >= policy_thresholds['first_party_collection']
-    # bool_third_party_sharing = results['third_party_sharing'] >= policy_thresholds['third_party_sharing']
-    # bool_user_access = results['user_access'] >= policy_thresholds['user_access']
-    # bool_policy_change = results['policy_change'] >= policy_thresholds['policy_change']
+        bools[cat] = results[cat] >= policy_thresholds[cat]
 
     return render_template("output.html", policy_text=policy_text,
                            segments_data_encryption=segments['data_encryption'],
