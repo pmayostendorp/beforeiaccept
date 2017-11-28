@@ -1,3 +1,4 @@
 flaskapp/static/* linguist-vendored
+flaskapp/templates/* linguist-vendored
 OPP-115/* linguist-vendored
 scripts/* linguist-vendored
